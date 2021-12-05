@@ -1,0 +1,2132 @@
+{
+  "hash": "e13510d8e0243b69c2d4",
+  "version": "5.64.4",
+  "time": 28,
+  "builtAt": 1638693861816,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/container/2-transitive-overriding",
+  "assetsByChunkName": {
+    "main": [
+      "bundle0.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 16944,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 16944
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "shared_js.bundle0.js",
+      "size": 505,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 505
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "shared_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 10417,
+      "sizes": {
+        "javascript": 1483,
+        "share-init": 42,
+        "runtime": 8892
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "ccc155f8a5020ddeb6bb",
+      "childrenByOrder": {},
+      "id": "main",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "shared_js",
+        "webpack_container_remote_container-no-shared_a",
+        "webpack_container_remote_container-no-shared_b",
+        "webpack_container_remote_container-no-shared_modules",
+        "webpack_container_remote_container-no-shared_modules-from-remote"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 1441,
+          "sizes": {
+            "javascript": 1441
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./index.js",
+          "issuerId": null,
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-5:3",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs-module \"../1-transitive-overriding/container-no-shared.js\"",
+          "name": "external \"../1-transitive-overriding/container-no-shared.js\"",
+          "nameForCondition": null,
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "remote (default) webpack/container/reference/container-no-shared ./modules",
+          "issuerName": "remote container-no-shared/modules",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            },
+            {
+              "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+              "name": "remote container-no-shared/modules",
+              "id": "webpack/container/remote/container-no-shared/modules"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/container/reference/container-no-shared",
+          "issuerId": "webpack/container/remote/container-no-shared/modules",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+              "module": "remote container-no-shared/a",
+              "moduleName": "remote container-no-shared/a",
+              "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+              "resolvedModule": "remote container-no-shared/a",
+              "type": "remote to external",
+              "active": true,
+              "explanation": "",
+              "userRequest": "webpack/container/reference/container-no-shared",
+              "moduleId": "webpack/container/remote/container-no-shared/a",
+              "resolvedModuleId": "webpack/container/remote/container-no-shared/a"
+            },
+            {
+              "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+              "module": "remote container-no-shared/b",
+              "moduleName": "remote container-no-shared/b",
+              "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+              "resolvedModule": "remote container-no-shared/b",
+              "type": "remote to external",
+              "active": true,
+              "explanation": "",
+              "userRequest": "webpack/container/reference/container-no-shared",
+              "moduleId": "webpack/container/remote/container-no-shared/b",
+              "resolvedModuleId": "webpack/container/remote/container-no-shared/b"
+            },
+            {
+              "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+              "module": "remote container-no-shared/modules",
+              "moduleName": "remote container-no-shared/modules",
+              "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+              "resolvedModule": "remote container-no-shared/modules",
+              "type": "remote to external",
+              "active": true,
+              "explanation": "",
+              "userRequest": "webpack/container/reference/container-no-shared",
+              "moduleId": "webpack/container/remote/container-no-shared/modules",
+              "resolvedModuleId": "webpack/container/remote/container-no-shared/modules"
+            },
+            {
+              "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+              "module": "remote container-no-shared/modules-from-remote",
+              "moduleName": "remote container-no-shared/modules-from-remote",
+              "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+              "resolvedModule": "remote container-no-shared/modules-from-remote",
+              "type": "remote to external",
+              "active": true,
+              "explanation": "",
+              "userRequest": "webpack/container/reference/container-no-shared",
+              "moduleId": "webpack/container/remote/container-no-shared/modules-from-remote",
+              "resolvedModuleId": "webpack/container/remote/container-no-shared/modules-from-remote"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))"
+          ],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "provide-module",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "share-init": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "provide module (default) shared@2 = ./shared",
+          "name": "provide shared module (default) shared@2 = ./shared",
+          "nameForCondition": null,
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/sharing/provide/default/shared",
+          "issuerId": null,
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "provide shared module",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 0,
+          "sizes": {
+            "runtime": 0
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/consumes",
+          "name": "webpack/runtime/consumes",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1141,
+          "sizes": {
+            "runtime": 1141
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/create fake namespace object",
+          "name": "webpack/runtime/create fake namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 175,
+          "sizes": {
+            "runtime": 175
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1850,
+          "sizes": {
+            "runtime": 1850
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 2649,
+          "sizes": {
+            "runtime": 2649
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/remotes loading",
+          "name": "webpack/runtime/remotes loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 2081,
+          "sizes": {
+            "runtime": 2081
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/sharing",
+          "name": "webpack/runtime/sharing",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 35,
+      "sizes": {
+        "javascript": 35
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "shared_js.bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "c3f7fc919bb0db892b4f",
+      "childrenByOrder": {},
+      "id": "shared_js",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 35,
+          "sizes": {
+            "javascript": 35
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/shared.js",
+          "name": "./shared.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/shared.js",
+          "index": 7,
+          "preOrderIndex": 7,
+          "index2": 7,
+          "postOrderIndex": 7,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "provide module (default) shared@2 = ./shared",
+          "issuerName": "provide shared module (default) shared@2 = ./shared",
+          "issuerPath": [
+            {
+              "identifier": "provide module (default) shared@2 = ./shared",
+              "name": "provide shared module (default) shared@2 = ./shared",
+              "id": "webpack/sharing/provide/default/shared"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./shared.js",
+          "issuerId": "webpack/sharing/provide/default/shared",
+          "chunks": [
+            "shared_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "provide module (default) shared@2 = ./shared",
+              "module": "provide shared module (default) shared@2 = ./shared",
+              "moduleName": "provide shared module (default) shared@2 = ./shared",
+              "resolvedModuleIdentifier": "provide module (default) shared@2 = ./shared",
+              "resolvedModule": "provide shared module (default) shared@2 = ./shared",
+              "type": "provide module for shared",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./shared",
+              "moduleId": "webpack/sharing/provide/default/shared",
+              "resolvedModuleId": "webpack/sharing/provide/default/shared"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "value"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "provide module (default) shared@2 = ./shared",
+          "moduleIdentifier": "provide module (default) shared@2 = ./shared",
+          "moduleName": "provide shared module (default) shared@2 = ./shared",
+          "loc": "",
+          "moduleId": "webpack/sharing/provide/default/shared"
+        }
+      ]
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 12,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "f6360f3d347108f05411",
+      "childrenByOrder": {},
+      "id": "webpack_container_remote_container-no-shared_a",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "remote-module",
+          "layer": null,
+          "size": 6,
+          "sizes": {
+            "remote": 6,
+            "share-init": 6
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+          "name": "remote container-no-shared/a",
+          "nameForCondition": "container-no-shared/a",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/container/remote/container-no-shared/a",
+          "issuerId": "./index.js",
+          "chunks": [
+            "webpack_container_remote_container-no-shared_a"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "container-no-shared/a",
+              "loc": "2:8-39",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleName": "./index.js",
+          "loc": "2:8-39",
+          "request": "container-no-shared/a",
+          "moduleId": "./index.js"
+        }
+      ]
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 12,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "03808aa4b03cb786e406",
+      "childrenByOrder": {},
+      "id": "webpack_container_remote_container-no-shared_b",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "remote-module",
+          "layer": null,
+          "size": 6,
+          "sizes": {
+            "remote": 6,
+            "share-init": 6
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+          "name": "remote container-no-shared/b",
+          "nameForCondition": "container-no-shared/b",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/container/remote/container-no-shared/b",
+          "issuerId": "./index.js",
+          "chunks": [
+            "webpack_container_remote_container-no-shared_b"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "container-no-shared/b",
+              "loc": "8:8-39",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleName": "./index.js",
+          "loc": "8:8-39",
+          "request": "container-no-shared/b",
+          "moduleId": "./index.js"
+        }
+      ]
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 12,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "d858592e880f40f6ca69",
+      "childrenByOrder": {},
+      "id": "webpack_container_remote_container-no-shared_modules",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "remote-module",
+          "layer": null,
+          "size": 6,
+          "sizes": {
+            "remote": 6,
+            "share-init": 6
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+          "name": "remote container-no-shared/modules",
+          "nameForCondition": "container-no-shared/modules",
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 6,
+          "postOrderIndex": 6,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/container/remote/container-no-shared/modules",
+          "issuerId": "./index.js",
+          "chunks": [
+            "webpack_container_remote_container-no-shared_modules"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "container-no-shared/modules",
+              "loc": "17:31-68",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleName": "./index.js",
+          "loc": "17:31-68",
+          "request": "container-no-shared/modules",
+          "moduleId": "./index.js"
+        }
+      ]
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 12,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "6ecef1636a116101c71e",
+      "childrenByOrder": {},
+      "id": "webpack_container_remote_container-no-shared_modules-from-remote",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "remote-module",
+          "layer": null,
+          "size": 6,
+          "sizes": {
+            "remote": 6,
+            "share-init": 6
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+          "name": "remote container-no-shared/modules-from-remote",
+          "nameForCondition": "container-no-shared/modules-from-remote",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "webpack/container/remote/container-no-shared/modules-from-remote",
+          "issuerId": "./index.js",
+          "chunks": [
+            "webpack_container_remote_container-no-shared_modules-from-remote"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "container-no-shared/modules-from-remote",
+              "loc": "14:31-16:2",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "moduleName": "./index.js",
+          "loc": "14:31-16:2",
+          "request": "container-no-shared/modules-from-remote",
+          "moduleId": "./index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 1441,
+      "sizes": {
+        "javascript": 1441
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./index.js",
+      "issuerId": null,
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-5:3",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "provide-module",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "share-init": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "provide module (default) shared@2 = ./shared",
+      "name": "provide shared module (default) shared@2 = ./shared",
+      "nameForCondition": null,
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/sharing/provide/default/shared",
+      "issuerId": null,
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "provide shared module",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "remote-module",
+      "layer": null,
+      "size": 6,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+      "name": "remote container-no-shared/a",
+      "nameForCondition": "container-no-shared/a",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/container/remote/container-no-shared/a",
+      "issuerId": "./index.js",
+      "chunks": [
+        "webpack_container_remote_container-no-shared_a"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "container-no-shared/a",
+          "loc": "2:8-39",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "remote-module",
+      "layer": null,
+      "size": 6,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+      "name": "remote container-no-shared/b",
+      "nameForCondition": "container-no-shared/b",
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 4,
+      "postOrderIndex": 4,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/container/remote/container-no-shared/b",
+      "issuerId": "./index.js",
+      "chunks": [
+        "webpack_container_remote_container-no-shared_b"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "container-no-shared/b",
+          "loc": "8:8-39",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "remote-module",
+      "layer": null,
+      "size": 6,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+      "name": "remote container-no-shared/modules-from-remote",
+      "nameForCondition": "container-no-shared/modules-from-remote",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/container/remote/container-no-shared/modules-from-remote",
+      "issuerId": "./index.js",
+      "chunks": [
+        "webpack_container_remote_container-no-shared_modules-from-remote"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "container-no-shared/modules-from-remote",
+          "loc": "14:31-16:2",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "remote-module",
+      "layer": null,
+      "size": 6,
+      "sizes": {
+        "remote": 6,
+        "share-init": 6
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+      "name": "remote container-no-shared/modules",
+      "nameForCondition": "container-no-shared/modules",
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 6,
+      "postOrderIndex": 6,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/container/remote/container-no-shared/modules",
+      "issuerId": "./index.js",
+      "chunks": [
+        "webpack_container_remote_container-no-shared_modules"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "container-no-shared/modules",
+          "loc": "17:31-68",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 35,
+      "sizes": {
+        "javascript": 35
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/shared.js",
+      "name": "./shared.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/shared.js",
+      "index": 7,
+      "preOrderIndex": 7,
+      "index2": 7,
+      "postOrderIndex": 7,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "provide module (default) shared@2 = ./shared",
+      "issuerName": "provide shared module (default) shared@2 = ./shared",
+      "issuerPath": [
+        {
+          "identifier": "provide module (default) shared@2 = ./shared",
+          "name": "provide shared module (default) shared@2 = ./shared",
+          "id": "webpack/sharing/provide/default/shared"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./shared.js",
+      "issuerId": "webpack/sharing/provide/default/shared",
+      "chunks": [
+        "shared_js"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "provide module (default) shared@2 = ./shared",
+          "module": "provide shared module (default) shared@2 = ./shared",
+          "moduleName": "provide shared module (default) shared@2 = ./shared",
+          "resolvedModuleIdentifier": "provide module (default) shared@2 = ./shared",
+          "resolvedModule": "provide shared module (default) shared@2 = ./shared",
+          "type": "provide module for shared",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./shared",
+          "moduleId": "webpack/sharing/provide/default/shared",
+          "resolvedModuleId": "webpack/sharing/provide/default/shared"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "value"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs-module \"../1-transitive-overriding/container-no-shared.js\"",
+      "name": "external \"../1-transitive-overriding/container-no-shared.js\"",
+      "nameForCondition": null,
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "optional": false,
+      "orphan": false,
+      "issuer": "remote (default) webpack/container/reference/container-no-shared ./modules",
+      "issuerName": "remote container-no-shared/modules",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/container/2-transitive-overriding/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        },
+        {
+          "identifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+          "name": "remote container-no-shared/modules",
+          "id": "webpack/container/remote/container-no-shared/modules"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "webpack/container/reference/container-no-shared",
+      "issuerId": "webpack/container/remote/container-no-shared/modules",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+          "module": "remote container-no-shared/a",
+          "moduleName": "remote container-no-shared/a",
+          "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./a",
+          "resolvedModule": "remote container-no-shared/a",
+          "type": "remote to external",
+          "active": true,
+          "explanation": "",
+          "userRequest": "webpack/container/reference/container-no-shared",
+          "moduleId": "webpack/container/remote/container-no-shared/a",
+          "resolvedModuleId": "webpack/container/remote/container-no-shared/a"
+        },
+        {
+          "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+          "module": "remote container-no-shared/b",
+          "moduleName": "remote container-no-shared/b",
+          "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./b",
+          "resolvedModule": "remote container-no-shared/b",
+          "type": "remote to external",
+          "active": true,
+          "explanation": "",
+          "userRequest": "webpack/container/reference/container-no-shared",
+          "moduleId": "webpack/container/remote/container-no-shared/b",
+          "resolvedModuleId": "webpack/container/remote/container-no-shared/b"
+        },
+        {
+          "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+          "module": "remote container-no-shared/modules",
+          "moduleName": "remote container-no-shared/modules",
+          "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules",
+          "resolvedModule": "remote container-no-shared/modules",
+          "type": "remote to external",
+          "active": true,
+          "explanation": "",
+          "userRequest": "webpack/container/reference/container-no-shared",
+          "moduleId": "webpack/container/remote/container-no-shared/modules",
+          "resolvedModuleId": "webpack/container/remote/container-no-shared/modules"
+        },
+        {
+          "moduleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+          "module": "remote container-no-shared/modules-from-remote",
+          "moduleName": "remote container-no-shared/modules-from-remote",
+          "resolvedModuleIdentifier": "remote (default) webpack/container/reference/container-no-shared ./modules-from-remote",
+          "resolvedModule": "remote container-no-shared/modules-from-remote",
+          "type": "remote to external",
+          "active": true,
+          "explanation": "",
+          "userRequest": "webpack/container/reference/container-no-shared",
+          "moduleId": "webpack/container/remote/container-no-shared/modules-from-remote",
+          "resolvedModuleId": "webpack/container/remote/container-no-shared/modules-from-remote"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))"
+      ],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 0,
+      "sizes": {
+        "runtime": 0
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/consumes",
+      "name": "webpack/runtime/consumes",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1141,
+      "sizes": {
+        "runtime": 1141
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/create fake namespace object",
+      "name": "webpack/runtime/create fake namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 175,
+      "sizes": {
+        "runtime": 175
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1850,
+      "sizes": {
+        "runtime": 1850
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 2649,
+      "sizes": {
+        "runtime": 2649
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/remotes loading",
+      "name": "webpack/runtime/remotes loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 2081,
+      "sizes": {
+        "runtime": 2081
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/sharing",
+      "name": "webpack/runtime/sharing",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 16944
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 16944,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 16944
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 16944,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

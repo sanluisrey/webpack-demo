@@ -1,0 +1,324 @@
+PublicPath: auto
+asset main.js 13.6 KiB {main} [emitted] (name: main)
+asset cycles.js 6.5 KiB {cycles} [emitted] (name: cycles)
+asset trees.js 4.47 KiB {trees} [emitted] (name: trees)
+asset cycle2.js 3.52 KiB {cycle2} [emitted] (name: cycle2)
+asset cycle.js 3.32 KiB {cycle} [emitted] (name: cycle)
+asset tree.js 3.14 KiB {tree} [emitted] (name: tree)
+asset id-equals-name_js-_70e2.js 1.21 KiB {id-equals-name_js-_70e2} [emitted] (name: id-equals-name_js-_70e2)
+asset id-equals-name_js_3.js 1.21 KiB {id-equals-name_js_3} [emitted]
+asset id-equals-name_js.js 1.21 KiB {id-equals-name_js} [emitted] (name: id-equals-name_js)
+asset id-equals-name_js0.js 1.2 KiB {id-equals-name_js0} [emitted]
+Entrypoint main 13.6 KiB = main.js
+Chunk Group tree 3.14 KiB = tree.js
+Chunk Group trees 4.47 KiB = trees.js
+Chunk Group cycle 3.32 KiB = cycle.js
+Chunk Group cycle2 3.52 KiB = cycle2.js
+Chunk Group cycles 6.5 KiB = cycles.js
+Chunk Group id-equals-name_js 1.21 KiB = id-equals-name_js.js
+Chunk Group id-equals-name_js-_70e2 1.21 KiB = id-equals-name_js-_70e2.js
+chunk {cycle} (runtime: main) cycle.js (cycle) 168 bytes <{main}> [rendered]
+  > ./cycle [./index.js] ./index.js 7:0-49
+  ./cycle/a.js 39 bytes {cycle} [depth 2] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./a [./cycle/index.js] 1:0-20
+    harmony import specifier ./a [./cycle/index.js] 2:15-16
+  ./cycle/b.js 39 bytes {cycle} [depth 3] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./b [./cycle/a.js] 1:0-20
+    harmony import specifier ./b [./cycle/a.js] 2:15-16
+  ./cycle/c.js 51 bytes {cycle} [depth 4] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./c [./cycle/b.js] 1:0-20
+    harmony import specifier ./c [./cycle/b.js] 2:15-16
+  ./cycle/index.js 39 bytes {cycle} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./index [./cycle/c.js] 1:0-28
+    harmony import specifier ./index [./cycle/c.js] 2:15-20
+    import() ./cycle [./index.js] 7:0-49
+chunk {cycle2} (runtime: main) cycle2.js (cycle2) 205 bytes <{main}> [rendered]
+  > ./cycle2 [./index.js] ./index.js 9:0-51
+  ./cycle2/a.js 39 bytes {cycle2} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./a [./cycle2/index.js] 1:0-20
+    harmony import specifier ./a [./cycle2/index.js] 2:15-16
+  ./cycle2/b.js 76 bytes {cycle2} [depth 3] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./b [./cycle2/a.js] 1:0-20
+    harmony import specifier ./b [./cycle2/a.js] 2:15-16
+  ./cycle2/c.js 51 bytes {cycle2} [depth 4] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./c [./cycle2/b.js] 1:0-20
+    harmony import specifier ./c [./cycle2/b.js] 3:15-16
+  ./cycle2/index.js 39 bytes {cycle2} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    from origin ./cycle2/b.js
+      harmony side effect evaluation ./index [./cycle2/b.js] 2:0-28
+      harmony import specifier ./index [./cycle2/b.js] 3:19-24
+    from origin ./cycle2/c.js
+      harmony side effect evaluation ./index [./cycle2/c.js] 1:0-28
+      harmony import specifier ./index [./cycle2/c.js] 2:15-20
+    import() ./cycle2 [./index.js] 9:0-51
+chunk {cycles} (runtime: main) cycles.js (cycles) 410 bytes <{main}> [rendered]
+  > ./cycles/1 [./index.js] ./index.js 11:0-53
+  > ./cycles/2 [./index.js] ./index.js 12:0-53
+  dependent modules 332 bytes [dependent]
+    modules by path ./cycles/1/*.js 166 bytes
+      ./cycles/1/a.js 76 bytes {cycles} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./a [./cycles/1/index.js] 1:0-20
+        harmony import specifier ./a [./cycles/1/index.js] 2:15-16
+      ./cycles/1/b.js 39 bytes {cycles} [depth 3] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./b [./cycles/1/a.js] 2:0-20
+        harmony import specifier ./b [./cycles/1/a.js] 3:23-24
+      ./cycles/1/c.js 51 bytes {cycles} [depth 4] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./c [./cycles/1/b.js] 1:0-20
+        harmony import specifier ./c [./cycles/1/b.js] 2:15-16
+    modules by path ./cycles/2/*.js 166 bytes
+      ./cycles/2/a.js 39 bytes {cycles} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./a [./cycles/2/index.js] 1:0-20
+        harmony import specifier ./a [./cycles/2/index.js] 2:15-16
+      ./cycles/2/b.js 76 bytes {cycles} [depth 3] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./b [./cycles/2/a.js] 1:0-20
+        harmony import specifier ./b [./cycles/2/a.js] 2:15-16
+      ./cycles/2/c.js 51 bytes {cycles} [depth 4] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation ./c [./cycles/2/b.js] 1:0-20
+        harmony import specifier ./c [./cycles/2/b.js] 3:15-16
+  ./cycles/1/index.js 39 bytes {cycles} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    from origin ./cycles/1/a.js
+      harmony side effect evaluation ./index [./cycles/1/a.js] 1:0-28
+      harmony import specifier ./index [./cycles/1/a.js] 3:15-20
+    from origin ./cycles/1/c.js
+      harmony side effect evaluation ./index [./cycles/1/c.js] 1:0-28
+      harmony import specifier ./index [./cycles/1/c.js] 2:15-20
+    import() ./cycles/1 [./index.js] 11:0-53
+  ./cycles/2/index.js 39 bytes {cycles} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    from origin ./cycles/2/b.js
+      harmony side effect evaluation ./index [./cycles/2/b.js] 2:0-28
+      harmony import specifier ./index [./cycles/2/b.js] 3:19-24
+    from origin ./cycles/2/c.js
+      harmony side effect evaluation ./index [./cycles/2/c.js] 1:0-28
+      harmony import specifier ./index [./cycles/2/c.js] 2:15-20
+    import() ./cycles/2 [./index.js] 12:0-53
+chunk {id-equals-name_js} (runtime: main) id-equals-name_js.js (id-equals-name_js) 21 bytes <{main}> [rendered]
+  > ./id-equals-name?1 [./index.js] ./index.js 15:0-72
+  ./id-equals-name.js?1 21 bytes {id-equals-name_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./id-equals-name?1 [./index.js] 15:0-72
+chunk {id-equals-name_js-_70e2} (runtime: main) id-equals-name_js-_70e2.js (id-equals-name_js-_70e2) 21 bytes <{main}> [rendered]
+  > ./id-equals-name?2 [./index.js] ./index.js 16:0-78
+  ./id-equals-name.js?2 21 bytes {id-equals-name_js-_70e2} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./id-equals-name?2 [./index.js] 16:0-78
+chunk {id-equals-name_js0} (runtime: main) id-equals-name_js0.js 21 bytes <{main}> [rendered]
+  > ./id-equals-name [./index.js] ./index.js 14:0-26
+  ./id-equals-name.js 21 bytes {id-equals-name_js0} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./id-equals-name [./index.js] 14:0-26
+chunk {id-equals-name_js_3} (runtime: main) id-equals-name_js_3.js 21 bytes <{main}> [rendered]
+  > ./id-equals-name?3 [./index.js] ./index.js 17:0-28
+  ./id-equals-name.js?3 21 bytes {id-equals-name_js_3} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./id-equals-name?3 [./index.js] 17:0-28
+chunk {main} (runtime: main) main.js (main) 639 bytes (javascript) 6.57 KiB (runtime) >{cycle}< >{cycle2}< >{cycles}< >{id-equals-name_js}< >{id-equals-name_js-_70e2}< >{id-equals-name_js0}< >{id-equals-name_js_3}< >{tree}< >{trees}< [entry] [rendered]
+  > ./index.js main
+  ./index.js 639 bytes {main} [depth 0] [built] [code generated]
+    [used exports unknown]
+    entry ./index.js main
+  webpack/runtime/define property getters 308 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 167 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3.01 KiB {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {main} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {tree} (runtime: main) tree.js (tree) 137 bytes <{main}> [rendered]
+  > ./tree [./index.js] ./index.js 1:0-47
+  ./tree/a.js 39 bytes {tree} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./a [./tree/index.js] 1:0-20
+    harmony import specifier ./a [./tree/index.js] 2:15-16
+  ./tree/b.js 39 bytes {tree} [depth 3] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./b [./tree/a.js] 1:0-20
+    harmony import specifier ./b [./tree/a.js] 2:15-16
+  ./tree/c.js 20 bytes {tree} [depth 4] [dependent] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    harmony side effect evaluation ./c [./tree/b.js] 1:0-20
+    harmony import specifier ./c [./tree/b.js] 2:15-16
+  ./tree/index.js 39 bytes {tree} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./tree [./index.js] 1:0-47
+chunk {trees} (runtime: main) trees.js (trees) 215 bytes <{main}> [rendered]
+  > ./trees/1 [./index.js] ./index.js 3:0-51
+  > ./trees/2 [./index.js] ./index.js 4:0-51
+  > ./trees/3 [./index.js] ./index.js 5:0-51
+  dependent modules 98 bytes [dependent]
+    ./trees/a.js 39 bytes {trees} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      [used exports unknown]
+      from origin ./trees/1.js
+        harmony side effect evaluation ./a [./trees/1.js] 1:0-20
+        harmony import specifier ./a [./trees/1.js] 2:15-16
+      from origin ./trees/2.js
+        harmony side effect evaluation ./a [./trees/2.js] 1:0-20
+        harmony import specifier ./a [./trees/2.js] 2:15-16
+    ./trees/b.js 39 bytes {trees} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      [used exports unknown]
+      from origin ./trees/3.js
+        harmony side effect evaluation ./b [./trees/3.js] 1:0-20
+        harmony import specifier ./b [./trees/3.js] 2:15-16
+      from origin ./trees/a.js
+        harmony side effect evaluation ./b [./trees/a.js] 1:0-20
+        harmony import specifier ./b [./trees/a.js] 2:15-16
+    ./trees/c.js 20 bytes {trees} [depth 3] [dependent] [built] [code generated]
+      [exports: default]
+      [used exports unknown]
+      harmony side effect evaluation ./c [./trees/b.js] 1:0-20
+      harmony import specifier ./c [./trees/b.js] 2:15-16
+  ./trees/1.js 39 bytes {trees} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./trees/1 [./index.js] 3:0-51
+  ./trees/2.js 39 bytes {trees} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./trees/2 [./index.js] 4:0-51
+  ./trees/3.js 39 bytes {trees} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    import() ./trees/3 [./index.js] 5:0-51
+  
+
+LOG from webpack.Compiler
+<t> make hook: 58.918444 ms
+<t> finish make hook: 0.035121 ms
+<t> finish compilation: 0.630455 ms
+<t> seal compilation: 10.733267 ms
+<t> afterCompile hook: 0.015422 ms
+<t> emitAssets: 3.476338 ms
+<t> emitRecords: 0.003853 ms
+<t> done hook: 0.01987 ms
+<t> beginIdle: 0.012387 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003528 ms
+<t> finish modules: 0.489896 ms
+<t> report dependency errors and warnings: 0.117939 ms
+<t> optimize dependencies: 0.034046 ms
+<t> create chunks: 0.568598 ms
+<t> compute affected modules with chunk graph: 0.002995 ms
+<t> optimize: 0.53039 ms
+    31 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.757497 ms
+    100% code generated (31 generated, 0 from cache)
+<t> code generation: 2.332617 ms
+<t> runtime requirements.modules: 0.13537 ms
+<t> runtime requirements.chunks: 0.093212 ms
+<t> runtime requirements.entries: 0.432629 ms
+<t> runtime requirements: 0.68712 ms
+<t> hashing: initialize hash: 0.007918 ms
+<t> hashing: sort chunks: 0.029253 ms
+<t> hashing: hash runtime modules: 1.213839 ms
+<t> hashing: hash chunks: 0.860919 ms
+<t> hashing: hash digest: 0.016751 ms
+<t> hashing: process full hash modules: 0.001353 ms
+<t> hashing: 2.219603 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.010352 ms
+<t> module assets: 0.023135 ms
+<t> create chunk assets: 2.872179 ms
+<t> process assets: 0.112729 ms
+
+LOG from webpack.ResolverCachePlugin
+    90% really resolved (35 real resolves with 0 cached but invalid, 4 cached valid, 0 concurrent)
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.162974 ms
+<t> figure out provided exports: 0.148261 ms
+    97% of exports of modules have been determined (1 no declared exports, 30 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.082538 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.005866 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.021843 ms
+<t> visitModules: visiting: 0.127553 ms
+<t> visitModules: calculating available modules: 0.009907 ms
+<t> visitModules: merging available modules: 0.007014 ms
+<t> visitModules: check modules for revisit: 0.005248 ms
+<t> visitModules: prepare: 0.099483 ms
+<t> visitModules: visiting: 0.267987 ms
+    74 queue items processed (43 blocks)
+    9 chunk groups connected
+    9 chunk groups processed for merging (9 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    9 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.448061 ms
+<t> connectChunkGroups: 0.028007 ms
+<t> cleanup: 0.002913 ms
+
+LOG from webpack.FileSystemInfo
+    66 new snapshots created
+    0% root snapshot uncached (0 / 4)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 97 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 79% (362/456) entries shared via 3 shared snapshots (36 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 59% (117/199) entries shared via 3 shared snapshots (36 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 76 ms (271cf9eaefce8d33c3ef)

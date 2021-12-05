@@ -1,0 +1,2023 @@
+{
+  "hash": "0668c0bc678ba9dc2107",
+  "version": "5.64.4",
+  "time": 19,
+  "builtAt": 1638693870640,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/graph/conditional-ensure",
+  "assetsByChunkName": {
+    "bundle0": [
+      "bundle0.js"
+    ],
+    "bundle1": [
+      "bundle1.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 7195,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 7195
+      },
+      "chunkNames": [
+        "bundle0"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "bundle0"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "bundle1.js",
+      "size": 7195,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 7195
+      },
+      "chunkNames": [
+        "bundle1"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "bundle1"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "c1_js.0a2a4ca7f66ac6d1c1a7.js",
+      "size": 723,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "immutable": true,
+        "chunkhash": "0a2a4ca7f66ac6d1c1a7",
+        "javascriptModule": false,
+        "size": 723
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "c1_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "c2_js.4b9037663712f4f9fc23.js",
+      "size": 723,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "immutable": true,
+        "chunkhash": "4b9037663712f4f9fc23",
+        "javascriptModule": false,
+        "size": 723
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "c2_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3338,
+      "sizes": {
+        "javascript": 249,
+        "runtime": 3089
+      },
+      "names": [
+        "bundle0"
+      ],
+      "idHints": [],
+      "runtime": [
+        "bundle0"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "e7f5a47599814754485e",
+      "childrenByOrder": {},
+      "id": "bundle0",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "c2_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 188,
+          "sizes": {
+            "javascript": 188
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "name": "./a.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 847,
+          "issuerId": null,
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./a",
+              "loc": "bundle0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-7:3",
+            "ModuleConcatenation bailout: Cannot concat with ./c1.js: Module ./c1.js is referenced from different chunks by these modules: ./c2.js"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 61,
+          "sizes": {
+            "javascript": 61
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "name": "./c1.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "issuerName": "./a.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "name": "./a.js",
+              "id": 847
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 606,
+          "issuerId": 847,
+          "chunks": [
+            "bundle0",
+            "c1_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony side effect evaluation",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "1:0-22",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "4:18-20",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+              "module": "./c2.js",
+              "moduleName": "./c2.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+              "resolvedModule": "./c2.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "1:21-35",
+              "moduleId": 334,
+              "resolvedModuleId": 334
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default",
+            "value"
+          ],
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 248,
+          "sizes": {
+            "runtime": 248
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1845,
+          "sizes": {
+            "runtime": 1845
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle0"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "bundle0",
+          "request": "./a"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3338,
+      "sizes": {
+        "javascript": 249,
+        "runtime": 3089
+      },
+      "names": [
+        "bundle1"
+      ],
+      "idHints": [],
+      "runtime": [
+        "bundle1"
+      ],
+      "files": [
+        "bundle1.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "99472313fd7a19940eea",
+      "childrenByOrder": {},
+      "id": "bundle1",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "c1_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 188,
+          "sizes": {
+            "javascript": 188
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "name": "./b.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 996,
+          "issuerId": null,
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./b",
+              "loc": "bundle1",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-7:3",
+            "ModuleConcatenation bailout: Cannot concat with ./c2.js: Module ./c2.js is referenced from different chunks by these modules: ./c1.js"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 61,
+          "sizes": {
+            "javascript": 61
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "name": "./c2.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 334,
+          "issuerId": 996,
+          "chunks": [
+            "bundle1",
+            "c2_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony side effect evaluation",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "1:0-22",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "4:18-20",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+              "module": "./c1.js",
+              "moduleName": "./c1.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+              "resolvedModule": "./c1.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "1:21-35",
+              "moduleId": 606,
+              "resolvedModuleId": 606
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default",
+            "value"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 248,
+          "sizes": {
+            "runtime": 248
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1845,
+          "sizes": {
+            "runtime": 1845
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "bundle1"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "bundle1",
+          "request": "./b"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 61,
+      "sizes": {
+        "javascript": 61
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "bundle0",
+        "bundle1"
+      ],
+      "files": [
+        "c1_js.0a2a4ca7f66ac6d1c1a7.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "0a2a4ca7f66ac6d1c1a7",
+      "childrenByOrder": {},
+      "id": "c1_js",
+      "siblings": [],
+      "parents": [
+        "bundle1",
+        "c2_js"
+      ],
+      "children": [
+        "c2_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 61,
+          "sizes": {
+            "javascript": 61
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "name": "./c1.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "issuerName": "./a.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "name": "./a.js",
+              "id": 847
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 606,
+          "issuerId": 847,
+          "chunks": [
+            "bundle0",
+            "c1_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony side effect evaluation",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "1:0-22",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "4:18-20",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+              "module": "./c2.js",
+              "moduleName": "./c2.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+              "resolvedModule": "./c2.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c1",
+              "loc": "1:21-35",
+              "moduleId": 334,
+              "resolvedModuleId": 334
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default",
+            "value"
+          ],
+          "optimizationBailout": [],
+          "depth": 2
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "moduleName": "./c2.js",
+          "loc": "1:21-35",
+          "request": "./c1",
+          "moduleId": 334
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 61,
+      "sizes": {
+        "javascript": 61
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "bundle0",
+        "bundle1"
+      ],
+      "files": [
+        "c2_js.4b9037663712f4f9fc23.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "4b9037663712f4f9fc23",
+      "childrenByOrder": {},
+      "id": "c2_js",
+      "siblings": [],
+      "parents": [
+        "bundle0",
+        "c1_js"
+      ],
+      "children": [
+        "c1_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 61,
+          "sizes": {
+            "javascript": 61
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "name": "./c2.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 334,
+          "issuerId": 996,
+          "chunks": [
+            "bundle1",
+            "c2_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony side effect evaluation",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "1:0-22",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "4:18-20",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+              "module": "./c1.js",
+              "moduleName": "./c1.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+              "resolvedModule": "./c1.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c2",
+              "loc": "1:21-35",
+              "moduleId": 606,
+              "resolvedModuleId": 606
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default",
+            "value"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "moduleName": "./c1.js",
+          "loc": "1:21-35",
+          "request": "./c2",
+          "moduleId": 606
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 188,
+      "sizes": {
+        "javascript": 188
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+      "name": "./a.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 847,
+      "issuerId": null,
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./a",
+          "loc": "bundle0",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-7:3",
+        "ModuleConcatenation bailout: Cannot concat with ./c1.js: Module ./c1.js is referenced from different chunks by these modules: ./c2.js"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 188,
+      "sizes": {
+        "javascript": 188
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+      "name": "./b.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 996,
+      "issuerId": null,
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./b",
+          "loc": "bundle1",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-7:3",
+        "ModuleConcatenation bailout: Cannot concat with ./c2.js: Module ./c2.js is referenced from different chunks by these modules: ./c1.js"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 61,
+      "sizes": {
+        "javascript": 61
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+      "name": "./c2.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+      "issuerName": "./b.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "name": "./b.js",
+          "id": 996
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 334,
+      "issuerId": 996,
+      "chunks": [
+        "bundle1",
+        "c2_js"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "resolvedModule": "./b.js",
+          "type": "harmony side effect evaluation",
+          "active": false,
+          "explanation": "",
+          "userRequest": "./c2",
+          "loc": "1:0-22",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/b.js",
+          "resolvedModule": "./b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./c2",
+          "loc": "4:18-20",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "module": "./c1.js",
+          "moduleName": "./c1.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+          "resolvedModule": "./c1.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./c2",
+          "loc": "1:21-35",
+          "moduleId": 606,
+          "resolvedModuleId": 606
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default",
+        "value"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 61,
+      "sizes": {
+        "javascript": 61
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+      "name": "./c1.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c1.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+      "issuerName": "./a.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "name": "./a.js",
+          "id": 847
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 606,
+      "issuerId": 847,
+      "chunks": [
+        "bundle0",
+        "c1_js"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "resolvedModule": "./a.js",
+          "type": "harmony side effect evaluation",
+          "active": false,
+          "explanation": "",
+          "userRequest": "./c1",
+          "loc": "1:0-22",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/a.js",
+          "resolvedModule": "./a.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./c1",
+          "loc": "4:18-20",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "module": "./c2.js",
+          "moduleName": "./c2.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/graph/conditional-ensure/c2.js",
+          "resolvedModule": "./c2.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./c1",
+          "loc": "1:21-35",
+          "moduleId": 334,
+          "resolvedModuleId": 334
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default",
+        "value"
+      ],
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 248,
+      "sizes": {
+        "runtime": 248
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 248,
+      "sizes": {
+        "runtime": 248
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1845,
+      "sizes": {
+        "runtime": 1845
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1845,
+      "sizes": {
+        "runtime": 1845
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "bundle0": {
+      "name": "bundle0",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 7195
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7195,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "bundle1": {
+      "name": "bundle1",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [
+        {
+          "name": "bundle1.js",
+          "size": 7195
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7195,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "bundle0": {
+      "name": "bundle0",
+      "chunks": [
+        "bundle0"
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 7195
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7195,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "bundle1": {
+      "name": "bundle1",
+      "chunks": [
+        "bundle1"
+      ],
+      "assets": [
+        {
+          "name": "bundle1.js",
+          "size": 7195
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7195,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

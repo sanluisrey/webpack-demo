@@ -1,0 +1,160 @@
+PublicPath: (none)
+asset bundle.js 6.88 KiB {0} [emitted] (name: main)
+Entrypoint main 6.88 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1.68 KiB (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./parsing/issue-8874/ main
+  cacheable modules 1.68 KiB
+    ./parsing/issue-8874/index.js [0] 828 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 6:0-8:3
+      entry ./parsing/issue-8874/ main
+    ./parsing/issue-8874/module.js [1] 261 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./module [0] ./parsing/issue-8874/index.js 1:0-34
+      harmony import specifier ./module [0] ./parsing/issue-8874/index.js 7:8-18
+    ./parsing/issue-8874/moduleDefaultParameter.js [2] 252 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./moduleDefaultParameter [0] ./parsing/issue-8874/index.js 2:0-66
+      harmony import specifier ./moduleDefaultParameter [0] ./parsing/issue-8874/index.js 11:8-34
+    ./parsing/issue-8874/moduleExportedFunctionExpression.js [3] 170 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./moduleExportedFunctionExpression [0] ./parsing/issue-8874/index.js 3:0-86
+      harmony import specifier ./moduleExportedFunctionExpression [0] ./parsing/issue-8874/index.js 15:8-44
+    ./parsing/issue-8874/moduleExportedFunctionExpressionDefaultParameter.js [4] 206 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./moduleExportedFunctionExpressionDefaultParameter [0] ./parsing/issue-8874/index.js 4:0-118
+      harmony import specifier ./moduleExportedFunctionExpressionDefaultParameter [0] ./parsing/issue-8874/index.js 19:8-60
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 1.73 KiB
+  ./parsing/issue-8874/index.js [0] 828 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 6:0-8:3
+    entry ./parsing/issue-8874/ main
+  ./parsing/issue-8874/module.js [1] 261 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./module [0] ./parsing/issue-8874/index.js 1:0-34
+    harmony import specifier ./module [0] ./parsing/issue-8874/index.js 7:8-18
+  ./parsing/issue-8874/moduleDefaultParameter.js [2] 252 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./moduleDefaultParameter [0] ./parsing/issue-8874/index.js 2:0-66
+    harmony import specifier ./moduleDefaultParameter [0] ./parsing/issue-8874/index.js 11:8-34
+  ./parsing/issue-8874/moduleExportedFunctionExpression.js [3] 170 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./moduleExportedFunctionExpression [0] ./parsing/issue-8874/index.js 3:0-86
+    harmony import specifier ./moduleExportedFunctionExpression [0] ./parsing/issue-8874/index.js 15:8-44
+  ./parsing/issue-8874/moduleExportedFunctionExpressionDefaultParameter.js [4] 206 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./moduleExportedFunctionExpressionDefaultParameter [0] ./parsing/issue-8874/index.js 4:0-118
+    harmony import specifier ./moduleExportedFunctionExpressionDefaultParameter [0] ./parsing/issue-8874/index.js 19:8-60
+  ./parsing/issue-8874/someFunction.js 56 bytes [depth 2] [orphan] [built]
+    [exports: default]
+    [module unused]
+    [inactive] harmony side effect evaluation ./someFunction [1] ./parsing/issue-8874/module.js 1:0-42
+    [inactive] harmony side effect evaluation ./someFunction [3] ./parsing/issue-8874/moduleExportedFunctionExpression.js 1:0-42
+    [inactive] harmony side effect evaluation ./someFunction [4] ./parsing/issue-8874/moduleExportedFunctionExpressionDefaultParameter.js 2:0-42
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 75.110707 ms
+<t> finish make hook: 0.018505 ms
+<t> finish compilation: 0.170502 ms
+<t> seal compilation: 3.068509 ms
+<t> afterCompile hook: 0.005999 ms
+<t> emitAssets: 7.24014 ms
+<t> emitRecords: 0.00192 ms
+<t> done hook: 0.008671 ms
+<t> beginIdle: 0.0052 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005173 ms
+<t> finish modules: 0.123861 ms
+<t> report dependency errors and warnings: 0.030428 ms
+<t> optimize dependencies: 0.160911 ms
+<t> create chunks: 0.255569 ms
+<t> compute affected modules with chunk graph: 0.00196 ms
+<t> optimize: 0.582275 ms
+    5 modules hashed, 0 from cache (0.83 variants per module in average)
+<t> module hashing: 0.275487 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.293446 ms
+<t> runtime requirements.modules: 0.121367 ms
+<t> runtime requirements.chunks: 0.032372 ms
+<t> runtime requirements.entries: 0.12149 ms
+<t> runtime requirements: 0.289932 ms
+<t> hashing: initialize hash: 0.0024 ms
+<t> hashing: sort chunks: 0.011446 ms
+<t> hashing: hash runtime modules: 0.07887 ms
+<t> hashing: hash chunks: 0.257764 ms
+<t> hashing: hash digest: 0.014918 ms
+<t> hashing: process full hash modules: 0.000876 ms
+<t> hashing: 0.389479 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.004809 ms
+<t> module assets: 0.008321 ms
+<t> create chunk assets: 0.540426 ms
+<t> process assets: 0.034496 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021206 ms
+<t> figure out provided exports: 0.045028 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.013748 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.027247 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005642 ms
+<t> trace exports usage in graph: 0.094367 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017337 ms
+<t> visitModules: visiting: 0.056341 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.170187 ms
+<t> connectChunkGroups: 0.001401 ms
+<t> cleanup: 0.001553 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013222 ms
+<t> modules: 0.068588 ms
+<t> queue: 0.001856 ms
+<t> maxSize: 0.004413 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:38: webpack 5.64.4 compiled successfully in 89 ms (86fbd803d62eb767a28d)

@@ -1,0 +1,128 @@
+PublicPath: (none)
+assets by status 324 bytes [cached] 1 asset
+Entrypoint main = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 84 bytes (javascript) 0 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 84 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  webpack/runtime/compat 0 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.058308 ms
+<t> finish make hook: 0.012027 ms
+<t> finish compilation: 0.152243 ms
+<t> seal compilation: 7.420262 ms
+<t> afterCompile hook: 0.010319 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005874 ms
+<t> finish modules: 0.118203 ms
+<t> report dependency errors and warnings: 0.010314 ms
+<t> optimize dependencies: 0.112318 ms
+<t> create chunks: 0.171353 ms
+<t> compute affected modules with chunk graph: 0.003413 ms
+<t> optimize: 0.685059 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.071854 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 1.860639 ms
+<t> runtime requirements.modules: 0.019411 ms
+<t> runtime requirements.chunks: 0.044999 ms
+<t> runtime requirements.entries: 0.316377 ms
+<t> runtime requirements: 0.416092 ms
+<t> hashing: initialize hash: 0.006435 ms
+<t> hashing: sort chunks: 0.019134 ms
+<t> hashing: hash runtime modules: 0.42669 ms
+<t> hashing: hash chunks: 0.124613 ms
+<t> hashing: hash digest: 0.009562 ms
+<t> hashing: process full hash modules: 0.175546 ms
+<t> hashing: 0.801401 ms
+    100% code generated (1 generated, 0 from cache)
+<t> record hash: 0.022993 ms
+<t> module assets: 0.015134 ms
+<t> create chunk assets: 0.310302 ms
+<t> process assets: 0.102746 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021039 ms
+<t> figure out provided exports: 0.00167 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.004659 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.007783 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.00595 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005422 ms
+<t> trace exports usage in graph: 0.051419 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.004096 ms
+<t> visitModules: visiting: 0.03433 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.070246 ms
+<t> connectChunkGroups: 0.00321 ms
+<t> cleanup: 0.002333 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021498 ms
+<t> modules: 0.08739 ms
+<t> queue: 0.002663 ms
+<t> maxSize: 0.007444 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.009556 ms
+<t> sort relevant modules: 0.001469 ms
+<t> find modules to concatenate: 0.002591 ms
+<t> sort concat configurations: 0.001024 ms
+<t> create concatenated modules: 0.004702 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 1 hashes 1 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in webpack/runtime/compat
+Test exception
+Error: Test exception
+    at /Users/yoh/Projects/repos/webpack/test/configCases/errors/exception-in-chunk-renderer/webpack.config.js:7:12
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at CompatRuntimeModule.generate (/Users/yoh/Projects/repos/webpack/lib/runtime/CompatRuntimeModule.js:41:66)
+    at CompatRuntimeModule.getGeneratedCode (/Users/yoh/Projects/repos/webpack/lib/RuntimeModule.js:182:44)
+    at CompatRuntimeModule.codeGeneration (/Users/yoh/Projects/repos/webpack/lib/RuntimeModule.js:137:30)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3281:22
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:93:5
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at Cache.get (/Users/yoh/Projects/repos/webpack/lib/Cache.js:75:18)
+    at ItemCacheFacade.get (/Users/yoh/Projects/repos/webpack/lib/CacheFacade.js:118:15)
+CodeGenerationError: Test exception
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3289:18
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:93:5
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at Cache.get (/Users/yoh/Projects/repos/webpack/lib/Cache.js:75:18)
+    at ItemCacheFacade.get (/Users/yoh/Projects/repos/webpack/lib/CacheFacade.js:118:15)
+    at Compilation._codeGenerationModule (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3274:9)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3200:10
+    at arrayIterator (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3467:9)
+    at timesSync (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2297:7)
+    at Object.eachLimit (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3463:5)
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 error in 23 ms (c75211f98365cf3eaf3f)

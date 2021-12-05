@@ -1,0 +1,279 @@
+PublicPath: (none)
+assets by path *.wasm 1.37 KiB
+  asset 7eada966ddcdc162daf2.module.wasm 531 bytes ({0}) [emitted] [immutable]
+  asset 5564c45a44998a102c13.module.wasm 290 bytes ({0}) [emitted] [immutable]
+  asset 830a34301bf67f029bdf.module.wasm 156 bytes ({0}) [emitted] [immutable]
+  asset 48bbd7cc517ba442ccea.module.wasm 154 bytes ({0}) [emitted] [immutable]
+  asset e0c4c460967584e814a4.module.wasm 154 bytes ({0}) [emitted] [immutable]
+  asset d8b9982db915469ade50.module.wasm 120 bytes ({0}) [emitted] [immutable]
+assets by path *.js 21.3 KiB
+  asset bundle.js 11.4 KiB {1} [emitted] (name: main)
+  asset 0.bundle.js 9.86 KiB {0} [emitted]
+Entrypoint main 11.4 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 1.74 KiB (javascript) 1.37 KiB (webassembly) <{1}> [rendered]
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 10:8-25
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 14:8-25
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 18:8-25
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 22:8-25
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 2:8-25
+  > ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 6:8-25
+  webassembly modules 310 bytes (javascript) 1.37 KiB (webassembly)
+    ./wasm/wasm-explorer-examples-sync/Q_rsqrt.wasm [2] 50 bytes (javascript) 156 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z7Q_rsqrtf, memory]
+      [only some exports used: _Z7Q_rsqrtf]
+      harmony side effect evaluation ./Q_rsqrt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 1:0-42
+      harmony import specifier ./Q_rsqrt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 9:16-35
+    ./wasm/wasm-explorer-examples-sync/duff.wasm [8] 50 bytes (javascript) 531 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z4sendPcS_m, memory]
+      [all exports used]
+      harmony side effect evaluation ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 6:0-36
+      harmony import specifier ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 43:29-47
+      harmony import specifier ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 47:16-33
+    ./wasm/wasm-explorer-examples-sync/fact.wasm [4] 50 bytes (javascript) 154 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z4facti, memory]
+      [only some exports used: _Z4facti]
+      harmony side effect evaluation ./fact.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 3:0-36
+      harmony import specifier ./fact.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 25:16-29
+    ./wasm/wasm-explorer-examples-sync/fast-math.wasm [6] 60 bytes (javascript) 290 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z3food, _Z6do_powd, _Z6factorddd, _Z8call_powd, _Z9maybe_mindd, memory]
+      [only some exports used: _Z3food, _Z6do_powd, _Z6factorddd, _Z8call_powd, _Z9maybe_mindd]
+      harmony side effect evaluation ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 5:0-45
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 35:8-24
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 36:8-31
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 37:8-29
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 38:8-27
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 39:8-29
+    ./wasm/wasm-explorer-examples-sync/popcnt.wasm [5] 50 bytes (javascript) 120 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z5countj, main, memory]
+      [only some exports used: _Z5countj, main]
+      harmony side effect evaluation ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 4:0-40
+      harmony import specifier ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 30:8-19
+      harmony import specifier ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 31:8-24
+    ./wasm/wasm-explorer-examples-sync/testFunction.wasm [3] 50 bytes (javascript) 154 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+      [exports: _Z12testFunctionPii, memory]
+      [all exports used]
+      harmony side effect evaluation ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 2:0-52
+      harmony import specifier ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 15:29-55
+      harmony import specifier ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 20:16-48
+  javascript modules 1.44 KiB
+    ./wasm/wasm-explorer-examples-sync/node_modules/env.js [7] 34 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: _Z3powdd]
+      [all exports used]
+      Statement (ExportNamedDeclaration) with side effects in source code at 1:0-33
+      wasm import env [6] ./wasm/wasm-explorer-examples-sync/fast-math.wasm
+    ./wasm/wasm-explorer-examples-sync/tests.js [1] 1.4 KiB {0} [depth 1] [built] [code generated]
+      [exports: run_Q_rsqrt, run_duff, run_fact, run_fastMath, run_popcnt, run_testFunction]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-42
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 2:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 6:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 10:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 14:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 18:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 22:8-25
+chunk {1} (runtime: main) bundle.js (main) 586 bytes (javascript) 5.79 KiB (runtime) >{0}< [entry] [rendered]
+  > ./wasm/wasm-explorer-examples-sync/ main
+  ./wasm/wasm-explorer-examples-sync/index.js [0] 586 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./wasm/wasm-explorer-examples-sync/ main
+  webpack/runtime/async module 2.16 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 2.31 KiB (javascript) 1.37 KiB (webassembly)
+  webassembly modules 310 bytes (javascript) 1.37 KiB (webassembly)
+    ./wasm/wasm-explorer-examples-sync/Q_rsqrt.wasm [2] 50 bytes (javascript) 156 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z7Q_rsqrtf, memory]
+      [only some exports used: _Z7Q_rsqrtf]
+      harmony side effect evaluation ./Q_rsqrt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 1:0-42
+      harmony import specifier ./Q_rsqrt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 9:16-35
+    ./wasm/wasm-explorer-examples-sync/testFunction.wasm [3] 50 bytes (javascript) 154 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z12testFunctionPii, memory]
+      [all exports used]
+      harmony side effect evaluation ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 2:0-52
+      harmony import specifier ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 15:29-55
+      harmony import specifier ./testFunction.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 20:16-48
+    ./wasm/wasm-explorer-examples-sync/fact.wasm [4] 50 bytes (javascript) 154 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z4facti, memory]
+      [only some exports used: _Z4facti]
+      harmony side effect evaluation ./fact.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 3:0-36
+      harmony import specifier ./fact.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 25:16-29
+    ./wasm/wasm-explorer-examples-sync/popcnt.wasm [5] 50 bytes (javascript) 120 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z5countj, main, memory]
+      [only some exports used: _Z5countj, main]
+      harmony side effect evaluation ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 4:0-40
+      harmony import specifier ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 30:8-19
+      harmony import specifier ./popcnt.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 31:8-24
+    ./wasm/wasm-explorer-examples-sync/fast-math.wasm [6] 60 bytes (javascript) 290 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z3food, _Z6do_powd, _Z6factorddd, _Z8call_powd, _Z9maybe_mindd, memory]
+      [only some exports used: _Z3food, _Z6do_powd, _Z6factorddd, _Z8call_powd, _Z9maybe_mindd]
+      harmony side effect evaluation ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 5:0-45
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 35:8-24
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 36:8-31
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 37:8-29
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 38:8-27
+      harmony import specifier ./fast-math.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 39:8-29
+    ./wasm/wasm-explorer-examples-sync/duff.wasm [8] 50 bytes (javascript) 531 bytes (webassembly) {0} [depth 2] [built] [code generated]
+      [exports: _Z4sendPcS_m, memory]
+      [all exports used]
+      harmony side effect evaluation ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 6:0-36
+      harmony import specifier ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 43:29-47
+      harmony import specifier ./duff.wasm [1] ./wasm/wasm-explorer-examples-sync/tests.js 47:16-33
+  javascript modules 2.01 KiB
+    ./wasm/wasm-explorer-examples-sync/index.js [0] 586 bytes {1} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+      entry ./wasm/wasm-explorer-examples-sync/ main
+    ./wasm/wasm-explorer-examples-sync/tests.js [1] 1.4 KiB {0} [depth 1] [built] [code generated]
+      [exports: run_Q_rsqrt, run_duff, run_fact, run_fastMath, run_popcnt, run_testFunction]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-42
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 2:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 6:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 10:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 14:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 18:8-25
+      import() ./tests [0] ./wasm/wasm-explorer-examples-sync/index.js 22:8-25
+    ./wasm/wasm-explorer-examples-sync/node_modules/env.js [7] 34 bytes {0} [depth 3] [built] [code generated]
+      [exports: _Z3powdd]
+      [all exports used]
+      Statement (ExportNamedDeclaration) with side effects in source code at 1:0-33
+      wasm import env [6] ./wasm/wasm-explorer-examples-sync/fast-math.wasm
+runtime modules 5.79 KiB
+  webpack/runtime/async module 2.16 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 20.831045 ms
+<t> finish make hook: 0.011469 ms
+<t> finish compilation: 0.246081 ms
+<t> seal compilation: 4.234792 ms
+<t> afterCompile hook: 0.006496 ms
+<t> emitAssets: 1.639375 ms
+<t> emitRecords: 0.002418 ms
+<t> done hook: 0.01021 ms
+<t> beginIdle: 0.006323 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003924 ms
+<t> finish modules: 0.178301 ms
+<t> report dependency errors and warnings: 0.053734 ms
+<t> optimize dependencies: 0.188449 ms
+<t> create chunks: 0.281064 ms
+<t> compute affected modules with chunk graph: 0.001184 ms
+<t> optimize: 0.652187 ms
+    9 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.211931 ms
+    100% code generated (9 generated, 0 from cache)
+<t> code generation: 0.641363 ms
+<t> runtime requirements.modules: 0.061222 ms
+<t> runtime requirements.chunks: 0.056403 ms
+<t> runtime requirements.entries: 0.327312 ms
+<t> runtime requirements: 0.461325 ms
+<t> hashing: initialize hash: 0.002242 ms
+<t> hashing: sort chunks: 0.01313 ms
+<t> hashing: hash runtime modules: 0.605219 ms
+<t> hashing: hash chunks: 0.225477 ms
+<t> hashing: hash digest: 0.009813 ms
+<t> hashing: process full hash modules: 0.001198 ms
+<t> hashing: 0.886498 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.006603 ms
+<t> module assets: 0.01212 ms
+<t> create chunk assets: 0.632207 ms
+<t> process assets: 0.03569 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023449 ms
+<t> figure out provided exports: 0.06706 ms
+    89% of exports of modules have been determined (1 no declared exports, 8 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.025456 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.007465 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004669 ms
+<t> trace exports usage in graph: 0.146904 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005381 ms
+<t> visitModules: visiting: 0.058663 ms
+<t> visitModules: calculating available modules: 0.007843 ms
+<t> visitModules: merging available modules: 0.005667 ms
+<t> visitModules: check modules for revisit: 0.002729 ms
+<t> visitModules: prepare: 0.012734 ms
+<t> visitModules: visiting: 0.11165 ms
+    104 queue items processed (55 blocks)
+    6 chunk groups connected
+    6 chunk groups processed for merging (6 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    6 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.209512 ms
+<t> connectChunkGroups: 0.013026 ms
+<t> cleanup: 0.001795 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012892 ms
+<t> modules: 0.130512 ms
+<t> queue: 0.010368 ms
+<t> maxSize: 0.006482 ms
+
+LOG from webpack.FileSystemInfo
+    9 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 9 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/9) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:45: webpack 5.64.4 compiled successfully in 28 ms (fab92f3bff34c4c0c94a)

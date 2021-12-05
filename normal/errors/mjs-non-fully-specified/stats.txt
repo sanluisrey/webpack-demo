@@ -1,0 +1,176 @@
+PublicPath: (none)
+asset bundle.js 5.93 KiB {1} [emitted] (name: main)
+asset 0.bundle.js 818 bytes {0} [emitted]
+Entrypoint main 5.93 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 23 bytes <{1}> [rendered]
+  > ./module.mjs [0] ./errors/mjs-non-fully-specified/index.js 2:14-36
+  ./errors/mjs-non-fully-specified/module.mjs [1] 23 bytes {0} [depth 1] [built] [code generated]
+    [no exports]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-22
+    import() ./module.mjs [0] ./errors/mjs-non-fully-specified/index.js 2:14-36
+chunk {1} (runtime: main) bundle.js (main) 155 bytes (javascript) 2.64 KiB (runtime) >{0}< [entry] [rendered]
+  > ./errors/mjs-non-fully-specified/ main
+  ./errors/mjs-non-fully-specified/index.js [0] 155 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./errors/mjs-non-fully-specified/ main
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+runtime modules 2.64 KiB
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 178 bytes
+  ./errors/mjs-non-fully-specified/index.js [0] 155 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./errors/mjs-non-fully-specified/ main
+  ./errors/mjs-non-fully-specified/module.mjs [1] 23 bytes {0} [depth 1] [built] [code generated]
+    [no exports]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-22
+    import() ./module.mjs [0] ./errors/mjs-non-fully-specified/index.js 2:14-36
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.396606 ms
+<t> finish make hook: 0.01259 ms
+<t> finish compilation: 0.126421 ms
+<t> seal compilation: 3.300245 ms
+<t> afterCompile hook: 0.008216 ms
+<t> emitAssets: 1.354079 ms
+<t> emitRecords: 0.002696 ms
+<t> done hook: 0.00962 ms
+<t> beginIdle: 0.006842 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004599 ms
+<t> finish modules: 0.095099 ms
+<t> report dependency errors and warnings: 0.012047 ms
+<t> optimize dependencies: 0.127434 ms
+<t> create chunks: 0.173539 ms
+<t> compute affected modules with chunk graph: 0.002935 ms
+<t> optimize: 0.420607 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.122168 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.214707 ms
+<t> runtime requirements.modules: 0.034748 ms
+<t> runtime requirements.chunks: 0.049802 ms
+<t> runtime requirements.entries: 0.385628 ms
+<t> runtime requirements: 0.494828 ms
+<t> hashing: initialize hash: 0.003652 ms
+<t> hashing: hash errors: 0.001863 ms
+<t> hashing: sort chunks: 0.015904 ms
+<t> hashing: hash runtime modules: 0.68369 ms
+<t> hashing: hash chunks: 0.23782 ms
+<t> hashing: hash digest: 0.015323 ms
+<t> hashing: process full hash modules: 0.001175 ms
+<t> hashing: 1.010961 ms
+    100% code generated (5 generated, 0 from cache)
+<t> record hash: 0.008809 ms
+<t> module assets: 0.012065 ms
+<t> create chunk assets: 0.445643 ms
+<t> process assets: 0.040394 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.022578 ms
+<t> figure out provided exports: 0.011942 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010665 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.012043 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004282 ms
+<t> trace exports usage in graph: 0.073632 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.006501 ms
+<t> visitModules: visiting: 0.037156 ms
+<t> visitModules: calculating available modules: 0.009017 ms
+<t> visitModules: merging available modules: 0.004506 ms
+<t> visitModules: check modules for revisit: 0.005359 ms
+<t> visitModules: prepare: 0.002006 ms
+<t> visitModules: visiting: 0.013482 ms
+    5 queue items processed (3 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.099632 ms
+<t> connectChunkGroups: 0.00822 ms
+<t> cleanup: 0.002038 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015768 ms
+<t> modules: 0.055179 ms
+<t> queue: 0.002109 ms
+<t> maxSize: 0.008894 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./errors/mjs-non-fully-specified/module.mjs 1:0-22
+Module not found: Error: Can't resolve './dependency' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/mjs-non-fully-specified'
+Did you mean 'dependency.js'?
+BREAKING CHANGE: The request './dependency' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+resolve './dependency' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/mjs-non-fully-specified'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/errors/mjs-non-fully-specified)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/errors/mjs-non-fully-specified/dependency)
+      Field 'browser' doesn't contain a valid alias configuration
+      /Users/yoh/Projects/repos/webpack/test/cases/errors/mjs-non-fully-specified/dependency doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './dependency' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/mjs-non-fully-specified'
+Did you mean 'dependency.js'?
+BREAKING CHANGE: The request './dependency' failed to resolve only because it was resolved as fully specified
+(probably because the origin is strict EcmaScript Module, e. g. a module with javascript mimetype, a '*.mjs' file, or a '*.js' file where the package.json contains '"type": "module"').
+The extension in the request is mandatory for it to be fully specified.
+Add the extension to the request.
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+ @ ./errors/mjs-non-fully-specified/index.js 2:14-36
+
+2021-12-05 17:44:24: webpack 5.64.4 compiled with 1 error in 17 ms (370afd083edc069e25de)

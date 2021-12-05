@@ -1,0 +1,179 @@
+PublicPath: (none)
+asset bundle0.js 16.8 KiB {179} [emitted] (name: main)
+Entrypoint main 16.8 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 2.7 KiB (javascript) 4.19 KiB (runtime) [entry] [rendered]
+  > ./index.js main
+  built modules 2.7 KiB [built]
+    cacheable modules 2.5 KiB
+      ./index.js [10] 1.19 KiB {179} [depth 0] [built] [code generated]
+        [no exports]
+        Statement (ExpressionStatement) with side effects in source code at 7:0-12:3
+        ModuleConcatenation bailout: Module is async
+        entry ./index.js main
+        used as library export
+      ./module.mjs [73] 1.31 KiB {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 6:0-11:3
+        ModuleConcatenation bailout: Module is async
+        harmony side effect evaluation ./module.mjs [10] ./index.js 5:0-22
+    external "new Promise((resolve, reject) => setTimeout(() => reject(new Error('external reject')), 100))" [916] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      import() failing-promise-external [10] ./index.js 15:21-55
+      import() failing-promise-external [73] ./module.mjs 14:21-55
+    external "new Promise(resolve => setTimeout(() => resolve(42), 100))" [456] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      from origin ./index.js
+        harmony side effect evaluation promise-external [10] ./index.js 1:0-37
+        harmony import specifier promise-external [10] ./index.js 8:8-13
+        import() promise-external [10] ./index.js 23:8-34
+      from origin ./module.mjs
+        harmony side effect evaluation promise-external [73] ./module.mjs 1:0-37
+        harmony import specifier promise-external [73] ./module.mjs 7:8-13
+        import() promise-external [73] ./module.mjs 22:8-34
+    external "new Promise(resolve => setTimeout(() => resolve({ __esModule: true, default: 42, named: true }), 100))" [79] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      from origin ./index.js
+        harmony side effect evaluation module-promise-external [10] ./index.js 2:0-45
+        harmony import specifier module-promise-external [10] ./index.js 9:8-14
+        import() module-promise-external [10] ./index.js 29:8-41
+      from origin ./module.mjs
+        harmony side effect evaluation module-promise-external [73] ./module.mjs 2:0-45
+        harmony import specifier module-promise-external [73] ./module.mjs 8:8-14
+        import() module-promise-external [73] ./module.mjs 28:8-41
+    external "new Promise(resolve => setTimeout(() => resolve({ default: 42, named: true }), 100))" [993] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      from origin ./index.js
+        harmony side effect evaluation object-promise-external [10] ./index.js 3:0-45
+        harmony import specifier object-promise-external [10] ./index.js 10:8-14
+        import() object-promise-external [10] ./index.js 35:8-41
+      from origin ./module.mjs
+        harmony side effect evaluation object-promise-external [73] ./module.mjs 3:0-45
+        harmony import specifier object-promise-external [73] ./module.mjs 9:8-14
+        import() object-promise-external [73] ./module.mjs 36:8-41
+    external ["/hello/world.js","request"] [964] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      from origin ./index.js
+        harmony side effect evaluation import-external [10] ./index.js 4:0-38
+        harmony import specifier import-external [10] ./index.js 11:8-15
+      from origin ./module.mjs
+        harmony side effect evaluation import-external [73] ./module.mjs 4:0-38
+        harmony import specifier import-external [73] ./module.mjs 10:8-15
+  runtime modules 4.19 KiB
+    webpack/runtime/async module 2.16 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/create fake namespace object 1.11 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.817962 ms
+<t> finish make hook: 0.021962 ms
+<t> finish compilation: 0.444394 ms
+<t> seal compilation: 6.940632 ms
+<t> afterCompile hook: 0.007386 ms
+<t> emitAssets: 0.773404 ms
+<t> emitRecords: 0.001628 ms
+<t> done hook: 0.006674 ms
+<t> beginIdle: 0.004462 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004249 ms
+<t> finish modules: 0.345196 ms
+<t> report dependency errors and warnings: 0.079825 ms
+<t> optimize dependencies: 0.254146 ms
+<t> create chunks: 0.394243 ms
+<t> compute affected modules with chunk graph: 0.002576 ms
+<t> optimize: 0.728292 ms
+    7 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.472725 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 2.5776 ms
+<t> runtime requirements.modules: 0.079913 ms
+<t> runtime requirements.chunks: 0.082921 ms
+<t> runtime requirements.entries: 0.413485 ms
+<t> runtime requirements: 0.603278 ms
+<t> hashing: initialize hash: 0.006481 ms
+<t> hashing: sort chunks: 0.021616 ms
+<t> hashing: hash runtime modules: 0.401766 ms
+<t> hashing: hash chunks: 0.323914 ms
+<t> hashing: hash digest: 0.013077 ms
+<t> hashing: process full hash modules: 0.001781 ms
+<t> hashing: 0.805018 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.006836 ms
+<t> module assets: 0.015139 ms
+<t> create chunk assets: 0.642114 ms
+<t> process assets: 0.193986 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.029679 ms
+<t> figure out provided exports: 0.052728 ms
+    100% of exports of modules have been determined (0 no declared exports, 2 not cached, 5 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.020896 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.012045 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004139 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.009141 ms
+<t> trace exports usage in graph: 0.190582 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.022016 ms
+<t> visitModules: visiting: 0.149832 ms
+<t> visitModules: calculating available modules: 0.012252 ms
+<t> visitModules: merging available modules: 0.008073 ms
+<t> visitModules: check modules for revisit: 0.003298 ms
+<t> visitModules: prepare: 0.001206 ms
+<t> visitModules: visiting: 0.040761 ms
+    24 queue items processed (16 blocks)
+    8 chunk groups connected
+    8 chunk groups processed for merging (8 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    8 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.246009 ms
+<t> connectChunkGroups: 0.018891 ms
+<t> cleanup: 0.045301 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017365 ms
+<t> modules: 0.103635 ms
+<t> queue: 0.002258 ms
+<t> maxSize: 0.006033 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.019879 ms
+<t> sort relevant modules: 0.000811 ms
+<t> find modules to concatenate: 0.002147 ms
+<t> sort concat configurations: 0.000908 ms
+<t> create concatenated modules: 0.00307 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled successfully in 21 ms (a7c91d572c6b3ed90800)

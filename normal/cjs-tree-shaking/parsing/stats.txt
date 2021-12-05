@@ -1,0 +1,116 @@
+PublicPath: (none)
+asset bundle.js 2.94 KiB {0} [emitted] (name: main)
+Entrypoint main 2.94 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 225 bytes [entry] [rendered]
+  > ./cjs-tree-shaking/parsing/ main
+  ./cjs-tree-shaking/parsing/index.js [1] 113 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./cjs-tree-shaking/parsing/ main
+  ./cjs-tree-shaking/parsing/module.js [0] 45 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: fn, value]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-24
+    cjs full require ./module [2] ./cjs-tree-shaking/parsing/nested-require.js 1:16-38
+    cjs full require ./module [2] ./cjs-tree-shaking/parsing/nested-require.js 1:39-64
+  ./cjs-tree-shaking/parsing/nested-require.js [2] 67 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: value]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    cjs full require ./nested-require [1] ./cjs-tree-shaking/parsing/index.js 2:8-41
+./cjs-tree-shaking/parsing/index.js [1] 113 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+  entry ./cjs-tree-shaking/parsing/ main
+./cjs-tree-shaking/parsing/nested-require.js [2] 67 bytes {0} [depth 1] [built] [code generated]
+  [exports: value]
+  [all exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-66
+  cjs full require ./nested-require [1] ./cjs-tree-shaking/parsing/index.js 2:8-41
+./cjs-tree-shaking/parsing/module.js [0] 45 bytes {0} [depth 2] [built] [code generated]
+  [exports: fn, value]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-24
+  cjs full require ./module [2] ./cjs-tree-shaking/parsing/nested-require.js 1:16-38
+  cjs full require ./module [2] ./cjs-tree-shaking/parsing/nested-require.js 1:39-64
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.408691 ms
+<t> finish make hook: 0.018372 ms
+<t> finish compilation: 0.215321 ms
+<t> seal compilation: 2.919941 ms
+<t> afterCompile hook: 0.012888 ms
+<t> emitAssets: 1.30708 ms
+<t> emitRecords: 0.003144 ms
+<t> done hook: 0.016872 ms
+<t> beginIdle: 0.009127 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005031 ms
+<t> finish modules: 0.174928 ms
+<t> report dependency errors and warnings: 0.012609 ms
+<t> optimize dependencies: 0.243638 ms
+<t> create chunks: 0.191607 ms
+<t> compute affected modules with chunk graph: 0.003338 ms
+<t> optimize: 0.680824 ms
+    3 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.208616 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.227166 ms
+<t> runtime requirements.modules: 0.029727 ms
+<t> runtime requirements.chunks: 0.049094 ms
+<t> runtime requirements.entries: 0.07596 ms
+<t> runtime requirements: 0.18559 ms
+<t> hashing: initialize hash: 0.0052 ms
+<t> hashing: sort chunks: 0.018879 ms
+<t> hashing: hash runtime modules: 0.005698 ms
+<t> hashing: hash chunks: 0.278584 ms
+<t> hashing: hash digest: 0.016753 ms
+<t> hashing: process full hash modules: 0.001641 ms
+<t> hashing: 0.372022 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.008382 ms
+<t> module assets: 0.011197 ms
+<t> create chunk assets: 0.568736 ms
+<t> process assets: 0.058843 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.026588 ms
+<t> figure out provided exports: 0.052383 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.02128 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003645 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007235 ms
+<t> trace exports usage in graph: 0.171213 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.022942 ms
+<t> visitModules: visiting: 0.069135 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.100208 ms
+<t> connectChunkGroups: 0.002062 ms
+<t> cleanup: 0.001794 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.027081 ms
+<t> modules: 0.0898 ms
+<t> queue: 0.003273 ms
+<t> maxSize: 0.006705 ms
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 20 ms (c9f53188711fcd53254c)

@@ -1,0 +1,167 @@
+PublicPath: (none)
+asset bundle.js 4.5 KiB {0} [emitted] (name: main)
+Entrypoint main 4.5 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 576 bytes (javascript) 663 bytes (runtime) [entry] [rendered]
+  > ./side-effects/empty-modules/ main
+  cacheable modules 576 bytes
+    ./side-effects/empty-modules/index.js [0] 538 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (IfStatement) with side effects in source code at 7:0-14:1
+      entry ./side-effects/empty-modules/ main
+    ./side-effects/empty-modules/side-referenced.js [1] 17 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-16
+      harmony side effect evaluation ./side-referenced [0] ./side-effects/empty-modules/index.js 5:0-27
+    ./side-effects/empty-modules/side.js [2] 21 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-20
+      harmony side effect evaluation ./side [1] ./side-effects/empty-modules/side-referenced.js 1:0-16
+  runtime modules 663 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 1.45 KiB
+  orphan modules 906 bytes [orphan]
+    ./side-effects/empty-modules/cjs.js 11 bytes [depth 1] [orphan] [built]
+      [no exports used]
+      [inactive] harmony side effect evaluation ./cjs [0] ./side-effects/empty-modules/index.js 2:0-15
+      require.resolve ./cjs [0] ./side-effects/empty-modules/index.js 9:9-37
+      [inactive] harmony side effect evaluation ./cjs ./side-effects/empty-modules/referenced.js 2:0-15
+    ./side-effects/empty-modules/module.js 22 bytes [depth 1] [orphan] [built]
+      [no exports]
+      [no exports used]
+      [inactive] harmony side effect evaluation ./module [0] ./side-effects/empty-modules/index.js 1:0-18
+      require.resolve ./module [0] ./side-effects/empty-modules/index.js 10:9-40
+      [inactive] harmony side effect evaluation ./module ./side-effects/empty-modules/referenced.js 1:0-18
+    ./side-effects/empty-modules/pure.js 708 bytes [depth 1] [orphan] [built]
+      [exports: class1, class2, default, fun1, fun2, fun3, unusedExport]
+      [only some exports used: unusedExport]
+      from origin ./side-effects/empty-modules/referenced.js
+        [inactive] harmony side effect evaluation ./pure ./side-effects/empty-modules/referenced.js 3:0-38
+        [inactive] harmony side effect evaluation ./pure ./side-effects/empty-modules/referenced.js 4:0-38
+        [inactive] harmony export imported specifier ./pure ./side-effects/empty-modules/referenced.js 4:0-38
+        harmony import specifier ./pure ./side-effects/empty-modules/referenced.js 7:8-20
+      from origin ./side-effects/empty-modules/index.js
+        [inactive] harmony side effect evaluation ./pure [0] ./side-effects/empty-modules/index.js 3:0-16
+        require.resolve ./pure [0] ./side-effects/empty-modules/index.js 11:9-38
+    ./side-effects/empty-modules/referenced.js 165 bytes [depth 1] [orphan] [built]
+      [exports: unused, unusedExport]
+      [no exports used]
+      [inactive] harmony side effect evaluation ./referenced [0] ./side-effects/empty-modules/index.js 4:0-22
+      require.resolve ./referenced [0] ./side-effects/empty-modules/index.js 12:9-44
+  code generated modules 576 bytes [code generated]
+    ./side-effects/empty-modules/index.js [0] 538 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (IfStatement) with side effects in source code at 7:0-14:1
+      entry ./side-effects/empty-modules/ main
+    ./side-effects/empty-modules/side-referenced.js [1] 17 bytes {0} [depth 1] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-16
+      harmony side effect evaluation ./side-referenced [0] ./side-effects/empty-modules/index.js 5:0-27
+    ./side-effects/empty-modules/side.js [2] 21 bytes {0} [depth 2] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-20
+      harmony side effect evaluation ./side [1] ./side-effects/empty-modules/side-referenced.js 1:0-16
+runtime modules 663 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.536409 ms
+<t> finish make hook: 0.012447 ms
+<t> finish compilation: 0.187578 ms
+<t> seal compilation: 3.158479 ms
+<t> afterCompile hook: 0.00565 ms
+<t> emitAssets: 1.570459 ms
+<t> emitRecords: 0.001867 ms
+<t> done hook: 0.007324 ms
+<t> beginIdle: 0.003714 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003298 ms
+<t> finish modules: 0.150799 ms
+<t> report dependency errors and warnings: 0.024326 ms
+<t> optimize dependencies: 0.173576 ms
+<t> create chunks: 1.456627 ms
+<t> compute affected modules with chunk graph: 0.001429 ms
+<t> optimize: 0.405472 ms
+    3 modules hashed, 0 from cache (0.43 variants per module in average)
+<t> module hashing: 0.13134 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.14712 ms
+<t> runtime requirements.modules: 0.016397 ms
+<t> runtime requirements.chunks: 0.022519 ms
+<t> runtime requirements.entries: 0.123682 ms
+<t> runtime requirements: 0.175307 ms
+<t> hashing: initialize hash: 0.001689 ms
+<t> hashing: sort chunks: 0.011009 ms
+<t> hashing: hash runtime modules: 0.087318 ms
+<t> hashing: hash chunks: 0.139717 ms
+<t> hashing: hash digest: 0.007028 ms
+<t> hashing: process full hash modules: 0.000817 ms
+<t> hashing: 0.267646 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004485 ms
+<t> module assets: 0.007949 ms
+<t> create chunk assets: 0.262993 ms
+<t> process assets: 0.022059 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.020038 ms
+<t> figure out provided exports: 0.078886 ms
+    71% of exports of modules have been determined (2 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.014447 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.03105 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00364 ms
+<t> trace exports usage in graph: 0.113138 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017457 ms
+<t> visitModules: visiting: 1.381056 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 1.398078 ms
+<t> connectChunkGroups: 0.001499 ms
+<t> cleanup: 0.001236 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011757 ms
+<t> modules: 0.049892 ms
+<t> queue: 0.00168 ms
+<t> maxSize: 0.004149 ms
+
+LOG from webpack.FileSystemInfo
+    7 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:43: webpack 5.64.4 compiled successfully in 18 ms (e26a94c71fb0076232d4)

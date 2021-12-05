@@ -1,0 +1,217 @@
+PublicPath: (none)
+assets by path *.js 3.82 KiB
+  asset b.js 1.47 KiB {b}, {shared} [emitted] (name: b)
+  asset a_js.js 1.25 KiB {a_js}, {deep/path/a}, {dep-shared_js_1} [emitted]
+  asset shared.js 586 bytes {shared} [emitted] (name: shared)
+  asset dep-shared_js_1.js 549 bytes {dep-shared_js_1} [emitted] (id hint: dep)
+assets by path deep/ 6.47 KiB
+  asset deep/other/path/runtime.js 5.34 KiB {deep/other/path/runtime} [emitted] (name: deep/other/path/runtime)
+  asset deep/path/a.js 1.13 KiB {deep/path/a} [emitted] (name: deep/path/a)
+asset somewhere/c.js 724 bytes {somewhere/c} [emitted] (name: somewhere/c)
+Entrypoint deep/path/a 7.01 KiB = deep/other/path/runtime.js 5.34 KiB dep-shared_js_1.js 549 bytes deep/path/a.js 1.13 KiB
+Entrypoint b 7.35 KiB = deep/other/path/runtime.js 5.34 KiB dep-shared_js_1.js 549 bytes b.js 1.47 KiB
+Entrypoint somewhere/c 6.05 KiB = deep/other/path/runtime.js 5.34 KiB somewhere/c.js 724 bytes
+Chunk Group shared 586 bytes = shared.js
+chunk {a_js} (runtime: deep/other/path/runtime) a_js.js 374 bytes <{deep/other/path/runtime}> <{somewhere/c}> >{shared}< [rendered]
+  > ./a [460] ./c.js 1:61-74
+  ./a.js [847] 308 bytes {a_js} {deep/path/a} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./shared.js?1: Module is an entry point
+    import() ./a [460] ./c.js 1:61-74
+    entry ./a deep/path/a
+  ./shared.js?1 [305] 66 bytes {a_js} {dep-shared_js_1} [depth 2] [dependent] [built] [code generated]
+    [exports: setValue, value]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./shared?1 [847] ./a.js 1:0-35
+      harmony import specifier ./shared?1 [847] ./a.js 4:8-13
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./shared?1 [996] ./b.js 1:0-38
+      harmony import specifier ./shared?1 [996] ./b.js 4:0-8
+    entry ./shared?1 b
+chunk {b} (runtime: deep/other/path/runtime) b.js (b) 187 bytes ={deep/other/path/runtime}= ={dep-shared_js_1}= [initial] [rendered]
+  > ./b b
+  > ./shared?1 b
+  > ./shared?2 b
+  ./b.js [996] 121 bytes {b} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-13
+    ModuleConcatenation bailout: Cannot concat with ./shared.js?1: Module is an entry point
+    ModuleConcatenation bailout: Cannot concat with ./shared.js?2: Module is an entry point
+    entry ./b b
+  ./shared.js?2 [991] 66 bytes {b} {shared} [depth 2] [dependent] [built] [code generated]
+    [exports: setValue, value]
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./shared?2 [996] ./b.js 2:0-51
+      harmony import specifier ./shared?2 [996] ./b.js 5:0-9
+    import() ./shared?2 [847] ./a.js 8:1-54
+    entry ./shared?2 b
+chunk {deep/other/path/runtime} (runtime: deep/other/path/runtime) deep/other/path/runtime.js (deep/other/path/runtime) 2.49 KiB ={b}= ={deep/path/a}= ={dep-shared_js_1}= ={somewhere/c}= >{a_js}< >{shared}< [entry] [rendered]
+  > ./b b
+  > ./shared?1 b
+  > ./shared?2 b
+  > ./a deep/path/a
+  > ./c somewhere/c
+  webpack/runtime/define property getters 308 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 205 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/require chunk loading 1020 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup entrypoint 335 bytes {deep/other/path/runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {deep/path/a} (runtime: deep/other/path/runtime) deep/path/a.js (deep/path/a) 308 bytes ={deep/other/path/runtime}= ={dep-shared_js_1}= >{shared}< [initial] [rendered]
+  > ./a deep/path/a
+  ./a.js [847] 308 bytes {a_js} {deep/path/a} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./shared.js?1: Module is an entry point
+    import() ./a [460] ./c.js 1:61-74
+    entry ./a deep/path/a
+chunk {dep-shared_js_1} (runtime: deep/other/path/runtime) dep-shared_js_1.js (id hint: dep) 66 bytes ={b}= ={deep/other/path/runtime}= ={deep/path/a}= >{shared}< [initial] [rendered] split chunk (cache group: dep)
+  > ./b b
+  > ./shared?1 b
+  > ./shared?2 b
+  > ./a deep/path/a
+  ./shared.js?1 [305] 66 bytes {a_js} {dep-shared_js_1} [depth 2] [built] [code generated]
+    [exports: setValue, value]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./shared?1 [847] ./a.js 1:0-35
+      harmony import specifier ./shared?1 [847] ./a.js 4:8-13
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./shared?1 [996] ./b.js 1:0-38
+      harmony import specifier ./shared?1 [996] ./b.js 4:0-8
+    entry ./shared?1 b
+chunk {shared} (runtime: deep/other/path/runtime) shared.js (shared) 66 bytes <{a_js}> <{deep/other/path/runtime}> <{deep/path/a}> <{dep-shared_js_1}> [rendered]
+  > ./shared?2 [847] ./a.js 8:1-54
+  ./shared.js?2 [991] 66 bytes {b} {shared} [depth 2] [built] [code generated]
+    [exports: setValue, value]
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./shared?2 [996] ./b.js 2:0-51
+      harmony import specifier ./shared?2 [996] ./b.js 5:0-9
+    import() ./shared?2 [847] ./a.js 8:1-54
+    entry ./shared?2 b
+chunk {somewhere/c} (runtime: deep/other/path/runtime) somewhere/c.js (somewhere/c) 77 bytes ={deep/other/path/runtime}= >{a_js}< [initial] [rendered]
+  > ./c somewhere/c
+  ./c.js [460] 77 bytes {somewhere/c} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-76
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./c somewhere/c
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.881375 ms
+<t> finish make hook: 0.01373 ms
+<t> finish compilation: 0.198249 ms
+<t> seal compilation: 4.700949 ms
+<t> afterCompile hook: 0.008026 ms
+<t> emitAssets: 1.82073 ms
+<t> emitRecords: 0.002387 ms
+<t> done hook: 0.00938 ms
+<t> beginIdle: 0.006557 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003657 ms
+<t> finish modules: 0.140187 ms
+<t> report dependency errors and warnings: 0.041198 ms
+<t> optimize dependencies: 0.215227 ms
+<t> create chunks: 0.298901 ms
+<t> compute affected modules with chunk graph: 0.001187 ms
+<t> optimize: 0.908285 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.179836 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.363198 ms
+<t> runtime requirements.modules: 0.039286 ms
+<t> runtime requirements.chunks: 0.064419 ms
+<t> runtime requirements.entries: 0.399329 ms
+<t> runtime requirements: 0.521357 ms
+<t> hashing: initialize hash: 0.004139 ms
+<t> hashing: sort chunks: 0.021392 ms
+<t> hashing: hash runtime modules: 0.492466 ms
+<t> hashing: hash chunks: 0.317694 ms
+<t> hashing: hash digest: 0.012575 ms
+<t> hashing: process full hash modules: 0.001084 ms
+<t> hashing: 0.887562 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.007494 ms
+<t> module assets: 0.014814 ms
+<t> create chunk assets: 0.797563 ms
+<t> process assets: 0.21402 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021888 ms
+<t> figure out provided exports: 0.038538 ms
+    80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.016886 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.020251 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.019183 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003415 ms
+<t> trace exports usage in graph: 0.15375 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017077 ms
+<t> visitModules: visiting: 0.08641 ms
+<t> visitModules: calculating available modules: 0.013871 ms
+<t> visitModules: merging available modules: 0.004429 ms
+<t> visitModules: check modules for revisit: 0.002794 ms
+<t> visitModules: visiting: 0.016778 ms
+<t> visitModules: calculating available modules: 0.003955 ms
+<t> visitModules: merging available modules: 0.003808 ms
+<t> visitModules: visiting: 0.00157 ms
+    21 queue items processed (12 blocks)
+    3 chunk groups connected
+    3 chunk groups processed for merging (3 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    2 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.17101 ms
+<t> connectChunkGroups: 0.012414 ms
+<t> cleanup: 0.002202 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020589 ms
+<t> modules: 0.190158 ms
+<t> queue: 0.034289 ms
+<t> maxSize: 0.009585 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.028278 ms
+<t> sort relevant modules: 0.003461 ms
+<t> find modules to concatenate: 0.070988 ms
+<t> sort concat configurations: 0.000607 ms
+<t> create concatenated modules: 0.00352 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:00: webpack 5.64.4 compiled successfully in 19 ms (921c2d2222d92c9cefe8)

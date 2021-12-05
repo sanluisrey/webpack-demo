@@ -1,0 +1,336 @@
+PublicPath: (none)
+asset bundle.js 1.81 KiB {0} [emitted] (name: main)
+Entrypoint main 1.81 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 132 bytes [entry] [rendered]
+  > ./resolving/issue-2986/ main
+  ./resolving/issue-2986/index.js [0] 132 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (IfStatement) with side effects in source code at 1:0-39
+    entry ./resolving/issue-2986/ main
+./resolving/issue-2986/index.js [0] 132 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (IfStatement) with side effects in source code at 1:0-39
+  entry ./resolving/issue-2986/ main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.995479 ms
+<t> finish make hook: 0.01325 ms
+<t> finish compilation: 0.118276 ms
+<t> seal compilation: 5.689869 ms
+<t> afterCompile hook: 0.00668 ms
+<t> emitAssets: 0.817245 ms
+<t> emitRecords: 0.001799 ms
+<t> done hook: 0.007914 ms
+<t> beginIdle: 0.003769 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.011136 ms
+<t> finish modules: 0.078212 ms
+<t> report dependency errors and warnings: 0.011333 ms
+<t> optimize dependencies: 0.100099 ms
+<t> create chunks: 0.146354 ms
+<t> compute affected modules with chunk graph: 0.004515 ms
+<t> optimize: 4.44259 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.105394 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.098094 ms
+<t> runtime requirements.modules: 0.012852 ms
+<t> runtime requirements.chunks: 0.036972 ms
+<t> runtime requirements.entries: 0.060479 ms
+<t> runtime requirements: 0.130421 ms
+<t> hashing: initialize hash: 0.003496 ms
+<t> hashing: hash errors: 0.003103 ms
+<t> hashing: sort chunks: 0.015404 ms
+<t> hashing: hash runtime modules: 0.004424 ms
+<t> hashing: hash chunks: 0.185016 ms
+<t> hashing: hash digest: 0.01067 ms
+<t> hashing: process full hash modules: 0.001465 ms
+<t> hashing: 0.252842 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.00423 ms
+<t> module assets: 0.00699 ms
+<t> create chunk assets: 0.246221 ms
+<t> process assets: 0.037351 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01815 ms
+<t> figure out provided exports: 0.002096 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002298 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003415 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004038 ms
+<t> trace exports usage in graph: 0.044263 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.003648 ms
+<t> visitModules: visiting: 0.031316 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.061328 ms
+<t> connectChunkGroups: 0.001913 ms
+<t> cleanup: 0.001845 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020406 ms
+<t> modules: 0.061555 ms
+<t> queue: 0.002478 ms
+<t> maxSize: 0.006566 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./resolving/issue-2986/index.js 1:23-38
+Module not found: Error: Can't resolve 'any' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+BREAKING CHANGE: It's no longer allowed to omit the '-loader' suffix when using loaders.
+                 You need to specify 'any-loader' instead of 'any',
+                 see https://webpack.js.org/migrate/3/#automatic-loader-module-name-extension-removed
+resolve 'any' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+  Parsed request is a module
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/resolving/issue-2986)
+    resolve as module
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_loaders doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules
+        single file module
+          using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/resolving/issue-2986/node_modules/any)
+            no extension
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any doesn't exist
+            .webpack-loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any.webpack-loader.js doesn't exist
+            .web-loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any.web-loader.js doesn't exist
+            .loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any.loader.js doesn't exist
+            .js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any.js doesn't exist
+        /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/any doesn't exist
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/node_loaders doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/node_modules
+        single file module
+          using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./node_modules/any)
+            no extension
+              /Users/yoh/Projects/repos/webpack/node_modules/any doesn't exist
+            .webpack-loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/any.webpack-loader.js doesn't exist
+            .web-loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/any.web-loader.js doesn't exist
+            .loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/any.loader.js doesn't exist
+            .js
+              /Users/yoh/Projects/repos/webpack/node_modules/any.js doesn't exist
+        /Users/yoh/Projects/repos/webpack/node_modules/any doesn't exist
+      /Users/yoh/Projects/repos/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/node_modules doesn't exist or is not a directory
+      /Users/yoh/web_loaders doesn't exist or is not a directory
+      /Users/yoh/web_modules doesn't exist or is not a directory
+      /Users/yoh/node_loaders doesn't exist or is not a directory
+      /Users/yoh/node_modules doesn't exist or is not a directory
+      /Users/web_loaders doesn't exist or is not a directory
+      /Users/web_modules doesn't exist or is not a directory
+      /Users/node_loaders doesn't exist or is not a directory
+      /Users/node_modules doesn't exist or is not a directory
+      /web_loaders doesn't exist or is not a directory
+      /web_modules doesn't exist or is not a directory
+      /node_loaders doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+ModuleNotFoundError: Module not found: Error: Can't resolve 'any' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+BREAKING CHANGE: It's no longer allowed to omit the '-loader' suffix when using loaders.
+                 You need to specify 'any-loader' instead of 'any',
+                 see https://webpack.js.org/migrate/3/#automatic-loader-module-name-extension-removed
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:632:23
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at done (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2925:13)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:1014:10
+    at finishResolved (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:278:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:342:25
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:88:10
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:42:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/ConditionalPlugin.js:54:9
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:13:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/forEachBail.js:16:12
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:88:10
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:13:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:13:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:409:24
+    at eval (<anonymous>:12:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/ResultPlugin.js:32:6
+    at Hook.eval [as callAsync] (<anonymous>:6:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/ResultPlugin.js:30:27
+    at Hook.eval [as callAsync] (<anonymous>:7:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Resolver.doResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:407:16)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/NextPlugin.js:30:14
+    at _next0 (<anonymous>:8:1)
+    at eval (<anonymous>:30:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/SymlinkPlugin.js:65:36
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/forEachBail.js:16:12
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/SymlinkPlugin.js:61:8
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+ERROR in ./resolving/issue-2986/index.js 2:23-40
+Module not found: Error: Can't resolve 'other' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+resolve 'other' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+  Parsed request is a module
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/resolving/issue-2986)
+    resolve as module
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_loaders doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules
+        single file module
+          using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/resolving/issue-2986/node_modules/other)
+            no extension
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other doesn't exist
+            .webpack-loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other.webpack-loader.js doesn't exist
+            .web-loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other.web-loader.js doesn't exist
+            .loader.js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other.loader.js doesn't exist
+            .js
+              /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other.js doesn't exist
+        /Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986/node_modules/other doesn't exist
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/resolving/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/node_loaders doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/node_modules
+        single file module
+          using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./node_modules/other)
+            no extension
+              /Users/yoh/Projects/repos/webpack/node_modules/other doesn't exist
+            .webpack-loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/other.webpack-loader.js doesn't exist
+            .web-loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/other.web-loader.js doesn't exist
+            .loader.js
+              /Users/yoh/Projects/repos/webpack/node_modules/other.loader.js doesn't exist
+            .js
+              /Users/yoh/Projects/repos/webpack/node_modules/other.js doesn't exist
+        /Users/yoh/Projects/repos/webpack/node_modules/other doesn't exist
+      /Users/yoh/Projects/repos/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/web_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/node_loaders doesn't exist or is not a directory
+      /Users/yoh/Projects/node_modules doesn't exist or is not a directory
+      /Users/yoh/web_loaders doesn't exist or is not a directory
+      /Users/yoh/web_modules doesn't exist or is not a directory
+      /Users/yoh/node_loaders doesn't exist or is not a directory
+      /Users/yoh/node_modules doesn't exist or is not a directory
+      /Users/web_loaders doesn't exist or is not a directory
+      /Users/web_modules doesn't exist or is not a directory
+      /Users/node_loaders doesn't exist or is not a directory
+      /Users/node_modules doesn't exist or is not a directory
+      /web_loaders doesn't exist or is not a directory
+      /web_modules doesn't exist or is not a directory
+      /node_loaders doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+ModuleNotFoundError: Module not found: Error: Can't resolve 'other' in '/Users/yoh/Projects/repos/webpack/test/cases/resolving/issue-2986'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:632:23
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at done (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2925:13)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:1014:10
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:42:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/ConditionalPlugin.js:53:42
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/forEachBail.js:16:12
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js:72:16
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2021-12-05 17:45:40: webpack 5.64.4 compiled with 2 errors in 25 ms (294c1b8a9e9e25866c2c)

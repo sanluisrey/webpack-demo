@@ -1,0 +1,151 @@
+PublicPath: (none)
+asset bundle.js 7.09 KiB {0} [emitted] (name: main)
+Entrypoint main 7.09 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1.47 KiB [entry] [rendered]
+  > ./errors/load-module-cycle-multiple/ main
+  ./errors/load-module-cycle-multiple/index.js [0] 1.01 KiB {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-7:3
+    entry ./errors/load-module-cycle-multiple/ main
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/1/a.json [3] 117 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./1/a [0] ./errors/load-module-cycle-multiple/index.js 18:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/2/a.json [1] 132 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./2/a [0] ./errors/load-module-cycle-multiple/index.js 2:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/3/a.json [2] 147 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./3/a [0] ./errors/load-module-cycle-multiple/index.js 9:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/4/a.json [4] 73 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: 0, 1]
+    cjs require ./loader!./4/a [0] ./errors/load-module-cycle-multiple/index.js 23:8-33
+code generated modules 1.47 KiB [code generated]
+  ./errors/load-module-cycle-multiple/index.js [0] 1.01 KiB {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-7:3
+    entry ./errors/load-module-cycle-multiple/ main
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/2/a.json [1] 132 bytes {0} [depth 1] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./2/a [0] ./errors/load-module-cycle-multiple/index.js 2:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/3/a.json [2] 147 bytes {0} [depth 1] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./3/a [0] ./errors/load-module-cycle-multiple/index.js 9:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/1/a.json [3] 117 bytes {0} [depth 1] [built] [code generated]
+    [exports: 0]
+    cjs require ./loader!./1/a [0] ./errors/load-module-cycle-multiple/index.js 18:8-33
+    loader ../loader!./a.json ../loader!./a.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/4/a.json [4] 73 bytes {0} [depth 1] [built] [code generated]
+    [exports: 0, 1]
+    cjs require ./loader!./4/a [0] ./errors/load-module-cycle-multiple/index.js 23:8-33
+orphan modules 405 bytes [orphan]
+  modules by path ./errors/load-module-cycle-multiple/3/*.json 249 bytes
+    ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/3/b.json 132 bytes [orphan] [built]
+      [exports: 0]
+      [module unused]
+      loader ../loader!./b.json ../loader!./b.json
+    ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/3/c.json 117 bytes [orphan] [built]
+      [exports: 0]
+      [module unused]
+      loader ../loader!./c.json ../loader!./c.json
+  modules by path ./errors/load-module-cycle-multiple/4/*.json 39 bytes
+    ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/4/b.json 27 bytes [orphan] [built]
+      [exports: 0]
+      [module unused]
+      loader ../loader!./b.json ../loader!./b.json
+      loader ../loader!./b.json ../loader!./b.json
+    ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/4/c.json 12 bytes [orphan] [built]
+      [no exports]
+      [module unused]
+      loader ../loader!./c.json ../loader!./c.json
+  ./errors/load-module-cycle-multiple/loader.js!./errors/load-module-cycle-multiple/2/b.json 117 bytes [orphan] [built]
+    [exports: 0]
+    [module unused]
+    loader ../loader!./b.json ../loader!./b.json
+  
+
+LOG from webpack.Compiler
+<t> make hook: 26.504766 ms
+<t> finish make hook: 0.018991 ms
+<t> finish compilation: 0.726568 ms
+<t> seal compilation: 2.866213 ms
+<t> afterCompile hook: 0.00916 ms
+<t> emitAssets: 1.310021 ms
+<t> emitRecords: 0.002793 ms
+<t> done hook: 0.011599 ms
+<t> beginIdle: 0.010101 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003042 ms
+<t> finish modules: 0.694735 ms
+<t> report dependency errors and warnings: 0.013738 ms
+<t> optimize dependencies: 0.1923 ms
+<t> create chunks: 0.167929 ms
+<t> compute affected modules with chunk graph: 0.003011 ms
+<t> optimize: 0.568665 ms
+    5 modules hashed, 0 from cache (0.5 variants per module in average)
+<t> module hashing: 0.262564 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.402271 ms
+<t> runtime requirements.modules: 0.037666 ms
+<t> runtime requirements.chunks: 0.044076 ms
+<t> runtime requirements.entries: 0.058472 ms
+<t> runtime requirements: 0.17151 ms
+<t> hashing: initialize hash: 0.00495 ms
+<t> hashing: sort chunks: 0.016061 ms
+<t> hashing: hash runtime modules: 0.005807 ms
+<t> hashing: hash chunks: 0.215769 ms
+<t> hashing: hash digest: 0.011975 ms
+<t> hashing: process full hash modules: 0.001375 ms
+<t> hashing: 0.291636 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.006185 ms
+<t> module assets: 0.011965 ms
+<t> create chunk assets: 0.569279 ms
+<t> process assets: 0.040587 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.03217 ms
+<t> figure out provided exports: 0.532173 ms
+    90% of exports of modules have been determined (1 no declared exports, 9 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.064296 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.005159 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.025539 ms
+<t> trace exports usage in graph: 0.115766 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.034084 ms
+<t> visitModules: visiting: 0.069152 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.094005 ms
+<t> connectChunkGroups: 0.001719 ms
+<t> cleanup: 0.001766 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015093 ms
+<t> modules: 0.101775 ms
+<t> queue: 0.002241 ms
+<t> maxSize: 0.00605 ms
+
+LOG from webpack.FileSystemInfo
+    10 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 10 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/17) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:24: webpack 5.64.4 compiled successfully in 33 ms (d5ed106f8c9823cf87c6)

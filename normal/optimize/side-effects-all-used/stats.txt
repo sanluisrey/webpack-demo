@@ -1,0 +1,220 @@
+PublicPath: (none)
+asset bundle.js 8.59 KiB {0} [emitted] (name: main)
+Entrypoint main 8.59 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 875 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./optimize/side-effects-all-used/ main
+  cacheable modules 875 bytes
+    ./optimize/node_modules/pmodule/a.js [3] 111 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c]
+      [only some exports used: a]
+      Statement (ExpressionStatement) with side effects in source code at 8:0-14
+      [inactive] harmony side effect evaluation ./a [2] ./optimize/node_modules/pmodule/index.js 1:0-20
+      [inactive] harmony export imported specifier ./a [2] ./optimize/node_modules/pmodule/index.js 1:0-20
+      harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 7:8-9 (skipped side-effect-free modules)
+    ./optimize/node_modules/pmodule/b.js [4] 120 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: x, y, z]
+      [only some exports used: x]
+      Statement (ExpressionStatement) with side effects in source code at 8:0-14
+      [inactive] harmony side effect evaluation ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+      [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+      [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+      [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+      harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 8:8-9 (skipped side-effect-free modules)
+    ./optimize/node_modules/pmodule/c.js [5] 79 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: z]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 6:0-14
+      [inactive] from origin ./optimize/node_modules/pmodule/b.js
+        [inactive] harmony side effect evaluation ./c [4] ./optimize/node_modules/pmodule/b.js 5:0-24
+        [inactive] harmony export imported specifier ./c [4] ./optimize/node_modules/pmodule/b.js 5:0-24
+      [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30 (skipped side-effect-free modules)
+      harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 9:8-9 (skipped side-effect-free modules)
+    ./optimize/node_modules/pmodule/index.js [2] 130 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c, default, x, y, z]
+      [only some exports used: default]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-18
+      [inactive] harmony side effect evaluation pmodule [1] ./optimize/side-effects-all-used/index.js 2:0-34
+      [inactive] harmony side effect evaluation pmodule [1] ./optimize/side-effects-all-used/index.js 3:0-26
+      harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 6:8-11
+      [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 7:8-9
+      [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 8:8-9
+      [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 9:8-9
+    ./optimize/node_modules/pmodule/tracker.js [0] 130 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: log, reset, track]
+      [only some exports used: log, track]
+      from origin ./optimize/node_modules/pmodule/a.js
+        [inactive] harmony side effect evaluation ./tracker [3] ./optimize/node_modules/pmodule/a.js 7:0-34
+        harmony import specifier ./tracker [3] ./optimize/node_modules/pmodule/a.js 8:0-5
+      from origin ./optimize/node_modules/pmodule/b.js
+        [inactive] harmony side effect evaluation ./tracker [4] ./optimize/node_modules/pmodule/b.js 7:0-34
+        harmony import specifier ./tracker [4] ./optimize/node_modules/pmodule/b.js 8:0-5
+      from origin ./optimize/node_modules/pmodule/c.js
+        [inactive] harmony side effect evaluation ./tracker [5] ./optimize/node_modules/pmodule/c.js 5:0-34
+        harmony import specifier ./tracker [5] ./optimize/node_modules/pmodule/c.js 6:0-5
+      from origin ./optimize/node_modules/pmodule/index.js
+        [inactive] harmony side effect evaluation ./tracker [2] ./optimize/node_modules/pmodule/index.js 4:0-34
+        harmony import specifier ./tracker [2] ./optimize/node_modules/pmodule/index.js 5:0-5
+      from origin ./optimize/side-effects-all-used/index.js
+        [inactive] harmony side effect evaluation pmodule/tracker [1] ./optimize/side-effects-all-used/index.js 1:0-38
+        harmony import specifier pmodule/tracker [1] ./optimize/side-effects-all-used/index.js 10:8-11
+    ./optimize/side-effects-all-used/index.js [1] 305 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-11:3
+      entry ./optimize/side-effects-all-used/ main
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 875 bytes
+  ./optimize/side-effects-all-used/index.js [1] 305 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-11:3
+    entry ./optimize/side-effects-all-used/ main
+  ./optimize/node_modules/pmodule/index.js [2] 130 bytes {0} [depth 1] [built] [code generated]
+    [exports: a, b, c, default, x, y, z]
+    [only some exports used: default]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-18
+    [inactive] harmony side effect evaluation pmodule [1] ./optimize/side-effects-all-used/index.js 2:0-34
+    [inactive] harmony side effect evaluation pmodule [1] ./optimize/side-effects-all-used/index.js 3:0-26
+    harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 6:8-11
+    [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 7:8-9
+    [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 8:8-9
+    [inactive] harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 9:8-9
+  ./optimize/node_modules/pmodule/tracker.js [0] 130 bytes {0} [depth 1] [built] [code generated]
+    [exports: log, reset, track]
+    [only some exports used: log, track]
+    from origin ./optimize/node_modules/pmodule/a.js
+      [inactive] harmony side effect evaluation ./tracker [3] ./optimize/node_modules/pmodule/a.js 7:0-34
+      harmony import specifier ./tracker [3] ./optimize/node_modules/pmodule/a.js 8:0-5
+    from origin ./optimize/node_modules/pmodule/b.js
+      [inactive] harmony side effect evaluation ./tracker [4] ./optimize/node_modules/pmodule/b.js 7:0-34
+      harmony import specifier ./tracker [4] ./optimize/node_modules/pmodule/b.js 8:0-5
+    from origin ./optimize/node_modules/pmodule/c.js
+      [inactive] harmony side effect evaluation ./tracker [5] ./optimize/node_modules/pmodule/c.js 5:0-34
+      harmony import specifier ./tracker [5] ./optimize/node_modules/pmodule/c.js 6:0-5
+    from origin ./optimize/node_modules/pmodule/index.js
+      [inactive] harmony side effect evaluation ./tracker [2] ./optimize/node_modules/pmodule/index.js 4:0-34
+      harmony import specifier ./tracker [2] ./optimize/node_modules/pmodule/index.js 5:0-5
+    from origin ./optimize/side-effects-all-used/index.js
+      [inactive] harmony side effect evaluation pmodule/tracker [1] ./optimize/side-effects-all-used/index.js 1:0-38
+      harmony import specifier pmodule/tracker [1] ./optimize/side-effects-all-used/index.js 10:8-11
+  ./optimize/node_modules/pmodule/a.js [3] 111 bytes {0} [depth 1] [built] [code generated]
+    [exports: a, b, c]
+    [only some exports used: a]
+    Statement (ExpressionStatement) with side effects in source code at 8:0-14
+    [inactive] harmony side effect evaluation ./a [2] ./optimize/node_modules/pmodule/index.js 1:0-20
+    [inactive] harmony export imported specifier ./a [2] ./optimize/node_modules/pmodule/index.js 1:0-20
+    harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 7:8-9 (skipped side-effect-free modules)
+  ./optimize/node_modules/pmodule/b.js [4] 120 bytes {0} [depth 1] [built] [code generated]
+    [exports: x, y, z]
+    [only some exports used: x]
+    Statement (ExpressionStatement) with side effects in source code at 8:0-14
+    [inactive] harmony side effect evaluation ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+    [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+    [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+    [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30
+    harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 8:8-9 (skipped side-effect-free modules)
+  ./optimize/node_modules/pmodule/c.js [5] 79 bytes {0} [depth 1] [built] [code generated]
+    [exports: z]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 6:0-14
+    [inactive] from origin ./optimize/node_modules/pmodule/b.js
+      [inactive] harmony side effect evaluation ./c [4] ./optimize/node_modules/pmodule/b.js 5:0-24
+      [inactive] harmony export imported specifier ./c [4] ./optimize/node_modules/pmodule/b.js 5:0-24
+    [inactive] harmony export imported specifier ./b [2] ./optimize/node_modules/pmodule/index.js 2:0-30 (skipped side-effect-free modules)
+    harmony import specifier pmodule [1] ./optimize/side-effects-all-used/index.js 9:8-9 (skipped side-effect-free modules)
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.05248 ms
+<t> finish make hook: 0.017209 ms
+<t> finish compilation: 0.460642 ms
+<t> seal compilation: 3.365427 ms
+<t> afterCompile hook: 0.011035 ms
+<t> emitAssets: 1.61814 ms
+<t> emitRecords: 0.002338 ms
+<t> done hook: 0.015712 ms
+<t> beginIdle: 0.007571 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003993 ms
+<t> finish modules: 0.372057 ms
+<t> report dependency errors and warnings: 0.0724 ms
+<t> optimize dependencies: 0.273467 ms
+<t> create chunks: 0.181761 ms
+<t> compute affected modules with chunk graph: 0.002191 ms
+<t> optimize: 0.823852 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.182763 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.423394 ms
+<t> runtime requirements.modules: 0.035109 ms
+<t> runtime requirements.chunks: 0.035523 ms
+<t> runtime requirements.entries: 0.123381 ms
+<t> runtime requirements: 0.211559 ms
+<t> hashing: initialize hash: 0.001736 ms
+<t> hashing: sort chunks: 0.011859 ms
+<t> hashing: hash runtime modules: 0.076196 ms
+<t> hashing: hash chunks: 0.259665 ms
+<t> hashing: hash digest: 0.01214 ms
+<t> hashing: process full hash modules: 0.001502 ms
+<t> hashing: 0.393635 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.008468 ms
+<t> module assets: 0.013271 ms
+<t> create chunk assets: 0.643814 ms
+<t> process assets: 0.051239 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018284 ms
+<t> figure out provided exports: 0.292656 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 2 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.016248 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.089656 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006241 ms
+<t> trace exports usage in graph: 0.140346 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.057342 ms
+<t> visitModules: visiting: 0.102123 ms
+    13 queue items processed (6 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.122177 ms
+<t> connectChunkGroups: 0.001299 ms
+<t> cleanup: 0.001348 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013278 ms
+<t> modules: 0.094911 ms
+<t> queue: 0.001786 ms
+<t> maxSize: 0.003903 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:28: webpack 5.64.4 compiled successfully in 22 ms (9abbb4be23c7b2b46163)

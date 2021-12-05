@@ -1,0 +1,165 @@
+PublicPath: (none)
+asset bundle.js 7.33 KiB {1} [emitted] (name: main)
+asset 0.bundle.js 1.77 KiB {0} [emitted]
+asset 70f50809cf02ab5206ce.module.wasm 63 bytes ({0}) [emitted] [immutable]
+Entrypoint main 7.33 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 110 bytes (javascript) 63 bytes (webassembly) <{1}> [rendered]
+  > ./module.wat [0] ./wasm/imported-global-preserve-ordering/index.js 2:8-30
+  ./wasm/imported-global-preserve-ordering/env.js [2] 40 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: a, b]
+    [all exports used]
+    wasm import ./env.js [1] ./wasm/imported-global-preserve-ordering/module.wat
+    wasm import ./env.js [1] ./wasm/imported-global-preserve-ordering/module.wat
+  ./wasm/imported-global-preserve-ordering/module.wat [1] 70 bytes (javascript) 63 bytes (webassembly) {0} [depth 1] [built] [code generated]
+    [exports: c, d]
+    import() ./module.wat [0] ./wasm/imported-global-preserve-ordering/index.js 2:8-30
+chunk {1} (runtime: main) bundle.js (main) 366 bytes (javascript) 3.37 KiB (runtime) >{0}< [entry] [rendered]
+  > ./wasm/imported-global-preserve-ordering/ main
+  ./wasm/imported-global-preserve-ordering/index.js [0] 366 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-14:3
+    entry ./wasm/imported-global-preserve-ordering/ main
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+runtime modules 3.37 KiB
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 476 bytes (javascript) 63 bytes (webassembly)
+  ./wasm/imported-global-preserve-ordering/index.js [0] 366 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-14:3
+    entry ./wasm/imported-global-preserve-ordering/ main
+  ./wasm/imported-global-preserve-ordering/module.wat [1] 70 bytes (javascript) 63 bytes (webassembly) {0} [depth 1] [built] [code generated]
+    [exports: c, d]
+    import() ./module.wat [0] ./wasm/imported-global-preserve-ordering/index.js 2:8-30
+  ./wasm/imported-global-preserve-ordering/env.js [2] 40 bytes {0} [depth 2] [built] [code generated]
+    [exports: a, b]
+    [all exports used]
+    wasm import ./env.js [1] ./wasm/imported-global-preserve-ordering/module.wat
+    wasm import ./env.js [1] ./wasm/imported-global-preserve-ordering/module.wat
+  
+
+LOG from webpack.Compiler
+<t> make hook: 18.952328 ms
+<t> finish make hook: 0.00755 ms
+<t> finish compilation: 0.125516 ms
+<t> seal compilation: 2.348607 ms
+<t> afterCompile hook: 0.004963 ms
+<t> emitAssets: 1.184136 ms
+<t> emitRecords: 0.001595 ms
+<t> done hook: 0.015022 ms
+<t> beginIdle: 0.003504 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003536 ms
+<t> finish modules: 0.099189 ms
+<t> report dependency errors and warnings: 0.014754 ms
+<t> optimize dependencies: 0.111391 ms
+<t> create chunks: 0.138566 ms
+<t> compute affected modules with chunk graph: 0.000838 ms
+<t> optimize: 0.31218 ms
+    3 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.097857 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.238665 ms
+<t> runtime requirements.modules: 0.035751 ms
+<t> runtime requirements.chunks: 0.037947 ms
+<t> runtime requirements.entries: 0.231232 ms
+<t> runtime requirements: 0.319117 ms
+<t> hashing: initialize hash: 0.001619 ms
+<t> hashing: sort chunks: 0.011283 ms
+<t> hashing: hash runtime modules: 0.346141 ms
+<t> hashing: hash chunks: 0.163638 ms
+<t> hashing: hash digest: 0.007908 ms
+<t> hashing: process full hash modules: 0.000833 ms
+<t> hashing: 0.553243 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.005108 ms
+<t> module assets: 0.008234 ms
+<t> create chunk assets: 0.385496 ms
+<t> process assets: 0.024263 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.014837 ms
+<t> figure out provided exports: 0.035145 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010226 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.008241 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.002941 ms
+<t> trace exports usage in graph: 0.075198 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.003787 ms
+<t> visitModules: visiting: 0.032065 ms
+<t> visitModules: calculating available modules: 0.006334 ms
+<t> visitModules: merging available modules: 0.003635 ms
+<t> visitModules: check modules for revisit: 0.001951 ms
+<t> visitModules: prepare: 0.002586 ms
+<t> visitModules: visiting: 0.016315 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.081007 ms
+<t> connectChunkGroups: 0.006056 ms
+<t> cleanup: 0.001146 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012066 ms
+<t> modules: 0.043878 ms
+<t> queue: 0.001426 ms
+<t> maxSize: 0.006723 ms
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:44: webpack 5.64.4 compiled successfully in 23 ms (8b0d621b104a5d218e5e)

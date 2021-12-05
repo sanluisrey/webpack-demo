@@ -1,0 +1,315 @@
+PublicPath: (none)
+assets by status 3.44 KiB [cached] 4 assets
+Entrypoint test = test.js
+Entrypoint inline = inline-b94a5f58dca89ec40883.js
+Entrypoint normal = normal-8f25980712944b25a7b3.js
+chunk {30} (runtime: normal) normal-8f25980712944b25a7b3.js (normal) 23 bytes [entry] [rendered]
+  > ./normal.js normal
+  ./normal.js [634] 23 bytes {30} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-22
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./normal.js normal
+chunk {43} (runtime: test) test.js (test) 945 bytes [entry] [rendered]
+  > ./index.js test
+  ./index.js [10] 819 bytes {43} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-33
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js test
+  external "crypto" [113] 42 bytes {43} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in test (runtime-defined))
+    cjs require crypto [10] ./index.js 1:15-32
+  external "fs" [147] 42 bytes {43} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in test (runtime-defined))
+    cjs require fs [10] ./index.js 2:11-24
+  external "path" [17] 42 bytes {43} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in test (runtime-defined))
+    cjs require path [10] ./index.js 3:13-28
+chunk {886} (runtime: inline) inline-b94a5f58dca89ec40883.js (inline) 23 bytes [entry] [rendered]
+  > ./inline.js inline
+  ./inline.js [243] 23 bytes {886} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-22
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./inline.js inline
+  
+
+LOG from webpack.Compiler
+<t> make hook: 9.910151 ms
+<t> finish make hook: 0.012905 ms
+<t> finish compilation: 0.151011 ms
+<t> seal compilation: 12.964273 ms
+<t> afterCompile hook: 0.010237 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003765 ms
+<t> finish modules: 0.120391 ms
+<t> report dependency errors and warnings: 0.015794 ms
+<t> optimize dependencies: 0.175015 ms
+<t> create chunks: 0.215536 ms
+<t> compute affected modules with chunk graph: 0.001381 ms
+<t> optimize: 0.729541 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.168716 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.407111 ms
+<t> runtime requirements.modules: 0.026333 ms
+<t> runtime requirements.chunks: 0.044213 ms
+<t> runtime requirements.entries: 0.082042 ms
+<t> runtime requirements: 0.173136 ms
+<t> hashing: initialize hash: 0.003582 ms
+<t> hashing: sort chunks: 0.024782 ms
+<t> hashing: hash runtime modules: 0.008853 ms
+<t> hashing: hash chunks: 0.404859 ms
+<t> hashing: hash digest: 0.015497 ms
+<t> hashing: process full hash modules: 0.001506 ms
+<t> hashing: 0.494886 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.006472 ms
+<t> module assets: 0.011011 ms
+<t> create chunk assets: 0.569734 ms
+<t> process assets: 9.818191 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.022633 ms
+<t> figure out provided exports: 0.026649 ms
+    50% of exports of modules have been determined (3 no declared exports, 0 not cached, 3 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003797 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.008364 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.006422 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00418 ms
+<t> trace exports usage in graph: 0.124462 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.011452 ms
+<t> visitModules: visiting: 0.06188 ms
+    12 queue items processed (6 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.110092 ms
+<t> connectChunkGroups: 0.002391 ms
+<t> cleanup: 0.00174 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019942 ms
+<t> modules: 0.083833 ms
+<t> queue: 0.002327 ms
+<t> maxSize: 0.006776 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.048863 ms
+<t> sort relevant modules: 0.001025 ms
+<t> find modules to concatenate: 0.001741 ms
+<t> sort concat configurations: 0.000873 ms
+<t> create concatenated modules: 0.003831 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in test.js
+test.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+Error: test.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+    at Function.buildError (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:285:20)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:499:26
+    at next (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:90:7)
+    at Array.forEach (<anonymous>)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:93:26
+    at new Promise (<anonymous>)
+    at throttleAll (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:62:10)
+    at TerserPlugin.optimize (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:651:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+ERROR in inline-dfc1ceddb6a3c8152598.js
+inline-dfc1ceddb6a3c8152598.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+Error: inline-dfc1ceddb6a3c8152598.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+    at Function.buildError (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:285:20)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:499:26
+    at next (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:90:7)
+    at Array.forEach (<anonymous>)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:93:26
+    at new Promise (<anonymous>)
+    at throttleAll (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:62:10)
+    at TerserPlugin.optimize (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:651:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+ERROR in normal-6fd593f90d916aeda7fe.js
+normal-6fd593f90d916aeda7fe.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+Error: normal-6fd593f90d916aeda7fe.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+    at Function.buildError (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:285:20)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:499:26
+    at next (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:90:7)
+    at Array.forEach (<anonymous>)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:93:26
+    at new Promise (<anonymous>)
+    at throttleAll (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:62:10)
+    at TerserPlugin.optimize (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:651:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+ERROR in inline-b94a5f58dca89ec40883.js
+inline-b94a5f58dca89ec40883.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+Error: inline-b94a5f58dca89ec40883.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+    at Function.buildError (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:285:20)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:499:26
+    at next (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:90:7)
+    at Array.forEach (<anonymous>)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:93:26
+    at new Promise (<anonymous>)
+    at throttleAll (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:62:10)
+    at TerserPlugin.optimize (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:651:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+ERROR in normal-8f25980712944b25a7b3.js
+normal-8f25980712944b25a7b3.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+Error: normal-8f25980712944b25a7b3.js from Terser plugin
+Initiated Worker with invalid execArgv flags: --expose-gc
+Error: Initiated Worker with invalid execArgv flags: --expose-gc
+    at new NodeError (node:internal/errors:371:5)
+    at new Worker (node:internal/worker:191:13)
+    at ExperimentalWorker.initialize (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:149:20)
+    at new ExperimentalWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/workers/NodeThreadsWorker.js:145:10)
+    at WorkerPool.createWorker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:44:12)
+    at new BaseWorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/base/BaseWorkerPool.js:127:27)
+    at new WorkerPool (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/WorkerPool.js:30:1)
+    at new Worker (/Users/yoh/Projects/repos/webpack/node_modules/jest-worker/build/index.js:167:26)
+    at getWorker (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:391:9)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:494:41
+    at Function.buildError (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:285:20)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:499:26
+    at next (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:90:7)
+    at Array.forEach (<anonymous>)
+    at /Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:93:26
+    at new Promise (<anonymous>)
+    at throttleAll (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/utils.js:62:10)
+    at TerserPlugin.optimize (/Users/yoh/Projects/repos/webpack/node_modules/terser-webpack-plugin/dist/index.js:651:34)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2021-12-05 17:44:52: webpack 5.64.4 compiled with 5 errors in 27 ms (997d347149331914ac40)

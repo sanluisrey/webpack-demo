@@ -1,0 +1,116 @@
+PublicPath: (none)
+assets by status 99 bytes [cached] 1 asset
+Entrypoint main = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) [entry] [rendered]
+  > ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 3.024601 ms
+<t> finish make hook: 0.012411 ms
+<t> finish compilation: 0.087009 ms
+<t> seal compilation: 1.074092 ms
+<t> afterCompile hook: 0.007276 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.002585 ms
+<t> finish modules: 0.070679 ms
+<t> report dependency errors and warnings: 0.001291 ms
+<t> optimize dependencies: 0.046221 ms
+<t> create chunks: 0.097076 ms
+<t> compute affected modules with chunk graph: 0.002517 ms
+<t> optimize: 0.300388 ms
+    0 modules hashed, 0 from cache (NaN variants per module in average)
+<t> module hashing: 0.010869 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> code generation: 0.015152 ms
+<t> runtime requirements.modules: 0.001683 ms
+<t> runtime requirements.chunks: 0.015093 ms
+<t> runtime requirements.entries: 0.043688 ms
+<t> runtime requirements: 0.075554 ms
+<t> hashing: initialize hash: 0.005637 ms
+<t> hashing: hash errors: 0.001961 ms
+<t> hashing: sort chunks: 0.012721 ms
+<t> hashing: hash runtime modules: 0.003008 ms
+<t> hashing: hash chunks: 0.082975 ms
+<t> hashing: hash digest: 0.010081 ms
+<t> hashing: process full hash modules: 0.001421 ms
+<t> hashing: 0.151939 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> module assets: 0.006997 ms
+<t> create chunk assets: 0.195231 ms
+<t> process assets: 0.070312 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.005256 ms
+<t> figure out provided exports: 0.001771 ms
+    NaN% of exports of modules have been determined (0 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001908 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.001132 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.001069 ms
+<t> trace exports usage in graph: 0.010384 ms
+
+LOG from webpack.buildChunkGraph
+    0 queue items processed (0 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.030705 ms
+<t> connectChunkGroups: 0.001985 ms
+<t> cleanup: 0.001517 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015395 ms
+<t> modules: 0.000948 ms
+<t> queue: 0.001722 ms
+<t> maxSize: 0.006602 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.001041 ms
+<t> sort relevant modules: 0.000759 ms
+<t> find modules to concatenate: 0.001482 ms
+<t> sort concat configurations: 0.000795 ms
+<t> create concatenated modules: 0.003138 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    0 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in main
+Module not found: Error: Can't resolve './index.js' in '/Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found'
+resolve './index.js' in '/Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/configCases/errors/entry-not-found)
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/configCases/errors/entry-not-found/index.js)
+      no extension
+        /Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found/index.js doesn't exist
+      .js
+        /Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found/index.js.js doesn't exist
+      .json
+        /Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found/index.js.json doesn't exist
+      .wasm
+        /Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found/index.js.wasm doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found/index.js doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './index.js' in '/Users/yoh/Projects/repos/webpack/test/configCases/errors/entry-not-found'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 error in 6 ms (7e1cfdfcf45c625ea171)

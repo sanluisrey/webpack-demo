@@ -1,0 +1,156 @@
+PublicPath: (none)
+asset bundle.js 6.23 KiB {0} [emitted] (name: main)
+Entrypoint main 6.23 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 276 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony-circular-star-reexport/ main
+  cacheable modules 276 bytes
+    ./parsing/harmony-circular-star-reexport/a.js [2] 43 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: a, b, c]
+      [only some exports used: a]
+      [inactive] harmony side effect evaluation ./a [1] ./parsing/harmony-circular-star-reexport/b.js 1:0-20
+      harmony export imported specifier ./a [1] ./parsing/harmony-circular-star-reexport/b.js 1:0-20
+    ./parsing/harmony-circular-star-reexport/b.js [1] 43 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: a, b, c]
+      [only some exports used: a, b]
+      [inactive] harmony side effect evaluation ./b [3] ./parsing/harmony-circular-star-reexport/c.js 1:0-20
+      harmony export imported specifier ./b [3] ./parsing/harmony-circular-star-reexport/c.js 1:0-20
+    ./parsing/harmony-circular-star-reexport/c.js [3] 43 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c]
+      [inactive] from origin ./parsing/harmony-circular-star-reexport/a.js
+        [inactive] harmony side effect evaluation ./c [2] ./parsing/harmony-circular-star-reexport/a.js 1:0-20
+        [inactive] harmony export imported specifier ./c [2] ./parsing/harmony-circular-star-reexport/a.js 1:0-20
+      from origin ./parsing/harmony-circular-star-reexport/index.js
+        [inactive] harmony side effect evaluation ./c [0] ./parsing/harmony-circular-star-reexport/index.js 1:0-27
+        harmony import specifier ./c [0] ./parsing/harmony-circular-star-reexport/index.js 4:8-11
+    ./parsing/harmony-circular-star-reexport/index.js [0] 147 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-11:3
+      entry ./parsing/harmony-circular-star-reexport/ main
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 276 bytes
+  ./parsing/harmony-circular-star-reexport/index.js [0] 147 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-11:3
+    entry ./parsing/harmony-circular-star-reexport/ main
+  ./parsing/harmony-circular-star-reexport/c.js [3] 43 bytes {0} [depth 1] [built] [code generated]
+    [exports: a, b, c]
+    [inactive] from origin ./parsing/harmony-circular-star-reexport/a.js
+      [inactive] harmony side effect evaluation ./c [2] ./parsing/harmony-circular-star-reexport/a.js 1:0-20
+      [inactive] harmony export imported specifier ./c [2] ./parsing/harmony-circular-star-reexport/a.js 1:0-20
+    from origin ./parsing/harmony-circular-star-reexport/index.js
+      [inactive] harmony side effect evaluation ./c [0] ./parsing/harmony-circular-star-reexport/index.js 1:0-27
+      harmony import specifier ./c [0] ./parsing/harmony-circular-star-reexport/index.js 4:8-11
+  ./parsing/harmony-circular-star-reexport/b.js [1] 43 bytes {0} [depth 2] [built] [code generated]
+    [exports: a, b, c]
+    [only some exports used: a, b]
+    [inactive] harmony side effect evaluation ./b [3] ./parsing/harmony-circular-star-reexport/c.js 1:0-20
+    harmony export imported specifier ./b [3] ./parsing/harmony-circular-star-reexport/c.js 1:0-20
+  ./parsing/harmony-circular-star-reexport/a.js [2] 43 bytes {0} [depth 3] [built] [code generated]
+    [exports: a, b, c]
+    [only some exports used: a]
+    [inactive] harmony side effect evaluation ./a [1] ./parsing/harmony-circular-star-reexport/b.js 1:0-20
+    harmony export imported specifier ./a [1] ./parsing/harmony-circular-star-reexport/b.js 1:0-20
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 10.512128 ms
+<t> finish make hook: 0.012758 ms
+<t> finish compilation: 0.363614 ms
+<t> seal compilation: 2.293257 ms
+<t> afterCompile hook: 0.006309 ms
+<t> emitAssets: 0.876887 ms
+<t> emitRecords: 0.001665 ms
+<t> done hook: 0.008085 ms
+<t> beginIdle: 0.003927 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00513 ms
+<t> finish modules: 0.322229 ms
+<t> report dependency errors and warnings: 0.026003 ms
+<t> optimize dependencies: 0.187914 ms
+<t> create chunks: 0.160632 ms
+<t> compute affected modules with chunk graph: 0.0019 ms
+<t> optimize: 0.407065 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.160913 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.286761 ms
+<t> runtime requirements.modules: 0.035571 ms
+<t> runtime requirements.chunks: 0.033903 ms
+<t> runtime requirements.entries: 0.12848 ms
+<t> runtime requirements: 0.213758 ms
+<t> hashing: initialize hash: 0.001489 ms
+<t> hashing: sort chunks: 0.011837 ms
+<t> hashing: hash runtime modules: 0.092505 ms
+<t> hashing: hash chunks: 0.150399 ms
+<t> hashing: hash digest: 0.007706 ms
+<t> hashing: process full hash modules: 0.000918 ms
+<t> hashing: 0.286176 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.005408 ms
+<t> module assets: 0.008378 ms
+<t> create chunk assets: 0.432558 ms
+<t> process assets: 0.027398 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.017936 ms
+<t> figure out provided exports: 0.254625 ms
+    100% of exports of modules have been determined (0 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 6 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.006743 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.018369 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005015 ms
+<t> trace exports usage in graph: 0.132379 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.052613 ms
+<t> visitModules: visiting: 0.087039 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.105337 ms
+<t> connectChunkGroups: 0.0013 ms
+<t> cleanup: 0.001292 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012613 ms
+<t> modules: 0.053866 ms
+<t> queue: 0.001695 ms
+<t> maxSize: 0.004767 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:30: webpack 5.64.4 compiled successfully in 15 ms (0e92ec86910d3a184a02)

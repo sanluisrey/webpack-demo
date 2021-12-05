@@ -1,0 +1,243 @@
+PublicPath: (none)
+asset dll.js 13.3 KiB {179} [emitted] (name: main)
+asset 460.dll.js 515 bytes {460} [emitted]
+Entrypoint main 13.3 KiB = dll.js
+chunk {179} (runtime: main) dll.js (main) 727 bytes (javascript) 2.94 KiB (runtime) >{460}< [entry] [rendered]
+  > main
+  built modules 727 bytes [built]
+    modules by path ./*.js 694 bytes
+      ./_d.js [846] 13 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        ModuleConcatenation bailout: Cannot concat with ./d.js: Module ./d.js is referenced by: DllPlugin
+        entry ./_d [550] dll main main[2]
+        DllPlugin
+      ./_e.js [792] 43 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        ModuleConcatenation bailout: Cannot concat with ./e.js: Module ./e.js is referenced by: DllPlugin
+        ModuleConcatenation bailout: Cannot concat with ./e1.js: Module ./e1.js is referenced by: DllPlugin
+        ModuleConcatenation bailout: Cannot concat with ./e2.js: Module ./e2.js is referenced by: DllPlugin
+        entry ./_e [550] dll main main[3]
+        DllPlugin
+      ./a.js [847] 22 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-21
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        cjs self exports reference [847] ./a.js 1:0-14
+        entry ./a [550] dll main main[0]
+        DllPlugin
+      ./b.js [996] 55 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-3:1
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        cjs self exports reference [996] ./b.js 1:0-14
+        entry ./b [550] dll main main[1]
+        DllPlugin
+      ./d.js [767] 20 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        harmony side effect evaluation ./d [846] ./_d.js 1:0-13
+        DllPlugin
+      ./e.js [390] 113 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: x1, x2, y1, y2]
+        Statement (ExpressionStatement) with side effects in source code at 4:0-26
+        ModuleConcatenation bailout: Cannot concat with ./e1.js: Module ./e1.js is referenced by: DllPlugin
+        ModuleConcatenation bailout: Cannot concat with ./ee2.js: Module ./ee2.js is referenced by: DllPlugin
+        harmony side effect evaluation ./e [792] ./_e.js 3:0-13
+        DllPlugin
+      ./e1.js [481] 91 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: x1, y1]
+        Statement (ExpressionStatement) with side effects in source code at 3:0-26
+        ModuleConcatenation bailout: Cannot concat with ./ee1.js: Module ./ee1.js is referenced by: DllPlugin
+        from origin ./e.js
+          harmony side effect evaluation ./e1 [390] ./e.js 1:0-21
+          harmony export imported specifier ./e1 [390] ./e.js 1:0-21
+        harmony side effect evaluation ./e1 [792] ./_e.js 1:0-14
+        DllPlugin
+      ./e2.js [120] 91 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: x2, y2]
+        Statement (ExpressionStatement) with side effects in source code at 3:0-26
+        ModuleConcatenation bailout: Cannot concat with ./ee2.js: Module ./ee2.js is referenced by: DllPlugin
+        harmony side effect evaluation ./e2 [792] ./_e.js 2:0-14
+        DllPlugin
+      ./ee1.js [387] 41 bytes {179} [depth 3] [dependent] [built] [code generated]
+        [exports: x1, y1]
+        harmony side effect evaluation ./ee1 [481] ./e1.js 1:0-22
+        harmony export imported specifier ./ee1 [481] ./e1.js 1:0-22
+        DllPlugin
+      ./ee2.js [243] 41 bytes {179} [depth 3] [dependent] [built] [code generated]
+        [exports: x2, y2]
+        from origin ./e.js
+          harmony side effect evaluation ./ee2 [390] ./e.js 2:0-22
+          harmony export imported specifier ./ee2 [390] ./e.js 2:0-22
+        from origin ./e2.js
+          harmony side effect evaluation ./ee2 [120] ./e2.js 1:0-22
+          harmony export imported specifier ./ee2 [120] ./e2.js 1:0-22
+        DllPlugin
+      ./g.abc.js [681] 35 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-34
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        cjs self exports reference [681] ./g.abc.js 1:0-14
+        entry ./g.abc [550] dll main main[5]
+        DllPlugin
+      ./h.js [307] 29 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: B]
+        ModuleConcatenation bailout: Cannot concat with ./h1.js: Module ./h1.js is referenced by: DllPlugin
+        entry ./h [550] dll main main[6]
+        DllPlugin
+      ./h1.js [236] 58 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: A, B]
+        ModuleConcatenation bailout: Cannot concat with ./ha.js: Module ./ha.js is referenced by: DllPlugin
+        ModuleConcatenation bailout: Cannot concat with ./hb.js: Module ./hb.js is referenced by: DllPlugin
+        harmony side effect evaluation ./h1.js [307] ./h.js 1:0-28
+        harmony export imported specifier ./h1.js [307] ./h.js 1:0-28
+        DllPlugin
+      ./ha.js [416] 21 bytes {179} [depth 3] [dependent] [built] [code generated]
+        [exports: A]
+        harmony side effect evaluation ./ha.js [236] ./h1.js 1:0-28
+        harmony export imported specifier ./ha.js [236] ./h1.js 1:0-28
+        DllPlugin
+      ./hb.js [261] 21 bytes {179} [depth 3] [dependent] [built] [code generated]
+        [exports: B]
+        harmony side effect evaluation ./hb.js [236] ./h1.js 2:0-28
+        harmony export imported specifier ./hb.js [236] ./h1.js 2:0-28
+        DllPlugin
+    ./f.jsx [914] 21 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      cjs self exports reference [914] ./f.jsx 1:0-14
+      entry ./f [550] dll main main[4]
+      DllPlugin
+    dll main [550] 12 bytes {179} [depth 0] [built] [code generated]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DllModule
+      dll entry
+      used as library export
+      DllPlugin
+  runtime modules 2.94 KiB
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 171 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {460} (runtime: main) 460.dll.js 19 bytes <{179}> [rendered]
+  > ./c [996] ./b.js 2:8-21
+  ./c.js [460] 19 bytes {460} [depth 2] [built] [code generated]
+    [exports: default]
+    import() ./c [996] ./b.js 2:8-21
+    DllPlugin
+  
+
+LOG from webpack.Compiler
+<t> make hook: 23.780598 ms
+<t> finish make hook: 0.03232 ms
+<t> finish compilation: 1.306797 ms
+<t> seal compilation: 10.503545 ms
+<t> afterCompile hook: 0.010967 ms
+<t> emitAssets: 2.736767 ms
+<t> emitRecords: 0.001837 ms
+<t> done hook: 0.010927 ms
+<t> beginIdle: 0.009458 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005746 ms
+<t> finish modules: 1.13667 ms
+<t> report dependency errors and warnings: 0.143193 ms
+<t> optimize dependencies: 0.790015 ms
+<t> create chunks: 0.678974 ms
+<t> compute affected modules with chunk graph: 0.004686 ms
+<t> optimize: 2.400201 ms
+    18 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.877256 ms
+    100% code generated (18 generated, 0 from cache)
+<t> code generation: 1.909739 ms
+<t> runtime requirements.modules: 0.15556 ms
+<t> runtime requirements.chunks: 0.098712 ms
+<t> runtime requirements.entries: 0.456842 ms
+<t> runtime requirements: 0.754299 ms
+<t> hashing: initialize hash: 0.005526 ms
+<t> hashing: sort chunks: 0.018349 ms
+<t> hashing: hash runtime modules: 0.512805 ms
+<t> hashing: hash chunks: 0.440876 ms
+<t> hashing: hash digest: 0.018066 ms
+<t> hashing: process full hash modules: 0.001184 ms
+<t> hashing: 1.037913 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.00849 ms
+<t> module assets: 0.020043 ms
+<t> create chunk assets: 1.130236 ms
+<t> process assets: 0.363617 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.074865 ms
+<t> figure out provided exports: 0.820122 ms
+    72% of exports of modules have been determined (5 no declared exports, 13 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 6 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.03861 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.130288 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.015008 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.028331 ms
+<t> trace exports usage in graph: 0.219478 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.203297 ms
+<t> visitModules: visiting: 0.407616 ms
+<t> visitModules: calculating available modules: 0.017247 ms
+<t> visitModules: merging available modules: 0.005763 ms
+<t> visitModules: check modules for revisit: 0.003704 ms
+<t> visitModules: prepare: 0.001845 ms
+<t> visitModules: visiting: 0.02022 ms
+    37 queue items processed (19 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.51379 ms
+<t> connectChunkGroups: 0.015111 ms
+<t> cleanup: 0.002929 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.027332 ms
+<t> modules: 0.290234 ms
+<t> queue: 0.003336 ms
+<t> maxSize: 0.013407 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.134728 ms
+<t> sort relevant modules: 0.005811 ms
+<t> find modules to concatenate: 0.851089 ms
+<t> sort concat configurations: 0.001213 ms
+<t> create concatenated modules: 0.00559 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    17 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 17 timestamps 17 hashes 17 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/17) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled successfully in 40 ms (68baee233c0a4d6d2198)

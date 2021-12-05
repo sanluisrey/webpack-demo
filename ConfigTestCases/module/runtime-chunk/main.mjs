@@ -1,0 +1,2 @@
+/*! For license information please see main.mjs.LICENSE.txt */
+export const id=179;export const ids=[179];export const modules={10:()=>{it("should compile",(()=>{}))}};import o from"./runtime.mjs";import*as m from"./main.mjs";o.C(m);var s;s=10,o(o.s=s);

@@ -1,0 +1,144 @@
+PublicPath: (none)
+asset bundle.js 4 KiB {0} [emitted] (name: main)
+Entrypoint main 4 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 624 bytes [entry] [rendered]
+  > ./cjs-tree-shaking/objects/ main
+  ./cjs-tree-shaking/objects/direct-object.js?1 [0] 47 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:2
+    cjs self exports reference [0] ./cjs-tree-shaking/objects/direct-object.js?1 1:0-14
+    cjs full require ./direct-object?1 [4] ./cjs-tree-shaking/objects/index.js 2:8-40
+  ./cjs-tree-shaking/objects/direct-object.js?2 [1] 47 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:2
+    cjs self exports reference [1] ./cjs-tree-shaking/objects/direct-object.js?2 1:0-14
+    cjs require ./direct-object?2 [4] ./cjs-tree-shaking/objects/index.js 3:8-36
+  ./cjs-tree-shaking/objects/index.js [4] 396 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+    entry ./cjs-tree-shaking/objects/ main
+  ./cjs-tree-shaking/objects/indirect-object.js?1 [2] 67 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 6:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-4:2
+    cjs full require ./indirect-object?1 [4] ./cjs-tree-shaking/objects/index.js 7:8-42
+    cjs self exports reference [2] ./cjs-tree-shaking/objects/indirect-object.js?1 6:0-14
+  ./cjs-tree-shaking/objects/indirect-object.js?2 [3] 67 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 6:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-4:2
+    cjs require ./indirect-object?2 [4] ./cjs-tree-shaking/objects/index.js 8:8-38
+    cjs self exports reference [3] ./cjs-tree-shaking/objects/indirect-object.js?2 6:0-14
+./cjs-tree-shaking/objects/index.js [4] 396 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+  entry ./cjs-tree-shaking/objects/ main
+./cjs-tree-shaking/objects/direct-object.js?1 [0] 47 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 1:0-14
+  Statement (ExpressionStatement) with side effects in source code at 1:0-4:2
+  cjs self exports reference [0] ./cjs-tree-shaking/objects/direct-object.js?1 1:0-14
+  cjs full require ./direct-object?1 [4] ./cjs-tree-shaking/objects/index.js 2:8-40
+./cjs-tree-shaking/objects/direct-object.js?2 [1] 47 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 1:0-14
+  Statement (ExpressionStatement) with side effects in source code at 1:0-4:2
+  cjs self exports reference [1] ./cjs-tree-shaking/objects/direct-object.js?2 1:0-14
+  cjs require ./direct-object?2 [4] ./cjs-tree-shaking/objects/index.js 3:8-36
+./cjs-tree-shaking/objects/indirect-object.js?1 [2] 67 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 6:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-4:2
+  cjs full require ./indirect-object?1 [4] ./cjs-tree-shaking/objects/index.js 7:8-42
+  cjs self exports reference [2] ./cjs-tree-shaking/objects/indirect-object.js?1 6:0-14
+./cjs-tree-shaking/objects/indirect-object.js?2 [3] 67 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 6:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-4:2
+  cjs require ./indirect-object?2 [4] ./cjs-tree-shaking/objects/index.js 8:8-38
+  cjs self exports reference [3] ./cjs-tree-shaking/objects/indirect-object.js?2 6:0-14
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.471017 ms
+<t> finish make hook: 0.015677 ms
+<t> finish compilation: 0.102888 ms
+<t> seal compilation: 2.591597 ms
+<t> afterCompile hook: 0.00862 ms
+<t> emitAssets: 1.380815 ms
+<t> emitRecords: 0.002486 ms
+<t> done hook: 0.010732 ms
+<t> beginIdle: 0.00863 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003677 ms
+<t> finish modules: 0.069918 ms
+<t> report dependency errors and warnings: 0.012905 ms
+<t> optimize dependencies: 0.157533 ms
+<t> create chunks: 0.157571 ms
+<t> compute affected modules with chunk graph: 0.002264 ms
+<t> optimize: 0.483694 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.169194 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.169673 ms
+<t> runtime requirements.modules: 0.024239 ms
+<t> runtime requirements.chunks: 0.040261 ms
+<t> runtime requirements.entries: 0.048729 ms
+<t> runtime requirements: 0.131966 ms
+<t> hashing: initialize hash: 0.003582 ms
+<t> hashing: sort chunks: 0.01252 ms
+<t> hashing: hash runtime modules: 0.004743 ms
+<t> hashing: hash chunks: 0.188187 ms
+<t> hashing: hash digest: 0.010999 ms
+<t> hashing: process full hash modules: 0.001264 ms
+<t> hashing: 0.249872 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005064 ms
+<t> module assets: 0.007972 ms
+<t> create chunk assets: 0.898627 ms
+<t> process assets: 0.041991 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018226 ms
+<t> figure out provided exports: 0.001629 ms
+    0% of exports of modules have been determined (5 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001795 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003132 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005893 ms
+<t> trace exports usage in graph: 0.111166 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.022141 ms
+<t> visitModules: visiting: 0.066495 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.088496 ms
+<t> connectChunkGroups: 0.001555 ms
+<t> cleanup: 0.00146 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015133 ms
+<t> modules: 0.077694 ms
+<t> queue: 0.002276 ms
+<t> maxSize: 0.004665 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 21 ms (bce515ab84c48a8e2c07)

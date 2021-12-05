@@ -1,0 +1,183 @@
+PublicPath: (none)
+assets by path *.js 14 KiB
+  asset bundle.js 10.7 KiB {3} [emitted] (name: main)
+  asset 1.bundle.js 1.93 KiB {0}, {1} [emitted]
+  asset 2.bundle.js 682 bytes {2} [emitted]
+  asset 0.bundle.js 679 bytes {0} [emitted]
+assets by path *.wasm 233 bytes
+  asset 2977a7422d987474135e.module.wasm 89 bytes ({0}, {1}) [emitted] [immutable]
+  asset ab9c51c448e22f8dcd1b.module.wasm 84 bytes ({2}) [emitted] [immutable]
+  asset 0b2ed789e3bdf2bd213a.module.wasm 60 bytes ({0}, {1}) [emitted] [immutable]
+Entrypoint main 10.7 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 50 bytes (javascript) 60 bytes (webassembly) <{3}> [rendered]
+  > ./wasm-table-export.wat [0] ./wasm/table/index.js 13:8-41
+  ./wasm/table/wasm-table-export.wat [1] 50 bytes (javascript) 60 bytes (webassembly) {0} {1} [depth 1] [built] [code generated]
+    [exports: table]
+    import() ./wasm-table-export.wat [0] ./wasm/table/index.js 13:8-41
+    wasm import ./wasm-table-export.wat [3] ./wasm/table/wasm-table-imported.wat
+chunk {1} (runtime: main) 1.bundle.js 110 bytes (javascript) 149 bytes (webassembly) <{3}> [rendered]
+  > ./wasm-table-imported.wat [0] ./wasm/table/index.js 26:8-43
+  ./wasm/table/wasm-table-export.wat [1] 50 bytes (javascript) 60 bytes (webassembly) {0} {1} [depth 1] [dependent] [built] [code generated]
+    [exports: table]
+    import() ./wasm-table-export.wat [0] ./wasm/table/index.js 13:8-41
+    wasm import ./wasm-table-export.wat [3] ./wasm/table/wasm-table-imported.wat
+  ./wasm/table/wasm-table-imported.wat [3] 60 bytes (javascript) 89 bytes (webassembly) {1} [depth 1] [built] [code generated]
+    [exports: callByIndex]
+    import() ./wasm-table-imported.wat [0] ./wasm/table/index.js 26:8-43
+chunk {2} (runtime: main) 2.bundle.js 50 bytes (javascript) 84 bytes (webassembly) <{3}> [rendered]
+  > ./wasm-table.wat [0] ./wasm/table/index.js 5:8-34
+  ./wasm/table/wasm-table.wat [2] 50 bytes (javascript) 84 bytes (webassembly) {2} [depth 1] [built] [code generated]
+    [exports: callByIndex]
+    import() ./wasm-table.wat [0] ./wasm/table/index.js 5:8-34
+chunk {3} (runtime: main) bundle.js (main) 1.11 KiB (javascript) 5.22 KiB (runtime) >{0}< >{1}< >{2}< [entry] [rendered]
+  > ./wasm/table/ main
+  ./wasm/table/index.js [0] 1.11 KiB {3} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-10:3
+    entry ./wasm/table/ main
+  webpack/runtime/async module 2.16 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+runtime modules 5.22 KiB
+  webpack/runtime/async module 2.16 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 1.27 KiB (javascript) 233 bytes (webassembly)
+  ./wasm/table/index.js [0] 1.11 KiB {3} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-10:3
+    entry ./wasm/table/ main
+  ./wasm/table/wasm-table.wat [2] 50 bytes (javascript) 84 bytes (webassembly) {2} [depth 1] [built] [code generated]
+    [exports: callByIndex]
+    import() ./wasm-table.wat [0] ./wasm/table/index.js 5:8-34
+  ./wasm/table/wasm-table-export.wat [1] 50 bytes (javascript) 60 bytes (webassembly) {0} {1} [depth 1] [built] [code generated]
+    [exports: table]
+    import() ./wasm-table-export.wat [0] ./wasm/table/index.js 13:8-41
+    wasm import ./wasm-table-export.wat [3] ./wasm/table/wasm-table-imported.wat
+  ./wasm/table/wasm-table-imported.wat [3] 60 bytes (javascript) 89 bytes (webassembly) {1} [depth 1] [built] [code generated]
+    [exports: callByIndex]
+    import() ./wasm-table-imported.wat [0] ./wasm/table/index.js 26:8-43
+  
+
+LOG from webpack.Compiler
+<t> make hook: 27.440564 ms
+<t> finish make hook: 0.011574 ms
+<t> finish compilation: 0.160356 ms
+<t> seal compilation: 4.47929 ms
+<t> afterCompile hook: 0.00786 ms
+<t> emitAssets: 1.859422 ms
+<t> emitRecords: 0.002219 ms
+<t> done hook: 0.010558 ms
+<t> beginIdle: 0.005799 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003956 ms
+<t> finish modules: 0.125507 ms
+<t> report dependency errors and warnings: 0.019101 ms
+<t> optimize dependencies: 0.143186 ms
+<t> create chunks: 0.223032 ms
+<t> compute affected modules with chunk graph: 0.001186 ms
+<t> optimize: 0.565519 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.142033 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.248 ms
+<t> runtime requirements.modules: 0.052537 ms
+<t> runtime requirements.chunks: 0.057845 ms
+<t> runtime requirements.entries: 0.30447 ms
+<t> runtime requirements: 0.43536 ms
+<t> hashing: initialize hash: 0.002352 ms
+<t> hashing: sort chunks: 0.018915 ms
+<t> hashing: hash runtime modules: 0.530488 ms
+<t> hashing: hash chunks: 0.372272 ms
+<t> hashing: hash digest: 0.010829 ms
+<t> hashing: process full hash modules: 0.001151 ms
+<t> hashing: 0.975338 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.00729 ms
+<t> module assets: 0.010714 ms
+<t> create chunk assets: 1.452521 ms
+<t> process assets: 0.045885 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.020046 ms
+<t> figure out provided exports: 0.03431 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.011934 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002566 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003307 ms
+<t> trace exports usage in graph: 0.105748 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005632 ms
+<t> visitModules: visiting: 0.055625 ms
+<t> visitModules: calculating available modules: 0.008825 ms
+<t> visitModules: merging available modules: 0.005509 ms
+<t> visitModules: check modules for revisit: 0.002773 ms
+<t> visitModules: prepare: 0.005756 ms
+<t> visitModules: visiting: 0.045055 ms
+    13 queue items processed (8 blocks)
+    3 chunk groups connected
+    3 chunk groups processed for merging (3 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.145531 ms
+<t> connectChunkGroups: 0.010954 ms
+<t> cleanup: 0.001763 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017417 ms
+<t> modules: 0.147703 ms
+<t> queue: 0.018158 ms
+<t> maxSize: 0.010609 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:44: webpack 5.64.4 compiled successfully in 35 ms (86765b605d62c1d873b9)

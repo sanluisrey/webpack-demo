@@ -1,0 +1,282 @@
+PublicPath: auto
+asset a.js 12.1 KiB {786} [emitted] (name: a)
+asset runtime.js 6.62 KiB {666} [emitted] (name: runtime)
+asset b.js 5.28 KiB {28}, {128}, {417}, {459}, {966} [emitted] (name: b)
+asset c.js 5.28 KiB {28}, {128}, {417}, {459}, {966} [emitted] (name: c)
+asset d.js 2.47 KiB {28}, {128}, {417}, {459}, {966} [emitted] (name: d)
+asset 417.js 760 bytes {417} [emitted]
+asset 28.js 569 bytes {28} [emitted]
+Entrypoint a 12.1 KiB = a.js
+Entrypoint b 5.28 KiB = b.js
+Entrypoint c 5.28 KiB = c.js
+Entrypoint d 9.09 KiB = runtime.js 6.62 KiB d.js 2.47 KiB
+chunk {28} (runtime: a) 28.js 53 bytes <{417}> [rendered]
+  > ./nested [417] ./async.js 3:28-46
+  ./nested.js [28] 53 bytes {28} {128} {459} {966} [depth 2] [built] [code generated]
+    [exports: default]
+    import() ./nested [417] ./async.js 3:28-46
+chunk {128} (runtime: b) b.js (b) 600 bytes (javascript) 1.11 KiB (runtime) [entry] [rendered]
+  > ./b.js b
+  runtime modules 1.11 KiB
+    webpack/runtime/compat get default export 267 bytes {128} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {128} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 200 bytes {128} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {128} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {128} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 600 bytes [built]
+    ./async.js [417] 94 bytes {128} {417} {459} {966} [depth 1] [dependent] [built] [code generated]
+      [exports: default, nested]
+      from origin ./a.js + 1 modules
+        import() ./async [799] ./a.js + 1 modules ./a.js 4:15-32
+        import() ./async [799] ./a.js + 1 modules ./a.js 5:22-39
+      from origin ./b.js + 1 modules
+        import() ./async [138] ./b.js + 1 modules ./b.js 4:15-32
+        import() ./async [138] ./b.js + 1 modules ./b.js 5:22-39
+    ./b.js + 1 modules [138] 453 bytes {128} {459} {966} [depth 0] [not cacheable] [built] [code generated]
+      [no exports]
+      [no exports used]
+      entry ./b.js b
+      entry ./b.js c
+      entry ./b.js d
+    ./nested.js [28] 53 bytes {28} {128} {459} {966} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      import() ./nested [417] ./async.js 3:28-46
+chunk {417} (runtime: a) 417.js 94 bytes <{786}> >{28}< [rendered]
+  > ./async ./a.js 4:15-32
+  > ./async ./a.js 5:22-39
+  ./async.js [417] 94 bytes {128} {417} {459} {966} [depth 1] [built] [code generated]
+    [exports: default, nested]
+    from origin ./a.js + 1 modules
+      import() ./async [799] ./a.js + 1 modules ./a.js 4:15-32
+      import() ./async [799] ./a.js + 1 modules ./a.js 5:22-39
+    from origin ./b.js + 1 modules
+      import() ./async [138] ./b.js + 1 modules ./b.js 4:15-32
+      import() ./async [138] ./b.js + 1 modules ./b.js 5:22-39
+chunk {459} (runtime: c) c.js (c) 600 bytes (javascript) 1.11 KiB (runtime) [entry] [rendered]
+  > ./b.js c
+  runtime modules 1.11 KiB
+    webpack/runtime/compat get default export 267 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 200 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 600 bytes [built]
+    ./async.js [417] 94 bytes {128} {417} {459} {966} [depth 1] [dependent] [built] [code generated]
+      [exports: default, nested]
+      from origin ./a.js + 1 modules
+        import() ./async [799] ./a.js + 1 modules ./a.js 4:15-32
+        import() ./async [799] ./a.js + 1 modules ./a.js 5:22-39
+      from origin ./b.js + 1 modules
+        import() ./async [138] ./b.js + 1 modules ./b.js 4:15-32
+        import() ./async [138] ./b.js + 1 modules ./b.js 5:22-39
+    ./b.js + 1 modules [138] 453 bytes {128} {459} {966} [depth 0] [not cacheable] [built] [code generated]
+      [no exports]
+      [no exports used]
+      entry ./b.js b
+      entry ./b.js c
+      entry ./b.js d
+    ./nested.js [28] 53 bytes {28} {128} {459} {966} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      import() ./nested [417] ./async.js 3:28-46
+chunk {666} (runtime: runtime) runtime.js (runtime) 3.48 KiB ={966}= [entry] [rendered]
+  > ./b.js d
+  webpack/runtime/chunk loaded 886 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/compat get default export 267 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 200 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {786} (runtime: a) a.js (a) 449 bytes (javascript) 6.83 KiB (runtime) >{417}< [entry] [rendered]
+  > ./a.js a
+  ./a.js + 1 modules [799] 449 bytes {786} [depth 0] [not cacheable] [built] [code generated]
+    [no exports]
+    [no exports used]
+    entry ./a.js a
+  webpack/runtime/compat get default export 267 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 167 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {786} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {966} (runtime: runtime) d.js (d) 600 bytes ={666}= [initial] [rendered]
+  > ./b.js d
+  ./async.js [417] 94 bytes {128} {417} {459} {966} [depth 1] [dependent] [built] [code generated]
+    [exports: default, nested]
+    from origin ./a.js + 1 modules
+      import() ./async [799] ./a.js + 1 modules ./a.js 4:15-32
+      import() ./async [799] ./a.js + 1 modules ./a.js 5:22-39
+    from origin ./b.js + 1 modules
+      import() ./async [138] ./b.js + 1 modules ./b.js 4:15-32
+      import() ./async [138] ./b.js + 1 modules ./b.js 5:22-39
+  ./b.js + 1 modules [138] 453 bytes {128} {459} {966} [depth 0] [not cacheable] [built] [code generated]
+    [no exports]
+    [no exports used]
+    entry ./b.js b
+    entry ./b.js c
+    entry ./b.js d
+  ./nested.js [28] 53 bytes {28} {128} {459} {966} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    import() ./nested [417] ./async.js 3:28-46
+  
+
+LOG from webpack.Compiler
+<t> make hook: 18.889675 ms
+<t> finish make hook: 0.020498 ms
+<t> finish compilation: 0.233937 ms
+<t> seal compilation: 11.869802 ms
+<t> afterCompile hook: 0.00988 ms
+<t> emitAssets: 1.928472 ms
+<t> emitRecords: 0.001944 ms
+<t> done hook: 0.012106 ms
+<t> beginIdle: 0.005884 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004064 ms
+<t> finish modules: 0.163965 ms
+<t> report dependency errors and warnings: 0.054797 ms
+<t> optimize dependencies: 0.290311 ms
+<t> create chunks: 0.459542 ms
+<t> compute affected modules with chunk graph: 0.00249 ms
+<t> optimize: 1.389889 ms
+    12 modules hashed, 0 from cache (2.4 variants per module in average)
+<t> module hashing: 0.569538 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 2.179168 ms
+<t> runtime requirements.modules: 0.088035 ms
+<t> runtime requirements.chunks: 0.095386 ms
+<t> runtime requirements.entries: 0.8743 ms
+<t> runtime requirements: 1.083825 ms
+<t> hashing: initialize hash: 0.005783 ms
+<t> hashing: sort chunks: 0.033127 ms
+<t> hashing: hash runtime modules: 1.411738 ms
+<t> hashing: hash chunks: 1.537594 ms
+<t> hashing: hash digest: 0.027443 ms
+<t> hashing: process full hash modules: 0.001138 ms
+<t> hashing: 3.082839 ms
+    100% code generated (27 generated, 0 from cache)
+<t> record hash: 0.010464 ms
+<t> module assets: 0.023599 ms
+<t> create chunk assets: 1.790583 ms
+<t> process assets: 0.481717 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02457 ms
+<t> figure out provided exports: 0.052649 ms
+    100% of exports of modules have been determined (0 no declared exports, 4 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.020674 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.036782 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.017001 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006506 ms
+<t> trace exports usage in graph: 0.229651 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.027513 ms
+<t> visitModules: visiting: 0.185075 ms
+<t> visitModules: calculating available modules: 0.010035 ms
+<t> visitModules: merging available modules: 0.004528 ms
+<t> visitModules: check modules for revisit: 0.003118 ms
+<t> visitModules: prepare: 0.001877 ms
+<t> visitModules: visiting: 0.034904 ms
+<t> visitModules: calculating available modules: 0.006835 ms
+<t> visitModules: merging available modules: 0.005877 ms
+<t> visitModules: check modules for revisit: 0.00122 ms
+<t> visitModules: prepare: 0.001361 ms
+<t> visitModules: visiting: 0.012161 ms
+    47 queue items processed (30 blocks)
+    4 chunk groups connected
+    3 chunk groups processed for merging (4 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.313703 ms
+<t> connectChunkGroups: 0.015559 ms
+<t> cleanup: 0.002251 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.022945 ms
+<t> modules: 0.163517 ms
+<t> queue: 0.002503 ms
+<t> maxSize: 0.010344 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.042913 ms
+<t> sort relevant modules: 0.002932 ms
+<t> find modules to concatenate: 0.318482 ms
+<t> sort concat configurations: 0.002451 ms
+<t> create concatenated modules: 0.196284 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:27: webpack 5.64.4 compiled successfully in 35 ms (59da61e8f5a76ab0d703)

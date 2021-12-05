@@ -1,0 +1,2440 @@
+PublicPath: (none)
+asset bundle.js 213 KiB {0} [emitted] (name: main)
+Entrypoint main 213 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 28.6 KiB [entry] [rendered]
+  > ./cjs-tree-shaking/reexports/ main
+  ./cjs-tree-shaking/reexports/add-to-counter.js?1 [31] 127 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, abcUsed]
+    [only some exports used: abcUsed]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-37
+    cjs export require ./add-to-counter?1 [34] ./cjs-tree-shaking/reexports/index.js 54:1-48
+    cjs full require ./add-to-counter?1 [34] ./cjs-tree-shaking/reexports/index.js 59:9-46
+  ./cjs-tree-shaking/reexports/add-to-counter.js?2 [32] 127 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, abcUsed]
+    [only some exports used: abcUsed]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-37
+    cjs export require ./add-to-counter?2 [34] ./cjs-tree-shaking/reexports/index.js 55:1-52
+    cjs full require ./add-to-counter?2 [34] ./cjs-tree-shaking/reexports/index.js 60:9-46
+  ./cjs-tree-shaking/reexports/add-to-counter.js?3 [33] 127 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, abcUsed]
+    [all exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-37
+    cjs export require ./add-to-counter?3 [34] ./cjs-tree-shaking/reexports/index.js 56:9-60
+    cjs full require ./add-to-counter?3 [34] ./cjs-tree-shaking/reexports/index.js 62:8-45
+  ./cjs-tree-shaking/reexports/counter.js [0] 19 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: value]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-18
+    cjs require ./counter [31] ./cjs-tree-shaking/reexports/add-to-counter.js?1 1:16-36
+    cjs require ./counter [32] ./cjs-tree-shaking/reexports/add-to-counter.js?2 1:16-36
+    cjs require ./counter [33] ./cjs-tree-shaking/reexports/add-to-counter.js?3 1:16-36
+    cjs require ./counter [34] ./cjs-tree-shaking/reexports/index.js 52:17-37
+  ./cjs-tree-shaking/reexports/index.js [34] 3.39 KiB {0} [depth 0] [built] [code generated]
+    [exports: unused1, unused2, unused3]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-6:3
+    entry ./cjs-tree-shaking/reexports/ main
+  ./cjs-tree-shaking/reexports/module.js?bailout [30] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?bailout [34] ./cjs-tree-shaking/reexports/index.js 73:24-51
+    cjs export require ./module?bailout [260] ./cjs-tree-shaking/reexports/reexport.js?module?bailout 1:0-57
+  ./cjs-tree-shaking/reexports/module.js?pe1?1 [72] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe1?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 1:0-65
+  ./cjs-tree-shaking/reexports/module.js?pe1?2 [77] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe1?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 1:0-65
+  ./cjs-tree-shaking/reexports/module.js?pe1?3 [82] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe1?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 1:0-65
+  ./cjs-tree-shaking/reexports/module.js?pe1?4 [87] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe1?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 1:0-65
+  ./cjs-tree-shaking/reexports/module.js?pe2?1 [73] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe2?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe2?2 [78] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe2?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe2?3 [83] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe2?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe2?4 [88] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe2?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe3?1 [74] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe3?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 4:0-62
+  ./cjs-tree-shaking/reexports/module.js?pe3?2 [79] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe3?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 4:0-62
+  ./cjs-tree-shaking/reexports/module.js?pe3?3 [84] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe3?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 4:0-62
+  ./cjs-tree-shaking/reexports/module.js?pe3?4 [89] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pe3?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 4:0-62
+  ./cjs-tree-shaking/reexports/module.js?pe4?1 [75] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe4?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe4?2 [80] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe4?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe4?3 [85] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe4?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?pe4?4 [90] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pe4?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?pme1?1 [92] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs full require ./module?pme1?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 3:12-58
+  ./cjs-tree-shaking/reexports/module.js?pme1?2 [96] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs full require ./module?pme1?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 3:12-58
+  ./cjs-tree-shaking/reexports/module.js?pme1?3 [100] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs full require ./module?pme1?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 3:12-58
+  ./cjs-tree-shaking/reexports/module.js?pme1?4 [104] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs full require ./module?pme1?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 3:12-58
+  ./cjs-tree-shaking/reexports/module.js?pme2?1 [91] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme2?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 1:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme2?2 [95] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme2?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 1:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme2?3 [99] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme2?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 1:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme2?4 [103] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme2?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 1:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme3?1 [93] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pme3?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 6:0-73
+  ./cjs-tree-shaking/reexports/module.js?pme3?2 [97] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pme3?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 6:0-73
+  ./cjs-tree-shaking/reexports/module.js?pme3?3 [101] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pme3?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 6:0-73
+  ./cjs-tree-shaking/reexports/module.js?pme3?4 [105] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?pme3?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 6:0-73
+  ./cjs-tree-shaking/reexports/module.js?pme4?1 [94] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme4?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme4?2 [98] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme4?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme4?3 [102] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme4?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?pme4?4 [106] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?pme4?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?we1?1 [36] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?2 [41] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?3 [46] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?4 [51] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?bailout [29] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we1?bailout [34] ./cjs-tree-shaking/reexports/index.js 67:24-55
+    cjs export require ./module?we1?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x1?1 [109] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x1?2 [130] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x1?3 [151] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x1?4 [172] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x2?1 [114] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x2?2 [135] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x2?3 [156] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x2?4 [177] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x3?1 [119] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x3?2 [140] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x3?3 [161] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x3?4 [182] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x4?1 [124] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x4?2 [145] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x4?3 [166] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we1?x4?4 [187] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we1?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 1:0-59
+  ./cjs-tree-shaking/reexports/module.js?we2?1 [37] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?2 [42] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?3 [47] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?4 [52] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?bailout [257] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x1?1 [110] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x1?2 [131] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x1?3 [152] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x1?4 [173] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x2?1 [115] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x2?2 [136] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x2?3 [157] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x2?4 [178] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x3?1 [120] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x3?2 [141] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x3?3 [162] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x3?4 [183] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x4?1 [125] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x4?2 [146] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x4?3 [167] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we2?x4?4 [188] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we2?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 2:9-50
+  ./cjs-tree-shaking/reexports/module.js?we3?1 [38] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?2 [43] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?3 [48] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?4 [53] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?bailout [258] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x1?1 [111] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x1?2 [132] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x1?3 [153] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x1?4 [174] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x2?1 [116] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x2?2 [137] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x2?3 [158] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x2?4 [179] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x3?1 [121] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x3?2 [142] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x3?3 [163] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x3?4 [184] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x4?1 [126] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x4?2 [147] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x4?3 [168] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we3?x4?4 [189] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?we3?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 4:0-56
+  ./cjs-tree-shaking/reexports/module.js?we4?1 [39] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?2 [44] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?3 [49] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?4 [54] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?bailout [259] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x1?1 [112] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x1?2 [133] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x1?3 [154] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x1?4 [175] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x2?1 [117] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x2?2 [138] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x2?3 [159] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x2?4 [180] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x3?1 [122] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x3?2 [143] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x3?3 [164] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x3?4 [185] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x4?1 [127] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x4?2 [148] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x4?3 [169] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?we4?x4?4 [190] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?we4?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 5:9-50
+  ./cjs-tree-shaking/reexports/module.js?wme1?1 [56] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?2 [60] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?3 [64] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?4 [68] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x1?1 [196] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x1?2 [212] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x1?3 [228] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x1?4 [244] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x2?1 [192] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x2?2 [208] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x2?3 [224] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x2?4 [240] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x3?1 [200] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x3?2 [216] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x3?3 [232] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x3?4 [248] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x4?1 [204] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x4?2 [220] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x4?3 [236] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme1?x4?4 [252] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme1?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 3:10-52
+  ./cjs-tree-shaking/reexports/module.js?wme2?1 [55] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?2 [59] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?3 [63] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?4 [67] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x1?1 [195] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x1?2 [211] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x1?3 [227] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x1?4 [243] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x2?1 [191] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x2?2 [207] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x2?3 [223] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x2?4 [239] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x3?1 [199] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x3?2 [215] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x3?3 [231] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x3?4 [247] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x4?1 [203] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x4?2 [219] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x4?3 [235] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme2?x4?4 [251] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme2?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 1:14-56
+  ./cjs-tree-shaking/reexports/module.js?wme3?1 [57] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?2 [61] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?3 [65] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?4 [69] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x1?1 [197] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x1?2 [213] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x1?3 [229] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x1?4 [245] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x2?1 [193] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x2?2 [209] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x2?3 [225] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x2?4 [241] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x3?1 [201] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x3?2 [217] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x3?3 [233] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x3?4 [249] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x4?1 [205] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x4?2 [221] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x4?3 [237] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme3?x4?4 [253] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs export require ./module?wme3?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 6:0-67
+  ./cjs-tree-shaking/reexports/module.js?wme4?1 [58] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?2 [62] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?3 [66] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?4 [70] 42 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x1?1 [198] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x1?2 [214] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x1?3 [230] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x1?4 [246] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x2?1 [194] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x2?2 [210] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x2?3 [226] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x2?4 [242] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x3?1 [202] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x3?2 [218] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x3?3 [234] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x3?4 [250] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x4?1 [206] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x4?2 [222] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x4?3 [238] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 7:9-51
+  ./cjs-tree-shaking/reexports/module.js?wme4?x4?4 [254] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?wme4?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 7:9-51
+  ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 [71] 288 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: property1, property2, property3, property4]
+    [only some exports used: property1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    cjs full require ./reexport-property-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 16:8-58
+  ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 [76] 288 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: property1, property2, property3, property4]
+    [only some exports used: property2]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    cjs full require ./reexport-property-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 17:8-58
+  ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 [81] 288 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: property1, property2, property3, property4]
+    [only some exports used: property3]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    cjs full require ./reexport-property-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 18:8-58
+  ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 [86] 288 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: property1, property2, property3, property4]
+    [only some exports used: property4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    cjs full require ./reexport-property-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 19:8-58
+  ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 [5] 317 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-52
+    cjs full require ./reexport-property-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 23:8-65
+    cjs self exports reference [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 [6] 317 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-52
+    cjs full require ./reexport-property-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 24:8-65
+    cjs self exports reference [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 [7] 317 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-52
+    cjs full require ./reexport-property-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 25:8-65
+    cjs self exports reference [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 [8] 317 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-52
+    cjs full require ./reexport-property-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 26:8-65
+    cjs self exports reference [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 [107] 366 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: reexport1, reexport2, reexport3, reexport4]
+    [only some exports used: reexport1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+    cjs full require ./reexport-reexport-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 30:8-62
+  ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 [128] 366 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: reexport1, reexport2, reexport3, reexport4]
+    [only some exports used: reexport2]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+    cjs full require ./reexport-reexport-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 31:8-62
+  ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 [149] 366 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: reexport1, reexport2, reexport3, reexport4]
+    [only some exports used: reexport3]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+    cjs full require ./reexport-reexport-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 32:8-62
+  ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 [170] 366 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: reexport1, reexport2, reexport3, reexport4]
+    [only some exports used: reexport4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+    cjs full require ./reexport-reexport-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 33:8-62
+  ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 [9] 421 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-73
+    cjs full require ./reexport-reexport-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 37:8-69
+    cjs self exports reference [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 [14] 421 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-73
+    cjs full require ./reexport-reexport-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 40:8-69
+    cjs self exports reference [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 [19] 421 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-73
+    cjs full require ./reexport-reexport-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 43:8-69
+    cjs self exports reference [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 [24] 421 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-73
+    cjs full require ./reexport-reexport-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 46:8-69
+    cjs self exports reference [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 [35] 264 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs full require ./reexport-whole-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 2:8-57
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 [40] 264 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module2]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs full require ./reexport-whole-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 3:8-57
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 [45] 264 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module3]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs full require ./reexport-whole-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 4:8-57
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 [50] 264 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs full require ./reexport-whole-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 5:8-57
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout [256] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?bailout [255] ./cjs-tree-shaking/reexports/reexport.js?reexport-whole-exports?bailout 1:0-57
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 [108] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x1?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 1:0-2:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 [129] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x1?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 1:0-2:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 [150] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x1?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 1:0-2:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 [171] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x1?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 1:0-2:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 [113] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x2?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 3:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 [134] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x2?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 3:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 [155] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x2?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 3:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 [176] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x2?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 3:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 [118] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x3?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 5:0-6:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 [139] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x3?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 5:0-6:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 [160] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module3]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x3?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 5:0-6:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 [181] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs export require ./reexport-whole-exports?x3?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 5:0-6:25
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 [123] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x4?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 7:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 [144] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x4?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 7:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 [165] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x4?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 7:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 [186] 264 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-60
+    cjs require ./reexport-whole-exports?x4?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 7:9-65
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 [1] 294 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 9:8-64
+    cjs self exports reference [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 [2] 294 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 10:8-64
+    cjs self exports reference [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 [3] 294 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 11:8-64
+    cjs self exports reference [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 [4] 294 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 12:8-64
+    cjs self exports reference [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 [11] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?x1?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 3:12-4:10
+    cjs self exports reference [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 [16] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?x1?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 3:12-4:10
+    cjs self exports reference [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 [21] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?x1?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 3:12-4:10
+    cjs self exports reference [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 [26] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs full require ./reexport-whole-module-exports?x1?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 3:12-4:10
+    cjs self exports reference [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 [10] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x2?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 1:9-72
+    cjs self exports reference [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 [15] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x2?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 1:9-72
+    cjs self exports reference [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 [20] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x2?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 1:9-72
+    cjs self exports reference [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 [25] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x2?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 1:9-72
+    cjs self exports reference [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 [12] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs export require ./reexport-whole-module-exports?x3?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 7:0-8:25
+    cjs self exports reference [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 [17] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs export require ./reexport-whole-module-exports?x3?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 7:0-8:25
+    cjs self exports reference [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 [22] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs export require ./reexport-whole-module-exports?x3?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 7:0-8:25
+    cjs self exports reference [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 [27] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs export require ./reexport-whole-module-exports?x3?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 7:0-8:25
+    cjs self exports reference [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 [13] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x4?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 9:9-72
+    cjs self exports reference [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 [18] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x4?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 9:9-72
+    cjs self exports reference [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 [23] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x4?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 9:9-72
+    cjs self exports reference [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 2:0-14
+  ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 [28] 294 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 2:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-57
+    cjs require ./reexport-whole-module-exports?x4?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 9:9-72
+    cjs self exports reference [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 2:0-14
+  ./cjs-tree-shaking/reexports/reexport.js?module?bailout [260] 59 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    [only some exports used: abc]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-58
+    cjs full require ./reexport?module?bailout [34] ./cjs-tree-shaking/reexports/index.js 72:13-53
+  ./cjs-tree-shaking/reexports/reexport.js?reexport-whole-exports?bailout [255] 59 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: module1, module2, module3, module4]
+    [only some exports used: module1]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-58
+    cjs full require ./reexport?reexport-whole-exports?bailout [34] ./cjs-tree-shaking/reexports/index.js 66:13-77
+./cjs-tree-shaking/reexports/index.js [34] 3.39 KiB {0} [depth 0] [built] [code generated]
+  [exports: unused1, unused2, unused3]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-6:3
+  entry ./cjs-tree-shaking/reexports/ main
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 [35] 264 bytes {0} [depth 1] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs full require ./reexport-whole-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 2:8-57
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 [40] 264 bytes {0} [depth 1] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module2]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs full require ./reexport-whole-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 3:8-57
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 [45] 264 bytes {0} [depth 1] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module3]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs full require ./reexport-whole-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 4:8-57
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 [50] 264 bytes {0} [depth 1] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs full require ./reexport-whole-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 5:8-57
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 [1] 294 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 9:8-64
+  cjs self exports reference [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 [2] 294 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 10:8-64
+  cjs self exports reference [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 [3] 294 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 11:8-64
+  cjs self exports reference [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 [4] 294 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 12:8-64
+  cjs self exports reference [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-property-exports.js?1 [71] 288 bytes {0} [depth 1] [built] [code generated]
+  [exports: property1, property2, property3, property4]
+  [only some exports used: property1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-66
+  cjs full require ./reexport-property-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 16:8-58
+./cjs-tree-shaking/reexports/reexport-property-exports.js?2 [76] 288 bytes {0} [depth 1] [built] [code generated]
+  [exports: property1, property2, property3, property4]
+  [only some exports used: property2]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-66
+  cjs full require ./reexport-property-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 17:8-58
+./cjs-tree-shaking/reexports/reexport-property-exports.js?3 [81] 288 bytes {0} [depth 1] [built] [code generated]
+  [exports: property1, property2, property3, property4]
+  [only some exports used: property3]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-66
+  cjs full require ./reexport-property-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 18:8-58
+./cjs-tree-shaking/reexports/reexport-property-exports.js?4 [86] 288 bytes {0} [depth 1] [built] [code generated]
+  [exports: property1, property2, property3, property4]
+  [only some exports used: property4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-66
+  cjs full require ./reexport-property-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 19:8-58
+./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 [5] 317 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-52
+  cjs full require ./reexport-property-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 23:8-65
+  cjs self exports reference [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 [6] 317 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-52
+  cjs full require ./reexport-property-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 24:8-65
+  cjs self exports reference [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 [7] 317 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-52
+  cjs full require ./reexport-property-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 25:8-65
+  cjs self exports reference [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 [8] 317 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-52
+  cjs full require ./reexport-property-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 26:8-65
+  cjs self exports reference [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 [107] 366 bytes {0} [depth 1] [built] [code generated]
+  [exports: reexport1, reexport2, reexport3, reexport4]
+  [only some exports used: reexport1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+  cjs full require ./reexport-reexport-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 30:8-62
+./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 [128] 366 bytes {0} [depth 1] [built] [code generated]
+  [exports: reexport1, reexport2, reexport3, reexport4]
+  [only some exports used: reexport2]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+  cjs full require ./reexport-reexport-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 31:8-62
+./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 [149] 366 bytes {0} [depth 1] [built] [code generated]
+  [exports: reexport1, reexport2, reexport3, reexport4]
+  [only some exports used: reexport3]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+  cjs full require ./reexport-reexport-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 32:8-62
+./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 [170] 366 bytes {0} [depth 1] [built] [code generated]
+  [exports: reexport1, reexport2, reexport3, reexport4]
+  [only some exports used: reexport4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-2:26
+  cjs full require ./reexport-reexport-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 33:8-62
+./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 [9] 421 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-73
+  cjs full require ./reexport-reexport-module-exports?1 [34] ./cjs-tree-shaking/reexports/index.js 37:8-69
+  cjs self exports reference [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 [14] 421 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-73
+  cjs full require ./reexport-reexport-module-exports?2 [34] ./cjs-tree-shaking/reexports/index.js 40:8-69
+  cjs self exports reference [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 [19] 421 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-73
+  cjs full require ./reexport-reexport-module-exports?3 [34] ./cjs-tree-shaking/reexports/index.js 43:8-69
+  cjs self exports reference [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 [24] 421 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-73
+  cjs full require ./reexport-reexport-module-exports?4 [34] ./cjs-tree-shaking/reexports/index.js 46:8-69
+  cjs self exports reference [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 2:0-14
+./cjs-tree-shaking/reexports/counter.js [0] 19 bytes {0} [depth 1] [built] [code generated]
+  [exports: value]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-18
+  cjs require ./counter [31] ./cjs-tree-shaking/reexports/add-to-counter.js?1 1:16-36
+  cjs require ./counter [32] ./cjs-tree-shaking/reexports/add-to-counter.js?2 1:16-36
+  cjs require ./counter [33] ./cjs-tree-shaking/reexports/add-to-counter.js?3 1:16-36
+  cjs require ./counter [34] ./cjs-tree-shaking/reexports/index.js 52:17-37
+./cjs-tree-shaking/reexports/add-to-counter.js?1 [31] 127 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, abcUsed]
+  [only some exports used: abcUsed]
+  Statement (VariableDeclaration) with side effects in source code at 1:0-37
+  cjs export require ./add-to-counter?1 [34] ./cjs-tree-shaking/reexports/index.js 54:1-48
+  cjs full require ./add-to-counter?1 [34] ./cjs-tree-shaking/reexports/index.js 59:9-46
+./cjs-tree-shaking/reexports/add-to-counter.js?2 [32] 127 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, abcUsed]
+  [only some exports used: abcUsed]
+  Statement (VariableDeclaration) with side effects in source code at 1:0-37
+  cjs export require ./add-to-counter?2 [34] ./cjs-tree-shaking/reexports/index.js 55:1-52
+  cjs full require ./add-to-counter?2 [34] ./cjs-tree-shaking/reexports/index.js 60:9-46
+./cjs-tree-shaking/reexports/add-to-counter.js?3 [33] 127 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, abcUsed]
+  [all exports used]
+  Statement (VariableDeclaration) with side effects in source code at 1:0-37
+  cjs export require ./add-to-counter?3 [34] ./cjs-tree-shaking/reexports/index.js 56:9-60
+  cjs full require ./add-to-counter?3 [34] ./cjs-tree-shaking/reexports/index.js 62:8-45
+./cjs-tree-shaking/reexports/reexport.js?reexport-whole-exports?bailout [255] 59 bytes {0} [depth 1] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-58
+  cjs full require ./reexport?reexport-whole-exports?bailout [34] ./cjs-tree-shaking/reexports/index.js 66:13-77
+./cjs-tree-shaking/reexports/module.js?we1?bailout [29] 42 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we1?bailout [34] ./cjs-tree-shaking/reexports/index.js 67:24-55
+  cjs export require ./module?we1?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 1:0-59
+./cjs-tree-shaking/reexports/reexport.js?module?bailout [260] 59 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-58
+  cjs full require ./reexport?module?bailout [34] ./cjs-tree-shaking/reexports/index.js 72:13-53
+./cjs-tree-shaking/reexports/module.js?bailout [30] 42 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?bailout [34] ./cjs-tree-shaking/reexports/index.js 73:24-51
+  cjs export require ./module?bailout [260] ./cjs-tree-shaking/reexports/reexport.js?module?bailout 1:0-57
+./cjs-tree-shaking/reexports/module.js?we1?1 [36] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?1 [37] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?1 [38] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?1 [39] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?1 [35] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?2 [41] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?2 [42] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?2 [43] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?2 [44] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?2 [40] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?3 [46] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?3 [47] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?3 [48] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?3 [49] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?3 [45] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?4 [51] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?4 [52] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?4 [53] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?4 [54] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?4 [50] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?wme2?1 [55] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?1 [56] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?1 [57] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?1 [58] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?1 [1] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?2 [59] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?2 [60] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?2 [61] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?2 [62] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?2 [2] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?3 [63] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?3 [64] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?3 [65] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?3 [66] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?3 [3] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?4 [67] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?4 [68] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?4 [69] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?4 [70] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?4 [4] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?4 7:9-51
+./cjs-tree-shaking/reexports/module.js?pe1?1 [72] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe1?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 1:0-65
+./cjs-tree-shaking/reexports/module.js?pe2?1 [73] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe2?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?pe3?1 [74] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe3?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 4:0-62
+./cjs-tree-shaking/reexports/module.js?pe4?1 [75] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe4?1 [71] ./cjs-tree-shaking/reexports/reexport-property-exports.js?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?pe1?2 [77] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe1?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 1:0-65
+./cjs-tree-shaking/reexports/module.js?pe2?2 [78] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe2?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?pe3?2 [79] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe3?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 4:0-62
+./cjs-tree-shaking/reexports/module.js?pe4?2 [80] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe4?2 [76] ./cjs-tree-shaking/reexports/reexport-property-exports.js?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?pe1?3 [82] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe1?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 1:0-65
+./cjs-tree-shaking/reexports/module.js?pe2?3 [83] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe2?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?pe3?3 [84] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe3?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 4:0-62
+./cjs-tree-shaking/reexports/module.js?pe4?3 [85] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe4?3 [81] ./cjs-tree-shaking/reexports/reexport-property-exports.js?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?pe1?4 [87] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe1?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 1:0-65
+./cjs-tree-shaking/reexports/module.js?pe2?4 [88] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe2?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?pe3?4 [89] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pe3?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 4:0-62
+./cjs-tree-shaking/reexports/module.js?pe4?4 [90] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pe4?4 [86] ./cjs-tree-shaking/reexports/reexport-property-exports.js?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?pme2?1 [91] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme2?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 1:9-51
+./cjs-tree-shaking/reexports/module.js?pme1?1 [92] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs full require ./module?pme1?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 3:12-58
+./cjs-tree-shaking/reexports/module.js?pme3?1 [93] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pme3?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 6:0-73
+./cjs-tree-shaking/reexports/module.js?pme4?1 [94] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme4?1 [5] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?pme2?2 [95] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme2?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 1:9-51
+./cjs-tree-shaking/reexports/module.js?pme1?2 [96] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs full require ./module?pme1?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 3:12-58
+./cjs-tree-shaking/reexports/module.js?pme3?2 [97] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pme3?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 6:0-73
+./cjs-tree-shaking/reexports/module.js?pme4?2 [98] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme4?2 [6] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?pme2?3 [99] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme2?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 1:9-51
+./cjs-tree-shaking/reexports/module.js?pme1?3 [100] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs full require ./module?pme1?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 3:12-58
+./cjs-tree-shaking/reexports/module.js?pme3?3 [101] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pme3?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 6:0-73
+./cjs-tree-shaking/reexports/module.js?pme4?3 [102] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme4?3 [7] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?pme2?4 [103] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme2?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 1:9-51
+./cjs-tree-shaking/reexports/module.js?pme1?4 [104] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs full require ./module?pme1?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 3:12-58
+./cjs-tree-shaking/reexports/module.js?pme3?4 [105] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?pme3?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 6:0-73
+./cjs-tree-shaking/reexports/module.js?pme4?4 [106] 42 bytes {0} [depth 2] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?pme4?4 [8] ./cjs-tree-shaking/reexports/reexport-property-module-exports.js?4 7:9-51
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 [108] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x1?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 1:0-2:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 [113] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x2?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 3:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 [118] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x3?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 5:0-6:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 [123] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x4?1 [107] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?1 7:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 [129] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x1?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 1:0-2:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 [134] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x2?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 3:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 [139] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x3?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 5:0-6:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 [144] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x4?2 [128] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?2 7:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 [150] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x1?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 1:0-2:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 [155] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x2?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 3:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 [160] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module3]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x3?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 5:0-6:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 [165] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x4?3 [149] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?3 7:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 [171] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x1?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 1:0-2:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 [176] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x2?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 3:9-65
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 [181] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?x3?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 5:0-6:25
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 [186] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs require ./reexport-whole-exports?x4?4 [170] ./cjs-tree-shaking/reexports/reexport-reexport-exports.js?4 7:9-65
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 [10] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x2?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 1:9-72
+  cjs self exports reference [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 [11] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?x1?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 3:12-4:10
+  cjs self exports reference [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 [12] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs export require ./reexport-whole-module-exports?x3?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 7:0-8:25
+  cjs self exports reference [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 [13] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x4?1 [9] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?1 9:9-72
+  cjs self exports reference [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 [15] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x2?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 1:9-72
+  cjs self exports reference [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 [16] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?x1?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 3:12-4:10
+  cjs self exports reference [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 [17] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs export require ./reexport-whole-module-exports?x3?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 7:0-8:25
+  cjs self exports reference [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 [18] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x4?2 [14] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?2 9:9-72
+  cjs self exports reference [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 [20] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x2?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 1:9-72
+  cjs self exports reference [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 [21] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?x1?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 3:12-4:10
+  cjs self exports reference [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 [22] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs export require ./reexport-whole-module-exports?x3?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 7:0-8:25
+  cjs self exports reference [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 [23] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x4?3 [19] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?3 9:9-72
+  cjs self exports reference [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 [25] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x2?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 1:9-72
+  cjs self exports reference [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 [26] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs full require ./reexport-whole-module-exports?x1?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 3:12-4:10
+  cjs self exports reference [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 [27] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs export require ./reexport-whole-module-exports?x3?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 7:0-8:25
+  cjs self exports reference [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 [28] 294 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 2:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-57
+  cjs require ./reexport-whole-module-exports?x4?4 [24] ./cjs-tree-shaking/reexports/reexport-reexport-module-exports.js?4 9:9-72
+  cjs self exports reference [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 2:0-14
+./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout [256] 264 bytes {0} [depth 2] [built] [code generated]
+  [exports: module1, module2, module3, module4]
+  [only some exports used: module1]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-60
+  cjs export require ./reexport-whole-exports?bailout [255] ./cjs-tree-shaking/reexports/reexport.js?reexport-whole-exports?bailout 1:0-57
+./cjs-tree-shaking/reexports/module.js?we1?x1?1 [109] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x1?1 [110] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x1?1 [111] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x1?1 [112] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x1?1 [108] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x2?1 [114] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x2?1 [115] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x2?1 [116] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x2?1 [117] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x2?1 [113] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x3?1 [119] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x3?1 [120] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x3?1 [121] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x3?1 [122] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x3?1 [118] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x4?1 [124] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x4?1 [125] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x4?1 [126] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x4?1 [127] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x4?1 [123] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?1 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x1?2 [130] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x1?2 [131] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x1?2 [132] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x1?2 [133] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x1?2 [129] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x2?2 [135] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x2?2 [136] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x2?2 [137] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x2?2 [138] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x2?2 [134] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x3?2 [140] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x3?2 [141] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x3?2 [142] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x3?2 [143] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x3?2 [139] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x4?2 [145] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x4?2 [146] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x4?2 [147] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x4?2 [148] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x4?2 [144] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?2 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x1?3 [151] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x1?3 [152] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x1?3 [153] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x1?3 [154] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x1?3 [150] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x2?3 [156] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x2?3 [157] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x2?3 [158] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x2?3 [159] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x2?3 [155] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x3?3 [161] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x3?3 [162] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x3?3 [163] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [only some exports used: abc]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x3?3 [164] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x3?3 [160] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x4?3 [166] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x4?3 [167] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x4?3 [168] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x4?3 [169] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x4?3 [165] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?3 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x1?4 [172] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x1?4 [173] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x1?4 [174] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x1?4 [175] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x1?4 [171] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x1?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x2?4 [177] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x2?4 [178] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x2?4 [179] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x2?4 [180] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x2?4 [176] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x2?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x3?4 [182] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x3?4 [183] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x3?4 [184] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x3?4 [185] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x3?4 [181] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x3?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?we1?x4?4 [187] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we1?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 1:0-59
+./cjs-tree-shaking/reexports/module.js?we2?x4?4 [188] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?x4?4 [189] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?x4?4 [190] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?x4?4 [186] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?x4?4 5:9-50
+./cjs-tree-shaking/reexports/module.js?wme2?x2?1 [191] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x2?1 [192] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x2?1 [193] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x2?1 [194] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x2?1 [10] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x1?1 [195] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x1?1 [196] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x1?1 [197] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x1?1 [198] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x1?1 [11] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x3?1 [199] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x3?1 [200] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x3?1 [201] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x3?1 [202] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x3?1 [12] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x4?1 [203] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x4?1 [204] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x4?1 [205] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x4?1 [206] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x4?1 [13] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?1 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x2?2 [207] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x2?2 [208] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x2?2 [209] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x2?2 [210] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x2?2 [15] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x1?2 [211] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x1?2 [212] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x1?2 [213] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x1?2 [214] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x1?2 [16] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x3?2 [215] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x3?2 [216] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x3?2 [217] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x3?2 [218] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x3?2 [17] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x4?2 [219] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x4?2 [220] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x4?2 [221] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x4?2 [222] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x4?2 [18] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?2 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x2?3 [223] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x2?3 [224] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x2?3 [225] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x2?3 [226] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x2?3 [20] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x1?3 [227] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x1?3 [228] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x1?3 [229] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x1?3 [230] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x1?3 [21] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x3?3 [231] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x3?3 [232] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x3?3 [233] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x3?3 [234] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x3?3 [22] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x4?3 [235] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x4?3 [236] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x4?3 [237] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x4?3 [238] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x4?3 [23] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?3 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x2?4 [239] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x2?4 [240] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x2?4 [241] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x2?4 [242] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x2?4 [25] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x2?4 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x1?4 [243] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x1?4 [244] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x1?4 [245] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x1?4 [246] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x1?4 [26] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x1?4 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x3?4 [247] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x3?4 [248] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x3?4 [249] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x3?4 [250] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x3?4 [27] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x3?4 7:9-51
+./cjs-tree-shaking/reexports/module.js?wme2?x4?4 [251] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme2?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 1:14-56
+./cjs-tree-shaking/reexports/module.js?wme1?x4?4 [252] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme1?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 3:10-52
+./cjs-tree-shaking/reexports/module.js?wme3?x4?4 [253] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?wme3?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 6:0-67
+./cjs-tree-shaking/reexports/module.js?wme4?x4?4 [254] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?wme4?x4?4 [28] ./cjs-tree-shaking/reexports/reexport-whole-module-exports.js?x4?4 7:9-51
+./cjs-tree-shaking/reexports/module.js?we2?bailout [257] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we2?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 2:9-50
+./cjs-tree-shaking/reexports/module.js?we3?bailout [258] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs export require ./module?we3?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 4:0-56
+./cjs-tree-shaking/reexports/module.js?we4?bailout [259] 42 bytes {0} [depth 3] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?we4?bailout [256] ./cjs-tree-shaking/reexports/reexport-whole-exports.js?bailout 5:9-50
+  
+
+LOG from webpack.Compiler
+<t> make hook: 183.983476 ms
+<t> finish make hook: 0.025589 ms
+<t> finish compilation: 6.622847 ms
+<t> seal compilation: 48.866302 ms
+<t> afterCompile hook: 0.009413 ms
+<t> emitAssets: 38.224797 ms
+<t> emitRecords: 0.00348 ms
+<t> done hook: 0.021572 ms
+<t> beginIdle: 0.01212 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005012 ms
+<t> finish modules: 6.374335 ms
+<t> report dependency errors and warnings: 0.22448 ms
+<t> optimize dependencies: 3.617356 ms
+<t> create chunks: 2.089906 ms
+<t> compute affected modules with chunk graph: 0.003925 ms
+<t> optimize: 8.533045 ms
+    261 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 5.906321 ms
+    100% code generated (261 generated, 0 from cache)
+<t> code generation: 7.986749 ms
+<t> runtime requirements.modules: 0.81576 ms
+<t> runtime requirements.chunks: 0.257029 ms
+<t> runtime requirements.entries: 0.090844 ms
+<t> runtime requirements: 1.204667 ms
+<t> hashing: initialize hash: 0.008214 ms
+<t> hashing: sort chunks: 0.020834 ms
+<t> hashing: hash runtime modules: 0.118146 ms
+<t> hashing: hash chunks: 0.798298 ms
+<t> hashing: hash digest: 0.020746 ms
+<t> hashing: process full hash modules: 0.001574 ms
+<t> hashing: 1.015584 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.007875 ms
+<t> module assets: 0.085205 ms
+<t> create chunk assets: 17.499943 ms
+<t> process assets: 0.095115 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.32383 ms
+<t> figure out provided exports: 5.399929 ms
+    89% of exports of modules have been determined (28 no declared exports, 233 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 32 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.538948 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.035494 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.216188 ms
+<t> trace exports usage in graph: 3.293118 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.689166 ms
+<t> visitModules: visiting: 1.829578 ms
+    524 queue items processed (261 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 1.857936 ms
+<t> connectChunkGroups: 0.001884 ms
+<t> cleanup: 0.001899 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019279 ms
+<t> modules: 2.09037 ms
+<t> queue: 0.004649 ms
+<t> maxSize: 0.008618 ms
+
+LOG from webpack.FileSystemInfo
+    261 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/261) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 279 ms (124d4015bcd008d81e8c)

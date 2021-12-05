@@ -1,0 +1,634 @@
+PublicPath: (none)
+asset bundle.js 34.7 KiB {0} [emitted] (name: main)
+Entrypoint main 34.7 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 3.3 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+  > ./side-effects/dynamic-reexports/ main
+  dependent modules 1.2 KiB [dependent]
+    modules by path ./side-effects/dynamic-reexports/dedupe-target-with-side/*.js 155 bytes
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js [7] 87 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [only some exports used: value, valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        harmony side effect evaluation ./a [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 1:0-20
+        harmony export imported specifier ./a [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 1:0-20
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js [10] 25 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./b [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 2:0-20
+        harmony export imported specifier ./b [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 2:0-20
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/empty.js [0] 1 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [used exports unknown]
+        from origin ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js
+          [inactive] harmony side effect evaluation ./empty [7] ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js 1:0-24
+          harmony export imported specifier ./empty [7] ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js 1:0-24
+        from origin ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js
+          [inactive] harmony side effect evaluation ./empty [10] ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js 1:0-24
+          harmony export imported specifier ./empty [10] ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js 1:0-24
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js [9] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: value, valueUsed]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-20
+        harmony side effect evaluation ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 6:0-9:35
+        harmony import specifier ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 39:8-17
+        harmony import specifier ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 40:8-21
+    modules by path ./side-effects/dynamic-reexports/default-export/ 53 bytes
+      ./side-effects/dynamic-reexports/default-export/a.js [20] 19 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/default-export/index.js 1:0-35
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/default-export/index.js 1:0-35
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 44:8-23 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/default-export/b.js [5] 21 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-20
+        [inactive] from origin ./side-effects/dynamic-reexports/default-export/index.js
+          [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/default-export/index.js 2:0-35
+          [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/default-export/index.js 2:0-35
+        cjs self exports reference [5] ./side-effects/dynamic-reexports/default-export/b.js 1:0-14
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 45:8-23 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/default-export/empty.js [21] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        [inactive] harmony side effect evaluation ./empty ./side-effects/dynamic-reexports/default-export/index.js 3:0-43
+        [inactive] harmony export imported specifier ./empty ./side-effects/dynamic-reexports/default-export/index.js 3:0-43
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 46:8-27 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/default-export/json.json [22] 12 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [inactive] harmony side effect evaluation ./json ./side-effects/dynamic-reexports/default-export/index.js 4:0-41
+        [inactive] harmony export imported specifier ./json ./side-effects/dynamic-reexports/default-export/index.js 4:0-41
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 47:8-26 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/multiple-sources/*.js 126 bytes
+      ./side-effects/dynamic-reexports/multiple-sources/a.js [4] 28 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-27
+        cjs self exports reference [4] ./side-effects/dynamic-reexports/multiple-sources/a.js 1:7-14
+        [inactive] harmony side effect evaluation ./a [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 2:0-20
+        harmony export imported specifier ./a [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 2:0-20
+      ./side-effects/dynamic-reexports/multiple-sources/b.js [3] 29 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        cjs self exports reference [3] ./side-effects/dynamic-reexports/multiple-sources/b.js 1:7-14
+        [inactive] harmony side effect evaluation ./b [14] ./side-effects/dynamic-reexports/multiple-sources/module2.js 1:0-20
+        harmony export imported specifier ./b [14] ./side-effects/dynamic-reexports/multiple-sources/module2.js 1:0-20
+      ./side-effects/dynamic-reexports/multiple-sources/module.js [27] 48 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: value, value2]
+        from origin ./side-effects/dynamic-reexports/index.js
+          harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 71:8-28 (skipped side-effect-free modules)
+          harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 72:8-29 (skipped side-effect-free modules)
+        [inactive] from origin ./side-effects/dynamic-reexports/multiple-sources/index.js
+          [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/multiple-sources/index.js 1:0-25
+          [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/multiple-sources/index.js 1:0-25
+      ./side-effects/dynamic-reexports/multiple-sources/module2.js [14] 21 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [only some exports used: value, value2]
+        [inactive] harmony side effect evaluation ./module2 [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 1:0-26
+        harmony export imported specifier ./module2 [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 1:0-26
+    modules by path ./side-effects/dynamic-reexports/direct-export/*.js 136 bytes
+      ./side-effects/dynamic-reexports/direct-export/dynamic.js [1] 58 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        CommonJS bailout: exports is used directly at 2:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        from origin ./side-effects/dynamic-reexports/direct-export/dynamic.js
+          cjs self exports reference [1] ./side-effects/dynamic-reexports/direct-export/dynamic.js 1:7-14
+          cjs self exports reference [1] ./side-effects/dynamic-reexports/direct-export/dynamic.js 2:7-14
+        [inactive] from origin ./side-effects/dynamic-reexports/direct-export/module.js
+          [inactive] harmony side effect evaluation ./dynamic [23] ./side-effects/dynamic-reexports/direct-export/module.js 2:0-26
+          [inactive] harmony export imported specifier ./dynamic [23] ./side-effects/dynamic-reexports/direct-export/module.js 2:0-26
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 57:8-20 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/direct-export/index.js [25] 26 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: default]
+        [inactive] harmony side effect evaluation ./direct-export [8] ./side-effects/dynamic-reexports/index.js 12:0-16:25
+        [inactive] harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 56:8-19
+        [inactive] harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 57:8-20
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 66:8-16
+      ./side-effects/dynamic-reexports/direct-export/module.js [23] 52 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./module [25] ./side-effects/dynamic-reexports/direct-export/index.js 1:0-25
+        [inactive] harmony export imported specifier ./module [25] ./side-effects/dynamic-reexports/direct-export/index.js 1:0-25
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 56:8-19 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/reexports-excludes-default/*.js 195 bytes
+      ./side-effects/dynamic-reexports/reexports-excludes-default/empty.js [13] 1 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [used exports unknown]
+        [inactive] harmony side effect evaluation ./empty [12] ./side-effects/dynamic-reexports/reexports-excludes-default/module.js 1:0-24
+        harmony export imported specifier ./empty [12] ./side-effects/dynamic-reexports/reexports-excludes-default/module.js 1:0-24
+      ./side-effects/dynamic-reexports/reexports-excludes-default/index.js [11] 26 bytes {0} [depth 1] [dependent] [built] [code generated]
+        cjs require ./reexports-excludes-default [8] ./side-effects/dynamic-reexports/index.js 51:23-62
+      ./side-effects/dynamic-reexports/reexports-excludes-default/module.js [12] 168 bytes {0} [depth 2] [dependent] [built] [code generated]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-65
+        [inactive] harmony side effect evaluation ./module [11] ./side-effects/dynamic-reexports/reexports-excludes-default/index.js 1:0-25
+        harmony export imported specifier ./module [11] ./side-effects/dynamic-reexports/reexports-excludes-default/index.js 1:0-25
+    modules by path ./side-effects/dynamic-reexports/checked-export/*.js 110 bytes
+      ./side-effects/dynamic-reexports/checked-export/dynamic.js [2] 58 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        CommonJS bailout: exports is used directly at 2:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        from origin ./side-effects/dynamic-reexports/checked-export/dynamic.js
+          cjs self exports reference [2] ./side-effects/dynamic-reexports/checked-export/dynamic.js 1:7-14
+          cjs self exports reference [2] ./side-effects/dynamic-reexports/checked-export/dynamic.js 2:7-14
+        [inactive] from origin ./side-effects/dynamic-reexports/checked-export/module.js
+          [inactive] harmony side effect evaluation ./dynamic [24] ./side-effects/dynamic-reexports/checked-export/module.js 2:0-26
+          [inactive] harmony export imported specifier ./dynamic [24] ./side-effects/dynamic-reexports/checked-export/module.js 2:0-26
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41 (skipped side-effect-free modules)
+        harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 62:8-21 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/checked-export/module.js [24] 52 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 61:8-20 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/dedupe-target-static/*.js 113 bytes
+      ./side-effects/dynamic-reexports/dedupe-target-static/a.js [16] 88 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: value, valueUsed]
+        [only some exports used: valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/dedupe-target-static/index.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/dedupe-target-static/index.js 1:0-20
+        harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 30:8-23 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/dedupe-target-static/module.js [15] 25 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: value]
+        [all exports used]
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target-static/a.js
+          [inactive] harmony side effect evaluation ./module [16] ./side-effects/dynamic-reexports/dedupe-target-static/a.js 1:0-25
+          [inactive] harmony export imported specifier ./module [16] ./side-effects/dynamic-reexports/dedupe-target-static/a.js 1:0-25
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target-static/b.js
+          [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/dedupe-target-static/b.js 1:0-25
+          [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/dedupe-target-static/b.js 1:0-25
+        harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 29:8-19 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/dedupe-target/*.js 88 bytes
+      ./side-effects/dynamic-reexports/dedupe-target/a.js [19] 87 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/dedupe-target/index.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/dedupe-target/index.js 1:0-20
+        harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 35:8-17 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/dedupe-target/empty.js [18] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target/a.js
+          [inactive] harmony side effect evaluation ./empty [19] ./side-effects/dynamic-reexports/dedupe-target/a.js 1:0-24
+          [inactive] harmony export imported specifier ./empty [19] ./side-effects/dynamic-reexports/dedupe-target/a.js 1:0-24
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target/b.js
+          [inactive] harmony side effect evaluation ./empty ./side-effects/dynamic-reexports/dedupe-target/b.js 1:0-24
+          [inactive] harmony export imported specifier ./empty ./side-effects/dynamic-reexports/dedupe-target/b.js 1:0-24
+        harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 34:8-13 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/swapped/*.js 45 bytes
+      ./side-effects/dynamic-reexports/swapped/a.js [28] 21 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: a]
+        [all exports used]
+        [inactive] from origin ./side-effects/dynamic-reexports/swapped/module.js
+          [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/swapped/module.js 1:0-20
+          [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/swapped/module.js 1:0-20
+        harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 77:8-9 (skipped side-effect-free modules)
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 1:0-34 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/swapped/b.js [6] 24 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-23
+        [inactive] from origin ./side-effects/dynamic-reexports/swapped/module.js
+          [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/swapped/module.js 2:0-20
+          [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/swapped/module.js 2:0-20
+        harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 76:8-9 (skipped side-effect-free modules)
+        cjs self exports reference [6] ./side-effects/dynamic-reexports/swapped/b.js 1:7-14
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 2:0-34 (skipped side-effect-free modules)
+    ./side-effects/dynamic-reexports/dynamic-reexport-default/index.js [26] 52 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [only some exports used: default]
+      [inactive] harmony side effect evaluation ./dynamic-reexport-default [8] ./side-effects/dynamic-reexports/index.js 21:0-50
+      harmony import specifier ./dynamic-reexport-default [8] ./side-effects/dynamic-reexports/index.js 67:8-16
+    ./side-effects/dynamic-reexports/unused.js [17] 154 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: unprovided, unused, value]
+      [only some exports used: unprovided, unused]
+      Statement (ExportNamedDeclaration) with side effects in source code at 2:0-58
+      [inactive] harmony side effect evaluation ./unused [8] ./side-effects/dynamic-reexports/index.js 1:0-46
+      harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 30:30-36
+      harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 35:24-30
+      harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 52:37-47
+  runtime modules 937 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  ./side-effects/dynamic-reexports/index.js [8] 2.1 KiB {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 28:0-31:3
+    entry ./side-effects/dynamic-reexports/ main
+code generated modules 3.3 KiB (javascript) 937 bytes (runtime) [code generated]
+  javascript modules 3.29 KiB
+    modules by path ./side-effects/dynamic-reexports/dedupe-target-with-side/*.js 155 bytes
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js [9] 42 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: value, valueUsed]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-20
+        harmony side effect evaluation ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 6:0-9:35
+        harmony import specifier ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 39:8-17
+        harmony import specifier ./dedupe-target-with-side [8] ./side-effects/dynamic-reexports/index.js 40:8-21
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js [7] 87 bytes {0} [depth 2] [built] [code generated]
+        [only some exports used: value, valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        harmony side effect evaluation ./a [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 1:0-20
+        harmony export imported specifier ./a [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 1:0-20
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js [10] 25 bytes {0} [depth 2] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./b [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 2:0-20
+        harmony export imported specifier ./b [9] ./side-effects/dynamic-reexports/dedupe-target-with-side/index.js 2:0-20
+      ./side-effects/dynamic-reexports/dedupe-target-with-side/empty.js [0] 1 bytes {0} [depth 3] [built] [code generated]
+        [used exports unknown]
+        from origin ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js
+          [inactive] harmony side effect evaluation ./empty [7] ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js 1:0-24
+          harmony export imported specifier ./empty [7] ./side-effects/dynamic-reexports/dedupe-target-with-side/a.js 1:0-24
+        from origin ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js
+          [inactive] harmony side effect evaluation ./empty [10] ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js 1:0-24
+          harmony export imported specifier ./empty [10] ./side-effects/dynamic-reexports/dedupe-target-with-side/b.js 1:0-24
+    modules by path ./side-effects/dynamic-reexports/multiple-sources/*.js 126 bytes
+      ./side-effects/dynamic-reexports/multiple-sources/module.js [27] 48 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: value, value2]
+        from origin ./side-effects/dynamic-reexports/index.js
+          harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 71:8-28 (skipped side-effect-free modules)
+          harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 72:8-29 (skipped side-effect-free modules)
+        [inactive] from origin ./side-effects/dynamic-reexports/multiple-sources/index.js
+          [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/multiple-sources/index.js 1:0-25
+          [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/multiple-sources/index.js 1:0-25
+      ./side-effects/dynamic-reexports/multiple-sources/module2.js [14] 21 bytes {0} [depth 2] [built] [code generated]
+        [only some exports used: value, value2]
+        [inactive] harmony side effect evaluation ./module2 [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 1:0-26
+        harmony export imported specifier ./module2 [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 1:0-26
+      ./side-effects/dynamic-reexports/multiple-sources/a.js [4] 28 bytes {0} [depth 2] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-27
+        cjs self exports reference [4] ./side-effects/dynamic-reexports/multiple-sources/a.js 1:7-14
+        [inactive] harmony side effect evaluation ./a [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 2:0-20
+        harmony export imported specifier ./a [27] ./side-effects/dynamic-reexports/multiple-sources/module.js 2:0-20
+      ./side-effects/dynamic-reexports/multiple-sources/b.js [3] 29 bytes {0} [depth 3] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        cjs self exports reference [3] ./side-effects/dynamic-reexports/multiple-sources/b.js 1:7-14
+        [inactive] harmony side effect evaluation ./b [14] ./side-effects/dynamic-reexports/multiple-sources/module2.js 1:0-20
+        harmony export imported specifier ./b [14] ./side-effects/dynamic-reexports/multiple-sources/module2.js 1:0-20
+    modules by path ./side-effects/dynamic-reexports/default-export/*.js 41 bytes
+      ./side-effects/dynamic-reexports/default-export/a.js [20] 19 bytes {0} [depth 1] [built] [code generated]
+        [exports: default]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/default-export/index.js 1:0-35
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/default-export/index.js 1:0-35
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 44:8-23 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/default-export/b.js [5] 21 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-20
+        [inactive] from origin ./side-effects/dynamic-reexports/default-export/index.js
+          [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/default-export/index.js 2:0-35
+          [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/default-export/index.js 2:0-35
+        cjs self exports reference [5] ./side-effects/dynamic-reexports/default-export/b.js 1:0-14
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 45:8-23 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/default-export/empty.js [21] 1 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        [inactive] harmony side effect evaluation ./empty ./side-effects/dynamic-reexports/default-export/index.js 3:0-43
+        [inactive] harmony export imported specifier ./empty ./side-effects/dynamic-reexports/default-export/index.js 3:0-43
+        harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 46:8-27 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/reexports-excludes-default/*.js 195 bytes
+      ./side-effects/dynamic-reexports/reexports-excludes-default/index.js [11] 26 bytes {0} [depth 1] [built] [code generated]
+        cjs require ./reexports-excludes-default [8] ./side-effects/dynamic-reexports/index.js 51:23-62
+      ./side-effects/dynamic-reexports/reexports-excludes-default/module.js [12] 168 bytes {0} [depth 2] [built] [code generated]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-65
+        [inactive] harmony side effect evaluation ./module [11] ./side-effects/dynamic-reexports/reexports-excludes-default/index.js 1:0-25
+        harmony export imported specifier ./module [11] ./side-effects/dynamic-reexports/reexports-excludes-default/index.js 1:0-25
+      ./side-effects/dynamic-reexports/reexports-excludes-default/empty.js [13] 1 bytes {0} [depth 3] [built] [code generated]
+        [used exports unknown]
+        [inactive] harmony side effect evaluation ./empty [12] ./side-effects/dynamic-reexports/reexports-excludes-default/module.js 1:0-24
+        harmony export imported specifier ./empty [12] ./side-effects/dynamic-reexports/reexports-excludes-default/module.js 1:0-24
+    modules by path ./side-effects/dynamic-reexports/direct-export/*.js 136 bytes
+      ./side-effects/dynamic-reexports/direct-export/module.js [23] 52 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./module [25] ./side-effects/dynamic-reexports/direct-export/index.js 1:0-25
+        [inactive] harmony export imported specifier ./module [25] ./side-effects/dynamic-reexports/direct-export/index.js 1:0-25
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 56:8-19 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/direct-export/dynamic.js [1] 58 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        CommonJS bailout: exports is used directly at 2:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        from origin ./side-effects/dynamic-reexports/direct-export/dynamic.js
+          cjs self exports reference [1] ./side-effects/dynamic-reexports/direct-export/dynamic.js 1:7-14
+          cjs self exports reference [1] ./side-effects/dynamic-reexports/direct-export/dynamic.js 2:7-14
+        [inactive] from origin ./side-effects/dynamic-reexports/direct-export/module.js
+          [inactive] harmony side effect evaluation ./dynamic [23] ./side-effects/dynamic-reexports/direct-export/module.js 2:0-26
+          [inactive] harmony export imported specifier ./dynamic [23] ./side-effects/dynamic-reexports/direct-export/module.js 2:0-26
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 57:8-20 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/direct-export/index.js [25] 26 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: default]
+        [inactive] harmony side effect evaluation ./direct-export [8] ./side-effects/dynamic-reexports/index.js 12:0-16:25
+        [inactive] harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 56:8-19
+        [inactive] harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 57:8-20
+        harmony import specifier ./direct-export [8] ./side-effects/dynamic-reexports/index.js 66:8-16
+    modules by path ./side-effects/dynamic-reexports/*.js 2.25 KiB
+      ./side-effects/dynamic-reexports/index.js [8] 2.1 KiB {0} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 28:0-31:3
+        entry ./side-effects/dynamic-reexports/ main
+      ./side-effects/dynamic-reexports/unused.js [17] 154 bytes {0} [depth 1] [built] [code generated]
+        [exports: unprovided, unused, value]
+        [only some exports used: unprovided, unused]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-58
+        [inactive] harmony side effect evaluation ./unused [8] ./side-effects/dynamic-reexports/index.js 1:0-46
+        harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 30:30-36
+        harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 35:24-30
+        harmony import specifier ./unused [8] ./side-effects/dynamic-reexports/index.js 52:37-47
+    modules by path ./side-effects/dynamic-reexports/dedupe-target-static/*.js 113 bytes
+      ./side-effects/dynamic-reexports/dedupe-target-static/module.js [15] 25 bytes {0} [depth 1] [built] [code generated]
+        [exports: value]
+        [all exports used]
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target-static/a.js
+          [inactive] harmony side effect evaluation ./module [16] ./side-effects/dynamic-reexports/dedupe-target-static/a.js 1:0-25
+          [inactive] harmony export imported specifier ./module [16] ./side-effects/dynamic-reexports/dedupe-target-static/a.js 1:0-25
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target-static/b.js
+          [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/dedupe-target-static/b.js 1:0-25
+          [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/dedupe-target-static/b.js 1:0-25
+        harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 29:8-19 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/dedupe-target-static/a.js [16] 88 bytes {0} [depth 1] [built] [code generated]
+        [exports: value, valueUsed]
+        [only some exports used: valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/dedupe-target-static/index.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/dedupe-target-static/index.js 1:0-20
+        harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 30:8-23 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/dedupe-target/*.js 88 bytes
+      ./side-effects/dynamic-reexports/dedupe-target/empty.js [18] 1 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target/a.js
+          [inactive] harmony side effect evaluation ./empty [19] ./side-effects/dynamic-reexports/dedupe-target/a.js 1:0-24
+          [inactive] harmony export imported specifier ./empty [19] ./side-effects/dynamic-reexports/dedupe-target/a.js 1:0-24
+        [inactive] from origin ./side-effects/dynamic-reexports/dedupe-target/b.js
+          [inactive] harmony side effect evaluation ./empty ./side-effects/dynamic-reexports/dedupe-target/b.js 1:0-24
+          [inactive] harmony export imported specifier ./empty ./side-effects/dynamic-reexports/dedupe-target/b.js 1:0-24
+        harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 34:8-13 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/dedupe-target/a.js [19] 87 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: valueUsed]
+        Statement (ExportNamedDeclaration) with side effects in source code at 2:0-61
+        [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/dedupe-target/index.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/dedupe-target/index.js 1:0-20
+        harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 35:8-17 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/checked-export/*.js 110 bytes
+      ./side-effects/dynamic-reexports/checked-export/module.js [24] 52 bytes {0} [depth 1] [built] [code generated]
+        [only some exports used: value]
+        [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41
+        harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 61:8-20 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/checked-export/dynamic.js [2] 58 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        CommonJS bailout: exports is used directly at 2:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        from origin ./side-effects/dynamic-reexports/checked-export/dynamic.js
+          cjs self exports reference [2] ./side-effects/dynamic-reexports/checked-export/dynamic.js 1:7-14
+          cjs self exports reference [2] ./side-effects/dynamic-reexports/checked-export/dynamic.js 2:7-14
+        [inactive] from origin ./side-effects/dynamic-reexports/checked-export/module.js
+          [inactive] harmony side effect evaluation ./dynamic [24] ./side-effects/dynamic-reexports/checked-export/module.js 2:0-26
+          [inactive] harmony export imported specifier ./dynamic [24] ./side-effects/dynamic-reexports/checked-export/module.js 2:0-26
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/checked-export/index.js 1:0-41 (skipped side-effect-free modules)
+        harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 62:8-21 (skipped side-effect-free modules)
+    modules by path ./side-effects/dynamic-reexports/swapped/*.js 45 bytes
+      ./side-effects/dynamic-reexports/swapped/b.js [6] 24 bytes {0} [depth 1] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: exports is used directly at 1:7-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-23
+        [inactive] from origin ./side-effects/dynamic-reexports/swapped/module.js
+          [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/swapped/module.js 2:0-20
+          [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/swapped/module.js 2:0-20
+        harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 76:8-9 (skipped side-effect-free modules)
+        cjs self exports reference [6] ./side-effects/dynamic-reexports/swapped/b.js 1:7-14
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 2:0-34 (skipped side-effect-free modules)
+      ./side-effects/dynamic-reexports/swapped/a.js [28] 21 bytes {0} [depth 1] [built] [code generated]
+        [exports: a]
+        [all exports used]
+        [inactive] from origin ./side-effects/dynamic-reexports/swapped/module.js
+          [inactive] harmony side effect evaluation ./a ./side-effects/dynamic-reexports/swapped/module.js 1:0-20
+          [inactive] harmony export imported specifier ./a ./side-effects/dynamic-reexports/swapped/module.js 1:0-20
+        harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 77:8-9 (skipped side-effect-free modules)
+        [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 1:0-34 (skipped side-effect-free modules)
+    ./side-effects/dynamic-reexports/dynamic-reexport-default/index.js [26] 52 bytes {0} [depth 1] [built] [code generated]
+      [only some exports used: default]
+      [inactive] harmony side effect evaluation ./dynamic-reexport-default [8] ./side-effects/dynamic-reexports/index.js 21:0-50
+      harmony import specifier ./dynamic-reexport-default [8] ./side-effects/dynamic-reexports/index.js 67:8-16
+  runtime modules 937 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  ./side-effects/dynamic-reexports/default-export/json.json [22] 12 bytes {0} [depth 1] [built] [code generated]
+    [no exports]
+    [inactive] harmony side effect evaluation ./json ./side-effects/dynamic-reexports/default-export/index.js 4:0-41
+    [inactive] harmony export imported specifier ./json ./side-effects/dynamic-reexports/default-export/index.js 4:0-41
+    harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 47:8-26 (skipped side-effect-free modules)
+orphan modules 773 bytes [orphan]
+  modules by path ./side-effects/dynamic-reexports/swapped/*.js 165 bytes
+    ./side-effects/dynamic-reexports/swapped/index.js 27 bytes [depth 1] [orphan] [built]
+      [module unused]
+      [inactive] harmony side effect evaluation ./swapped [8] ./side-effects/dynamic-reexports/index.js 26:0-33
+      [inactive] harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 76:8-9
+      [inactive] harmony import specifier ./swapped [8] ./side-effects/dynamic-reexports/index.js 77:8-9
+    ./side-effects/dynamic-reexports/swapped/module2.js 96 bytes [depth 2] [orphan] [built]
+      [module unused]
+      [inactive] harmony side effect evaluation ./module2 ./side-effects/dynamic-reexports/swapped/index.js 1:0-26
+      [inactive] harmony export imported specifier ./module2 ./side-effects/dynamic-reexports/swapped/index.js 1:0-26
+    ./side-effects/dynamic-reexports/swapped/module.js 42 bytes [depth 3] [orphan] [built]
+      [module unused]
+      [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/swapped/module2.js 1:0-34
+      [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 1:0-34
+      [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/swapped/module2.js 2:0-34
+      [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 2:0-34
+      [inactive] harmony side effect evaluation ./module ./side-effects/dynamic-reexports/swapped/module2.js 3:0-25
+      [inactive] harmony export imported specifier ./module ./side-effects/dynamic-reexports/swapped/module2.js 3:0-25
+  modules by path ./side-effects/dynamic-reexports/dedupe-target-static/*.js 110 bytes
+    ./side-effects/dynamic-reexports/dedupe-target-static/index.js 84 bytes [depth 1] [orphan] [built]
+      [exports: value, valueUsed]
+      [module unused]
+      Statement (ThrowStatement) with side effects in source code at 4:0-40
+      [inactive] harmony side effect evaluation ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 2:0-5:32
+      [inactive] harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 29:8-19
+      [inactive] harmony import specifier ./dedupe-target-static [8] ./side-effects/dynamic-reexports/index.js 30:8-23
+    ./side-effects/dynamic-reexports/dedupe-target-static/b.js 26 bytes [depth 2] [orphan] [built]
+      [exports: value]
+      [module unused]
+      [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/dedupe-target-static/index.js 2:0-20
+      [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/dedupe-target-static/index.js 2:0-20
+  modules by path ./side-effects/dynamic-reexports/dedupe-target/*.js 109 bytes
+    ./side-effects/dynamic-reexports/dedupe-target/index.js 84 bytes [depth 1] [orphan] [built]
+      [module unused]
+      Statement (ThrowStatement) with side effects in source code at 4:0-40
+      [inactive] harmony side effect evaluation ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 10:0-51
+      [inactive] harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 34:8-13
+      [inactive] harmony import specifier ./dedupe-target [8] ./side-effects/dynamic-reexports/index.js 35:8-17
+    ./side-effects/dynamic-reexports/dedupe-target/b.js 25 bytes [depth 2] [orphan] [built]
+      [module unused]
+      [inactive] harmony side effect evaluation ./b ./side-effects/dynamic-reexports/dedupe-target/index.js 2:0-20
+      [inactive] harmony export imported specifier ./b ./side-effects/dynamic-reexports/dedupe-target/index.js 2:0-20
+  ./side-effects/dynamic-reexports/checked-export/index.js 84 bytes [depth 1] [orphan] [built]
+    [exports: value, value2]
+    [module unused]
+    Statement (ThrowStatement) with side effects in source code at 3:0-40
+    [inactive] harmony side effect evaluation ./checked-export [8] ./side-effects/dynamic-reexports/index.js 17:0-20:26
+    [inactive] harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 61:8-20
+    [inactive] harmony import specifier ./checked-export [8] ./side-effects/dynamic-reexports/index.js 62:8-21
+  ./side-effects/dynamic-reexports/default-export/index.js 200 bytes [depth 1] [orphan] [built]
+    [exports: a, b, empty, json]
+    [module unused]
+    Statement (ThrowStatement) with side effects in source code at 6:0-40
+    [inactive] harmony side effect evaluation ./default-export [8] ./side-effects/dynamic-reexports/index.js 11:0-50
+    [inactive] harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 44:8-23
+    [inactive] harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 45:8-23
+    [inactive] harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 46:8-27
+    [inactive] harmony import specifier ./default-export [8] ./side-effects/dynamic-reexports/index.js 47:8-26
+  ./side-effects/dynamic-reexports/multiple-sources/index.js 68 bytes [depth 1] [orphan] [built]
+    [module unused]
+    Statement (ThrowStatement) with side effects in source code at 3:0-40
+    [inactive] harmony side effect evaluation ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 22:0-25:28
+    [inactive] harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 71:8-28
+    [inactive] harmony import specifier ./multiple-sources [8] ./side-effects/dynamic-reexports/index.js 72:8-29
+  ./side-effects/dynamic-reexports/dynamic-reexport-default/dynamic.js 37 bytes [depth 2] [orphan] [built]
+    [module unused]
+    CommonJS bailout: exports is used directly at 1:7-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-36
+    cjs self exports reference ./side-effects/dynamic-reexports/dynamic-reexport-default/dynamic.js 1:7-14
+    [inactive] harmony side effect evaluation ./dynamic [26] ./side-effects/dynamic-reexports/dynamic-reexport-default/index.js 1:0-26
+    [inactive] harmony export imported specifier ./dynamic [26] ./side-effects/dynamic-reexports/dynamic-reexport-default/index.js 1:0-26
+  
+
+LOG from webpack.Compiler
+<t> make hook: 45.684491 ms
+<t> finish make hook: 0.025436 ms
+<t> finish compilation: 2.590298 ms
+<t> seal compilation: 6.951623 ms
+<t> afterCompile hook: 0.007504 ms
+<t> emitAssets: 4.175465 ms
+<t> emitRecords: 0.002032 ms
+<t> done hook: 0.010049 ms
+<t> beginIdle: 0.006328 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005763 ms
+<t> finish modules: 1.960741 ms
+<t> report dependency errors and warnings: 0.609337 ms
+<t> optimize dependencies: 0.990547 ms
+<t> create chunks: 0.483804 ms
+<t> compute affected modules with chunk graph: 0.001618 ms
+<t> optimize: 1.200064 ms
+    29 modules hashed, 0 from cache (0.73 variants per module in average)
+<t> module hashing: 0.595498 ms
+    100% code generated (29 generated, 0 from cache)
+<t> code generation: 1.505887 ms
+<t> runtime requirements.modules: 0.067876 ms
+<t> runtime requirements.chunks: 0.052801 ms
+<t> runtime requirements.entries: 0.210996 ms
+<t> runtime requirements: 0.349848 ms
+<t> hashing: initialize hash: 0.002731 ms
+<t> hashing: hash warnings: 0.003778 ms
+<t> hashing: sort chunks: 0.015362 ms
+<t> hashing: hash runtime modules: 0.150801 ms
+<t> hashing: hash chunks: 0.219683 ms
+<t> hashing: hash digest: 0.01099 ms
+<t> hashing: process full hash modules: 0.001406 ms
+<t> hashing: 0.433167 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.006069 ms
+<t> module assets: 0.016023 ms
+<t> create chunk assets: 1.096458 ms
+<t> process assets: 0.038631 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.064129 ms
+<t> figure out provided exports: 1.806216 ms
+    73% of exports of modules have been determined (11 no declared exports, 29 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 17 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.02208 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.27978 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.013646 ms
+<t> trace exports usage in graph: 0.650715 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.219252 ms
+<t> visitModules: visiting: 0.367339 ms
+    58 queue items processed (29 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.389349 ms
+<t> connectChunkGroups: 0.001838 ms
+<t> cleanup: 0.001652 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014512 ms
+<t> modules: 0.215903 ms
+<t> queue: 0.002212 ms
+<t> maxSize: 0.004898 ms
+
+LOG from webpack.FileSystemInfo
+    40 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 40 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/40) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./side-effects/dynamic-reexports/index.js 66:8-16
+export 'default' (imported as 'Default1') was not found in './direct-export' (possible exports unknown)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'default' (imported as 'Default1') was not found in './direct-export' (possible exports unknown)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+2021-12-05 17:45:43: webpack 5.64.4 compiled with 1 warning in 60 ms (08384978ee4241e138d9)

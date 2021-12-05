@@ -1,0 +1,3832 @@
+{
+  "hash": "64e92f5a4df523927753",
+  "version": "5.64.4",
+  "time": 40,
+  "builtAt": 1638693886573,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/optimization/depend-on-runtimes",
+  "assetsByChunkName": {
+    "a": [
+      "a.js"
+    ],
+    "b": [
+      "b.js"
+    ],
+    "c": [
+      "c.js"
+    ],
+    "runtime-c": [
+      "runtime-c.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "b.js",
+      "size": 7630,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 7630
+      },
+      "chunkNames": [
+        "b"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "b"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "a.js",
+      "size": 7410,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 7410
+      },
+      "chunkNames": [
+        "a"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "a"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "runtime-c.js",
+      "size": 6626,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 6626
+      },
+      "chunkNames": [
+        "runtime-c"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "runtime-c"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "c.js",
+      "size": 1659,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 1659
+      },
+      "chunkNames": [
+        "c"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "c"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "a-or-b_js.js",
+      "size": 1208,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 1208
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "a-or-b_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "b-or-c_js.js",
+      "size": 768,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 768
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "b-or-c_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3598,
+      "sizes": {
+        "javascript": 568,
+        "runtime": 3030
+      },
+      "names": [
+        "a"
+      ],
+      "idHints": [],
+      "runtime": [
+        "a"
+      ],
+      "files": [
+        "a.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "c74b41f239381b96c345",
+      "childrenByOrder": {},
+      "id": "a",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "a-or-b_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 249,
+          "sizes": {
+            "javascript": 249
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "name": "./a.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 847,
+          "issuerId": null,
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./a",
+              "loc": "a",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-14:3",
+            "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 319,
+          "sizes": {
+            "javascript": 319
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "name": "./module.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 662,
+          "issuerId": 996,
+          "chunks": [
+            "a",
+            "b",
+            "c"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "7:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "15:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-29",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony import specifier",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            }
+          ],
+          "usedExports": [
+            "used",
+            "w",
+            "x"
+          ],
+          "providedExports": [
+            "used",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "optimizationBailout": [
+            "Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 167,
+          "sizes": {
+            "runtime": 167
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1839,
+          "sizes": {
+            "runtime": 1839
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 28,
+          "sizes": {
+            "runtime": 28
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/runtimeId",
+          "name": "webpack/runtime/runtimeId",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "a"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "a",
+          "request": "./a"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 484,
+      "sizes": {
+        "javascript": 484
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "a",
+        "b"
+      ],
+      "files": [
+        "a-or-b_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "c7ab99d4f40ad4a2663b",
+      "childrenByOrder": {},
+      "id": "a-or-b_js",
+      "siblings": [],
+      "parents": [
+        "a",
+        "b"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 484,
+          "sizes": {
+            "javascript": 484
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "name": "./a-or-b.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 359,
+          "issuerId": 996,
+          "chunks": [
+            "a-or-b_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./a-or-b",
+              "loc": "13:8-26",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./a-or-b",
+              "loc": "14:2-20",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 1:0-35",
+            "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "moduleName": "./a.js",
+          "loc": "13:8-26",
+          "request": "./a-or-b",
+          "moduleId": 847
+        },
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "moduleName": "./b.js",
+          "loc": "14:2-20",
+          "request": "./a-or-b",
+          "moduleId": 996
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3664,
+      "sizes": {
+        "javascript": 634,
+        "runtime": 3030
+      },
+      "names": [
+        "b"
+      ],
+      "idHints": [],
+      "runtime": [
+        "b"
+      ],
+      "files": [
+        "b.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "5a72375b3a21ad22781b",
+      "childrenByOrder": {},
+      "id": "b",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "a-or-b_js",
+        "b-or-c_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 315,
+          "sizes": {
+            "javascript": 315
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "name": "./b.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 996,
+          "issuerId": null,
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./b",
+              "loc": "b",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-17:3",
+            "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js, ./b-or-c.js"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 319,
+          "sizes": {
+            "javascript": 319
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "name": "./module.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 662,
+          "issuerId": 996,
+          "chunks": [
+            "a",
+            "b",
+            "c"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "7:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "15:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-29",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            }
+          ],
+          "usedExports": [
+            "used",
+            "v",
+            "w",
+            "y"
+          ],
+          "providedExports": [
+            "used",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "optimizationBailout": [
+            "Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 167,
+          "sizes": {
+            "runtime": 167
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1839,
+          "sizes": {
+            "runtime": 1839
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 28,
+          "sizes": {
+            "runtime": 28
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/runtimeId",
+          "name": "webpack/runtime/runtimeId",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "b"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "b",
+          "request": "./b"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 127,
+      "sizes": {
+        "javascript": 127
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "b",
+        "runtime-c"
+      ],
+      "files": [
+        "b-or-c_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "2da8f8512798c16d44db",
+      "childrenByOrder": {},
+      "id": "b-or-c_js",
+      "siblings": [],
+      "parents": [
+        "b",
+        "c",
+        "runtime-c"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 127,
+          "sizes": {
+            "javascript": 127
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "name": "./b-or-c.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 395,
+          "issuerId": 996,
+          "chunks": [
+            "b-or-c_js"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./b-or-c",
+              "loc": "15:2-20",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./b-or-c",
+              "loc": "13:8-26",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 1:0-29",
+            "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "moduleName": "./c.js",
+          "loc": "13:8-26",
+          "request": "./b-or-c",
+          "moduleId": 460
+        },
+        {
+          "module": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "moduleName": "./b.js",
+          "loc": "15:2-20",
+          "request": "./b-or-c",
+          "moduleId": 996
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "recorded": false,
+      "size": 568,
+      "sizes": {
+        "javascript": 568
+      },
+      "names": [
+        "c"
+      ],
+      "idHints": [],
+      "runtime": [
+        "runtime-c"
+      ],
+      "files": [
+        "c.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "6d2f316e125596752f1e",
+      "childrenByOrder": {},
+      "id": "c",
+      "siblings": [
+        "runtime-c"
+      ],
+      "parents": [],
+      "children": [
+        "b-or-c_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 249,
+          "sizes": {
+            "javascript": 249
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "name": "./c.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 460,
+          "issuerId": null,
+          "chunks": [
+            "c"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./c",
+              "loc": "c",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-14:3",
+            "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./b-or-c.js"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 319,
+          "sizes": {
+            "javascript": 319
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "name": "./module.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "issuerName": "./b.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "name": "./b.js",
+              "id": 996
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 662,
+          "issuerId": 996,
+          "chunks": [
+            "a",
+            "b",
+            "c"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "7:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "module": "./a-or-b.js",
+              "moduleName": "./a-or-b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+              "resolvedModule": "./a-or-b.js",
+              "type": "harmony import specifier",
+              "active": false,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "15:10-14",
+              "moduleId": 359,
+              "resolvedModuleId": 359
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "module": "./a.js",
+              "moduleName": "./a.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+              "resolvedModule": "./a.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 847,
+              "resolvedModuleId": 847
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-29",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "module": "./b-or-c.js",
+              "moduleName": "./b-or-c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+              "resolvedModule": "./b-or-c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:9-10",
+              "moduleId": 395,
+              "resolvedModuleId": 395
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "module": "./b.js",
+              "moduleName": "./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+              "resolvedModule": "./b.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 996,
+              "resolvedModuleId": 996
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "1:0-35",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "4:8-9",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "module": "./c.js",
+              "moduleName": "./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+              "resolvedModule": "./c.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module",
+              "loc": "5:8-12",
+              "moduleId": 460,
+              "resolvedModuleId": 460
+            }
+          ],
+          "usedExports": [
+            "used",
+            "v",
+            "z"
+          ],
+          "providedExports": [
+            "used",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z"
+          ],
+          "optimizationBailout": [
+            "Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "c",
+          "request": "./c"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3465,
+      "sizes": {
+        "runtime": 3465
+      },
+      "names": [
+        "runtime-c"
+      ],
+      "idHints": [],
+      "runtime": [
+        "runtime-c"
+      ],
+      "files": [
+        "runtime-c.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7f7cb13f54110d719afd",
+      "childrenByOrder": {},
+      "id": "runtime-c",
+      "siblings": [
+        "c"
+      ],
+      "parents": [],
+      "children": [
+        "b-or-c_js"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 205,
+          "sizes": {
+            "runtime": 205
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1890,
+          "sizes": {
+            "runtime": 1890
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/readFile chunk loading",
+          "name": "webpack/runtime/readFile chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 374,
+          "sizes": {
+            "runtime": 374
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/startup entrypoint",
+          "name": "webpack/runtime/startup entrypoint",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "runtime-c"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "c",
+          "request": "./c"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 249,
+      "sizes": {
+        "javascript": 249
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+      "name": "./a.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 847,
+      "issuerId": null,
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./a",
+          "loc": "a",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-14:3",
+        "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 315,
+      "sizes": {
+        "javascript": 315
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+      "name": "./b.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 996,
+      "issuerId": null,
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./b",
+          "loc": "b",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-17:3",
+        "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js, ./b-or-c.js"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 249,
+      "sizes": {
+        "javascript": 249
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+      "name": "./c.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 460,
+      "issuerId": null,
+      "chunks": [
+        "c"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./c",
+          "loc": "c",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-14:3",
+        "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./b-or-c.js"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 319,
+      "sizes": {
+        "javascript": 319
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+      "name": "./module.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/module.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+      "issuerName": "./b.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "name": "./b.js",
+          "id": 996
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 662,
+      "issuerId": 996,
+      "chunks": [
+        "a",
+        "b",
+        "c"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "module": "./a-or-b.js",
+          "moduleName": "./a-or-b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "resolvedModule": "./a-or-b.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "1:0-35",
+          "moduleId": 359,
+          "resolvedModuleId": 359
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "module": "./a-or-b.js",
+          "moduleName": "./a-or-b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "resolvedModule": "./a-or-b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "5:9-10",
+          "moduleId": 359,
+          "resolvedModuleId": 359
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "module": "./a-or-b.js",
+          "moduleName": "./a-or-b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "resolvedModule": "./a-or-b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "7:10-14",
+          "moduleId": 359,
+          "resolvedModuleId": 359
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "module": "./a-or-b.js",
+          "moduleName": "./a-or-b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+          "resolvedModule": "./a-or-b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "15:10-14",
+          "moduleId": 359,
+          "resolvedModuleId": 359
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "resolvedModule": "./a.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "1:0-35",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "resolvedModule": "./a.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "4:8-9",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "resolvedModule": "./a.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "5:8-12",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "module": "./b-or-c.js",
+          "moduleName": "./b-or-c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "resolvedModule": "./b-or-c.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "1:0-29",
+          "moduleId": 395,
+          "resolvedModuleId": 395
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "module": "./b-or-c.js",
+          "moduleName": "./b-or-c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+          "resolvedModule": "./b-or-c.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "5:9-10",
+          "moduleId": 395,
+          "resolvedModuleId": 395
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "resolvedModule": "./b.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "1:0-35",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "resolvedModule": "./b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "4:8-9",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "resolvedModule": "./b.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "5:8-12",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "module": "./c.js",
+          "moduleName": "./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "resolvedModule": "./c.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "1:0-35",
+          "moduleId": 460,
+          "resolvedModuleId": 460
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "module": "./c.js",
+          "moduleName": "./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "resolvedModule": "./c.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "4:8-9",
+          "moduleId": 460,
+          "resolvedModuleId": 460
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "module": "./c.js",
+          "moduleName": "./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "resolvedModule": "./c.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module",
+          "loc": "5:8-12",
+          "moduleId": 460,
+          "resolvedModuleId": 460
+        }
+      ],
+      "usedExports": [
+        "used",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "providedExports": [
+        "used",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "optimizationBailout": [
+        "Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 484,
+      "sizes": {
+        "javascript": 484
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+      "name": "./a-or-b.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a-or-b.js",
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 4,
+      "postOrderIndex": 4,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+      "issuerName": "./b.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "name": "./b.js",
+          "id": 996
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 359,
+      "issuerId": 996,
+      "chunks": [
+        "a-or-b_js"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "module": "./a.js",
+          "moduleName": "./a.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/a.js",
+          "resolvedModule": "./a.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./a-or-b",
+          "loc": "13:8-26",
+          "moduleId": 847,
+          "resolvedModuleId": 847
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "resolvedModule": "./b.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./a-or-b",
+          "loc": "14:2-20",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "Dependency (harmony side effect evaluation) with side effects at 1:0-35",
+        "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 127,
+      "sizes": {
+        "javascript": 127
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+      "name": "./b-or-c.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b-or-c.js",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+      "issuerName": "./b.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "name": "./b.js",
+          "id": 996
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 395,
+      "issuerId": 996,
+      "chunks": [
+        "b-or-c_js"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "module": "./b.js",
+          "moduleName": "./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/b.js",
+          "resolvedModule": "./b.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./b-or-c",
+          "loc": "15:2-20",
+          "moduleId": 996,
+          "resolvedModuleId": 996
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "module": "./c.js",
+          "moduleName": "./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/optimization/depend-on-runtimes/c.js",
+          "resolvedModule": "./c.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./b-or-c",
+          "loc": "13:8-26",
+          "moduleId": 460,
+          "resolvedModuleId": 460
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [
+        "Dependency (harmony side effect evaluation) with side effects at 1:0-29",
+        "ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 167,
+      "sizes": {
+        "runtime": 167
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 167,
+      "sizes": {
+        "runtime": 167
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 205,
+      "sizes": {
+        "runtime": 205
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1839,
+      "sizes": {
+        "runtime": 1839
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1839,
+      "sizes": {
+        "runtime": 1839
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1890,
+      "sizes": {
+        "runtime": 1890
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/readFile chunk loading",
+      "name": "webpack/runtime/readFile chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 28,
+      "sizes": {
+        "runtime": 28
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/runtimeId",
+      "name": "webpack/runtime/runtimeId",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "a"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 28,
+      "sizes": {
+        "runtime": 28
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/runtimeId",
+      "name": "webpack/runtime/runtimeId",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "b"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 374,
+      "sizes": {
+        "runtime": 374
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/startup entrypoint",
+      "name": "webpack/runtime/startup entrypoint",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "runtime-c"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "a": {
+      "name": "a",
+      "chunks": [
+        "a"
+      ],
+      "assets": [
+        {
+          "name": "a.js",
+          "size": 7410
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7410,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "b": {
+      "name": "b",
+      "chunks": [
+        "b"
+      ],
+      "assets": [
+        {
+          "name": "b.js",
+          "size": 7630
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7630,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "c": {
+      "name": "c",
+      "chunks": [
+        "runtime-c",
+        "c"
+      ],
+      "assets": [
+        {
+          "name": "runtime-c.js",
+          "size": 6626
+        },
+        {
+          "name": "c.js",
+          "size": 1659
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 8285,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "a": {
+      "name": "a",
+      "chunks": [
+        "a"
+      ],
+      "assets": [
+        {
+          "name": "a.js",
+          "size": 7410
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7410,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "b": {
+      "name": "b",
+      "chunks": [
+        "b"
+      ],
+      "assets": [
+        {
+          "name": "b.js",
+          "size": 7630
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 7630,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "c": {
+      "name": "c",
+      "chunks": [
+        "runtime-c",
+        "c"
+      ],
+      "assets": [
+        {
+          "name": "runtime-c.js",
+          "size": 6626
+        },
+        {
+          "name": "c.js",
+          "size": 1659
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 8285,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

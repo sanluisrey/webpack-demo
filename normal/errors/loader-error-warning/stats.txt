@@ -1,0 +1,178 @@
+PublicPath: (none)
+asset bundle.js 2.99 KiB {0} [emitted] (name: main)
+Entrypoint main 2.99 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 180 bytes [entry] [rendered]
+  > ./errors/loader-error-warning/ main
+  modules with errors 2 bytes [errors]
+    ./errors/loader-error-warning/error-loader.js?abc!./errors/loader-error-warning/a.js [1] 1 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+      [used exports unknown]
+      cjs require ./error-loader?abc!./a [0] ./errors/loader-error-warning/index.js 2:1-34
+    ./errors/loader-error-warning/error-loader.js?def!./errors/loader-error-warning/a.js [2] 1 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+      [used exports unknown]
+      cjs require ./error-loader?def!./a [0] ./errors/loader-error-warning/index.js 3:1-34
+  ./errors/loader-error-warning/index.js [0] 177 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./errors/loader-error-warning/ main
+  ./errors/loader-error-warning/warning-loader.js?xyz!./errors/loader-error-warning/a.js [3] 1 bytes {0} [depth 1] [dependent] [built] [code generated] [1 warning]
+    [used exports unknown]
+    cjs require ./warning-loader?xyz!./a [0] ./errors/loader-error-warning/index.js 4:1-36
+modules with errors 2 bytes [errors]
+  ./errors/loader-error-warning/error-loader.js?abc!./errors/loader-error-warning/a.js [1] 1 bytes {0} [depth 1] [built] [code generated] [1 error]
+    [used exports unknown]
+    cjs require ./error-loader?abc!./a [0] ./errors/loader-error-warning/index.js 2:1-34
+  ./errors/loader-error-warning/error-loader.js?def!./errors/loader-error-warning/a.js [2] 1 bytes {0} [depth 1] [built] [code generated] [1 error]
+    [used exports unknown]
+    cjs require ./error-loader?def!./a [0] ./errors/loader-error-warning/index.js 3:1-34
+./errors/loader-error-warning/index.js [0] 177 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+  entry ./errors/loader-error-warning/ main
+./errors/loader-error-warning/warning-loader.js?xyz!./errors/loader-error-warning/a.js [3] 1 bytes {0} [depth 1] [built] [code generated] [1 warning]
+  [used exports unknown]
+  cjs require ./warning-loader?xyz!./a [0] ./errors/loader-error-warning/index.js 4:1-36
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.718472 ms
+<t> finish make hook: 0.012531 ms
+<t> finish compilation: 0.115547 ms
+<t> seal compilation: 3.974196 ms
+<t> afterCompile hook: 0.014948 ms
+<t> emitAssets: 4.25282 ms
+<t> emitRecords: 0.003012 ms
+<t> done hook: 0.010214 ms
+<t> beginIdle: 0.007607 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003754 ms
+<t> finish modules: 0.071412 ms
+<t> report dependency errors and warnings: 0.024825 ms
+<t> optimize dependencies: 0.143376 ms
+<t> create chunks: 1.918253 ms
+<t> compute affected modules with chunk graph: 0.003667 ms
+<t> optimize: 0.501494 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.138666 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.132778 ms
+<t> runtime requirements.modules: 0.020541 ms
+<t> runtime requirements.chunks: 0.030658 ms
+<t> runtime requirements.entries: 0.048469 ms
+<t> runtime requirements: 0.118967 ms
+<t> hashing: initialize hash: 0.002933 ms
+<t> hashing: hash warnings: 0.005247 ms
+<t> hashing: hash errors: 0.003486 ms
+<t> hashing: sort chunks: 0.01525 ms
+<t> hashing: hash runtime modules: 0.005158 ms
+<t> hashing: hash chunks: 0.192913 ms
+<t> hashing: hash digest: 0.014861 ms
+<t> hashing: process full hash modules: 0.001288 ms
+<t> hashing: 0.277094 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005481 ms
+<t> module assets: 0.009976 ms
+<t> create chunk assets: 0.497164 ms
+<t> process assets: 0.053174 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.017879 ms
+<t> figure out provided exports: 0.001675 ms
+    0% of exports of modules have been determined (4 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002101 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.011165 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00547 ms
+<t> trace exports usage in graph: 0.088208 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 1.75469 ms
+<t> visitModules: visiting: 1.806852 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 1.832645 ms
+<t> connectChunkGroups: 0.002058 ms
+<t> cleanup: 0.002367 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015763 ms
+<t> modules: 0.071639 ms
+<t> queue: 0.00254 ms
+<t> maxSize: 0.006289 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./errors/loader-error-warning/a.js (./errors/loader-error-warning/warning-loader.js?xyz!./errors/loader-error-warning/a.js)
+Module Warning (from ./errors/loader-error-warning/warning-loader.js):
+(Emitted value instead of an instance of Error) xyz
+NonErrorEmittedError: (Emitted value instead of an instance of Error) xyz
+    at Object.emitWarning (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:588:16)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/warning-loader.js:4:7)
+ModuleWarning: Module Warning (from ./errors/loader-error-warning/warning-loader.js):
+(Emitted value instead of an instance of Error) xyz
+    at Object.emitWarning (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:591:6)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/warning-loader.js:4:7)
+    at LOADER_EXECUTION (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:132:14)
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:133:4)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+ @ ./errors/loader-error-warning/index.js 4:1-36
+
+ERROR in ./errors/loader-error-warning/a.js (./errors/loader-error-warning/error-loader.js?abc!./errors/loader-error-warning/a.js)
+Module Error (from ./errors/loader-error-warning/error-loader.js):
+(Emitted value instead of an instance of Error) abc
+NonErrorEmittedError: (Emitted value instead of an instance of Error) abc
+    at Object.emitError (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:598:14)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/error-loader.js:4:7)
+ModuleError: Module Error (from ./errors/loader-error-warning/error-loader.js):
+(Emitted value instead of an instance of Error) abc
+    at Object.emitError (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:601:6)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/error-loader.js:4:7)
+    at LOADER_EXECUTION (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:132:14)
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:133:4)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+ @ ./errors/loader-error-warning/index.js 2:1-34
+
+ERROR in ./errors/loader-error-warning/a.js (./errors/loader-error-warning/error-loader.js?def!./errors/loader-error-warning/a.js)
+Module Error (from ./errors/loader-error-warning/error-loader.js):
+(Emitted value instead of an instance of Error) def
+NonErrorEmittedError: (Emitted value instead of an instance of Error) def
+    at Object.emitError (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:598:14)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/error-loader.js:4:7)
+ModuleError: Module Error (from ./errors/loader-error-warning/error-loader.js):
+(Emitted value instead of an instance of Error) def
+    at Object.emitError (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:601:6)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/loader-error-warning/error-loader.js:4:7)
+    at LOADER_EXECUTION (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:132:14)
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:133:4)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+ @ ./errors/loader-error-warning/index.js 3:1-34
+
+2021-12-05 17:44:24: webpack 5.64.4 compiled with 2 errors and 1 warning in 23 ms (69ef912b120b55f71d55)

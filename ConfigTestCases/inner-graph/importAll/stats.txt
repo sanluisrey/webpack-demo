@@ -1,0 +1,686 @@
+nothing without module concatenation:
+  PublicPath: (none)
+  asset bundle0.js 9.88 KiB {179} [emitted] (name: main)
+  Entrypoint main 9.88 KiB = bundle0.js
+  chunk {179} (runtime: main) bundle0.js (main) 1.95 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! main
+    cacheable modules 1.95 KiB
+      modules by path ../_helpers/*.js 263 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, ɵccf, ɵcrt, ɵdid, ɵeld, ɵted, ɵvid]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          from origin ./module.js
+            harmony side effect evaluation @angular/core [662] ./module.js 7:0-36
+            harmony import specifier @angular/core [662] ./module.js 10:30-37
+            harmony import specifier @angular/core [662] ./module.js 12:49-56
+            harmony import specifier @angular/core [662] ./module.js 12:70-77
+            harmony import specifier @angular/core [662] ./module.js 12:150-157
+            harmony import specifier @angular/core [662] ./module.js 13:54-61
+            harmony import specifier @angular/core [662] ./module.js 13:75-82
+            harmony import specifier @angular/core [662] ./module.js 13:186-193
+            harmony import specifier @angular/core [662] ./module.js 14:28-35
+          from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!
+            harmony side effect evaluation @angular/core [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 3:0-63
+            harmony import specifier @angular/core [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 5:7-20
+        ../_helpers/inner-file.js?1 [470] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: AppComponent, __usedExports]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          from origin ./module.js
+            harmony side effect evaluation ./app.component [662] ./module.js 8:0-38
+            harmony import specifier ./app.component [662] ./module.js 13:213-228
+            harmony import specifier ./app.component [662] ./module.js 14:48-63
+          from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!
+            harmony side effect evaluation ./app.component [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 8:0-65
+            harmony import specifier ./app.component [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 10:7-20
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          from origin ../_helpers/inner-file.js?0
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+            harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          from origin ../_helpers/inner-file.js?1
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+            harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! [352] 527 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-67
+        entry ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! main
+      ../_helpers/testModuleLoader.js?[]! [945] 47 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-28
+        cjs require ../_helpers/testModuleLoader?[]! [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 1:23-66
+      ./module.js [662] 1.13 KiB {179} [depth 2] [dependent] [built] [code generated]
+        [exports: AppComponentNgFactory, RenderType_AppComponent, View_AppComponent_0, View_AppComponent_Host_0]
+        [no exports used]
+        Statement (VariableDeclaration) with side effects in source code at 10:0-99
+        harmony side effect evaluation ./module [945] ../_helpers/testModuleLoader.js?[]! 1:0-28
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 82.097821 ms
+  <t> finish make hook: 0.006347 ms
+  <t> finish compilation: 0.306104 ms
+  <t> seal compilation: 3.258919 ms
+  <t> afterCompile hook: 0.007276 ms
+  <t> emitAssets: 22.711235 ms
+  <t> emitRecords: 0.0014 ms
+  <t> done hook: 0.021921 ms
+  <t> beginIdle: 0.004345 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.004947 ms
+  <t> finish modules: 0.225404 ms
+  <t> report dependency errors and warnings: 0.065406 ms
+  <t> optimize dependencies: 0.331824 ms
+  <t> create chunks: 0.172373 ms
+  <t> compute affected modules with chunk graph: 0.001652 ms
+  <t> optimize: 0.626996 ms
+      6 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.178093 ms
+      100% code generated (6 generated, 0 from cache)
+  <t> code generation: 0.630126 ms
+  <t> runtime requirements.modules: 0.037958 ms
+  <t> runtime requirements.chunks: 0.044124 ms
+  <t> runtime requirements.entries: 0.153314 ms
+  <t> runtime requirements: 0.250449 ms
+  <t> hashing: initialize hash: 0.002279 ms
+  <t> hashing: sort chunks: 0.013778 ms
+  <t> hashing: hash runtime modules: 0.103177 ms
+  <t> hashing: hash chunks: 0.193336 ms
+  <t> hashing: hash digest: 0.009617 ms
+  <t> hashing: process full hash modules: 0.001035 ms
+  <t> hashing: 0.359855 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.00534 ms
+  <t> module assets: 0.008458 ms
+  <t> create chunk assets: 0.351186 ms
+  <t> process assets: 0.165687 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.023542 ms
+  <t> figure out provided exports: 0.123193 ms
+      83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.020699 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.103783 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.024641 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.007517 ms
+  <t> trace exports usage in graph: 0.263562 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.041843 ms
+  <t> visitModules: visiting: 0.0752 ms
+      14 queue items processed (6 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.098012 ms
+  <t> connectChunkGroups: 0.002113 ms
+  <t> cleanup: 0.00141 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.014703 ms
+  <t> modules: 0.077256 ms
+  <t> queue: 0.002059 ms
+  <t> maxSize: 0.005174 ms
+
+  LOG from webpack.FileSystemInfo
+      6 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:37: nothing without module concatenation (webpack 5.64.4) compiled successfully in 110 ms (8f2aafa8cbbd2ae25fd3)
+
+nothing with module concatenation:
+  PublicPath: (none)
+  asset bundle1.js 9.21 KiB {179} [emitted] (name: main)
+  Entrypoint main 9.21 KiB = bundle1.js
+  chunk {179} (runtime: main) bundle1.js (main) 1.95 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! main
+    cacheable modules 1.95 KiB
+      modules by path ../_helpers/*.js 263 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, ɵccf, ɵcrt, ɵdid, ɵeld, ɵted, ɵvid]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          ModuleConcatenation bailout: List of module exports is dynamic (ɵccf: maybe provided (runtime-defined) and used in main, ɵcrt: maybe provided (runtime-defined) and used in main, ɵdid: maybe provided (runtime-defined) and used in main, ɵeld: maybe provided (runtime-defined) and used in main, ɵted: maybe provided (runtime-defined) and used in main, ɵvid: maybe provided (runtime-defined) and used in main)
+          from origin ../_helpers/testModuleLoader.js?[]! + 1 modules
+            harmony side effect evaluation @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 7:0-36
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 10:30-37
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 12:49-56
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 12:70-77
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 12:150-157
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 13:54-61
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 13:75-82
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 13:186-193
+            harmony import specifier @angular/core [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 14:28-35
+          from origin ./module.js
+            harmony side effect evaluation @angular/core ./module.js 7:0-36
+            harmony import specifier @angular/core ./module.js 10:30-37
+            harmony import specifier @angular/core ./module.js 12:49-56
+            harmony import specifier @angular/core ./module.js 12:70-77
+            harmony import specifier @angular/core ./module.js 12:150-157
+            harmony import specifier @angular/core ./module.js 13:54-61
+            harmony import specifier @angular/core ./module.js 13:75-82
+            harmony import specifier @angular/core ./module.js 13:186-193
+            harmony import specifier @angular/core ./module.js 14:28-35
+          from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!
+            harmony side effect evaluation @angular/core [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 3:0-63
+            harmony import specifier @angular/core [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 5:7-20
+        ../_helpers/inner-file.js?1 [470] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: AppComponent, __usedExports]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          ModuleConcatenation bailout: List of module exports is dynamic (AppComponent: maybe provided (runtime-defined) and used in main)
+          from origin ../_helpers/testModuleLoader.js?[]! + 1 modules
+            harmony side effect evaluation ./app.component [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 8:0-38
+            harmony import specifier ./app.component [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 13:213-228
+            harmony import specifier ./app.component [286] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 14:48-63
+          from origin ./module.js
+            harmony side effect evaluation ./app.component ./module.js 8:0-38
+            harmony import specifier ./app.component ./module.js 13:213-228
+            harmony import specifier ./app.component ./module.js 14:48-63
+          from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!
+            harmony side effect evaluation ./app.component [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 8:0-65
+            harmony import specifier ./app.component [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 10:7-20
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          ModuleConcatenation bailout: Module is not an ECMAScript module
+          from origin ../_helpers/inner-file.js?0
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+            harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          from origin ../_helpers/inner-file.js?1
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+            harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! [352] 527 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-67
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0: Module ../_helpers/testModuleLoader.js?[]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! (referenced with cjs require)
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?1: Module ../_helpers/testModuleLoader.js?[]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! (referenced with cjs require)
+        entry ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! main
+      ../_helpers/testModuleLoader.js?[]! + 1 modules [286] 1.18 KiB {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0 because of ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!: List of module exports is dynamic (ɵccf: maybe provided (runtime-defined) and used in main, ɵcrt: maybe provided (runtime-defined) and used in main, ɵdid: maybe provided (runtime-defined) and used in main, ɵeld: maybe provided (runtime-defined) and used in main, ɵted: maybe provided (runtime-defined) and used in main, ɵvid: maybe provided (runtime-defined) and used in main)
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?1 because of ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}!: List of module exports is dynamic (AppComponent: maybe provided (runtime-defined) and used in main)
+        cjs require ../_helpers/testModuleLoader?[]! [352] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"nothing"}! 1:23-66
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 72.92005 ms
+  <t> finish make hook: 0.013312 ms
+  <t> finish compilation: 0.363936 ms
+  <t> seal compilation: 7.495176 ms
+  <t> afterCompile hook: 0.0084 ms
+  <t> emitAssets: 25.977974 ms
+  <t> emitRecords: 0.00212 ms
+  <t> done hook: 0.020188 ms
+  <t> beginIdle: 0.010707 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.004774 ms
+  <t> finish modules: 0.269319 ms
+  <t> report dependency errors and warnings: 0.076917 ms
+  <t> optimize dependencies: 0.384204 ms
+  <t> create chunks: 0.18292 ms
+  <t> compute affected modules with chunk graph: 0.001311 ms
+  <t> optimize: 1.323592 ms
+      5 modules hashed, 0 from cache (0.83 variants per module in average)
+  <t> module hashing: 0.274403 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> code generation: 3.663179 ms
+  <t> runtime requirements.modules: 0.050581 ms
+  <t> runtime requirements.chunks: 0.049319 ms
+  <t> runtime requirements.entries: 0.219735 ms
+  <t> runtime requirements: 0.34765 ms
+  <t> hashing: initialize hash: 0.004236 ms
+  <t> hashing: sort chunks: 0.016311 ms
+  <t> hashing: hash runtime modules: 0.135726 ms
+  <t> hashing: hash chunks: 0.190886 ms
+  <t> hashing: hash digest: 0.010147 ms
+  <t> hashing: process full hash modules: 0.00099 ms
+  <t> hashing: 0.38589 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.005944 ms
+  <t> module assets: 0.011454 ms
+  <t> create chunk assets: 0.488549 ms
+  <t> process assets: 0.167821 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.029962 ms
+  <t> figure out provided exports: 0.141294 ms
+      83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.027295 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.55031 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.028231 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.008509 ms
+  <t> trace exports usage in graph: 0.303326 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.046539 ms
+  <t> visitModules: visiting: 0.083427 ms
+      14 queue items processed (6 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.107534 ms
+  <t> connectChunkGroups: 0.001827 ms
+  <t> cleanup: 0.001512 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.01736 ms
+  <t> modules: 0.085401 ms
+  <t> queue: 0.00197 ms
+  <t> maxSize: 0.005742 ms
+
+  LOG from webpack.ModuleConcatenationPlugin
+  <t> select relevant modules: 0.084728 ms
+  <t> sort relevant modules: 0.003003 ms
+  <t> find modules to concatenate: 0.152215 ms
+  <t> sort concat configurations: 0.000713 ms
+  <t> create concatenated modules: 0.250815 ms
+  + 3 hidden lines
+
+  LOG from webpack.FileSystemInfo
+      6 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:37: nothing with module concatenation (webpack 5.64.4) compiled successfully in 108 ms (5c11a0bae707a46cfd65)
+
+AppComponentNgFactory without module concatenation:
+  PublicPath: (none)
+  asset bundle2.js 10.3 KiB {179} [emitted] (name: main)
+  Entrypoint main 10.3 KiB = bundle2.js
+  chunk {179} (runtime: main) bundle2.js (main) 2.08 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! main
+    cacheable modules 2.08 KiB
+      modules by path ../_helpers/*.js 263 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, ɵccf, ɵcrt, ɵdid, ɵeld, ɵted, ɵvid]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          from origin ./module.js
+            harmony side effect evaluation @angular/core [662] ./module.js 7:0-36
+            harmony import specifier @angular/core [662] ./module.js 10:30-37
+            harmony import specifier @angular/core [662] ./module.js 12:49-56
+            harmony import specifier @angular/core [662] ./module.js 12:70-77
+            harmony import specifier @angular/core [662] ./module.js 12:150-157
+            harmony import specifier @angular/core [662] ./module.js 13:54-61
+            harmony import specifier @angular/core [662] ./module.js 13:75-82
+            harmony import specifier @angular/core [662] ./module.js 13:186-193
+            harmony import specifier @angular/core [662] ./module.js 14:28-35
+          from origin ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!
+            harmony side effect evaluation @angular/core [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 3:0-63
+            harmony import specifier @angular/core [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 5:7-20
+        ../_helpers/inner-file.js?1 [470] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: AppComponent, __usedExports]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          from origin ./module.js
+            harmony side effect evaluation ./app.component [662] ./module.js 8:0-38
+            harmony import specifier ./app.component [662] ./module.js 13:213-228
+            harmony import specifier ./app.component [662] ./module.js 14:48-63
+          from origin ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!
+            harmony side effect evaluation ./app.component [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 8:0-65
+            harmony import specifier ./app.component [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 10:7-20
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          from origin ../_helpers/inner-file.js?0
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+            harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          from origin ../_helpers/inner-file.js?1
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+            harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! [382] 580 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-92
+        entry ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! main
+      ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! [926] 128 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-46
+        cjs require ../_helpers/testModuleLoader?["AppComponentNgFactory"]! [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 1:23-91
+      ./module.js [662] 1.13 KiB {179} [depth 2] [dependent] [built] [code generated]
+        [exports: AppComponentNgFactory, RenderType_AppComponent, View_AppComponent_0, View_AppComponent_Host_0]
+        [only some exports used: AppComponentNgFactory]
+        Statement (VariableDeclaration) with side effects in source code at 10:0-99
+        harmony side effect evaluation ./module [926] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! 1:0-81
+        harmony import specifier ./module [926] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! 2:16-44
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 99.878238 ms
+  <t> finish make hook: 0.021102 ms
+  <t> finish compilation: 0.345341 ms
+  <t> seal compilation: 3.940933 ms
+  <t> afterCompile hook: 0.008972 ms
+  <t> emitAssets: 1.302948 ms
+  <t> emitRecords: 0.001573 ms
+  <t> done hook: 0.022473 ms
+  <t> beginIdle: 0.003982 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.00468 ms
+  <t> finish modules: 0.259186 ms
+  <t> report dependency errors and warnings: 0.066919 ms
+  <t> optimize dependencies: 0.355018 ms
+  <t> create chunks: 0.185631 ms
+  <t> compute affected modules with chunk graph: 0.001574 ms
+  <t> optimize: 0.705329 ms
+      6 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.166726 ms
+      100% code generated (6 generated, 0 from cache)
+  <t> code generation: 0.964052 ms
+  <t> runtime requirements.modules: 0.047205 ms
+  <t> runtime requirements.chunks: 0.051089 ms
+  <t> runtime requirements.entries: 0.182542 ms
+  <t> runtime requirements: 0.299034 ms
+  <t> hashing: initialize hash: 0.003212 ms
+  <t> hashing: sort chunks: 0.016706 ms
+  <t> hashing: hash runtime modules: 0.131975 ms
+  <t> hashing: hash chunks: 0.237406 ms
+  <t> hashing: hash digest: 0.010865 ms
+  <t> hashing: process full hash modules: 0.001292 ms
+  <t> hashing: 0.430899 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.005967 ms
+  <t> module assets: 0.009631 ms
+  <t> create chunk assets: 0.418441 ms
+  <t> process assets: 0.19174 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.029615 ms
+  <t> figure out provided exports: 0.128513 ms
+      83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.024921 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.07246 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.023591 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.009327 ms
+  <t> trace exports usage in graph: 0.278329 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.048259 ms
+  <t> visitModules: visiting: 0.084921 ms
+      14 queue items processed (6 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.110656 ms
+  <t> connectChunkGroups: 0.001878 ms
+  <t> cleanup: 0.001543 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.016195 ms
+  <t> modules: 0.088046 ms
+  <t> queue: 0.002204 ms
+  <t> maxSize: 0.005605 ms
+
+  LOG from webpack.FileSystemInfo
+      6 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:37: AppComponentNgFactory without module concatenation (webpack 5.64.4) compiled successfully in 108 ms (567bfd43710efd259a76)
+
+AppComponentNgFactory with module concatenation:
+  PublicPath: (none)
+  asset bundle3.js 9.52 KiB {179} [emitted] (name: main)
+  Entrypoint main 9.52 KiB = bundle3.js
+  chunk {179} (runtime: main) bundle3.js (main) 2.08 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! main
+    cacheable modules 2.08 KiB
+      modules by path ../_helpers/*.js 263 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, ɵccf, ɵcrt, ɵdid, ɵeld, ɵted, ɵvid]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          ModuleConcatenation bailout: List of module exports is dynamic (ɵccf: maybe provided (runtime-defined) and used in main, ɵcrt: maybe provided (runtime-defined) and used in main, ɵdid: maybe provided (runtime-defined) and used in main, ɵeld: maybe provided (runtime-defined) and used in main, ɵted: maybe provided (runtime-defined) and used in main, ɵvid: maybe provided (runtime-defined) and used in main)
+          from origin ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules
+            harmony side effect evaluation @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 7:0-36
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 10:30-37
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 12:49-56
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 12:70-77
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 12:150-157
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 13:54-61
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 13:75-82
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 13:186-193
+            harmony import specifier @angular/core [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 14:28-35
+          from origin ./module.js
+            harmony side effect evaluation @angular/core ./module.js 7:0-36
+            harmony import specifier @angular/core ./module.js 10:30-37
+            harmony import specifier @angular/core ./module.js 12:49-56
+            harmony import specifier @angular/core ./module.js 12:70-77
+            harmony import specifier @angular/core ./module.js 12:150-157
+            harmony import specifier @angular/core ./module.js 13:54-61
+            harmony import specifier @angular/core ./module.js 13:75-82
+            harmony import specifier @angular/core ./module.js 13:186-193
+            harmony import specifier @angular/core ./module.js 14:28-35
+          from origin ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!
+            harmony side effect evaluation @angular/core [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 3:0-63
+            harmony import specifier @angular/core [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 5:7-20
+        ../_helpers/inner-file.js?1 [470] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: AppComponent, __usedExports]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          ModuleConcatenation bailout: List of module exports is dynamic (AppComponent: maybe provided (runtime-defined) and used in main)
+          from origin ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules
+            harmony side effect evaluation ./app.component [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 8:0-38
+            harmony import specifier ./app.component [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 13:213-228
+            harmony import specifier ./app.component [922] ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules ./module.js 14:48-63
+          from origin ./module.js
+            harmony side effect evaluation ./app.component ./module.js 8:0-38
+            harmony import specifier ./app.component ./module.js 13:213-228
+            harmony import specifier ./app.component ./module.js 14:48-63
+          from origin ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!
+            harmony side effect evaluation ./app.component [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 8:0-65
+            harmony import specifier ./app.component [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 10:7-20
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          ModuleConcatenation bailout: Module is not an ECMAScript module
+          from origin ../_helpers/inner-file.js?0
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+            harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          from origin ../_helpers/inner-file.js?1
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 1:0-36
+            [inactive] harmony side effect evaluation ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+            harmony export imported specifier ./unknown [470] ../_helpers/inner-file.js?1 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! [382] 580 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-92
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0: Module ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! (referenced with cjs require)
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?1: Module ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! (referenced with cjs require)
+        entry ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! main
+      ../_helpers/testModuleLoader.js?["AppComponentNgFactory"]! + 1 modules [922] 1.26 KiB {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0 because of ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!: List of module exports is dynamic (ɵccf: maybe provided (runtime-defined) and used in main, ɵcrt: maybe provided (runtime-defined) and used in main, ɵdid: maybe provided (runtime-defined) and used in main, ɵeld: maybe provided (runtime-defined) and used in main, ɵted: maybe provided (runtime-defined) and used in main, ɵvid: maybe provided (runtime-defined) and used in main)
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?1 because of ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}!: List of module exports is dynamic (AppComponent: maybe provided (runtime-defined) and used in main)
+        cjs require ../_helpers/testModuleLoader?["AppComponentNgFactory"]! [382] ../_helpers/entryLoader.js?{"usedExports":["AppComponentNgFactory"],"expect":{"@angular/core":["ɵccf","ɵcrt","ɵdid","ɵeld","ɵted","ɵvid"],"./app.component":["AppComponent"]},"name":"AppComponentNgFactory"}! 1:23-91
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 81.492047 ms
+  <t> finish make hook: 0.006351 ms
+  <t> finish compilation: 0.284323 ms
+  <t> seal compilation: 11.028317 ms
+  <t> afterCompile hook: 0.009262 ms
+  <t> emitAssets: 11.309611 ms
+  <t> emitRecords: 0.002625 ms
+  <t> done hook: 0.018253 ms
+  <t> beginIdle: 0.005106 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.004259 ms
+  <t> finish modules: 0.211366 ms
+  <t> report dependency errors and warnings: 0.059287 ms
+  <t> optimize dependencies: 0.2809 ms
+  <t> create chunks: 0.156718 ms
+  <t> compute affected modules with chunk graph: 0.002078 ms
+  <t> optimize: 5.913839 ms
+      5 modules hashed, 0 from cache (0.83 variants per module in average)
+  <t> module hashing: 0.253636 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> code generation: 2.982517 ms
+  <t> runtime requirements.modules: 0.048236 ms
+  <t> runtime requirements.chunks: 0.048664 ms
+  <t> runtime requirements.entries: 0.167601 ms
+  <t> runtime requirements: 0.285092 ms
+  <t> hashing: initialize hash: 0.003991 ms
+  <t> hashing: sort chunks: 0.015527 ms
+  <t> hashing: hash runtime modules: 0.118022 ms
+  <t> hashing: hash chunks: 0.180425 ms
+  <t> hashing: hash digest: 0.010571 ms
+  <t> hashing: process full hash modules: 0.000887 ms
+  <t> hashing: 0.356314 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.0062 ms
+  <t> module assets: 0.011743 ms
+  <t> create chunk assets: 0.374709 ms
+  <t> process assets: 0.180917 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.020705 ms
+  <t> figure out provided exports: 0.107329 ms
+      83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.019993 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.079747 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.018784 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.007405 ms
+  <t> trace exports usage in graph: 0.220754 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.038728 ms
+  <t> visitModules: visiting: 0.069488 ms
+      14 queue items processed (6 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.091358 ms
+  <t> connectChunkGroups: 0.001757 ms
+  <t> cleanup: 0.001415 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.013581 ms
+  <t> modules: 0.074166 ms
+  <t> queue: 0.001893 ms
+  <t> maxSize: 0.004804 ms
+
+  LOG from webpack.ModuleConcatenationPlugin
+  <t> select relevant modules: 0.074971 ms
+  <t> sort relevant modules: 0.002682 ms
+  <t> find modules to concatenate: 4.961293 ms
+  <t> sort concat configurations: 0.000891 ms
+  <t> create concatenated modules: 0.184284 ms
+  + 3 hidden lines
+
+  LOG from webpack.FileSystemInfo
+      6 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:37: AppComponentNgFactory with module concatenation (webpack 5.64.4) compiled successfully in 105 ms (eab4ed4e07b11d1c07d0)

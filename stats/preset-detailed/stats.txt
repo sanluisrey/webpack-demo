@@ -1,0 +1,193 @@
+PublicPath: auto
+asset main.js 10.2 KiB {179} [emitted] (name: main)
+asset 460.js 323 bytes {460} [emitted]
+asset 524.js 206 bytes {524} [emitted]
+asset 996.js 138 bytes {996} [emitted]
+Entrypoint main 10.2 KiB = main.js
+chunk {179} (runtime: main) main.js (main) 73 bytes (javascript) 6 KiB (runtime) >{460}< >{996}< [entry] [rendered]
+  > ./index main
+  runtime modules 6 KiB
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 73 bytes
+    ./a.js [847] 22 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      cjs self exports reference [847] ./a.js 1:0-14
+      cjs require ./a [10] ./index.js 1:0-14
+    ./index.js [10] 51 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-15
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index main
+chunk {460} (runtime: main) 460.js 54 bytes <{179}> >{524}< [rendered]
+  > ./c [10] ./index.js 3:0-16
+  ./c.js [460] 54 bytes {460} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-53
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    amd require ./c [10] ./index.js 3:0-16
+chunk {524} (runtime: main) 524.js 44 bytes <{460}> [rendered]
+  > [460] ./c.js 1:0-52
+  ./d.js [767] 22 bytes {524} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./d [460] ./c.js 1:0-52
+    cjs self exports reference [767] ./d.js 1:0-14
+  ./e.js [390] 22 bytes {524} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./e [460] ./c.js 1:0-52
+    cjs self exports reference [390] ./e.js 1:0-14
+chunk {996} (runtime: main) 996.js 22 bytes <{179}> [rendered]
+  > ./b [10] ./index.js 2:0-16
+  ./b.js [996] 22 bytes {996} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [996] ./b.js 1:0-14
+    amd require ./b [10] ./index.js 2:0-16
+  
+
+LOG from LogTestPlugin
+<-> Group
+  <e> Error
+  <w> Warning
+  <i> Info
+      Log
+  <-> Collapsed group
+        Log inside collapsed group
+    <-> Inner group
+          Inner inner message
+      Log
+    End
++ 1 hidden lines
+
+LOG from webpack.Compiler
+<t> make hook: 12.690474 ms
+<t> finish make hook: 0.015757 ms
+<t> finish compilation: 0.113512 ms
+<t> seal compilation: 4.066698 ms
+<t> afterCompile hook: 0.00764 ms
+<t> emitAssets: 1.002021 ms
+<t> emitRecords: 0.001755 ms
+<t> done hook: 0.010642 ms
+<t> beginIdle: 0.004188 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004012 ms
+<t> finish modules: 0.078444 ms
+<t> report dependency errors and warnings: 0.019627 ms
+<t> optimize dependencies: 0.165839 ms
+<t> create chunks: 0.232483 ms
+<t> compute affected modules with chunk graph: 0.00216 ms
+<t> optimize: 0.60771 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.197556 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.190912 ms
+<t> runtime requirements.modules: 0.040009 ms
+<t> runtime requirements.chunks: 0.051881 ms
+<t> runtime requirements.entries: 0.323781 ms
+<t> runtime requirements: 0.435589 ms
+<t> hashing: initialize hash: 0.002925 ms
+<t> hashing: sort chunks: 0.018108 ms
+<t> hashing: hash runtime modules: 0.596063 ms
+<t> hashing: hash chunks: 0.281547 ms
+<t> hashing: hash digest: 0.011693 ms
+<t> hashing: process full hash modules: 0.001203 ms
+<t> hashing: 0.956208 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.040385 ms
+<t> module assets: 0.025926 ms
+<t> create chunk assets: 0.680236 ms
+<t> process assets: 0.20582 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.017444 ms
+<t> figure out provided exports: 0.001144 ms
+    0% of exports of modules have been determined (6 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002981 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.026473 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002794 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006712 ms
+<t> trace exports usage in graph: 0.123713 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.016311 ms
+<t> visitModules: visiting: 0.057229 ms
+<t> visitModules: calculating available modules: 0.007929 ms
+<t> visitModules: merging available modules: 0.003523 ms
+<t> visitModules: check modules for revisit: 0.002391 ms
+<t> visitModules: prepare: 0.007528 ms
+<t> visitModules: visiting: 0.029543 ms
+<t> visitModules: calculating available modules: 0.004012 ms
+<t> visitModules: merging available modules: 0.001347 ms
+<t> visitModules: check modules for revisit: 0.000806 ms
+<t> visitModules: prepare: 0.005017 ms
+<t> visitModules: visiting: 0.015506 ms
+    15 queue items processed (9 blocks)
+    3 chunk groups connected
+    3 chunk groups processed for merging (3 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.1529 ms
+<t> connectChunkGroups: 0.011494 ms
+<t> cleanup: 0.002077 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017186 ms
+<t> modules: 0.080697 ms
+<t> queue: 0.00184 ms
+<t> maxSize: 0.011138 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.008088 ms
+<t> sort relevant modules: 0.000846 ms
+<t> find modules to concatenate: 0.001347 ms
+<t> sort concat configurations: 0.000638 ms
+<t> create concatenated modules: 0.002973 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:22: webpack 5.64.4 compiled successfully in 20 ms (c7a4e3bf1797f14ec5d7)

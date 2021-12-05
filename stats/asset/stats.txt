@@ -1,0 +1,139 @@
+PublicPath: auto
+asset 89a353e9c515885abd8e.png 14.6 KiB ({179}) [emitted] [immutable] [from: images/file.png] (auxiliary name: main)
+asset bundle.js 12.4 KiB {179} [emitted] (name: main)
+asset static/file.html 12 bytes ({179}) [emitted] [from: static/file.html] (auxiliary name: main)
+Entrypoint main 12.4 KiB (14.6 KiB) = bundle.js 2 auxiliary assets
+chunk {179} (runtime: main) bundle.js (main) 9.04 KiB (javascript) 14.6 KiB (asset) 1.06 KiB (runtime) [entry] [rendered]
+  > ./index.js main
+  cacheable modules 9.04 KiB (javascript) 14.6 KiB (asset)
+    modules by path ./images/ 8.86 KiB (javascript) 14.6 KiB (asset)
+      ./images/file.jpg [510] 7.92 KiB {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [no exports used]
+        ModuleConcatenation bailout: Module Concatenation is not implemented for AssetGenerator
+        harmony side effect evaluation ./images/file.jpg [10] ./index.js 3:0-36
+      ./images/file.png [856] 42 bytes (javascript) 14.6 KiB (asset) {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [no exports used]
+        ModuleConcatenation bailout: Module Concatenation is not implemented for AssetGenerator
+        harmony side effect evaluation ./images/file.png [10] ./index.js 1:0-36
+      ./images/file.svg [735] 915 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [no exports used]
+        ModuleConcatenation bailout: Module Concatenation is not implemented for AssetGenerator
+        harmony side effect evaluation ./images/file.svg [10] ./index.js 2:0-36
+    ./index.js [10] 150 bytes {179} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-36
+      ModuleConcatenation bailout: Cannot concat with ./static/file.html: Module Concatenation is not implemented for AssetGenerator
+      ModuleConcatenation bailout: Cannot concat with ./images/file.jpg: Module Concatenation is not implemented for AssetGenerator
+      ModuleConcatenation bailout: Cannot concat with ./images/file.png: Module Concatenation is not implemented for AssetGenerator
+      ModuleConcatenation bailout: Cannot concat with ./images/file.svg: Module Concatenation is not implemented for AssetGenerator
+      entry ./index.js main
+    ./static/file.html [865] 42 bytes (javascript) 12 bytes (asset) {179} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [no exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for AssetGenerator
+      harmony side effect evaluation ./static/file.html [10] ./index.js 4:0-38
+  runtime modules 1.06 KiB
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 32.632397 ms
+<t> finish make hook: 0.02362 ms
+<t> finish compilation: 0.32733 ms
+<t> seal compilation: 9.826523 ms
+<t> afterCompile hook: 0.016979 ms
+<t> emitAssets: 1.286898 ms
+<t> emitRecords: 0.003081 ms
+<t> done hook: 0.013217 ms
+<t> beginIdle: 0.008976 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004469 ms
+<t> finish modules: 0.271748 ms
+<t> report dependency errors and warnings: 0.025399 ms
+<t> optimize dependencies: 0.641078 ms
+<t> create chunks: 0.347894 ms
+<t> compute affected modules with chunk graph: 0.004905 ms
+<t> optimize: 2.953506 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.27878 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 1.807726 ms
+<t> runtime requirements.modules: 0.059538 ms
+<t> runtime requirements.chunks: 0.060344 ms
+<t> runtime requirements.entries: 0.170239 ms
+<t> runtime requirements: 0.335156 ms
+<t> hashing: initialize hash: 0.005727 ms
+<t> hashing: sort chunks: 0.023117 ms
+<t> hashing: hash runtime modules: 0.214479 ms
+<t> hashing: hash chunks: 0.286701 ms
+<t> hashing: hash digest: 0.015811 ms
+<t> hashing: process full hash modules: 0.001795 ms
+<t> hashing: 0.608193 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.057239 ms
+<t> module assets: 0.018729 ms
+<t> create chunk assets: 0.472908 ms
+<t> process assets: 1.95074 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.061389 ms
+<t> figure out provided exports: 0.049728 ms
+    100% of exports of modules have been determined (0 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.037637 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.010336 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.042651 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.012195 ms
+<t> trace exports usage in graph: 0.237188 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.039323 ms
+<t> visitModules: visiting: 0.107254 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.164438 ms
+<t> connectChunkGroups: 0.003521 ms
+<t> cleanup: 0.002372 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.03299 ms
+<t> modules: 0.15487 ms
+<t> queue: 0.003902 ms
+<t> maxSize: 0.009414 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.080991 ms
+<t> sort relevant modules: 0.00207 ms
+<t> find modules to concatenate: 0.790727 ms
+<t> sort concat configurations: 0.002535 ms
+<t> create concatenated modules: 0.010757 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 5 timestamps 5 hashes 5 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:15: webpack 5.64.4 compiled successfully in 46 ms (deb9b5ce6c019904ccb1)

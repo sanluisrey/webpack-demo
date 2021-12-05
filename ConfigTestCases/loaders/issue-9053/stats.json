@@ -1,0 +1,904 @@
+{
+  "hash": "2b84c82d05b1e96cba7b",
+  "version": "5.64.4",
+  "time": 24,
+  "builtAt": 1638693885114,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/loaders/issue-9053",
+  "assetsByChunkName": {
+    "main": [
+      "bundle0.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 2712,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 2712
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        179
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 705,
+      "sizes": {
+        "javascript": 705
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "45450ba685d030a73443",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 477,
+          "sizes": {
+            "javascript": 477
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 10,
+          "issuerId": null,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-5:3",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 76,
+          "sizes": {
+            "javascript": 76
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "name": "./node_modules/loader1.js!./c.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 446,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "loader1!./c.js",
+              "loc": "8:11-36",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "./node_modules/loader1.js!./c.js",
+              "moduleName": "./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "1:0-14",
+              "moduleId": 446,
+              "resolvedModuleId": 446
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "./node_modules/loader1.js!./c.js",
+              "moduleName": "./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:0-19",
+              "moduleId": 446,
+              "resolvedModuleId": 446
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "./node_modules/loader1.js!./c.js",
+              "moduleName": "./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "4:0-19",
+              "moduleId": 446,
+              "resolvedModuleId": 446
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 1:0-14",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 76,
+          "sizes": {
+            "javascript": 76
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "name": "c.js!=!./node_modules/loader1.js!./b.js",
+          "nameForCondition": "c.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 98,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "c.js!=!loader1!./b.js",
+              "loc": "2:11-43",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "module": "c.js!=!./node_modules/loader1.js!./b.js",
+              "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "1:0-14",
+              "moduleId": 98,
+              "resolvedModuleId": 98
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "module": "c.js!=!./node_modules/loader1.js!./b.js",
+              "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:0-19",
+              "moduleId": 98,
+              "resolvedModuleId": 98
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "module": "c.js!=!./node_modules/loader1.js!./b.js",
+              "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+              "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "4:0-19",
+              "moduleId": 98,
+              "resolvedModuleId": 98
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 1:0-14",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 76,
+          "sizes": {
+            "javascript": 76
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "name": "d.js!=!./node_modules/loader1.js!./c.js",
+          "nameForCondition": "d.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 812,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "d.js!=!loader1!./c.js",
+              "loc": "14:11-43",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "d.js!=!./node_modules/loader1.js!./c.js",
+              "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "1:0-14",
+              "moduleId": 812,
+              "resolvedModuleId": 812
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "d.js!=!./node_modules/loader1.js!./c.js",
+              "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:0-19",
+              "moduleId": 812,
+              "resolvedModuleId": 812
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "module": "d.js!=!./node_modules/loader1.js!./c.js",
+              "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+              "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "4:0-19",
+              "moduleId": 812,
+              "resolvedModuleId": 812
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 1:0-14",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+            "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 477,
+      "sizes": {
+        "javascript": 477
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 10,
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-5:3",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 76,
+      "sizes": {
+        "javascript": 76
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+      "name": "c.js!=!./node_modules/loader1.js!./b.js",
+      "nameForCondition": "c.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 98,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "c.js!=!loader1!./b.js",
+          "loc": "2:11-43",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "module": "c.js!=!./node_modules/loader1.js!./b.js",
+          "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "1:0-14",
+          "moduleId": 98,
+          "resolvedModuleId": 98
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "module": "c.js!=!./node_modules/loader1.js!./b.js",
+          "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-19",
+          "moduleId": 98,
+          "resolvedModuleId": 98
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "module": "c.js!=!./node_modules/loader1.js!./b.js",
+          "moduleName": "c.js!=!./node_modules/loader1.js!./b.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/b.js",
+          "resolvedModule": "c.js!=!./node_modules/loader1.js!./b.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "4:0-19",
+          "moduleId": 98,
+          "resolvedModuleId": 98
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 1:0-14",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 76,
+      "sizes": {
+        "javascript": 76
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+      "name": "./node_modules/loader1.js!./c.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 446,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "loader1!./c.js",
+          "loc": "8:11-36",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "./node_modules/loader1.js!./c.js",
+          "moduleName": "./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "1:0-14",
+          "moduleId": 446,
+          "resolvedModuleId": 446
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "./node_modules/loader1.js!./c.js",
+          "moduleName": "./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-19",
+          "moduleId": 446,
+          "resolvedModuleId": 446
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "./node_modules/loader1.js!./c.js",
+          "moduleName": "./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader2.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "4:0-19",
+          "moduleId": 446,
+          "resolvedModuleId": 446
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 1:0-14",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 76,
+      "sizes": {
+        "javascript": 76
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+      "name": "d.js!=!./node_modules/loader1.js!./c.js",
+      "nameForCondition": "d.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 812,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "d.js!=!loader1!./c.js",
+          "loc": "14:11-43",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "d.js!=!./node_modules/loader1.js!./c.js",
+          "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "1:0-14",
+          "moduleId": 812,
+          "resolvedModuleId": 812
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "d.js!=!./node_modules/loader1.js!./c.js",
+          "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-19",
+          "moduleId": 812,
+          "resolvedModuleId": 812
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "module": "d.js!=!./node_modules/loader1.js!./c.js",
+          "moduleName": "d.js!=!./node_modules/loader1.js!./c.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader3.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/node_modules/loader1.js!/Users/yoh/Projects/repos/webpack/test/configCases/loaders/issue-9053/c.js",
+          "resolvedModule": "d.js!=!./node_modules/loader1.js!./c.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "4:0-19",
+          "moduleId": 812,
+          "resolvedModuleId": 812
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 1:0-14",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 3:0-19",
+        "CommonJS bailout: module.exports.push(...) prevents optimization as module.exports is passed as call context at 4:0-19",
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-23",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 2712
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2712,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 2712
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 2712,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

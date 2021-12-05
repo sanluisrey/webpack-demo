@@ -1,0 +1,122 @@
+PublicPath: (none)
+asset bundle0.js 2.3 KiB {main} [emitted] (name: main)
+Entrypoint main 2.3 KiB = bundle0.js
+chunk {main} (runtime: main) bundle0.js (main) 147 bytes [entry] [rendered]
+  > ./index.js main
+  ./file.opuuus 36 bytes {main} [depth 1] [dependent] [built] [code generated]
+    [no exports]
+    [used exports unknown]
+    cjs require ./file.opuuus [./index.js] 2:24-48
+  ./index.js 111 bytes {main} [depth 0] [built] [code generated]
+    [used exports unknown]
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.228679 ms
+<t> finish make hook: 0.010802 ms
+<t> finish compilation: 0.130369 ms
+<t> seal compilation: 3.557791 ms
+<t> afterCompile hook: 0.015018 ms
+<t> emitAssets: 5.01778 ms
+<t> emitRecords: 0.007369 ms
+<t> done hook: 0.014603 ms
+<t> beginIdle: 0.014377 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003822 ms
+<t> finish modules: 0.101323 ms
+<t> report dependency errors and warnings: 0.008597 ms
+<t> optimize dependencies: 0.024891 ms
+<t> create chunks: 0.150587 ms
+<t> compute affected modules with chunk graph: 0.002498 ms
+<t> optimize: 0.330473 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.133792 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.213598 ms
+<t> runtime requirements.modules: 0.024437 ms
+<t> runtime requirements.chunks: 0.042155 ms
+<t> runtime requirements.entries: 0.04894 ms
+<t> runtime requirements: 0.145413 ms
+<t> hashing: initialize hash: 0.007762 ms
+<t> hashing: hash errors: 0.007158 ms
+<t> hashing: sort chunks: 0.018162 ms
+<t> hashing: hash runtime modules: 0.006794 ms
+<t> hashing: hash chunks: 0.246707 ms
+<t> hashing: hash digest: 0.015133 ms
+<t> hashing: process full hash modules: 0.001759 ms
+<t> hashing: 0.358814 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005352 ms
+<t> module assets: 0.008288 ms
+<t> create chunk assets: 0.417703 ms
+<t> process assets: 0.039678 ms
+
+LOG from webpack.ResolverCachePlugin
+    100% really resolved (2 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02599 ms
+<t> figure out provided exports: 0.007783 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012536 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002909 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017307 ms
+<t> visitModules: visiting: 0.048577 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.075115 ms
+<t> connectChunkGroups: 0.005052 ms
+<t> cleanup: 0.001649 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017963 ms
+<t> modules: 0.046491 ms
+<t> queue: 0.002124 ms
+<t> maxSize: 0.005645 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 17 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 85% (22/26) entries shared via 1 shared snapshots (1 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 100% (8/8) entries shared via 1 shared snapshots (1 times referenced)
+    Managed items info in cache: 0 items
+
+ERROR in ./file.opuuus
+DataUrl can't be generated automatically, because there is no mimetype for ".opuuus" in mimetype database. Either pass a mimetype via "generator.mimetype" or use type: "asset/resource" to create a resource file instead of a DataUrl
+Error: DataUrl can't be generated automatically, because there is no mimetype for ".opuuus" in mimetype database. Either pass a mimetype via "generator.mimetype" or use type: "asset/resource" to create a resource file instead of a DataUrl
+    at AssetGenerator.generate (/Users/yoh/Projects/repos/webpack/lib/asset/AssetGenerator.js:152:14)
+    at NormalModule.codeGeneration (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:1195:22)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3281:22
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:91:34
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/cache/MemoryCachePlugin.js:45:13)
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:91:19
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:19:1)
+    at Cache.get (/Users/yoh/Projects/repos/webpack/lib/Cache.js:75:18)
+    at ItemCacheFacade.get (/Users/yoh/Projects/repos/webpack/lib/CacheFacade.js:118:15)
+    at Compilation._codeGenerationModule (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3274:9)
+CodeGenerationError: DataUrl can't be generated automatically, because there is no mimetype for ".opuuus" in mimetype database. Either pass a mimetype via "generator.mimetype" or use type: "asset/resource" to create a resource file instead of a DataUrl
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3289:18
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:91:34
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/cache/MemoryCachePlugin.js:45:13)
+    at /Users/yoh/Projects/repos/webpack/lib/Cache.js:91:19
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:19:1)
+    at Cache.get (/Users/yoh/Projects/repos/webpack/lib/Cache.js:75:18)
+    at ItemCacheFacade.get (/Users/yoh/Projects/repos/webpack/lib/CacheFacade.js:118:15)
+    at Compilation._codeGenerationModule (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3274:9)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:3200:10
+    at arrayIterator (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3467:9)
+ @ ./index.js 2:24-48
+
+2021-12-05 17:44:17: webpack 5.64.4 compiled with 1 error in 22 ms (8146d4429194ae608802)

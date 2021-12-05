@@ -1,0 +1,134 @@
+PublicPath: (none)
+asset bundle.js 3.86 KiB {0} [emitted] (name: main)
+Entrypoint main 3.86 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 161 bytes (javascript) 663 bytes (runtime) [entry] [rendered]
+  > ./entry-exports-field/loader/ main
+  runtime modules 663 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 161 bytes
+    ./entry-exports-field/loader/index.js [1] 133 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      entry ./entry-exports-field/loader/ main
+    ./entry-exports-field/loader/node_modules/toml-parser/loader.js!./entry-exports-field/loader/file.txt [0] 28 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-28
+      harmony side effect evaluation toml-parser!./file.txt [1] ./entry-exports-field/loader/index.js 1:0-40
+      harmony import specifier toml-parser!./file.txt [1] ./entry-exports-field/loader/index.js 4:8-10
+      cjs self exports reference [0] ./entry-exports-field/loader/node_modules/toml-parser/loader.js!./entry-exports-field/loader/file.txt 1:0-14
+runtime modules 663 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 161 bytes
+  ./entry-exports-field/loader/index.js [1] 133 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    entry ./entry-exports-field/loader/ main
+  ./entry-exports-field/loader/node_modules/toml-parser/loader.js!./entry-exports-field/loader/file.txt [0] 28 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-28
+    harmony side effect evaluation toml-parser!./file.txt [1] ./entry-exports-field/loader/index.js 1:0-40
+    harmony import specifier toml-parser!./file.txt [1] ./entry-exports-field/loader/index.js 4:8-10
+    cjs self exports reference [0] ./entry-exports-field/loader/node_modules/toml-parser/loader.js!./entry-exports-field/loader/file.txt 1:0-14
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.928826 ms
+<t> finish make hook: 0.013206 ms
+<t> finish compilation: 0.133913 ms
+<t> seal compilation: 2.324755 ms
+<t> afterCompile hook: 0.008608 ms
+<t> emitAssets: 1.290681 ms
+<t> emitRecords: 0.003837 ms
+<t> done hook: 0.015546 ms
+<t> beginIdle: 0.011603 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003695 ms
+<t> finish modules: 0.094216 ms
+<t> report dependency errors and warnings: 0.01773 ms
+<t> optimize dependencies: 0.122273 ms
+<t> create chunks: 0.137743 ms
+<t> compute affected modules with chunk graph: 0.002817 ms
+<t> optimize: 0.422212 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.139622 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.192555 ms
+<t> runtime requirements.modules: 0.033503 ms
+<t> runtime requirements.chunks: 0.042189 ms
+<t> runtime requirements.entries: 0.23217 ms
+<t> runtime requirements: 0.331751 ms
+<t> hashing: initialize hash: 0.003842 ms
+<t> hashing: sort chunks: 0.015283 ms
+<t> hashing: hash runtime modules: 0.143662 ms
+<t> hashing: hash chunks: 0.2014 ms
+<t> hashing: hash digest: 0.01257 ms
+<t> hashing: process full hash modules: 0.001364 ms
+<t> hashing: 0.419242 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.007003 ms
+<t> module assets: 0.009306 ms
+<t> create chunk assets: 0.355987 ms
+<t> process assets: 0.03298 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023009 ms
+<t> figure out provided exports: 0.011231 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.009889 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003033 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004759 ms
+<t> trace exports usage in graph: 0.077063 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.014981 ms
+<t> visitModules: visiting: 0.045956 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.069098 ms
+<t> connectChunkGroups: 0.001956 ms
+<t> cleanup: 0.001581 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016287 ms
+<t> modules: 0.057462 ms
+<t> queue: 0.002448 ms
+<t> maxSize: 0.006038 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:23: webpack 5.64.4 compiled successfully in 20 ms (c2d0eb21eeb91b96547f)

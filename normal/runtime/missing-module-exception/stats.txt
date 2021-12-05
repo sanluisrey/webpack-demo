@@ -1,0 +1,280 @@
+PublicPath: (none)
+asset bundle.js 2 KiB {0} [emitted] (name: main)
+Entrypoint main 2 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 216 bytes [entry] [rendered]
+  > ./runtime/missing-module-exception/ main
+  ./runtime/missing-module-exception/index.js [0] 216 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-9:3
+    entry ./runtime/missing-module-exception/ main
+./runtime/missing-module-exception/index.js [0] 216 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-9:3
+  entry ./runtime/missing-module-exception/ main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 7.923587 ms
+<t> finish make hook: 0.006545 ms
+<t> finish compilation: 0.069397 ms
+<t> seal compilation: 1.070151 ms
+<t> afterCompile hook: 0.005362 ms
+<t> emitAssets: 2.393514 ms
+<t> emitRecords: 0.001892 ms
+<t> done hook: 0.008104 ms
+<t> beginIdle: 0.004445 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.002374 ms
+<t> finish modules: 0.045022 ms
+<t> report dependency errors and warnings: 0.008207 ms
+<t> optimize dependencies: 0.061346 ms
+<t> create chunks: 0.083602 ms
+<t> compute affected modules with chunk graph: 0.000896 ms
+<t> optimize: 0.273473 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.049687 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.058132 ms
+<t> runtime requirements.modules: 0.007382 ms
+<t> runtime requirements.chunks: 0.017654 ms
+<t> runtime requirements.entries: 0.032503 ms
+<t> runtime requirements: 0.06968 ms
+<t> hashing: initialize hash: 0.001383 ms
+<t> hashing: hash warnings: 0.001961 ms
+<t> hashing: sort chunks: 0.008952 ms
+<t> hashing: hash runtime modules: 0.002811 ms
+<t> hashing: hash chunks: 0.132795 ms
+<t> hashing: hash digest: 0.007776 ms
+<t> hashing: process full hash modules: 0.001062 ms
+<t> hashing: 0.176436 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.003355 ms
+<t> module assets: 0.006068 ms
+<t> create chunk assets: 0.187988 ms
+<t> process assets: 0.02183 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01094 ms
+<t> figure out provided exports: 0.001384 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001286 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002138 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.008518 ms
+<t> trace exports usage in graph: 0.027374 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.002726 ms
+<t> visitModules: visiting: 0.019905 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.036272 ms
+<t> connectChunkGroups: 0.001113 ms
+<t> cleanup: 0.001259 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011205 ms
+<t> modules: 0.033545 ms
+<t> queue: 0.001452 ms
+<t> maxSize: 0.00367 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./runtime/missing-module-exception/index.js 3:2-21
+Module not found: Error: Can't resolve './fail-1' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+resolve './fail-1' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception/fail-1)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1 doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-1 doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './fail-1' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:947:14)
+    at arrayEachFunc (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2517:19)
+    at Object.parallel (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6858:9)
+    at NormalModuleFactory._resolveResourceErrorHints (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:870:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:831:18
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+WARNING in ./runtime/missing-module-exception/index.js 4:2-30
+Module not found: Error: Can't resolve './fail-2' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+resolve './fail-2' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception/fail-2)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2 doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-2 doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './fail-2' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:947:14)
+    at arrayEachFunc (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2517:19)
+    at Object.parallel (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6858:9)
+    at NormalModuleFactory._resolveResourceErrorHints (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:870:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:831:18
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+WARNING in ./runtime/missing-module-exception/index.js 5:2-34
+Module not found: Error: Can't resolve './fail-3' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+resolve './fail-3' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/runtime/missing-module-exception/fail-3)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3 doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception/fail-3 doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './fail-3' in '/Users/yoh/Projects/repos/webpack/test/cases/runtime/missing-module-exception'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:947:14)
+    at arrayEachFunc (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2517:19)
+    at Object.parallel (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6858:9)
+    at NormalModuleFactory._resolveResourceErrorHints (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:870:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:831:18
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2021-12-05 17:45:40: webpack 5.64.4 compiled with 3 warnings in 12 ms (b158cd8f0514d9c2f92a)

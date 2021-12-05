@@ -1,0 +1,1060 @@
+frozen-verify:
+  PublicPath: (none)
+  assets by status 11 bytes [cached] 1 asset
+  asset bundle0.js 19.5 KiB {main} [emitted] (name: main)
+  Entrypoint main 19.5 KiB (11 bytes) = bundle0.js 1 auxiliary asset
+  chunk {main} (runtime: main) bundle0.js (main) 2.21 KiB (javascript) 11 bytes (asset) 1.01 KiB (runtime) [entry] [rendered]
+    > ./index.js main
+    cacheable modules 2.21 KiB (javascript) 11 bytes (asset)
+      modules by path http://localhost:9990/ 474 bytes (javascript) 11 bytes (asset)
+        javascript modules 409 bytes
+          modules by path http://localhost:9990/*.js 159 bytes
+            http://localhost:9990/fallback.js 33 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: fallback]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/fallback.js [./index.js] 5:0-61
+              harmony import specifier http://localhost:9990/fallback.js [./index.js] 19:8-16
+            http://localhost:9990/redirect.js 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/redirect.js [./index.js] 7:0-58
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 21:8-17
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 22:8-17
+            http://localhost:9990/resolve.js 39 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/resolve.js [./index.js] 4:0-65
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 17:8-13
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 18:8-14
+            http://localhost:9990/url.js 59 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/url.js [./index.js] 9:0-51
+              harmony import specifier http://localhost:9990/url.js [./index.js] 24:8-15
+              harmony import specifier http://localhost:9990/url.js [./index.js] 25:8-20
+          modules by path http://localhost:9990/folder/*.js 129 bytes
+            http://localhost:9990/folder/dependency.js 80 bytes {main} [depth 2] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+              harmony export imported specifier ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+            http://localhost:9990/folder/sub-dependency.js 24 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value]
+              [used exports unknown]
+              harmony side effect evaluation ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+              harmony export imported specifier ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+            http://localhost:9990/folder/sub-dependency2.js 25 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value2]
+              [used exports unknown]
+              harmony side effect evaluation /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+              harmony export imported specifier /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+          modules by path http://localhost:9990/*.css 93 bytes
+            http://localhost:9990/index.css?cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?cache [./index.js] 3:0-69
+              harmony import specifier http://localhost:9990/index.css?cache [./index.js] 16:8-24
+            http://localhost:9990/index.css?no-cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?no-cache [./index.js] 2:0-73
+              harmony import specifier http://localhost:9990/index.css?no-cache [./index.js] 15:8-25
+            http://localhost:9990/index.css?query#fragment 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?query#fragment [./index.js] 1:0-72
+              harmony import specifier http://localhost:9990/index.css?query#fragment [./index.js] 14:8-18
+          http://localhost:9990/redirect 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [exports: default]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/redirect [./index.js] 6:0-55
+            harmony import specifier http://localhost:9990/redirect [./index.js] 20:8-17
+            harmony import specifier http://localhost:9990/redirect [./index.js] 22:28-37
+        asset modules 65 bytes (javascript) 11 bytes (asset)
+          http://localhost:9990/asset.txt 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/asset.txt [./index.js] 8:0-51
+            harmony import specifier http://localhost:9990/asset.txt [./index.js] 23:8-17
+          http://localhost:9990/asset.txt?query 42 bytes (javascript) 11 bytes (asset) {main} [depth 2] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            new URL() asset.txt?query [http://localhost:9990/url.js] 1:15-58
+      modules by path ./ 1.51 KiB
+        ./index.js 1.48 KiB {main} [depth 0] [built] [code generated]
+          [no exports]
+          [used exports unknown]
+          entry ./index.js main
+        ./node_modules/fallback-package.js 28 bytes {main} [depth 2] [dependent] [built] [code generated]
+          [exports: fallback]
+          [used exports unknown]
+          harmony side effect evaluation fallback-package [http://localhost:9990/fallback.js] 1:0-33
+          harmony export imported specifier fallback-package [http://localhost:9990/fallback.js] 1:0-33
+      modules by path https://raw.githubusercontent.com/ 240 bytes
+        https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 10:0-106
+          harmony import specifier https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 29:8-31
+        https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 11:0-103
+          harmony import specifier https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 30:8-31
+    runtime modules 1.01 KiB
+      webpack/runtime/define property getters 308 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/publicPath 27 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/readFile chunk loading 333 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.HttpUriPlugin
+      http://localhost:9990/index.css?no-cache can't be stored in cache, due to Cache-Control header: no-cache, max-age=60
+  + 15 hidden lines
+
+  LOG from webpack.Compiler
+  <t> make hook: 454.274553 ms
+  <t> finish make hook: 0.018319 ms
+  <t> finish compilation: 1.035296 ms
+  <t> seal compilation: 6.730288 ms
+  <t> afterCompile hook: 0.014315 ms
+  <t> emitAssets: 4.089897 ms
+  <t> emitRecords: 0.004263 ms
+  <t> done hook: 0.026559 ms
+  <t> beginIdle: 0.0071 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.003005 ms
+  <t> finish modules: 0.842569 ms
+  <t> report dependency errors and warnings: 0.168021 ms
+  <t> optimize dependencies: 0.036866 ms
+  <t> create chunks: 0.514673 ms
+  <t> compute affected modules with chunk graph: 0.00278 ms
+  <t> optimize: 1.284417 ms
+      17 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.416382 ms
+      100% code generated (17 generated, 0 from cache)
+  <t> code generation: 1.598084 ms
+  <t> runtime requirements.modules: 0.094842 ms
+  <t> runtime requirements.chunks: 0.067884 ms
+  <t> runtime requirements.entries: 0.240732 ms
+  <t> runtime requirements: 0.428188 ms
+  <t> hashing: initialize hash: 0.009217 ms
+  <t> hashing: sort chunks: 0.036391 ms
+  <t> hashing: hash runtime modules: 0.391044 ms
+  <t> hashing: hash chunks: 0.251922 ms
+  <t> hashing: hash digest: 0.0284 ms
+  <t> hashing: process full hash modules: 0.003278 ms
+  <t> hashing: 0.774191 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> record hash: 0.007406 ms
+  <t> module assets: 0.012107 ms
+  <t> create chunk assets: 1.229565 ms
+  <t> process assets: 0.05105 ms
+
+  LOG from webpack.ResolverCachePlugin
+      100% really resolved (4 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.063019 ms
+  <t> figure out provided exports: 0.643314 ms
+      100% of exports of modules have been determined (0 no declared exports, 17 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.056658 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.006891 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.278152 ms
+  <t> visitModules: visiting: 0.402928 ms
+      34 queue items processed (17 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.427505 ms
+  <t> connectChunkGroups: 0.003604 ms
+  <t> cleanup: 0.001307 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.022119 ms
+  <t> modules: 0.900378 ms
+  <t> queue: 0.00713 ms
+  <t> maxSize: 0.01024 ms
+
+  LOG from webpack.FileSystemInfo
+      22 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 27 timestamps 0 hashes 0 timestamp hash combinations
+      File timestamp snapshot optimization: 81% (44/54) entries shared via 1 shared snapshots (3 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Missing items snapshot optimization: 73% (16/22) entries shared via 1 shared snapshots (3 times referenced)
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:17: frozen-verify (webpack 5.64.4) compiled successfully in 480 ms (92efa68ff5907c3a9ab7)
+
+dev-defaults:
+  PublicPath: (none)
+  assets by status 11 bytes [cached] 1 asset
+  asset bundle1.js 19.5 KiB {main} [emitted] (name: main)
+  Entrypoint main 19.5 KiB (11 bytes) = bundle1.js 1 auxiliary asset
+  chunk {main} (runtime: main) bundle1.js (main) 2.21 KiB (javascript) 11 bytes (asset) 1.01 KiB (runtime) [entry] [rendered]
+    > ./index.js main
+    cacheable modules 2.21 KiB (javascript) 11 bytes (asset)
+      modules by path http://localhost:9990/ 474 bytes (javascript) 11 bytes (asset)
+        javascript modules 409 bytes
+          modules by path http://localhost:9990/*.js 159 bytes
+            http://localhost:9990/fallback.js 33 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: fallback]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/fallback.js [./index.js] 5:0-61
+              harmony import specifier http://localhost:9990/fallback.js [./index.js] 19:8-16
+            http://localhost:9990/redirect.js 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/redirect.js [./index.js] 7:0-58
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 21:8-17
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 22:8-17
+            http://localhost:9990/resolve.js 39 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/resolve.js [./index.js] 4:0-65
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 17:8-13
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 18:8-14
+            http://localhost:9990/url.js 59 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/url.js [./index.js] 9:0-51
+              harmony import specifier http://localhost:9990/url.js [./index.js] 24:8-15
+              harmony import specifier http://localhost:9990/url.js [./index.js] 25:8-20
+          modules by path http://localhost:9990/folder/*.js 129 bytes
+            http://localhost:9990/folder/dependency.js 80 bytes {main} [depth 2] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+              harmony export imported specifier ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+            http://localhost:9990/folder/sub-dependency.js 24 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value]
+              [used exports unknown]
+              harmony side effect evaluation ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+              harmony export imported specifier ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+            http://localhost:9990/folder/sub-dependency2.js 25 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value2]
+              [used exports unknown]
+              harmony side effect evaluation /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+              harmony export imported specifier /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+          modules by path http://localhost:9990/*.css 93 bytes
+            http://localhost:9990/index.css?cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?cache [./index.js] 3:0-69
+              harmony import specifier http://localhost:9990/index.css?cache [./index.js] 16:8-24
+            http://localhost:9990/index.css?no-cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?no-cache [./index.js] 2:0-73
+              harmony import specifier http://localhost:9990/index.css?no-cache [./index.js] 15:8-25
+            http://localhost:9990/index.css?query#fragment 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?query#fragment [./index.js] 1:0-72
+              harmony import specifier http://localhost:9990/index.css?query#fragment [./index.js] 14:8-18
+          http://localhost:9990/redirect 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [exports: default]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/redirect [./index.js] 6:0-55
+            harmony import specifier http://localhost:9990/redirect [./index.js] 20:8-17
+            harmony import specifier http://localhost:9990/redirect [./index.js] 22:28-37
+        asset modules 65 bytes (javascript) 11 bytes (asset)
+          http://localhost:9990/asset.txt 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/asset.txt [./index.js] 8:0-51
+            harmony import specifier http://localhost:9990/asset.txt [./index.js] 23:8-17
+          http://localhost:9990/asset.txt?query 42 bytes (javascript) 11 bytes (asset) {main} [depth 2] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            new URL() asset.txt?query [http://localhost:9990/url.js] 1:15-58
+      modules by path ./ 1.51 KiB
+        ./index.js 1.48 KiB {main} [depth 0] [built] [code generated]
+          [no exports]
+          [used exports unknown]
+          entry ./index.js main
+        ./node_modules/fallback-package.js 28 bytes {main} [depth 2] [dependent] [built] [code generated]
+          [exports: fallback]
+          [used exports unknown]
+          harmony side effect evaluation fallback-package [http://localhost:9990/fallback.js] 1:0-33
+          harmony export imported specifier fallback-package [http://localhost:9990/fallback.js] 1:0-33
+      modules by path https://raw.githubusercontent.com/ 240 bytes
+        https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 10:0-106
+          harmony import specifier https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 29:8-31
+        https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 11:0-103
+          harmony import specifier https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 30:8-31
+    runtime modules 1.01 KiB
+      webpack/runtime/define property getters 308 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/publicPath 27 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/readFile chunk loading 333 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.HttpUriPlugin
+      http://localhost:9990/index.css?query#fragment added to lockfile
+      http://localhost:9990/index.css?no-cache can't be stored in cache, due to Cache-Control header: no-cache, max-age=60
+      http://localhost:9990/index.css?no-cache added to lockfile
+      http://localhost:9990/index.css?cache added to lockfile
+      http://localhost:9990/resolve.js added to lockfile
+      http://localhost:9990/fallback.js added to lockfile
+      http://localhost:9990/redirect.js added to lockfile
+      http://localhost:9990/redirect added to lockfile
+      http://localhost:9990/asset.txt added to lockfile
+      http://localhost:9990/url.js added to lockfile
+      http://localhost:9990/asset.txt?query added to lockfile
+      http://localhost:9990/folder/dependency.js added to lockfile
+      http://localhost:9990/folder/sub-dependency2.js added to lockfile
+      http://localhost:9990/folder/sub-dependency.js added to lockfile
+      https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md added to lockfile
+      https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md added to lockfile
+  + 15 hidden lines
+
+  LOG from webpack.Compiler
+  <t> make hook: 472.238423 ms
+  <t> finish make hook: 0.009998 ms
+  <t> finish compilation: 2.163516 ms
+  <t> seal compilation: 5.275752 ms
+  <t> afterCompile hook: 0.015948 ms
+  <t> emitAssets: 1.577301 ms
+  <t> emitRecords: 0.005579 ms
+  <t> done hook: 0.371939 ms
+  <t> beginIdle: 0.010444 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.002865 ms
+  <t> finish modules: 2.051113 ms
+  <t> report dependency errors and warnings: 0.084744 ms
+  <t> optimize dependencies: 0.035672 ms
+  <t> create chunks: 0.47442 ms
+  <t> compute affected modules with chunk graph: 0.002637 ms
+  <t> optimize: 0.485316 ms
+      17 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.4116 ms
+      100% code generated (17 generated, 0 from cache)
+  <t> code generation: 1.336523 ms
+  <t> runtime requirements.modules: 0.095383 ms
+  <t> runtime requirements.chunks: 0.071809 ms
+  <t> runtime requirements.entries: 0.362179 ms
+  <t> runtime requirements: 0.557757 ms
+  <t> hashing: initialize hash: 0.004997 ms
+  <t> hashing: sort chunks: 0.020725 ms
+  <t> hashing: hash runtime modules: 0.266366 ms
+  <t> hashing: hash chunks: 0.244248 ms
+  <t> hashing: hash digest: 0.014433 ms
+  <t> hashing: process full hash modules: 0.001251 ms
+  <t> hashing: 0.590119 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> record hash: 0.006899 ms
+  <t> module assets: 0.011335 ms
+  <t> create chunk assets: 0.97906 ms
+  <t> process assets: 0.030723 ms
+
+  LOG from webpack.ResolverCachePlugin
+      100% really resolved (4 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.071215 ms
+  <t> figure out provided exports: 0.325988 ms
+      100% of exports of modules have been determined (0 no declared exports, 17 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.050173 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.00704 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.24511 ms
+  <t> visitModules: visiting: 0.360025 ms
+      34 queue items processed (17 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.384371 ms
+  <t> connectChunkGroups: 0.004165 ms
+  <t> cleanup: 0.001591 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.022906 ms
+  <t> modules: 0.125994 ms
+  <t> queue: 0.002215 ms
+  <t> maxSize: 0.003783 ms
+
+  LOG from webpack.FileSystemInfo
+      22 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 27 timestamps 0 hashes 0 timestamp hash combinations
+      File timestamp snapshot optimization: 83% (44/53) entries shared via 1 shared snapshots (3 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Missing items snapshot optimization: 70% (16/23) entries shared via 1 shared snapshots (3 times referenced)
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:17: dev-defaults (webpack 5.64.4) compiled successfully in 485 ms (92efa68ff5907c3a9ab7)
+
+prod-defaults:
+  PublicPath: (none)
+  asset bundle2.js 19.5 KiB {main} [emitted] (name: main)
+  asset 77a781b995cf1cfaf39d.txt?query 11 bytes ({main}) [emitted] [immutable] [from: http://localhost:9990/asset.txt?query] (auxiliary name: main)
+  Entrypoint main 19.5 KiB (11 bytes) = bundle2.js 1 auxiliary asset
+  chunk {main} (runtime: main) bundle2.js (main) 2.21 KiB (javascript) 11 bytes (asset) 1.01 KiB (runtime) [entry] [rendered]
+    > ./index.js main
+    cacheable modules 2.21 KiB (javascript) 11 bytes (asset)
+      modules by path http://localhost:9990/ 474 bytes (javascript) 11 bytes (asset)
+        javascript modules 409 bytes
+          modules by path http://localhost:9990/*.js 159 bytes
+            http://localhost:9990/fallback.js 33 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: fallback]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/fallback.js [./index.js] 5:0-61
+              harmony import specifier http://localhost:9990/fallback.js [./index.js] 19:8-16
+            http://localhost:9990/redirect.js 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/redirect.js [./index.js] 7:0-58
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 21:8-17
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 22:8-17
+            http://localhost:9990/resolve.js 39 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/resolve.js [./index.js] 4:0-65
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 17:8-13
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 18:8-14
+            http://localhost:9990/url.js 59 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/url.js [./index.js] 9:0-51
+              harmony import specifier http://localhost:9990/url.js [./index.js] 24:8-15
+              harmony import specifier http://localhost:9990/url.js [./index.js] 25:8-20
+          modules by path http://localhost:9990/folder/*.js 129 bytes
+            http://localhost:9990/folder/dependency.js 80 bytes {main} [depth 2] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+              harmony export imported specifier ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+            http://localhost:9990/folder/sub-dependency.js 24 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value]
+              [used exports unknown]
+              harmony side effect evaluation ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+              harmony export imported specifier ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+            http://localhost:9990/folder/sub-dependency2.js 25 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value2]
+              [used exports unknown]
+              harmony side effect evaluation /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+              harmony export imported specifier /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+          modules by path http://localhost:9990/*.css 93 bytes
+            http://localhost:9990/index.css?cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?cache [./index.js] 3:0-69
+              harmony import specifier http://localhost:9990/index.css?cache [./index.js] 16:8-24
+            http://localhost:9990/index.css?no-cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?no-cache [./index.js] 2:0-73
+              harmony import specifier http://localhost:9990/index.css?no-cache [./index.js] 15:8-25
+            http://localhost:9990/index.css?query#fragment 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?query#fragment [./index.js] 1:0-72
+              harmony import specifier http://localhost:9990/index.css?query#fragment [./index.js] 14:8-18
+          http://localhost:9990/redirect 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [exports: default]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/redirect [./index.js] 6:0-55
+            harmony import specifier http://localhost:9990/redirect [./index.js] 20:8-17
+            harmony import specifier http://localhost:9990/redirect [./index.js] 22:28-37
+        asset modules 65 bytes (javascript) 11 bytes (asset)
+          http://localhost:9990/asset.txt 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/asset.txt [./index.js] 8:0-51
+            harmony import specifier http://localhost:9990/asset.txt [./index.js] 23:8-17
+          http://localhost:9990/asset.txt?query 42 bytes (javascript) 11 bytes (asset) {main} [depth 2] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            new URL() asset.txt?query [http://localhost:9990/url.js] 1:15-58
+      modules by path ./ 1.51 KiB
+        ./index.js 1.48 KiB {main} [depth 0] [built] [code generated]
+          [no exports]
+          [used exports unknown]
+          entry ./index.js main
+        ./node_modules/fallback-package.js 28 bytes {main} [depth 2] [dependent] [built] [code generated]
+          [exports: fallback]
+          [used exports unknown]
+          harmony side effect evaluation fallback-package [http://localhost:9990/fallback.js] 1:0-33
+          harmony export imported specifier fallback-package [http://localhost:9990/fallback.js] 1:0-33
+      modules by path https://raw.githubusercontent.com/ 240 bytes
+        https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 10:0-106
+          harmony import specifier https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 29:8-31
+        https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 11:0-103
+          harmony import specifier https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 30:8-31
+    runtime modules 1.01 KiB
+      webpack/runtime/define property getters 308 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/publicPath 27 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/readFile chunk loading 333 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.HttpUriPlugin
+      http://localhost:9990/index.css?no-cache can't be stored in cache, due to Cache-Control header: no-cache, max-age=60
+  + 1 hidden lines
+
+  LOG from webpack.Compiler
+  <t> make hook: 267.061291 ms
+  <t> finish make hook: 0.020884 ms
+  <t> finish compilation: 3.390642 ms
+  <t> seal compilation: 9.120889 ms
+  <t> afterCompile hook: 0.01695 ms
+  <t> emitAssets: 14.110883 ms
+  <t> emitRecords: 0.003911 ms
+  <t> done hook: 0.151832 ms
+  <t> beginIdle: 0.007218 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.003666 ms
+  <t> finish modules: 2.959026 ms
+  <t> report dependency errors and warnings: 0.402302 ms
+  <t> optimize dependencies: 0.302109 ms
+  <t> create chunks: 0.728309 ms
+  <t> compute affected modules with chunk graph: 0.002983 ms
+  <t> optimize: 0.975581 ms
+      17 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.571768 ms
+      100% code generated (17 generated, 0 from cache)
+  <t> code generation: 2.723564 ms
+  <t> runtime requirements.modules: 0.095779 ms
+  <t> runtime requirements.chunks: 0.071315 ms
+  <t> runtime requirements.entries: 0.277583 ms
+  <t> runtime requirements: 0.473609 ms
+  <t> hashing: initialize hash: 0.006382 ms
+  <t> hashing: sort chunks: 0.024059 ms
+  <t> hashing: hash runtime modules: 0.501655 ms
+  <t> hashing: hash chunks: 0.376524 ms
+  <t> hashing: hash digest: 0.017964 ms
+  <t> hashing: process full hash modules: 0.002611 ms
+  <t> hashing: 1.011568 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> record hash: 0.013773 ms
+  <t> module assets: 0.026517 ms
+  <t> create chunk assets: 1.799527 ms
+  <t> process assets: 0.046623 ms
+
+  LOG from webpack.ResolverCachePlugin
+      100% really resolved (4 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.081991 ms
+  <t> figure out provided exports: 2.403467 ms
+      100% of exports of modules have been determined (0 no declared exports, 17 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.065481 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.245015 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.417086 ms
+  <t> visitModules: visiting: 0.555938 ms
+      34 queue items processed (17 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.6239 ms
+  <t> connectChunkGroups: 0.004254 ms
+  <t> cleanup: 0.001431 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.022322 ms
+  <t> modules: 0.560446 ms
+  <t> queue: 0.004316 ms
+  <t> maxSize: 0.008221 ms
+
+  LOG from webpack.FileSystemInfo
+      22 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 27 timestamps 0 hashes 0 timestamp hash combinations
+      File timestamp snapshot optimization: 81% (44/54) entries shared via 1 shared snapshots (3 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Missing items snapshot optimization: 73% (16/22) entries shared via 1 shared snapshots (3 times referenced)
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:17: prod-defaults (webpack 5.64.4) compiled successfully in 299 ms (92efa68ff5907c3a9ab7)
+
+no-cache:
+  PublicPath: (none)
+  assets by status 11 bytes [cached] 1 asset
+  asset bundle3.js 19.5 KiB {main} [emitted] (name: main)
+  Entrypoint main 19.5 KiB (11 bytes) = bundle3.js 1 auxiliary asset
+  chunk {main} (runtime: main) bundle3.js (main) 2.21 KiB (javascript) 11 bytes (asset) 1.01 KiB (runtime) [entry] [rendered]
+    > ./index.js main
+    cacheable modules 2.21 KiB (javascript) 11 bytes (asset)
+      modules by path http://localhost:9990/ 474 bytes (javascript) 11 bytes (asset)
+        javascript modules 409 bytes
+          modules by path http://localhost:9990/*.js 159 bytes
+            http://localhost:9990/fallback.js 33 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: fallback]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/fallback.js [./index.js] 5:0-61
+              harmony import specifier http://localhost:9990/fallback.js [./index.js] 19:8-16
+            http://localhost:9990/redirect.js 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/redirect.js [./index.js] 7:0-58
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 21:8-17
+              harmony import specifier http://localhost:9990/redirect.js [./index.js] 22:8-17
+            http://localhost:9990/resolve.js 39 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/resolve.js [./index.js] 4:0-65
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 17:8-13
+              harmony import specifier http://localhost:9990/resolve.js [./index.js] 18:8-14
+            http://localhost:9990/url.js 59 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/url.js [./index.js] 9:0-51
+              harmony import specifier http://localhost:9990/url.js [./index.js] 24:8-15
+              harmony import specifier http://localhost:9990/url.js [./index.js] 25:8-20
+          modules by path http://localhost:9990/folder/*.js 129 bytes
+            http://localhost:9990/folder/dependency.js 80 bytes {main} [depth 2] [dependent] [built] [code generated]
+              [exports: value, value2]
+              [used exports unknown]
+              harmony side effect evaluation ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+              harmony export imported specifier ./folder/dependency.js [http://localhost:9990/resolve.js] 1:0-39
+            http://localhost:9990/folder/sub-dependency.js 24 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value]
+              [used exports unknown]
+              harmony side effect evaluation ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+              harmony export imported specifier ./sub-dependency.js [http://localhost:9990/folder/dependency.js] 1:0-36
+            http://localhost:9990/folder/sub-dependency2.js 25 bytes {main} [depth 3] [dependent] [built] [code generated]
+              [exports: value2]
+              [used exports unknown]
+              harmony side effect evaluation /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+              harmony export imported specifier /folder/sub-dependency2.js [http://localhost:9990/folder/dependency.js] 2:0-43
+          modules by path http://localhost:9990/*.css 93 bytes
+            http://localhost:9990/index.css?cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?cache [./index.js] 3:0-69
+              harmony import specifier http://localhost:9990/index.css?cache [./index.js] 16:8-24
+            http://localhost:9990/index.css?no-cache 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?no-cache [./index.js] 2:0-73
+              harmony import specifier http://localhost:9990/index.css?no-cache [./index.js] 15:8-25
+            http://localhost:9990/index.css?query#fragment 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+              [exports: default]
+              [used exports unknown]
+              harmony side effect evaluation http://localhost:9990/index.css?query#fragment [./index.js] 1:0-72
+              harmony import specifier http://localhost:9990/index.css?query#fragment [./index.js] 14:8-18
+          http://localhost:9990/redirect 28 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [exports: default]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/redirect [./index.js] 6:0-55
+            harmony import specifier http://localhost:9990/redirect [./index.js] 20:8-17
+            harmony import specifier http://localhost:9990/redirect [./index.js] 22:28-37
+        asset modules 65 bytes (javascript) 11 bytes (asset)
+          http://localhost:9990/asset.txt 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            harmony side effect evaluation http://localhost:9990/asset.txt [./index.js] 8:0-51
+            harmony import specifier http://localhost:9990/asset.txt [./index.js] 23:8-17
+          http://localhost:9990/asset.txt?query 42 bytes (javascript) 11 bytes (asset) {main} [depth 2] [dependent] [built] [code generated]
+            [no exports]
+            [used exports unknown]
+            new URL() asset.txt?query [http://localhost:9990/url.js] 1:15-58
+      modules by path ./ 1.51 KiB
+        ./index.js 1.48 KiB {main} [depth 0] [built] [code generated]
+          [no exports]
+          [used exports unknown]
+          entry ./index.js main
+        ./node_modules/fallback-package.js 28 bytes {main} [depth 2] [dependent] [built] [code generated]
+          [exports: fallback]
+          [used exports unknown]
+          harmony side effect evaluation fallback-package [http://localhost:9990/fallback.js] 1:0-33
+          harmony export imported specifier fallback-package [http://localhost:9990/fallback.js] 1:0-33
+      modules by path https://raw.githubusercontent.com/ 240 bytes
+        https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 10:0-106
+          harmony import specifier https://raw.githubusercontent.com//webpack//webpack//main/CODE_OF_CONDUCT.md [./index.js] 29:8-31
+        https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md 120 bytes {main} [depth 1] [dependent] [built] [code generated]
+          [exports: default]
+          [used exports unknown]
+          harmony side effect evaluation https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 11:0-103
+          harmony import specifier https://raw.githubusercontent.com/webpack/webpack/main/CODE_OF_CONDUCT.md [./index.js] 30:8-31
+    runtime modules 1.01 KiB
+      webpack/runtime/define property getters 308 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/publicPath 27 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/readFile chunk loading 333 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.HttpUriPlugin
+      http://localhost:9990/index.css?no-cache can't be stored in cache, due to Cache-Control header: no-cache, max-age=60
+  + 15 hidden lines
+
+  LOG from webpack.Compiler
+  <t> make hook: 446.88309 ms
+  <t> finish make hook: 0.022121 ms
+  <t> finish compilation: 1.324474 ms
+  <t> seal compilation: 6.754685 ms
+  <t> afterCompile hook: 0.009424 ms
+  <t> emitAssets: 13.328029 ms
+  <t> emitRecords: 0.004074 ms
+  <t> done hook: 0.027495 ms
+  <t> beginIdle: 0.007777 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.003211 ms
+  <t> finish modules: 1.030078 ms
+  <t> report dependency errors and warnings: 0.268439 ms
+  <t> optimize dependencies: 0.044907 ms
+  <t> create chunks: 0.427939 ms
+  <t> compute affected modules with chunk graph: 0.002366 ms
+  <t> optimize: 0.473629 ms
+      17 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.494936 ms
+      100% code generated (17 generated, 0 from cache)
+  <t> code generation: 1.590618 ms
+  <t> runtime requirements.modules: 0.094372 ms
+  <t> runtime requirements.chunks: 0.066796 ms
+  <t> runtime requirements.entries: 0.349566 ms
+  <t> runtime requirements: 0.540861 ms
+  <t> hashing: initialize hash: 0.007044 ms
+  <t> hashing: sort chunks: 0.027446 ms
+  <t> hashing: hash runtime modules: 0.272102 ms
+  <t> hashing: hash chunks: 0.693993 ms
+  <t> hashing: hash digest: 0.019144 ms
+  <t> hashing: process full hash modules: 0.001771 ms
+  <t> hashing: 1.522683 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> record hash: 0.013589 ms
+  <t> module assets: 0.01876 ms
+  <t> create chunk assets: 1.244092 ms
+  <t> process assets: 0.032621 ms
+
+  LOG from webpack.ResolverCachePlugin
+      100% really resolved (4 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.060871 ms
+  <t> figure out provided exports: 0.835214 ms
+      100% of exports of modules have been determined (0 no declared exports, 17 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.05962 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.006274 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.20497 ms
+  <t> visitModules: visiting: 0.319297 ms
+      34 queue items processed (17 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.343575 ms
+  <t> connectChunkGroups: 0.003179 ms
+  <t> cleanup: 0.001447 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.020199 ms
+  <t> modules: 0.137208 ms
+  <t> queue: 0.002808 ms
+  <t> maxSize: 0.005228 ms
+
+  LOG from webpack.FileSystemInfo
+      22 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 27 timestamps 0 hashes 0 timestamp hash combinations
+      File timestamp snapshot optimization: 81% (44/54) entries shared via 1 shared snapshots (3 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Missing items snapshot optimization: 73% (16/22) entries shared via 1 shared snapshots (3 times referenced)
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:17: no-cache (webpack 5.64.4) compiled successfully in 475 ms (92efa68ff5907c3a9ab7)
+
+errors:
+  PublicPath: (none)
+  asset bundle4.js 6.64 KiB {main} [emitted] (name: main)
+  Entrypoint main 6.64 KiB = bundle4.js
+  chunk {main} (runtime: main) bundle4.js (main) 964 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+    > ./index.errors.js main
+    cacheable modules 964 bytes
+      ./index.errors.js 910 bytes {main} [depth 0] [built] [code generated]
+        [no exports]
+        [used exports unknown]
+        entry ./index.errors.js main
+      http://localhost:9990/asset.txt?ignore 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        [used exports unknown]
+        harmony side effect evaluation http://localhost:9990/asset.txt?ignore [./index.errors.js] 22:0-58
+        harmony import specifier http://localhost:9990/asset.txt?ignore [./index.errors.js] 25:8-17
+      http://localhost:9990/index.css?query#fragment 31 bytes {main} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        harmony side effect evaluation http://localhost:9990/index.css?query#fragment [./index.errors.js] 28:0-72
+        harmony import specifier http://localhost:9990/index.css?query#fragment [./index.errors.js] 31:8-18
+    runtime modules 670 bytes
+      webpack/runtime/define property getters 308 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {main} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.HttpUriPlugin
+      http://localhost:9990/index.css?no-cache can't be stored in cache, due to Cache-Control header: no-cache, max-age=60
+  + 7 hidden lines
+
+  LOG from webpack.Compiler
+  <t> make hook: 256.835986 ms
+  <t> finish make hook: 0.034066 ms
+  <t> finish compilation: 0.674628 ms
+  <t> seal compilation: 3.887718 ms
+  <t> afterCompile hook: 0.009699 ms
+  <t> emitAssets: 28.218847 ms
+  <t> emitRecords: 0.00487 ms
+  <t> done hook: 0.21972 ms
+  <t> beginIdle: 0.008083 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.005293 ms
+  <t> finish modules: 0.59785 ms
+  <t> report dependency errors and warnings: 0.044756 ms
+  <t> optimize dependencies: 0.036016 ms
+  <t> create chunks: 0.178393 ms
+  <t> compute affected modules with chunk graph: 0.002665 ms
+  <t> optimize: 0.816759 ms
+      3 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.207351 ms
+      100% code generated (3 generated, 0 from cache)
+  <t> code generation: 0.73271 ms
+  <t> runtime requirements.modules: 0.049469 ms
+  <t> runtime requirements.chunks: 0.063352 ms
+  <t> runtime requirements.entries: 0.371953 ms
+  <t> runtime requirements: 0.514052 ms
+  <t> hashing: initialize hash: 0.006309 ms
+  <t> hashing: hash errors: 0.006035 ms
+  <t> hashing: sort chunks: 0.024763 ms
+  <t> hashing: hash runtime modules: 0.157642 ms
+  <t> hashing: hash chunks: 0.281104 ms
+  <t> hashing: hash digest: 0.022478 ms
+  <t> hashing: process full hash modules: 0.002557 ms
+  <t> hashing: 0.546084 ms
+      100% code generated (3 generated, 0 from cache)
+  <t> record hash: 0.007368 ms
+  <t> module assets: 0.019949 ms
+  <t> create chunk assets: 0.551502 ms
+  <t> process assets: 0.029562 ms
+
+  LOG from webpack.ResolverCachePlugin
+      100% really resolved (2 real resolves with 0 cached but invalid, 0 cached valid, 0 concurrent)
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.045591 ms
+  <t> figure out provided exports: 0.047949 ms
+      100% of exports of modules have been determined (0 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.033151 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.005052 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.019283 ms
+  <t> visitModules: visiting: 0.058426 ms
+      6 queue items processed (3 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.086165 ms
+  <t> connectChunkGroups: 0.00375 ms
+  <t> cleanup: 0.001708 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.023601 ms
+  <t> modules: 0.068332 ms
+  <t> queue: 0.003267 ms
+  <t> maxSize: 0.007868 ms
+
+  LOG from webpack.FileSystemInfo
+      6 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 21 timestamps 0 hashes 0 timestamp hash combinations
+      File timestamp snapshot optimization: 81% (22/27) entries shared via 1 shared snapshots (1 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Missing items snapshot optimization: 80% (8/10) entries shared via 1 shared snapshots (1 times referenced)
+      Managed items info in cache: 0 items
+
+  ERROR in ./index.errors.js 3:2-50
+  Module not found: Error: http://localhost:9990/index.css?cache used to have no-cache lockfile entry and has content now, but lockfile is frozen
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/index.css?cache used to have no-cache lockfile entry and has content now, but lockfile is frozen
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  ERROR in ./index.errors.js 6:2-53
+  Module not found: Error: http://localhost:9990/index.css?no-cache has a lockfile entry and is no-cache now, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/index.css?no-cache, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: text/css
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/index.css?no-cache has a lockfile entry and is no-cache now, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/index.css?no-cache, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: text/css
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  ERROR in ./index.errors.js 9:2-44
+  Module not found: Error: http://localhost:9990/index.css has an outdated lockfile entry, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/index.css, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: invalid
+  Expected: resolved: http://localhost:9990/index.css, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: text/css
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/index.css has an outdated lockfile entry, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/index.css, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: invalid
+  Expected: resolved: http://localhost:9990/index.css, integrity: sha512-sqhF9JAEi5h3ziP48SBnzQnaeei8cf/pfYJBdKL4F7xdu3v5yr71eQ0kCL11/jWRFjLG4TKOudUnS/u6WLMqYw==, contentType: text/css
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  ERROR in ./index.errors.js 12:2-45
+  Module not found: Error: http://localhost:9990/resolve.js integrity mismatch, expected content with integrity sha512-SHOULD_BE_INVALID but got sha512-6J9zBO2hXSMTO1EtXJOxSRB2nVPHCoNmNHS8an1QeehzJFc3uoBPRWu6hqHPc54gv2/QME9RBR/BXIan68virg==.
+  Lockfile corrupted (incorrectly merged? changed by other tools?).
+  Run build with un-frozen lockfile to automatically fix lockfile.
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/resolve.js integrity mismatch, expected content with integrity sha512-SHOULD_BE_INVALID but got sha512-6J9zBO2hXSMTO1EtXJOxSRB2nVPHCoNmNHS8an1QeehzJFc3uoBPRWu6hqHPc54gv2/QME9RBR/BXIan68virg==.
+  Lockfile corrupted (incorrectly merged? changed by other tools?).
+  Run build with un-frozen lockfile to automatically fix lockfile.
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  ERROR in ./index.errors.js 15:2-46
+  Module not found: Error: http://localhost:9990/fallback.js has no lockfile entry and lockfile is frozen
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/fallback.js has no lockfile entry and lockfile is frozen
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  ERROR in ./index.errors.js 18:2-43
+  Module not found: Error: http://localhost:9990/redirect has an outdated lockfile entry, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/redirect, integrity: sha512-BV/MK/QTq+NHRve1XpZyQ8V6cjRP/fwbtJvENRdm5C73qNYZ4i2/fw+soj7J4qxzBXMHDbvOnA6E0ShnX2hc1w==, contentType: text/javascript
+  Expected: resolved: http://localhost:9990/redirect.js, integrity: sha512-BV/MK/QTq+NHRve1XpZyQ8V6cjRP/fwbtJvENRdm5C73qNYZ4i2/fw+soj7J4qxzBXMHDbvOnA6E0ShnX2hc1w==, contentType: text/javascript
+  ModuleNotFoundError: Module not found: Error: http://localhost:9990/redirect has an outdated lockfile entry, but lockfile is frozen
+  Lockfile: resolved: http://localhost:9990/redirect, integrity: sha512-BV/MK/QTq+NHRve1XpZyQ8V6cjRP/fwbtJvENRdm5C73qNYZ4i2/fw+soj7J4qxzBXMHDbvOnA6E0ShnX2hc1w==, contentType: text/javascript
+  Expected: resolved: http://localhost:9990/redirect.js, integrity: sha512-BV/MK/QTq+NHRve1XpZyQ8V6cjRP/fwbtJvENRdm5C73qNYZ4i2/fw+soj7J4qxzBXMHDbvOnA6E0ShnX2hc1w==, contentType: text/javascript
+      at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+      at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:694:24
+      at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/yoh/Projects/repos/webpack/lib/schemes/HttpUriPlugin.js:918:24
+
+  2021-12-05 17:44:17: errors (webpack 5.64.4) compiled with 6 errors in 298 ms (d2b69433a6e7a84c7e7c)

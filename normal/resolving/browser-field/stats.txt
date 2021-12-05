@@ -1,0 +1,589 @@
+PublicPath: (none)
+asset bundle.js 14.8 KiB {0} [emitted] (name: main)
+Entrypoint main 14.8 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 2.25 KiB [entry] [rendered]
+  > ./resolving/browser-field/ main
+  modules by path ./resolving/browser-field/node_modules/ 616 bytes
+    modules by path ./resolving/browser-field/node_modules/replacing-file4/ 97 bytes
+      ./resolving/browser-field/node_modules/replacing-file4/dir/index.js [15] 35 bytes {0} [depth 2] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-35
+        cjs export require ./dir [14] ./resolving/browser-field/node_modules/replacing-file4/index.js 1:0-33
+      ./resolving/browser-field/node_modules/replacing-file4/dir/new-file.js [4] 28 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        cjs export require ./file [15] ./resolving/browser-field/node_modules/replacing-file4/dir/index.js 1:0-34
+        cjs self exports reference [4] ./resolving/browser-field/node_modules/replacing-file4/dir/new-file.js 1:0-14
+      ./resolving/browser-field/node_modules/replacing-file4/index.js [14] 34 bytes {0} [depth 1] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-34
+        cjs require replacing-file4 [6] ./resolving/browser-field/index.js 24:8-34
+    modules by path ./resolving/browser-field/node_modules/new-module/*.js 66 bytes
+      ./resolving/browser-field/node_modules/new-module/index.js [0] 30 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-30
+        cjs self exports reference [0] ./resolving/browser-field/node_modules/new-module/index.js 1:0-14
+        cjs export require new-module [16] ./resolving/browser-field/node_modules/recursive-module/index.js 1:0-38
+        cjs export require ./file [12] ./resolving/browser-field/node_modules/replacing-file2/index.js 1:0-34
+        cjs export require wrong-module [7] ./resolving/browser-field/node_modules/replacing-module1/index.js 1:0-40
+      ./resolving/browser-field/node_modules/new-module/inner.js [1] 36 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-36
+        cjs self exports reference [1] ./resolving/browser-field/node_modules/new-module/inner.js 1:0-14
+        cjs export require ./file [13] ./resolving/browser-field/node_modules/replacing-file3/index.js 1:0-34
+        cjs export require wrong-module [8] ./resolving/browser-field/node_modules/replacing-module2/index.js 1:0-40
+        cjs export require new-module [9] ./resolving/browser-field/node_modules/replacing-module3/index.js 1:0-38
+    modules by path ./resolving/browser-field/node_modules/replacing-file1/*.js 63 bytes
+      ./resolving/browser-field/node_modules/replacing-file1/index.js [11] 35 bytes {0} [depth 1] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-35
+        cjs require replacing-file1 [6] ./resolving/browser-field/index.js 15:8-34
+      ./resolving/browser-field/node_modules/replacing-file1/new-file.js [3] 28 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-28
+        cjs export require ./file [11] ./resolving/browser-field/node_modules/replacing-file1/index.js 1:0-34
+        cjs self exports reference [3] ./resolving/browser-field/node_modules/replacing-file1/new-file.js 1:0-14
+    modules by path ./resolving/browser-field/node_modules/replacing-module4/*.js 85 bytes
+      ./resolving/browser-field/node_modules/replacing-module4/index.js [10] 41 bytes {0} [depth 1] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-41
+        cjs require replacing-module4 [6] ./resolving/browser-field/index.js 11:8-36
+      ./resolving/browser-field/node_modules/replacing-module4/module.js [2] 44 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-44
+        cjs export require wrong-module [10] ./resolving/browser-field/node_modules/replacing-module4/index.js 1:0-40
+        cjs self exports reference [2] ./resolving/browser-field/node_modules/replacing-module4/module.js 1:0-14
+    ./resolving/browser-field/node_modules/ignoring-module/index.js [5] 75 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: file, module]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-41
+      cjs full require ignoring-module [6] ./resolving/browser-field/index.js 32:8-41
+      cjs full require ignoring-module [6] ./resolving/browser-field/index.js 33:8-39
+      cjs full require ignoring-module [6] ./resolving/browser-field/index.js 34:8-41
+      cjs full require ignoring-module [6] ./resolving/browser-field/index.js 35:2-33
+    ./resolving/browser-field/node_modules/recursive-module/index.js [16] 39 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-39
+      cjs require recursive-module [6] ./resolving/browser-field/index.js 28:8-35
+    ./resolving/browser-field/node_modules/replacing-file2/index.js [12] 35 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-35
+      cjs require replacing-file2 [6] ./resolving/browser-field/index.js 18:8-34
+    ./resolving/browser-field/node_modules/replacing-file3/index.js [13] 35 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-35
+      cjs require replacing-file3 [6] ./resolving/browser-field/index.js 21:8-34
+    ./resolving/browser-field/node_modules/replacing-module1/index.js [7] 41 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-41
+      cjs require replacing-module1 [6] ./resolving/browser-field/index.js 2:8-36
+    ./resolving/browser-field/node_modules/replacing-module2/index.js [8] 41 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-41
+      cjs require replacing-module2 [6] ./resolving/browser-field/index.js 5:8-36
+    ./resolving/browser-field/node_modules/replacing-module3/index.js [9] 39 bytes {0} [depth 1] [dependent] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-39
+      cjs require replacing-module3 [6] ./resolving/browser-field/index.js 8:8-36
+  ./file (ignored) [18] 15 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    cjs export require ./file [5] ./resolving/browser-field/node_modules/ignoring-module/index.js 2:0-32
+  ./resolving/browser-field/index.js [6] 1.61 KiB {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./resolving/browser-field/ main
+  wrong-module (ignored) [17] 15 bytes {0} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    cjs export require wrong-module [5] ./resolving/browser-field/node_modules/ignoring-module/index.js 1:0-40
+modules by path ./resolving/browser-field/node_modules/ 616 bytes
+  modules by path ./resolving/browser-field/node_modules/replacing-file4/ 97 bytes
+    ./resolving/browser-field/node_modules/replacing-file4/index.js [14] 34 bytes {0} [depth 1] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-34
+      cjs require replacing-file4 [6] ./resolving/browser-field/index.js 24:8-34
+    ./resolving/browser-field/node_modules/replacing-file4/dir/index.js [15] 35 bytes {0} [depth 2] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-35
+      cjs export require ./dir [14] ./resolving/browser-field/node_modules/replacing-file4/index.js 1:0-33
+    ./resolving/browser-field/node_modules/replacing-file4/dir/new-file.js [4] 28 bytes {0} [depth 3] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-28
+      cjs export require ./file [15] ./resolving/browser-field/node_modules/replacing-file4/dir/index.js 1:0-34
+      cjs self exports reference [4] ./resolving/browser-field/node_modules/replacing-file4/dir/new-file.js 1:0-14
+  modules by path ./resolving/browser-field/node_modules/replacing-module4/*.js 85 bytes
+    ./resolving/browser-field/node_modules/replacing-module4/index.js [10] 41 bytes {0} [depth 1] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-41
+      cjs require replacing-module4 [6] ./resolving/browser-field/index.js 11:8-36
+    ./resolving/browser-field/node_modules/replacing-module4/module.js [2] 44 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-44
+      cjs export require wrong-module [10] ./resolving/browser-field/node_modules/replacing-module4/index.js 1:0-40
+      cjs self exports reference [2] ./resolving/browser-field/node_modules/replacing-module4/module.js 1:0-14
+  modules by path ./resolving/browser-field/node_modules/replacing-file1/*.js 63 bytes
+    ./resolving/browser-field/node_modules/replacing-file1/index.js [11] 35 bytes {0} [depth 1] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-35
+      cjs require replacing-file1 [6] ./resolving/browser-field/index.js 15:8-34
+    ./resolving/browser-field/node_modules/replacing-file1/new-file.js [3] 28 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-28
+      cjs export require ./file [11] ./resolving/browser-field/node_modules/replacing-file1/index.js 1:0-34
+      cjs self exports reference [3] ./resolving/browser-field/node_modules/replacing-file1/new-file.js 1:0-14
+  modules by path ./resolving/browser-field/node_modules/new-module/*.js 66 bytes
+    ./resolving/browser-field/node_modules/new-module/index.js [0] 30 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-30
+      cjs self exports reference [0] ./resolving/browser-field/node_modules/new-module/index.js 1:0-14
+      cjs export require new-module [16] ./resolving/browser-field/node_modules/recursive-module/index.js 1:0-38
+      cjs export require ./file [12] ./resolving/browser-field/node_modules/replacing-file2/index.js 1:0-34
+      cjs export require wrong-module [7] ./resolving/browser-field/node_modules/replacing-module1/index.js 1:0-40
+    ./resolving/browser-field/node_modules/new-module/inner.js [1] 36 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-36
+      cjs self exports reference [1] ./resolving/browser-field/node_modules/new-module/inner.js 1:0-14
+      cjs export require ./file [13] ./resolving/browser-field/node_modules/replacing-file3/index.js 1:0-34
+      cjs export require wrong-module [8] ./resolving/browser-field/node_modules/replacing-module2/index.js 1:0-40
+      cjs export require new-module [9] ./resolving/browser-field/node_modules/replacing-module3/index.js 1:0-38
+  ./resolving/browser-field/node_modules/replacing-module1/index.js [7] 41 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-41
+    cjs require replacing-module1 [6] ./resolving/browser-field/index.js 2:8-36
+  ./resolving/browser-field/node_modules/replacing-module2/index.js [8] 41 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-41
+    cjs require replacing-module2 [6] ./resolving/browser-field/index.js 5:8-36
+  ./resolving/browser-field/node_modules/replacing-module3/index.js [9] 39 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-39
+    cjs require replacing-module3 [6] ./resolving/browser-field/index.js 8:8-36
+  ./resolving/browser-field/node_modules/replacing-file2/index.js [12] 35 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-35
+    cjs require replacing-file2 [6] ./resolving/browser-field/index.js 18:8-34
+  ./resolving/browser-field/node_modules/replacing-file3/index.js [13] 35 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-35
+    cjs require replacing-file3 [6] ./resolving/browser-field/index.js 21:8-34
+  ./resolving/browser-field/node_modules/recursive-module/index.js [16] 39 bytes {0} [depth 1] [built] [code generated]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-39
+    cjs require recursive-module [6] ./resolving/browser-field/index.js 28:8-35
+  ./resolving/browser-field/node_modules/ignoring-module/index.js [5] 75 bytes {0} [depth 1] [built] [code generated]
+    [exports: file, module]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-41
+    cjs full require ignoring-module [6] ./resolving/browser-field/index.js 32:8-41
+    cjs full require ignoring-module [6] ./resolving/browser-field/index.js 33:8-39
+    cjs full require ignoring-module [6] ./resolving/browser-field/index.js 34:8-41
+    cjs full require ignoring-module [6] ./resolving/browser-field/index.js 35:2-33
+./resolving/browser-field/index.js [6] 1.61 KiB {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+  entry ./resolving/browser-field/ main
+wrong-module (ignored) [17] 15 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  cjs export require wrong-module [5] ./resolving/browser-field/node_modules/ignoring-module/index.js 1:0-40
+./file (ignored) [18] 15 bytes {0} [depth 2] [built] [code generated]
+  [used exports unknown]
+  cjs export require ./file [5] ./resolving/browser-field/node_modules/ignoring-module/index.js 2:0-32
+  
+
+LOG from webpack.Compiler
+<t> make hook: 43.546636 ms
+<t> finish make hook: 0.017997 ms
+<t> finish compilation: 0.279346 ms
+<t> seal compilation: 3.458351 ms
+<t> afterCompile hook: 0.007459 ms
+<t> emitAssets: 1.83361 ms
+<t> emitRecords: 0.001804 ms
+<t> done hook: 0.015973 ms
+<t> beginIdle: 0.005052 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005117 ms
+<t> finish modules: 0.232588 ms
+<t> report dependency errors and warnings: 0.031022 ms
+<t> optimize dependencies: 0.321229 ms
+<t> create chunks: 0.229631 ms
+<t> compute affected modules with chunk graph: 0.002253 ms
+<t> optimize: 0.683639 ms
+    19 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.467647 ms
+    100% code generated (19 generated, 0 from cache)
+<t> code generation: 0.478196 ms
+<t> runtime requirements.modules: 0.026012 ms
+<t> runtime requirements.chunks: 0.034018 ms
+<t> runtime requirements.entries: 0.04624 ms
+<t> runtime requirements: 0.120839 ms
+<t> hashing: initialize hash: 0.002708 ms
+<t> hashing: hash errors: 0.006033 ms
+<t> hashing: sort chunks: 0.012472 ms
+<t> hashing: hash runtime modules: 0.006883 ms
+<t> hashing: hash chunks: 0.220345 ms
+<t> hashing: hash digest: 0.03071 ms
+<t> hashing: process full hash modules: 0.001442 ms
+<t> hashing: 0.307548 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.004969 ms
+<t> module assets: 0.010855 ms
+<t> create chunk assets: 0.655487 ms
+<t> process assets: 0.038548 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.039096 ms
+<t> figure out provided exports: 0.13671 ms
+    58% of exports of modules have been determined (8 no declared exports, 11 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002276 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.006762 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010101 ms
+<t> trace exports usage in graph: 0.251696 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.028317 ms
+<t> visitModules: visiting: 0.134749 ms
+    38 queue items processed (19 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.160311 ms
+<t> connectChunkGroups: 0.001331 ms
+<t> cleanup: 0.001645 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013972 ms
+<t> modules: 0.169255 ms
+<t> queue: 0.002305 ms
+<t> maxSize: 0.003475 ms
+
+LOG from webpack.FileSystemInfo
+    17 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 17 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/17) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./resolving/browser-field/index.js 40:23-50
+Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/a
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/a module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/a
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/a.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./a
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:955:45
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+ERROR in ./resolving/browser-field/index.js 41:23-50
+Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/b
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/b module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/b
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/b.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./b
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:955:45
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+ERROR in ./resolving/browser-field/index.js 42:23-50
+Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/c
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/c module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/c
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/c.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:955:45
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+ERROR in ./resolving/browser-field/index.js 43:23-50
+Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/d
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+ModuleNotFoundError: Module not found: Error: Recursion in resolving
+Stack:
+  resolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  rawModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field) recursive-file/d module
+  module: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules) ./recursive-file/d
+  resolveAsModule: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  undescribedResolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  resolveInPackage: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  resolveInExistingDirectory: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d) 
+  file: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./c.js
+  internalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  parsedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  describedResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  normalResolve: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file) ./d.js
+  relative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  describedRelative: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+  rawFile: (/Users/yoh/Projects/repos/webpack/test/cases/resolving/browser-field/node_modules/recursive-file/d.js) 
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:955:45
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2021-12-05 17:45:39: webpack 5.64.4 compiled with 4 errors in 50 ms (1224b360220be812ea20)

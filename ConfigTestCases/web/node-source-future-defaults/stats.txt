@@ -1,0 +1,473 @@
+PublicPath: auto
+asset bundle0.js 3.61 KiB {179} [emitted] (name: main)
+Entrypoint main 3.61 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 306 bytes (javascript) 884 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  runtime modules 884 bytes
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 306 bytes
+    ./index.js [10] 228 bytes {179} [depth 0] [built] [code generated] [3 warnings]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./no-warn.js: Module is not an ECMAScript module
+      entry ./index.js main
+    ./no-warn.js [81] 78 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-11
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      harmony side effect evaluation ./no-warn [10] ./index.js 1:0-18
+  
+
+LOG from webpack.Compiler
+<t> make hook: 33.657397 ms
+<t> finish make hook: 0.006177 ms
+<t> finish compilation: 0.111669 ms
+<t> seal compilation: 2.486255 ms
+<t> afterCompile hook: 0.007968 ms
+<t> emitAssets: 4.463482 ms
+<t> emitRecords: 0.000717 ms
+<t> done hook: 0.023628 ms
+<t> beginIdle: 0.003474 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003662 ms
+<t> finish modules: 0.091474 ms
+<t> report dependency errors and warnings: 0.006885 ms
+<t> optimize dependencies: 0.098872 ms
+<t> create chunks: 0.128151 ms
+<t> compute affected modules with chunk graph: 0.001456 ms
+<t> optimize: 0.503715 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.398465 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.137679 ms
+<t> runtime requirements.modules: 0.028962 ms
+<t> runtime requirements.chunks: 0.034352 ms
+<t> runtime requirements.entries: 0.151808 ms
+<t> runtime requirements: 0.231766 ms
+<t> hashing: initialize hash: 0.003061 ms
+<t> hashing: hash warnings: 0.001907 ms
+<t> hashing: sort chunks: 0.030861 ms
+<t> hashing: hash runtime modules: 0.121962 ms
+<t> hashing: hash chunks: 0.17165 ms
+<t> hashing: hash digest: 0.011075 ms
+<t> hashing: process full hash modules: 0.001468 ms
+<t> hashing: 0.368361 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.005099 ms
+<t> module assets: 0.008086 ms
+<t> create chunk assets: 0.320481 ms
+<t> process assets: 0.115412 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.015276 ms
+<t> figure out provided exports: 0.009011 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.008175 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.006897 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002733 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.002445 ms
+<t> trace exports usage in graph: 0.062621 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.006065 ms
+<t> visitModules: visiting: 0.035419 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.063677 ms
+<t> connectChunkGroups: 0.001694 ms
+<t> cleanup: 0.002071 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014954 ms
+<t> modules: 0.050463 ms
+<t> queue: 0.001911 ms
+<t> maxSize: 0.004719 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.013615 ms
+<t> sort relevant modules: 0.000787 ms
+<t> find modules to concatenate: 0.031705 ms
+<t> sort concat configurations: 0.00063 ms
+<t> create concatenated modules: 0.002869 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js 4:15-21
+"global" has been used, it will be undefined in next major version.
+The global namespace object is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "global" has been used, it will be undefined in next major version.
+The global namespace object is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:64:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+WARNING in ./index.js 8:15-25
+"__filename" has been used, it will be undefined in next major version.
+The __filename is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "__filename" has been used, it will be undefined in next major version.
+The __filename is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:89:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+WARNING in ./index.js 12:15-24
+"__dirname" has been used, it will be undefined in next major version.
+The __dirname is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "__dirname" has been used, it will be undefined in next major version.
+The __dirname is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:89:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled with 3 warnings in 42 ms (42b6f6a295b2a2ba)
+
+PublicPath: auto
+asset bundle1.js 3.61 KiB {179} [emitted] (name: main)
+Entrypoint main 3.61 KiB = bundle1.js
+chunk {179} (runtime: main) bundle1.js (main) 306 bytes (javascript) 884 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  runtime modules 884 bytes
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 306 bytes
+    ./index.js [10] 228 bytes {179} [depth 0] [built] [code generated] [1 warning]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./no-warn.js: Module is not an ECMAScript module
+      entry ./index.js main
+    ./no-warn.js [81] 78 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-11
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      harmony side effect evaluation ./no-warn [10] ./index.js 1:0-18
+  
+
+LOG from webpack.Compiler
+<t> make hook: 23.656682 ms
+<t> finish make hook: 0.010417 ms
+<t> finish compilation: 0.134648 ms
+<t> seal compilation: 3.758194 ms
+<t> afterCompile hook: 0.008689 ms
+<t> emitAssets: 10.026324 ms
+<t> emitRecords: 0.000954 ms
+<t> done hook: 0.011085 ms
+<t> beginIdle: 0.003786 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004942 ms
+<t> finish modules: 0.100677 ms
+<t> report dependency errors and warnings: 0.017535 ms
+<t> optimize dependencies: 0.112642 ms
+<t> create chunks: 0.122453 ms
+<t> compute affected modules with chunk graph: 0.002257 ms
+<t> optimize: 0.665281 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.276294 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.172567 ms
+<t> runtime requirements.modules: 0.033925 ms
+<t> runtime requirements.chunks: 0.038181 ms
+<t> runtime requirements.entries: 0.263392 ms
+<t> runtime requirements: 0.35413 ms
+<t> hashing: initialize hash: 0.003431 ms
+<t> hashing: hash warnings: 0.003566 ms
+<t> hashing: sort chunks: 0.015567 ms
+<t> hashing: hash runtime modules: 0.163348 ms
+<t> hashing: hash chunks: 0.189079 ms
+<t> hashing: hash digest: 0.011776 ms
+<t> hashing: process full hash modules: 0.001377 ms
+<t> hashing: 0.417144 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.005471 ms
+<t> module assets: 0.011545 ms
+<t> create chunk assets: 0.310884 ms
+<t> process assets: 0.138272 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019155 ms
+<t> figure out provided exports: 0.012062 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.009259 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.007821 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003343 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.002808 ms
+<t> trace exports usage in graph: 0.073325 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.006655 ms
+<t> visitModules: visiting: 0.03391 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.057472 ms
+<t> connectChunkGroups: 0.001691 ms
+<t> cleanup: 0.001566 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014866 ms
+<t> modules: 0.054723 ms
+<t> queue: 0.001888 ms
+<t> maxSize: 0.005568 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.019951 ms
+<t> sort relevant modules: 0.001061 ms
+<t> find modules to concatenate: 0.047574 ms
+<t> sort concat configurations: 0.000982 ms
+<t> create concatenated modules: 0.003805 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js 4:15-21
+"global" has been used, it will be undefined in next major version.
+The global namespace object is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "global" has been used, it will be undefined in next major version.
+The global namespace object is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:64:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled with 1 warning in 41 ms (7a5a21cc78a0db2a9a6a)
+
+PublicPath: auto
+asset bundle2.js 3.61 KiB {179} [emitted] (name: main)
+Entrypoint main 3.61 KiB = bundle2.js
+chunk {179} (runtime: main) bundle2.js (main) 306 bytes (javascript) 884 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  runtime modules 884 bytes
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 306 bytes
+    ./index.js [10] 228 bytes {179} [depth 0] [built] [code generated] [2 warnings]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./no-warn.js: Module is not an ECMAScript module
+      entry ./index.js main
+    ./no-warn.js [81] 78 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-11
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      harmony side effect evaluation ./no-warn [10] ./index.js 1:0-18
+  
+
+LOG from webpack.Compiler
+<t> make hook: 26.489967 ms
+<t> finish make hook: 0.006781 ms
+<t> finish compilation: 0.107155 ms
+<t> seal compilation: 2.684529 ms
+<t> afterCompile hook: 0.00769 ms
+<t> emitAssets: 6.851806 ms
+<t> emitRecords: 0.002209 ms
+<t> done hook: 0.022398 ms
+<t> beginIdle: 0.006681 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003976 ms
+<t> finish modules: 0.085739 ms
+<t> report dependency errors and warnings: 0.005841 ms
+<t> optimize dependencies: 0.105231 ms
+<t> create chunks: 0.11375 ms
+<t> compute affected modules with chunk graph: 0.001184 ms
+<t> optimize: 0.442013 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.084867 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.127075 ms
+<t> runtime requirements.modules: 0.025396 ms
+<t> runtime requirements.chunks: 0.029622 ms
+<t> runtime requirements.entries: 0.143682 ms
+<t> runtime requirements: 0.215417 ms
+<t> hashing: initialize hash: 0.001971 ms
+<t> hashing: hash warnings: 0.001572 ms
+<t> hashing: sort chunks: 0.012422 ms
+<t> hashing: hash runtime modules: 0.110017 ms
+<t> hashing: hash chunks: 0.160418 ms
+<t> hashing: hash digest: 0.075682 ms
+<t> hashing: process full hash modules: 0.003459 ms
+<t> hashing: 0.842813 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.008426 ms
+<t> module assets: 0.009401 ms
+<t> create chunk assets: 0.437295 ms
+<t> process assets: 0.120839 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.014991 ms
+<t> figure out provided exports: 0.008747 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.007919 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.006767 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002551 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.002433 ms
+<t> trace exports usage in graph: 0.06077 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005238 ms
+<t> visitModules: visiting: 0.032534 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.052713 ms
+<t> connectChunkGroups: 0.001636 ms
+<t> cleanup: 0.001305 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014438 ms
+<t> modules: 0.0498 ms
+<t> queue: 0.002008 ms
+<t> maxSize: 0.005184 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.012988 ms
+<t> sort relevant modules: 0.000747 ms
+<t> find modules to concatenate: 0.031522 ms
+<t> sort concat configurations: 0.000642 ms
+<t> create concatenated modules: 0.002253 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js 8:15-25
+"__filename" has been used, it will be undefined in next major version.
+The __filename is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "__filename" has been used, it will be undefined in next major version.
+The __filename is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:89:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+WARNING in ./index.js 12:15-24
+"__dirname" has been used, it will be undefined in next major version.
+The __dirname is Node.js feature and doesn't present in browser.
+NodeStuffInWebError: "__dirname" has been used, it will be undefined in next major version.
+The __dirname is Node.js feature and doesn't present in browser.
+    at /Users/yoh/Projects/repos/webpack/lib/NodeStuffPlugin.js:89:11
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForNameWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3002:15)
+    at JavascriptParser.callHooksForName (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2914:15)
+    at JavascriptParser.walkIdentifier (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2851:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2265:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled with 2 warnings in 38 ms (4b5b0fc37b1e7546973c)

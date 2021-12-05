@@ -1,0 +1,400 @@
+PublicPath: auto
+asset e1.js 12.2 KiB {257} [emitted] (name: e1)
+asset e2.js 12.2 KiB {621} [emitted] (name: e2)
+asset e3.js 12.2 KiB {144} [emitted] (name: e3)
+asset 172.js 858 bytes {172}, {716} [emitted]
+asset 326.js 858 bytes {326}, {593} [emitted]
+asset 923.js 858 bytes {114}, {923} [emitted]
+asset 114.js 524 bytes {114} [emitted]
+asset 593.js 524 bytes {593} [emitted]
+asset 716.js 524 bytes {716} [emitted]
+Entrypoint e1 12.2 KiB = e1.js
+Entrypoint e2 12.2 KiB = e2.js
+Entrypoint e3 12.2 KiB = e3.js
+chunk {114} (runtime: e1) 114.js 61 bytes <{257}> [rendered]
+  > ./async1 ./e1.js 5:0-18
+  ./async1.js [114] 61 bytes {114} {923} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./d.js: Module ./d.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, unnamed chunk(s))
+    import() ./async1 [840] ./e1.js + 2 modules ./e1.js 5:0-18
+    import() ./async1 [762] ./e2.js + 2 modules ./e2.js 5:0-18
+    import() ./async1 [121] ./e3.js + 2 modules ./e3.js 5:0-18
+chunk {144} (runtime: e3) e3.js (e3) 249 bytes (javascript) 6.57 KiB (runtime) >{172}< >{593}< >{923}< [entry] [rendered]
+  > ./e3 e3
+  runtime modules 6.57 KiB
+    webpack/runtime/define property getters 308 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {144} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 249 bytes
+    ./b.js [996] 20 bytes {144} {257} {621} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async1.js
+        [inactive] harmony side effect evaluation ./b [114] ./async1.js 1:0-20
+        harmony import specifier ./b [114] ./async1.js 3:12-13
+      from origin ./async2.js
+        [inactive] harmony side effect evaluation ./b [172] ./async2.js 1:0-20
+        harmony import specifier ./b [172] ./async2.js 3:12-13
+      from origin ./async3.js
+        [inactive] harmony side effect evaluation ./b [326] ./async3.js 1:0-20
+        harmony import specifier ./b [326] ./async3.js 3:12-13
+      from origin ./e1.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [840] ./e1.js + 2 modules ./e1.js 2:0-20
+        harmony import specifier ./b [840] ./e1.js + 2 modules ./e1.js 8:15-16
+      from origin ./e2.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [762] ./e2.js + 2 modules ./e2.js 2:0-20
+        harmony import specifier ./b [762] ./e2.js + 2 modules ./e2.js 8:15-16
+      from origin ./e3.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [121] ./e3.js + 2 modules ./e3.js 2:0-20
+        harmony import specifier ./b [121] ./e3.js + 2 modules ./e3.js 8:15-16
+    ./e3.js + 2 modules [121] 209 bytes {144} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is referenced from different chunks by these modules: ./async1.js, ./async2.js, ./async3.js
+      ModuleConcatenation bailout: Cannot concat with ./h.js: Module ./h.js is referenced from different chunks by these modules: ./async3.js
+      entry ./e3 e3
+    ./h.js [307] 20 bytes {144} {326} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async3.js
+        [inactive] harmony side effect evaluation ./h [326] ./async3.js 2:0-20
+        harmony import specifier ./h [326] ./async3.js 3:15-16
+      from origin ./e3.js + 2 modules
+        [inactive] harmony side effect evaluation ./h [121] ./e3.js + 2 modules ./e3.js 4:0-20
+        harmony import specifier ./h [121] ./e3.js + 2 modules ./e3.js 8:21-22
+chunk {172} (runtime: e1, e3) 172.js 81 bytes <{144}> <{257}> [rendered]
+  > ./async2 ./e1.js 6:0-18
+  ./async2.js [172] 61 bytes {172} {716} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./f.js: Module ./f.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e2, unnamed chunk(s))
+    import() ./async2 [840] ./e1.js + 2 modules ./e1.js 6:0-18
+    import() ./async2 [762] ./e2.js + 2 modules ./e2.js 6:0-18
+    import() ./async2 [121] ./e3.js + 2 modules ./e3.js 6:0-18
+  ./f.js [568] 20 bytes {172} {621} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./async2.js
+      [inactive] harmony side effect evaluation ./f [172] ./async2.js 2:0-20
+      harmony import specifier ./f [172] ./async2.js 3:15-16
+    from origin ./e2.js + 2 modules
+      [inactive] harmony side effect evaluation ./f [762] ./e2.js + 2 modules ./e2.js 4:0-20
+      harmony import specifier ./f [762] ./e2.js + 2 modules ./e2.js 8:21-22
+chunk {257} (runtime: e1) e1.js (e1) 249 bytes (javascript) 6.57 KiB (runtime) >{114}< >{172}< >{326}< [entry] [rendered]
+  > ./e1 e1
+  runtime modules 6.57 KiB
+    webpack/runtime/define property getters 308 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {257} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 249 bytes
+    ./b.js [996] 20 bytes {144} {257} {621} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async1.js
+        [inactive] harmony side effect evaluation ./b [114] ./async1.js 1:0-20
+        harmony import specifier ./b [114] ./async1.js 3:12-13
+      from origin ./async2.js
+        [inactive] harmony side effect evaluation ./b [172] ./async2.js 1:0-20
+        harmony import specifier ./b [172] ./async2.js 3:12-13
+      from origin ./async3.js
+        [inactive] harmony side effect evaluation ./b [326] ./async3.js 1:0-20
+        harmony import specifier ./b [326] ./async3.js 3:12-13
+      from origin ./e1.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [840] ./e1.js + 2 modules ./e1.js 2:0-20
+        harmony import specifier ./b [840] ./e1.js + 2 modules ./e1.js 8:15-16
+      from origin ./e2.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [762] ./e2.js + 2 modules ./e2.js 2:0-20
+        harmony import specifier ./b [762] ./e2.js + 2 modules ./e2.js 8:15-16
+      from origin ./e3.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [121] ./e3.js + 2 modules ./e3.js 2:0-20
+        harmony import specifier ./b [121] ./e3.js + 2 modules ./e3.js 8:15-16
+    ./d.js [767] 20 bytes {257} {923} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async1.js
+        [inactive] harmony side effect evaluation ./d [114] ./async1.js 2:0-20
+        harmony import specifier ./d [114] ./async1.js 3:15-16
+      from origin ./e1.js + 2 modules
+        [inactive] harmony side effect evaluation ./d [840] ./e1.js + 2 modules ./e1.js 4:0-20
+        harmony import specifier ./d [840] ./e1.js + 2 modules ./e1.js 8:21-22
+    ./e1.js + 2 modules [840] 209 bytes {257} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is referenced from different chunks by these modules: ./async1.js, ./async2.js, ./async3.js
+      ModuleConcatenation bailout: Cannot concat with ./d.js: Module ./d.js is referenced from different chunks by these modules: ./async1.js
+      entry ./e1 e1
+chunk {326} (runtime: e1, e2) 326.js 81 bytes <{257}> <{621}> [rendered]
+  > ./async3 ./e1.js 7:0-18
+  ./async3.js [326] 61 bytes {326} {593} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./h.js: Module ./h.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e3, unnamed chunk(s))
+    import() ./async3 [840] ./e1.js + 2 modules ./e1.js 7:0-18
+    import() ./async3 [762] ./e2.js + 2 modules ./e2.js 7:0-18
+    import() ./async3 [121] ./e3.js + 2 modules ./e3.js 7:0-18
+  ./h.js [307] 20 bytes {144} {326} [depth 1] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./async3.js
+      [inactive] harmony side effect evaluation ./h [326] ./async3.js 2:0-20
+      harmony import specifier ./h [326] ./async3.js 3:15-16
+    from origin ./e3.js + 2 modules
+      [inactive] harmony side effect evaluation ./h [121] ./e3.js + 2 modules ./e3.js 4:0-20
+      harmony import specifier ./h [121] ./e3.js + 2 modules ./e3.js 8:21-22
+chunk {593} (runtime: e3) 593.js 61 bytes <{144}> [rendered]
+  > ./async3 ./e3.js 7:0-18
+  ./async3.js [326] 61 bytes {326} {593} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./h.js: Module ./h.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e3, unnamed chunk(s))
+    import() ./async3 [840] ./e1.js + 2 modules ./e1.js 7:0-18
+    import() ./async3 [762] ./e2.js + 2 modules ./e2.js 7:0-18
+    import() ./async3 [121] ./e3.js + 2 modules ./e3.js 7:0-18
+chunk {621} (runtime: e2) e2.js (e2) 249 bytes (javascript) 6.57 KiB (runtime) >{326}< >{716}< >{923}< [entry] [rendered]
+  > ./e2 e2
+  runtime modules 6.57 KiB
+    webpack/runtime/define property getters 308 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {621} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 249 bytes
+    ./b.js [996] 20 bytes {144} {257} {621} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async1.js
+        [inactive] harmony side effect evaluation ./b [114] ./async1.js 1:0-20
+        harmony import specifier ./b [114] ./async1.js 3:12-13
+      from origin ./async2.js
+        [inactive] harmony side effect evaluation ./b [172] ./async2.js 1:0-20
+        harmony import specifier ./b [172] ./async2.js 3:12-13
+      from origin ./async3.js
+        [inactive] harmony side effect evaluation ./b [326] ./async3.js 1:0-20
+        harmony import specifier ./b [326] ./async3.js 3:12-13
+      from origin ./e1.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [840] ./e1.js + 2 modules ./e1.js 2:0-20
+        harmony import specifier ./b [840] ./e1.js + 2 modules ./e1.js 8:15-16
+      from origin ./e2.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [762] ./e2.js + 2 modules ./e2.js 2:0-20
+        harmony import specifier ./b [762] ./e2.js + 2 modules ./e2.js 8:15-16
+      from origin ./e3.js + 2 modules
+        [inactive] harmony side effect evaluation ./b [121] ./e3.js + 2 modules ./e3.js 2:0-20
+        harmony import specifier ./b [121] ./e3.js + 2 modules ./e3.js 8:15-16
+    ./e2.js + 2 modules [762] 209 bytes {621} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is referenced from different chunks by these modules: ./async1.js, ./async2.js, ./async3.js
+      ModuleConcatenation bailout: Cannot concat with ./f.js: Module ./f.js is referenced from different chunks by these modules: ./async2.js
+      entry ./e2 e2
+    ./f.js [568] 20 bytes {172} {621} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./async2.js
+        [inactive] harmony side effect evaluation ./f [172] ./async2.js 2:0-20
+        harmony import specifier ./f [172] ./async2.js 3:15-16
+      from origin ./e2.js + 2 modules
+        [inactive] harmony side effect evaluation ./f [762] ./e2.js + 2 modules ./e2.js 4:0-20
+        harmony import specifier ./f [762] ./e2.js + 2 modules ./e2.js 8:21-22
+chunk {716} (runtime: e2) 716.js 61 bytes <{621}> [rendered]
+  > ./async2 ./e2.js 6:0-18
+  ./async2.js [172] 61 bytes {172} {716} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./f.js: Module ./f.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e2, unnamed chunk(s))
+    import() ./async2 [840] ./e1.js + 2 modules ./e1.js 6:0-18
+    import() ./async2 [762] ./e2.js + 2 modules ./e2.js 6:0-18
+    import() ./async2 [121] ./e3.js + 2 modules ./e3.js 6:0-18
+chunk {923} (runtime: e2, e3) 923.js 81 bytes <{144}> <{621}> [rendered]
+  > ./async1 ./e2.js 5:0-18
+  ./async1.js [114] 61 bytes {114} {923} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-18
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Module ./b.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, e2, e3)
+    ModuleConcatenation bailout: Cannot concat with ./d.js: Module ./d.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) e1, unnamed chunk(s))
+    import() ./async1 [840] ./e1.js + 2 modules ./e1.js 5:0-18
+    import() ./async1 [762] ./e2.js + 2 modules ./e2.js 5:0-18
+    import() ./async1 [121] ./e3.js + 2 modules ./e3.js 5:0-18
+  ./d.js [767] 20 bytes {257} {923} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./async1.js
+      [inactive] harmony side effect evaluation ./d [114] ./async1.js 2:0-20
+      harmony import specifier ./d [114] ./async1.js 3:15-16
+    from origin ./e1.js + 2 modules
+      [inactive] harmony side effect evaluation ./d [840] ./e1.js + 2 modules ./e1.js 4:0-20
+      harmony import specifier ./d [840] ./e1.js + 2 modules ./e1.js 8:21-22
+  
+
+LOG from webpack.Compiler
+<t> make hook: 25.007243 ms
+<t> finish make hook: 0.024717 ms
+<t> finish compilation: 0.375573 ms
+<t> seal compilation: 18.547854 ms
+<t> afterCompile hook: 0.009634 ms
+<t> emitAssets: 2.174199 ms
+<t> emitRecords: 0.003056 ms
+<t> done hook: 0.021375 ms
+<t> beginIdle: 0.008698 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003934 ms
+<t> finish modules: 0.250349 ms
+<t> report dependency errors and warnings: 0.104858 ms
+<t> optimize dependencies: 0.879812 ms
+<t> create chunks: 1.10508 ms
+<t> compute affected modules with chunk graph: 0.003996 ms
+<t> optimize: 2.543871 ms
+    18 modules hashed, 0 from cache (1.29 variants per module in average)
+<t> module hashing: 0.990434 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 6.698224 ms
+<t> runtime requirements.modules: 0.128838 ms
+<t> runtime requirements.chunks: 0.10806 ms
+<t> runtime requirements.entries: 0.77663 ms
+<t> runtime requirements: 1.047864 ms
+<t> hashing: initialize hash: 0.007534 ms
+<t> hashing: sort chunks: 0.037636 ms
+<t> hashing: hash runtime modules: 1.961205 ms
+<t> hashing: hash chunks: 0.767148 ms
+<t> hashing: hash digest: 0.02228 ms
+<t> hashing: process full hash modules: 0.001691 ms
+<t> hashing: 2.885306 ms
+    100% code generated (27 generated, 0 from cache)
+<t> record hash: 0.011793 ms
+<t> module assets: 0.024304 ms
+<t> create chunk assets: 1.179923 ms
+<t> process assets: 0.553115 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.041655 ms
+<t> figure out provided exports: 0.091571 ms
+    100% of exports of modules have been determined (0 no declared exports, 14 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.033442 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.099716 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.044489 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.014813 ms
+<t> trace exports usage in graph: 0.742025 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.125919 ms
+<t> visitModules: visiting: 0.428632 ms
+<t> visitModules: calculating available modules: 0.027492 ms
+<t> visitModules: merging available modules: 0.013023 ms
+<t> visitModules: check modules for revisit: 0.00522 ms
+<t> visitModules: prepare: 0.099564 ms
+<t> visitModules: visiting: 0.283341 ms
+    69 queue items processed (39 blocks)
+    9 chunk groups connected
+    9 chunk groups processed for merging (9 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    9 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.828797 ms
+<t> connectChunkGroups: 0.043203 ms
+<t> cleanup: 0.004943 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.029133 ms
+<t> modules: 0.290008 ms
+<t> queue: 0.021036 ms
+<t> maxSize: 0.016159 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.042461 ms
+<t> sort relevant modules: 0.010161 ms
+<t> find modules to concatenate: 0.45694 ms
+<t> sort concat configurations: 0.003185 ms
+<t> create concatenated modules: 0.32268 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    14 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 14 timestamps 14 hashes 14 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/14) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:20: webpack 5.64.4 compiled successfully in 47 ms (a0c934b9723e02bcb1a8)

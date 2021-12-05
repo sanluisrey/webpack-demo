@@ -1,0 +1,213 @@
+PublicPath: (none)
+asset bundle0.js 25.8 KiB {main} [emitted] (name: main)
+asset node_modules_store_index_js.bundle0.js 669 bytes {node_modules_store_index_js} [emitted]
+asset node_modules_lib1_index_js.bundle0.js 662 bytes {node_modules_lib1_index_js} [emitted]
+asset node_modules_lib3_index_js.bundle0.js 662 bytes {node_modules_lib3_index_js} [emitted]
+asset relative1_js.bundle0.js 578 bytes {relative1_js} [emitted]
+Entrypoint main 25.8 KiB = bundle0.js
+chunk {main} (runtime: main) bundle0.js (main) 1.09 KiB (javascript) 84 bytes (consume-shared) 210 bytes (share-init) 16.9 KiB (runtime) >{node_modules_lib1_index_js}< >{node_modules_lib3_index_js}< >{node_modules_store_index_js}< >{relative1_js}< >{webpack_sharing_consume_default_lib1_lib1}< >{webpack_sharing_consume_default_relative1_relative1}< >{webpack_sharing_consume_default_store}< >{webpack_sharing_consume_other_lib3_lib3}< [entry] [rendered]
+  > ./index.js main
+  built modules 210 bytes (share-init) 1.09 KiB (javascript) 84 bytes (consume-shared) [built]
+    provide-module modules 210 bytes
+      provide shared module (default) ./relative1@false = ./relative1 [webpack/sharing/provide/default/./relative1] 42 bytes {main} [depth 0] [built] [code generated]
+        [used exports unknown]
+        provide shared module
+      provide shared module (default) lib-two@1.3.4 = ./node_modules/lib2/index.js [webpack/sharing/provide/default/lib-two] 42 bytes {main} [depth 0] [built] [code generated]
+        [used exports unknown]
+        provide shared module
+      provide shared module (default) lib1@1.1.1 = ./node_modules/lib1/index.js [webpack/sharing/provide/default/lib1] 42 bytes {main} [depth 0] [built] [code generated]
+        [used exports unknown]
+        provide shared module
+      provide shared module (default) store@0 = ./node_modules/store/index.js [webpack/sharing/provide/default/store] 42 bytes {main} [depth 0] [built] [code generated]
+        [used exports unknown]
+        provide shared module
+      provide shared module (other) lib3@1.1.1 = ./node_modules/lib3/index.js [webpack/sharing/provide/other/lib3] 42 bytes {main} [depth 0] [built] [code generated]
+        [used exports unknown]
+        provide shared module
+    dependent modules 23 bytes (javascript) 84 bytes (consume-shared) [dependent]
+      ./node_modules/lib2/index.js 23 bytes {main} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        [used exports unknown]
+        consume shared fallback lib2 [webpack/sharing/consume/default/lib-two/lib2] consume shared module (default) lib-two@^1.0.0 (strict) (fallback: ./node_modules/lib2/index.js) (eager)
+        provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/sharing/share-plugin/node_modules/lib2/index.js [webpack/sharing/provide/default/lib-two] provide shared module (default) lib-two@1.3.4 = ./node_modules/lib2/index.js
+      consume shared module (default) lib-two@^1.0.0 (strict) (fallback: ./node_modules/lib2/index.js) (eager) [webpack/sharing/consume/default/lib-two/lib2] 42 bytes {main} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        cjs require lib-two [./index.js] 10:8-26
+      consume shared module (default) store@^0 (strict) (fallback: ./node_modules/store/index.js) [webpack/sharing/consume/default/store/store] 42 bytes {main} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        cjs require store [./index.js] 38:24-40
+    ./index.js 1.07 KiB {main} [depth 0] [built] [code generated]
+      [used exports unknown]
+      entry ./index.js main
+  runtime modules 16.9 KiB
+    webpack/runtime/consumes 10.1 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/create fake namespace object 1.11 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.86 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 2.74 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {node_modules_lib1_index_js} (runtime: main) node_modules_lib1_index_js.bundle0.js 23 bytes <{main}> <{webpack_sharing_consume_default_lib1_lib1}> [rendered]
+  > [webpack/sharing/consume/default/lib1/lib1] consume shared module (default) lib1@^1.0.0 (strict) (fallback: ./node_modules/lib1/index.js)
+  > [webpack/sharing/provide/default/lib1] provide shared module (default) lib1@1.1.1 = ./node_modules/lib1/index.js
+  ./node_modules/lib1/index.js 23 bytes {node_modules_lib1_index_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    consume shared fallback lib1 [webpack/sharing/consume/default/lib1/lib1] consume shared module (default) lib1@^1.0.0 (strict) (fallback: ./node_modules/lib1/index.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/sharing/share-plugin/node_modules/lib1/index.js [webpack/sharing/provide/default/lib1] provide shared module (default) lib1@1.1.1 = ./node_modules/lib1/index.js
+chunk {node_modules_lib3_index_js} (runtime: main) node_modules_lib3_index_js.bundle0.js 23 bytes <{main}> <{webpack_sharing_consume_other_lib3_lib3}> [rendered]
+  > [webpack/sharing/consume/other/lib3/lib3] consume shared module (other) lib3@^1.1.0 (strict) (fallback: ./node_modules/lib3/index.js)
+  > [webpack/sharing/provide/other/lib3] provide shared module (other) lib3@1.1.1 = ./node_modules/lib3/index.js
+  ./node_modules/lib3/index.js 23 bytes {node_modules_lib3_index_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    consume shared fallback lib3 [webpack/sharing/consume/other/lib3/lib3] consume shared module (other) lib3@^1.1.0 (strict) (fallback: ./node_modules/lib3/index.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/sharing/share-plugin/node_modules/lib3/index.js [webpack/sharing/provide/other/lib3] provide shared module (other) lib3@1.1.1 = ./node_modules/lib3/index.js
+chunk {node_modules_store_index_js} (runtime: main) node_modules_store_index_js.bundle0.js 24 bytes <{main}> [rendered]
+  > [webpack/sharing/consume/default/store/store] consume shared module (default) store@^0 (strict) (fallback: ./node_modules/store/index.js)
+  > [webpack/sharing/provide/default/store] provide shared module (default) store@0 = ./node_modules/store/index.js
+  ./node_modules/store/index.js 24 bytes {node_modules_store_index_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    consume shared fallback store [webpack/sharing/consume/default/store/store] consume shared module (default) store@^0 (strict) (fallback: ./node_modules/store/index.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/sharing/share-plugin/node_modules/store/index.js [webpack/sharing/provide/default/store] provide shared module (default) store@0 = ./node_modules/store/index.js
+chunk {relative1_js} (runtime: main) relative1_js.bundle0.js 23 bytes <{main}> <{webpack_sharing_consume_default_relative1_relative1}> [rendered]
+  > [webpack/sharing/consume/default/./relative1/./relative1] consume shared module (default) ./relative1@* (strict) (fallback: ./relative1.js)
+  > [webpack/sharing/provide/default/./relative1] provide shared module (default) ./relative1@false = ./relative1
+  ./relative1.js 23 bytes {relative1_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    consume shared fallback ./relative1 [webpack/sharing/consume/default/./relative1/./relative1] consume shared module (default) ./relative1@* (strict) (fallback: ./relative1.js)
+    provide module for shared ./relative1 [webpack/sharing/provide/default/./relative1] provide shared module (default) ./relative1@false = ./relative1
+chunk {webpack_sharing_consume_default_lib1_lib1} (runtime: main) 42 bytes <{main}> >{node_modules_lib1_index_js}<
+  > lib1 [./index.js] ./index.js 2:14-28
+  consume shared module (default) lib1@^1.0.0 (strict) (fallback: ./node_modules/lib1/index.js) [webpack/sharing/consume/default/lib1/lib1] 42 bytes {webpack_sharing_consume_default_lib1_lib1} [depth 1] [built] [code generated]
+    [used exports unknown]
+    import() lib1 [./index.js] 2:14-28
+chunk {webpack_sharing_consume_default_relative1_relative1} (runtime: main) 42 bytes <{main}> >{relative1_js}<
+  > ./relative1 [./index.js] ./index.js 30:14-35
+  consume shared module (default) ./relative1@* (strict) (fallback: ./relative1.js) [webpack/sharing/consume/default/./relative1/./relative1] 42 bytes {webpack_sharing_consume_default_relative1_relative1} [depth 1] [built] [code generated]
+    [used exports unknown]
+    import() ./relative1 [./index.js] 30:14-35
+chunk {webpack_sharing_consume_default_store} (runtime: main) 42 bytes <{main}>
+  > ./relative2 [./index.js] ./index.js 39:14-35
+  consume shared module (default) store@^0 (strict) [webpack/sharing/consume/default/store] 42 bytes {webpack_sharing_consume_default_store} [depth 1] [built] [code generated]
+    [used exports unknown]
+    import() ./relative2 [./index.js] 39:14-35
+chunk {webpack_sharing_consume_other_lib3_lib3} (runtime: main) 42 bytes <{main}> >{node_modules_lib3_index_js}<
+  > lib3 [./index.js] ./index.js 18:14-28
+  consume shared module (other) lib3@^1.1.0 (strict) (fallback: ./node_modules/lib3/index.js) [webpack/sharing/consume/other/lib3/lib3] 42 bytes {webpack_sharing_consume_other_lib3_lib3} [depth 1] [built] [code generated]
+    [used exports unknown]
+    import() lib3 [./index.js] 18:14-28
+  
+
+LOG from webpack.Compiler
+<t> make hook: 20.975438 ms
+<t> finish make hook: 12.153765 ms
+<t> finish compilation: 0.460582 ms
+<t> seal compilation: 13.96272 ms
+<t> afterCompile hook: 0.05674 ms
+<t> emitAssets: 2.559317 ms
+<t> emitRecords: 0.002473 ms
+<t> done hook: 0.014385 ms
+<t> beginIdle: 0.009484 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005742 ms
+<t> finish modules: 0.355392 ms
+<t> report dependency errors and warnings: 0.068661 ms
+<t> optimize dependencies: 0.055448 ms
+<t> create chunks: 1.03491 ms
+<t> compute affected modules with chunk graph: 0.003554 ms
+<t> optimize: 1.502311 ms
+    17 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.90137 ms
+    100% code generated (17 generated, 0 from cache)
+<t> code generation: 1.2732 ms
+<t> runtime requirements.modules: 0.179348 ms
+<t> runtime requirements.chunks: 0.188469 ms
+<t> runtime requirements.entries: 0.926983 ms
+<t> runtime requirements: 1.342974 ms
+<t> hashing: initialize hash: 0.006439 ms
+<t> hashing: sort chunks: 0.038777 ms
+<t> hashing: hash runtime modules: 2.650101 ms
+<t> hashing: hash chunks: 2.511346 ms
+<t> hashing: hash digest: 0.105158 ms
+<t> hashing: process full hash modules: 0.004162 ms
+<t> hashing: 5.425247 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.018846 ms
+<t> module assets: 0.091824 ms
+<t> create chunk assets: 1.393814 ms
+<t> process assets: 0.075246 ms
+
+LOG from webpack.ResolverCachePlugin
+    65% really resolved (11 real resolves with 0 cached but invalid, 6 cached valid, 0 concurrent)
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.092087 ms
+<t> figure out provided exports: 0.077756 ms
+    29% of exports of modules have been determined (12 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.044679 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.013001 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.046814 ms
+<t> visitModules: visiting: 0.341141 ms
+<t> visitModules: calculating available modules: 0.023026 ms
+<t> visitModules: merging available modules: 0.014821 ms
+<t> visitModules: check modules for revisit: 0.00496 ms
+<t> visitModules: prepare: 0.024346 ms
+<t> visitModules: visiting: 0.235217 ms
+<t> visitModules: calculating available modules: 0.019977 ms
+<t> visitModules: merging available modules: 0.006341 ms
+<t> visitModules: check modules for revisit: 0.003259 ms
+<t> visitModules: visiting: 0.033546 ms
+    54 queue items processed (33 blocks)
+    12 chunk groups connected
+    12 chunk groups processed for merging (12 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    12 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.760976 ms
+<t> connectChunkGroups: 0.064708 ms
+<t> cleanup: 0.005809 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.045879 ms
+<t> modules: 0.308935 ms
+<t> queue: 0.038382 ms
+<t> maxSize: 0.034368 ms
+
+LOG from webpack.FileSystemInfo
+    17 new snapshots created
+    0% root snapshot uncached (0 / 6)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 76 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 94% (151/160) entries shared via 5 shared snapshots (14 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 0% (0/89) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:55: webpack 5.64.4 compiled successfully in 54 ms (8dd970baaac9f567a327)

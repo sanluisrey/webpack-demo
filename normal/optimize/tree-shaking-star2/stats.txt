@@ -1,0 +1,267 @@
+PublicPath: (none)
+asset bundle.js 11.8 KiB {0} [emitted] (name: main)
+Entrypoint main 11.8 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 588 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./optimize/tree-shaking-star2/ main
+  cacheable modules 588 bytes
+    ./optimize/tree-shaking-star2/a.js [0] 22 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: aa]
+      [all exports used]
+      [inactive] from origin ./optimize/tree-shaking-star2/root.js
+        [inactive] harmony side effect evaluation ./a ./optimize/tree-shaking-star2/root.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./optimize/tree-shaking-star2/root.js 1:0-20
+      from origin ./optimize/tree-shaking-star2/root2.js
+        [inactive] harmony side effect evaluation ./a [2] ./optimize/tree-shaking-star2/root2.js 1:0-20
+        harmony export imported specifier ./a [2] ./optimize/tree-shaking-star2/root2.js 1:0-20
+      from origin ./optimize/tree-shaking-star2/root4.js
+        [inactive] harmony side effect evaluation ./a [8] ./optimize/tree-shaking-star2/root4.js 1:0-20
+        harmony export imported specifier ./a [8] ./optimize/tree-shaking-star2/root4.js 1:0-20
+    ./optimize/tree-shaking-star2/aa.js [1] 22 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: aa]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./aa [0] ./optimize/tree-shaking-star2/a.js 1:0-21
+      harmony export imported specifier ./aa [0] ./optimize/tree-shaking-star2/a.js 1:0-21
+      harmony import specifier ./root [5] ./optimize/tree-shaking-star2/index.js 6:8-10 (skipped side-effect-free modules)
+    ./optimize/tree-shaking-star2/c.js [9] 20 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: c]
+      [all exports used]
+      [inactive] from origin ./optimize/tree-shaking-star2/root.js
+        [inactive] harmony side effect evaluation ./c ./optimize/tree-shaking-star2/root.js 3:0-20
+        [inactive] harmony export imported specifier ./c ./optimize/tree-shaking-star2/root.js 3:0-20
+      [inactive] from origin ./optimize/tree-shaking-star2/root2.js
+        [inactive] harmony side effect evaluation ./c [2] ./optimize/tree-shaking-star2/root2.js 3:0-20
+        [inactive] harmony export imported specifier ./c [2] ./optimize/tree-shaking-star2/root2.js 3:0-20
+      from origin ./optimize/tree-shaking-star2/root4.js
+        [inactive] harmony side effect evaluation ./c [8] ./optimize/tree-shaking-star2/root4.js 2:0-20
+        harmony export imported specifier ./c [8] ./optimize/tree-shaking-star2/root4.js 2:0-20
+    ./optimize/tree-shaking-star2/d.js [3] 17 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: d]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16
+      harmony side effect evaluation ./d [2] ./optimize/tree-shaking-star2/root2.js 4:0-20
+      harmony export imported specifier ./d [2] ./optimize/tree-shaking-star2/root2.js 4:0-20
+    ./optimize/tree-shaking-star2/index.js [5] 295 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 3:0-31
+      entry ./optimize/tree-shaking-star2/ main
+    ./optimize/tree-shaking-star2/root2.js [2] 84 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: aa, bb, c, d]
+      [only some exports used: aa, d]
+      Dependency (harmony side effect evaluation) with side effects at 4:0-20
+      harmony side effect evaluation ./root2 [6] ./optimize/tree-shaking-star2/root3.js 1:0-24
+      harmony export imported specifier ./root2 [6] ./optimize/tree-shaking-star2/root3.js 1:0-24
+    ./optimize/tree-shaking-star2/root3.js [6] 25 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: aa, bb, c, d]
+      [only some exports used: aa, d]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-24
+      harmony side effect evaluation ./root3 [5] ./optimize/tree-shaking-star2/index.js 2:0-39
+      harmony import specifier ./root3 [5] ./optimize/tree-shaking-star2/index.js 7:8-11
+      harmony import specifier ./root3 [5] ./optimize/tree-shaking-star2/index.js 8:8-9
+    ./optimize/tree-shaking-star2/root4.js [8] 42 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: aa, c]
+      [only some exports used: __esModule, aa, c]
+      cjs export require ./root4 [4] ./optimize/tree-shaking-star2/root5.js 1:0-35
+    ./optimize/tree-shaking-star2/root5.js [4] 36 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: __esModule, aa, c]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-36
+      harmony side effect evaluation ./root5 [7] ./optimize/tree-shaking-star2/root6.js 1:0-24
+      harmony export imported specifier ./root5 [7] ./optimize/tree-shaking-star2/root6.js 1:0-24
+    ./optimize/tree-shaking-star2/root6.js [7] 25 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: __esModule, aa, c]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-24
+      cjs require ./root6 [5] ./optimize/tree-shaking-star2/index.js 3:12-30
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 694 bytes
+  code generated modules 588 bytes [code generated]
+    ./optimize/tree-shaking-star2/index.js [5] 295 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 3:0-31
+      entry ./optimize/tree-shaking-star2/ main
+    ./optimize/tree-shaking-star2/root3.js [6] 25 bytes {0} [depth 1] [built] [code generated]
+      [exports: aa, bb, c, d]
+      [only some exports used: aa, d]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-24
+      harmony side effect evaluation ./root3 [5] ./optimize/tree-shaking-star2/index.js 2:0-39
+      harmony import specifier ./root3 [5] ./optimize/tree-shaking-star2/index.js 7:8-11
+      harmony import specifier ./root3 [5] ./optimize/tree-shaking-star2/index.js 8:8-9
+    ./optimize/tree-shaking-star2/aa.js [1] 22 bytes {0} [depth 1] [built] [code generated]
+      [exports: aa]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./aa [0] ./optimize/tree-shaking-star2/a.js 1:0-21
+      harmony export imported specifier ./aa [0] ./optimize/tree-shaking-star2/a.js 1:0-21
+      harmony import specifier ./root [5] ./optimize/tree-shaking-star2/index.js 6:8-10 (skipped side-effect-free modules)
+    ./optimize/tree-shaking-star2/root6.js [7] 25 bytes {0} [depth 1] [built] [code generated]
+      [exports: __esModule, aa, c]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-24
+      cjs require ./root6 [5] ./optimize/tree-shaking-star2/index.js 3:12-30
+    ./optimize/tree-shaking-star2/root2.js [2] 84 bytes {0} [depth 2] [built] [code generated]
+      [exports: aa, bb, c, d]
+      [only some exports used: aa, d]
+      Dependency (harmony side effect evaluation) with side effects at 4:0-20
+      harmony side effect evaluation ./root2 [6] ./optimize/tree-shaking-star2/root3.js 1:0-24
+      harmony export imported specifier ./root2 [6] ./optimize/tree-shaking-star2/root3.js 1:0-24
+    ./optimize/tree-shaking-star2/a.js [0] 22 bytes {0} [depth 2] [built] [code generated]
+      [exports: aa]
+      [all exports used]
+      [inactive] from origin ./optimize/tree-shaking-star2/root.js
+        [inactive] harmony side effect evaluation ./a ./optimize/tree-shaking-star2/root.js 1:0-20
+        [inactive] harmony export imported specifier ./a ./optimize/tree-shaking-star2/root.js 1:0-20
+      from origin ./optimize/tree-shaking-star2/root2.js
+        [inactive] harmony side effect evaluation ./a [2] ./optimize/tree-shaking-star2/root2.js 1:0-20
+        harmony export imported specifier ./a [2] ./optimize/tree-shaking-star2/root2.js 1:0-20
+      from origin ./optimize/tree-shaking-star2/root4.js
+        [inactive] harmony side effect evaluation ./a [8] ./optimize/tree-shaking-star2/root4.js 1:0-20
+        harmony export imported specifier ./a [8] ./optimize/tree-shaking-star2/root4.js 1:0-20
+    ./optimize/tree-shaking-star2/root5.js [4] 36 bytes {0} [depth 2] [built] [code generated]
+      [exports: __esModule, aa, c]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-36
+      harmony side effect evaluation ./root5 [7] ./optimize/tree-shaking-star2/root6.js 1:0-24
+      harmony export imported specifier ./root5 [7] ./optimize/tree-shaking-star2/root6.js 1:0-24
+    ./optimize/tree-shaking-star2/c.js [9] 20 bytes {0} [depth 2] [built] [code generated]
+      [exports: c]
+      [all exports used]
+      [inactive] from origin ./optimize/tree-shaking-star2/root.js
+        [inactive] harmony side effect evaluation ./c ./optimize/tree-shaking-star2/root.js 3:0-20
+        [inactive] harmony export imported specifier ./c ./optimize/tree-shaking-star2/root.js 3:0-20
+      [inactive] from origin ./optimize/tree-shaking-star2/root2.js
+        [inactive] harmony side effect evaluation ./c [2] ./optimize/tree-shaking-star2/root2.js 3:0-20
+        [inactive] harmony export imported specifier ./c [2] ./optimize/tree-shaking-star2/root2.js 3:0-20
+      from origin ./optimize/tree-shaking-star2/root4.js
+        [inactive] harmony side effect evaluation ./c [8] ./optimize/tree-shaking-star2/root4.js 2:0-20
+        harmony export imported specifier ./c [8] ./optimize/tree-shaking-star2/root4.js 2:0-20
+    ./optimize/tree-shaking-star2/d.js [3] 17 bytes {0} [depth 3] [built] [code generated]
+      [exports: d]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16
+      harmony side effect evaluation ./d [2] ./optimize/tree-shaking-star2/root2.js 4:0-20
+      harmony export imported specifier ./d [2] ./optimize/tree-shaking-star2/root2.js 4:0-20
+    ./optimize/tree-shaking-star2/root4.js [8] 42 bytes {0} [depth 3] [built] [code generated]
+      [exports: aa, c]
+      [only some exports used: __esModule, aa, c]
+      cjs export require ./root4 [4] ./optimize/tree-shaking-star2/root5.js 1:0-35
+  orphan modules 106 bytes [orphan]
+    ./optimize/tree-shaking-star2/root.js 63 bytes [depth 1] [orphan] [built]
+      [exports: aa, bb, c]
+      [module unused]
+      [inactive] harmony side effect evaluation ./root [5] ./optimize/tree-shaking-star2/index.js 1:0-28
+      [inactive] harmony import specifier ./root [5] ./optimize/tree-shaking-star2/index.js 6:8-10
+    ./optimize/tree-shaking-star2/b.js 21 bytes [depth 2] [orphan] [built]
+      [exports: bb]
+      [module unused]
+      [inactive] from origin ./optimize/tree-shaking-star2/root.js
+        [inactive] harmony side effect evaluation ./b ./optimize/tree-shaking-star2/root.js 2:0-20
+        [inactive] harmony export imported specifier ./b ./optimize/tree-shaking-star2/root.js 2:0-20
+      [inactive] from origin ./optimize/tree-shaking-star2/root2.js
+        [inactive] harmony side effect evaluation ./b [2] ./optimize/tree-shaking-star2/root2.js 2:0-20
+        [inactive] harmony export imported specifier ./b [2] ./optimize/tree-shaking-star2/root2.js 2:0-20
+    ./optimize/tree-shaking-star2/bb.js 22 bytes [depth 3] [orphan] [built]
+      [exports: bb]
+      [module unused]
+      [inactive] harmony side effect evaluation ./bb ./optimize/tree-shaking-star2/b.js 1:0-21
+      [inactive] harmony export imported specifier ./bb ./optimize/tree-shaking-star2/b.js 1:0-21
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 20.411186 ms
+<t> finish make hook: 0.019865 ms
+<t> finish compilation: 1.132123 ms
+<t> seal compilation: 5.821484 ms
+<t> afterCompile hook: 0.012293 ms
+<t> emitAssets: 1.939243 ms
+<t> emitRecords: 0.002909 ms
+<t> done hook: 0.014206 ms
+<t> beginIdle: 0.01287 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004355 ms
+<t> finish modules: 1.006697 ms
+<t> report dependency errors and warnings: 0.107971 ms
+<t> optimize dependencies: 0.483656 ms
+<t> create chunks: 0.330376 ms
+<t> compute affected modules with chunk graph: 0.00237 ms
+<t> optimize: 0.730312 ms
+    10 modules hashed, 0 from cache (0.77 variants per module in average)
+<t> module hashing: 0.307543 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 0.903582 ms
+<t> runtime requirements.modules: 0.079385 ms
+<t> runtime requirements.chunks: 0.066402 ms
+<t> runtime requirements.entries: 0.254891 ms
+<t> runtime requirements: 0.429858 ms
+<t> hashing: initialize hash: 0.00279 ms
+<t> hashing: sort chunks: 0.019196 ms
+<t> hashing: hash runtime modules: 0.201681 ms
+<t> hashing: hash chunks: 0.326698 ms
+<t> hashing: hash digest: 0.013366 ms
+<t> hashing: process full hash modules: 0.001424 ms
+<t> hashing: 0.629386 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.008588 ms
+<t> module assets: 0.017878 ms
+<t> create chunk assets: 1.688717 ms
+<t> process assets: 0.063487 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.030533 ms
+<t> figure out provided exports: 0.910401 ms
+    100% of exports of modules have been determined (0 no declared exports, 13 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 14 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.016419 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.061224 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010302 ms
+<t> trace exports usage in graph: 0.371231 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.173079 ms
+<t> visitModules: visiting: 0.244391 ms
+    21 queue items processed (10 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.266518 ms
+<t> connectChunkGroups: 0.001413 ms
+<t> cleanup: 0.001625 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014701 ms
+<t> modules: 0.108011 ms
+<t> queue: 0.001965 ms
+<t> maxSize: 0.004841 ms
+
+LOG from webpack.FileSystemInfo
+    13 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 13 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/13) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:29: webpack 5.64.4 compiled successfully in 31 ms (0ca72cb11c7e8f6afcab)

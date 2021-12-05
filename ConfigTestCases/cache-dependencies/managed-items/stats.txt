@@ -1,0 +1,106 @@
+PublicPath: (none)
+asset bundle0.js 240 bytes {179} [emitted] (name: main)
+Entrypoint main 240 bytes = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 87 bytes [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 87 bytes {179} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-58
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 18.407253 ms
+<t> finish make hook: 0.015729 ms
+<t> finish compilation: 0.189509 ms
+<t> seal compilation: 2.731896 ms
+<t> afterCompile hook: 0.009526 ms
+<t> emitAssets: 0.769369 ms
+<t> emitRecords: 0.001714 ms
+<t> done hook: 0.903546 ms
+<t> beginIdle: 0.009427 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004099 ms
+<t> finish modules: 0.159384 ms
+<t> report dependency errors and warnings: 0.011345 ms
+<t> optimize dependencies: 0.169063 ms
+<t> create chunks: 0.182902 ms
+<t> compute affected modules with chunk graph: 0.002998 ms
+<t> optimize: 1.034621 ms
+    1 modules hashed, 0 from cache (0.5 variants per module in average)
+<t> module hashing: 0.141967 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.100233 ms
+<t> runtime requirements.modules: 0.00787 ms
+<t> runtime requirements.chunks: 0.060425 ms
+<t> runtime requirements.entries: 0.067567 ms
+<t> runtime requirements: 0.157471 ms
+<t> hashing: initialize hash: 0.00575 ms
+<t> hashing: sort chunks: 0.013405 ms
+<t> hashing: hash runtime modules: 0.003971 ms
+<t> hashing: hash chunks: 0.169538 ms
+<t> hashing: hash digest: 0.012552 ms
+<t> hashing: process full hash modules: 0.000892 ms
+<t> hashing: 0.237914 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.006003 ms
+<t> module assets: 0.010101 ms
+<t> create chunk assets: 0.30246 ms
+<t> process assets: 0.115778 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.025443 ms
+<t> figure out provided exports: 0.014572 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.011371 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.024557 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.042243 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006551 ms
+<t> trace exports usage in graph: 0.050955 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.008842 ms
+<t> visitModules: visiting: 0.036304 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.069434 ms
+<t> connectChunkGroups: 0.002384 ms
+<t> cleanup: 0.002218 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020485 ms
+<t> modules: 0.107805 ms
+<t> queue: 0.002946 ms
+<t> maxSize: 0.007258 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.033954 ms
+<t> sort relevant modules: 0.001561 ms
+<t> find modules to concatenate: 0.048808 ms
+<t> sort concat configurations: 0.001398 ms
+<t> create concatenated modules: 0.005396 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 1 items
+    Managed items snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Managed files snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 24 ms (497259a8cb4280eee420)

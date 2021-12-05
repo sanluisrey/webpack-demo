@@ -1,0 +1,125 @@
+PublicPath: (none)
+asset bundle.js 3.94 KiB {0} [emitted] (name: main)
+Entrypoint main 3.94 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 643 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./loaders/less-loader/ main
+  cacheable modules 643 bytes
+    ../../node_modules/raw-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js!./loaders/less-loader/less/stylesheet.less [0] 218 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 3:2-67
+      cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 6:2-67
+      cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 9:2-67
+    ./loaders/less-loader/index.js [1] 425 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-11:3
+      entry ./loaders/less-loader/ main
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 643 bytes
+  ./loaders/less-loader/index.js [1] 425 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-11:3
+    entry ./loaders/less-loader/ main
+  ../../node_modules/raw-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js!./loaders/less-loader/less/stylesheet.less [0] 218 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 3:2-67
+    cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 6:2-67
+    cjs full require !raw-loader!less-loader!./less/stylesheet.less [1] ./loaders/less-loader/index.js 9:2-67
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 284.984693 ms
+<t> finish make hook: 0.014007 ms
+<t> finish compilation: 0.177713 ms
+<t> seal compilation: 3.109228 ms
+<t> afterCompile hook: 0.010247 ms
+<t> emitAssets: 1.589404 ms
+<t> emitRecords: 0.003828 ms
+<t> done hook: 0.02258 ms
+<t> beginIdle: 0.012785 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004294 ms
+<t> finish modules: 0.136029 ms
+<t> report dependency errors and warnings: 0.018469 ms
+<t> optimize dependencies: 0.180382 ms
+<t> create chunks: 0.164779 ms
+<t> compute affected modules with chunk graph: 0.003247 ms
+<t> optimize: 0.734112 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.133893 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.211671 ms
+<t> runtime requirements.modules: 0.073444 ms
+<t> runtime requirements.chunks: 0.051905 ms
+<t> runtime requirements.entries: 0.221231 ms
+<t> runtime requirements: 0.383313 ms
+<t> hashing: initialize hash: 0.003908 ms
+<t> hashing: sort chunks: 0.01813 ms
+<t> hashing: hash runtime modules: 0.126365 ms
+<t> hashing: hash chunks: 0.296866 ms
+<t> hashing: hash digest: 0.014488 ms
+<t> hashing: process full hash modules: 0.001441 ms
+<t> hashing: 0.503303 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.008707 ms
+<t> module assets: 0.014297 ms
+<t> create chunk assets: 0.525141 ms
+<t> process assets: 0.054178 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.027016 ms
+<t> figure out provided exports: 0.030547 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.013264 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.01451 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006673 ms
+<t> trace exports usage in graph: 0.10897 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.01 ms
+<t> visitModules: visiting: 0.049603 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.079589 ms
+<t> connectChunkGroups: 0.002043 ms
+<t> cleanup: 0.002259 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019383 ms
+<t> modules: 0.083693 ms
+<t> queue: 0.002531 ms
+<t> maxSize: 0.00653 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 34 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/17) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Missing items snapshot optimization: 0% (0/17) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:27: webpack 5.64.4 compiled successfully in 291 ms (59b285049b582b3fd198)

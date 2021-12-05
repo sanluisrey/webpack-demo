@@ -1,0 +1,1 @@
+module.exports = {"530":{"value":"Translated text"}}

@@ -1,0 +1,783 @@
+{
+  "hash": "f36537b199bb0c813734",
+  "version": "5.64.4",
+  "time": 22,
+  "builtAt": 1638693889825,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/plugins/banner-plugin-hashing",
+  "assetsByChunkName": {
+    "dist/banner": [
+      "dist/banner.js?value"
+    ],
+    "vendors": [
+      "vendors.js?value"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "dist/banner.js?value",
+      "size": 3366,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 3366
+      },
+      "chunkNames": [
+        "dist/banner"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        31
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "vendors.js?value",
+      "size": 1671,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 1671
+      },
+      "chunkNames": [
+        "vendors"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        216
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 1567,
+      "sizes": {
+        "javascript": 1567
+      },
+      "names": [
+        "dist/banner"
+      ],
+      "idHints": [],
+      "runtime": [
+        "dist/banner"
+      ],
+      "files": [
+        "dist/banner.js?value"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "5d35be0c75082cd4da40",
+      "childrenByOrder": {},
+      "id": 31,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 1488,
+          "sizes": {
+            "javascript": 1488
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 10,
+          "issuerId": null,
+          "chunks": [
+            31
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.js",
+              "loc": "dist/banner",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "Statement (VariableDeclaration) with side effects in source code at 12:0-15:17",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 37,
+          "sizes": {
+            "javascript": 37
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+          "name": "./test.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 393,
+          "issuerId": 10,
+          "chunks": [
+            31
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./test.js",
+              "loc": "60:23-43",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+              "module": "./test.js",
+              "moduleName": "./test.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+              "resolvedModule": "./test.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:0-14",
+              "moduleId": 393,
+              "resolvedModuleId": 393
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 3:0-14",
+            "Statement (VariableDeclaration) with side effects in source code at 1:0-13",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external node-commonjs \"fs\"",
+          "name": "external \"fs\"",
+          "nameForCondition": null,
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 147,
+          "issuerId": 10,
+          "chunks": [
+            31
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs full require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "fs",
+              "loc": "12:13-13:14",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in dist/banner (runtime-defined))"
+          ],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "dist/banner",
+          "request": "./index.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 37,
+      "sizes": {
+        "javascript": 37
+      },
+      "names": [
+        "vendors"
+      ],
+      "idHints": [],
+      "runtime": [
+        "vendors"
+      ],
+      "files": [
+        "vendors.js?value"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "27d93b4bc491949f7b95",
+      "childrenByOrder": {},
+      "id": 216,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 37,
+          "sizes": {
+            "javascript": 37
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+          "name": "./vendors.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 53,
+          "issuerId": null,
+          "chunks": [
+            216
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+              "module": "./vendors.js",
+              "moduleName": "./vendors.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+              "resolvedModule": "./vendors.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "3:0-14",
+              "moduleId": 53,
+              "resolvedModuleId": 53
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./vendors.js",
+              "loc": "vendors",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 3:0-14",
+            "Statement (VariableDeclaration) with side effects in source code at 1:0-13",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "vendors",
+          "request": "./vendors.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 1488,
+      "sizes": {
+        "javascript": 1488
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 10,
+      "issuerId": null,
+      "chunks": [
+        31
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.js",
+          "loc": "dist/banner",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "Statement (VariableDeclaration) with side effects in source code at 12:0-15:17",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 37,
+      "sizes": {
+        "javascript": 37
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+      "name": "./vendors.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 53,
+      "issuerId": null,
+      "chunks": [
+        216
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+          "module": "./vendors.js",
+          "moduleName": "./vendors.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/vendors.js",
+          "resolvedModule": "./vendors.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-14",
+          "moduleId": 53,
+          "resolvedModuleId": 53
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./vendors.js",
+          "loc": "vendors",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 3:0-14",
+        "Statement (VariableDeclaration) with side effects in source code at 1:0-13",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external node-commonjs \"fs\"",
+      "name": "external \"fs\"",
+      "nameForCondition": null,
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 147,
+      "issuerId": 10,
+      "chunks": [
+        31
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs full require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "fs",
+          "loc": "12:13-13:14",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in dist/banner (runtime-defined))"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 37,
+      "sizes": {
+        "javascript": 37
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+      "name": "./test.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 393,
+      "issuerId": 10,
+      "chunks": [
+        31
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./test.js",
+          "loc": "60:23-43",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+          "module": "./test.js",
+          "moduleName": "./test.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/plugins/banner-plugin-hashing/test.js",
+          "resolvedModule": "./test.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "3:0-14",
+          "moduleId": 393,
+          "resolvedModuleId": 393
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 3:0-14",
+        "Statement (VariableDeclaration) with side effects in source code at 1:0-13",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1
+    }
+  ],
+  "entrypoints": {
+    "dist/banner": {
+      "name": "dist/banner",
+      "chunks": [
+        31
+      ],
+      "assets": [
+        {
+          "name": "dist/banner.js?value",
+          "size": 3366
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3366,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "vendors": {
+      "name": "vendors",
+      "chunks": [
+        216
+      ],
+      "assets": [
+        {
+          "name": "vendors.js?value",
+          "size": 1671
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1671,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "dist/banner": {
+      "name": "dist/banner",
+      "chunks": [
+        31
+      ],
+      "assets": [
+        {
+          "name": "dist/banner.js?value",
+          "size": 3366
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3366,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "vendors": {
+      "name": "vendors",
+      "chunks": [
+        216
+      ],
+      "assets": [
+        {
+          "name": "vendors.js?value",
+          "size": 1671
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1671,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

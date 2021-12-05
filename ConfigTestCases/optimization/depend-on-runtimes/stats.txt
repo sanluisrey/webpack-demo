@@ -1,0 +1,292 @@
+PublicPath: (none)
+asset b.js 7.45 KiB {b} [emitted] (name: b)
+asset a.js 7.24 KiB {a} [emitted] (name: a)
+asset runtime-c.js 6.47 KiB {runtime-c} [emitted] (name: runtime-c)
+asset c.js 1.62 KiB {c} [emitted] (name: c)
+asset a-or-b_js.js 1.18 KiB {a-or-b_js} [emitted]
+asset b-or-c_js.js 768 bytes {b-or-c_js} [emitted]
+Entrypoint a 7.24 KiB = a.js
+Entrypoint b 7.45 KiB = b.js
+Entrypoint c 8.09 KiB = runtime-c.js 6.47 KiB c.js 1.62 KiB
+chunk {a} (runtime: a) a.js (a) 568 bytes (javascript) 2.96 KiB (runtime) >{a-or-b_js}< [entry] [rendered]
+  > ./a a
+  runtime modules 2.96 KiB
+    webpack/runtime/define property getters 308 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {a} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/runtimeId 28 bytes {a} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 568 bytes
+    ./a.js [847] 249 bytes {a} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-14:3
+      ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js
+      entry ./a a
+    ./module.js [662] 319 bytes {a} {b} {c} [depth 1] [dependent] [built] [code generated]
+      [exports: used, v, w, x, y, z]
+      [only some exports used: used, w, x]
+      Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2
+      from origin ./a-or-b.js
+        harmony side effect evaluation ./module [359] ./a-or-b.js 1:0-35
+        harmony import specifier ./module [359] ./a-or-b.js 5:9-10
+        harmony import specifier ./module [359] ./a-or-b.js 7:10-14
+        harmony import specifier ./module [359] ./a-or-b.js 15:10-14
+      from origin ./a.js
+        harmony side effect evaluation ./module [847] ./a.js 1:0-35
+        harmony import specifier ./module [847] ./a.js 4:8-9
+        harmony import specifier ./module [847] ./a.js 5:8-12
+      from origin ./b.js
+        harmony side effect evaluation ./module [996] ./b.js 1:0-35
+        harmony import specifier ./module [996] ./b.js 4:8-9
+        harmony import specifier ./module [996] ./b.js 5:8-12
+      from origin ./c.js
+        harmony side effect evaluation ./module [460] ./c.js 1:0-35
+        harmony import specifier ./module [460] ./c.js 4:8-9
+        harmony import specifier ./module [460] ./c.js 5:8-12
+      from origin ./b-or-c.js
+        harmony side effect evaluation ./module [395] ./b-or-c.js 1:0-29
+        [inactive] harmony import specifier ./module [395] ./b-or-c.js 5:9-10
+chunk {a-or-b_js} (runtime: a, b) a-or-b_js.js 484 bytes <{a}> <{b}> [rendered]
+  > ./a-or-b [847] ./a.js 13:8-26
+  > ./a-or-b [996] ./b.js 14:2-20
+  ./a-or-b.js [359] 484 bytes {a-or-b_js} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-35
+    ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)
+    import() ./a-or-b [847] ./a.js 13:8-26
+    import() ./a-or-b [996] ./b.js 14:2-20
+chunk {b} (runtime: b) b.js (b) 634 bytes (javascript) 2.96 KiB (runtime) >{a-or-b_js}< >{b-or-c_js}< [entry] [rendered]
+  > ./b b
+  runtime modules 2.96 KiB
+    webpack/runtime/define property getters 308 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {b} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/runtimeId 28 bytes {b} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 634 bytes
+    ./b.js [996] 315 bytes {b} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-17:3
+      ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./a-or-b.js, ./b-or-c.js
+      entry ./b b
+    ./module.js [662] 319 bytes {a} {b} {c} [depth 1] [dependent] [built] [code generated]
+      [exports: used, v, w, x, y, z]
+      [only some exports used: used, v, w, y]
+      Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2
+      from origin ./a-or-b.js
+        harmony side effect evaluation ./module [359] ./a-or-b.js 1:0-35
+        harmony import specifier ./module [359] ./a-or-b.js 5:9-10
+        harmony import specifier ./module [359] ./a-or-b.js 7:10-14
+        harmony import specifier ./module [359] ./a-or-b.js 15:10-14
+      from origin ./a.js
+        harmony side effect evaluation ./module [847] ./a.js 1:0-35
+        harmony import specifier ./module [847] ./a.js 4:8-9
+        harmony import specifier ./module [847] ./a.js 5:8-12
+      from origin ./b.js
+        harmony side effect evaluation ./module [996] ./b.js 1:0-35
+        harmony import specifier ./module [996] ./b.js 4:8-9
+        harmony import specifier ./module [996] ./b.js 5:8-12
+      from origin ./c.js
+        harmony side effect evaluation ./module [460] ./c.js 1:0-35
+        harmony import specifier ./module [460] ./c.js 4:8-9
+        harmony import specifier ./module [460] ./c.js 5:8-12
+      from origin ./b-or-c.js
+        harmony side effect evaluation ./module [395] ./b-or-c.js 1:0-29
+        harmony import specifier ./module [395] ./b-or-c.js 5:9-10
+chunk {b-or-c_js} (runtime: b, runtime-c) b-or-c_js.js 127 bytes <{b}> <{c}> <{runtime-c}> [rendered]
+  > ./b-or-c [460] ./c.js 13:8-26
+  > ./b-or-c [996] ./b.js 15:2-20
+  ./b-or-c.js [395] 127 bytes {b-or-c_js} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-29
+    ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) a, b, c)
+    import() ./b-or-c [996] ./b.js 15:2-20
+    import() ./b-or-c [460] ./c.js 13:8-26
+chunk {c} (runtime: runtime-c) c.js (c) 568 bytes ={runtime-c}= >{b-or-c_js}< [initial] [rendered]
+  > ./c c
+  ./c.js [460] 249 bytes {c} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-14:3
+    ModuleConcatenation bailout: Cannot concat with ./module.js: Module ./module.js is referenced from different chunks by these modules: ./b-or-c.js
+    entry ./c c
+  ./module.js [662] 319 bytes {a} {b} {c} [depth 1] [dependent] [built] [code generated]
+    [exports: used, v, w, x, y, z]
+    [only some exports used: used, v, z]
+    Statement (ExportNamedDeclaration) with side effects in source code at 6:0-12:2
+    from origin ./a-or-b.js
+      harmony side effect evaluation ./module [359] ./a-or-b.js 1:0-35
+      [inactive] harmony import specifier ./module [359] ./a-or-b.js 5:9-10
+      [inactive] harmony import specifier ./module [359] ./a-or-b.js 7:10-14
+      [inactive] harmony import specifier ./module [359] ./a-or-b.js 15:10-14
+    from origin ./a.js
+      harmony side effect evaluation ./module [847] ./a.js 1:0-35
+      harmony import specifier ./module [847] ./a.js 4:8-9
+      harmony import specifier ./module [847] ./a.js 5:8-12
+    from origin ./b.js
+      harmony side effect evaluation ./module [996] ./b.js 1:0-35
+      harmony import specifier ./module [996] ./b.js 4:8-9
+      harmony import specifier ./module [996] ./b.js 5:8-12
+    from origin ./c.js
+      harmony side effect evaluation ./module [460] ./c.js 1:0-35
+      harmony import specifier ./module [460] ./c.js 4:8-9
+      harmony import specifier ./module [460] ./c.js 5:8-12
+    from origin ./b-or-c.js
+      harmony side effect evaluation ./module [395] ./b-or-c.js 1:0-29
+      harmony import specifier ./module [395] ./b-or-c.js 5:9-10
+chunk {runtime-c} (runtime: runtime-c) runtime-c.js (runtime-c) 3.38 KiB ={c}= >{b-or-c_js}< [entry] [rendered]
+  > ./c c
+  webpack/runtime/define property getters 308 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 205 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.85 KiB {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup entrypoint 374 bytes {runtime-c} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 23.759911 ms
+<t> finish make hook: 0.017762 ms
+<t> finish compilation: 0.321141 ms
+<t> seal compilation: 11.055972 ms
+<t> afterCompile hook: 0.009681 ms
+<t> emitAssets: 1.887572 ms
+<t> emitRecords: 0.002597 ms
+<t> done hook: 0.011354 ms
+<t> beginIdle: 0.006959 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004712 ms
+<t> finish modules: 0.229229 ms
+<t> report dependency errors and warnings: 0.074252 ms
+<t> optimize dependencies: 0.379441 ms
+<t> create chunks: 0.499488 ms
+<t> compute affected modules with chunk graph: 0.001659 ms
+<t> optimize: 1.555286 ms
+    8 modules hashed, 0 from cache (1.33 variants per module in average)
+<t> module hashing: 0.493474 ms
+    100% code generated (8 generated, 0 from cache)
+<t> code generation: 1.322192 ms
+<t> runtime requirements.modules: 0.081776 ms
+<t> runtime requirements.chunks: 0.095274 ms
+<t> runtime requirements.entries: 1.150781 ms
+<t> runtime requirements: 1.356978 ms
+<t> hashing: initialize hash: 0.005729 ms
+<t> hashing: sort chunks: 0.04182 ms
+<t> hashing: hash runtime modules: 2.342012 ms
+<t> hashing: hash chunks: 0.933022 ms
+<t> hashing: hash digest: 0.021629 ms
+<t> hashing: process full hash modules: 0.002227 ms
+<t> hashing: 3.411185 ms
+    100% code generated (21 generated, 0 from cache)
+<t> record hash: 0.011462 ms
+<t> module assets: 0.020685 ms
+<t> create chunk assets: 1.094667 ms
+<t> process assets: 0.404858 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.025031 ms
+<t> figure out provided exports: 0.075069 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.026486 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.040627 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.015285 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.009775 ms
+<t> trace exports usage in graph: 0.309071 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.021288 ms
+<t> visitModules: visiting: 0.18601 ms
+<t> visitModules: calculating available modules: 0.018965 ms
+<t> visitModules: merging available modules: 0.006263 ms
+<t> visitModules: check modules for revisit: 0.005957 ms
+<t> visitModules: prepare: 0.016531 ms
+<t> visitModules: visiting: 0.074748 ms
+    24 queue items processed (14 blocks)
+    4 chunk groups connected
+    4 chunk groups processed for merging (4 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.33712 ms
+<t> connectChunkGroups: 0.027198 ms
+<t> cleanup: 0.005141 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.025375 ms
+<t> modules: 0.117603 ms
+<t> queue: 0.002704 ms
+<t> maxSize: 0.021081 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.036229 ms
+<t> sort relevant modules: 0.003919 ms
+<t> find modules to concatenate: 0.249103 ms
+<t> sort concat configurations: 0.000906 ms
+<t> create concatenated modules: 0.004405 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:46: webpack 5.64.4 compiled successfully in 40 ms (64e92f5a4df523927753)

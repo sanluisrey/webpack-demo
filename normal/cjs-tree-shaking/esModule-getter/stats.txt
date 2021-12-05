@@ -1,0 +1,144 @@
+PublicPath: (none)
+asset bundle.js 4.61 KiB {0} [emitted] (name: main)
+Entrypoint main 4.61 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 696 bytes (javascript) 663 bytes (runtime) [entry] [rendered]
+  > ./cjs-tree-shaking/esModule-getter/ main
+  runtime modules 663 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 696 bytes
+    ./cjs-tree-shaking/esModule-getter/index.js [1] 495 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 4:0-15:3
+      entry ./cjs-tree-shaking/esModule-getter/ main
+    ./cjs-tree-shaking/esModule-getter/module.js [0] 201 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: __esModule, default, named]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-66
+      harmony side effect evaluation ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 1:0-50
+      harmony side effect evaluation ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 2:0-31
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 5:8-11
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 6:8-13
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 7:8-18
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 8:8-18
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 9:8-16
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 10:8-21
+      harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 11:25-27
+runtime modules 663 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 696 bytes
+  ./cjs-tree-shaking/esModule-getter/index.js [1] 495 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-15:3
+    entry ./cjs-tree-shaking/esModule-getter/ main
+  ./cjs-tree-shaking/esModule-getter/module.js [0] 201 bytes {0} [depth 1] [built] [code generated]
+    [exports: __esModule, default, named]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-66
+    harmony side effect evaluation ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 1:0-50
+    harmony side effect evaluation ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 2:0-31
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 5:8-11
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 6:8-13
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 7:8-18
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 8:8-18
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 9:8-16
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 10:8-21
+    harmony import specifier ./module [1] ./cjs-tree-shaking/esModule-getter/index.js 11:25-27
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.575404 ms
+<t> finish make hook: 0.014809 ms
+<t> finish compilation: 0.211025 ms
+<t> seal compilation: 2.918351 ms
+<t> afterCompile hook: 0.015841 ms
+<t> emitAssets: 1.231728 ms
+<t> emitRecords: 0.003458 ms
+<t> done hook: 0.011762 ms
+<t> beginIdle: 0.008566 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004113 ms
+<t> finish modules: 0.1415 ms
+<t> report dependency errors and warnings: 0.046601 ms
+<t> optimize dependencies: 0.141714 ms
+<t> create chunks: 0.160838 ms
+<t> compute affected modules with chunk graph: 0.002743 ms
+<t> optimize: 0.439247 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.136034 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.318552 ms
+<t> runtime requirements.modules: 0.033284 ms
+<t> runtime requirements.chunks: 0.042302 ms
+<t> runtime requirements.entries: 0.206251 ms
+<t> runtime requirements: 0.306715 ms
+<t> hashing: initialize hash: 0.004165 ms
+<t> hashing: sort chunks: 0.016035 ms
+<t> hashing: hash runtime modules: 0.170854 ms
+<t> hashing: hash chunks: 0.224139 ms
+<t> hashing: hash digest: 0.0141 ms
+<t> hashing: process full hash modules: 0.00132 ms
+<t> hashing: 0.467518 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.006809 ms
+<t> module assets: 0.010479 ms
+<t> create chunk assets: 0.627301 ms
+<t> process assets: 0.074774 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018654 ms
+<t> figure out provided exports: 0.050194 ms
+    100% of exports of modules have been determined (0 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017765 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004463 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005437 ms
+<t> trace exports usage in graph: 0.088646 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.016835 ms
+<t> visitModules: visiting: 0.048395 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.084588 ms
+<t> connectChunkGroups: 0.001937 ms
+<t> cleanup: 0.00185 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015923 ms
+<t> modules: 0.061037 ms
+<t> queue: 0.002385 ms
+<t> maxSize: 0.005455 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 18 ms (0de86787ea2abdc790ba)

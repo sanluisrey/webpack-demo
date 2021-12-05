@@ -1,0 +1,175 @@
+PublicPath: (none)
+asset bundle0.js 11.8 KiB {179} [emitted] (name: main)
+asset 662.bundle0.js 1.16 KiB {662} [emitted]
+asset 586.bundle0.js 222 bytes {586} [emitted]
+Entrypoint main 11.8 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 149 bytes (javascript) 42 bytes (share-init) 6.85 KiB (runtime) >{586}< >{662}< [entry] [rendered]
+  > ./index.js main
+  runtime modules 6.85 KiB
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.68 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.97 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 149 bytes (javascript) 42 bytes (share-init) [built]
+    ./index.js [10] 107 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js main
+    external "ABC" [322] 42 bytes {179} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))
+      remote to external webpack/container/reference/abc [273] remote abc/hello-world
+      remote to external webpack/container/reference/abc [246] remote abc/other
+    provide shared module (default) test@false = ./new-test [377] 42 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+      provide shared module
+chunk {586} (runtime: main) 586.bundle0.js 33 bytes <{179}> [rendered]
+  > [377] provide shared module (default) test@false = ./new-test
+  ./new-test.js [586] 33 bytes {586} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [586] ./new-test.js 1:0-14
+    provide module for shared ./new-test [377] provide shared module (default) test@false = ./new-test
+chunk {662} (runtime: main) 662.bundle0.js 12 bytes (remote) 12 bytes (share-init) 168 bytes (javascript) <{179}> [rendered]
+  > ./module [10] ./index.js 2:8-26
+  ./module.js [662] 168 bytes {662} [depth 1] [built] [code generated]
+    [exports: test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-34
+    ModuleConcatenation bailout: Cannot concat with remote abc/hello-world: Module Concatenation is not implemented for RemoteModule
+    ModuleConcatenation bailout: Cannot concat with remote abc/other: Module Concatenation is not implemented for RemoteModule
+    import() ./module [10] ./index.js 2:8-26
+  remote abc/hello-world [273] 6 bytes (remote) 6 bytes (share-init) {662} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation abc/hello-world [662] ./module.js 1:0-34
+    harmony import specifier abc/hello-world [662] ./module.js 5:8-11
+  remote abc/other [246] 6 bytes (remote) 6 bytes (share-init) {662} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation abc/other [662] ./module.js 2:0-30
+    harmony import specifier abc/other [662] ./module.js 6:8-13
+  
+
+LOG from webpack.Compiler
+<t> make hook: 10.254441 ms
+<t> finish make hook: 2.141217 ms
+<t> finish compilation: 0.199152 ms
+<t> seal compilation: 4.455277 ms
+<t> afterCompile hook: 0.009488 ms
+<t> emitAssets: 0.843631 ms
+<t> emitRecords: 0.001584 ms
+<t> done hook: 0.0093 ms
+<t> beginIdle: 0.028257 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.002995 ms
+<t> finish modules: 0.151154 ms
+<t> report dependency errors and warnings: 0.034581 ms
+<t> optimize dependencies: 0.193787 ms
+<t> create chunks: 0.432484 ms
+<t> compute affected modules with chunk graph: 0.002708 ms
+<t> optimize: 0.673621 ms
+    7 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.222657 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 0.359338 ms
+<t> runtime requirements.modules: 0.05539 ms
+<t> runtime requirements.chunks: 0.059308 ms
+<t> runtime requirements.entries: 0.37189 ms
+<t> runtime requirements: 0.504856 ms
+<t> hashing: initialize hash: 0.003661 ms
+<t> hashing: sort chunks: 0.015941 ms
+<t> hashing: hash runtime modules: 0.712176 ms
+<t> hashing: hash chunks: 0.265724 ms
+<t> hashing: hash digest: 0.013209 ms
+<t> hashing: process full hash modules: 0.001306 ms
+<t> hashing: 1.048488 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.00891 ms
+<t> module assets: 0.015185 ms
+<t> create chunk assets: 0.507458 ms
+<t> process assets: 0.193343 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023727 ms
+<t> figure out provided exports: 0.033947 ms
+    29% of exports of modules have been determined (5 no declared exports, 1 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010907 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.021364 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.012806 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006605 ms
+<t> trace exports usage in graph: 0.137952 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.012812 ms
+<t> visitModules: visiting: 0.061958 ms
+<t> visitModules: calculating available modules: 0.007511 ms
+<t> visitModules: merging available modules: 0.003527 ms
+<t> visitModules: check modules for revisit: 0.175692 ms
+<t> visitModules: prepare: 0.024887 ms
+<t> visitModules: visiting: 0.069594 ms
+    16 queue items processed (9 blocks)
+    2 chunk groups connected
+    2 chunk groups processed for merging (2 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    2 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.346136 ms
+<t> connectChunkGroups: 0.010915 ms
+<t> cleanup: 0.00185 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015398 ms
+<t> modules: 0.083878 ms
+<t> queue: 0.001567 ms
+<t> maxSize: 0.009088 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.044241 ms
+<t> sort relevant modules: 0.000723 ms
+<t> find modules to concatenate: 0.043707 ms
+<t> sort concat configurations: 0.000581 ms
+<t> create concatenated modules: 0.003084 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:22: webpack 5.64.4 compiled successfully in 20 ms (0332e5297afb103e5148)

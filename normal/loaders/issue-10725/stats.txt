@@ -1,0 +1,151 @@
+PublicPath: (none)
+asset bundle.js 4.81 KiB {0} [emitted] (name: main)
+Entrypoint main 4.81 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 275 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./loaders/issue-10725/ main
+  cacheable modules 275 bytes
+    ./loaders/issue-10725/index.js [1] 192 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-7:3
+      entry ./loaders/issue-10725/ main
+    ./loaders/issue-10725/lib.js [0] 26 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: answer]
+      [all exports used]
+      from origin ./loaders/issue-10725/index.js
+        [inactive] harmony side effect evaluation ./lib [1] ./loaders/issue-10725/index.js 1:0-31
+        harmony import specifier ./lib [1] ./loaders/issue-10725/index.js 6:32-38
+      from origin ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt
+        [inactive] harmony side effect evaluation ./lib [2] ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt 2:0-31
+        harmony import specifier ./lib [2] ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt 4:15-21
+    ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt [2] 57 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      cjs require ./text.txt.js!=!./loader.js!./text.txt [1] ./loaders/issue-10725/index.js 4:14-63
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 332 bytes
+  modules by path ./loaders/issue-10725/*.js 218 bytes
+    ./loaders/issue-10725/index.js [1] 192 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-7:3
+      entry ./loaders/issue-10725/ main
+    ./loaders/issue-10725/lib.js [0] 26 bytes {0} [depth 1] [built] [code generated]
+      [exports: answer]
+      [all exports used]
+      from origin ./loaders/issue-10725/index.js
+        [inactive] harmony side effect evaluation ./lib [1] ./loaders/issue-10725/index.js 1:0-31
+        harmony import specifier ./lib [1] ./loaders/issue-10725/index.js 6:32-38
+      from origin ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt
+        [inactive] harmony side effect evaluation ./lib [2] ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt 2:0-31
+        harmony import specifier ./lib [2] ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt 4:15-21
+  modules by path ./loaders/issue-10725/*.txt 114 bytes
+    ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js!./loaders/issue-10725/text.txt [2] 57 bytes {0} [depth 1] [built] [code generated]
+      [exports: default]
+      cjs require ./text.txt.js!=!./loader.js!./text.txt [1] ./loaders/issue-10725/index.js 4:14-63
+    ./loaders/issue-10725/text.txt.js!=!./loaders/issue-10725/loader.js?load!./loaders/issue-10725/text.txt 57 bytes [orphan] [built]
+      [exports: default]
+      [module unused]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-31
+      loader ./text.txt.js!=!./loader.js?load!./text.txt ./text.txt.js!=!./loader.js?load!./text.txt
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.382741 ms
+<t> finish make hook: 0.011027 ms
+<t> finish compilation: 0.299731 ms
+<t> seal compilation: 2.089772 ms
+<t> afterCompile hook: 0.005685 ms
+<t> emitAssets: 1.002302 ms
+<t> emitRecords: 0.001728 ms
+<t> done hook: 0.006561 ms
+<t> beginIdle: 0.003519 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00202 ms
+<t> finish modules: 0.098798 ms
+<t> report dependency errors and warnings: 0.18523 ms
+<t> optimize dependencies: 0.172264 ms
+<t> create chunks: 0.09873 ms
+<t> compute affected modules with chunk graph: 0.00179 ms
+<t> optimize: 0.418337 ms
+    3 modules hashed, 0 from cache (0.75 variants per module in average)
+<t> module hashing: 0.101758 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.238047 ms
+<t> runtime requirements.modules: 0.034812 ms
+<t> runtime requirements.chunks: 0.071404 ms
+<t> runtime requirements.entries: 0.181224 ms
+<t> runtime requirements: 0.30728 ms
+<t> hashing: initialize hash: 0.001852 ms
+<t> hashing: sort chunks: 0.009978 ms
+<t> hashing: hash runtime modules: 0.089479 ms
+<t> hashing: hash chunks: 0.162601 ms
+<t> hashing: hash digest: 0.008302 ms
+<t> hashing: process full hash modules: 0.000997 ms
+<t> hashing: 0.295588 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004849 ms
+<t> module assets: 0.007838 ms
+<t> create chunk assets: 0.299974 ms
+<t> process assets: 0.028646 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01507 ms
+<t> figure out provided exports: 0.032931 ms
+    100% of exports of modules have been determined (0 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.01131 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.023813 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004081 ms
+<t> trace exports usage in graph: 0.06384 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.008622 ms
+<t> visitModules: visiting: 0.034332 ms
+    7 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.051734 ms
+<t> connectChunkGroups: 0.00116 ms
+<t> cleanup: 0.001133 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011038 ms
+<t> modules: 0.046255 ms
+<t> queue: 0.001373 ms
+<t> maxSize: 0.003819 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:26: webpack 5.64.4 compiled successfully in 19 ms (576e6ab91a8aee86d0f1)

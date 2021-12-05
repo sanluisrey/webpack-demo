@@ -1,0 +1,150 @@
+PublicPath: auto
+asset runtime.js 8.37 KiB {runtime} [emitted] (name: runtime)
+asset vendors-node_modules_other-package_index_js-node_modules_package_index_js.js 1.14 KiB {vendors-node_modules_other-package_index_js-node_modules_package_index_js} [emitted] (id hint: vendors)
+asset main.js 1.04 KiB {main} [emitted] (name: main)
+Entrypoint main 10.6 KiB = runtime.js 8.37 KiB vendors-node_modules_other-package_index_js-node_modules_package_index_js.js 1.14 KiB main.js 1.04 KiB
+chunk {main} (runtime: runtime) main.js (main) 120 bytes ={provide-module}= ={runtime}= ={vendors-node_modules_other-package_index_js-node_modules_package_index_js}= [initial] [rendered]
+  > ./index.js main
+  ./index.js [10] 120 bytes {main} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-6:3
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/other-package/index.js: Module ./node_modules/other-package/index.js is not in the same chunk(s) (expected in chunk(s) main, module is in chunk(s) unnamed chunk(s))
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/package/index.js: Module ./node_modules/package/index.js is not in the same chunk(s) (expected in chunk(s) main, module is in chunk(s) unnamed chunk(s))
+    entry ./index.js main
+chunk {provide-module} (runtime: runtime) (provide-module) (id hint: share) 42 bytes ={main}= ={runtime}= ={vendors-node_modules_other-package_index_js-node_modules_package_index_js}= [initial] split chunk (cache group: share) (name: provide-module)
+  > ./index.js main
+  provide shared module (default) package@1.2.3 = ./node_modules/package/index.js [226] 42 bytes {provide-module} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+    provide shared module
+chunk {runtime} (runtime: runtime) runtime.js (runtime) 4.99 KiB ={main}= ={provide-module}= ={vendors-node_modules_other-package_index_js-node_modules_package_index_js}= [entry] [rendered]
+  > ./index.js main
+  webpack/runtime/chunk loaded 886 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.53 KiB {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/sharing 1.94 KiB {runtime} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {vendors-node_modules_other-package_index_js-node_modules_package_index_js} (runtime: runtime) vendors-node_modules_other-package_index_js-node_modules_package_index_js.js (id hint: vendors) 58 bytes ={main}= ={provide-module}= ={runtime}= [initial] [rendered] split chunk (cache group: defaultVendors)
+  > ./index.js main
+  ./node_modules/other-package/index.js [357] 32 bytes {vendors-node_modules_other-package_index_js-node_modules_package_index_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation other-package [10] ./index.js 2:0-30
+    harmony import specifier other-package [10] ./index.js 5:30-31
+  ./node_modules/package/index.js [329] 26 bytes {vendors-node_modules_other-package_index_js-node_modules_package_index_js} [depth 1] [built] [code generated]
+    [exports: default]
+    [inactive] harmony side effect evaluation package [10] ./index.js 1:0-24
+    harmony import specifier package [10] ./index.js 5:27-28
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/web/non-js-chunks-entrypoint-runtime-chunk/node_modules/package/index.js [226] provide shared module (default) package@1.2.3 = ./node_modules/package/index.js
+  
+
+LOG from webpack.Compiler
+<t> make hook: 9.992693 ms
+<t> finish make hook: 2.243749 ms
+<t> finish compilation: 0.188761 ms
+<t> seal compilation: 3.563363 ms
+<t> afterCompile hook: 0.008459 ms
+<t> emitAssets: 1.189074 ms
+<t> emitRecords: 0.002094 ms
+<t> done hook: 0.009585 ms
+<t> beginIdle: 0.004771 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00365 ms
+<t> finish modules: 0.140717 ms
+<t> report dependency errors and warnings: 0.032009 ms
+<t> optimize dependencies: 0.160489 ms
+<t> create chunks: 0.227353 ms
+<t> compute affected modules with chunk graph: 0.001196 ms
+<t> optimize: 0.775615 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.138266 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.248391 ms
+<t> runtime requirements.modules: 0.035269 ms
+<t> runtime requirements.chunks: 0.04982 ms
+<t> runtime requirements.entries: 0.225432 ms
+<t> runtime requirements: 0.327352 ms
+<t> hashing: initialize hash: 0.002521 ms
+<t> hashing: sort chunks: 0.01733 ms
+<t> hashing: hash runtime modules: 0.526532 ms
+<t> hashing: hash chunks: 0.220991 ms
+<t> hashing: hash digest: 0.010662 ms
+<t> hashing: process full hash modules: 0.001166 ms
+<t> hashing: 0.807316 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.005714 ms
+<t> module assets: 0.009807 ms
+<t> create chunk assets: 0.488814 ms
+<t> process assets: 0.185241 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019639 ms
+<t> figure out provided exports: 0.032514 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012831 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.014421 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.018225 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003269 ms
+<t> trace exports usage in graph: 0.102375 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.013479 ms
+<t> visitModules: visiting: 0.064798 ms
+<t> visitModules: calculating available modules: 0.011264 ms
+<t> visitModules: merging available modules: 0.003652 ms
+<t> visitModules: check modules for revisit: 0.002588 ms
+<t> visitModules: visiting: 0.005559 ms
+    9 queue items processed (5 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.115906 ms
+<t> connectChunkGroups: 0.006012 ms
+<t> cleanup: 0.02283 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015165 ms
+<t> modules: 0.123861 ms
+<t> queue: 0.063799 ms
+<t> maxSize: 0.006927 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.027147 ms
+<t> sort relevant modules: 0.003005 ms
+<t> find modules to concatenate: 0.062702 ms
+<t> sort concat configurations: 0.000624 ms
+<t> create concatenated modules: 0.003758 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled successfully in 18 ms (a42196ff35d264ceb753)

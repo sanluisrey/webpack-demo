@@ -1,0 +1,178 @@
+PublicPath: (none)
+asset bundle0.js 6 KiB {179} [emitted] (name: main)
+Entrypoint main 6 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 1.18 KiB [entry] [rendered]
+  > ./index.js main
+  modules by path delegated ./ 294 bytes
+    delegated ./a.js from dll-reference ../0-create-dll/dll.js [4uGQ] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ../0-create-dll/a [lm9c] ./index.js + 1 modules ./index.js 6:8-36
+    delegated ./b.js from dll-reference ../0-create-dll/dll.js [SWjn] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ../0-create-dll/b [lm9c] ./index.js + 1 modules ./index.js 10:1-29
+    delegated ./d.js from dll-reference ../0-create-dll/dll.js [5Fs3] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      harmony side effect evaluation ../0-create-dll/d [lm9c] ./index.js + 1 modules ./index.js 1:0-34
+      harmony import specifier ../0-create-dll/d [lm9c] ./index.js + 1 modules ./index.js 17:8-9
+    delegated ./e.js from dll-reference ../0-create-dll/dll.js [I5dJ] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: x1, x2, y1, y2]
+      [only some exports used: x2, y1]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      harmony side effect evaluation ../0-create-dll/e [lm9c] ./index.js + 1 modules ./index.js 3:0-43
+      harmony import specifier ../0-create-dll/e [lm9c] ./index.js + 1 modules ./index.js 22:8-10
+      harmony import specifier ../0-create-dll/e [lm9c] ./index.js + 1 modules ./index.js 23:8-10
+    delegated ./e1.js from dll-reference ../0-create-dll/dll.js [xh4s] 42 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [exports: x1, y1]
+      [only some exports used: x1]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      from origin ./e.js
+        harmony side effect evaluation ../0-create-dll/e1 ./e.js 1:0-35
+        harmony export imported specifier ../0-create-dll/e1 ./e.js 1:0-35
+      from origin ./index.js + 1 modules
+        harmony side effect evaluation ../0-create-dll/e1 [lm9c] ./index.js + 1 modules ./e.js 1:0-35
+        harmony export imported specifier ../0-create-dll/e1 [lm9c] ./index.js + 1 modules ./e.js 1:0-35
+    delegated ./e2.js from dll-reference ../0-create-dll/dll.js [4THw] 42 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [exports: x2, y2]
+      [only some exports used: y2]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      from origin ./e.js
+        harmony side effect evaluation ../0-create-dll/e2 ./e.js 2:0-35
+        harmony export imported specifier ../0-create-dll/e2 ./e.js 2:0-35
+      from origin ./index.js + 1 modules
+        harmony side effect evaluation ../0-create-dll/e2 [lm9c] ./index.js + 1 modules ./e.js 2:0-35
+        harmony export imported specifier ../0-create-dll/e2 [lm9c] ./index.js + 1 modules ./e.js 2:0-35
+    delegated ./g.abc.js from dll-reference ../0-create-dll/dll.js [PROB] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ../0-create-dll/g.abc.js [lm9c] ./index.js + 1 modules ./index.js 28:8-43
+  ./index.js + 1 modules [lm9c] 870 bytes {179} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    ModuleConcatenation bailout: Cannot concat with delegated ./e2.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule
+    ModuleConcatenation bailout: Cannot concat with delegated ./e.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule
+    ModuleConcatenation bailout: Cannot concat with delegated ./e1.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule
+    ModuleConcatenation bailout: Cannot concat with delegated ./d.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule
+    entry ./index.js main
+  external "../0-create-dll/dll.js" [9cD8] 42 bytes {179} [depth 2] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))
+    delegated source dll-reference ../0-create-dll/dll.js [4THw] delegated ./e2.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [I5dJ] delegated ./e.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [xh4s] delegated ./e1.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [PROB] delegated ./g.abc.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [5Fs3] delegated ./d.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [4uGQ] delegated ./a.js from dll-reference ../0-create-dll/dll.js
+    delegated source dll-reference ../0-create-dll/dll.js [SWjn] delegated ./b.js from dll-reference ../0-create-dll/dll.js
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.345568 ms
+<t> finish make hook: 0.031228 ms
+<t> finish compilation: 0.809295 ms
+<t> seal compilation: 9.389865 ms
+<t> afterCompile hook: 0.011016 ms
+<t> emitAssets: 0.975191 ms
+<t> emitRecords: 0.002023 ms
+<t> done hook: 0.0096 ms
+<t> beginIdle: 0.005928 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00518 ms
+<t> finish modules: 0.602629 ms
+<t> report dependency errors and warnings: 0.169209 ms
+<t> optimize dependencies: 0.654692 ms
+<t> create chunks: 0.463973 ms
+<t> compute affected modules with chunk graph: 0.004124 ms
+<t> optimize: 2.065202 ms
+    9 modules hashed, 0 from cache (0.9 variants per module in average)
+<t> module hashing: 0.741412 ms
+    100% code generated (9 generated, 0 from cache)
+<t> code generation: 4.041841 ms
+<t> runtime requirements.modules: 0.045912 ms
+<t> runtime requirements.chunks: 0.051556 ms
+<t> runtime requirements.entries: 0.060349 ms
+<t> runtime requirements: 0.18149 ms
+<t> hashing: initialize hash: 0.007512 ms
+<t> hashing: hash warnings: 0.00223 ms
+<t> hashing: sort chunks: 0.016033 ms
+<t> hashing: hash runtime modules: 0.007529 ms
+<t> hashing: hash chunks: 0.261178 ms
+<t> hashing: hash digest: 0.016073 ms
+<t> hashing: process full hash modules: 0.001565 ms
+<t> hashing: 0.348323 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005485 ms
+<t> module assets: 0.014071 ms
+<t> create chunk assets: 0.437543 ms
+<t> process assets: 0.17105 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.046522 ms
+<t> figure out provided exports: 0.402489 ms
+    70% of exports of modules have been determined (3 no declared exports, 2 not cached, 5 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.028479 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.013072 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.021596 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.021364 ms
+<t> trace exports usage in graph: 0.536749 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.130921 ms
+<t> visitModules: visiting: 0.266949 ms
+    20 queue items processed (10 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.330314 ms
+<t> connectChunkGroups: 0.00258 ms
+<t> cleanup: 0.002311 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.024816 ms
+<t> modules: 0.229744 ms
+<t> queue: 0.003509 ms
+<t> maxSize: 0.009227 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.089751 ms
+<t> sort relevant modules: 0.00378 ms
+<t> find modules to concatenate: 0.207765 ms
+<t> sort concat configurations: 0.001291 ms
+<t> create concatenated modules: 0.272648 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in configuration
+The value 'hashed' for option 'optimization.moduleIds' is deprecated. Use 'deterministic' instead.
+DeprecatedOptionWarning: configuration
+The value 'hashed' for option 'optimization.moduleIds' is deprecated. Use 'deterministic' instead.
+    at /Users/yoh/Projects/repos/webpack/lib/WarnDeprecatedOptionPlugin.js:35:6
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:21:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compiler.newCompilation (/Users/yoh/Projects/repos/webpack/lib/Compiler.js:1054:30)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1099:29
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:11:1)
+    at /Users/yoh/Projects/repos/webpack/lib/DllReferencePlugin.js:84:12
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:7:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compiler.compile (/Users/yoh/Projects/repos/webpack/lib/Compiler.js:1094:28)
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled with 1 warning in 29 ms (7fd7fbd515669aec1f86)

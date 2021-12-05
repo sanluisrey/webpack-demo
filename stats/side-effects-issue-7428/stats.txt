@@ -1,0 +1,166 @@
+PublicPath: auto
+asset main.js 12.3 KiB {0} [emitted] (name: main)
+asset 1.js 643 bytes {1} [emitted]
+Entrypoint main 12.3 KiB = main.js
+chunk {0} (runtime: main) main.js (main) 407 bytes (javascript) 6.57 KiB (runtime) >{1}< [entry] [rendered]
+  > ./main.js main
+  runtime modules 6.57 KiB
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 407 bytes
+    ./components/src/CompAB/CompA.js [1] 89 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-6:2
+      ModuleConcatenation bailout: Cannot concat with ./components/src/CompAB/utils.js because of ./main.js
+      [inactive] from origin ./components/src/CompAB/index.js
+        [inactive] harmony side effect evaluation ./CompA ./components/src/CompAB/index.js 1:0-43
+        [inactive] harmony export imported specifier ./CompA ./components/src/CompAB/index.js 1:0-43
+      [inactive] harmony export imported specifier ./CompAB ./components/src/index.js 1:0-40 (skipped side-effect-free modules)
+      harmony import specifier ./components [3] ./foo.js 3:20-25 (skipped side-effect-free modules)
+      harmony import specifier ./components [0] ./main.js + 1 modules ./main.js 3:15-20 (skipped side-effect-free modules)
+    ./components/src/CompAB/utils.js [2] 97 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: fnA, fnB]
+      from origin ./components/src/CompAB/CompA.js
+        [inactive] harmony side effect evaluation ./utils [1] ./components/src/CompAB/CompA.js 1:0-35
+        harmony import specifier ./utils [1] ./components/src/CompAB/CompA.js 5:5-12
+      from origin ./components/src/CompAB/CompB.js
+        [inactive] harmony side effect evaluation ./utils ./components/src/CompAB/CompB.js 1:0-30
+        harmony import specifier ./utils ./components/src/CompAB/CompB.js 5:2-5
+      from origin ./main.js + 1 modules
+        [inactive] harmony side effect evaluation ./utils [0] ./main.js + 1 modules ./components/src/CompAB/CompB.js 1:0-30
+        harmony import specifier ./utils [0] ./main.js + 1 modules ./components/src/CompAB/CompB.js 5:2-5
+    ./main.js + 1 modules [0] 221 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      ModuleConcatenation bailout: Cannot concat with ./components/src/CompAB/CompA.js: Module ./components/src/CompAB/CompA.js is referenced from different chunks by these modules: ./foo.js
+      ModuleConcatenation bailout: Cannot concat with ./components/src/CompAB/utils.js: Module ./components/src/CompAB/CompA.js is referenced from different chunks by these modules: ./foo.js
+      entry ./main.js main
+chunk {1} (runtime: main) 1.js 101 bytes <{0}> [rendered]
+  > ./foo ./main.js 6:0-15
+  ./foo.js [3] 101 bytes {1} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-61
+    ModuleConcatenation bailout: Cannot concat with ./components/src/CompAB/CompA.js: Module ./components/src/CompAB/CompA.js is not in the same chunk(s) (expected in chunk(s) unnamed chunk(s), module is in chunk(s) main)
+    import() ./foo [0] ./main.js + 1 modules ./main.js 6:0-15
+  
+
+LOG from webpack.Compiler
+<t> make hook: 24.597155 ms
+<t> finish make hook: 0.035111 ms
+<t> finish compilation: 1.002986 ms
+<t> seal compilation: 11.692391 ms
+<t> afterCompile hook: 0.009809 ms
+<t> emitAssets: 5.437548 ms
+<t> emitRecords: 0.002012 ms
+<t> done hook: 0.012251 ms
+<t> beginIdle: 0.009136 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004864 ms
+<t> finish modules: 0.851369 ms
+<t> report dependency errors and warnings: 0.120635 ms
+<t> optimize dependencies: 1.49484 ms
+<t> create chunks: 0.370109 ms
+<t> compute affected modules with chunk graph: 0.003732 ms
+<t> optimize: 1.951164 ms
+    4 modules hashed, 0 from cache (0.44 variants per module in average)
+<t> module hashing: 0.564608 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 3.103098 ms
+<t> runtime requirements.modules: 0.08708 ms
+<t> runtime requirements.chunks: 0.101556 ms
+<t> runtime requirements.entries: 0.840744 ms
+<t> runtime requirements: 1.075504 ms
+<t> hashing: initialize hash: 0.005646 ms
+<t> hashing: sort chunks: 0.02583 ms
+<t> hashing: hash runtime modules: 1.228667 ms
+<t> hashing: hash chunks: 0.48772 ms
+<t> hashing: hash digest: 0.018876 ms
+<t> hashing: process full hash modules: 0.001602 ms
+<t> hashing: 1.848901 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.0105 ms
+<t> module assets: 0.021123 ms
+<t> create chunk assets: 0.754814 ms
+<t> process assets: 0.057661 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.083273 ms
+<t> figure out provided exports: 0.603047 ms
+    100% of exports of modules have been determined (0 no declared exports, 9 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.04595 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 1.033007 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.019603 ms
+<t> trace exports usage in graph: 0.355165 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.037377 ms
+<t> visitModules: visiting: 0.107984 ms
+<t> visitModules: calculating available modules: 0.014277 ms
+<t> visitModules: merging available modules: 0.005894 ms
+<t> visitModules: check modules for revisit: 0.003743 ms
+<t> visitModules: prepare: 0.007979 ms
+<t> visitModules: visiting: 0.028934 ms
+    11 queue items processed (6 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.224163 ms
+<t> connectChunkGroups: 0.01672 ms
+<t> cleanup: 0.005264 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.030509 ms
+<t> modules: 0.195783 ms
+<t> queue: 0.003498 ms
+<t> maxSize: 0.014434 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.051379 ms
+<t> sort relevant modules: 0.006229 ms
+<t> find modules to concatenate: 0.514752 ms
+<t> sort concat configurations: 0.001146 ms
+<t> create concatenated modules: 0.227666 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    9 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 9 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/9) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled successfully in 45 ms (79cd6e5b5c6068e2e2d7)

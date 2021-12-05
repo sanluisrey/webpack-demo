@@ -1,0 +1,182 @@
+PublicPath: (none)
+asset bundle.js 9.65 KiB {0} [emitted] (name: main)
+Entrypoint main 9.65 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 363 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./side-effects/issue-12570-second-try/ main
+  cacheable modules 363 bytes
+    ./side-effects/issue-12570-second-try/index.js [1] 83 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+      entry ./side-effects/issue-12570-second-try/ main
+    ./side-effects/issue-12570-second-try/inner-module.js [0] 25 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: value]
+      from origin ./side-effects/issue-12570-second-try/inner-reexport.js
+        [inactive] harmony side effect evaluation ./inner-module.js [5] ./side-effects/issue-12570-second-try/inner-reexport.js 1:0-34
+        harmony export imported specifier ./inner-module.js [5] ./side-effects/issue-12570-second-try/inner-reexport.js 1:0-34
+      [inactive] from origin ./side-effects/issue-12570-second-try/inner-reexport2.js
+        [inactive] harmony side effect evaluation ./inner-module.js [6] ./side-effects/issue-12570-second-try/inner-reexport2.js 1:0-34
+        [inactive] harmony export imported specifier ./inner-module.js [6] ./side-effects/issue-12570-second-try/inner-reexport2.js 1:0-34
+      cjs require ./inner-module [1] ./side-effects/issue-12570-second-try/index.js 3:1-26
+    ./side-effects/issue-12570-second-try/inner-reexport-chain.js [4] 37 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: other, value]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./inner-reexport-chain [3] ./side-effects/issue-12570-second-try/reexport.js 1:0-39
+      harmony export imported specifier ./inner-reexport-chain [3] ./side-effects/issue-12570-second-try/reexport.js 1:0-39
+    ./side-effects/issue-12570-second-try/inner-reexport.js [5] 57 bytes {0} [depth 4] [dependent] [built] [code generated]
+      [exports: other, value]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./inner-reexport.js [4] ./side-effects/issue-12570-second-try/inner-reexport-chain.js 1:0-36
+      harmony export imported specifier ./inner-reexport.js [4] ./side-effects/issue-12570-second-try/inner-reexport-chain.js 1:0-36
+    ./side-effects/issue-12570-second-try/inner-reexport2.js [6] 58 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: other2, value]
+      [only some exports used: other2]
+      [inactive] harmony side effect evaluation ./inner-reexport2 [3] ./side-effects/issue-12570-second-try/reexport.js 2:0-34
+      harmony export imported specifier ./inner-reexport2 [3] ./side-effects/issue-12570-second-try/reexport.js 2:0-34
+    ./side-effects/issue-12570-second-try/module.js [2] 28 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: other, other2, value]
+      cjs require ./module [1] ./side-effects/issue-12570-second-try/index.js 2:1-20
+    ./side-effects/issue-12570-second-try/reexport.js [3] 75 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: other, other2, value]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./reexport [2] ./side-effects/issue-12570-second-try/module.js 1:0-27
+      harmony export imported specifier ./reexport [2] ./side-effects/issue-12570-second-try/module.js 1:0-27
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 363 bytes
+  ./side-effects/issue-12570-second-try/index.js [1] 83 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+    entry ./side-effects/issue-12570-second-try/ main
+  ./side-effects/issue-12570-second-try/module.js [2] 28 bytes {0} [depth 1] [built] [code generated]
+    [exports: other, other2, value]
+    cjs require ./module [1] ./side-effects/issue-12570-second-try/index.js 2:1-20
+  ./side-effects/issue-12570-second-try/inner-module.js [0] 25 bytes {0} [depth 1] [built] [code generated]
+    [exports: value]
+    from origin ./side-effects/issue-12570-second-try/inner-reexport.js
+      [inactive] harmony side effect evaluation ./inner-module.js [5] ./side-effects/issue-12570-second-try/inner-reexport.js 1:0-34
+      harmony export imported specifier ./inner-module.js [5] ./side-effects/issue-12570-second-try/inner-reexport.js 1:0-34
+    [inactive] from origin ./side-effects/issue-12570-second-try/inner-reexport2.js
+      [inactive] harmony side effect evaluation ./inner-module.js [6] ./side-effects/issue-12570-second-try/inner-reexport2.js 1:0-34
+      [inactive] harmony export imported specifier ./inner-module.js [6] ./side-effects/issue-12570-second-try/inner-reexport2.js 1:0-34
+    cjs require ./inner-module [1] ./side-effects/issue-12570-second-try/index.js 3:1-26
+  ./side-effects/issue-12570-second-try/reexport.js [3] 75 bytes {0} [depth 2] [built] [code generated]
+    [exports: other, other2, value]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./reexport [2] ./side-effects/issue-12570-second-try/module.js 1:0-27
+    harmony export imported specifier ./reexport [2] ./side-effects/issue-12570-second-try/module.js 1:0-27
+  ./side-effects/issue-12570-second-try/inner-reexport-chain.js [4] 37 bytes {0} [depth 3] [built] [code generated]
+    [exports: other, value]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./inner-reexport-chain [3] ./side-effects/issue-12570-second-try/reexport.js 1:0-39
+    harmony export imported specifier ./inner-reexport-chain [3] ./side-effects/issue-12570-second-try/reexport.js 1:0-39
+  ./side-effects/issue-12570-second-try/inner-reexport2.js [6] 58 bytes {0} [depth 3] [built] [code generated]
+    [exports: other2, value]
+    [only some exports used: other2]
+    [inactive] harmony side effect evaluation ./inner-reexport2 [3] ./side-effects/issue-12570-second-try/reexport.js 2:0-34
+    harmony export imported specifier ./inner-reexport2 [3] ./side-effects/issue-12570-second-try/reexport.js 2:0-34
+  ./side-effects/issue-12570-second-try/inner-reexport.js [5] 57 bytes {0} [depth 4] [built] [code generated]
+    [exports: other, value]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./inner-reexport.js [4] ./side-effects/issue-12570-second-try/inner-reexport-chain.js 1:0-36
+    harmony export imported specifier ./inner-reexport.js [4] ./side-effects/issue-12570-second-try/inner-reexport-chain.js 1:0-36
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.730412 ms
+<t> finish make hook: 0.023109 ms
+<t> finish compilation: 1.901551 ms
+<t> seal compilation: 4.128552 ms
+<t> afterCompile hook: 0.011487 ms
+<t> emitAssets: 2.995877 ms
+<t> emitRecords: 0.002778 ms
+<t> done hook: 0.015423 ms
+<t> beginIdle: 0.008154 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005555 ms
+<t> finish modules: 1.811271 ms
+<t> report dependency errors and warnings: 0.070338 ms
+<t> optimize dependencies: 0.42048 ms
+<t> create chunks: 0.284552 ms
+<t> compute affected modules with chunk graph: 0.001748 ms
+<t> optimize: 0.7624 ms
+    7 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.246661 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 0.56116 ms
+<t> runtime requirements.modules: 0.056039 ms
+<t> runtime requirements.chunks: 0.055498 ms
+<t> runtime requirements.entries: 0.1934 ms
+<t> runtime requirements: 0.327962 ms
+<t> hashing: initialize hash: 0.003052 ms
+<t> hashing: sort chunks: 0.019815 ms
+<t> hashing: hash runtime modules: 0.154721 ms
+<t> hashing: hash chunks: 0.235889 ms
+<t> hashing: hash digest: 0.01242 ms
+<t> hashing: process full hash modules: 0.001361 ms
+<t> hashing: 0.462401 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.010071 ms
+<t> module assets: 0.015073 ms
+<t> create chunk assets: 0.777255 ms
+<t> process assets: 0.046226 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.024628 ms
+<t> figure out provided exports: 1.717263 ms
+    86% of exports of modules have been determined (1 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 5 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.013658 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.017132 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005511 ms
+<t> trace exports usage in graph: 0.349788 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.106619 ms
+<t> visitModules: visiting: 0.172187 ms
+    15 queue items processed (7 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.198422 ms
+<t> connectChunkGroups: 0.001867 ms
+<t> cleanup: 0.002055 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016989 ms
+<t> modules: 0.112515 ms
+<t> queue: 0.002309 ms
+<t> maxSize: 0.006443 ms
+
+LOG from webpack.FileSystemInfo
+    7 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:43: webpack 5.64.4 compiled successfully in 24 ms (02b3505def0158b7b849)

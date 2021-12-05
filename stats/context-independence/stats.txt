@@ -1,0 +1,843 @@
+PublicPath: auto
+asset main-4aabfaa86ecfef36d9be.js 10.4 KiB {179} [emitted] [immutable] (name: main)
+  sourceMap main-4aabfaa86ecfef36d9be.js.map 9.27 KiB ({179}) [emitted] [dev] (auxiliary name: main)
+asset 695-4dd37417c69a0af66bac.js 455 bytes {695} [emitted] [immutable]
+  sourceMap 695-4dd37417c69a0af66bac.js.map 342 bytes ({695}) [emitted] [dev]
+Entrypoint main 10.4 KiB (9.27 KiB) = main-4aabfaa86ecfef36d9be.js 1 auxiliary asset
+chunk {179} (runtime: main) main-4aabfaa86ecfef36d9be.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./a/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-4dd37417c69a0af66bac.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./a/index.js 2:0-17
+  ./a/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./a/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 662.774567 ms
+<t> finish make hook: 0.019916 ms
+<t> finish compilation: 0.34892 ms
+<t> seal compilation: 16.104767 ms
+<t> afterCompile hook: 0.019031 ms
+<t> emitAssets: 48.681695 ms
+<t> emitRecords: 0.003215 ms
+<t> done hook: 0.025683 ms
+<t> beginIdle: 0.008908 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.006486 ms
+<t> finish modules: 0.205382 ms
+<t> report dependency errors and warnings: 0.0985 ms
+<t> optimize dependencies: 0.254842 ms
+<t> create chunks: 0.269453 ms
+<t> compute affected modules with chunk graph: 0.004 ms
+<t> optimize: 1.017426 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.224608 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.919505 ms
+<t> runtime requirements.modules: 0.148711 ms
+<t> runtime requirements.chunks: 0.16295 ms
+<t> runtime requirements.entries: 0.79703 ms
+<t> runtime requirements: 1.179077 ms
+<t> hashing: initialize hash: 0.023034 ms
+<t> hashing: sort chunks: 0.03818 ms
+<t> hashing: hash runtime modules: 0.88774 ms
+<t> hashing: hash chunks: 0.393006 ms
+<t> hashing: hash digest: 0.022549 ms
+<t> hashing: process full hash modules: 0.001437 ms
+<t> hashing: 1.52234 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.020719 ms
+<t> module assets: 0.014658 ms
+<t> create chunk assets: 0.576224 ms
+<t> process assets: 9.420324 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.03534 ms
+<t> figure out provided exports: 0.035277 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.018283 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.02048 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.019476 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.008755 ms
+<t> trace exports usage in graph: 0.154755 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.010306 ms
+<t> visitModules: visiting: 0.049248 ms
+<t> visitModules: calculating available modules: 0.008622 ms
+<t> visitModules: merging available modules: 0.012169 ms
+<t> visitModules: check modules for revisit: 0.002416 ms
+<t> visitModules: prepare: 0.00958 ms
+<t> visitModules: visiting: 0.031491 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.138792 ms
+<t> connectChunkGroups: 0.009687 ms
+<t> cleanup: 0.002349 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018589 ms
+<t> modules: 0.075084 ms
+<t> queue: 0.002364 ms
+<t> maxSize: 0.009427 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.017761 ms
+<t> sort relevant modules: 0.004089 ms
+<t> find modules to concatenate: 0.059314 ms
+<t> sort concat configurations: 0.000993 ms
+<t> create concatenated modules: 0.266606 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 731 ms (7124990e3d1c2331e978)
+
+PublicPath: auto
+asset main-4aabfaa86ecfef36d9be.js 10.4 KiB {179} [emitted] [immutable] (name: main)
+  sourceMap main-4aabfaa86ecfef36d9be.js.map 9.27 KiB ({179}) [emitted] [dev] (auxiliary name: main)
+asset 695-4dd37417c69a0af66bac.js 455 bytes {695} [emitted] [immutable]
+  sourceMap 695-4dd37417c69a0af66bac.js.map 342 bytes ({695}) [emitted] [dev]
+Entrypoint main 10.4 KiB (9.27 KiB) = main-4aabfaa86ecfef36d9be.js 1 auxiliary asset
+chunk {179} (runtime: main) main-4aabfaa86ecfef36d9be.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./b/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-4dd37417c69a0af66bac.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./b/index.js 2:0-17
+  ./b/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./b/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 702.547997 ms
+<t> finish make hook: 0.011889 ms
+<t> finish compilation: 0.188091 ms
+<t> seal compilation: 9.418363 ms
+<t> afterCompile hook: 0.011172 ms
+<t> emitAssets: 14.418609 ms
+<t> emitRecords: 0.006773 ms
+<t> done hook: 0.02472 ms
+<t> beginIdle: 0.009345 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003451 ms
+<t> finish modules: 0.141804 ms
+<t> report dependency errors and warnings: 0.024927 ms
+<t> optimize dependencies: 0.164486 ms
+<t> create chunks: 0.233044 ms
+<t> compute affected modules with chunk graph: 0.004943 ms
+<t> optimize: 0.971538 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.538587 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.751649 ms
+<t> runtime requirements.modules: 0.056272 ms
+<t> runtime requirements.chunks: 0.061293 ms
+<t> runtime requirements.entries: 0.518218 ms
+<t> runtime requirements: 0.671438 ms
+<t> hashing: initialize hash: 0.008961 ms
+<t> hashing: sort chunks: 0.01871 ms
+<t> hashing: hash runtime modules: 1.032863 ms
+<t> hashing: hash chunks: 0.443336 ms
+<t> hashing: hash digest: 0.024263 ms
+<t> hashing: process full hash modules: 0.001611 ms
+<t> hashing: 1.594484 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.012247 ms
+<t> module assets: 0.012595 ms
+<t> create chunk assets: 0.451191 ms
+<t> process assets: 2.581508 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.026722 ms
+<t> figure out provided exports: 0.026623 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.014456 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.019723 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.014265 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006497 ms
+<t> trace exports usage in graph: 0.097446 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.010943 ms
+<t> visitModules: visiting: 0.049818 ms
+<t> visitModules: calculating available modules: 0.00875 ms
+<t> visitModules: merging available modules: 0.012368 ms
+<t> visitModules: check modules for revisit: 0.002425 ms
+<t> visitModules: prepare: 0.009703 ms
+<t> visitModules: visiting: 0.033048 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.140162 ms
+<t> connectChunkGroups: 0.00997 ms
+<t> cleanup: 0.00298 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018246 ms
+<t> modules: 0.090889 ms
+<t> queue: 0.003851 ms
+<t> maxSize: 0.013487 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.018803 ms
+<t> sort relevant modules: 0.004017 ms
+<t> find modules to concatenate: 0.060692 ms
+<t> sort concat configurations: 0.001055 ms
+<t> create concatenated modules: 0.123272 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 730 ms (7124990e3d1c2331e978)
+
+PublicPath: auto
+asset main-0dae7fdb1672844ee2a7.js 11.6 KiB {179} [emitted] [immutable] (name: main)
+asset 695-828eb5c7418e1b8270bb.js 1.5 KiB {695} [emitted] [immutable]
+Entrypoint main 11.6 KiB = main-0dae7fdb1672844ee2a7.js
+chunk {179} (runtime: main) main-0dae7fdb1672844ee2a7.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./a/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-828eb5c7418e1b8270bb.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./a/index.js 2:0-17
+  ./a/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./a/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 642.956892 ms
+<t> finish make hook: 0.022497 ms
+<t> finish compilation: 0.212385 ms
+<t> seal compilation: 12.988151 ms
+<t> afterCompile hook: 0.016588 ms
+<t> emitAssets: 65.790234 ms
+<t> emitRecords: 0.007206 ms
+<t> done hook: 0.041613 ms
+<t> beginIdle: 0.011894 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003908 ms
+<t> finish modules: 0.150262 ms
+<t> report dependency errors and warnings: 0.034989 ms
+<t> optimize dependencies: 0.280672 ms
+<t> create chunks: 0.381994 ms
+<t> compute affected modules with chunk graph: 0.005407 ms
+<t> optimize: 1.461279 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.255242 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.046285 ms
+<t> runtime requirements.modules: 0.052596 ms
+<t> runtime requirements.chunks: 0.059837 ms
+<t> runtime requirements.entries: 0.685613 ms
+<t> runtime requirements: 0.835941 ms
+<t> hashing: initialize hash: 0.007742 ms
+<t> hashing: sort chunks: 0.016948 ms
+<t> hashing: hash runtime modules: 1.193228 ms
+<t> hashing: hash chunks: 0.726395 ms
+<t> hashing: hash digest: 0.036119 ms
+<t> hashing: process full hash modules: 0.002683 ms
+<t> hashing: 2.072499 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.018112 ms
+<t> module assets: 0.030379 ms
+<t> create chunk assets: 5.4922 ms
+<t> process assets: 0.400818 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.025845 ms
+<t> figure out provided exports: 0.034097 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.014244 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.023611 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.01844 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00792 ms
+<t> trace exports usage in graph: 0.186137 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017186 ms
+<t> visitModules: visiting: 0.087473 ms
+<t> visitModules: calculating available modules: 0.01302 ms
+<t> visitModules: merging available modules: 0.016026 ms
+<t> visitModules: check modules for revisit: 0.004228 ms
+<t> visitModules: prepare: 0.020922 ms
+<t> visitModules: visiting: 0.06257 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.247351 ms
+<t> connectChunkGroups: 0.014717 ms
+<t> cleanup: 0.003506 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.024838 ms
+<t> modules: 0.117734 ms
+<t> queue: 0.003547 ms
+<t> maxSize: 0.014083 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.027241 ms
+<t> sort relevant modules: 0.004766 ms
+<t> find modules to concatenate: 0.087309 ms
+<t> sort concat configurations: 0.001798 ms
+<t> create concatenated modules: 0.271782 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 725 ms (a9fa9cb74fcc3bab7c1f)
+
+PublicPath: auto
+asset main-0dae7fdb1672844ee2a7.js 11.6 KiB {179} [emitted] [immutable] (name: main)
+asset 695-828eb5c7418e1b8270bb.js 1.5 KiB {695} [emitted] [immutable]
+Entrypoint main 11.6 KiB = main-0dae7fdb1672844ee2a7.js
+chunk {179} (runtime: main) main-0dae7fdb1672844ee2a7.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./b/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-828eb5c7418e1b8270bb.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./b/index.js 2:0-17
+  ./b/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./b/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 671.609879 ms
+<t> finish make hook: 0.013958 ms
+<t> finish compilation: 0.246395 ms
+<t> seal compilation: 13.931205 ms
+<t> afterCompile hook: 0.027562 ms
+<t> emitAssets: 34.689262 ms
+<t> emitRecords: 0.009192 ms
+<t> done hook: 0.094729 ms
+<t> beginIdle: 0.014136 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004538 ms
+<t> finish modules: 0.188354 ms
+<t> report dependency errors and warnings: 0.0309 ms
+<t> optimize dependencies: 0.238122 ms
+<t> create chunks: 0.342918 ms
+<t> compute affected modules with chunk graph: 0.005491 ms
+<t> optimize: 4.976053 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.374806 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.322524 ms
+<t> runtime requirements.modules: 0.077942 ms
+<t> runtime requirements.chunks: 0.08932 ms
+<t> runtime requirements.entries: 0.598402 ms
+<t> runtime requirements: 0.816325 ms
+<t> hashing: initialize hash: 0.010871 ms
+<t> hashing: sort chunks: 0.025044 ms
+<t> hashing: hash runtime modules: 1.437513 ms
+<t> hashing: hash chunks: 0.573539 ms
+<t> hashing: hash digest: 0.038361 ms
+<t> hashing: process full hash modules: 0.002729 ms
+<t> hashing: 2.195083 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.017639 ms
+<t> module assets: 0.019937 ms
+<t> create chunk assets: 2.661684 ms
+<t> process assets: 0.352984 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.032342 ms
+<t> figure out provided exports: 0.033755 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017784 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.020942 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.018568 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.009298 ms
+<t> trace exports usage in graph: 0.142961 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.01462 ms
+<t> visitModules: visiting: 0.072942 ms
+<t> visitModules: calculating available modules: 0.012189 ms
+<t> visitModules: merging available modules: 0.015717 ms
+<t> visitModules: check modules for revisit: 0.003724 ms
+<t> visitModules: prepare: 0.015254 ms
+<t> visitModules: visiting: 0.0503 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.204494 ms
+<t> connectChunkGroups: 0.014408 ms
+<t> cleanup: 0.003676 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.02562 ms
+<t> modules: 0.104656 ms
+<t> queue: 0.003447 ms
+<t> maxSize: 0.012392 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.036031 ms
+<t> sort relevant modules: 0.006142 ms
+<t> find modules to concatenate: 0.097175 ms
+<t> sort concat configurations: 0.001731 ms
+<t> create concatenated modules: 0.644371 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 723 ms (a9fa9cb74fcc3bab7c1f)
+
+PublicPath: auto
+asset main-ae1f2717fd5d1cb5ac68.js 11.3 KiB {179} [emitted] [immutable] (name: main)
+asset 695-ace208366ce0ce2556ef.js 1.01 KiB {695} [emitted] [immutable]
+Entrypoint main 11.3 KiB = main-ae1f2717fd5d1cb5ac68.js
+chunk {179} (runtime: main) main-ae1f2717fd5d1cb5ac68.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./a/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-ace208366ce0ce2556ef.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./a/index.js 2:0-17
+  ./a/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/a) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./a/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 685.417357 ms
+<t> finish make hook: 0.017031 ms
+<t> finish compilation: 0.263398 ms
+<t> seal compilation: 8.408729 ms
+<t> afterCompile hook: 0.016855 ms
+<t> emitAssets: 25.169484 ms
+<t> emitRecords: 0.004648 ms
+<t> done hook: 0.02705 ms
+<t> beginIdle: 0.009942 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005 ms
+<t> finish modules: 0.192535 ms
+<t> report dependency errors and warnings: 0.039566 ms
+<t> optimize dependencies: 0.236441 ms
+<t> create chunks: 0.345511 ms
+<t> compute affected modules with chunk graph: 0.004563 ms
+<t> optimize: 1.70102 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.31046 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.198136 ms
+<t> runtime requirements.modules: 0.076614 ms
+<t> runtime requirements.chunks: 0.088023 ms
+<t> runtime requirements.entries: 0.525658 ms
+<t> runtime requirements: 0.745578 ms
+<t> hashing: initialize hash: 0.01095 ms
+<t> hashing: sort chunks: 0.028115 ms
+<t> hashing: hash runtime modules: 1.179913 ms
+<t> hashing: hash chunks: 0.552508 ms
+<t> hashing: hash digest: 0.03493 ms
+<t> hashing: process full hash modules: 0.002887 ms
+<t> hashing: 1.913551 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.018553 ms
+<t> module assets: 0.020681 ms
+<t> create chunk assets: 0.989542 ms
+<t> process assets: 0.333988 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.032487 ms
+<t> figure out provided exports: 0.03976 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.01942 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.016653 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.016391 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.009359 ms
+<t> trace exports usage in graph: 0.141046 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.015181 ms
+<t> visitModules: visiting: 0.072739 ms
+<t> visitModules: calculating available modules: 0.012463 ms
+<t> visitModules: merging available modules: 0.016005 ms
+<t> visitModules: check modules for revisit: 0.00373 ms
+<t> visitModules: prepare: 0.016352 ms
+<t> visitModules: visiting: 0.054752 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.213335 ms
+<t> connectChunkGroups: 0.013457 ms
+<t> cleanup: 0.003511 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.026802 ms
+<t> modules: 0.166083 ms
+<t> queue: 0.005101 ms
+<t> maxSize: 0.015818 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.022547 ms
+<t> sort relevant modules: 0.004781 ms
+<t> find modules to concatenate: 0.068803 ms
+<t> sort concat configurations: 0.001136 ms
+<t> create concatenated modules: 0.383431 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 721 ms (bfecc766b278df6e70ef)
+
+PublicPath: auto
+asset main-ae1f2717fd5d1cb5ac68.js 11.3 KiB {179} [emitted] [immutable] (name: main)
+asset 695-ace208366ce0ce2556ef.js 1.01 KiB {695} [emitted] [immutable]
+Entrypoint main 11.3 KiB = main-ae1f2717fd5d1cb5ac68.js
+chunk {179} (runtime: main) main-ae1f2717fd5d1cb5ac68.js (main) 40 bytes (javascript) 6.3 KiB (runtime) >{695}< [entry] [rendered]
+  > ./index main
+  ./b/index.js [849] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 40 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 198 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {695} (runtime: main) 695-ace208366ce0ce2556ef.js 66 bytes <{179}> [rendered]
+  > ./chunk [849] ./b/index.js 2:0-17
+  ./b/chunk.js + 1 modules [695] (in /Users/yoh/Projects/repos/webpack/test/statsCases/context-independence/b) 66 bytes {695} [depth 1] [built] [code generated]
+    [no exports]
+    import() ./chunk [849] ./b/index.js 2:0-17
+  
+
+LOG from webpack.Compiler
+<t> make hook: 705.346815 ms
+<t> finish make hook: 0.061715 ms
+<t> finish compilation: 0.284828 ms
+<t> seal compilation: 9.405449 ms
+<t> afterCompile hook: 0.018884 ms
+<t> emitAssets: 3.401801 ms
+<t> emitRecords: 0.00321 ms
+<t> done hook: 0.036249 ms
+<t> beginIdle: 0.007632 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005677 ms
+<t> finish modules: 0.216306 ms
+<t> report dependency errors and warnings: 0.034431 ms
+<t> optimize dependencies: 0.206234 ms
+<t> create chunks: 0.310337 ms
+<t> compute affected modules with chunk graph: 0.005809 ms
+<t> optimize: 1.240115 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.378664 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 1.662017 ms
+<t> runtime requirements.modules: 0.074821 ms
+<t> runtime requirements.chunks: 0.090665 ms
+<t> runtime requirements.entries: 0.563897 ms
+<t> runtime requirements: 0.782097 ms
+<t> hashing: initialize hash: 0.010498 ms
+<t> hashing: sort chunks: 0.026674 ms
+<t> hashing: hash runtime modules: 1.7824 ms
+<t> hashing: hash chunks: 0.643674 ms
+<t> hashing: hash digest: 0.036027 ms
+<t> hashing: process full hash modules: 0.002728 ms
+<t> hashing: 2.596679 ms
+    100% code generated (8 generated, 0 from cache)
+<t> record hash: 0.019506 ms
+<t> module assets: 0.021424 ms
+<t> create chunk assets: 1.234967 ms
+<t> process assets: 0.332858 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.03978 ms
+<t> figure out provided exports: 0.040905 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.021286 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.029842 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.018932 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.008838 ms
+<t> trace exports usage in graph: 0.112394 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.011177 ms
+<t> visitModules: visiting: 0.054733 ms
+<t> visitModules: calculating available modules: 0.00938 ms
+<t> visitModules: merging available modules: 0.011802 ms
+<t> visitModules: check modules for revisit: 0.00247 ms
+<t> visitModules: prepare: 0.01692 ms
+<t> visitModules: visiting: 0.092012 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.208359 ms
+<t> connectChunkGroups: 0.010868 ms
+<t> cleanup: 0.002715 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018747 ms
+<t> modules: 0.074811 ms
+<t> queue: 0.002087 ms
+<t> maxSize: 0.010249 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.018085 ms
+<t> sort relevant modules: 0.003509 ms
+<t> find modules to concatenate: 0.06146 ms
+<t> sort concat configurations: 0.000975 ms
+<t> create concatenated modules: 0.281792 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 720 ms (bfecc766b278df6e70ef)

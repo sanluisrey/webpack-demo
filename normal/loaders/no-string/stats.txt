@@ -1,0 +1,223 @@
+PublicPath: (none)
+asset bundle.js 6.07 KiB {0} [emitted] (name: main)
+Entrypoint main 6.07 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 372 bytes [entry] [rendered]
+  > ./loaders/no-string/ main
+  ./loaders/no-string/index.js [0] 294 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+    entry ./loaders/no-string/ main
+  ./loaders/no-string/loader.js!./loaders/no-string/file.js [1] 39 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+    [used exports unknown]
+    cjs require ./loader.js!./file.js [0] ./loaders/no-string/index.js 2:14-46
+  ./loaders/no-string/loader.js!./loaders/no-string/pitch-loader.js!./loaders/no-string/file.js [2] 39 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+    [used exports unknown]
+    cjs require ./loader.js!./pitch-loader.js!./file.js [0] ./loaders/no-string/index.js 5:14-64
+./loaders/no-string/index.js [0] 294 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+  entry ./loaders/no-string/ main
+./loaders/no-string/loader.js!./loaders/no-string/file.js [1] 39 bytes {0} [depth 1] [built] [code generated] [1 error]
+  [used exports unknown]
+  cjs require ./loader.js!./file.js [0] ./loaders/no-string/index.js 2:14-46
+./loaders/no-string/loader.js!./loaders/no-string/pitch-loader.js!./loaders/no-string/file.js [2] 39 bytes {0} [depth 1] [built] [code generated] [1 error]
+  [used exports unknown]
+  cjs require ./loader.js!./pitch-loader.js!./file.js [0] ./loaders/no-string/index.js 5:14-64
+  
+
+LOG from webpack.Compiler
+<t> make hook: 10.855003 ms
+<t> finish make hook: 0.009877 ms
+<t> finish compilation: 0.086175 ms
+<t> seal compilation: 1.364953 ms
+<t> afterCompile hook: 0.005148 ms
+<t> emitAssets: 0.871974 ms
+<t> emitRecords: 0.001663 ms
+<t> done hook: 0.007342 ms
+<t> beginIdle: 0.003989 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.002578 ms
+<t> finish modules: 0.056468 ms
+<t> report dependency errors and warnings: 0.01333 ms
+<t> optimize dependencies: 0.096962 ms
+<t> create chunks: 0.135648 ms
+<t> compute affected modules with chunk graph: 0.001651 ms
+<t> optimize: 0.317115 ms
+    3 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.083642 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.089993 ms
+<t> runtime requirements.modules: 0.014312 ms
+<t> runtime requirements.chunks: 0.022068 ms
+<t> runtime requirements.entries: 0.03368 ms
+<t> runtime requirements: 0.084734 ms
+<t> hashing: initialize hash: 0.001548 ms
+<t> hashing: hash errors: 0.004277 ms
+<t> hashing: sort chunks: 0.008956 ms
+<t> hashing: hash runtime modules: 0.003706 ms
+<t> hashing: hash chunks: 0.144688 ms
+<t> hashing: hash digest: 0.012402 ms
+<t> hashing: process full hash modules: 0.00147 ms
+<t> hashing: 0.199889 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.003399 ms
+<t> module assets: 0.006369 ms
+<t> create chunk assets: 0.237559 ms
+<t> process assets: 0.023405 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01527 ms
+<t> figure out provided exports: 0.001389 ms
+    0% of exports of modules have been determined (3 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001494 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002163 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00435 ms
+<t> trace exports usage in graph: 0.059065 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.006113 ms
+<t> visitModules: visiting: 0.034351 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.053872 ms
+<t> connectChunkGroups: 0.001229 ms
+<t> cleanup: 0.00137 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011075 ms
+<t> modules: 0.045551 ms
+<t> queue: 0.001571 ms
+<t> maxSize: 0.003869 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./loaders/no-string/file.js (./loaders/no-string/loader.js!./loaders/no-string/file.js)
+Module build failed: Error: Final loader (./loaders/no-string/loader.js) didn't return a Buffer or String
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:767:17)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+ModuleBuildError: Module build failed: Error: Final loader (./loaders/no-string/loader.js) didn't return a Buffer or String
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:767:17)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:776:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+ @ ./loaders/no-string/index.js 2:14-46
+
+ERROR in ./loaders/no-string/file.js (./loaders/no-string/loader.js!./loaders/no-string/pitch-loader.js!./loaders/no-string/file.js)
+Module build failed: Error: Final loader (./loaders/no-string/loader.js) didn't return a Buffer or String
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:767:17)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+ModuleBuildError: Module build failed: Error: Final loader (./loaders/no-string/loader.js) didn't return a Buffer or String
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:767:17)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:776:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:34:4)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+ @ ./loaders/no-string/index.js 5:14-64
+
+2021-12-05 17:45:27: webpack 5.64.4 compiled with 2 errors in 14 ms (00c6043b390c93876f70)

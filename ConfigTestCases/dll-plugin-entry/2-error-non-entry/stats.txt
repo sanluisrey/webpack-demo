@@ -1,0 +1,129 @@
+PublicPath: (none)
+assets by status 1.34 KiB [cached] 1 asset
+Entrypoint main = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 21 bytes [entry] [rendered]
+  > ./index.js main
+  ./index.js 21 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.960142 ms
+<t> finish make hook: 0.015521 ms
+<t> finish compilation: 0.128888 ms
+<t> seal compilation: 2.359351 ms
+<t> afterCompile hook: 0.019993 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003774 ms
+<t> finish modules: 0.099762 ms
+<t> report dependency errors and warnings: 0.009426 ms
+<t> optimize dependencies: 0.102038 ms
+<t> create chunks: 0.157797 ms
+<t> compute affected modules with chunk graph: 0.004018 ms
+<t> optimize: 0.713958 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.088533 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.106333 ms
+<t> runtime requirements.modules: 0.018762 ms
+<t> runtime requirements.chunks: 0.039099 ms
+<t> runtime requirements.entries: 0.060814 ms
+<t> runtime requirements: 0.137785 ms
+<t> hashing: initialize hash: 0.003864 ms
+<t> hashing: hash errors: 0.006988 ms
+<t> hashing: sort chunks: 0.016114 ms
+<t> hashing: hash runtime modules: 0.005368 ms
+<t> hashing: hash chunks: 0.258934 ms
+<t> hashing: hash digest: 0.014489 ms
+<t> hashing: process full hash modules: 0.001823 ms
+<t> hashing: 0.344674 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> module assets: 0.010325 ms
+<t> create chunk assets: 0.28692 ms
+<t> process assets: 0.184701 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018283 ms
+<t> figure out provided exports: 0.001946 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002505 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.007551 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004351 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004871 ms
+<t> trace exports usage in graph: 0.046068 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.004484 ms
+<t> visitModules: visiting: 0.033306 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.063796 ms
+<t> connectChunkGroups: 0.002937 ms
+<t> cleanup: 0.002388 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.024361 ms
+<t> modules: 0.088914 ms
+<t> queue: 0.003406 ms
+<t> maxSize: 0.008193 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.009429 ms
+<t> sort relevant modules: 0.001724 ms
+<t> find modules to concatenate: 0.002983 ms
+<t> sort concat configurations: 0.001225 ms
+<t> create concatenated modules: 0.005469 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 1 hashes 1 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./index.js 1:0-19
+Module not found: Error: Can't resolve 'dll/dep2' in '/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/2-error-non-entry'
+resolve 'dll/dep2' in '/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/2-error-non-entry'
+  Parsed request is a module
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/configCases/dll-plugin-entry/2-error-non-entry)
+    resolve as module
+      /Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/2-error-non-entry/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/configCases/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_modules doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/node_modules
+        /Users/yoh/Projects/repos/webpack/node_modules/dll doesn't exist
+      /Users/yoh/Projects/repos/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/node_modules doesn't exist or is not a directory
+      /Users/yoh/node_modules doesn't exist or is not a directory
+      /Users/node_modules doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+ModuleNotFoundError: Module not found: Error: Can't resolve 'dll/dep2' in '/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/2-error-non-entry'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled with 1 error in 19 ms (70e2b9df0aee7df5ab27)

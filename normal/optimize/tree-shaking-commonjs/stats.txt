@@ -1,0 +1,168 @@
+PublicPath: (none)
+asset bundle.js 6.42 KiB {0} [emitted] (name: main)
+Entrypoint main 6.42 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 249 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./optimize/tree-shaking-commonjs/ main
+  cacheable modules 249 bytes
+    ./optimize/tree-shaking-commonjs/a.js [3] 25 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: test]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-25
+      harmony side effect evaluation ./a [2] ./optimize/tree-shaking-commonjs/index.js 1:0-27
+      harmony import specifier ./a [2] ./optimize/tree-shaking-commonjs/index.js 4:8-12
+    ./optimize/tree-shaking-commonjs/b.js [0] 32 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: __esModule, test]
+      [only some exports used: test]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-32
+      harmony side effect evaluation ./b [3] ./optimize/tree-shaking-commonjs/a.js 1:0-25
+      harmony export imported specifier ./b [3] ./optimize/tree-shaking-commonjs/a.js 1:0-25
+    ./optimize/tree-shaking-commonjs/c.js [4] 20 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: __esModule, test]
+      [only some exports used: test]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-20
+      cjs export require ./c [0] ./optimize/tree-shaking-commonjs/b.js 1:0-31
+    ./optimize/tree-shaking-commonjs/d.js [1] 32 bytes {0} [depth 4] [dependent] [built] [code generated]
+      [exports: __esModule, test]
+      [only some exports used: test]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-32
+      harmony side effect evaluation ./d [4] ./optimize/tree-shaking-commonjs/c.js 1:0-20
+      harmony export imported specifier ./d [4] ./optimize/tree-shaking-commonjs/c.js 1:0-20
+    ./optimize/tree-shaking-commonjs/e.js [5] 22 bytes {0} [depth 5] [dependent] [built] [code generated]
+      [exports: test]
+      [all exports used]
+      cjs export require ./e [1] ./optimize/tree-shaking-commonjs/d.js 1:0-31
+    ./optimize/tree-shaking-commonjs/index.js [2] 118 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      entry ./optimize/tree-shaking-commonjs/ main
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 249 bytes
+  ./optimize/tree-shaking-commonjs/index.js [2] 118 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    entry ./optimize/tree-shaking-commonjs/ main
+  ./optimize/tree-shaking-commonjs/a.js [3] 25 bytes {0} [depth 1] [built] [code generated]
+    [exports: test]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-25
+    harmony side effect evaluation ./a [2] ./optimize/tree-shaking-commonjs/index.js 1:0-27
+    harmony import specifier ./a [2] ./optimize/tree-shaking-commonjs/index.js 4:8-12
+  ./optimize/tree-shaking-commonjs/b.js [0] 32 bytes {0} [depth 2] [built] [code generated]
+    [exports: __esModule, test]
+    [only some exports used: test]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    harmony side effect evaluation ./b [3] ./optimize/tree-shaking-commonjs/a.js 1:0-25
+    harmony export imported specifier ./b [3] ./optimize/tree-shaking-commonjs/a.js 1:0-25
+  ./optimize/tree-shaking-commonjs/c.js [4] 20 bytes {0} [depth 3] [built] [code generated]
+    [exports: __esModule, test]
+    [only some exports used: test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-20
+    cjs export require ./c [0] ./optimize/tree-shaking-commonjs/b.js 1:0-31
+  ./optimize/tree-shaking-commonjs/d.js [1] 32 bytes {0} [depth 4] [built] [code generated]
+    [exports: __esModule, test]
+    [only some exports used: test]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    harmony side effect evaluation ./d [4] ./optimize/tree-shaking-commonjs/c.js 1:0-20
+    harmony export imported specifier ./d [4] ./optimize/tree-shaking-commonjs/c.js 1:0-20
+  ./optimize/tree-shaking-commonjs/e.js [5] 22 bytes {0} [depth 5] [built] [code generated]
+    [exports: test]
+    [all exports used]
+    cjs export require ./e [1] ./optimize/tree-shaking-commonjs/d.js 1:0-31
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.007609 ms
+<t> finish make hook: 0.011707 ms
+<t> finish compilation: 0.459267 ms
+<t> seal compilation: 3.231412 ms
+<t> afterCompile hook: 0.011521 ms
+<t> emitAssets: 1.65363 ms
+<t> emitRecords: 0.003344 ms
+<t> done hook: 0.014606 ms
+<t> beginIdle: 0.021032 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004448 ms
+<t> finish modules: 0.402557 ms
+<t> report dependency errors and warnings: 0.039705 ms
+<t> optimize dependencies: 0.254344 ms
+<t> create chunks: 0.187441 ms
+<t> compute affected modules with chunk graph: 0.002068 ms
+<t> optimize: 0.538188 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.193993 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.390401 ms
+<t> runtime requirements.modules: 0.038712 ms
+<t> runtime requirements.chunks: 0.039219 ms
+<t> runtime requirements.entries: 0.119568 ms
+<t> runtime requirements: 0.216491 ms
+<t> hashing: initialize hash: 0.002136 ms
+<t> hashing: sort chunks: 0.01285 ms
+<t> hashing: hash runtime modules: 0.164987 ms
+<t> hashing: hash chunks: 0.250929 ms
+<t> hashing: hash digest: 0.012235 ms
+<t> hashing: process full hash modules: 0.001691 ms
+<t> hashing: 0.478608 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.007868 ms
+<t> module assets: 0.012993 ms
+<t> create chunk assets: 0.717283 ms
+<t> process assets: 0.058012 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023805 ms
+<t> figure out provided exports: 0.323278 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 7 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010684 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.01609 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006335 ms
+<t> trace exports usage in graph: 0.195844 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.060174 ms
+<t> visitModules: visiting: 0.105267 ms
+    12 queue items processed (6 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.125647 ms
+<t> connectChunkGroups: 0.001494 ms
+<t> cleanup: 0.00149 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014508 ms
+<t> modules: 0.070895 ms
+<t> queue: 0.001716 ms
+<t> maxSize: 0.004345 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:29: webpack 5.64.4 compiled successfully in 21 ms (c4fea458edffcf2ddbc7)

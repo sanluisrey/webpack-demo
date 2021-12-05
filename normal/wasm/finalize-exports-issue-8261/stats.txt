@@ -1,0 +1,177 @@
+PublicPath: (none)
+asset bundle.js 10.5 KiB {1} [emitted] (name: main)
+asset 0.bundle.js 2.16 KiB {0} [emitted]
+asset 646392bddc5d93e18a59.module.wasm 31 bytes ({0}) [emitted] [immutable]
+Entrypoint main 10.5 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 80 bytes (javascript) 31 bytes (webassembly) <{1}> [rendered]
+  > side-effect-free [0] ./wasm/finalize-exports-issue-8261/index.js 2:21-47
+  ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js [1] 30 bytes {0} [depth 1] [built] [code generated]
+    [exports: a]
+    import() side-effect-free [0] ./wasm/finalize-exports-issue-8261/index.js 2:21-47
+  ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/module.wat [2] 50 bytes (javascript) 31 bytes (webassembly) {0} [depth 2] [dependent] [built] [code generated]
+    [exports: a]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./module.wat [1] ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js 1:0-29
+    harmony export imported specifier ./module.wat [1] ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js 1:0-29
+chunk {1} (runtime: main) bundle.js (main) 133 bytes (javascript) 5.79 KiB (runtime) >{0}< [entry] [rendered]
+  > ./wasm/finalize-exports-issue-8261/ main
+  ./wasm/finalize-exports-issue-8261/index.js [0] 133 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./wasm/finalize-exports-issue-8261/ main
+  webpack/runtime/async module 2.16 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+runtime modules 5.79 KiB
+  webpack/runtime/async module 2.16 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 690 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 213 bytes (javascript) 31 bytes (webassembly)
+  ./wasm/finalize-exports-issue-8261/index.js [0] 133 bytes {1} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./wasm/finalize-exports-issue-8261/ main
+  ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js [1] 30 bytes {0} [depth 1] [built] [code generated]
+    [exports: a]
+    import() side-effect-free [0] ./wasm/finalize-exports-issue-8261/index.js 2:21-47
+  ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/module.wat [2] 50 bytes (javascript) 31 bytes (webassembly) {0} [depth 2] [built] [code generated]
+    [exports: a]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./module.wat [1] ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js 1:0-29
+    harmony export imported specifier ./module.wat [1] ./wasm/finalize-exports-issue-8261/node_modules/side-effect-free/index.js 1:0-29
+  
+
+LOG from webpack.Compiler
+<t> make hook: 20.696575 ms
+<t> finish make hook: 0.007956 ms
+<t> finish compilation: 0.377562 ms
+<t> seal compilation: 2.835341 ms
+<t> afterCompile hook: 0.005728 ms
+<t> emitAssets: 0.9093 ms
+<t> emitRecords: 0.002031 ms
+<t> done hook: 0.008165 ms
+<t> beginIdle: 0.003811 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00228 ms
+<t> finish modules: 0.329081 ms
+<t> report dependency errors and warnings: 0.01334 ms
+<t> optimize dependencies: 0.119759 ms
+<t> create chunks: 0.160007 ms
+<t> compute affected modules with chunk graph: 0.001401 ms
+<t> optimize: 0.392172 ms
+    3 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.101224 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.191582 ms
+<t> runtime requirements.modules: 0.044409 ms
+<t> runtime requirements.chunks: 0.051086 ms
+<t> runtime requirements.entries: 0.280028 ms
+<t> runtime requirements: 0.391721 ms
+<t> hashing: initialize hash: 0.001777 ms
+<t> hashing: sort chunks: 0.011319 ms
+<t> hashing: hash runtime modules: 0.455945 ms
+<t> hashing: hash chunks: 0.262784 ms
+<t> hashing: hash digest: 0.039141 ms
+<t> hashing: process full hash modules: 0.000876 ms
+<t> hashing: 0.799858 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.006245 ms
+<t> module assets: 0.009202 ms
+<t> create chunk assets: 0.420729 ms
+<t> process assets: 0.026846 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.014812 ms
+<t> figure out provided exports: 0.071611 ms
+    67% of exports of modules have been determined (1 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.006021 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.006632 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.002033 ms
+<t> trace exports usage in graph: 0.085039 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.003784 ms
+<t> visitModules: visiting: 0.032464 ms
+<t> visitModules: calculating available modules: 0.00699 ms
+<t> visitModules: merging available modules: 0.003537 ms
+<t> visitModules: check modules for revisit: 0.001917 ms
+<t> visitModules: prepare: 0.01648 ms
+<t> visitModules: visiting: 0.032155 ms
+    7 queue items processed (4 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.102557 ms
+<t> connectChunkGroups: 0.006146 ms
+<t> cleanup: 0.001257 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011165 ms
+<t> modules: 0.102481 ms
+<t> queue: 0.015582 ms
+<t> maxSize: 0.005776 ms
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:43: webpack 5.64.4 compiled successfully in 25 ms (c8d096b681c15c47ab0f)

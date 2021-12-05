@@ -1,0 +1,146 @@
+PublicPath: (none)
+asset bundle0.js 187 bytes {179} [emitted] (name: main)
+Entrypoint main 187 bytes = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 32 bytes [entry] [rendered]
+  > ./index.js main
+  ./index.js [553] 32 bytes {179} [depth 0] [built] [code generated] [1 warning]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-31
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.034292 ms
+<t> finish make hook: 0.00924 ms
+<t> finish compilation: 0.132283 ms
+<t> seal compilation: 1.728104 ms
+<t> afterCompile hook: 0.00901 ms
+<t> emitAssets: 0.813239 ms
+<t> emitRecords: 0.002373 ms
+<t> done hook: 0.009248 ms
+<t> beginIdle: 0.005726 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004203 ms
+<t> finish modules: 0.097596 ms
+<t> report dependency errors and warnings: 0.015594 ms
+<t> optimize dependencies: 0.089845 ms
+<t> create chunks: 0.132049 ms
+<t> compute affected modules with chunk graph: 0.002248 ms
+<t> optimize: 0.528637 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.066997 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.058153 ms
+<t> runtime requirements.modules: 0.007583 ms
+<t> runtime requirements.chunks: 0.023857 ms
+<t> runtime requirements.entries: 0.04344 ms
+<t> runtime requirements: 0.091468 ms
+<t> hashing: initialize hash: 0.002995 ms
+<t> hashing: hash warnings: 0.007127 ms
+<t> hashing: sort chunks: 0.014417 ms
+<t> hashing: hash runtime modules: 0.00431 ms
+<t> hashing: hash chunks: 0.1604 ms
+<t> hashing: hash digest: 0.014016 ms
+<t> hashing: process full hash modules: 0.00145 ms
+<t> hashing: 0.252313 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005015 ms
+<t> module assets: 0.008278 ms
+<t> create chunk assets: 0.247925 ms
+<t> process assets: 0.082902 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018273 ms
+<t> figure out provided exports: 0.001959 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003461 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.006066 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.005485 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004202 ms
+<t> trace exports usage in graph: 0.040501 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.00334 ms
+<t> visitModules: visiting: 0.026612 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.052688 ms
+<t> connectChunkGroups: 0.002386 ms
+<t> cleanup: 0.001726 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018321 ms
+<t> modules: 0.063386 ms
+<t> queue: 0.002776 ms
+<t> maxSize: 0.006364 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.008802 ms
+<t> sort relevant modules: 0.000867 ms
+<t> find modules to concatenate: 0.001906 ms
+<t> sort concat configurations: 0.000873 ms
+<t> create concatenated modules: 0.003821 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 23 timestamps 19 hashes 19 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 6 timestamp hash combinations
+    Directory timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Missing items snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js
+Invalid dependencies have been reported by plugins or loaders for this module. All reported dependencies need to be absolute paths.
+Invalid dependencies may lead to broken watching and caching.
+As best effort we try to convert all invalid values to absolute paths and converting globs into context dependencies, but this is deprecated behavior.
+Loaders: Pass absolute paths to this.addDependency (existing files), this.addMissingDependency (not existing files), and this.addContextDependency (directories).
+Plugins: Pass absolute paths to fileDependencies (existing files), missingDependencies (not existing files), and contextDependencies (directories).
+Globs: They are not supported. Pass absolute path to the directory as context dependencies.
+The following invalid values have been reported:
+ * "."
+ * "../**/dir/*.js"
+ * "../**/file.js"
+ * and more ...
+ * "./missing1.js"
+ * "loader.js"
+ * "missing2.js"
+ * "missing3.js"
+ * "missing4.js"
+InvalidDependenciesModuleWarning: Invalid dependencies have been reported by plugins or loaders for this module. All reported dependencies need to be absolute paths.
+Invalid dependencies may lead to broken watching and caching.
+As best effort we try to convert all invalid values to absolute paths and converting globs into context dependencies, but this is deprecated behavior.
+Loaders: Pass absolute paths to this.addDependency (existing files), this.addMissingDependency (not existing files), and this.addContextDependency (directories).
+Plugins: Pass absolute paths to fileDependencies (existing files), missingDependencies (not existing files), and contextDependencies (directories).
+Globs: They are not supported. Pass absolute path to the directory as context dependencies.
+The following invalid values have been reported:
+ * "."
+ * "../**/dir/*.js"
+ * "../**/file.js"
+ * and more ...
+    at handleBuildDone (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:1035:7)
+    at handleParseResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:984:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:1091:4
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:793:11)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:239:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:254:3
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:143:11)
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled with 1 warning in 20 ms (07b49fdeb3e7902313bc)

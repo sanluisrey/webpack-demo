@@ -1,0 +1,271 @@
+PublicPath: (none)
+asset main.js 16.2 KiB {179} [emitted] (name: main)
+asset container.js 14.9 KiB {413} [emitted] (name: container)
+asset container2.js 14.9 KiB {459} [emitted] (name: container2)
+asset 847.js 1020 bytes {847} [emitted]
+asset 996.js 1010 bytes {996} [emitted]
+Entrypoint main 16.2 KiB = main.js
+Entrypoint container 14.9 KiB = container.js
+Entrypoint container2 14.9 KiB = container2.js
+chunk {179} (runtime: main) main.js (main) 520 bytes (javascript) 9.26 KiB (runtime) >{380}< >{953}< [entry] [rendered]
+  > ./index.js main
+  runtime modules 9.26 KiB
+    webpack/runtime/create fake namespace object 1.11 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.78 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.68 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.68 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.87 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 520 bytes [built]
+    ./index.js [10] 436 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-6:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js main
+    external "Promise.resolve().then(() => require('./container.js'))" [668] 42 bytes {179} {459} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      remote to external webpack/container/reference/container [953] remote container/a
+    external "Promise.resolve().then(() => require('./container2.js'))" [983] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      remote to external webpack/container/reference/container2 [380] remote container2/b
+chunk {380} (runtime: container, main) 6 bytes (remote) 6 bytes (share-init) <{179}> <{413}> ={847}= reused as split chunk (cache group: default)
+  > container2/b [10] ./index.js 9:41-63
+  > ./a [48] container entry ./a
+  remote container2/b [380] 6 bytes (remote) 6 bytes (share-init) {380} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation container2/b [847] ./a.js 2:0-53
+    harmony export imported specifier container2/b [847] ./a.js 2:0-53
+    harmony export imported specifier container2/b [847] ./a.js 2:0-53
+    import() container2/b [10] ./index.js 9:41-63
+chunk {413} (runtime: container) container.js (container) 84 bytes (javascript) 8.27 KiB (runtime) >{380}< >{847}< [entry] [rendered]
+  > container
+  runtime modules 8.27 KiB
+    webpack/runtime/compat get default export 267 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.78 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.62 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.62 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.85 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 84 bytes [built]
+    container entry [48] 42 bytes {413} [depth 0] [built] [code generated]
+      [exports: get, init]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+      container entry container
+      used as library export
+    external "Promise.resolve().then(() => require('./container2.js'))" [983] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      remote to external webpack/container/reference/container2 [380] remote container2/b
+chunk {459} (runtime: container2) container2.js (container2) 84 bytes (javascript) 8.27 KiB (runtime) >{953}< >{996}< [entry] [rendered]
+  > container2
+  runtime modules 8.27 KiB
+    webpack/runtime/compat get default export 267 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.78 KiB {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.62 KiB {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.62 KiB {459} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.85 KiB {459} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 84 bytes [built]
+    container entry [574] 42 bytes {459} [depth 0] [built] [code generated]
+      [exports: get, init]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+      container entry container2
+      used as library export
+    external "Promise.resolve().then(() => require('./container.js'))" [668] 42 bytes {179} {459} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: Module is async
+      remote to external webpack/container/reference/container [953] remote container/a
+chunk {847} (runtime: container) 847.js 74 bytes <{413}> ={380}= [rendered]
+  > ./a [48] container entry ./a
+  ./a.js [847] 74 bytes {847} [depth 1] [built] [code generated]
+    [exports: b, ba, default]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-53
+    ModuleConcatenation bailout: Cannot concat with remote container2/b: Module Concatenation is not implemented for RemoteModule
+    container exposed ./a [48] container entry ./a[0]
+chunk {953} (runtime: container2, main) 6 bytes (remote) 6 bytes (share-init) <{179}> <{459}> ={996}= reused as split chunk (cache group: default)
+  > container/a [10] ./index.js 2:41-62
+  > ./b [574] container entry ./b
+  remote container/a [953] 6 bytes (remote) 6 bytes (share-init) {953} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation container/a [996] ./b.js 2:0-52
+    harmony export imported specifier container/a [996] ./b.js 2:0-52
+    harmony export imported specifier container/a [996] ./b.js 2:0-52
+    import() container/a [10] ./index.js 2:41-62
+chunk {996} (runtime: container2) 996.js 73 bytes <{459}> ={953}= [rendered]
+  > ./b [574] container entry ./b
+  ./b.js [996] 73 bytes {996} [depth 1] [built] [code generated]
+    [exports: a, ab, default]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-52
+    ModuleConcatenation bailout: Cannot concat with remote container/a: Module Concatenation is not implemented for RemoteModule
+    container exposed ./b [574] container entry ./b[0]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.950625 ms
+<t> finish make hook: 0.01131 ms
+<t> finish compilation: 0.44103 ms
+<t> seal compilation: 12.151202 ms
+<t> afterCompile hook: 0.012159 ms
+<t> emitAssets: 2.043704 ms
+<t> emitRecords: 0.002038 ms
+<t> done hook: 0.011401 ms
+<t> beginIdle: 0.007829 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003244 ms
+<t> finish modules: 0.375617 ms
+<t> report dependency errors and warnings: 0.048592 ms
+<t> optimize dependencies: 0.366197 ms
+<t> create chunks: 0.450289 ms
+<t> compute affected modules with chunk graph: 0.004689 ms
+<t> optimize: 1.94501 ms
+    11 modules hashed, 0 from cache (1.22 variants per module in average)
+<t> module hashing: 0.546794 ms
+    100% code generated (9 generated, 0 from cache)
+<t> code generation: 1.155591 ms
+<t> runtime requirements.modules: 0.088083 ms
+<t> runtime requirements.chunks: 0.107816 ms
+<t> runtime requirements.entries: 1.066255 ms
+<t> runtime requirements: 1.293813 ms
+<t> hashing: initialize hash: 0.006231 ms
+<t> hashing: sort chunks: 0.031102 ms
+<t> hashing: hash runtime modules: 3.017988 ms
+<t> hashing: hash chunks: 0.80918 ms
+<t> hashing: hash digest: 0.023232 ms
+<t> hashing: process full hash modules: 0.001298 ms
+<t> hashing: 3.953879 ms
+    100% code generated (30 generated, 0 from cache)
+<t> record hash: 0.012086 ms
+<t> module assets: 0.024573 ms
+<t> create chunk assets: 1.230275 ms
+<t> process assets: 0.537019 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.030835 ms
+<t> figure out provided exports: 0.18892 ms
+    67% of exports of modules have been determined (3 no declared exports, 2 not cached, 4 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.008753 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.0395 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.020227 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.01132 ms
+<t> trace exports usage in graph: 0.281571 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.023294 ms
+<t> visitModules: visiting: 0.10363 ms
+<t> visitModules: calculating available modules: 0.014079 ms
+<t> visitModules: merging available modules: 0.005776 ms
+<t> visitModules: check modules for revisit: 0.006599 ms
+<t> visitModules: prepare: 0.070255 ms
+<t> visitModules: visiting: 0.147279 ms
+    30 queue items processed (17 blocks)
+    4 chunk groups connected
+    4 chunk groups processed for merging (4 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.313814 ms
+<t> connectChunkGroups: 0.016849 ms
+<t> cleanup: 0.00285 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.02307 ms
+<t> modules: 0.23234 ms
+<t> queue: 0.323396 ms
+<t> maxSize: 0.014647 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.056504 ms
+<t> sort relevant modules: 0.002887 ms
+<t> find modules to concatenate: 0.109409 ms
+<t> sort concat configurations: 0.000786 ms
+<t> create concatenated modules: 0.004063 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled successfully in 30 ms (061c6ccc876b2cf1d0da)

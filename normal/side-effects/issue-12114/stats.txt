@@ -1,0 +1,184 @@
+PublicPath: (none)
+asset bundle.js 6.82 KiB {0} [emitted] (name: main)
+Entrypoint main 6.82 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 441 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./side-effects/issue-12114/ main
+  cacheable modules 441 bytes
+    modules by path ./side-effects/issue-12114/*.js 303 bytes
+      ./side-effects/issue-12114/a.js [2] 84 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (ExpressionStatement) with side effects in source code at 3:0-29
+        cjs require ./a [1] ./side-effects/issue-12114/index.js 1:10-24
+      ./side-effects/issue-12114/b.js [3] 78 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (ExpressionStatement) with side effects in source code at 3:0-29
+        cjs require ./b [1] ./side-effects/issue-12114/index.js 2:10-24
+      ./side-effects/issue-12114/index.js [1] 141 bytes {0} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (VariableDeclaration) with side effects in source code at 1:0-25
+        entry ./side-effects/issue-12114/ main
+    modules by path ./side-effects/issue-12114/node_modules/ 138 bytes
+      ./side-effects/issue-12114/node_modules/base/index.js [0] 109 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [exports: f]
+        [all exports used]
+        Statement (ExpressionStatement) with side effects in source code at 3:0-37
+        from origin ./side-effects/issue-12114/b.js
+          [inactive] harmony side effect evaluation base [3] ./side-effects/issue-12114/b.js 1:0-25
+          harmony import specifier base [3] ./side-effects/issue-12114/b.js 3:26-27
+          harmony import specifier base [3] ./side-effects/issue-12114/b.js 5:15-16
+        from origin ./side-effects/issue-12114/a.js
+          harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 3:26-27 (skipped side-effect-free modules)
+          harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 5:15-16 (skipped side-effect-free modules)
+        [inactive] from origin ./side-effects/issue-12114/reexport.js
+          [inactive] harmony side effect evaluation base ./side-effects/issue-12114/reexport.js 1:0-25
+          [inactive] harmony export imported specifier base ./side-effects/issue-12114/reexport.js 1:0-25
+      ./side-effects/issue-12114/node_modules/tslib.js [4] 29 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [exports: __extends]
+        [all exports used]
+        [inactive] harmony side effect evaluation tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 1:0-34
+        harmony import specifier tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 3:26-35
+        harmony import specifier tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 5:23-32
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 467 bytes
+  modules by path ./side-effects/issue-12114/*.js 329 bytes
+    ./side-effects/issue-12114/index.js [1] 141 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 1:0-25
+      entry ./side-effects/issue-12114/ main
+    ./side-effects/issue-12114/a.js [2] 84 bytes {0} [depth 1] [built] [code generated]
+      [exports: default]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-29
+      cjs require ./a [1] ./side-effects/issue-12114/index.js 1:10-24
+    ./side-effects/issue-12114/b.js [3] 78 bytes {0} [depth 1] [built] [code generated]
+      [exports: default]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-29
+      cjs require ./b [1] ./side-effects/issue-12114/index.js 2:10-24
+    ./side-effects/issue-12114/reexport.js 26 bytes [depth 2] [orphan] [built]
+      [exports: f]
+      [module unused]
+      [inactive] harmony side effect evaluation ./reexport [2] ./side-effects/issue-12114/a.js 1:0-31
+      [inactive] harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 3:26-27
+      [inactive] harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 5:15-16
+  modules by path ./side-effects/issue-12114/node_modules/ 138 bytes
+    ./side-effects/issue-12114/node_modules/base/index.js [0] 109 bytes {0} [depth 2] [built] [code generated]
+      [exports: f]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-37
+      from origin ./side-effects/issue-12114/b.js
+        [inactive] harmony side effect evaluation base [3] ./side-effects/issue-12114/b.js 1:0-25
+        harmony import specifier base [3] ./side-effects/issue-12114/b.js 3:26-27
+        harmony import specifier base [3] ./side-effects/issue-12114/b.js 5:15-16
+      from origin ./side-effects/issue-12114/a.js
+        harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 3:26-27 (skipped side-effect-free modules)
+        harmony import specifier ./reexport [2] ./side-effects/issue-12114/a.js 5:15-16 (skipped side-effect-free modules)
+      [inactive] from origin ./side-effects/issue-12114/reexport.js
+        [inactive] harmony side effect evaluation base ./side-effects/issue-12114/reexport.js 1:0-25
+        [inactive] harmony export imported specifier base ./side-effects/issue-12114/reexport.js 1:0-25
+    ./side-effects/issue-12114/node_modules/tslib.js [4] 29 bytes {0} [depth 3] [built] [code generated]
+      [exports: __extends]
+      [all exports used]
+      [inactive] harmony side effect evaluation tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 1:0-34
+      harmony import specifier tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 3:26-35
+      harmony import specifier tslib [0] ./side-effects/issue-12114/node_modules/base/index.js 5:23-32
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.077764 ms
+<t> finish make hook: 0.009605 ms
+<t> finish compilation: 0.679753 ms
+<t> seal compilation: 2.271318 ms
+<t> afterCompile hook: 0.006505 ms
+<t> emitAssets: 0.690485 ms
+<t> emitRecords: 0.001601 ms
+<t> done hook: 0.007043 ms
+<t> beginIdle: 0.003574 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004497 ms
+<t> finish modules: 0.162937 ms
+<t> report dependency errors and warnings: 0.498979 ms
+<t> optimize dependencies: 0.184654 ms
+<t> create chunks: 0.131547 ms
+<t> compute affected modules with chunk graph: 0.001335 ms
+<t> optimize: 0.511094 ms
+    5 modules hashed, 0 from cache (0.83 variants per module in average)
+<t> module hashing: 0.163561 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.281533 ms
+<t> runtime requirements.modules: 0.036565 ms
+<t> runtime requirements.chunks: 0.034976 ms
+<t> runtime requirements.entries: 0.124731 ms
+<t> runtime requirements: 0.2119 ms
+<t> hashing: initialize hash: 0.001684 ms
+<t> hashing: sort chunks: 0.011033 ms
+<t> hashing: hash runtime modules: 0.090402 ms
+<t> hashing: hash chunks: 0.148973 ms
+<t> hashing: hash digest: 0.007726 ms
+<t> hashing: process full hash modules: 0.000899 ms
+<t> hashing: 0.282428 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004945 ms
+<t> module assets: 0.028375 ms
+<t> create chunk assets: 0.318982 ms
+<t> process assets: 0.022007 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019761 ms
+<t> figure out provided exports: 0.091188 ms
+    83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.011517 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.042729 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004351 ms
+<t> trace exports usage in graph: 0.107278 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.012698 ms
+<t> visitModules: visiting: 0.049091 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.068182 ms
+<t> connectChunkGroups: 0.001175 ms
+<t> cleanup: 0.001601 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013595 ms
+<t> modules: 0.144198 ms
+<t> queue: 0.002017 ms
+<t> maxSize: 0.003231 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:43: webpack 5.64.4 compiled successfully in 21 ms (2d213771131162ff7d9f)

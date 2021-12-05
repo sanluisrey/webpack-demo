@@ -1,0 +1,185 @@
+PublicPath: (none)
+asset bundle.js 2.81 KiB {0} [emitted] (name: main)
+Entrypoint main 2.81 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 245 bytes [entry] [rendered]
+  > ./errors/case-sensitive/ main
+  modules by path ./errors/case-sensitive/*.js 243 bytes
+    ./errors/case-sensitive/A.js [2] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      cjs require ./A [0] ./errors/case-sensitive/index.js 3:9-23
+    ./errors/case-sensitive/a.js [1] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      cjs require ./a [0] ./errors/case-sensitive/index.js 2:9-23
+    ./errors/case-sensitive/index.js [0] 241 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+      entry ./errors/case-sensitive/ main
+  ./errors/case-sensitive/B/file.js [4] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    cjs require ./B/file.js [0] ./errors/case-sensitive/index.js 5:9-31
+  ./errors/case-sensitive/b/file.js [3] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    cjs require ./b/file.js [0] ./errors/case-sensitive/index.js 4:9-31
+modules by path ./errors/case-sensitive/*.js 243 bytes
+  ./errors/case-sensitive/index.js [0] 241 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+    entry ./errors/case-sensitive/ main
+  ./errors/case-sensitive/a.js [1] 1 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    cjs require ./a [0] ./errors/case-sensitive/index.js 2:9-23
+  ./errors/case-sensitive/A.js [2] 1 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    cjs require ./A [0] ./errors/case-sensitive/index.js 3:9-23
+./errors/case-sensitive/b/file.js [3] 1 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  cjs require ./b/file.js [0] ./errors/case-sensitive/index.js 4:9-31
+./errors/case-sensitive/B/file.js [4] 1 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  cjs require ./B/file.js [0] ./errors/case-sensitive/index.js 5:9-31
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.581369 ms
+<t> finish make hook: 0.019885 ms
+<t> finish compilation: 0.12208 ms
+<t> seal compilation: 2.644226 ms
+<t> afterCompile hook: 0.010458 ms
+<t> emitAssets: 1.433865 ms
+<t> emitRecords: 0.003391 ms
+<t> done hook: 0.016586 ms
+<t> beginIdle: 0.008525 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004517 ms
+<t> finish modules: 0.086142 ms
+<t> report dependency errors and warnings: 0.013199 ms
+<t> optimize dependencies: 0.204502 ms
+<t> create chunks: 0.161824 ms
+<t> compute affected modules with chunk graph: 0.003622 ms
+<t> optimize: 0.519752 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.162187 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.14998 ms
+<t> runtime requirements.modules: 0.021484 ms
+<t> runtime requirements.chunks: 0.033776 ms
+<t> runtime requirements.entries: 0.05131 ms
+<t> runtime requirements: 0.127832 ms
+<t> hashing: initialize hash: 0.003586 ms
+<t> hashing: hash warnings: 0.004919 ms
+<t> hashing: sort chunks: 0.015154 ms
+<t> hashing: hash runtime modules: 0.006491 ms
+<t> hashing: hash chunks: 0.254434 ms
+<t> hashing: hash digest: 0.018588 ms
+<t> hashing: process full hash modules: 0.00207 ms
+<t> hashing: 0.343978 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005902 ms
+<t> module assets: 0.009241 ms
+<t> create chunk assets: 0.374746 ms
+<t> process assets: 0.036872 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.022043 ms
+<t> figure out provided exports: 0.002013 ms
+    0% of exports of modules have been determined (5 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002613 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.015236 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007933 ms
+<t> trace exports usage in graph: 0.112531 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.021522 ms
+<t> visitModules: visiting: 0.05903 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.084835 ms
+<t> connectChunkGroups: 0.001998 ms
+<t> cleanup: 0.002239 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.01541 ms
+<t> modules: 0.082871 ms
+<t> queue: 0.002427 ms
+<t> maxSize: 0.005861 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 5 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./errors/case-sensitive/A.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/A.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/a.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+CaseSensitiveModulesWarning: There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/A.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/a.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+    at /Users/yoh/Projects/repos/webpack/lib/WarnCaseSensitiveModulesPlugin.js:40:9
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2796:19)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2857:9)
+ @ ./errors/case-sensitive/index.js 3:9-23
+
+WARNING in ./errors/case-sensitive/B/file.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/B/file.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/b/file.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+CaseSensitiveModulesWarning: There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/B/file.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+* /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/b/file.js
+    Used by 1 module(s), i. e.
+    /Users/yoh/Projects/repos/webpack/test/cases/errors/case-sensitive/index.js
+    at /Users/yoh/Projects/repos/webpack/lib/WarnCaseSensitiveModulesPlugin.js:40:9
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2796:19)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2857:9)
+ @ ./errors/case-sensitive/index.js 5:9-31
+
+2021-12-05 17:44:23: webpack 5.64.4 compiled with 2 warnings in 18 ms (825bc00343e8aae2f10c)

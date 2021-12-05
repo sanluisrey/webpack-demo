@@ -1,0 +1,251 @@
+PublicPath: (none)
+asset bundle.js 6.54 KiB {2} [emitted] (name: main)
+asset 0.bundle.js 5.77 KiB {0} [emitted]
+asset 1.bundle.js 5.42 KiB {1} [emitted]
+Entrypoint main 6.54 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 667 bytes <{2}> [rendered]
+  > ./root-ref [0] ./scope-hoisting/circular-root-export/index.js 2:8-28
+  ./scope-hoisting/circular-root-export/external.js [3] 311 bytes {0} {1} [depth 2] [dependent] [built] [code generated]
+    [exports: test]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-22
+    harmony side effect evaluation ./external [2] ./scope-hoisting/circular-root-export/external-ref.js 1:0-20
+    harmony side effect evaluation ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+    harmony export imported specifier ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+  ./scope-hoisting/circular-root-export/module.js [5] 76 bytes {0} {1} [depth 3] [dependent] [built] [code generated]
+    [exports: b, bb]
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 2:0-30
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 3:0-13 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 4:0-31
+    [inactive] harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 5:0-14 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+  ./scope-hoisting/circular-root-export/root-ref.js [1] 31 bytes {0} [depth 1] [built] [code generated]
+    [exports: test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-30
+    import() ./root-ref [0] ./scope-hoisting/circular-root-export/index.js 2:8-28
+  ./scope-hoisting/circular-root-export/root.js [4] 249 bytes {0} {1} [depth 2] [dependent] [built] [code generated]
+    [exports: a, aa, b, bb, c, cc, default, test]
+    [only some exports used: a, b, c, default, test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-34
+    from origin ./scope-hoisting/circular-root-export/external.js
+      harmony side effect evaluation ./root [3] ./scope-hoisting/circular-root-export/external.js 1:0-47
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 3:7-8
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 6:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 7:15-16
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 9:13-14
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:16-17
+    from origin ./scope-hoisting/circular-root-export/root-ref.js
+      harmony side effect evaluation ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+      harmony export imported specifier ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+chunk {1} (runtime: main) 1.bundle.js 657 bytes <{2}> [rendered]
+  > ./external-ref [0] ./scope-hoisting/circular-root-export/index.js 7:23-47
+  ./scope-hoisting/circular-root-export/external-ref.js [2] 21 bytes {1} [depth 1] [built] [code generated]
+    [no exports]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-20
+    import() ./external-ref [0] ./scope-hoisting/circular-root-export/index.js 7:23-47
+  ./scope-hoisting/circular-root-export/external.js [3] 311 bytes {0} {1} [depth 2] [dependent] [built] [code generated]
+    [exports: test]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-22
+    harmony side effect evaluation ./external [2] ./scope-hoisting/circular-root-export/external-ref.js 1:0-20
+    harmony side effect evaluation ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+    harmony export imported specifier ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+  ./scope-hoisting/circular-root-export/module.js [5] 76 bytes {0} {1} [depth 3] [dependent] [built] [code generated]
+    [exports: b, bb]
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 2:0-30
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 3:0-13 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 4:0-31
+    [inactive] harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 5:0-14 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+  ./scope-hoisting/circular-root-export/root.js [4] 249 bytes {0} {1} [depth 2] [dependent] [built] [code generated]
+    [exports: a, aa, b, bb, c, cc, default, test]
+    [only some exports used: a, b, c, default, test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-34
+    from origin ./scope-hoisting/circular-root-export/external.js
+      harmony side effect evaluation ./root [3] ./scope-hoisting/circular-root-export/external.js 1:0-47
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 3:7-8
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 6:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 7:15-16
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 9:13-14
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:16-17
+    from origin ./scope-hoisting/circular-root-export/root-ref.js
+      harmony side effect evaluation ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+      harmony export imported specifier ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+chunk {2} (runtime: main) bundle.js (main) 172 bytes (javascript) 2.94 KiB (runtime) >{0}< >{1}< [entry] [rendered]
+  > ./scope-hoisting/circular-root-export/ main
+  ./scope-hoisting/circular-root-export/index.js [0] 172 bytes {2} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./scope-hoisting/circular-root-export/ main
+  webpack/runtime/define property getters 308 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {2} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 860 bytes
+  ./scope-hoisting/circular-root-export/index.js [0] 172 bytes {2} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./scope-hoisting/circular-root-export/ main
+  ./scope-hoisting/circular-root-export/root-ref.js [1] 31 bytes {0} [depth 1] [built] [code generated]
+    [exports: test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-30
+    import() ./root-ref [0] ./scope-hoisting/circular-root-export/index.js 2:8-28
+  ./scope-hoisting/circular-root-export/external-ref.js [2] 21 bytes {1} [depth 1] [built] [code generated]
+    [no exports]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-20
+    import() ./external-ref [0] ./scope-hoisting/circular-root-export/index.js 7:23-47
+  ./scope-hoisting/circular-root-export/root.js [4] 249 bytes {0} {1} [depth 2] [built] [code generated]
+    [exports: a, aa, b, bb, c, cc, default, test]
+    [only some exports used: a, b, c, default, test]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-34
+    from origin ./scope-hoisting/circular-root-export/external.js
+      harmony side effect evaluation ./root [3] ./scope-hoisting/circular-root-export/external.js 1:0-47
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 3:7-8
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 6:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 7:15-16
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 9:13-14
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:8-9
+      harmony import specifier ./root [3] ./scope-hoisting/circular-root-export/external.js 12:16-17
+    from origin ./scope-hoisting/circular-root-export/root-ref.js
+      harmony side effect evaluation ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+      harmony export imported specifier ./root [1] ./scope-hoisting/circular-root-export/root-ref.js 1:0-30
+  ./scope-hoisting/circular-root-export/external.js [3] 311 bytes {0} {1} [depth 2] [built] [code generated]
+    [exports: test]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-22
+    harmony side effect evaluation ./external [2] ./scope-hoisting/circular-root-export/external-ref.js 1:0-20
+    harmony side effect evaluation ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+    harmony export imported specifier ./external [4] ./scope-hoisting/circular-root-export/root.js 1:0-34
+  ./scope-hoisting/circular-root-export/module.js [5] 76 bytes {0} {1} [depth 3] [built] [code generated]
+    [exports: b, bb]
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 2:0-30
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 3:0-13 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 4:0-31
+    [inactive] harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 5:0-14 (skipped side-effect-free modules)
+    [inactive] harmony side effect evaluation ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+    harmony export imported specifier ./module [4] ./scope-hoisting/circular-root-export/root.js 6:0-25
+runtime modules 2.94 KiB
+  webpack/runtime/define property getters 308 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.616704 ms
+<t> finish make hook: 0.017214 ms
+<t> finish compilation: 0.438179 ms
+<t> seal compilation: 4.529255 ms
+<t> afterCompile hook: 0.007898 ms
+<t> emitAssets: 1.261467 ms
+<t> emitRecords: 0.002174 ms
+<t> done hook: 0.010367 ms
+<t> beginIdle: 0.005201 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004859 ms
+<t> finish modules: 0.370138 ms
+<t> report dependency errors and warnings: 0.050677 ms
+<t> optimize dependencies: 0.358952 ms
+<t> create chunks: 0.303224 ms
+<t> compute affected modules with chunk graph: 0.001466 ms
+<t> optimize: 0.771187 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.23784 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.574957 ms
+<t> runtime requirements.modules: 0.03934 ms
+<t> runtime requirements.chunks: 0.048463 ms
+<t> runtime requirements.entries: 0.295136 ms
+<t> runtime requirements: 0.401517 ms
+<t> hashing: initialize hash: 0.002724 ms
+<t> hashing: sort chunks: 0.018295 ms
+<t> hashing: hash runtime modules: 0.427405 ms
+<t> hashing: hash chunks: 0.294979 ms
+<t> hashing: hash digest: 0.010923 ms
+<t> hashing: process full hash modules: 0.001426 ms
+<t> hashing: 0.791095 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.008068 ms
+<t> module assets: 0.011933 ms
+<t> create chunk assets: 0.793602 ms
+<t> process assets: 0.047807 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.0252 ms
+<t> figure out provided exports: 0.281025 ms
+    83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010625 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.040322 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004515 ms
+<t> trace exports usage in graph: 0.270655 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005225 ms
+<t> visitModules: visiting: 0.062874 ms
+<t> visitModules: calculating available modules: 0.00937 ms
+<t> visitModules: merging available modules: 0.005101 ms
+<t> visitModules: check modules for revisit: 0.002979 ms
+<t> visitModules: prepare: 0.060437 ms
+<t> visitModules: visiting: 0.108386 ms
+    20 queue items processed (11 blocks)
+    2 chunk groups connected
+    2 chunk groups processed for merging (2 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    2 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.218277 ms
+<t> connectChunkGroups: 0.010532 ms
+<t> cleanup: 0.001826 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017185 ms
+<t> modules: 0.158734 ms
+<t> queue: 0.015073 ms
+<t> maxSize: 0.009136 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:41: webpack 5.64.4 compiled successfully in 34 ms (84e041db8a2a31e47716)

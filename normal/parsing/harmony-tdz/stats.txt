@@ -1,0 +1,154 @@
+PublicPath: (none)
+asset bundle.js 4.96 KiB {0} [emitted] (name: main)
+Entrypoint main 4.96 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 551 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony-tdz/ main
+  cacheable modules 551 bytes
+    ./parsing/harmony-tdz/index.js [1] 327 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-10:3
+      entry ./parsing/harmony-tdz/ main
+    ./parsing/harmony-tdz/module.js [0] 150 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default, exception, value]
+      [all exports used]
+      Statement (TryStatement) with side effects in source code at 5:0-9:1
+      from origin ./parsing/harmony-tdz/index.js
+        harmony side effect evaluation ./module [1] ./parsing/harmony-tdz/index.js 1:0-44
+        harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 4:15-24
+        harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 5:8-17
+        harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 6:8-25
+        harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 9:8-13
+      from origin ./parsing/harmony-tdz/module2.js
+        harmony side effect evaluation ./module [2] ./parsing/harmony-tdz/module2.js 1:0-33
+        harmony import specifier ./module [2] ./parsing/harmony-tdz/module2.js 4:8-13
+    ./parsing/harmony-tdz/module2.js [2] 74 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: f]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-33
+      harmony side effect evaluation ./module2 [0] ./parsing/harmony-tdz/module.js 1:0-30
+      harmony import specifier ./module2 [0] ./parsing/harmony-tdz/module.js 6:1-2
+      harmony import specifier ./module2 [0] ./parsing/harmony-tdz/module.js 13:15-16
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 551 bytes
+  ./parsing/harmony-tdz/index.js [1] 327 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-10:3
+    entry ./parsing/harmony-tdz/ main
+  ./parsing/harmony-tdz/module.js [0] 150 bytes {0} [depth 1] [built] [code generated]
+    [exports: default, exception, value]
+    [all exports used]
+    Statement (TryStatement) with side effects in source code at 5:0-9:1
+    from origin ./parsing/harmony-tdz/index.js
+      harmony side effect evaluation ./module [1] ./parsing/harmony-tdz/index.js 1:0-44
+      harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 4:15-24
+      harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 5:8-17
+      harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 6:8-25
+      harmony import specifier ./module [1] ./parsing/harmony-tdz/index.js 9:8-13
+    from origin ./parsing/harmony-tdz/module2.js
+      harmony side effect evaluation ./module [2] ./parsing/harmony-tdz/module2.js 1:0-33
+      harmony import specifier ./module [2] ./parsing/harmony-tdz/module2.js 4:8-13
+  ./parsing/harmony-tdz/module2.js [2] 74 bytes {0} [depth 2] [built] [code generated]
+    [exports: f]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-33
+    harmony side effect evaluation ./module2 [0] ./parsing/harmony-tdz/module.js 1:0-30
+    harmony import specifier ./module2 [0] ./parsing/harmony-tdz/module.js 6:1-2
+    harmony import specifier ./module2 [0] ./parsing/harmony-tdz/module.js 13:15-16
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.156906 ms
+<t> finish make hook: 0.012036 ms
+<t> finish compilation: 0.177657 ms
+<t> seal compilation: 2.085446 ms
+<t> afterCompile hook: 0.006756 ms
+<t> emitAssets: 0.851357 ms
+<t> emitRecords: 0.00199 ms
+<t> done hook: 0.00834 ms
+<t> beginIdle: 0.005429 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003892 ms
+<t> finish modules: 0.131654 ms
+<t> report dependency errors and warnings: 0.031473 ms
+<t> optimize dependencies: 0.143776 ms
+<t> create chunks: 0.121043 ms
+<t> compute affected modules with chunk graph: 0.001889 ms
+<t> optimize: 0.422005 ms
+    3 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.114405 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.303219 ms
+<t> runtime requirements.modules: 0.021992 ms
+<t> runtime requirements.chunks: 0.03117 ms
+<t> runtime requirements.entries: 0.115829 ms
+<t> runtime requirements: 0.18486 ms
+<t> hashing: initialize hash: 0.001836 ms
+<t> hashing: sort chunks: 0.012734 ms
+<t> hashing: hash runtime modules: 0.082007 ms
+<t> hashing: hash chunks: 0.157673 ms
+<t> hashing: hash digest: 0.008052 ms
+<t> hashing: process full hash modules: 0.000968 ms
+<t> hashing: 0.287581 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.004892 ms
+<t> module assets: 0.008243 ms
+<t> create chunk assets: 0.357851 ms
+<t> process assets: 0.027435 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01553 ms
+<t> figure out provided exports: 0.030424 ms
+    100% of exports of modules have been determined (0 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.015407 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.006811 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004352 ms
+<t> trace exports usage in graph: 0.100934 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.011063 ms
+<t> visitModules: visiting: 0.041927 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.067105 ms
+<t> connectChunkGroups: 0.001316 ms
+<t> cleanup: 0.00125 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013349 ms
+<t> modules: 0.051636 ms
+<t> queue: 0.001765 ms
+<t> maxSize: 0.004679 ms
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:31: webpack 5.64.4 compiled successfully in 16 ms (3f5f326db38b3aa9487c)

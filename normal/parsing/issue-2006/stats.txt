@@ -1,0 +1,135 @@
+PublicPath: (none)
+asset bundle.js 1.61 KiB {0} [emitted] (name: main)
+Entrypoint main 1.61 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 68 bytes [entry] [rendered]
+  > ./parsing/issue-2006/ main
+  ./parsing/issue-2006/index.js [0] 68 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-36
+    entry ./parsing/issue-2006/ main
+./parsing/issue-2006/index.js [0] 68 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-36
+  entry ./parsing/issue-2006/ main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 6.034893 ms
+<t> finish make hook: 0.008524 ms
+<t> finish compilation: 0.079291 ms
+<t> seal compilation: 1.324571 ms
+<t> afterCompile hook: 0.00583 ms
+<t> emitAssets: 0.896103 ms
+<t> emitRecords: 0.001444 ms
+<t> done hook: 0.007049 ms
+<t> beginIdle: 0.002889 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00224 ms
+<t> finish modules: 0.060306 ms
+<t> report dependency errors and warnings: 0.006067 ms
+<t> optimize dependencies: 0.065006 ms
+<t> create chunks: 0.085717 ms
+<t> compute affected modules with chunk graph: 0.001948 ms
+<t> optimize: 0.399329 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.07617 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.055734 ms
+<t> runtime requirements.modules: 0.008196 ms
+<t> runtime requirements.chunks: 0.018596 ms
+<t> runtime requirements.entries: 0.053277 ms
+<t> runtime requirements: 0.092086 ms
+<t> hashing: initialize hash: 0.001673 ms
+<t> hashing: hash errors: 0.003354 ms
+<t> hashing: sort chunks: 0.009103 ms
+<t> hashing: hash runtime modules: 0.003095 ms
+<t> hashing: hash chunks: 0.137729 ms
+<t> hashing: hash digest: 0.007675 ms
+<t> hashing: process full hash modules: 0.00109 ms
+<t> hashing: 0.185226 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.003792 ms
+<t> module assets: 0.005145 ms
+<t> create chunk assets: 0.254415 ms
+<t> process assets: 0.025176 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023332 ms
+<t> figure out provided exports: 0.001131 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001488 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002216 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003123 ms
+<t> trace exports usage in graph: 0.024113 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.002147 ms
+<t> visitModules: visiting: 0.019485 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.035656 ms
+<t> connectChunkGroups: 0.001334 ms
+<t> cleanup: 0.001146 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.010314 ms
+<t> modules: 0.046765 ms
+<t> queue: 0.001629 ms
+<t> maxSize: 0.003433 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./parsing/issue-2006/index.js 3:1-12
+Module not found: Error: Empty dependency (no request)
+ModuleNotFoundError: Module not found: Error: Empty dependency (no request)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:311:18
+    at Hook.eval [as callAsync] (<anonymous>:6:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:305:31
+    at Hook.eval [as callAsync] (<anonymous>:6:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:289:30
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:588:7
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:620:8
+    at NormalModuleFactory.resolveRequestArray (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:985:34)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:612:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at defaultResolve (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:645:7)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:719:10
+    at Hook.eval [as callAsync] (<anonymous>:7:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:274:24
+    at _next0 (<anonymous>:8:1)
+    at eval (<anonymous>:30:1)
+    at next (/Users/yoh/Projects/repos/webpack/lib/ExternalModuleFactoryPlugin.js:146:43)
+    at handleExternals (/Users/yoh/Projects/repos/webpack/lib/ExternalModuleFactoryPlugin.js:152:7)
+    at /Users/yoh/Projects/repos/webpack/lib/ExternalModuleFactoryPlugin.js:249:5
+    at Hook.eval [as callAsync] (<anonymous>:22:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:793:25
+    at Hook.eval [as callAsync] (<anonymous>:6:1)
+    at NormalModuleFactory.create (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:765:28)
+    at Compilation._factorizeModule (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:1968:11)
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:303:10
+    at Hook.eval [as callAsync] (<anonymous>:6:1)
+    at AsyncQueue._startProcessing (/Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:293:26)
+    at AsyncQueue._ensureProcessing (/Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:280:12)
+    at processImmediate (node:internal/timers:464:21)
+
+2021-12-05 17:45:36: webpack 5.64.4 compiled with 1 error in 9 ms (b9157b8b596b80164582)

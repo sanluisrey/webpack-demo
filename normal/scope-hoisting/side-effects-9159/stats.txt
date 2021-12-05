@@ -1,0 +1,152 @@
+PublicPath: (none)
+asset bundle.js 5.26 KiB {0} [emitted] (name: main)
+Entrypoint main 5.26 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 228 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./scope-hoisting/side-effects-9159/ main
+  cacheable modules 228 bytes
+    ./scope-hoisting/side-effects-9159/index.js [1] 170 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+      entry ./scope-hoisting/side-effects-9159/ main
+    ./scope-hoisting/side-effects-9159/package/module.js [0] 19 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      [inactive] from origin ./scope-hoisting/side-effects-9159/package/index.js
+        [inactive] harmony side effect evaluation ./module ./scope-hoisting/side-effects-9159/package/index.js 1:0-44
+        [inactive] harmony export imported specifier ./module ./scope-hoisting/side-effects-9159/package/index.js 1:0-44
+        [inactive] harmony side effect evaluation ./module ./scope-hoisting/side-effects-9159/package/index.js 3:0-31
+        [inactive] harmony export imported specifier ./module ./scope-hoisting/side-effects-9159/package/index.js 4:0-14 (skipped side-effect-free modules)
+      from origin ./scope-hoisting/side-effects-9159/reexport.js
+        harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38 (skipped side-effect-free modules)
+        harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38 (skipped side-effect-free modules)
+    ./scope-hoisting/side-effects-9159/reexport.js [2] 39 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: ns, value]
+      cjs require ./reexport [1] ./scope-hoisting/side-effects-9159/index.js 2:11-32
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 321 bytes
+  modules by path ./scope-hoisting/side-effects-9159/*.js 209 bytes
+    ./scope-hoisting/side-effects-9159/index.js [1] 170 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+      entry ./scope-hoisting/side-effects-9159/ main
+    ./scope-hoisting/side-effects-9159/reexport.js [2] 39 bytes {0} [depth 1] [built] [code generated]
+      [exports: ns, value]
+      cjs require ./reexport [1] ./scope-hoisting/side-effects-9159/index.js 2:11-32
+  modules by path ./scope-hoisting/side-effects-9159/package/*.js 112 bytes
+    ./scope-hoisting/side-effects-9159/package/module.js [0] 19 bytes {0} [depth 2] [built] [code generated]
+      [exports: default]
+      [inactive] from origin ./scope-hoisting/side-effects-9159/package/index.js
+        [inactive] harmony side effect evaluation ./module ./scope-hoisting/side-effects-9159/package/index.js 1:0-44
+        [inactive] harmony export imported specifier ./module ./scope-hoisting/side-effects-9159/package/index.js 1:0-44
+        [inactive] harmony side effect evaluation ./module ./scope-hoisting/side-effects-9159/package/index.js 3:0-31
+        [inactive] harmony export imported specifier ./module ./scope-hoisting/side-effects-9159/package/index.js 4:0-14 (skipped side-effect-free modules)
+      from origin ./scope-hoisting/side-effects-9159/reexport.js
+        harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38 (skipped side-effect-free modules)
+        harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38 (skipped side-effect-free modules)
+    ./scope-hoisting/side-effects-9159/package/index.js 93 bytes [depth 2] [orphan] [built]
+      [exports: ns, value]
+      [module unused]
+      [inactive] harmony side effect evaluation ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38
+      [inactive] harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38
+      [inactive] harmony export imported specifier ./package [2] ./scope-hoisting/side-effects-9159/reexport.js 1:0-38
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.56061 ms
+<t> finish make hook: 0.010862 ms
+<t> finish compilation: 0.376866 ms
+<t> seal compilation: 2.43433 ms
+<t> afterCompile hook: 0.00697 ms
+<t> emitAssets: 0.798908 ms
+<t> emitRecords: 0.001856 ms
+<t> done hook: 0.008507 ms
+<t> beginIdle: 0.003869 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004526 ms
+<t> finish modules: 0.333872 ms
+<t> report dependency errors and warnings: 0.027251 ms
+<t> optimize dependencies: 0.204114 ms
+<t> create chunks: 0.176461 ms
+<t> compute affected modules with chunk graph: 0.0018 ms
+<t> optimize: 0.506216 ms
+    3 modules hashed, 0 from cache (0.75 variants per module in average)
+<t> module hashing: 0.126989 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.265715 ms
+<t> runtime requirements.modules: 0.028594 ms
+<t> runtime requirements.chunks: 0.036076 ms
+<t> runtime requirements.entries: 0.165555 ms
+<t> runtime requirements: 0.247459 ms
+<t> hashing: initialize hash: 0.002439 ms
+<t> hashing: sort chunks: 0.014411 ms
+<t> hashing: hash runtime modules: 0.106175 ms
+<t> hashing: hash chunks: 0.181638 ms
+<t> hashing: hash digest: 0.009118 ms
+<t> hashing: process full hash modules: 0.001087 ms
+<t> hashing: 0.344114 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.005519 ms
+<t> module assets: 0.00938 ms
+<t> create chunk assets: 0.370324 ms
+<t> process assets: 0.029786 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.020935 ms
+<t> figure out provided exports: 0.25327 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 2 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010685 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.046788 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003431 ms
+<t> trace exports usage in graph: 0.113337 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.024805 ms
+<t> visitModules: visiting: 0.086338 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.107877 ms
+<t> connectChunkGroups: 0.00158 ms
+<t> cleanup: 0.001638 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015022 ms
+<t> modules: 0.064705 ms
+<t> queue: 0.002017 ms
+<t> maxSize: 0.005284 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:42: webpack 5.64.4 compiled successfully in 18 ms (27d29f10c6285a6fc7b7)

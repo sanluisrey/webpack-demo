@@ -1,0 +1,206 @@
+PublicPath: (none)
+asset bundle0.js 22.7 KiB {179} [emitted] (name: main)
+asset 776.bundle0.js 1.21 KiB {776} [emitted]
+asset 539.bundle0.js 801 bytes {539} [emitted]
+asset 44.bundle0.js 723 bytes {44} [emitted]
+Entrypoint main 22.7 KiB = bundle0.js
+chunk {44} (runtime: main) 44.bundle0.js 115 bytes <{179}> <{539}> <{704}> <{776}> [rendered]
+  > [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+  > [932] provide shared module (default) react@false = ./node_modules/react.js
+  ./node_modules/react.js [44] 115 bytes {44} [depth 1] [built] [code generated]
+    [exports: default, setVersion]
+    consume shared fallback react [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/container/3-container-full/node_modules/react.js [932] provide shared module (default) react@false = ./node_modules/react.js
+chunk {179} (runtime: main) bundle0.js (main) 755 bytes (javascript) 42 bytes (share-init) 14.9 KiB (runtime) >{44}< >{539}< >{704}< >{776}< [entry] [rendered]
+  > ./index.js main
+  runtime modules 14.9 KiB
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/consumes 8.09 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.78 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.63 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.98 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 755 bytes (javascript) 42 bytes (share-init) [built]
+    ./index.js [10] 713 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-15:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js main
+    external "../1-container-full/container.js" [503] 42 bytes {179} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))
+      remote to external webpack/container/reference/containerB [164] remote containerB/ComponentC
+    provide shared module (default) react@false = ./node_modules/react.js [932] 42 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+      provide shared module
+chunk {539} (runtime: main) 539.bundle0.js 93 bytes <{179}> ={704}= >{44}< [rendered]
+  > ./upgrade-react [10] ./index.js 7:9-34
+  ./upgrade-react.js [539] 93 bytes {539} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-35
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    import() ./upgrade-react [10] ./index.js 7:9-34
+chunk {704} (runtime: main) 42 bytes <{179}> ={539}= ={776}= >{44}< split chunk (cache group: default)
+  > ./App [10] ./index.js 2:8-23
+  > ./upgrade-react [10] ./index.js 7:9-34
+  consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js) [704] 42 bytes {704} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ConsumeSharedModule
+    from origin ./App.js
+      harmony side effect evaluation react [776] ./App.js 1:0-26
+      harmony import specifier react [776] ./App.js 5:30-35
+    from origin ./upgrade-react.js
+      harmony side effect evaluation react [539] ./upgrade-react.js 1:0-35
+      harmony import specifier react [539] ./upgrade-react.js 4:1-11
+chunk {776} (runtime: main) 776.bundle0.js 6 bytes (remote) 6 bytes (share-init) 166 bytes (javascript) <{179}> ={704}= >{44}< [rendered]
+  > ./App [10] ./index.js 2:8-23
+  ./App.js [776] 166 bytes {776} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-26
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    ModuleConcatenation bailout: Cannot concat with remote containerB/ComponentC: Module Concatenation is not implemented for RemoteModule
+    import() ./App [10] ./index.js 2:8-23
+  remote containerB/ComponentC [164] 6 bytes (remote) 6 bytes (share-init) {776} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation containerB/ComponentC [776] ./App.js 2:0-47
+    harmony import specifier containerB/ComponentC [776] ./App.js 5:47-57
+  
+
+LOG from webpack.Compiler
+<t> make hook: 14.821921 ms
+<t> finish make hook: 1.856897 ms
+<t> finish compilation: 0.386093 ms
+<t> seal compilation: 10.31604 ms
+<t> afterCompile hook: 0.017474 ms
+<t> emitAssets: 1.384954 ms
+<t> emitRecords: 0.002711 ms
+<t> done hook: 0.016535 ms
+<t> beginIdle: 0.011283 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003434 ms
+<t> finish modules: 0.283356 ms
+<t> report dependency errors and warnings: 0.08186 ms
+<t> optimize dependencies: 0.397957 ms
+<t> create chunks: 0.602707 ms
+<t> compute affected modules with chunk graph: 0.004722 ms
+<t> optimize: 1.700411 ms
+    8 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.558042 ms
+    100% code generated (8 generated, 0 from cache)
+<t> code generation: 0.926809 ms
+<t> runtime requirements.modules: 0.119414 ms
+<t> runtime requirements.chunks: 0.162533 ms
+<t> runtime requirements.entries: 0.84252 ms
+<t> runtime requirements: 1.17368 ms
+<t> hashing: initialize hash: 0.014274 ms
+<t> hashing: hash warnings: 0.007652 ms
+<t> hashing: sort chunks: 0.035588 ms
+<t> hashing: hash runtime modules: 1.813472 ms
+<t> hashing: hash chunks: 0.582778 ms
+<t> hashing: hash digest: 0.031408 ms
+<t> hashing: process full hash modules: 0.001843 ms
+<t> hashing: 2.577673 ms
+    100% code generated (10 generated, 0 from cache)
+<t> record hash: 0.015484 ms
+<t> module assets: 0.063904 ms
+<t> create chunk assets: 1.169667 ms
+<t> process assets: 0.491442 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.028771 ms
+<t> figure out provided exports: 0.053421 ms
+    50% of exports of modules have been determined (4 no declared exports, 3 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.102307 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.04219 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.034736 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.013406 ms
+<t> trace exports usage in graph: 0.277627 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.030198 ms
+<t> visitModules: visiting: 0.134502 ms
+<t> visitModules: calculating available modules: 0.013512 ms
+<t> visitModules: merging available modules: 0.006669 ms
+<t> visitModules: check modules for revisit: 0.012203 ms
+<t> visitModules: prepare: 0.054308 ms
+<t> visitModules: visiting: 0.180845 ms
+<t> visitModules: calculating available modules: 0.012645 ms
+<t> visitModules: merging available modules: 0.010789 ms
+<t> visitModules: check modules for revisit: 0.004365 ms
+<t> visitModules: visiting: 0.014083 ms
+    25 queue items processed (15 blocks)
+    5 chunk groups connected
+    4 chunk groups processed for merging (5 module sets, 1 forked, 2 + 0 modules forked, 4 + 0 modules merged into fork, 1 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.444671 ms
+<t> connectChunkGroups: 0.023874 ms
+<t> cleanup: 0.003531 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.046991 ms
+<t> modules: 0.25424 ms
+<t> queue: 0.072324 ms
+<t> maxSize: 0.016837 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.083811 ms
+<t> sort relevant modules: 0.00431 ms
+<t> find modules to concatenate: 0.117774 ms
+<t> sort concat configurations: 0.000951 ms
+<t> create concatenated modules: 0.005061 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in shared module react -> /Users/yoh/Projects/repos/webpack/test/configCases/container/3-container-full/node_modules/react.js
+No version specified and unable to automatically determine one. No version in description file (usually package.json). Add version to description file, or manually specify version in shared config.
+Error: No version specified and unable to automatically determine one. No version in description file (usually package.json). Add version to description file, or manually specify version in shared config.
+    at provideSharedModule (/Users/yoh/Projects/repos/webpack/lib/sharing/ProvideSharedPlugin.js:139:22)
+    at /Users/yoh/Projects/repos/webpack/lib/sharing/ProvideSharedPlugin.js:161:9
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:17:16)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:317:43
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:17:1)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled with 1 warning in 31 ms (3da22f1bf90c1b3ca20b)

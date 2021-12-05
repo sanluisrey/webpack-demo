@@ -1,0 +1,210 @@
+PublicPath: (none)
+asset bundle.js 13.6 KiB {0} [emitted] (name: main)
+Entrypoint main 13.6 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1010 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./scope-hoisting/issue-5020/ main
+  cacheable modules 1010 bytes
+    modules by path ./scope-hoisting/issue-5020/src/icon/ 266 bytes
+      ./scope-hoisting/issue-5020/src/icon/index.js [0] 51 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [exports: svg]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-29
+        harmony side effect evaluation ./icon [5] ./scope-hoisting/issue-5020/src/index.js 1:0-31
+        harmony export imported specifier ./icon [5] ./scope-hoisting/issue-5020/src/index.js 4:0-7:1
+      ./scope-hoisting/issue-5020/src/icon/svg/index.js [1] 169 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [exports: clinical1, clinical2]
+        Statement (VariableDeclaration) with side effects in source code at 4:0-6:2
+        harmony side effect evaluation ./svg [0] ./scope-hoisting/issue-5020/src/icon/index.js 1:0-29
+        harmony export imported specifier ./svg [0] ./scope-hoisting/issue-5020/src/icon/index.js 3:0-5:2
+      ./scope-hoisting/issue-5020/src/icon/svg/svg1.js [6] 23 bytes {0} [depth 4] [dependent] [built] [code generated]
+        [exports: svg1]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./svg1 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 1:0-30
+        harmony import specifier ./svg1 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 5:4-8
+      ./scope-hoisting/issue-5020/src/icon/svg/svg2.js [7] 23 bytes {0} [depth 4] [dependent] [built] [code generated]
+        [exports: svg2]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./svg2 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 2:0-30
+        harmony import specifier ./svg2 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 8:4-8
+    modules by path ./scope-hoisting/issue-5020/src/icon1/ 258 bytes
+      ./scope-hoisting/issue-5020/src/icon1/index.js [2] 51 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [exports: svg]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-29
+        harmony side effect evaluation ./icon1 [5] ./scope-hoisting/issue-5020/src/index.js 2:0-32
+        harmony export imported specifier ./icon1 [5] ./scope-hoisting/issue-5020/src/index.js 4:0-7:1
+      ./scope-hoisting/issue-5020/src/icon1/svg/index.js [3] 159 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [exports: clinical2, test]
+        Statement (VariableDeclaration) with side effects in source code at 4:0-6:2
+        harmony side effect evaluation ./svg [2] ./scope-hoisting/issue-5020/src/icon1/index.js 1:0-29
+        harmony export imported specifier ./svg [2] ./scope-hoisting/issue-5020/src/icon1/index.js 3:0-5:2
+      ./scope-hoisting/issue-5020/src/icon1/svg/svg1.js [8] 24 bytes {0} [depth 4] [dependent] [built] [code generated]
+        [exports: svg1]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./svg1 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 1:0-30
+        harmony import specifier ./svg1 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 5:4-8
+      ./scope-hoisting/issue-5020/src/icon1/svg/svg2.js [9] 24 bytes {0} [depth 4] [dependent] [built] [code generated]
+        [exports: svg2]
+        [all exports used]
+        [inactive] harmony side effect evaluation ./svg2 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 2:0-30
+        harmony import specifier ./svg2 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 8:4-8
+    ./scope-hoisting/issue-5020/index.js [4] 394 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 1:0-41
+      entry ./scope-hoisting/issue-5020/ main
+    ./scope-hoisting/issue-5020/src/index.js [5] 96 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: svg5, svg6]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-31
+      cjs require ./src/index.js [4] ./scope-hoisting/issue-5020/index.js 1:15-40
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 1010 bytes
+  modules by path ./scope-hoisting/issue-5020/src/icon/ 266 bytes
+    ./scope-hoisting/issue-5020/src/icon/index.js [0] 51 bytes {0} [depth 2] [built] [code generated]
+      [exports: svg]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-29
+      harmony side effect evaluation ./icon [5] ./scope-hoisting/issue-5020/src/index.js 1:0-31
+      harmony export imported specifier ./icon [5] ./scope-hoisting/issue-5020/src/index.js 4:0-7:1
+    ./scope-hoisting/issue-5020/src/icon/svg/index.js [1] 169 bytes {0} [depth 3] [built] [code generated]
+      [exports: clinical1, clinical2]
+      Statement (VariableDeclaration) with side effects in source code at 4:0-6:2
+      harmony side effect evaluation ./svg [0] ./scope-hoisting/issue-5020/src/icon/index.js 1:0-29
+      harmony export imported specifier ./svg [0] ./scope-hoisting/issue-5020/src/icon/index.js 3:0-5:2
+    ./scope-hoisting/issue-5020/src/icon/svg/svg1.js [6] 23 bytes {0} [depth 4] [built] [code generated]
+      [exports: svg1]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./svg1 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 1:0-30
+      harmony import specifier ./svg1 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 5:4-8
+    ./scope-hoisting/issue-5020/src/icon/svg/svg2.js [7] 23 bytes {0} [depth 4] [built] [code generated]
+      [exports: svg2]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./svg2 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 2:0-30
+      harmony import specifier ./svg2 [1] ./scope-hoisting/issue-5020/src/icon/svg/index.js 8:4-8
+  modules by path ./scope-hoisting/issue-5020/src/icon1/ 258 bytes
+    ./scope-hoisting/issue-5020/src/icon1/index.js [2] 51 bytes {0} [depth 2] [built] [code generated]
+      [exports: svg]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-29
+      harmony side effect evaluation ./icon1 [5] ./scope-hoisting/issue-5020/src/index.js 2:0-32
+      harmony export imported specifier ./icon1 [5] ./scope-hoisting/issue-5020/src/index.js 4:0-7:1
+    ./scope-hoisting/issue-5020/src/icon1/svg/index.js [3] 159 bytes {0} [depth 3] [built] [code generated]
+      [exports: clinical2, test]
+      Statement (VariableDeclaration) with side effects in source code at 4:0-6:2
+      harmony side effect evaluation ./svg [2] ./scope-hoisting/issue-5020/src/icon1/index.js 1:0-29
+      harmony export imported specifier ./svg [2] ./scope-hoisting/issue-5020/src/icon1/index.js 3:0-5:2
+    ./scope-hoisting/issue-5020/src/icon1/svg/svg1.js [8] 24 bytes {0} [depth 4] [built] [code generated]
+      [exports: svg1]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./svg1 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 1:0-30
+      harmony import specifier ./svg1 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 5:4-8
+    ./scope-hoisting/issue-5020/src/icon1/svg/svg2.js [9] 24 bytes {0} [depth 4] [built] [code generated]
+      [exports: svg2]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./svg2 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 2:0-30
+      harmony import specifier ./svg2 [3] ./scope-hoisting/issue-5020/src/icon1/svg/index.js 8:4-8
+  ./scope-hoisting/issue-5020/index.js [4] 394 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-41
+    entry ./scope-hoisting/issue-5020/ main
+  ./scope-hoisting/issue-5020/src/index.js [5] 96 bytes {0} [depth 1] [built] [code generated]
+    [exports: svg5, svg6]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-31
+    cjs require ./src/index.js [4] ./scope-hoisting/issue-5020/index.js 1:15-40
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.052955 ms
+<t> finish make hook: 0.01297 ms
+<t> finish compilation: 0.281788 ms
+<t> seal compilation: 4.352604 ms
+<t> afterCompile hook: 0.006563 ms
+<t> emitAssets: 2.054495 ms
+<t> emitRecords: 0.001717 ms
+<t> done hook: 0.00917 ms
+<t> beginIdle: 0.003749 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004696 ms
+<t> finish modules: 0.232274 ms
+<t> report dependency errors and warnings: 0.035463 ms
+<t> optimize dependencies: 0.234603 ms
+<t> create chunks: 0.204448 ms
+<t> compute affected modules with chunk graph: 0.00104 ms
+<t> optimize: 0.539214 ms
+    10 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.22064 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 0.577026 ms
+<t> runtime requirements.modules: 0.035073 ms
+<t> runtime requirements.chunks: 0.064453 ms
+<t> runtime requirements.entries: 0.84674 ms
+<t> runtime requirements: 0.973384 ms
+<t> hashing: initialize hash: 0.003347 ms
+<t> hashing: sort chunks: 0.01355 ms
+<t> hashing: hash runtime modules: 0.110555 ms
+<t> hashing: hash chunks: 0.159063 ms
+<t> hashing: hash digest: 0.008083 ms
+<t> hashing: process full hash modules: 0.000822 ms
+<t> hashing: 0.317388 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004781 ms
+<t> module assets: 0.010622 ms
+<t> create chunk assets: 1.093636 ms
+<t> process assets: 0.042627 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.024092 ms
+<t> figure out provided exports: 0.149476 ms
+    90% of exports of modules have been determined (1 no declared exports, 9 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017117 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.016779 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004467 ms
+<t> trace exports usage in graph: 0.181331 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.044963 ms
+<t> visitModules: visiting: 0.109305 ms
+    20 queue items processed (10 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.127662 ms
+<t> connectChunkGroups: 0.001488 ms
+<t> cleanup: 0.001405 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013465 ms
+<t> modules: 0.081809 ms
+<t> queue: 0.00172 ms
+<t> maxSize: 0.004526 ms
+
+LOG from webpack.FileSystemInfo
+    10 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 10 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:41: webpack 5.64.4 compiled successfully in 24 ms (f26e0f19349a9bf8e031)

@@ -1,0 +1,122 @@
+PublicPath: (none)
+asset bundle.js 4.16 KiB {0} [emitted] (name: main)
+Entrypoint main 4.16 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 637 bytes [entry] [rendered]
+  > ./cjs-tree-shaking/importing/ main
+  ./cjs-tree-shaking/importing/index.js [1] 511 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./cjs-tree-shaking/importing/ main
+  ./cjs-tree-shaking/importing/module.js [0] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs full require ./module [1] ./cjs-tree-shaking/importing/index.js 2:8-31
+    cjs require ./module [1] ./cjs-tree-shaking/importing/index.js 6:15-34
+  ./cjs-tree-shaking/importing/module.js?1 [2] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?1 [1] ./cjs-tree-shaking/importing/index.js 11:15-36
+  ./cjs-tree-shaking/importing/module.js?2 [3] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [exports: abc, def]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-20
+    cjs require ./module?2 [1] ./cjs-tree-shaking/importing/index.js 13:15-36
+./cjs-tree-shaking/importing/index.js [1] 511 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+  entry ./cjs-tree-shaking/importing/ main
+./cjs-tree-shaking/importing/module.js [0] 42 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs full require ./module [1] ./cjs-tree-shaking/importing/index.js 2:8-31
+  cjs require ./module [1] ./cjs-tree-shaking/importing/index.js 6:15-34
+./cjs-tree-shaking/importing/module.js?1 [2] 42 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?1 [1] ./cjs-tree-shaking/importing/index.js 11:15-36
+./cjs-tree-shaking/importing/module.js?2 [3] 42 bytes {0} [depth 1] [built] [code generated]
+  [exports: abc, def]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-20
+  cjs require ./module?2 [1] ./cjs-tree-shaking/importing/index.js 13:15-36
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.30013 ms
+<t> finish make hook: 0.01945 ms
+<t> finish compilation: 0.236654 ms
+<t> seal compilation: 3.40998 ms
+<t> afterCompile hook: 0.014675 ms
+<t> emitAssets: 1.131726 ms
+<t> emitRecords: 0.002074 ms
+<t> done hook: 0.011139 ms
+<t> beginIdle: 0.010011 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004922 ms
+<t> finish modules: 0.187138 ms
+<t> report dependency errors and warnings: 0.021792 ms
+<t> optimize dependencies: 0.226989 ms
+<t> create chunks: 0.219251 ms
+<t> compute affected modules with chunk graph: 0.003693 ms
+<t> optimize: 0.708767 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.219502 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.384298 ms
+<t> runtime requirements.modules: 0.043182 ms
+<t> runtime requirements.chunks: 0.087577 ms
+<t> runtime requirements.entries: 0.087476 ms
+<t> runtime requirements: 0.276906 ms
+<t> hashing: initialize hash: 0.009199 ms
+<t> hashing: sort chunks: 0.022819 ms
+<t> hashing: hash runtime modules: 0.007417 ms
+<t> hashing: hash chunks: 0.319297 ms
+<t> hashing: hash digest: 0.016139 ms
+<t> hashing: process full hash modules: 0.001936 ms
+<t> hashing: 0.422802 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.00782 ms
+<t> module assets: 0.011165 ms
+<t> create chunk assets: 0.675971 ms
+<t> process assets: 0.062318 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.026042 ms
+<t> figure out provided exports: 0.065351 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.027813 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.00433 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.009308 ms
+<t> trace exports usage in graph: 0.143801 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.026571 ms
+<t> visitModules: visiting: 0.083203 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.115967 ms
+<t> connectChunkGroups: 0.002256 ms
+<t> cleanup: 0.001873 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.036597 ms
+<t> modules: 0.100033 ms
+<t> queue: 0.002584 ms
+<t> maxSize: 0.006671 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:18: webpack 5.64.4 compiled successfully in 20 ms (f8811a40b05f685edf64)

@@ -1,0 +1,213 @@
+PublicPath: auto
+assets by path inner1/inner2/*.js 6.37 KiB
+  asset inner1/inner2/a.js 3.88 KiB {0} [emitted] (name: a)
+  asset inner1/inner2/c.js 2.49 KiB {2} [emitted] (name: c)
+assets by path *.js 6.32 KiB
+  asset b.js 3.85 KiB {1} [emitted] (name: b)
+  asset d.js 2.47 KiB {3} [emitted] (name: d)
+asset asset.jpg 0 bytes ({0}, {1}, {2}, {3}) [emitted] [from: asset.jpg] (auxiliary name: a, b, c, d)
+Entrypoint a 3.88 KiB = inner1/inner2/a.js 1 auxiliary asset
+Entrypoint b 3.85 KiB = b.js 1 auxiliary asset
+Entrypoint c 2.49 KiB = inner1/inner2/c.js 1 auxiliary asset
+Entrypoint d 2.47 KiB = d.js 1 auxiliary asset
+chunk {0} (runtime: a) inner1/inner2/a.js (a) 198 bytes (javascript) 1 bytes (asset) 1.34 KiB (runtime) [entry] [rendered]
+  > ./a a
+  runtime modules 1.34 KiB
+    webpack/runtime/global 221 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 878 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 198 bytes (javascript) 1 bytes (asset)
+    ./a.js [0] 156 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      entry ./a a
+    ./asset.jpg [1] 42 bytes (javascript) 1 bytes (asset) {0} {1} {2} {3} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      from origin ./a.js
+        harmony side effect evaluation ./asset.jpg [0] ./a.js 1:0-32
+        harmony import specifier ./asset.jpg [0] ./a.js 4:8-13
+      from origin ./b.js
+        harmony side effect evaluation ./asset.jpg [2] ./b.js 1:0-32
+        harmony import specifier ./asset.jpg [2] ./b.js 4:8-13
+      from origin ./c.js
+        harmony side effect evaluation ./asset.jpg [3] ./c.js 1:0-32
+        harmony import specifier ./asset.jpg [3] ./c.js 4:8-13
+      from origin ./d.js
+        harmony side effect evaluation ./asset.jpg [4] ./d.js 1:0-32
+        harmony import specifier ./asset.jpg [4] ./d.js 4:8-13
+chunk {1} (runtime: b) b.js (b) 178 bytes (javascript) 1 bytes (asset) 1.33 KiB (runtime) [entry] [rendered]
+  > ./b b
+  runtime modules 1.33 KiB
+    webpack/runtime/global 221 bytes {1} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {1} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {1} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 178 bytes (javascript) 1 bytes (asset)
+    ./asset.jpg [1] 42 bytes (javascript) 1 bytes (asset) {0} {1} {2} {3} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      from origin ./a.js
+        harmony side effect evaluation ./asset.jpg [0] ./a.js 1:0-32
+        harmony import specifier ./asset.jpg [0] ./a.js 4:8-13
+      from origin ./b.js
+        harmony side effect evaluation ./asset.jpg [2] ./b.js 1:0-32
+        harmony import specifier ./asset.jpg [2] ./b.js 4:8-13
+      from origin ./c.js
+        harmony side effect evaluation ./asset.jpg [3] ./c.js 1:0-32
+        harmony import specifier ./asset.jpg [3] ./c.js 4:8-13
+      from origin ./d.js
+        harmony side effect evaluation ./asset.jpg [4] ./d.js 1:0-32
+        harmony import specifier ./asset.jpg [4] ./d.js 4:8-13
+    ./b.js [2] 136 bytes {1} [depth 0] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      entry ./b b
+chunk {2} (runtime: c) inner1/inner2/c.js (c) 181 bytes (javascript) 1 bytes (asset) 308 bytes (runtime) [entry] [rendered]
+  > ./c c
+  cacheable modules 181 bytes (javascript) 1 bytes (asset)
+    ./asset.jpg [1] 42 bytes (javascript) 1 bytes (asset) {0} {1} {2} {3} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      from origin ./a.js
+        harmony side effect evaluation ./asset.jpg [0] ./a.js 1:0-32
+        harmony import specifier ./asset.jpg [0] ./a.js 4:8-13
+      from origin ./b.js
+        harmony side effect evaluation ./asset.jpg [2] ./b.js 1:0-32
+        harmony import specifier ./asset.jpg [2] ./b.js 4:8-13
+      from origin ./c.js
+        harmony side effect evaluation ./asset.jpg [3] ./c.js 1:0-32
+        harmony import specifier ./asset.jpg [3] ./c.js 4:8-13
+      from origin ./d.js
+        harmony side effect evaluation ./asset.jpg [4] ./d.js 1:0-32
+        harmony import specifier ./asset.jpg [4] ./d.js 4:8-13
+    ./c.js [3] 139 bytes {2} [depth 0] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      entry ./c c
+  runtime modules 308 bytes
+    webpack/runtime/make namespace object 274 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 34 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {3} (runtime: d) d.js (d) 161 bytes (javascript) 1 bytes (asset) 308 bytes (runtime) [entry] [rendered]
+  > ./d d
+  cacheable modules 161 bytes (javascript) 1 bytes (asset)
+    ./asset.jpg [1] 42 bytes (javascript) 1 bytes (asset) {0} {1} {2} {3} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      from origin ./a.js
+        harmony side effect evaluation ./asset.jpg [0] ./a.js 1:0-32
+        harmony import specifier ./asset.jpg [0] ./a.js 4:8-13
+      from origin ./b.js
+        harmony side effect evaluation ./asset.jpg [2] ./b.js 1:0-32
+        harmony import specifier ./asset.jpg [2] ./b.js 4:8-13
+      from origin ./c.js
+        harmony side effect evaluation ./asset.jpg [3] ./c.js 1:0-32
+        harmony import specifier ./asset.jpg [3] ./c.js 4:8-13
+      from origin ./d.js
+        harmony side effect evaluation ./asset.jpg [4] ./d.js 1:0-32
+        harmony import specifier ./asset.jpg [4] ./d.js 4:8-13
+    ./d.js [4] 119 bytes {3} [depth 0] [built] [code generated]
+      [no exports]
+      [used exports unknown]
+      entry ./d d
+  runtime modules 308 bytes
+    webpack/runtime/make namespace object 274 bytes {3} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 34 bytes {3} [code generated]
+      [no exports]
+      [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.479002 ms
+<t> finish make hook: 0.017694 ms
+<t> finish compilation: 0.20694 ms
+<t> seal compilation: 5.708016 ms
+<t> afterCompile hook: 0.009031 ms
+<t> emitAssets: 2.256713 ms
+<t> emitRecords: 0.002172 ms
+<t> done hook: 0.010562 ms
+<t> beginIdle: 0.006247 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004937 ms
+<t> finish modules: 0.14633 ms
+<t> report dependency errors and warnings: 0.038983 ms
+<t> optimize dependencies: 0.03387 ms
+<t> create chunks: 0.329878 ms
+<t> compute affected modules with chunk graph: 0.00205 ms
+<t> optimize: 0.66383 ms
+    8 modules hashed, 0 from cache (1.6 variants per module in average)
+<t> module hashing: 0.377529 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.690057 ms
+<t> runtime requirements.modules: 0.085898 ms
+<t> runtime requirements.chunks: 0.100225 ms
+<t> runtime requirements.entries: 0.561651 ms
+<t> runtime requirements: 0.786114 ms
+<t> hashing: initialize hash: 0.007034 ms
+<t> hashing: sort chunks: 0.031149 ms
+<t> hashing: hash runtime modules: 0.792837 ms
+<t> hashing: hash chunks: 0.630398 ms
+<t> hashing: hash digest: 0.023376 ms
+<t> hashing: process full hash modules: 0.001182 ms
+<t> hashing: 1.532318 ms
+    100% code generated (10 generated, 0 from cache)
+<t> record hash: 0.006715 ms
+<t> module assets: 0.020569 ms
+<t> create chunk assets: 0.965273 ms
+<t> process assets: 0.044186 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.027861 ms
+<t> figure out provided exports: 0.028892 ms
+    100% of exports of modules have been determined (0 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.022368 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004467 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.023692 ms
+<t> visitModules: visiting: 0.101041 ms
+    16 queue items processed (8 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.142422 ms
+<t> connectChunkGroups: 0.003979 ms
+<t> cleanup: 0.002136 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.026952 ms
+<t> modules: 0.13714 ms
+<t> queue: 0.003037 ms
+<t> maxSize: 0.008368 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 5 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:47: webpack 5.64.4 compiled successfully in 22 ms (e7e0e2548fa060594c74)

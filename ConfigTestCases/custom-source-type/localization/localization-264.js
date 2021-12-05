@@ -1,0 +1,1 @@
+module.exports = {"264":{"value":"Translated text 2"}}

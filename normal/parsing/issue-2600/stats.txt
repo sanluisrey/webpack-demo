@@ -1,0 +1,180 @@
+PublicPath: (none)
+asset bundle.js 567 bytes {0} [emitted] (name: main)
+Entrypoint main 567 bytes = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 77 bytes [entry] [rendered]
+  > ./parsing/issue-2600/ main
+  ./parsing/issue-2600/index.js [0] 77 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (IfStatement) with side effects in source code at 1:0-2:19
+    entry ./parsing/issue-2600/ main
+./parsing/issue-2600/index.js [0] 77 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (IfStatement) with side effects in source code at 1:0-2:19
+  entry ./parsing/issue-2600/ main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 10.074344 ms
+<t> finish make hook: 0.007956 ms
+<t> finish compilation: 0.069245 ms
+<t> seal compilation: 1.24538 ms
+<t> afterCompile hook: 0.005924 ms
+<t> emitAssets: 0.544009 ms
+<t> emitRecords: 0.001578 ms
+<t> done hook: 0.006862 ms
+<t> beginIdle: 0.003207 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00242 ms
+<t> finish modules: 0.047247 ms
+<t> report dependency errors and warnings: 0.007912 ms
+<t> optimize dependencies: 0.061667 ms
+<t> create chunks: 0.170535 ms
+<t> compute affected modules with chunk graph: 0.001627 ms
+<t> optimize: 0.324787 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.068964 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.1137 ms
+<t> runtime requirements.modules: 0.002303 ms
+<t> runtime requirements.chunks: 0.014935 ms
+<t> runtime requirements.entries: 0.028998 ms
+<t> runtime requirements: 0.059292 ms
+<t> hashing: initialize hash: 0.002127 ms
+<t> hashing: hash errors: 0.003389 ms
+<t> hashing: sort chunks: 0.009845 ms
+<t> hashing: hash runtime modules: 0.003203 ms
+<t> hashing: hash chunks: 0.102578 ms
+<t> hashing: hash digest: 0.007849 ms
+<t> hashing: process full hash modules: 0.001104 ms
+<t> hashing: 0.152594 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.003958 ms
+<t> module assets: 0.005819 ms
+<t> create chunk assets: 0.175818 ms
+<t> process assets: 0.028804 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01159 ms
+<t> figure out provided exports: 0.001092 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001484 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002106 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003045 ms
+<t> trace exports usage in graph: 0.029312 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.002541 ms
+<t> visitModules: visiting: 0.06334 ms
+<t> visitModules: calculating available modules: 0.007025 ms
+<t> visitModules: merging available modules: 0.003808 ms
+<t> visitModules: check modules for revisit: 0.002558 ms
+<t> visitModules: visiting: 0.001977 ms
+    3 queue items processed (2 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.100778 ms
+<t> connectChunkGroups: 0.005791 ms
+<t> cleanup: 0.015375 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011351 ms
+<t> modules: 0.036085 ms
+<t> queue: 0.001391 ms
+<t> maxSize: 0.003796 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./parsing/issue-2600/index.js 2:1-18
+Module not found: Error: Can't resolve 'missing' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2600'
+resolve 'missing' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2600'
+  Parsed request is a module
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/parsing/issue-2600)
+    Field 'browser' doesn't contain a valid alias configuration
+    resolve as module
+      /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2600/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2600/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/parsing/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/parsing/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/cases/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/test/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/webpack/web_modules doesn't exist or is not a directory
+      looking for modules in /Users/yoh/Projects/repos/webpack/node_modules
+        single file module
+          using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./node_modules/missing)
+            no extension
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/yoh/Projects/repos/webpack/node_modules/missing doesn't exist
+            .webpack.js
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/yoh/Projects/repos/webpack/node_modules/missing.webpack.js doesn't exist
+            .web.js
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/yoh/Projects/repos/webpack/node_modules/missing.web.js doesn't exist
+            .js
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/yoh/Projects/repos/webpack/node_modules/missing.js doesn't exist
+            .json
+              Field 'browser' doesn't contain a valid alias configuration
+              /Users/yoh/Projects/repos/webpack/node_modules/missing.json doesn't exist
+        /Users/yoh/Projects/repos/webpack/node_modules/missing doesn't exist
+      /Users/yoh/Projects/repos/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/repos/node_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/web_modules doesn't exist or is not a directory
+      /Users/yoh/Projects/node_modules doesn't exist or is not a directory
+      /Users/yoh/web_modules doesn't exist or is not a directory
+      /Users/yoh/node_modules doesn't exist or is not a directory
+      /Users/web_modules doesn't exist or is not a directory
+      /Users/node_modules doesn't exist or is not a directory
+      /web_modules doesn't exist or is not a directory
+      /node_modules doesn't exist or is not a directory
+ModuleNotFoundError: Module not found: Error: Can't resolve 'missing' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2600'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:955:45
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2021-12-05 17:45:37: webpack 5.64.4 compiled with 1 error in 13 ms (417f58c79184836d32b9)

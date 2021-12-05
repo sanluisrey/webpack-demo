@@ -1,0 +1,544 @@
+nothing without module concatenation:
+  PublicPath: (none)
+  asset bundle0.js 4.52 KiB {179} [emitted] (name: main)
+  Entrypoint main 4.52 KiB = bundle0.js
+  chunk {179} (runtime: main) bundle0.js (main) 499 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! main
+    cacheable modules 499 bytes
+      ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! [611] 244 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-67
+        entry ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! main
+      ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: __usedExports]
+        Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+        from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}!
+          harmony side effect evaluation any [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 3:0-53
+          harmony import specifier any [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 5:7-20
+        from origin ./module.js
+          harmony side effect evaluation any [662] ./module.js 1:0-33
+          [inactive] harmony import specifier any [662] ./module.js 4:1-5
+      ../_helpers/testModuleLoader.js?[]! [945] 47 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-28
+        cjs require ../_helpers/testModuleLoader?[]! [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 1:23-66
+      ./module.js [662] 77 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        [no exports used]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-33
+        harmony side effect evaluation ./module [945] ../_helpers/testModuleLoader.js?[]! 1:0-28
+    runtime modules 670 bytes
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 42.437134 ms
+  <t> finish make hook: 0.014557 ms
+  <t> finish compilation: 0.370921 ms
+  <t> seal compilation: 2.826026 ms
+  <t> afterCompile hook: 0.007292 ms
+  <t> emitAssets: 11.861413 ms
+  <t> emitRecords: 0.001553 ms
+  <t> done hook: 0.015971 ms
+  <t> beginIdle: 0.004241 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.006044 ms
+  <t> finish modules: 0.287099 ms
+  <t> report dependency errors and warnings: 0.060879 ms
+  <t> optimize dependencies: 0.304963 ms
+  <t> create chunks: 0.200166 ms
+  <t> compute affected modules with chunk graph: 0.001514 ms
+  <t> optimize: 0.562065 ms
+      4 modules hashed, 0 from cache (0.8 variants per module in average)
+  <t> module hashing: 0.134793 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> code generation: 0.340562 ms
+  <t> runtime requirements.modules: 0.031354 ms
+  <t> runtime requirements.chunks: 0.03646 ms
+  <t> runtime requirements.entries: 0.189287 ms
+  <t> runtime requirements: 0.272712 ms
+  <t> hashing: initialize hash: 0.001942 ms
+  <t> hashing: sort chunks: 0.013062 ms
+  <t> hashing: hash runtime modules: 0.090106 ms
+  <t> hashing: hash chunks: 0.170765 ms
+  <t> hashing: hash digest: 0.008233 ms
+  <t> hashing: process full hash modules: 0.000938 ms
+  <t> hashing: 0.309362 ms
+      100% code generated (3 generated, 0 from cache)
+  <t> record hash: 0.00495 ms
+  <t> module assets: 0.008448 ms
+  <t> create chunk assets: 0.356007 ms
+  <t> process assets: 0.141142 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.028646 ms
+  <t> figure out provided exports: 0.149083 ms
+      80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.020507 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.039467 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.03229 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.009976 ms
+  <t> trace exports usage in graph: 0.208919 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.038489 ms
+  <t> visitModules: visiting: 0.075656 ms
+      9 queue items processed (4 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.104311 ms
+  <t> connectChunkGroups: 0.001836 ms
+  <t> cleanup: 0.001842 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.014597 ms
+  <t> modules: 0.084201 ms
+  <t> queue: 0.001842 ms
+  <t> maxSize: 0.00556 ms
+
+  LOG from webpack.FileSystemInfo
+      5 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:35: nothing without module concatenation (webpack 5.64.4) compiled successfully in 59 ms (38ff5970e86a7699b968)
+
+nothing with module concatenation:
+  PublicPath: (none)
+  asset bundle1.js 4.29 KiB {179} [emitted] (name: main)
+  Entrypoint main 4.29 KiB = bundle1.js
+  chunk {179} (runtime: main) bundle1.js (main) 499 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! main
+    cacheable modules 499 bytes
+      ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! [611] 244 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-67
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0: Module ../_helpers/testModuleLoader.js?[]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! (referenced with cjs require)
+        entry ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! main
+      ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [only some exports used: __usedExports]
+        Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+        from origin ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}!
+          harmony side effect evaluation any [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 3:0-53
+          harmony import specifier any [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 5:7-20
+        from origin ../_helpers/testModuleLoader.js?[]! + 1 modules
+          harmony side effect evaluation any [137] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 1:0-33
+          [inactive] harmony import specifier any [137] ../_helpers/testModuleLoader.js?[]! + 1 modules ./module.js 4:1-5
+        from origin ./module.js
+          harmony side effect evaluation any ./module.js 1:0-33
+          [inactive] harmony import specifier any ./module.js 4:1-5
+      ../_helpers/testModuleLoader.js?[]! + 1 modules [137] 124 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0 because of ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}!
+        cjs require ../_helpers/testModuleLoader?[]! [611] ../_helpers/entryLoader.js?{"usedExports":[],"expect":{"any":[]},"name":"nothing"}! 1:23-66
+    runtime modules 670 bytes
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 44.751978 ms
+  <t> finish make hook: 0.006453 ms
+  <t> finish compilation: 0.187719 ms
+  <t> seal compilation: 3.377663 ms
+  <t> afterCompile hook: 0.008847 ms
+  <t> emitAssets: 8.258141 ms
+  <t> emitRecords: 0.001332 ms
+  <t> done hook: 0.014968 ms
+  <t> beginIdle: 0.004111 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.003587 ms
+  <t> finish modules: 0.14806 ms
+  <t> report dependency errors and warnings: 0.027266 ms
+  <t> optimize dependencies: 0.170796 ms
+  <t> create chunks: 0.122299 ms
+  <t> compute affected modules with chunk graph: 0.001358 ms
+  <t> optimize: 0.945665 ms
+      3 modules hashed, 0 from cache (0.6 variants per module in average)
+  <t> module hashing: 0.182095 ms
+      100% code generated (3 generated, 0 from cache)
+  <t> code generation: 0.784141 ms
+  <t> runtime requirements.modules: 0.029859 ms
+  <t> runtime requirements.chunks: 0.032889 ms
+  <t> runtime requirements.entries: 0.153454 ms
+  <t> runtime requirements: 0.230601 ms
+  <t> hashing: initialize hash: 0.001815 ms
+  <t> hashing: sort chunks: 0.012846 ms
+  <t> hashing: hash runtime modules: 0.080313 ms
+  <t> hashing: hash chunks: 0.169844 ms
+  <t> hashing: hash digest: 0.008521 ms
+  <t> hashing: process full hash modules: 0.00097 ms
+  <t> hashing: 0.298009 ms
+      100% code generated (3 generated, 0 from cache)
+  <t> record hash: 0.004725 ms
+  <t> module assets: 0.007972 ms
+  <t> create chunk assets: 0.327248 ms
+  <t> process assets: 0.12532 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.017647 ms
+  <t> figure out provided exports: 0.07067 ms
+      80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.010602 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.030632 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.018582 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.006247 ms
+  <t> trace exports usage in graph: 0.110666 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.022045 ms
+  <t> visitModules: visiting: 0.044653 ms
+      9 queue items processed (4 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.064139 ms
+  <t> connectChunkGroups: 0.001632 ms
+  <t> cleanup: 0.001255 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.029383 ms
+  <t> modules: 0.064944 ms
+  <t> queue: 0.001675 ms
+  <t> maxSize: 0.004173 ms
+
+  LOG from webpack.ModuleConcatenationPlugin
+  <t> select relevant modules: 0.020928 ms
+  <t> sort relevant modules: 0.003063 ms
+  <t> find modules to concatenate: 0.265622 ms
+  <t> sort concat configurations: 0.000726 ms
+  <t> create concatenated modules: 0.128199 ms
+  + 3 hidden lines
+
+  LOG from webpack.FileSystemInfo
+      5 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:35: nothing with module concatenation (webpack 5.64.4) compiled successfully in 58 ms (590e59851ead5e5de869)
+
+default without module concatenation:
+  PublicPath: (none)
+  asset bundle2.js 5.9 KiB {179} [emitted] (name: main)
+  Entrypoint main 5.9 KiB = bundle2.js
+  chunk {179} (runtime: main) bundle2.js (main) 557 bytes (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! main
+    cacheable modules 557 bytes
+      modules by path ../_helpers/*.js 132 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, fun1]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          from origin ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}!
+            harmony side effect evaluation any [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 3:0-53
+            harmony import specifier any [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 5:7-20
+          from origin ./module.js
+            harmony side effect evaluation any [662] ./module.js 1:0-33
+            harmony import specifier any [662] ./module.js 4:1-5
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+          [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+          [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! [877] 262 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-78
+        entry ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! main
+      ../_helpers/testModuleLoader.js?["default"]! [331] 86 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-32
+        cjs require ../_helpers/testModuleLoader?["default"]! [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 1:23-77
+      ./module.js [662] 77 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        [all exports used]
+        Dependency (harmony side effect evaluation) with side effects at 1:0-33
+        harmony side effect evaluation ./module [331] ../_helpers/testModuleLoader.js?["default"]! 1:0-53
+        harmony import specifier ./module [331] ../_helpers/testModuleLoader.js?["default"]! 2:16-30
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 47.766182 ms
+  <t> finish make hook: 0.007233 ms
+  <t> finish compilation: 0.341761 ms
+  <t> seal compilation: 2.665822 ms
+  <t> afterCompile hook: 0.007516 ms
+  <t> emitAssets: 4.871112 ms
+  <t> emitRecords: 0.001349 ms
+  <t> done hook: 0.013409 ms
+  <t> beginIdle: 0.004166 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.004297 ms
+  <t> finish modules: 0.285373 ms
+  <t> report dependency errors and warnings: 0.04157 ms
+  <t> optimize dependencies: 0.249094 ms
+  <t> create chunks: 0.145595 ms
+  <t> compute affected modules with chunk graph: 0.001164 ms
+  <t> optimize: 0.494137 ms
+      5 modules hashed, 0 from cache (1 variants per module in average)
+  <t> module hashing: 0.144985 ms
+      100% code generated (5 generated, 0 from cache)
+  <t> code generation: 0.380557 ms
+  <t> runtime requirements.modules: 0.035484 ms
+  <t> runtime requirements.chunks: 0.041045 ms
+  <t> runtime requirements.entries: 0.19146 ms
+  <t> runtime requirements: 0.283489 ms
+  <t> hashing: initialize hash: 0.002059 ms
+  <t> hashing: sort chunks: 0.01374 ms
+  <t> hashing: hash runtime modules: 0.105071 ms
+  <t> hashing: hash chunks: 0.169571 ms
+  <t> hashing: hash digest: 0.008147 ms
+  <t> hashing: process full hash modules: 0.000946 ms
+  <t> hashing: 0.323778 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.004803 ms
+  <t> module assets: 0.007543 ms
+  <t> create chunk assets: 0.32155 ms
+  <t> process assets: 0.137502 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.082243 ms
+  <t> figure out provided exports: 0.11721 ms
+      80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.015696 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.02279 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.020981 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.006457 ms
+  <t> trace exports usage in graph: 0.183802 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.030291 ms
+  <t> visitModules: visiting: 0.057596 ms
+      11 queue items processed (5 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.078755 ms
+  <t> connectChunkGroups: 0.001805 ms
+  <t> cleanup: 0.001548 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.014237 ms
+  <t> modules: 0.070393 ms
+  <t> queue: 0.001946 ms
+  <t> maxSize: 0.004887 ms
+
+  LOG from webpack.FileSystemInfo
+      5 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:35: default without module concatenation (webpack 5.64.4) compiled successfully in 57 ms (3bb895e510002cf44fa7)
+
+default with module concatenation:
+  PublicPath: (none)
+  asset bundle3.js 5.49 KiB {179} [emitted] (name: main)
+  Entrypoint main 5.49 KiB = bundle3.js
+  chunk {179} (runtime: main) bundle3.js (main) 557 bytes (javascript) 937 bytes (runtime) [entry] [rendered]
+    > ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! main
+    cacheable modules 557 bytes
+      modules by path ../_helpers/*.js 132 bytes
+        ../_helpers/inner-file.js?0 [326] 131 bytes {179} [depth 1] [dependent] [built] [code generated]
+          [only some exports used: __usedExports, fun1]
+          Statement (ExportNamedDeclaration) with side effects in source code at 3:0-66
+          ModuleConcatenation bailout: List of module exports is dynamic (fun1: maybe provided (runtime-defined) and used in main)
+          from origin ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}!
+            harmony side effect evaluation any [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 3:0-53
+            harmony import specifier any [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 5:7-20
+          from origin ../_helpers/testModuleLoader.js?["default"]! + 1 modules
+            harmony side effect evaluation any [435] ../_helpers/testModuleLoader.js?["default"]! + 1 modules ./module.js 1:0-33
+            harmony import specifier any [435] ../_helpers/testModuleLoader.js?["default"]! + 1 modules ./module.js 4:1-5
+          from origin ./module.js
+            harmony side effect evaluation any ./module.js 1:0-33
+            harmony import specifier any ./module.js 4:1-5
+        ../_helpers/unknown.js [256] 1 bytes {179} [depth 2] [dependent] [built] [code generated]
+          [used exports unknown]
+          ModuleConcatenation bailout: Module is not an ECMAScript module
+          [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+          [inactive] harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 1:0-36
+          [inactive] harmony side effect evaluation ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+          harmony export imported specifier ./unknown [326] ../_helpers/inner-file.js?0 2:0-26
+      ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! [877] 262 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        Statement (IfStatement) with side effects in source code at 1:0-78
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0: Module ../_helpers/testModuleLoader.js?["default"]! is referenced from these modules with unsupported syntax: ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! (referenced with cjs require)
+        entry ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! main
+      ../_helpers/testModuleLoader.js?["default"]! + 1 modules [435] 163 bytes {179} [depth 1] [dependent] [built] [code generated]
+        [exports: default]
+        ModuleConcatenation bailout: Cannot concat with ../_helpers/inner-file.js?0 because of ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}!: List of module exports is dynamic (fun1: maybe provided (runtime-defined) and used in main)
+        cjs require ../_helpers/testModuleLoader?["default"]! [877] ../_helpers/entryLoader.js?{"usedExports":["default"],"expect":{"any":["fun1"]},"name":"default"}! 1:23-77
+    runtime modules 937 bytes
+      webpack/runtime/compat get default export 267 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/define property getters 308 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+      webpack/runtime/make namespace object 274 bytes {179} [code generated]
+        [no exports]
+        [used exports unknown]
+    
+
+  LOG from webpack.Compiler
+  <t> make hook: 49.437056 ms
+  <t> finish make hook: 0.006645 ms
+  <t> finish compilation: 0.192161 ms
+  <t> seal compilation: 3.396469 ms
+  <t> afterCompile hook: 0.007242 ms
+  <t> emitAssets: 1.019118 ms
+  <t> emitRecords: 0.000739 ms
+  <t> done hook: 0.011698 ms
+  <t> beginIdle: 0.002824 ms
+
+  LOG from webpack.Compilation
+  <t> compute affected modules: 0.003091 ms
+  <t> finish modules: 0.147702 ms
+  <t> report dependency errors and warnings: 0.032207 ms
+  <t> optimize dependencies: 0.202261 ms
+  <t> create chunks: 0.130596 ms
+  <t> compute affected modules with chunk graph: 0.001224 ms
+  <t> optimize: 0.760599 ms
+      4 modules hashed, 0 from cache (0.8 variants per module in average)
+  <t> module hashing: 0.173789 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> code generation: 0.940927 ms
+  <t> runtime requirements.modules: 0.036152 ms
+  <t> runtime requirements.chunks: 0.041275 ms
+  <t> runtime requirements.entries: 0.146866 ms
+  <t> runtime requirements: 0.251215 ms
+  <t> hashing: initialize hash: 0.002034 ms
+  <t> hashing: sort chunks: 0.013268 ms
+  <t> hashing: hash runtime modules: 0.101361 ms
+  <t> hashing: hash chunks: 0.198377 ms
+  <t> hashing: hash digest: 0.008693 ms
+  <t> hashing: process full hash modules: 0.000943 ms
+  <t> hashing: 0.348184 ms
+      100% code generated (4 generated, 0 from cache)
+  <t> record hash: 0.005019 ms
+  <t> module assets: 0.009013 ms
+  <t> create chunk assets: 0.28007 ms
+  <t> process assets: 0.124752 ms
+
+  LOG from webpack.FlagDependencyExportsPlugin
+  <t> restore cached provided exports: 0.017079 ms
+  <t> figure out provided exports: 0.070384 ms
+      80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+  <t> store provided exports into cache: 0.010544 ms
+
+  LOG from webpack.InnerGraphPlugin
+  <t> infer dependency usage: 0.027427 ms
+
+  LOG from webpack.SideEffectsFlagPlugin
+  <t> update dependencies: 0.016066 ms
+
+  LOG from webpack.FlagDependencyUsagePlugin
+  <t> initialize exports usage: 0.005935 ms
+  <t> trace exports usage in graph: 0.149774 ms
+
+  LOG from webpack.buildChunkGraph
+  <t> visitModules: prepare: 0.028365 ms
+  <t> visitModules: visiting: 0.054365 ms
+      11 queue items processed (5 blocks)
+      0 chunk groups connected
+      0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+      0 chunk group info updated (0 already connected chunk groups reconnected)
+  <t> visitModules: 0.073632 ms
+  <t> connectChunkGroups: 0.001548 ms
+  <t> cleanup: 0.001184 ms
+
+  LOG from webpack.SplitChunksPlugin
+  <t> prepare: 0.011728 ms
+  <t> modules: 0.067981 ms
+  <t> queue: 0.001964 ms
+  <t> maxSize: 0.004098 ms
+
+  LOG from webpack.ModuleConcatenationPlugin
+  <t> select relevant modules: 0.037795 ms
+  <t> sort relevant modules: 0.00252 ms
+  <t> find modules to concatenate: 0.126728 ms
+  <t> sort concat configurations: 0.000539 ms
+  <t> create concatenated modules: 0.115285 ms
+  + 3 hidden lines
+
+  LOG from webpack.FileSystemInfo
+      5 new snapshots created
+      0% root snapshot uncached (0 / 0)
+      0% children snapshot uncached (0 / 0)
+      0 entries tested
+      File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+      File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+      Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+      Managed items info in cache: 0 items
+
+  2021-12-05 17:44:35: default with module concatenation (webpack 5.64.4) compiled successfully in 56 ms (39fbc36efe420651c610)

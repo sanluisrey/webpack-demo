@@ -1,0 +1,196 @@
+PublicPath: (none)
+assets by path *.js 14 KiB
+  asset bundle0.js 10.6 KiB {179} [emitted] (name: main)
+  asset 37.bundle0.js 1.68 KiB {37} [emitted]
+  asset 662.bundle0.js 1.68 KiB {662} [emitted]
+assets by path *.wasm 126 bytes
+  asset 276.e21657260ec0f18a4134.wasm 63 bytes ({37}, {662}) [emitted] [immutable]
+  asset 709.a04d6a1abf22eca33af0.wasm 63 bytes ({37}, {662}) [emitted] [immutable]
+Entrypoint main 10.6 KiB = bundle0.js
+chunk {37} (runtime: main) 37.bundle0.js 261 bytes (javascript) 126 bytes (webassembly) <{179}> [rendered]
+  > ./module?2 [10] ./index.js 9:8-28
+  ./module.js?2 [37] 161 bytes {37} [depth 1] [built] [code generated]
+    [exports: run]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-41
+    ModuleConcatenation bailout: Module is async
+    import() ./module?2 [10] ./index.js 9:8-28
+  ./wasm.wat?1 [276] 50 bytes (javascript) 63 bytes (webassembly) {37} {662} [depth 2] [dependent] [built] [code generated]
+    [exports: add, getNumber]
+    [only some exports used: getNumber]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+    from origin ./module.js
+      harmony side effect evaluation ./wasm.wat?1 [662] ./module.js 1:0-41
+      harmony import specifier ./wasm.wat?1 [662] ./module.js 5:8-17
+    from origin ./module.js?2
+      harmony side effect evaluation ./wasm.wat?1 [37] ./module.js?2 1:0-41
+      harmony import specifier ./wasm.wat?1 [37] ./module.js?2 5:8-17
+  ./wasm.wat?2 [709] 50 bytes (javascript) 63 bytes (webassembly) {37} {662} [depth 2] [dependent] [built] [code generated]
+    [exports: add, getNumber]
+    [only some exports used: getNumber]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+    from origin ./module.js
+      harmony side effect evaluation ./wasm.wat?2 [662] ./module.js 2:0-55
+      harmony import specifier ./wasm.wat?2 [662] ./module.js 5:22-32
+    from origin ./module.js?2
+      harmony side effect evaluation ./wasm.wat?2 [37] ./module.js?2 2:0-55
+      harmony import specifier ./wasm.wat?2 [37] ./module.js?2 5:22-32
+chunk {179} (runtime: main) bundle0.js (main) 401 bytes (javascript) 5.86 KiB (runtime) >{37}< >{662}< [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 401 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-6:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  webpack/runtime/async module 2.16 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 175 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 27 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.8 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/wasm loading 753 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {662} (runtime: main) 662.bundle0.js 261 bytes (javascript) 126 bytes (webassembly) <{179}> [rendered]
+  > ./module [10] ./index.js 2:8-26
+  ./module.js [662] 161 bytes {662} [depth 1] [built] [code generated]
+    [exports: run]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-41
+    ModuleConcatenation bailout: Module is async
+    import() ./module [10] ./index.js 2:8-26
+  ./wasm.wat?1 [276] 50 bytes (javascript) 63 bytes (webassembly) {37} {662} [depth 2] [dependent] [built] [code generated]
+    [exports: add, getNumber]
+    [only some exports used: getNumber]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+    from origin ./module.js
+      harmony side effect evaluation ./wasm.wat?1 [662] ./module.js 1:0-41
+      harmony import specifier ./wasm.wat?1 [662] ./module.js 5:8-17
+    from origin ./module.js?2
+      harmony side effect evaluation ./wasm.wat?1 [37] ./module.js?2 1:0-41
+      harmony import specifier ./wasm.wat?1 [37] ./module.js?2 5:8-17
+  ./wasm.wat?2 [709] 50 bytes (javascript) 63 bytes (webassembly) {37} {662} [depth 2] [dependent] [built] [code generated]
+    [exports: add, getNumber]
+    [only some exports used: getNumber]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+    from origin ./module.js
+      harmony side effect evaluation ./wasm.wat?2 [662] ./module.js 2:0-55
+      harmony import specifier ./wasm.wat?2 [662] ./module.js 5:22-32
+    from origin ./module.js?2
+      harmony side effect evaluation ./wasm.wat?2 [37] ./module.js?2 2:0-55
+      harmony import specifier ./wasm.wat?2 [37] ./module.js?2 5:22-32
+  
+
+LOG from webpack.Compiler
+<t> make hook: 29.32892 ms
+<t> finish make hook: 0.016524 ms
+<t> finish compilation: 0.449586 ms
+<t> seal compilation: 8.433946 ms
+<t> afterCompile hook: 0.009453 ms
+<t> emitAssets: 1.42041 ms
+<t> emitRecords: 0.002385 ms
+<t> done hook: 0.010638 ms
+<t> beginIdle: 0.00647 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00485 ms
+<t> finish modules: 0.347515 ms
+<t> report dependency errors and warnings: 0.078934 ms
+<t> optimize dependencies: 0.359828 ms
+<t> create chunks: 0.384027 ms
+<t> compute affected modules with chunk graph: 0.002796 ms
+<t> optimize: 1.309792 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.318066 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.949214 ms
+<t> runtime requirements.modules: 0.114861 ms
+<t> runtime requirements.chunks: 0.095726 ms
+<t> runtime requirements.entries: 0.813195 ms
+<t> runtime requirements: 1.053784 ms
+<t> hashing: initialize hash: 0.00651 ms
+<t> hashing: sort chunks: 0.033648 ms
+<t> hashing: hash runtime modules: 1.368218 ms
+<t> hashing: hash chunks: 0.427362 ms
+<t> hashing: hash digest: 0.022299 ms
+<t> hashing: process full hash modules: 0.002627 ms
+<t> hashing: 1.924976 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.014679 ms
+<t> module assets: 0.024099 ms
+<t> create chunk assets: 1.18008 ms
+<t> process assets: 0.487682 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.031317 ms
+<t> figure out provided exports: 0.073528 ms
+    80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.027436 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.019576 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.020067 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006566 ms
+<t> trace exports usage in graph: 0.266585 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.01044 ms
+<t> visitModules: visiting: 0.086239 ms
+<t> visitModules: calculating available modules: 0.014204 ms
+<t> visitModules: merging available modules: 0.006957 ms
+<t> visitModules: check modules for revisit: 0.003856 ms
+<t> visitModules: prepare: 0.028132 ms
+<t> visitModules: visiting: 0.090208 ms
+    16 queue items processed (9 blocks)
+    2 chunk groups connected
+    2 chunk groups processed for merging (2 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    2 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.254385 ms
+<t> connectChunkGroups: 0.017532 ms
+<t> cleanup: 0.00354 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.029558 ms
+<t> modules: 0.256071 ms
+<t> queue: 0.0254 ms
+<t> maxSize: 0.014945 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.026955 ms
+<t> sort relevant modules: 0.00129 ms
+<t> find modules to concatenate: 0.002685 ms
+<t> sort concat configurations: 0.001044 ms
+<t> create concatenated modules: 0.006184 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled successfully in 41 ms (66d8dd74a2d9c48cc0b9)

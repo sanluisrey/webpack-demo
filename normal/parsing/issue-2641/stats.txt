@@ -1,0 +1,281 @@
+PublicPath: (none)
+asset bundle.js 7.98 KiB {3} [emitted] (name: main)
+asset 2.bundle.js 2.88 KiB {0}, {1}, {2} [emitted]
+asset 1.bundle.js 739 bytes {1} [emitted]
+asset 0.bundle.js 720 bytes {0} [emitted]
+Entrypoint main 7.98 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 40 bytes <{3}> [rendered]
+  > ./file ./missingModule [0] ./parsing/issue-2641/index.js 11:1-19:3
+  > ./file [0] ./parsing/issue-2641/index.js 2:1-7:37
+  ./parsing/issue-2641/file.js [1] 40 bytes {0} {2} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./file [0] ./parsing/issue-2641/index.js 2:1-7:37
+      amd require ./file [0] ./parsing/issue-2641/index.js 11:1-19:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./file [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file
+      context element ./file.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file.js
+chunk {1} (runtime: main) 1.bundle.js 53 bytes <{3}> [rendered]
+  > ./throwing [0] ./parsing/issue-2641/index.js 35:1-41:3
+  > ./throwing [0] ./parsing/issue-2641/index.js 45:1-53:3
+  ./parsing/issue-2641/throwing.js [2] 53 bytes {1} {2} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 35:1-41:3
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 45:1-53:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./throwing [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing
+      context element ./throwing.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing.js
+chunk {2} (runtime: main) 2.bundle.js 456 bytes <{3}> [rendered]
+  > [0] ./parsing/issue-2641/index.js 24:2-30:4
+  ./parsing/issue-2641/ sync ^\.\/.*$ [3] 281 bytes {2} [depth 1] [built] [code generated]
+    [no exports]
+    amd require context [0] ./parsing/issue-2641/index.js 24:2-30:4
+  ./parsing/issue-2641/errors.js [4] 82 bytes {2} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+    cjs self exports reference [4] ./parsing/issue-2641/errors.js 1:0-14
+    context element ./errors [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./errors
+    context element ./errors.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./errors.js
+  ./parsing/issue-2641/file.js [1] 40 bytes {0} {2} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./file [0] ./parsing/issue-2641/index.js 2:1-7:37
+      amd require ./file [0] ./parsing/issue-2641/index.js 11:1-19:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./file [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file
+      context element ./file.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file.js
+  ./parsing/issue-2641/throwing.js [2] 53 bytes {1} {2} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 35:1-41:3
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 45:1-53:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./throwing [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing
+      context element ./throwing.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing.js
+chunk {3} (runtime: main) bundle.js (main) 1.48 KiB (javascript) 2.37 KiB (runtime) >{0}< >{1}< >{2}< [entry] [rendered]
+  > ./parsing/issue-2641/ main
+  ./parsing/issue-2641/index.js [0] 1.48 KiB {3} [depth 0] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+    context element ./ [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./
+    context element ./index [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./index
+    context element ./index.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./index.js
+    entry ./parsing/issue-2641/ main
+  webpack/runtime/ensure chunk 326 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+built modules 1.92 KiB [built]
+  ./parsing/issue-2641/index.js [0] 1.48 KiB {3} [depth 0] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-8:3
+    context element ./ [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./
+    context element ./index [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./index
+    context element ./index.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./index.js
+    entry ./parsing/issue-2641/ main
+  ./parsing/issue-2641/file.js [1] 40 bytes {0} {2} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./file [0] ./parsing/issue-2641/index.js 2:1-7:37
+      amd require ./file [0] ./parsing/issue-2641/index.js 11:1-19:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./file [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file
+      context element ./file.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./file.js
+  ./parsing/issue-2641/ sync ^\.\/.*$ [3] 281 bytes {2} [depth 1] [built] [code generated]
+    [no exports]
+    amd require context [0] ./parsing/issue-2641/index.js 24:2-30:4
+  ./parsing/issue-2641/throwing.js [2] 53 bytes {1} {2} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    from origin ./parsing/issue-2641/index.js
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 35:1-41:3
+      amd require ./throwing [0] ./parsing/issue-2641/index.js 45:1-53:3
+    from origin ./parsing/issue-2641/ sync ^\.\/.*$
+      context element ./throwing [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing
+      context element ./throwing.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./throwing.js
+  ./parsing/issue-2641/errors.js [4] 82 bytes {2} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+    cjs self exports reference [4] ./parsing/issue-2641/errors.js 1:0-14
+    context element ./errors [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./errors
+    context element ./errors.js [3] ./parsing/issue-2641/ sync ^\.\/.*$ ./errors.js
+runtime modules 2.37 KiB
+  webpack/runtime/ensure chunk 326 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {3} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.668379 ms
+<t> finish make hook: 0.013757 ms
+<t> finish compilation: 0.120925 ms
+<t> seal compilation: 3.945818 ms
+<t> afterCompile hook: 0.007124 ms
+<t> emitAssets: 4.383295 ms
+<t> emitRecords: 0.002635 ms
+<t> done hook: 0.014554 ms
+<t> beginIdle: 0.007693 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003342 ms
+<t> finish modules: 0.081025 ms
+<t> report dependency errors and warnings: 0.025808 ms
+<t> optimize dependencies: 0.162716 ms
+<t> create chunks: 0.261862 ms
+<t> compute affected modules with chunk graph: 0.002187 ms
+<t> optimize: 0.903853 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.194816 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.276406 ms
+<t> runtime requirements.modules: 0.022002 ms
+<t> runtime requirements.chunks: 0.042274 ms
+<t> runtime requirements.entries: 0.346667 ms
+<t> runtime requirements: 0.428574 ms
+<t> hashing: initialize hash: 0.002129 ms
+<t> hashing: hash errors: 0.001575 ms
+<t> hashing: sort chunks: 0.021131 ms
+<t> hashing: hash runtime modules: 0.347613 ms
+<t> hashing: hash chunks: 0.386553 ms
+<t> hashing: hash digest: 0.010846 ms
+<t> hashing: process full hash modules: 0.001423 ms
+<t> hashing: 0.806756 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.00705 ms
+<t> module assets: 0.010792 ms
+<t> create chunk assets: 0.639991 ms
+<t> process assets: 0.042667 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021234 ms
+<t> figure out provided exports: 0.0106 ms
+    20% of exports of modules have been determined (4 no declared exports, 0 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003366 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004608 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004427 ms
+<t> trace exports usage in graph: 0.124256 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.008185 ms
+<t> visitModules: visiting: 0.07143 ms
+<t> visitModules: calculating available modules: 0.007976 ms
+<t> visitModules: merging available modules: 0.005444 ms
+<t> visitModules: check modules for revisit: 0.002647 ms
+<t> visitModules: prepare: 0.007943 ms
+<t> visitModules: visiting: 0.06421 ms
+    23 queue items processed (14 blocks)
+    5 chunk groups connected
+    5 chunk groups processed for merging (5 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    5 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.180425 ms
+<t> connectChunkGroups: 0.017609 ms
+<t> cleanup: 0.001896 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016142 ms
+<t> modules: 0.407201 ms
+<t> queue: 0.016894 ms
+<t> maxSize: 0.009799 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+ERROR in ./parsing/issue-2641/index.js 11:1-19:3
+Module not found: Error: Can't resolve './missingModule' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641'
+resolve './missingModule' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/parsing/issue-2641)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/parsing/issue-2641/missingModule)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641/missingModule doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './missingModule' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/issue-2641'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:947:14)
+    at arrayEachFunc (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2517:19)
+    at Object.parallel (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6858:9)
+    at NormalModuleFactory._resolveResourceErrorHints (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:870:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:831:18
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2021-12-05 17:45:37: webpack 5.64.4 compiled with 1 error in 25 ms (9fc02f1366ecd987e8f2)

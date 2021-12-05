@@ -1,0 +1,178 @@
+PublicPath: (none)
+asset container-file.js 19.9 KiB {413} [emitted] (name: container)
+asset bundle0.js 4.85 KiB {179} [emitted] (name: main)
+asset 393.bundle0.js 829 bytes {393} [emitted]
+asset 998.bundle0.js 532 bytes {998} [emitted]
+Entrypoint container 19.9 KiB = container-file.js
+Entrypoint main 4.85 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 649 bytes (javascript) 1.88 KiB (runtime) [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 649 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-27:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  webpack/runtime/consumes 0 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/sharing 1.79 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {393} (runtime: container) 393.bundle0.js 62 bytes (javascript) 42 bytes (consume-shared) <{413}> >{998}< [rendered]
+  > ./test [296] container entry ./test
+  ./test.js [393] 62 bytes {393} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-31
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) value@* (strict) (fallback: ./value.js): Module Concatenation is not implemented for ConsumeSharedModule
+    container exposed ./test [296] container entry ./test[0]
+  consume shared module (default) value@* (strict) (fallback: ./value.js) [514] 42 bytes {393} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ConsumeSharedModule
+    harmony side effect evaluation ./value [393] ./test.js 1:0-28
+    harmony import specifier ./value [393] ./test.js 3:23-28
+chunk {413} (runtime: container) container-file.js (container) 42 bytes (javascript) 13.1 KiB (runtime) >{393}< [entry] [rendered]
+  > container
+  container entry [296] 42 bytes {413} [depth 0] [built] [code generated]
+    [exports: get, init]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+    container entry container
+    used as library export
+  webpack/runtime/compat get default export 267 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/consumes 8.07 KiB {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 175 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.8 KiB {413} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/sharing 1.79 KiB {413} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {998} (runtime: container) 998.bundle0.js 24 bytes <{393}> [rendered]
+  > [514] consume shared module (default) value@* (strict) (fallback: ./value.js)
+  ./value.js [998] 24 bytes {998} [depth 3] [built] [code generated]
+    [exports: default]
+    consume shared fallback ./value [514] consume shared module (default) value@* (strict) (fallback: ./value.js)
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.408225 ms
+<t> finish make hook: 0.02972 ms
+<t> finish compilation: 0.410934 ms
+<t> seal compilation: 9.125023 ms
+<t> afterCompile hook: 0.01708 ms
+<t> emitAssets: 1.481528 ms
+<t> emitRecords: 0.002443 ms
+<t> done hook: 0.015217 ms
+<t> beginIdle: 0.010169 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005009 ms
+<t> finish modules: 0.268272 ms
+<t> report dependency errors and warnings: 0.04696 ms
+<t> optimize dependencies: 0.374646 ms
+<t> create chunks: 0.43551 ms
+<t> compute affected modules with chunk graph: 0.003889 ms
+<t> optimize: 1.048937 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.336414 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.570221 ms
+<t> runtime requirements.modules: 0.21162 ms
+<t> runtime requirements.chunks: 0.131462 ms
+<t> runtime requirements.entries: 0.960462 ms
+<t> runtime requirements: 1.346413 ms
+<t> hashing: initialize hash: 0.00813 ms
+<t> hashing: sort chunks: 0.034367 ms
+<t> hashing: hash runtime modules: 1.819466 ms
+<t> hashing: hash chunks: 0.708002 ms
+<t> hashing: hash digest: 0.027195 ms
+<t> hashing: process full hash modules: 0.001492 ms
+<t> hashing: 2.670104 ms
+    100% code generated (12 generated, 0 from cache)
+<t> record hash: 0.016288 ms
+<t> module assets: 0.025524 ms
+<t> create chunk assets: 1.289159 ms
+<t> process assets: 0.42995 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.037014 ms
+<t> figure out provided exports: 0.057502 ms
+    60% of exports of modules have been determined (2 no declared exports, 2 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.018969 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.026591 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.027098 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010921 ms
+<t> trace exports usage in graph: 0.255434 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.015926 ms
+<t> visitModules: visiting: 0.083961 ms
+<t> visitModules: calculating available modules: 0.011736 ms
+<t> visitModules: merging available modules: 0.005512 ms
+<t> visitModules: check modules for revisit: 0.007696 ms
+<t> visitModules: prepare: 0.018187 ms
+<t> visitModules: visiting: 0.081178 ms
+<t> visitModules: calculating available modules: 0.008508 ms
+<t> visitModules: merging available modules: 0.003377 ms
+<t> visitModules: check modules for revisit: 0.003828 ms
+<t> visitModules: prepare: 0.003748 ms
+<t> visitModules: visiting: 0.023262 ms
+    12 queue items processed (7 blocks)
+    2 chunk groups connected
+    2 chunk groups processed for merging (2 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    2 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.288133 ms
+<t> connectChunkGroups: 0.013651 ms
+<t> cleanup: 0.002492 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.026528 ms
+<t> modules: 0.131984 ms
+<t> queue: 0.003184 ms
+<t> maxSize: 0.014643 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.038542 ms
+<t> sort relevant modules: 0.002944 ms
+<t> find modules to concatenate: 0.06108 ms
+<t> sort concat configurations: 0.000845 ms
+<t> create concatenated modules: 0.004548 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:22: webpack 5.64.4 compiled successfully in 27 ms (c31a382795a430d19b0a)

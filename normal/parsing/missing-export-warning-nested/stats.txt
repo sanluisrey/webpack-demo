@@ -1,0 +1,443 @@
+PublicPath: (none)
+asset bundle.js 13.2 KiB {0} [emitted] (name: main)
+Entrypoint main 13.2 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 470 bytes (javascript) 2.03 KiB (runtime) [entry] [rendered]
+  > ./parsing/missing-export-warning-nested/ main
+  cacheable modules 470 bytes
+    ./parsing/missing-export-warning-nested/a.js [5] 61 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, x]
+      [only some exports used: A, p, x]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-25
+      harmony side effect evaluation ./a [4] ./parsing/missing-export-warning-nested/index.js 1:0-25
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 4:1-4
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 5:1-6
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 6:1-8
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 7:1-10
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 8:1-10
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 9:1-12
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 10:1-12
+      harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 11:1-8
+    ./parsing/missing-export-warning-nested/b.js [1] 61 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: b, y]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-25
+      harmony side effect evaluation ./b [5] ./parsing/missing-export-warning-nested/a.js 2:0-25
+      harmony export imported specifier ./b [5] ./parsing/missing-export-warning-nested/a.js 3:0-13
+    ./parsing/missing-export-warning-nested/c.js [2] 90 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: Z, c, z]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-25
+      harmony side effect evaluation ./c [1] ./parsing/missing-export-warning-nested/b.js 2:0-25
+      harmony export imported specifier ./c [1] ./parsing/missing-export-warning-nested/b.js 3:0-13
+    ./parsing/missing-export-warning-nested/d.js [3] 16 bytes {0} [depth 4] [dependent] [built] [code generated]
+      [exports: d]
+      [only some exports used: D, v]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-15
+      harmony side effect evaluation ./d [2] ./parsing/missing-export-warning-nested/c.js 2:0-25
+      harmony export imported specifier ./d [2] ./parsing/missing-export-warning-nested/c.js 4:0-16
+    ./parsing/missing-export-warning-nested/e.js [0] 51 bytes {0} [depth 4] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:5
+      harmony side effect evaluation ./e [2] ./parsing/missing-export-warning-nested/c.js 3:0-25
+      harmony export imported specifier ./e [2] ./parsing/missing-export-warning-nested/c.js 4:0-16
+      cjs self exports reference [0] ./parsing/missing-export-warning-nested/e.js 1:0-14
+    ./parsing/missing-export-warning-nested/index.js [4] 191 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (IfStatement) with side effects in source code at 3:0-12:1
+      entry ./parsing/missing-export-warning-nested/ main
+  runtime modules 2.03 KiB
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/create fake namespace object 1.11 KiB {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 470 bytes
+  ./parsing/missing-export-warning-nested/index.js [4] 191 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (IfStatement) with side effects in source code at 3:0-12:1
+    entry ./parsing/missing-export-warning-nested/ main
+  ./parsing/missing-export-warning-nested/a.js [5] 61 bytes {0} [depth 1] [built] [code generated]
+    [exports: a, x]
+    [only some exports used: A, p, x]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-25
+    harmony side effect evaluation ./a [4] ./parsing/missing-export-warning-nested/index.js 1:0-25
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 4:1-4
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 5:1-6
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 6:1-8
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 7:1-10
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 8:1-10
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 9:1-12
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 10:1-12
+    harmony import specifier ./a [4] ./parsing/missing-export-warning-nested/index.js 11:1-8
+  ./parsing/missing-export-warning-nested/b.js [1] 61 bytes {0} [depth 2] [built] [code generated]
+    [exports: b, y]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-25
+    harmony side effect evaluation ./b [5] ./parsing/missing-export-warning-nested/a.js 2:0-25
+    harmony export imported specifier ./b [5] ./parsing/missing-export-warning-nested/a.js 3:0-13
+  ./parsing/missing-export-warning-nested/c.js [2] 90 bytes {0} [depth 3] [built] [code generated]
+    [exports: Z, c, z]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-25
+    harmony side effect evaluation ./c [1] ./parsing/missing-export-warning-nested/b.js 2:0-25
+    harmony export imported specifier ./c [1] ./parsing/missing-export-warning-nested/b.js 3:0-13
+  ./parsing/missing-export-warning-nested/d.js [3] 16 bytes {0} [depth 4] [built] [code generated]
+    [exports: d]
+    [only some exports used: D, v]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-15
+    harmony side effect evaluation ./d [2] ./parsing/missing-export-warning-nested/c.js 2:0-25
+    harmony export imported specifier ./d [2] ./parsing/missing-export-warning-nested/c.js 4:0-16
+  ./parsing/missing-export-warning-nested/e.js [0] 51 bytes {0} [depth 4] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:5
+    harmony side effect evaluation ./e [2] ./parsing/missing-export-warning-nested/c.js 3:0-25
+    harmony export imported specifier ./e [2] ./parsing/missing-export-warning-nested/c.js 4:0-16
+    cjs self exports reference [0] ./parsing/missing-export-warning-nested/e.js 1:0-14
+runtime modules 2.03 KiB
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/create fake namespace object 1.11 KiB {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.614212 ms
+<t> finish make hook: 0.013383 ms
+<t> finish compilation: 1.414189 ms
+<t> seal compilation: 3.431299 ms
+<t> afterCompile hook: 0.00626 ms
+<t> emitAssets: 1.372462 ms
+<t> emitRecords: 0.002188 ms
+<t> done hook: 0.010569 ms
+<t> beginIdle: 0.005677 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004099 ms
+<t> finish modules: 0.345309 ms
+<t> report dependency errors and warnings: 1.047424 ms
+<t> optimize dependencies: 0.354438 ms
+<t> create chunks: 0.182938 ms
+<t> compute affected modules with chunk graph: 0.001557 ms
+<t> optimize: 0.471951 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.274167 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.669374 ms
+<t> runtime requirements.modules: 0.057186 ms
+<t> runtime requirements.chunks: 0.036857 ms
+<t> runtime requirements.entries: 0.242244 ms
+<t> runtime requirements: 0.35196 ms
+<t> hashing: initialize hash: 0.002322 ms
+<t> hashing: hash warnings: 0.004925 ms
+<t> hashing: sort chunks: 0.012777 ms
+<t> hashing: hash runtime modules: 0.175769 ms
+<t> hashing: hash chunks: 0.169703 ms
+<t> hashing: hash digest: 0.012557 ms
+<t> hashing: process full hash modules: 0.001234 ms
+<t> hashing: 0.406637 ms
+    100% code generated (5 generated, 0 from cache)
+<t> record hash: 0.004789 ms
+<t> module assets: 0.008776 ms
+<t> create chunk assets: 0.543436 ms
+<t> process assets: 0.031797 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02338 ms
+<t> figure out provided exports: 0.266418 ms
+    83% of exports of modules have been determined (1 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.01121 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.016932 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007205 ms
+<t> trace exports usage in graph: 0.294776 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.050194 ms
+<t> visitModules: visiting: 0.097316 ms
+    12 queue items processed (6 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.116719 ms
+<t> connectChunkGroups: 0.001366 ms
+<t> cleanup: 0.001377 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012651 ms
+<t> modules: 0.072259 ms
+<t> queue: 0.001723 ms
+<t> maxSize: 0.004127 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 4:1-4
+export 'A' (imported as 'm') was not found in './a' (possible exports: a, x)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'A' (imported as 'm') was not found in './a' (possible exports: a, x)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 5:1-6
+export 'x'.'B' (imported as 'm') was not found in './a' (possible exports: b, y)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'x'.'B' (imported as 'm') was not found in './a' (possible exports: b, y)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 6:1-8
+export 'x'.'y'.'C' (imported as 'm') was not found in './a' (possible exports: Z, c, z)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'x'.'y'.'C' (imported as 'm') was not found in './a' (possible exports: Z, c, z)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 7:1-10
+export 'x'.'y'.'z'.'D' (imported as 'm') was not found in './a' (possible exports: default, d)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'x'.'y'.'z'.'D' (imported as 'm') was not found in './a' (possible exports: default, d)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 9:1-12
+export 'x'.'y'.'z'.'v' (imported as 'm') was not found in './a' (possible exports: default, d)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'x'.'y'.'z'.'v' (imported as 'm') was not found in './a' (possible exports: default, d)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+WARNING in ./parsing/missing-export-warning-nested/index.js 11:1-8
+export 'p' (imported as 'm') was not found in './a' (possible exports: a, x)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+
+ModuleDependencyWarning: export 'p' (imported as 'm') was not found in './a' (possible exports: a, x)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at eval (<anonymous>:29:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:51:16
+    at Hook.eval [as callAsync] (<anonymous>:25:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compilation.finish (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2709:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1115:19
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+
+2021-12-05 17:45:38: webpack 5.64.4 compiled with 6 warnings in 22 ms (a42918a89242a629a4c2)

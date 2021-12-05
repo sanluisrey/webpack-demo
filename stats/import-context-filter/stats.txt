@@ -1,0 +1,167 @@
+PublicPath: auto
+asset entry.js 11.9 KiB {497} [emitted] (name: entry)
+asset 398.js 482 bytes {398} [emitted]
+asset 544.js 482 bytes {544} [emitted]
+asset 718.js 482 bytes {718} [emitted]
+Entrypoint entry 11.9 KiB = entry.js
+chunk {398} (runtime: entry) 398.js 38 bytes <{497}> [rendered]
+  > ./bar [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./bar
+  > ./bar.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./bar.js
+  ./templates/bar.js [398] 38 bytes {398} [depth 2] [optional] [built] [code generated]
+    [exports: default]
+    import() context element ./bar [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./bar
+    import() context element ./bar.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./bar.js
+chunk {497} (runtime: entry) entry.js (entry) 610 bytes (javascript) 6.57 KiB (runtime) >{398}< >{544}< >{718}< [entry] [rendered]
+  > ./entry entry
+  runtime modules 6.57 KiB
+    webpack/runtime/define property getters 308 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {497} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 610 bytes [built]
+    ./entry.js [594] 450 bytes {497} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 15:0-19
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./entry entry
+    ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object [389] 160 bytes {497} [depth 1] [optional] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      import() context lazy [594] ./entry.js 3:23-7:3
+chunk {544} (runtime: entry) 544.js 38 bytes <{497}> [rendered]
+  > ./baz [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./baz
+  > ./baz.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./baz.js
+  ./templates/baz.js [544] 38 bytes {544} [depth 2] [optional] [built] [code generated]
+    [exports: default]
+    import() context element ./baz [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./baz
+    import() context element ./baz.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./baz.js
+chunk {718} (runtime: entry) 718.js 38 bytes <{497}> [rendered]
+  > ./foo [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./foo
+  > ./foo.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./foo.js
+  ./templates/foo.js [718] 38 bytes {718} [depth 2] [optional] [built] [code generated]
+    [exports: default]
+    import() context element ./foo [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./foo
+    import() context element ./foo.js [389] ./templates/ lazy ^\.\/.*$ include: \.js$ exclude: \.noimport\.js$ namespace object ./foo.js
+  
+
+LOG from webpack.Compiler
+<t> make hook: 26.897111 ms
+<t> finish make hook: 0.021916 ms
+<t> finish compilation: 0.463695 ms
+<t> seal compilation: 9.721597 ms
+<t> afterCompile hook: 0.011287 ms
+<t> emitAssets: 1.40439 ms
+<t> emitRecords: 0.002454 ms
+<t> done hook: 0.014225 ms
+<t> beginIdle: 0.00783 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004372 ms
+<t> finish modules: 0.268901 ms
+<t> report dependency errors and warnings: 0.164307 ms
+<t> optimize dependencies: 0.487445 ms
+<t> create chunks: 0.586854 ms
+<t> compute affected modules with chunk graph: 0.006016 ms
+<t> optimize: 1.45178 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.352953 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 2.141643 ms
+<t> runtime requirements.modules: 0.109443 ms
+<t> runtime requirements.chunks: 0.13388 ms
+<t> runtime requirements.entries: 0.754907 ms
+<t> runtime requirements: 1.04963 ms
+<t> hashing: initialize hash: 0.009491 ms
+<t> hashing: sort chunks: 0.032357 ms
+<t> hashing: hash runtime modules: 1.076132 ms
+<t> hashing: hash chunks: 0.599713 ms
+<t> hashing: hash digest: 0.02291 ms
+<t> hashing: process full hash modules: 0.00196 ms
+<t> hashing: 1.831367 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.021133 ms
+<t> module assets: 0.020929 ms
+<t> create chunk assets: 0.883257 ms
+<t> process assets: 0.313066 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.041592 ms
+<t> figure out provided exports: 0.064242 ms
+    80% of exports of modules have been determined (1 no declared exports, 3 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.03345 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.226465 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.078962 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.012231 ms
+<t> trace exports usage in graph: 0.306823 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.039627 ms
+<t> visitModules: visiting: 0.214975 ms
+<t> visitModules: calculating available modules: 0.016071 ms
+<t> visitModules: merging available modules: 0.011578 ms
+<t> visitModules: check modules for revisit: 0.010262 ms
+<t> visitModules: prepare: 0.012832 ms
+<t> visitModules: visiting: 0.093835 ms
+    22 queue items processed (14 blocks)
+    6 chunk groups connected
+    6 chunk groups processed for merging (6 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    6 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.403913 ms
+<t> connectChunkGroups: 0.046409 ms
+<t> cleanup: 0.005139 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.031579 ms
+<t> modules: 0.138486 ms
+<t> queue: 0.003199 ms
+<t> maxSize: 0.017511 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.110845 ms
+<t> sort relevant modules: 0.005981 ms
+<t> find modules to concatenate: 0.058036 ms
+<t> sort concat configurations: 0.00156 ms
+<t> create concatenated modules: 0.005927 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 40 ms (31cf5361f6c8ef97ed81)

@@ -1,0 +1,140 @@
+PublicPath: (none)
+asset bundle.js 6.41 KiB {0} [emitted] (name: main)
+Entrypoint main 6.41 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1.97 KiB [entry] [rendered]
+  > ./parsing/issue-4940/ main
+  ./parsing/issue-4940/index.js [3] 1.82 KiB {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./parsing/issue-4940/ main
+  ./parsing/issue-4940/non-object-export.js [2] 92 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 3:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-43
+    cjs require ./non-object-export [3] ./parsing/issue-4940/index.js 26:16-50
+    cjs require ./non-object-export [3] ./parsing/issue-4940/index.js 29:28-58
+    cjs self exports reference [2] ./parsing/issue-4940/non-object-export.js 3:0-14
+  ./parsing/issue-4940/object-export.js [1] 34 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+    cjs require ./object-export [3] ./parsing/issue-4940/index.js 19:16-46
+    cjs require ./object-export [3] ./parsing/issue-4940/index.js 21:24-50
+    cjs require ./object-export [3] ./parsing/issue-4940/index.js 47:16-46
+    cjs self exports reference [1] ./parsing/issue-4940/object-export.js 1:0-14
+  ./parsing/issue-4940/sideEffect.js [0] 33 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+    cjs require ./sideEffect [3] ./parsing/issue-4940/index.js 25:20-43
+    cjs require ./sideEffect [2] ./parsing/issue-4940/non-object-export.js 1:19-42
+    cjs self exports reference [0] ./parsing/issue-4940/sideEffect.js 1:0-14
+./parsing/issue-4940/index.js [3] 1.82 KiB {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+  entry ./parsing/issue-4940/ main
+./parsing/issue-4940/object-export.js [1] 34 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 1:0-14
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+  cjs require ./object-export [3] ./parsing/issue-4940/index.js 19:16-46
+  cjs require ./object-export [3] ./parsing/issue-4940/index.js 21:24-50
+  cjs require ./object-export [3] ./parsing/issue-4940/index.js 47:16-46
+  cjs self exports reference [1] ./parsing/issue-4940/object-export.js 1:0-14
+./parsing/issue-4940/sideEffect.js [0] 33 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 1:0-14
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+  cjs require ./sideEffect [3] ./parsing/issue-4940/index.js 25:20-43
+  cjs require ./sideEffect [2] ./parsing/issue-4940/non-object-export.js 1:19-42
+  cjs self exports reference [0] ./parsing/issue-4940/sideEffect.js 1:0-14
+./parsing/issue-4940/non-object-export.js [2] 92 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 3:0-14
+  Statement (VariableDeclaration) with side effects in source code at 1:0-43
+  cjs require ./non-object-export [3] ./parsing/issue-4940/index.js 26:16-50
+  cjs require ./non-object-export [3] ./parsing/issue-4940/index.js 29:28-58
+  cjs self exports reference [2] ./parsing/issue-4940/non-object-export.js 3:0-14
+  
+
+LOG from webpack.Compiler
+<t> make hook: 13.963368 ms
+<t> finish make hook: 0.011988 ms
+<t> finish compilation: 0.087992 ms
+<t> seal compilation: 2.097227 ms
+<t> afterCompile hook: 0.006842 ms
+<t> emitAssets: 1.750058 ms
+<t> emitRecords: 0.003092 ms
+<t> done hook: 0.012495 ms
+<t> beginIdle: 0.005848 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004522 ms
+<t> finish modules: 0.059867 ms
+<t> report dependency errors and warnings: 0.011357 ms
+<t> optimize dependencies: 0.124526 ms
+<t> create chunks: 0.150776 ms
+<t> compute affected modules with chunk graph: 0.002421 ms
+<t> optimize: 0.424175 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.154891 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.436672 ms
+<t> runtime requirements.modules: 0.014087 ms
+<t> runtime requirements.chunks: 0.029086 ms
+<t> runtime requirements.entries: 0.045154 ms
+<t> runtime requirements: 0.103042 ms
+<t> hashing: initialize hash: 0.002765 ms
+<t> hashing: sort chunks: 0.01162 ms
+<t> hashing: hash runtime modules: 0.004555 ms
+<t> hashing: hash chunks: 0.192221 ms
+<t> hashing: hash digest: 0.00869 ms
+<t> hashing: process full hash modules: 0.000967 ms
+<t> hashing: 0.251356 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.004668 ms
+<t> module assets: 0.006799 ms
+<t> create chunk assets: 0.314432 ms
+<t> process assets: 0.030609 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.014987 ms
+<t> figure out provided exports: 0.001492 ms
+    0% of exports of modules have been determined (4 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001839 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003307 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004837 ms
+<t> trace exports usage in graph: 0.08792 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.010599 ms
+<t> visitModules: visiting: 0.05199 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.074572 ms
+<t> connectChunkGroups: 0.001278 ms
+<t> cleanup: 0.001316 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014028 ms
+<t> modules: 0.069003 ms
+<t> queue: 0.001859 ms
+<t> maxSize: 0.004837 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:38: webpack 5.64.4 compiled successfully in 19 ms (bb0ce8cc68e1507b1592)

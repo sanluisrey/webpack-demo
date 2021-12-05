@@ -1,0 +1,412 @@
+PublicPath: (none)
+assets by status 286 bytes [cached] 2 assets
+Entrypoint a1 = runtime-to-entrypoint-a1.js
+Entrypoint b1 = runtime-to-entrypoint-b1.js
+chunk {74} (runtime: a1) runtime-to-entrypoint-a1.js (a1) 1 bytes [entry] [rendered]
+  > ./a a1
+  ./a.js [847] 1 bytes {74} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./a a1
+chunk {751} (runtime: a1) runtime-to-entrypoint-b1.js (b1) 1 bytes [entry] [rendered]
+  > ./b b1
+  ./b.js [996] 1 bytes {751} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./b b1
+  
+
+LOG from webpack.Compiler
+<t> make hook: 18.882225 ms
+<t> finish make hook: 0.01101 ms
+<t> finish compilation: 0.134616 ms
+<t> seal compilation: 2.809545 ms
+<t> afterCompile hook: 0.013114 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.006143 ms
+<t> finish modules: 0.105672 ms
+<t> report dependency errors and warnings: 0.007045 ms
+<t> optimize dependencies: 0.13362 ms
+<t> create chunks: 0.29774 ms
+<t> compute affected modules with chunk graph: 0.003562 ms
+<t> optimize: 0.634339 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.132533 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.107585 ms
+<t> runtime requirements.modules: 0.009899 ms
+<t> runtime requirements.chunks: 0.035744 ms
+<t> runtime requirements.entries: 0.077675 ms
+<t> runtime requirements: 0.149094 ms
+<t> hashing: initialize hash: 0.00402 ms
+<t> hashing: hash errors: 0.015702 ms
+<t> hashing: sort chunks: 0.02715 ms
+<t> hashing: hash runtime modules: 0.0094 ms
+<t> hashing: hash chunks: 0.302117 ms
+<t> hashing: hash digest: 0.019284 ms
+<t> hashing: process full hash modules: 0.001502 ms
+<t> hashing: 0.441491 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> module assets: 0.014032 ms
+<t> create chunk assets: 0.578313 ms
+<t> process assets: 0.133322 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.020814 ms
+<t> figure out provided exports: 0.002223 ms
+    0% of exports of modules have been determined (2 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002969 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.017513 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.015733 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006411 ms
+<t> trace exports usage in graph: 0.061686 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005848 ms
+<t> visitModules: visiting: 0.04334 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.081409 ms
+<t> connectChunkGroups: 0.002782 ms
+<t> cleanup: 0.002192 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021759 ms
+<t> modules: 0.08469 ms
+<t> queue: 0.002213 ms
+<t> maxSize: 0.006924 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.007978 ms
+<t> sort relevant modules: 0.001362 ms
+<t> find modules to concatenate: 0.002225 ms
+<t> sort concat configurations: 0.000995 ms
+<t> create concatenated modules: 0.004259 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in {751} [entry] [initial]
+Entrypoint 'b1' has a 'runtime' option which points to another entrypoint named 'a1'.
+It's not valid to use other entrypoints as runtime chunk.
+Did you mean to use 'dependOn: "a1"' instead to allow using entrypoint 'b1' within the runtime of entrypoint 'a1'? For this 'a1' must always be loaded when 'b1' is used.
+Or do you want to use the entrypoints 'b1' and 'a1' independently on the same page with a shared runtime? In this case give them both the same value for the 'runtime' option. It must be a name not already used by an entrypoint.
+Error: Entrypoint 'b1' has a 'runtime' option which points to another entrypoint named 'a1'.
+It's not valid to use other entrypoints as runtime chunk.
+Did you mean to use 'dependOn: "a1"' instead to allow using entrypoint 'b1' within the runtime of entrypoint 'a1'? For this 'a1' must always be loaded when 'b1' is used.
+Or do you want to use the entrypoints 'b1' and 'a1' independently on the same page with a shared runtime? In this case give them both the same value for the 'runtime' option. It must be a name not already used by an entrypoint.
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2915:8)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2857:9)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 error in 23 ms (7361a31c1433f4f0e97a)
+
+PublicPath: (none)
+assets by status 6.02 KiB [cached] 2 assets
+Entrypoint a2 = dependOn-plus-runtime-a2.js
+Entrypoint b2 = dependOn-plus-runtime-b2.js
+chunk {178} (runtime: a2) dependOn-plus-runtime-a2.js (a2) 1 bytes (javascript) 2.8 KiB (runtime) >{978}< [entry] [rendered]
+  > ./a a2
+  ./a.js [847] 1 bytes {178} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./a a2
+  webpack/runtime/ensure chunk 326 bytes {178} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 194 bytes {178} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {178} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.84 KiB {178} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup entrypoint 374 bytes {178} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {978} (runtime: a2) dependOn-plus-runtime-b2.js (b2) 1 bytes <{178}> [initial] [rendered]
+  > ./b b2
+  ./b.js [996] 1 bytes {978} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./b b2
+  
+
+LOG from webpack.Compiler
+<t> make hook: 21.151665 ms
+<t> finish make hook: 0.015581 ms
+<t> finish compilation: 0.140355 ms
+<t> seal compilation: 4.829856 ms
+<t> afterCompile hook: 0.01353 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005402 ms
+<t> finish modules: 0.111781 ms
+<t> report dependency errors and warnings: 0.006305 ms
+<t> optimize dependencies: 0.134055 ms
+<t> create chunks: 0.627425 ms
+<t> compute affected modules with chunk graph: 0.003441 ms
+<t> optimize: 0.672182 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.111018 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.086012 ms
+<t> runtime requirements.modules: 0.009727 ms
+<t> runtime requirements.chunks: 0.094899 ms
+<t> runtime requirements.entries: 0.614855 ms
+<t> runtime requirements: 0.753479 ms
+<t> hashing: initialize hash: 0.006032 ms
+<t> hashing: hash errors: 0.002675 ms
+<t> hashing: sort chunks: 0.026242 ms
+<t> hashing: hash runtime modules: 0.655347 ms
+<t> hashing: hash chunks: 0.412896 ms
+<t> hashing: hash digest: 0.019627 ms
+<t> hashing: process full hash modules: 0.001608 ms
+<t> hashing: 1.179046 ms
+    100% code generated (5 generated, 0 from cache)
+<t> module assets: 0.021234 ms
+<t> create chunk assets: 0.700702 ms
+<t> process assets: 0.219928 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018567 ms
+<t> figure out provided exports: 0.001739 ms
+    0% of exports of modules have been determined (2 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002751 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.011835 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.012491 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006057 ms
+<t> trace exports usage in graph: 0.066009 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.009535 ms
+<t> visitModules: visiting: 0.043214 ms
+<t> visitModules: combine available modules: 0.200379 ms
+<t> visitModules: check modules for revisit: 0.009893 ms
+<t> visitModules: prepare: 0.004223 ms
+<t> visitModules: visiting: 0.062204 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.376491 ms
+<t> connectChunkGroups: 0.002667 ms
+<t> cleanup: 0.002056 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.022692 ms
+<t> modules: 0.110335 ms
+<t> queue: 0.002785 ms
+<t> maxSize: 0.008083 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.009167 ms
+<t> sort relevant modules: 0.001485 ms
+<t> find modules to concatenate: 0.002474 ms
+<t> sort concat configurations: 0.001023 ms
+<t> create concatenated modules: 0.004566 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in {978} [initial]
+Entrypoint 'b2' has 'dependOn' and 'runtime' specified. This is not valid.
+Entrypoints that depend on other entrypoints do not have their own runtime.
+They will use the runtime(s) from referenced entrypoints instead.
+Remove the 'runtime' option from the entrypoint.
+Error: Entrypoint 'b2' has 'dependOn' and 'runtime' specified. This is not valid.
+Entrypoints that depend on other entrypoints do not have their own runtime.
+They will use the runtime(s) from referenced entrypoints instead.
+Remove the 'runtime' option from the entrypoint.
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2873:6)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2857:9)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 error in 27 ms (7fd513f61204f86dddd3)
+
+PublicPath: (none)
+assets by status 6.01 KiB [cached] 2 assets
+Entrypoint a3 = circular-dependOn-a3.js
+Entrypoint b3 = circular-dependOn-b3.js
+chunk {132} (runtime: b3) circular-dependOn-b3.js (b3) 1 bytes (javascript) 2.8 KiB (runtime) >{678}< [entry] [rendered]
+  > ./b b3
+  ./b.js [996] 1 bytes {132} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./b b3
+  webpack/runtime/ensure chunk 326 bytes {132} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 194 bytes {132} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {132} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.84 KiB {132} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup entrypoint 374 bytes {132} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {678} (runtime: a3) circular-dependOn-a3.js (a3) 1 bytes <{132}> [initial] [rendered]
+  > ./a a3
+  ./a.js [847] 1 bytes {678} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./a a3
+  
+
+LOG from webpack.Compiler
+<t> make hook: 25.188047 ms
+<t> finish make hook: 0.02007 ms
+<t> finish compilation: 0.143927 ms
+<t> seal compilation: 4.635563 ms
+<t> afterCompile hook: 0.014074 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00466 ms
+<t> finish modules: 0.114825 ms
+<t> report dependency errors and warnings: 0.007128 ms
+<t> optimize dependencies: 0.139622 ms
+<t> create chunks: 0.336534 ms
+<t> compute affected modules with chunk graph: 0.003752 ms
+<t> optimize: 0.717585 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.118229 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.089771 ms
+<t> runtime requirements.modules: 0.011178 ms
+<t> runtime requirements.chunks: 0.062921 ms
+<t> runtime requirements.entries: 0.383677 ms
+<t> runtime requirements: 0.490411 ms
+<t> hashing: initialize hash: 0.00536 ms
+<t> hashing: hash errors: 0.002528 ms
+<t> hashing: sort chunks: 0.023403 ms
+<t> hashing: hash runtime modules: 0.550164 ms
+<t> hashing: hash chunks: 0.732011 ms
+<t> hashing: hash digest: 0.018346 ms
+<t> hashing: process full hash modules: 0.001535 ms
+<t> hashing: 1.388621 ms
+    100% code generated (5 generated, 0 from cache)
+<t> module assets: 0.016652 ms
+<t> create chunk assets: 0.736969 ms
+<t> process assets: 0.281316 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019128 ms
+<t> figure out provided exports: 0.001694 ms
+    0% of exports of modules have been determined (2 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003165 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.009616 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.012406 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005608 ms
+<t> trace exports usage in graph: 0.071579 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.004547 ms
+<t> visitModules: visiting: 0.031653 ms
+<t> visitModules: combine available modules: 0.037408 ms
+<t> visitModules: check modules for revisit: 0.007906 ms
+<t> visitModules: prepare: 0.001864 ms
+<t> visitModules: visiting: 0.014912 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.142758 ms
+<t> connectChunkGroups: 0.00255 ms
+<t> cleanup: 0.001955 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.022475 ms
+<t> modules: 0.089931 ms
+<t> queue: 0.003089 ms
+<t> maxSize: 0.008033 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.011515 ms
+<t> sort relevant modules: 0.001486 ms
+<t> find modules to concatenate: 0.002266 ms
+<t> sort concat configurations: 0.001012 ms
+<t> create concatenated modules: 0.003882 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in {132} [entry] [initial]
+Entrypoints 'b3' and 'a3' use 'dependOn' to depend on each other in a circular way.
+Error: Entrypoints 'b3' and 'a3' use 'dependOn' to depend on each other in a circular way.
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2895:19)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2857:9)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 error in 32 ms (879ed00e888114121b2c)

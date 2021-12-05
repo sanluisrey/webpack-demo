@@ -1,0 +1,255 @@
+PublicPath: (none)
+asset bundle.js 14 KiB {0} [emitted] (name: main)
+Entrypoint main 14 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 4.53 KiB (javascript) 88 bytes (runtime) [entry] [rendered]
+  > ./parsing/evaluate/ main
+  cacheable modules 3.77 KiB
+    modules by path ./parsing/evaluate/resourceFragment/ 338 bytes
+      ./parsing/evaluate/resourceFragment/index.js#.. [6] 132 bytes {0} [depth 2] [optional] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-3:31
+        context element ./ [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./
+        context element ./index [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./index
+        context element ./index.js [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./index.js
+      ./parsing/evaluate/resourceFragment/index.js#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [10] 132 bytes {0} [depth 1] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-3:31
+        cjs require ./resourceFragment/index#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [8] ./parsing/evaluate/index.js 70:16-64
+      ./parsing/evaluate/resourceFragment/returnRF.js#.. [3] 37 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-36
+        cjs self exports reference [3] ./parsing/evaluate/resourceFragment/returnRF.js#.. 1:0-14
+        context element ./returnRF [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./returnRF
+        context element ./returnRF.js [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./returnRF.js
+      ./parsing/evaluate/resourceFragment/returnRF.js#resourceFragment [1] 37 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-36
+        cjs export require ../resourceFragment/returnRF#resourceFragment [6] ./parsing/evaluate/resourceFragment/index.js#.. 1:0-3:30
+        cjs export require /Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate/resourceFragment/returnRF#resourceFragment [10] ./parsing/evaluate/resourceFragment/index.js#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate 1:0-3:30
+        cjs self exports reference [1] ./parsing/evaluate/resourceFragment/returnRF.js#resourceFragment 1:0-14
+    modules by path ./parsing/evaluate/*.js 3.25 KiB
+      ./parsing/evaluate/a.js [2] 21 bytes {0} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-21
+        cjs self exports reference [2] ./parsing/evaluate/a.js 1:0-14
+        cjs require ./a [8] ./parsing/evaluate/index.js 2:36-50
+        cjs require ./a [8] ./parsing/evaluate/index.js 7:41-55
+        cjs require ./a [8] ./parsing/evaluate/index.js 60:45-59
+        cjs require ./a [8] ./parsing/evaluate/index.js 61:26-40
+      ./parsing/evaluate/index.js [8] 3.23 KiB {0} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+        entry ./parsing/evaluate/ main
+    modules by path ./parsing/evaluate/regexp/ 40 bytes
+      ./parsing/evaluate/regexp/a.filtered.js [4] 20 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-19
+        cjs self exports reference [4] ./parsing/evaluate/regexp/a.filtered.js 1:0-14
+        context element ./a.filtered [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.filtered
+        context element ./a.filtered.js [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.filtered.js
+      ./parsing/evaluate/regexp/a.js [0] 20 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-19
+        from origin ./parsing/evaluate/regexp/ sync ^\.\/.*$
+          context element ./a [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a
+          context element ./a.js [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.js
+        cjs self exports reference [0] ./parsing/evaluate/regexp/a.js 1:0-14
+        context element ./a.js [12] ./parsing/evaluate/regexp/ sync nonrecursive (?<%21FILTERED)\.js$/ ./a.js
+        context element ./a.js [7] ./parsing/evaluate/regexp/ sync nonrecursive (?<%21filtered)\.js$ ./a.js
+    modules by path ./parsing/evaluate/resourceQuery/*.js 152 bytes
+      ./parsing/evaluate/resourceQuery/index.js?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [9] 119 bytes {0} [depth 1] [dependent] [built] [code generated]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-119
+        cjs require ./resourceQuery/index?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [8] ./parsing/evaluate/index.js 65:16-61
+      ./parsing/evaluate/resourceQuery/returnRQ.js?resourceQuery [5] 33 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        CommonJS bailout: module.exports is used directly at 1:0-14
+        Statement (ExpressionStatement) with side effects in source code at 1:0-33
+        cjs export require /Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate/resourceQuery/returnRQ?resourceQuery [9] ./parsing/evaluate/resourceQuery/index.js?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate 1:0-118
+        cjs self exports reference [5] ./parsing/evaluate/resourceQuery/returnRQ.js?resourceQuery 1:0-14
+  modules by path ./parsing/evaluate/regexp/*./parsing/evaluate/regexp/ sync nonrecursive ( 342 bytes
+    ./parsing/evaluate/regexp/ sync nonrecursive (?<%21FILTERED)\.js$/ [12] 171 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      require.context [8] ./parsing/evaluate/index.js 91:2-81
+    ./parsing/evaluate/regexp/ sync nonrecursive (?<%21filtered)\.js$ [7] 171 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      require.context [8] ./parsing/evaluate/index.js 88:2-75
+      require.context [8] ./parsing/evaluate/index.js 94:2-71
+  ./parsing/evaluate/regexp/ sync ^\.\/.*$ [13] 216 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [no exports]
+    cjs require context [8] ./parsing/evaluate/index.js 100:8-70
+  ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ [11] 227 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [no exports]
+    cjs require context [8] ./parsing/evaluate/index.js 75:17-54
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 3.77 KiB
+  modules by path ./parsing/evaluate/resourceFragment/*.js 338 bytes
+    ./parsing/evaluate/resourceFragment/index.js#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [10] 132 bytes {0} [depth 1] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:31
+      cjs require ./resourceFragment/index#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [8] ./parsing/evaluate/index.js 70:16-64
+    ./parsing/evaluate/resourceFragment/returnRF.js#resourceFragment [1] 37 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-36
+      cjs export require ../resourceFragment/returnRF#resourceFragment [6] ./parsing/evaluate/resourceFragment/index.js#.. 1:0-3:30
+      cjs export require /Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate/resourceFragment/returnRF#resourceFragment [10] ./parsing/evaluate/resourceFragment/index.js#/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate 1:0-3:30
+      cjs self exports reference [1] ./parsing/evaluate/resourceFragment/returnRF.js#resourceFragment 1:0-14
+    ./parsing/evaluate/resourceFragment/index.js#.. [6] 132 bytes {0} [depth 2] [optional] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:31
+      context element ./ [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./
+      context element ./index [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./index
+      context element ./index.js [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./index.js
+    ./parsing/evaluate/resourceFragment/returnRF.js#.. [3] 37 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-36
+      cjs self exports reference [3] ./parsing/evaluate/resourceFragment/returnRF.js#.. 1:0-14
+      context element ./returnRF [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./returnRF
+      context element ./returnRF.js [11] ./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ ./returnRF.js
+  modules by path ./parsing/evaluate/*.js 3.25 KiB
+    ./parsing/evaluate/index.js [8] 3.23 KiB {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+      entry ./parsing/evaluate/ main
+    ./parsing/evaluate/a.js [2] 21 bytes {0} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [2] ./parsing/evaluate/a.js 1:0-14
+      cjs require ./a [8] ./parsing/evaluate/index.js 2:36-50
+      cjs require ./a [8] ./parsing/evaluate/index.js 7:41-55
+      cjs require ./a [8] ./parsing/evaluate/index.js 60:45-59
+      cjs require ./a [8] ./parsing/evaluate/index.js 61:26-40
+  modules by path ./parsing/evaluate/resourceQuery/*.js 152 bytes
+    ./parsing/evaluate/resourceQuery/index.js?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [9] 119 bytes {0} [depth 1] [built] [code generated]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-119
+      cjs require ./resourceQuery/index?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate [8] ./parsing/evaluate/index.js 65:16-61
+    ./parsing/evaluate/resourceQuery/returnRQ.js?resourceQuery [5] 33 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-33
+      cjs export require /Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate/resourceQuery/returnRQ?resourceQuery [9] ./parsing/evaluate/resourceQuery/index.js?/Users/yoh/Projects/repos/webpack/test/cases/parsing/evaluate 1:0-118
+      cjs self exports reference [5] ./parsing/evaluate/resourceQuery/returnRQ.js?resourceQuery 1:0-14
+  modules by path ./parsing/evaluate/regexp/ 40 bytes
+    ./parsing/evaluate/regexp/a.js [0] 20 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      from origin ./parsing/evaluate/regexp/ sync ^\.\/.*$
+        context element ./a [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a
+        context element ./a.js [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.js
+      cjs self exports reference [0] ./parsing/evaluate/regexp/a.js 1:0-14
+      context element ./a.js [12] ./parsing/evaluate/regexp/ sync nonrecursive (?<%21FILTERED)\.js$/ ./a.js
+      context element ./a.js [7] ./parsing/evaluate/regexp/ sync nonrecursive (?<%21filtered)\.js$ ./a.js
+    ./parsing/evaluate/regexp/a.filtered.js [4] 20 bytes {0} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      cjs self exports reference [4] ./parsing/evaluate/regexp/a.filtered.js 1:0-14
+      context element ./a.filtered [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.filtered
+      context element ./a.filtered.js [13] ./parsing/evaluate/regexp/ sync ^\.\/.*$ ./a.filtered.js
+modules by path ./parsing/evaluate/regexp/*./parsing/evaluate/regexp/ sync nonrecursive ( 342 bytes
+  ./parsing/evaluate/regexp/ sync nonrecursive (?<%21filtered)\.js$ [7] 171 bytes {0} [depth 1] [built] [code generated]
+    [no exports]
+    require.context [8] ./parsing/evaluate/index.js 88:2-75
+    require.context [8] ./parsing/evaluate/index.js 94:2-71
+  ./parsing/evaluate/regexp/ sync nonrecursive (?<%21FILTERED)\.js$/ [12] 171 bytes {0} [depth 1] [built] [code generated]
+    [no exports]
+    require.context [8] ./parsing/evaluate/index.js 91:2-81
+./parsing/evaluate/resourceFragment/ sync ^\.\/.*$ [11] 227 bytes {0} [depth 1] [built] [code generated]
+  [no exports]
+  cjs require context [8] ./parsing/evaluate/index.js 75:17-54
+./parsing/evaluate/regexp/ sync ^\.\/.*$ [13] 216 bytes {0} [depth 1] [built] [code generated]
+  [no exports]
+  cjs require context [8] ./parsing/evaluate/index.js 100:8-70
+webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+  [no exports]
+  [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 26.196589 ms
+<t> finish make hook: 0.013179 ms
+<t> finish compilation: 0.174042 ms
+<t> seal compilation: 3.456566 ms
+<t> afterCompile hook: 0.00587 ms
+<t> emitAssets: 1.398234 ms
+<t> emitRecords: 0.008488 ms
+<t> done hook: 0.020137 ms
+<t> beginIdle: 0.005113 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003347 ms
+<t> finish modules: 0.137144 ms
+<t> report dependency errors and warnings: 0.024308 ms
+<t> optimize dependencies: 0.194561 ms
+<t> create chunks: 0.172563 ms
+<t> compute affected modules with chunk graph: 0.001537 ms
+<t> optimize: 0.432412 ms
+    14 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.3401 ms
+    100% code generated (14 generated, 0 from cache)
+<t> code generation: 1.032193 ms
+<t> runtime requirements.modules: 0.06439 ms
+<t> runtime requirements.chunks: 0.032574 ms
+<t> runtime requirements.entries: 0.082606 ms
+<t> runtime requirements: 0.243814 ms
+<t> hashing: initialize hash: 0.001467 ms
+<t> hashing: sort chunks: 0.010431 ms
+<t> hashing: hash runtime modules: 0.040502 ms
+<t> hashing: hash chunks: 0.151534 ms
+<t> hashing: hash digest: 0.006799 ms
+<t> hashing: process full hash modules: 0.000764 ms
+<t> hashing: 0.23186 ms
+    100% code generated (1 generated, 0 from cache)
+<t> record hash: 0.004252 ms
+<t> module assets: 0.009115 ms
+<t> create chunk assets: 0.602242 ms
+<t> process assets: 0.027898 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.025866 ms
+<t> figure out provided exports: 0.050375 ms
+    50% of exports of modules have been determined (7 no declared exports, 3 not cached, 4 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003062 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003734 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007563 ms
+<t> trace exports usage in graph: 0.1572 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.041731 ms
+<t> visitModules: visiting: 0.10577 ms
+    28 queue items processed (14 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.122585 ms
+<t> connectChunkGroups: 0.001252 ms
+<t> cleanup: 0.001144 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.011788 ms
+<t> modules: 0.091641 ms
+<t> queue: 0.001516 ms
+<t> maxSize: 0.003982 ms
+
+LOG from webpack.FileSystemInfo
+    14 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 8 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:29: webpack 5.64.4 compiled successfully in 32 ms (9acbee3c5b37b206a745)

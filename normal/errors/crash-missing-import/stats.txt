@@ -1,0 +1,147 @@
+PublicPath: (none)
+asset bundle.js 3.05 KiB {0} [emitted] (name: main)
+Entrypoint main 3.05 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 148 bytes (javascript) 274 bytes (runtime) [entry] [rendered]
+  > ./errors/crash-missing-import/ main
+  ./errors/crash-missing-import/a.js [1] 37 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-4
+    cjs require ./a [0] ./errors/crash-missing-import/index.js 3:23-37
+  ./errors/crash-missing-import/index.js [0] 111 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-70
+    entry ./errors/crash-missing-import/ main
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+./errors/crash-missing-import/index.js [0] 111 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-70
+  entry ./errors/crash-missing-import/ main
+./errors/crash-missing-import/a.js [1] 37 bytes {0} [depth 1] [built] [code generated]
+  [no exports]
+  Statement (ExpressionStatement) with side effects in source code at 3:0-4
+  cjs require ./a [0] ./errors/crash-missing-import/index.js 3:23-37
+webpack/runtime/make namespace object 274 bytes {0} [code generated]
+  [no exports]
+  [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 29.067032 ms
+<t> finish make hook: 0.01501 ms
+<t> finish compilation: 0.185812 ms
+<t> seal compilation: 2.625447 ms
+<t> afterCompile hook: 0.00914 ms
+<t> emitAssets: 1.095766 ms
+<t> emitRecords: 0.004193 ms
+<t> done hook: 0.018958 ms
+<t> beginIdle: 0.007407 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004151 ms
+<t> finish modules: 0.142119 ms
+<t> report dependency errors and warnings: 0.021389 ms
+<t> optimize dependencies: 0.137442 ms
+<t> create chunks: 0.148897 ms
+<t> compute affected modules with chunk graph: 0.003006 ms
+<t> optimize: 0.47581 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.126842 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.475113 ms
+<t> runtime requirements.modules: 0.038749 ms
+<t> runtime requirements.chunks: 0.04725 ms
+<t> runtime requirements.entries: 0.124383 ms
+<t> runtime requirements: 0.236352 ms
+<t> hashing: initialize hash: 0.004858 ms
+<t> hashing: hash errors: 0.004993 ms
+<t> hashing: sort chunks: 0.016484 ms
+<t> hashing: hash runtime modules: 0.080491 ms
+<t> hashing: hash chunks: 0.243618 ms
+<t> hashing: hash digest: 0.014844 ms
+<t> hashing: process full hash modules: 0.002196 ms
+<t> hashing: 0.409276 ms
+    100% code generated (1 generated, 0 from cache)
+<t> record hash: 0.007468 ms
+<t> module assets: 0.012827 ms
+<t> create chunk assets: 0.392967 ms
+<t> process assets: 0.040323 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.050945 ms
+<t> figure out provided exports: 0.016559 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012499 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004599 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005383 ms
+<t> trace exports usage in graph: 0.082154 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.013387 ms
+<t> visitModules: visiting: 0.040944 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.067734 ms
+<t> connectChunkGroups: 0.001882 ms
+<t> cleanup: 0.001985 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.01788 ms
+<t> modules: 0.066771 ms
+<t> queue: 0.002484 ms
+<t> maxSize: 0.005996 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./errors/crash-missing-import/a.js 1:0-30
+Module not found: Error: Can't resolve './missing' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import'
+resolve './missing' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/errors/crash-missing-import)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/errors/crash-missing-import/missing)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import/missing doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './missing' in '/Users/yoh/Projects/repos/webpack/test/cases/errors/crash-missing-import'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+ @ ./errors/crash-missing-import/index.js 3:23-37
+
+2021-12-05 17:44:23: webpack 5.64.4 compiled with 1 error in 35 ms (9fcb31c40ef2c00f1478)

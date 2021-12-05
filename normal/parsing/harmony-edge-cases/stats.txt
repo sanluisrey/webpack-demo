@@ -1,0 +1,170 @@
+PublicPath: (none)
+asset bundle.js 5.93 KiB {0} [emitted] (name: main)
+Entrypoint main 5.93 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 473 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony-edge-cases/ main
+  cacheable modules 473 bytes
+    ./parsing/harmony-edge-cases/a.js [1] 79 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, default]
+      [only some exports used: a]
+      Statement (VariableDeclaration) with side effects in source code at 3:0-15
+      harmony side effect evaluation ./a [0] ./parsing/harmony-edge-cases/index.js 1:0-24
+      harmony import specifier ./a [0] ./parsing/harmony-edge-cases/index.js 6:8-9
+    ./parsing/harmony-edge-cases/b.js [2] 79 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: b, default]
+      [all exports used]
+      Statement (VariableDeclaration) with side effects in source code at 3:0-15
+      harmony side effect evaluation ./b [0] ./parsing/harmony-edge-cases/index.js 2:0-27
+      harmony import specifier ./b [0] ./parsing/harmony-edge-cases/index.js 7:8-9
+      harmony import specifier ./b [0] ./parsing/harmony-edge-cases/index.js 8:8-9
+    ./parsing/harmony-edge-cases/c.js [3] 20 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: c]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./c ./parsing/harmony-edge-cases/fake-reexport.js 1:0-24
+      [inactive] harmony export imported specifier ./c ./parsing/harmony-edge-cases/fake-reexport.js 5:0-16
+      harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 9:8-9 (skipped side-effect-free modules)
+    ./parsing/harmony-edge-cases/d.js [4] 21 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./d ./parsing/harmony-edge-cases/fake-reexport.js 3:0-20
+      [inactive] harmony export imported specifier ./d ./parsing/harmony-edge-cases/fake-reexport.js 5:0-16
+      harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 10:8-9 (skipped side-effect-free modules)
+    ./parsing/harmony-edge-cases/index.js [0] 274 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-11:3
+      entry ./parsing/harmony-edge-cases/ main
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 538 bytes
+  ./parsing/harmony-edge-cases/index.js [0] 274 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-11:3
+    entry ./parsing/harmony-edge-cases/ main
+  ./parsing/harmony-edge-cases/a.js [1] 79 bytes {0} [depth 1] [built] [code generated]
+    [exports: a, default]
+    [only some exports used: a]
+    Statement (VariableDeclaration) with side effects in source code at 3:0-15
+    harmony side effect evaluation ./a [0] ./parsing/harmony-edge-cases/index.js 1:0-24
+    harmony import specifier ./a [0] ./parsing/harmony-edge-cases/index.js 6:8-9
+  ./parsing/harmony-edge-cases/b.js [2] 79 bytes {0} [depth 1] [built] [code generated]
+    [exports: b, default]
+    [all exports used]
+    Statement (VariableDeclaration) with side effects in source code at 3:0-15
+    harmony side effect evaluation ./b [0] ./parsing/harmony-edge-cases/index.js 2:0-27
+    harmony import specifier ./b [0] ./parsing/harmony-edge-cases/index.js 7:8-9
+    harmony import specifier ./b [0] ./parsing/harmony-edge-cases/index.js 8:8-9
+  ./parsing/harmony-edge-cases/c.js [3] 20 bytes {0} [depth 1] [built] [code generated]
+    [exports: c]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./c ./parsing/harmony-edge-cases/fake-reexport.js 1:0-24
+    [inactive] harmony export imported specifier ./c ./parsing/harmony-edge-cases/fake-reexport.js 5:0-16
+    harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 9:8-9 (skipped side-effect-free modules)
+  ./parsing/harmony-edge-cases/d.js [4] 21 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./d ./parsing/harmony-edge-cases/fake-reexport.js 3:0-20
+    [inactive] harmony export imported specifier ./d ./parsing/harmony-edge-cases/fake-reexport.js 5:0-16
+    harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 10:8-9 (skipped side-effect-free modules)
+  ./parsing/harmony-edge-cases/fake-reexport.js 65 bytes [depth 1] [orphan] [built]
+    [exports: c, d]
+    [module unused]
+    [inactive] harmony side effect evaluation ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 3:0-39
+    [inactive] harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 9:8-9
+    [inactive] harmony import specifier ./fake-reexport [0] ./parsing/harmony-edge-cases/index.js 10:8-9
+runtime modules 396 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 10.259424 ms
+<t> finish make hook: 0.014312 ms
+<t> finish compilation: 0.287233 ms
+<t> seal compilation: 3.358947 ms
+<t> afterCompile hook: 0.006328 ms
+<t> emitAssets: 0.884342 ms
+<t> emitRecords: 0.001546 ms
+<t> done hook: 0.007863 ms
+<t> beginIdle: 0.00351 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004386 ms
+<t> finish modules: 0.233729 ms
+<t> report dependency errors and warnings: 0.038763 ms
+<t> optimize dependencies: 0.166981 ms
+<t> create chunks: 0.123281 ms
+<t> compute affected modules with chunk graph: 0.001921 ms
+<t> optimize: 0.464004 ms
+    5 modules hashed, 0 from cache (0.83 variants per module in average)
+<t> module hashing: 0.129105 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.279398 ms
+<t> runtime requirements.modules: 0.032105 ms
+<t> runtime requirements.chunks: 0.031792 ms
+<t> runtime requirements.entries: 0.115876 ms
+<t> runtime requirements: 0.195797 ms
+<t> hashing: initialize hash: 0.001388 ms
+<t> hashing: sort chunks: 0.011531 ms
+<t> hashing: hash runtime modules: 0.07417 ms
+<t> hashing: hash chunks: 1.340833 ms
+<t> hashing: hash digest: 0.013001 ms
+<t> hashing: process full hash modules: 0.001019 ms
+<t> hashing: 1.467443 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.004858 ms
+<t> module assets: 0.009292 ms
+<t> create chunk assets: 0.370336 ms
+<t> process assets: 0.028458 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.01976 ms
+<t> figure out provided exports: 0.130804 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.016989 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.038238 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005208 ms
+<t> trace exports usage in graph: 0.091433 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.012152 ms
+<t> visitModules: visiting: 0.049266 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.068673 ms
+<t> connectChunkGroups: 0.001348 ms
+<t> cleanup: 0.001306 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.013857 ms
+<t> modules: 0.062703 ms
+<t> queue: 0.002052 ms
+<t> maxSize: 0.004811 ms
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:30: webpack 5.64.4 compiled successfully in 16 ms (f9058699c1bf1930c40e)

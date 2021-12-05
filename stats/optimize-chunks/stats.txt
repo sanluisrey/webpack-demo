@@ -1,0 +1,246 @@
+PublicPath: auto
+asset main.js 11.1 KiB {179} [emitted] (name: main)
+asset cir2 from cir1.js 377 bytes {288}, {289} [emitted] (name: cir2 from cir1)
+asset cir1.js 333 bytes {592} [emitted] (name: cir1)
+asset cir2.js 333 bytes {289} [emitted] (name: cir2)
+asset abd.js 193 bytes {90}, {374} [emitted] (name: abd)
+asset chunk.js 154 bytes {284}, {753} [emitted] (name: chunk)
+asset ab.js 149 bytes {90} [emitted] (name: ab)
+asset ac in ab.js 110 bytes {753} [emitted] (name: ac in ab)
+Entrypoint main 11.1 KiB = main.js
+Chunk Group ab 149 bytes = ab.js
+Chunk Group abd 193 bytes = abd.js
+Chunk Group cir1 333 bytes = cir1.js
+Chunk Group cir2 333 bytes = cir2.js
+Chunk Group ac in ab 110 bytes = ac in ab.js
+Chunk Group chunk 154 bytes = chunk.js
+Chunk Group cir2 from cir1 377 bytes = cir2 from cir1.js
+Chunk Group cir1 from cir2 333 bytes = cir1.js
+chunk {90} (runtime: main) ab.js (ab) 2 bytes <{179}> >{753}< [rendered]
+  > [10] ./index.js 1:0-6:8
+  ./modules/a.js [839] 1 bytes {90} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/a [10] ./index.js 1:0-6:8
+    require.ensure item ./modules/a [10] ./index.js 2:1-5:15
+    require.ensure item ./modules/a [10] ./index.js 3:2-4:13
+    require.ensure item ./modules/a [10] ./index.js 8:0-11:9
+  ./modules/b.js [836] 1 bytes {90} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/b [10] ./index.js 1:0-6:8
+    require.ensure item ./modules/b [10] ./index.js 3:2-4:13
+    require.ensure item ./modules/b [10] ./index.js 8:0-11:9
+chunk {179} (runtime: main) main.js (main) 524 bytes (javascript) 6.1 KiB (runtime) >{90}< >{289}< >{374}< >{592}< [entry] [rendered]
+  > ./index main
+  runtime modules 6.1 KiB
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 272 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 524 bytes
+    ./index.js [10] 523 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-6:9
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index main
+    ./modules/f.js [544] 1 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      require.ensure item ./modules/f [193] ./circular2.js 1:0-79
+      cjs require ./modules/f [10] ./index.js 15:0-22
+chunk {284} (runtime: main) chunk.js (chunk) 2 bytes <{374}> <{753}> [rendered]
+  > [10] ./index.js 3:2-4:13
+  > [10] ./index.js 9:1-10:12
+  ./modules/c.js [115] 1 bytes {284} {753} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/c [10] ./index.js 2:1-5:15
+    require.ensure item ./modules/c [10] ./index.js 9:1-10:12
+  ./modules/d.js [928] 1 bytes {284} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/d [10] ./index.js 8:0-11:9
+    require.ensure item ./modules/d [10] ./index.js 9:1-10:12
+chunk {288} (runtime: main) cir2 from cir1.js (cir2 from cir1) 82 bytes <{592}> >{592}< [rendered]
+  > [655] ./circular1.js 1:0-79
+  ./circular2.js [193] 81 bytes {288} {289} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-80
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./circular2 [655] ./circular1.js 1:0-79
+    require.ensure item ./circular2 [10] ./index.js 14:0-54
+  ./modules/e.js [798] 1 bytes {288} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/e [655] ./circular1.js 1:0-79
+chunk {289} (runtime: main) cir2.js (cir2) 81 bytes <{179}> >{592}< [rendered]
+  > [10] ./index.js 14:0-54
+  ./circular2.js [193] 81 bytes {288} {289} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-80
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./circular2 [655] ./circular1.js 1:0-79
+    require.ensure item ./circular2 [10] ./index.js 14:0-54
+chunk {374} (runtime: main) abd.js (abd) 3 bytes <{179}> >{284}< [rendered]
+  > [10] ./index.js 8:0-11:9
+  ./modules/a.js [839] 1 bytes {90} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/a [10] ./index.js 1:0-6:8
+    require.ensure item ./modules/a [10] ./index.js 2:1-5:15
+    require.ensure item ./modules/a [10] ./index.js 3:2-4:13
+    require.ensure item ./modules/a [10] ./index.js 8:0-11:9
+  ./modules/b.js [836] 1 bytes {90} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/b [10] ./index.js 1:0-6:8
+    require.ensure item ./modules/b [10] ./index.js 3:2-4:13
+    require.ensure item ./modules/b [10] ./index.js 8:0-11:9
+  ./modules/d.js [928] 1 bytes {284} {374} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/d [10] ./index.js 8:0-11:9
+    require.ensure item ./modules/d [10] ./index.js 9:1-10:12
+chunk {592} (runtime: main) cir1.js (cir1) 81 bytes <{179}> <{288}> <{289}> >{288}< [rendered]
+  > [10] ./index.js 13:0-54
+  > [193] ./circular2.js 1:0-79
+  ./circular1.js [655] 81 bytes {592} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-80
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./circular1 [193] ./circular2.js 1:0-79
+    require.ensure item ./circular1 [10] ./index.js 13:0-54
+chunk {753} (runtime: main) ac in ab.js (ac in ab) 1 bytes <{90}> >{284}< [rendered]
+  > [10] ./index.js 2:1-5:15
+  ./modules/c.js [115] 1 bytes {284} {753} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    require.ensure item ./modules/c [10] ./index.js 2:1-5:15
+    require.ensure item ./modules/c [10] ./index.js 9:1-10:12
+  
+
+LOG from webpack.Compiler
+<t> make hook: 19.285161 ms
+<t> finish make hook: 0.017821 ms
+<t> finish compilation: 0.146705 ms
+<t> seal compilation: 6.800698 ms
+<t> afterCompile hook: 0.009518 ms
+<t> emitAssets: 1.803802 ms
+<t> emitRecords: 0.001828 ms
+<t> done hook: 0.012656 ms
+<t> beginIdle: 0.00743 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003956 ms
+<t> finish modules: 0.103936 ms
+<t> report dependency errors and warnings: 0.023676 ms
+<t> optimize dependencies: 0.261622 ms
+<t> create chunks: 0.526578 ms
+<t> compute affected modules with chunk graph: 0.003802 ms
+<t> optimize: 1.181861 ms
+    9 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.439434 ms
+    100% code generated (9 generated, 0 from cache)
+<t> code generation: 0.356717 ms
+<t> runtime requirements.modules: 0.049395 ms
+<t> runtime requirements.chunks: 0.06869 ms
+<t> runtime requirements.entries: 0.638571 ms
+<t> runtime requirements: 0.7929 ms
+<t> hashing: initialize hash: 0.006404 ms
+<t> hashing: sort chunks: 0.033094 ms
+<t> hashing: hash runtime modules: 0.835155 ms
+<t> hashing: hash chunks: 0.529985 ms
+<t> hashing: hash digest: 0.01838 ms
+<t> hashing: process full hash modules: 0.001279 ms
+<t> hashing: 1.499186 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.017536 ms
+<t> module assets: 0.02062 ms
+<t> create chunk assets: 0.872653 ms
+<t> process assets: 0.301989 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.025394 ms
+<t> figure out provided exports: 0.00129 ms
+    0% of exports of modules have been determined (9 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.00344 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.039984 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.01739 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.008936 ms
+<t> trace exports usage in graph: 0.185007 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.027926 ms
+<t> visitModules: visiting: 0.101886 ms
+<t> visitModules: calculating available modules: 0.009929 ms
+<t> visitModules: merging available modules: 0.005379 ms
+<t> visitModules: check modules for revisit: 0.002783 ms
+<t> visitModules: prepare: 0.015544 ms
+<t> visitModules: visiting: 0.107399 ms
+<t> visitModules: calculating available modules: 0.010575 ms
+<t> visitModules: merging available modules: 0.003546 ms
+<t> visitModules: check modules for revisit: 0.001535 ms
+<t> visitModules: prepare: 0.0046 ms
+<t> visitModules: visiting: 0.05572 ms
+<t> visitModules: calculating available modules: 0.008293 ms
+<t> visitModules: merging available modules: 0.026333 ms
+<t> visitModules: check modules for revisit: 0.003734 ms
+<t> visitModules: visiting: 0.005692 ms
+<t> visitModules: visiting: 0.005773 ms
+    41 queue items processed (26 blocks)
+    11 chunk groups connected
+    11 chunk groups processed for merging (11 module sets, 1 forked, 3 + 0 modules forked, 3 + 0 modules merged into fork, 2 resulting modules)
+    9 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.399943 ms
+<t> connectChunkGroups: 0.028144 ms
+<t> cleanup: 0.003231 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.027623 ms
+<t> modules: 0.221498 ms
+<t> queue: 0.024259 ms
+<t> maxSize: 0.01734 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.013616 ms
+<t> sort relevant modules: 0.001231 ms
+<t> find modules to concatenate: 0.001939 ms
+<t> sort concat configurations: 0.000764 ms
+<t> create concatenated modules: 0.00416 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    9 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 9 timestamps 9 hashes 9 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/9) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled successfully in 31 ms (3d130940481b5a53038a)

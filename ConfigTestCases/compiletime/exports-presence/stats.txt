@@ -1,0 +1,233 @@
+PublicPath: (none)
+assets by status 1.92 KiB [cached] 1 asset
+Entrypoint main = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 795 bytes (javascript) 274 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  ./index.js + 5 modules [219] 795 bytes {179} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    entry ./index.js main
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 30.158648 ms
+<t> finish make hook: 0.013509 ms
+<t> finish compilation: 2.991571 ms
+<t> seal compilation: 10.850315 ms
+<t> afterCompile hook: 0.010825 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00417 ms
+<t> finish modules: 0.482714 ms
+<t> report dependency errors and warnings: 2.486333 ms
+<t> optimize dependencies: 0.893981 ms
+<t> create chunks: 0.791872 ms
+<t> compute affected modules with chunk graph: 0.002146 ms
+<t> optimize: 1.729987 ms
+    1 modules hashed, 0 from cache (0.17 variants per module in average)
+<t> module hashing: 0.791049 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 5.124617 ms
+<t> runtime requirements.modules: 0.044663 ms
+<t> runtime requirements.chunks: 0.044643 ms
+<t> runtime requirements.entries: 0.140257 ms
+<t> runtime requirements: 0.254758 ms
+<t> hashing: initialize hash: 0.007333 ms
+<t> hashing: hash warnings: 0.00645 ms
+<t> hashing: hash errors: 0.001827 ms
+<t> hashing: sort chunks: 0.017692 ms
+<t> hashing: hash runtime modules: 0.154048 ms
+<t> hashing: hash chunks: 0.291097 ms
+<t> hashing: hash digest: 0.028458 ms
+<t> hashing: process full hash modules: 0.001121 ms
+<t> hashing: 0.553813 ms
+    100% code generated (1 generated, 0 from cache)
+<t> module assets: 0.014609 ms
+<t> create chunk assets: 0.29026 ms
+<t> process assets: 0.151547 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.027807 ms
+<t> figure out provided exports: 0.355309 ms
+    100% of exports of modules have been determined (0 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 4 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.020739 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.086899 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.218045 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010471 ms
+<t> trace exports usage in graph: 0.599814 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.08433 ms
+<t> visitModules: visiting: 0.149945 ms
+    12 queue items processed (6 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.175166 ms
+<t> connectChunkGroups: 0.002024 ms
+<t> cleanup: 0.0019 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016545 ms
+<t> modules: 0.114969 ms
+<t> queue: 0.002082 ms
+<t> maxSize: 0.00612 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.056031 ms
+<t> sort relevant modules: 0.009776 ms
+<t> find modules to concatenate: 0.497878 ms
+<t> sort concat configurations: 0.000724 ms
+<t> create concatenated modules: 0.445816 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./bbb/index.js 2:0-34
+export 'NotHere' (reexported as 'NotHere') was not found in '../stub' (possible exports: default)
+    at HarmonyExportImportedSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyExportImportedSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js:784:21)
+    at HarmonyExportImportedSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js:760:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyWarning: export 'NotHere' (reexported as 'NotHere') was not found in '../stub' (possible exports: default)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 2:0-48 8:8-11
+
+WARNING in ./bbb/index.js 4:25-29
+export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyWarning: export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 2:0-48 8:8-11
+
+WARNING in ./ddd/index.js 4:25-29
+export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyWarning: export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 4:0-48 10:8-11
+
+ERROR in ./ccc/index.js 2:0-34
+export 'NotHere' (reexported as 'NotHere') was not found in '../stub' (possible exports: default)
+    at HarmonyExportImportedSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyExportImportedSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js:784:21)
+    at HarmonyExportImportedSpecifierDependency.getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js:773:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3137:22)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyError: export 'NotHere' (reexported as 'NotHere') was not found in '../stub' (possible exports: default)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3142:21)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 3:0-48 9:8-11
+
+ERROR in ./ccc/index.js 4:25-29
+export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:160:8)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:191:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3137:22)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyError: export 'NoNo' (imported as 'NoNo') was not found in '../stub' (possible exports: default)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3142:21)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 3:0-48 9:8-11
+
+2021-12-05 17:44:20: webpack 5.64.4 compiled with 2 errors and 3 warnings in 48 ms (8b6c06700d334f166919)

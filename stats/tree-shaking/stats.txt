@@ -1,0 +1,188 @@
+PublicPath: auto
+asset bundle.js 6.89 KiB {179} [emitted] (name: main)
+Entrypoint main 6.89 KiB = bundle.js
+chunk {179} (runtime: main) bundle.js (main) 782 bytes (javascript) 663 bytes (runtime) [entry] [rendered]
+  > ./index main
+  cacheable modules 782 bytes
+    ./a.js [847] 30 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [exports: a]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-14
+      from origin ./reexport-known.js
+        harmony side effect evaluation ./a [729] ./reexport-known.js 1:0-24
+        harmony export imported specifier ./a [729] ./reexport-known.js 1:0-24
+      from origin ./reexport-star-known.js
+        harmony side effect evaluation ./a [867] ./reexport-star-known.js 1:0-20
+        harmony export imported specifier ./a [867] ./reexport-star-known.js 1:0-20
+      from origin ./reexport-star-unknown.js
+        harmony side effect evaluation ./a [918] ./reexport-star-unknown.js 1:0-20
+        harmony export imported specifier ./a [918] ./reexport-star-unknown.js 1:0-20
+      from origin ./reexport-unknown.js
+        harmony side effect evaluation ./a [641] ./reexport-unknown.js 1:0-24
+        harmony export imported specifier ./a [641] ./reexport-unknown.js 1:0-24
+    ./edge.js [706] 62 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [only some exports used: y]
+      Statement (ExpressionStatement) with side effects in source code at 4:0-14
+      harmony side effect evaluation ./edge [10] ./index.js 5:0-27
+      harmony import specifier ./edge [10] ./index.js 7:36-37
+    ./index.js [10] 316 bytes {179} [depth 0] [built] [code generated] [1 warning]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 7:0-39
+      entry ./index main
+    ./reexport-known.js [729] 49 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b]
+      [only some exports used: a]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-24
+      harmony side effect evaluation ./reexport-known [10] ./index.js 1:0-43
+      harmony import specifier ./reexport-known [10] ./index.js 7:12-14
+    ./reexport-star-known.js [867] 58 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b]
+      [only some exports used: a]
+      Statement (ExpressionStatement) with side effects in source code at 4:0-14
+      harmony side effect evaluation ./reexport-star-known [10] ./index.js 3:0-48
+      harmony import specifier ./reexport-star-known [10] ./index.js 7:20-22
+    ./reexport-star-unknown.js [918] 85 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [only some exports used: a, c]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-14
+      harmony side effect evaluation ./reexport-star-unknown [10] ./index.js 4:0-59
+      harmony import specifier ./reexport-star-unknown [10] ./index.js 7:24-26
+      harmony import specifier ./reexport-star-unknown [10] ./index.js 7:32-34
+    ./reexport-unknown.js [641] 100 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c, d]
+      [only some exports used: a, c]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-14
+      harmony side effect evaluation ./reexport-unknown [10] ./index.js 2:0-54
+      harmony import specifier ./reexport-unknown [10] ./index.js 7:16-18
+      harmony import specifier ./reexport-unknown [10] ./index.js 7:28-30
+    ./require.include.js [405] 52 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [exports: a, default]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 4:0-14
+      require.include ./require.include [10] ./index.js 9:0-36
+    ./unknown.js [416] 15 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-14
+      from origin ./reexport-unknown.js
+        harmony side effect evaluation ./unknown [641] ./reexport-unknown.js 3:0-33
+        harmony export imported specifier ./unknown [641] ./reexport-unknown.js 3:0-33
+        [inactive] harmony export imported specifier ./unknown [641] ./reexport-unknown.js 3:0-33
+      from origin ./reexport-star-unknown.js
+        harmony side effect evaluation ./unknown [918] ./reexport-star-unknown.js 3:0-26
+        harmony export imported specifier ./unknown [918] ./reexport-star-unknown.js 3:0-26
+    ./unknown2.js [419] 15 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-14
+      harmony side effect evaluation ./unknown2 [706] ./edge.js 2:0-27
+      harmony export imported specifier ./unknown2 [706] ./edge.js 2:0-27
+  runtime modules 663 bytes
+    webpack/runtime/compat get default export 267 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.634625 ms
+<t> finish make hook: 0.016486 ms
+<t> finish compilation: 1.485108 ms
+<t> seal compilation: 4.172849 ms
+<t> afterCompile hook: 0.008743 ms
+<t> emitAssets: 0.948311 ms
+<t> emitRecords: 0.001916 ms
+<t> done hook: 0.009734 ms
+<t> beginIdle: 0.005744 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004445 ms
+<t> finish modules: 0.659983 ms
+<t> report dependency errors and warnings: 0.111013 ms
+<t> optimize dependencies: 0.488422 ms
+<t> create chunks: 0.32647 ms
+<t> compute affected modules with chunk graph: 0.002827 ms
+<t> optimize: 0.654807 ms
+    10 modules hashed, 0 from cache (0.91 variants per module in average)
+<t> module hashing: 0.303251 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 0.838553 ms
+<t> runtime requirements.modules: 0.043006 ms
+<t> runtime requirements.chunks: 0.044969 ms
+<t> runtime requirements.entries: 0.299879 ms
+<t> runtime requirements: 0.41253 ms
+<t> hashing: initialize hash: 0.003447 ms
+<t> hashing: hash warnings: 0.005585 ms
+<t> hashing: sort chunks: 0.015382 ms
+<t> hashing: hash runtime modules: 0.125399 ms
+<t> hashing: hash chunks: 0.191307 ms
+<t> hashing: hash digest: 0.010156 ms
+<t> hashing: process full hash modules: 0.001631 ms
+<t> hashing: 0.394208 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.005361 ms
+<t> module assets: 0.011124 ms
+<t> create chunk assets: 0.313705 ms
+<t> process assets: 0.208776 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.034563 ms
+<t> figure out provided exports: 0.519508 ms
+    82% of exports of modules have been determined (2 no declared exports, 9 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 4 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.019259 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.061598 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.032578 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010897 ms
+<t> trace exports usage in graph: 0.398594 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.180127 ms
+<t> visitModules: visiting: 0.221917 ms
+    20 queue items processed (10 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.244883 ms
+<t> connectChunkGroups: 0.001736 ms
+<t> cleanup: 0.00158 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016934 ms
+<t> modules: 0.119493 ms
+<t> queue: 0.00214 ms
+<t> maxSize: 0.005116 ms
+
+LOG from webpack.FileSystemInfo
+    11 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 11 hashes 11 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/11) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js 9:0-36
+require.include() is deprecated and will be removed soon.
+RequireIncludeDeprecationWarning: require.include() is deprecated and will be removed soon.
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js:31:7
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForInfo (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2932:15)
+    at JavascriptParser.walkCallExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2733:26)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2250:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled with 1 warning in 24 ms (964794d557cec6ed80bb)

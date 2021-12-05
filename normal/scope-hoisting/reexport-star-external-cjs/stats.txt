@@ -1,0 +1,148 @@
+PublicPath: (none)
+asset bundle.js 5.47 KiB {0} [emitted] (name: main)
+Entrypoint main 5.47 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 206 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./scope-hoisting/reexport-star-external-cjs/ main
+  cacheable modules 206 bytes
+    ./scope-hoisting/reexport-star-external-cjs/a.js [0] 25 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: named]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-24
+      harmony side effect evaluation ./a [2] ./scope-hoisting/reexport-star-external-cjs/c.js 1:0-20
+      harmony export imported specifier ./a [2] ./scope-hoisting/reexport-star-external-cjs/c.js 1:0-20
+    ./scope-hoisting/reexport-star-external-cjs/b.js [3] 28 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: other]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./b [2] ./scope-hoisting/reexport-star-external-cjs/c.js 2:0-20
+      harmony export imported specifier ./b [2] ./scope-hoisting/reexport-star-external-cjs/c.js 2:0-20
+    ./scope-hoisting/reexport-star-external-cjs/c.js [2] 42 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: named, other]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-20
+      cjs require ./c [1] ./scope-hoisting/reexport-star-external-cjs/index.js 1:8-22
+    ./scope-hoisting/reexport-star-external-cjs/index.js [1] 111 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 1:0-23
+      entry ./scope-hoisting/reexport-star-external-cjs/ main
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 206 bytes
+  ./scope-hoisting/reexport-star-external-cjs/index.js [1] 111 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-23
+    entry ./scope-hoisting/reexport-star-external-cjs/ main
+  ./scope-hoisting/reexport-star-external-cjs/c.js [2] 42 bytes {0} [depth 1] [built] [code generated]
+    [exports: named, other]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-20
+    cjs require ./c [1] ./scope-hoisting/reexport-star-external-cjs/index.js 1:8-22
+  ./scope-hoisting/reexport-star-external-cjs/a.js [0] 25 bytes {0} [depth 2] [built] [code generated]
+    [exports: named]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-24
+    harmony side effect evaluation ./a [2] ./scope-hoisting/reexport-star-external-cjs/c.js 1:0-20
+    harmony export imported specifier ./a [2] ./scope-hoisting/reexport-star-external-cjs/c.js 1:0-20
+  ./scope-hoisting/reexport-star-external-cjs/b.js [3] 28 bytes {0} [depth 2] [built] [code generated]
+    [exports: other]
+    [all exports used]
+    [inactive] harmony side effect evaluation ./b [2] ./scope-hoisting/reexport-star-external-cjs/c.js 2:0-20
+    harmony export imported specifier ./b [2] ./scope-hoisting/reexport-star-external-cjs/c.js 2:0-20
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 9.428107 ms
+<t> finish make hook: 0.009192 ms
+<t> finish compilation: 0.305394 ms
+<t> seal compilation: 2.112097 ms
+<t> afterCompile hook: 0.006076 ms
+<t> emitAssets: 0.866393 ms
+<t> emitRecords: 0.001443 ms
+<t> done hook: 0.00668 ms
+<t> beginIdle: 0.002923 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004371 ms
+<t> finish modules: 0.233615 ms
+<t> report dependency errors and warnings: 0.058343 ms
+<t> optimize dependencies: 0.247038 ms
+<t> create chunks: 0.162035 ms
+<t> compute affected modules with chunk graph: 0.000951 ms
+<t> optimize: 0.4399 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.113002 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.211408 ms
+<t> runtime requirements.modules: 0.022894 ms
+<t> runtime requirements.chunks: 0.050753 ms
+<t> runtime requirements.entries: 0.124238 ms
+<t> runtime requirements: 0.210799 ms
+<t> hashing: initialize hash: 0.001839 ms
+<t> hashing: sort chunks: 0.010334 ms
+<t> hashing: hash runtime modules: 0.086921 ms
+<t> hashing: hash chunks: 0.141741 ms
+<t> hashing: hash digest: 0.007366 ms
+<t> hashing: process full hash modules: 0.000811 ms
+<t> hashing: 0.269183 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004204 ms
+<t> module assets: 0.00729 ms
+<t> create chunk assets: 0.312707 ms
+<t> process assets: 0.024818 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.016347 ms
+<t> figure out provided exports: 0.171253 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.008013 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.012924 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00291 ms
+<t> trace exports usage in graph: 0.196323 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.052031 ms
+<t> visitModules: visiting: 0.083772 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.101515 ms
+<t> connectChunkGroups: 0.001049 ms
+<t> cleanup: 0.001043 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.029086 ms
+<t> modules: 0.056025 ms
+<t> queue: 0.001749 ms
+<t> maxSize: 0.004242 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:42: webpack 5.64.4 compiled successfully in 14 ms (dc6d3c2fd18d016f329b)

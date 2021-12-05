@@ -1,0 +1,102 @@
+PublicPath: auto
+asset bundle0.js 570 bytes {179} [emitted] (name: main)
+Entrypoint main 570 bytes = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 388 bytes [entry] [rendered]
+  > ./index.mjs main
+  ./index.mjs [685] 388 bytes {179} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 2:0-27
+    ModuleConcatenation bailout: Module uses eval()
+    entry ./index.mjs main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.357778 ms
+<t> finish make hook: 0.013323 ms
+<t> finish compilation: 0.185342 ms
+<t> seal compilation: 2.627917 ms
+<t> afterCompile hook: 0.014357 ms
+<t> emitAssets: 1.379408 ms
+<t> emitRecords: 0.003506 ms
+<t> done hook: 0.022368 ms
+<t> beginIdle: 0.014422 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005552 ms
+<t> finish modules: 0.150351 ms
+<t> report dependency errors and warnings: 0.009121 ms
+<t> optimize dependencies: 0.128853 ms
+<t> create chunks: 0.202634 ms
+<t> compute affected modules with chunk graph: 0.002657 ms
+<t> optimize: 0.816117 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.115454 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.103 ms
+<t> runtime requirements.modules: 0.006479 ms
+<t> runtime requirements.chunks: 0.032331 ms
+<t> runtime requirements.entries: 0.07398 ms
+<t> runtime requirements: 0.145384 ms
+<t> hashing: initialize hash: 0.003752 ms
+<t> hashing: sort chunks: 0.022415 ms
+<t> hashing: hash runtime modules: 0.005364 ms
+<t> hashing: hash chunks: 0.212975 ms
+<t> hashing: hash digest: 0.01498 ms
+<t> hashing: process full hash modules: 0.00199 ms
+<t> hashing: 0.31572 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.009421 ms
+<t> module assets: 0.014701 ms
+<t> create chunk assets: 0.413289 ms
+<t> process assets: 0.126029 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.022836 ms
+<t> figure out provided exports: 0.013654 ms
+    100% of exports of modules have been determined (0 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.01571 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.008788 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005184 ms
+<t> trace exports usage in graph: 0.056496 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.004915 ms
+<t> visitModules: visiting: 0.03912 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.080268 ms
+<t> connectChunkGroups: 0.002765 ms
+<t> cleanup: 0.00237 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.025352 ms
+<t> modules: 0.085344 ms
+<t> queue: 0.003347 ms
+<t> maxSize: 0.009005 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.023159 ms
+<t> sort relevant modules: 0.001522 ms
+<t> find modules to concatenate: 0.002714 ms
+<t> sort concat configurations: 0.001559 ms
+<t> create concatenated modules: 0.004792 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 1 hashes 1 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled successfully in 19 ms (44f653847dc36e4cdb2f)

@@ -1,0 +1,401 @@
+PublicPath: (none)
+asset bundle.js 19.8 KiB {0} [emitted] (name: main)
+Entrypoint main 19.8 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 3.95 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony/ main
+  cacheable modules 3.95 KiB
+    ./parsing/harmony/index.js [6] 3.03 KiB {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 28:0-30:3
+      entry ./parsing/harmony/ main
+    ./parsing/harmony/node_modules/abc.js [4] 166 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c, d, e]
+      from origin ./parsing/harmony/index.js
+        [inactive] harmony side effect evaluation abc [6] ./parsing/harmony/index.js 1:0-30
+        [inactive] harmony side effect evaluation abc [6] ./parsing/harmony/index.js 3:0-27
+        harmony import specifier abc [6] ./parsing/harmony/index.js 33:8-9
+        harmony import specifier abc [6] ./parsing/harmony/index.js 34:8-9
+        harmony import specifier abc [6] ./parsing/harmony/index.js 38:8-13
+        harmony import specifier abc [6] ./parsing/harmony/index.js 39:8-13
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 40:8-13
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 41:8-15
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 42:8-13
+        harmony import specifier abc [6] ./parsing/harmony/index.js 43:39-42
+        harmony import specifier abc [6] ./parsing/harmony/index.js 49:16-19
+        harmony import specifier abc [6] ./parsing/harmony/index.js 50:13-16
+        harmony import specifier reexport2 [6] ./parsing/harmony/index.js 75:8-12 (skipped side-effect-free modules)
+      from origin ./parsing/harmony/node_modules/reexport.js
+        [inactive] harmony side effect evaluation abc [7] ./parsing/harmony/node_modules/reexport.js 1:0-20
+        harmony export imported specifier abc [7] ./parsing/harmony/node_modules/reexport.js 1:0-20
+      [inactive] from origin ./parsing/harmony/node_modules/reexport2.js
+        [inactive] harmony side effect evaluation abc ./parsing/harmony/node_modules/reexport2.js 2:0-20
+        [inactive] harmony export imported specifier abc ./parsing/harmony/node_modules/reexport2.js 2:0-20
+      [inactive] from origin ./parsing/harmony/node_modules/unused.js
+        [inactive] harmony side effect evaluation ./abc ./parsing/harmony/node_modules/unused.js 5:0-22
+        [inactive] harmony export imported specifier ./abc ./parsing/harmony/node_modules/unused.js 5:0-22
+    ./parsing/harmony/node_modules/abc_c.js [2] 20 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: c]
+      from origin ./parsing/harmony/node_modules/abc.js
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 3:0-26
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 3:0-26
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 5:0-32
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 6:0-19 (skipped side-effect-free modules)
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 8:0-26
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 9:0-16
+      from origin ./parsing/harmony/index.js
+        harmony import specifier abc [6] ./parsing/harmony/index.js 40:8-13 (skipped side-effect-free modules)
+        harmony import specifier abc [6] ./parsing/harmony/index.js 41:8-15 (skipped side-effect-free modules)
+        harmony import specifier abc [6] ./parsing/harmony/index.js 42:8-13 (skipped side-effect-free modules)
+      [inactive] from origin ./parsing/harmony/node_modules/unused.js
+        [inactive] harmony side effect evaluation ./abc_c ./parsing/harmony/node_modules/unused.js 4:0-31
+        [inactive] harmony export imported specifier ./abc_c ./parsing/harmony/node_modules/unused.js 4:0-31
+    ./parsing/harmony/node_modules/circularEven.js [3] 133 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default, even]
+      [all exports used]
+      Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-22
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation circularEven [6] ./parsing/harmony/index.js 14:0-48
+        harmony import specifier circularEven [6] ./parsing/harmony/index.js 79:8-18
+        harmony import specifier circularEven [6] ./parsing/harmony/index.js 80:8-12
+      from origin ./parsing/harmony/node_modules/circularOdd.js
+        harmony side effect evaluation circularEven [8] ./parsing/harmony/node_modules/circularOdd.js 1:0-36
+        harmony import specifier circularEven [8] ./parsing/harmony/node_modules/circularOdd.js 5:8-12
+    ./parsing/harmony/node_modules/circularOdd.js [8] 112 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: odd]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-36
+      harmony side effect evaluation circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 1:0-34
+      harmony import specifier circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 3:15-18
+      harmony import specifier circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 7:8-11
+    ./parsing/harmony/node_modules/commonjs-trans.js [5] 117 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: Other, __esModule, default]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-26
+      harmony side effect evaluation commonjs-trans [6] ./parsing/harmony/index.js 20:0-57
+      harmony side effect evaluation commonjs-trans [6] ./parsing/harmony/index.js 21:0-48
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 101:8-14
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 102:12-18
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 103:8-14
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 113:27-40
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 114:12-33
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 115:8-27
+    ./parsing/harmony/node_modules/commonjs.js [0] 87 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:1
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation commonjs [6] ./parsing/harmony/index.js 18:0-40
+        harmony side effect evaluation commonjs [6] ./parsing/harmony/index.js 19:0-37
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 92:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 93:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 95:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 96:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 98:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 99:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 108:22-30
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 109:8-16
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 110:8-22
+      from origin ./parsing/harmony/node_modules/reexport.js
+        harmony side effect evaluation commonjs [7] ./parsing/harmony/node_modules/reexport.js 3:0-42
+        harmony export imported specifier commonjs [7] ./parsing/harmony/node_modules/reexport.js 3:0-42
+      cjs self exports reference [0] ./parsing/harmony/node_modules/commonjs.js 1:0-14
+    ./parsing/harmony/node_modules/def.js [9] 21 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation def [6] ./parsing/harmony/index.js 23:0-32
+      harmony import specifier def [6] ./parsing/harmony/index.js 29:8-21
+    ./parsing/harmony/node_modules/exportKinds.js [1] 126 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: fn, one, test1, test2, two]
+      [all exports used]
+      Statement (ExportNamedDeclaration) with side effects in source code at 6:0-24
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 5:0-33
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 7:0-39
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 9:0-43
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 54:8-10
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 55:8-10
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 56:9-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 56:16-18
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 60:8-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 61:8-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 65:8-13
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 66:8-13
+      from origin ./parsing/harmony/node_modules/reexport.js
+        harmony side effect evaluation exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+        harmony export imported specifier exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+        harmony export imported specifier exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+    ./parsing/harmony/node_modules/exports-specifier.js [10] 51 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: specA, specB]
+      [all exports used]
+      [inactive] harmony side effect evaluation exports-specifier [6] ./parsing/harmony/index.js 16:0-49
+      harmony import specifier exports-specifier [6] ./parsing/harmony/index.js 84:8-13
+      harmony import specifier exports-specifier [6] ./parsing/harmony/index.js 85:8-13
+    ./parsing/harmony/node_modules/reexport.js [7] 108 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: a, b, c, d, def, e, o, two]
+      [only some exports used: a, b, c, def, o, two]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-44
+      harmony side effect evaluation reexport [6] ./parsing/harmony/index.js 11:0-95
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 70:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 71:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 72:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 73:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 74:8-13
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 104:8-14
+  runtime modules 937 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 4.08 KiB
+  code generated modules 3.95 KiB [code generated]
+    ./parsing/harmony/index.js [6] 3.03 KiB {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 28:0-30:3
+      entry ./parsing/harmony/ main
+    ./parsing/harmony/node_modules/exportKinds.js [1] 126 bytes {0} [depth 1] [built] [code generated]
+      [exports: fn, one, test1, test2, two]
+      [all exports used]
+      Statement (ExportNamedDeclaration) with side effects in source code at 6:0-24
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 5:0-33
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 7:0-39
+        harmony side effect evaluation exportKinds [6] ./parsing/harmony/index.js 9:0-43
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 54:8-10
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 55:8-10
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 56:9-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 56:16-18
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 60:8-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 61:8-11
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 65:8-13
+        harmony import specifier exportKinds [6] ./parsing/harmony/index.js 66:8-13
+      from origin ./parsing/harmony/node_modules/reexport.js
+        harmony side effect evaluation exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+        harmony export imported specifier exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+        harmony export imported specifier exportKinds [7] ./parsing/harmony/node_modules/reexport.js 2:0-44
+    ./parsing/harmony/node_modules/reexport.js [7] 108 bytes {0} [depth 1] [built] [code generated]
+      [exports: a, b, c, d, def, e, o, two]
+      [only some exports used: a, b, c, def, o, two]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-44
+      harmony side effect evaluation reexport [6] ./parsing/harmony/index.js 11:0-95
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 70:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 71:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 72:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 73:8-11
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 74:8-13
+      harmony import specifier reexport [6] ./parsing/harmony/index.js 104:8-14
+    ./parsing/harmony/node_modules/abc.js [4] 166 bytes {0} [depth 1] [built] [code generated]
+      [exports: a, b, c, d, e]
+      from origin ./parsing/harmony/index.js
+        [inactive] harmony side effect evaluation abc [6] ./parsing/harmony/index.js 1:0-30
+        [inactive] harmony side effect evaluation abc [6] ./parsing/harmony/index.js 3:0-27
+        harmony import specifier abc [6] ./parsing/harmony/index.js 33:8-9
+        harmony import specifier abc [6] ./parsing/harmony/index.js 34:8-9
+        harmony import specifier abc [6] ./parsing/harmony/index.js 38:8-13
+        harmony import specifier abc [6] ./parsing/harmony/index.js 39:8-13
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 40:8-13
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 41:8-15
+        [inactive] harmony import specifier abc [6] ./parsing/harmony/index.js 42:8-13
+        harmony import specifier abc [6] ./parsing/harmony/index.js 43:39-42
+        harmony import specifier abc [6] ./parsing/harmony/index.js 49:16-19
+        harmony import specifier abc [6] ./parsing/harmony/index.js 50:13-16
+        harmony import specifier reexport2 [6] ./parsing/harmony/index.js 75:8-12 (skipped side-effect-free modules)
+      from origin ./parsing/harmony/node_modules/reexport.js
+        [inactive] harmony side effect evaluation abc [7] ./parsing/harmony/node_modules/reexport.js 1:0-20
+        harmony export imported specifier abc [7] ./parsing/harmony/node_modules/reexport.js 1:0-20
+      [inactive] from origin ./parsing/harmony/node_modules/reexport2.js
+        [inactive] harmony side effect evaluation abc ./parsing/harmony/node_modules/reexport2.js 2:0-20
+        [inactive] harmony export imported specifier abc ./parsing/harmony/node_modules/reexport2.js 2:0-20
+      [inactive] from origin ./parsing/harmony/node_modules/unused.js
+        [inactive] harmony side effect evaluation ./abc ./parsing/harmony/node_modules/unused.js 5:0-22
+        [inactive] harmony export imported specifier ./abc ./parsing/harmony/node_modules/unused.js 5:0-22
+    ./parsing/harmony/node_modules/abc_c.js [2] 20 bytes {0} [depth 1] [built] [code generated]
+      [exports: c]
+      from origin ./parsing/harmony/node_modules/abc.js
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 3:0-26
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 3:0-26
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 5:0-32
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 6:0-19 (skipped side-effect-free modules)
+        [inactive] harmony side effect evaluation ./abc_c [4] ./parsing/harmony/node_modules/abc.js 8:0-26
+        harmony export imported specifier ./abc_c [4] ./parsing/harmony/node_modules/abc.js 9:0-16
+      from origin ./parsing/harmony/index.js
+        harmony import specifier abc [6] ./parsing/harmony/index.js 40:8-13 (skipped side-effect-free modules)
+        harmony import specifier abc [6] ./parsing/harmony/index.js 41:8-15 (skipped side-effect-free modules)
+        harmony import specifier abc [6] ./parsing/harmony/index.js 42:8-13 (skipped side-effect-free modules)
+      [inactive] from origin ./parsing/harmony/node_modules/unused.js
+        [inactive] harmony side effect evaluation ./abc_c ./parsing/harmony/node_modules/unused.js 4:0-31
+        [inactive] harmony export imported specifier ./abc_c ./parsing/harmony/node_modules/unused.js 4:0-31
+    ./parsing/harmony/node_modules/commonjs.js [0] 87 bytes {0} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:1
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation commonjs [6] ./parsing/harmony/index.js 18:0-40
+        harmony side effect evaluation commonjs [6] ./parsing/harmony/index.js 19:0-37
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 92:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 93:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 95:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 96:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 98:1-6
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 99:8-13
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 108:22-30
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 109:8-16
+        harmony import specifier commonjs [6] ./parsing/harmony/index.js 110:8-22
+      from origin ./parsing/harmony/node_modules/reexport.js
+        harmony side effect evaluation commonjs [7] ./parsing/harmony/node_modules/reexport.js 3:0-42
+        harmony export imported specifier commonjs [7] ./parsing/harmony/node_modules/reexport.js 3:0-42
+      cjs self exports reference [0] ./parsing/harmony/node_modules/commonjs.js 1:0-14
+    ./parsing/harmony/node_modules/circularEven.js [3] 133 bytes {0} [depth 1] [built] [code generated]
+      [exports: default, even]
+      [all exports used]
+      Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-22
+      from origin ./parsing/harmony/index.js
+        harmony side effect evaluation circularEven [6] ./parsing/harmony/index.js 14:0-48
+        harmony import specifier circularEven [6] ./parsing/harmony/index.js 79:8-18
+        harmony import specifier circularEven [6] ./parsing/harmony/index.js 80:8-12
+      from origin ./parsing/harmony/node_modules/circularOdd.js
+        harmony side effect evaluation circularEven [8] ./parsing/harmony/node_modules/circularOdd.js 1:0-36
+        harmony import specifier circularEven [8] ./parsing/harmony/node_modules/circularOdd.js 5:8-12
+    ./parsing/harmony/node_modules/commonjs-trans.js [5] 117 bytes {0} [depth 1] [built] [code generated]
+      [exports: Other, __esModule, default]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-26
+      harmony side effect evaluation commonjs-trans [6] ./parsing/harmony/index.js 20:0-57
+      harmony side effect evaluation commonjs-trans [6] ./parsing/harmony/index.js 21:0-48
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 101:8-14
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 102:12-18
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 103:8-14
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 113:27-40
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 114:12-33
+      harmony import specifier commonjs-trans [6] ./parsing/harmony/index.js 115:8-27
+    ./parsing/harmony/node_modules/def.js [9] 21 bytes {0} [depth 1] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation def [6] ./parsing/harmony/index.js 23:0-32
+      harmony import specifier def [6] ./parsing/harmony/index.js 29:8-21
+    ./parsing/harmony/node_modules/exports-specifier.js [10] 51 bytes {0} [depth 1] [built] [code generated]
+      [exports: specA, specB]
+      [all exports used]
+      [inactive] harmony side effect evaluation exports-specifier [6] ./parsing/harmony/index.js 16:0-49
+      harmony import specifier exports-specifier [6] ./parsing/harmony/index.js 84:8-13
+      harmony import specifier exports-specifier [6] ./parsing/harmony/index.js 85:8-13
+    ./parsing/harmony/node_modules/circularOdd.js [8] 112 bytes {0} [depth 2] [built] [code generated]
+      [exports: odd]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-36
+      harmony side effect evaluation circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 1:0-34
+      harmony import specifier circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 3:15-18
+      harmony import specifier circularOdd [3] ./parsing/harmony/node_modules/circularEven.js 7:8-11
+  orphan modules 139 bytes [orphan]
+    ./parsing/harmony/node_modules/reexport2.js 34 bytes [depth 1] [orphan] [built]
+      [exports: a, b, c, d, e]
+      [module unused]
+      [inactive] harmony side effect evaluation reexport2 [6] ./parsing/harmony/index.js 12:0-38
+      [inactive] harmony import specifier reexport2 [6] ./parsing/harmony/index.js 75:8-12
+    ./parsing/harmony/node_modules/unused.js 105 bytes [depth 1] [orphan] [built]
+      [exports: a, b, c, d, e]
+      [module unused]
+      [inactive] harmony side effect evaluation unused [6] ./parsing/harmony/index.js 25:0-16
+runtime modules 937 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 38.044425 ms
+<t> finish make hook: 0.026707 ms
+<t> finish compilation: 1.456151 ms
+<t> seal compilation: 12.810867 ms
+<t> afterCompile hook: 0.011458 ms
+<t> emitAssets: 1.91987 ms
+<t> emitRecords: 0.01266 ms
+<t> done hook: 0.012533 ms
+<t> beginIdle: 0.007041 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.006132 ms
+<t> finish modules: 1.103718 ms
+<t> report dependency errors and warnings: 0.322277 ms
+<t> optimize dependencies: 1.3862 ms
+<t> create chunks: 0.626073 ms
+<t> compute affected modules with chunk graph: 0.004346 ms
+<t> optimize: 1.730785 ms
+    11 modules hashed, 0 from cache (0.85 variants per module in average)
+<t> module hashing: 0.790773 ms
+    100% code generated (11 generated, 0 from cache)
+<t> code generation: 4.678861 ms
+<t> runtime requirements.modules: 0.148603 ms
+<t> runtime requirements.chunks: 0.12909 ms
+<t> runtime requirements.entries: 0.479616 ms
+<t> runtime requirements: 0.805357 ms
+<t> hashing: initialize hash: 0.006077 ms
+<t> hashing: sort chunks: 0.032316 ms
+<t> hashing: hash runtime modules: 0.371491 ms
+<t> hashing: hash chunks: 0.441031 ms
+<t> hashing: hash digest: 0.020727 ms
+<t> hashing: process full hash modules: 0.001974 ms
+<t> hashing: 0.931444 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.015252 ms
+<t> module assets: 0.029465 ms
+<t> create chunk assets: 1.409679 ms
+<t> process assets: 0.074667 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.043148 ms
+<t> figure out provided exports: 0.92327 ms
+    92% of exports of modules have been determined (1 no declared exports, 12 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 4 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.061223 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.309549 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.022823 ms
+<t> trace exports usage in graph: 0.971758 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.312574 ms
+<t> visitModules: visiting: 0.46017 ms
+    25 queue items processed (11 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.501549 ms
+<t> connectChunkGroups: 0.003503 ms
+<t> cleanup: 0.002717 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.027238 ms
+<t> modules: 0.297163 ms
+<t> queue: 0.004145 ms
+<t> maxSize: 0.00778 ms
+
+LOG from webpack.FileSystemInfo
+    13 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 13 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/13) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:30: webpack 5.64.4 compiled successfully in 55 ms (d440d9d51ea5c34e8ec2)

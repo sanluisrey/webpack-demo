@@ -1,0 +1,172 @@
+PublicPath: (none)
+asset bundle0.js 2.68 KiB {142} [emitted] [minimized] (name: bundle0)
+asset vendors.js 1.64 KiB {216} [emitted] (name: vendors)
+asset compress.js 318 bytes {687} [emitted] [minimized] (name: compress)
+asset ie8.js 288 bytes {233} [emitted] [minimized] (name: ie8)
+asset extract.js 231 bytes {182} [emitted] [minimized] (name: extract)
+  license extract.js.LICENSE.txt 193 bytes [emitted]
+Entrypoint ie8 288 bytes = ie8.js
+Entrypoint bundle0 2.68 KiB = bundle0.js
+Entrypoint vendors 1.64 KiB = vendors.js
+Entrypoint extract 231 bytes = extract.js
+Entrypoint compress 318 bytes = compress.js
+chunk {142} (runtime: bundle0) bundle0.js (bundle0) 2.77 KiB [entry] [rendered]
+  > ./index.js bundle0
+  cacheable modules 2.68 KiB
+    ./index.js [10] 2.51 KiB {142} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-9:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js bundle0
+    ./test.js [393] 173 bytes {142} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 11:0-14
+      Statement (VariableDeclaration) with side effects in source code at 3:0-13
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      cjs require ./test.js [10] ./index.js 74:23-43
+      cjs self exports reference [393] ./test.js 11:0-14
+  external "fs" [147] 42 bytes {142} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in bundle0 (runtime-defined))
+    cjs require fs [10] ./index.js 2:12-25
+    cjs require fs [10] ./index.js 12:12-25
+    cjs require fs [10] ./index.js 23:12-25
+    cjs require fs [10] ./index.js 38:12-25
+    cjs require fs [10] ./index.js 53:12-25
+    cjs require fs [10] ./index.js 64:12-25
+  external "path" [17] 42 bytes {142} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in bundle0 (runtime-defined))
+    cjs require path [10] ./index.js 13:14-29
+    cjs require path [10] ./index.js 24:14-29
+    cjs require path [10] ./index.js 39:14-29
+    cjs require path [10] ./index.js 54:14-29
+    cjs require path [10] ./index.js 65:14-29
+chunk {182} (runtime: extract) extract.js (extract) 357 bytes [entry] [rendered]
+  > ./extract.js extract
+  ./extract.js [2] 357 bytes {182} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 17:0-14
+    Statement (VariableDeclaration) with side effects in source code at 1:0-13
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [2] ./extract.js 17:0-14
+    entry ./extract.js extract
+chunk {216} (runtime: vendors) vendors.js (vendors) 194 bytes [entry] [rendered]
+  > ./vendors.js vendors
+  ./vendors.js [53] 194 bytes {216} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 11:0-14
+    Statement (VariableDeclaration) with side effects in source code at 3:0-13
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [53] ./vendors.js 11:0-14
+    entry ./vendors.js vendors
+chunk {233} (runtime: ie8) ie8.js (ie8) 156 bytes [entry] [rendered]
+  > ./ie8.js ie8
+  ./ie8.js [985] 156 bytes {233} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 11:0-14
+    Statement (ExpressionStatement) with side effects in source code at 11:0-19
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [985] ./ie8.js 11:0-14
+    entry ./ie8.js ie8
+chunk {687} (runtime: compress) compress.js (compress) 193 bytes [entry] [rendered]
+  > ./compress.js compress
+  ./compress.js [355] 193 bytes {687} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 14:0-14
+    Statement (ExpressionStatement) with side effects in source code at 14:0-19
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [355] ./compress.js 14:0-14
+    entry ./compress.js compress
+  
+
+LOG from webpack.Compiler
+<t> make hook: 26.079119 ms
+<t> finish make hook: 0.022111 ms
+<t> finish compilation: 0.178297 ms
+<t> seal compilation: 85.343631 ms
+<t> afterCompile hook: 0.015921 ms
+<t> emitAssets: 1.578833 ms
+<t> emitRecords: 0.002697 ms
+<t> done hook: 0.017587 ms
+<t> beginIdle: 0.017184 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004701 ms
+<t> finish modules: 0.137527 ms
+<t> report dependency errors and warnings: 0.022989 ms
+<t> optimize dependencies: 0.296732 ms
+<t> create chunks: 0.286539 ms
+<t> compute affected modules with chunk graph: 0.001701 ms
+<t> optimize: 0.874886 ms
+    8 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.244598 ms
+    100% code generated (8 generated, 0 from cache)
+<t> code generation: 0.253378 ms
+<t> runtime requirements.modules: 0.031717 ms
+<t> runtime requirements.chunks: 0.057744 ms
+<t> runtime requirements.entries: 0.112923 ms
+<t> runtime requirements: 0.226123 ms
+<t> hashing: initialize hash: 0.003784 ms
+<t> hashing: sort chunks: 0.032136 ms
+<t> hashing: hash runtime modules: 0.01402 ms
+<t> hashing: hash chunks: 0.691154 ms
+<t> hashing: hash digest: 0.019728 ms
+<t> hashing: process full hash modules: 0.001432 ms
+<t> hashing: 0.805563 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.007572 ms
+<t> module assets: 0.012033 ms
+<t> create chunk assets: 1.003996 ms
+<t> process assets: 81.048429 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.026066 ms
+<t> figure out provided exports: 0.025527 ms
+    25% of exports of modules have been determined (6 no declared exports, 0 not cached, 2 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.006047 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.027993 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.007729 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006357 ms
+<t> trace exports usage in graph: 0.23257 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017186 ms
+<t> visitModules: visiting: 0.083772 ms
+    16 queue items processed (8 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.1218 ms
+<t> connectChunkGroups: 0.002274 ms
+<t> cleanup: 0.00194 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.031224 ms
+<t> modules: 0.110443 ms
+<t> queue: 0.0026 ms
+<t> maxSize: 0.008856 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.050601 ms
+<t> sort relevant modules: 0.000945 ms
+<t> find modules to concatenate: 0.001878 ms
+<t> sort concat configurations: 0.000809 ms
+<t> create concatenated modules: 0.004581 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:52: webpack 5.64.4 compiled successfully in 117 ms (fd374aaee05b92e66e7c)

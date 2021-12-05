@@ -1,0 +1,140 @@
+PublicPath: (none)
+asset bundle.js 4.6 KiB {0} [emitted] (name: main)
+Entrypoint main 4.6 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 929 bytes (javascript) 123 bytes (runtime) [entry] [rendered]
+  > ./loaders/coffee-loader/ main
+  dependent modules 425 bytes [dependent]
+    ../../node_modules/coffee-loader/dist/cjs.js!./loaders/coffee-loader/module-only.coffee [2] 9 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-7
+      module decorator [2] ../../node_modules/coffee-loader/dist/cjs.js!./loaders/coffee-loader/module-only.coffee 1:0-6
+      cjs require !coffee-loader!./module-only.coffee [3] ./loaders/coffee-loader/index.js 11:1-47
+    ../../node_modules/coffee-loader/dist/cjs.js?literate!./loaders/coffee-loader/script.coffee.md [1] 286 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 15:2-16
+      Statement (ExpressionStatement) with side effects in source code at 6:0-17
+      cjs self exports reference [1] ../../node_modules/coffee-loader/dist/cjs.js?literate!./loaders/coffee-loader/script.coffee.md 15:2-16
+      cjs require !coffee-loader?literate!./script.coffee.md [3] ./loaders/coffee-loader/index.js 7:8-61
+    ./loaders/_resources/script.coffee [0] 130 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 10:2-16
+      Statement (ExpressionStatement) with side effects in source code at 3:0-17
+      cjs self exports reference [0] ./loaders/_resources/script.coffee 10:2-16
+      cjs require !coffee-loader!../_resources/script.coffee [3] ./loaders/coffee-loader/index.js 2:8-61
+      cjs require ../_resources/script.coffee [3] ./loaders/coffee-loader/index.js 3:8-46
+  ./loaders/coffee-loader/index.js [3] 504 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+    entry ./loaders/coffee-loader/ main
+  webpack/runtime/node module decorator 123 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+modules by path ./loaders/coffee-loader/ 799 bytes
+  ./loaders/coffee-loader/index.js [3] 504 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+    entry ./loaders/coffee-loader/ main
+  ../../node_modules/coffee-loader/dist/cjs.js?literate!./loaders/coffee-loader/script.coffee.md [1] 286 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 15:2-16
+    Statement (ExpressionStatement) with side effects in source code at 6:0-17
+    cjs self exports reference [1] ../../node_modules/coffee-loader/dist/cjs.js?literate!./loaders/coffee-loader/script.coffee.md 15:2-16
+    cjs require !coffee-loader?literate!./script.coffee.md [3] ./loaders/coffee-loader/index.js 7:8-61
+  ../../node_modules/coffee-loader/dist/cjs.js!./loaders/coffee-loader/module-only.coffee [2] 9 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-7
+    module decorator [2] ../../node_modules/coffee-loader/dist/cjs.js!./loaders/coffee-loader/module-only.coffee 1:0-6
+    cjs require !coffee-loader!./module-only.coffee [3] ./loaders/coffee-loader/index.js 11:1-47
+./loaders/_resources/script.coffee [0] 130 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 10:2-16
+  Statement (ExpressionStatement) with side effects in source code at 3:0-17
+  cjs self exports reference [0] ./loaders/_resources/script.coffee 10:2-16
+  cjs require !coffee-loader!../_resources/script.coffee [3] ./loaders/coffee-loader/index.js 2:8-61
+  cjs require ../_resources/script.coffee [3] ./loaders/coffee-loader/index.js 3:8-46
+webpack/runtime/node module decorator 123 bytes {0} [code generated]
+  [no exports]
+  [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 253.083382 ms
+<t> finish make hook: 0.031436 ms
+<t> finish compilation: 0.155856 ms
+<t> seal compilation: 6.459009 ms
+<t> afterCompile hook: 0.024163 ms
+<t> emitAssets: 2.003 ms
+<t> emitRecords: 0.004155 ms
+<t> done hook: 0.025966 ms
+<t> beginIdle: 0.016381 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004073 ms
+<t> finish modules: 0.109401 ms
+<t> report dependency errors and warnings: 0.020538 ms
+<t> optimize dependencies: 0.46155 ms
+<t> create chunks: 0.356177 ms
+<t> compute affected modules with chunk graph: 0.005424 ms
+<t> optimize: 1.212607 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.517787 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.600634 ms
+<t> runtime requirements.modules: 0.221815 ms
+<t> runtime requirements.chunks: 0.177616 ms
+<t> runtime requirements.entries: 0.538112 ms
+<t> runtime requirements: 1.008864 ms
+<t> hashing: initialize hash: 0.008255 ms
+<t> hashing: sort chunks: 0.02825 ms
+<t> hashing: hash runtime modules: 0.245577 ms
+<t> hashing: hash chunks: 0.515 ms
+<t> hashing: hash digest: 0.031243 ms
+<t> hashing: process full hash modules: 0.002324 ms
+<t> hashing: 0.903317 ms
+    100% code generated (1 generated, 0 from cache)
+<t> record hash: 0.01675 ms
+<t> module assets: 0.024267 ms
+<t> create chunk assets: 0.940318 ms
+<t> process assets: 0.090832 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.024671 ms
+<t> figure out provided exports: 0.002804 ms
+    0% of exports of modules have been determined (4 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002755 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.004951 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010844 ms
+<t> trace exports usage in graph: 0.334359 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.026376 ms
+<t> visitModules: visiting: 0.13222 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.183958 ms
+<t> connectChunkGroups: 0.003499 ms
+<t> cleanup: 0.00302 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.028716 ms
+<t> modules: 0.174816 ms
+<t> queue: 0.004444 ms
+<t> maxSize: 0.010507 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:25: webpack 5.64.4 compiled successfully in 264 ms (6fcca4deb92f199905aa)

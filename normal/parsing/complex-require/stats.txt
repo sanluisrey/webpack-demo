@@ -1,0 +1,636 @@
+PublicPath: (none)
+asset bundle.js 23.4 KiB {9} [emitted] (name: main)
+asset 2.bundle.js 4.83 KiB {0}, {1}, {2}, {4}, {5}, {6} [emitted]
+asset 3.bundle.js 3.82 KiB {0}, {1}, {3}, {7}, {8} [emitted]
+asset 6.bundle.js 1.93 KiB {0}, {6} [emitted]
+asset 4.bundle.js 1.91 KiB {0}, {4} [emitted]
+asset 7.bundle.js 1.87 KiB {0}, {7} [emitted]
+asset 5.bundle.js 1.87 KiB {0}, {5} [emitted]
+asset 8.bundle.js 1.87 KiB {0}, {8} [emitted]
+asset 1.bundle.js 1.86 KiB {0}, {1} [emitted]
+asset 0.bundle.js 935 bytes {0} [emitted]
+Entrypoint main 23.4 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 21 bytes <{9}> [rendered]
+  > ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+  > ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+  > ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+  > ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+  > ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+  > ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+  > ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {1} (runtime: main) 1.bundle.js 195 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 28:2-48
+  > [19] ./parsing/complex-require/amd.js 8:2-38
+  ./parsing/complex-require/abc/ sync ^\.\/.*Test$ [2] 174 bytes {1} {2} {3} [depth 2] [built] [code generated]
+    [no exports]
+    from origin ./parsing/complex-require/amd.js
+      amd require context [19] ./parsing/complex-require/amd.js 8:2-38
+      amd require context [19] ./parsing/complex-require/amd.js 28:2-48
+    from origin ./parsing/complex-require/cjs.js
+      cjs require context [14] ./parsing/complex-require/cjs.js 8:3-31
+      cjs require context [14] ./parsing/complex-require/cjs.js 52:3-41
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {2} (runtime: main) 2.bundle.js 826 bytes <{9}> [rendered]
+  > [14] ./parsing/complex-require/cjs.js 6:1-18:3
+  modules by path ./parsing/complex-require/abc/ 386 bytes
+    ./parsing/complex-require/abc/ sync ^\.\/.*.*$ [5] 191 bytes {2} {5} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 10:2-43
+      cjs require context [14] ./parsing/complex-require/cjs.js 10:3-36
+    ./parsing/complex-require/abc/ sync ^\.\/.*Test$ [2] 174 bytes {1} {2} {3} [depth 2] [built] [code generated]
+      [no exports]
+      from origin ./parsing/complex-require/amd.js
+        amd require context [19] ./parsing/complex-require/amd.js 8:2-38
+        amd require context [19] ./parsing/complex-require/amd.js 28:2-48
+      from origin ./parsing/complex-require/cjs.js
+        cjs require context [14] ./parsing/complex-require/cjs.js 8:3-31
+        cjs require context [14] ./parsing/complex-require/cjs.js 52:3-41
+    ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+        import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+        import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+      from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+        context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+        context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+      from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+        context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+        context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+      from origin ./parsing/complex-require/amd.js
+        amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+        amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+      from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+        context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+        context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+      import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+      import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+      context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+      import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+      context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+      context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+  modules by path ./parsing/complex-require/ sync ^/.//.*// 440 bytes
+    ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ [6] 242 bytes {2} {6} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 11:2-57
+      cjs require context [14] ./parsing/complex-require/cjs.js 11:3-50
+    ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ [4] 198 bytes {2} {4} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 9:2-42
+      cjs require context [14] ./parsing/complex-require/cjs.js 9:3-35
+chunk {3} (runtime: main) 3.bundle.js 584 bytes <{9}> [rendered]
+  > [14] ./parsing/complex-require/cjs.js 50:1-61:3
+  modules by path ./parsing/complex-require/abc/ sync ^/.// 365 bytes
+    ./parsing/complex-require/abc/ sync ^\.\/.*$ [8] 191 bytes {3} {8} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 30:2-55
+      cjs require context [14] ./parsing/complex-require/cjs.js 54:3-48
+    ./parsing/complex-require/abc/ sync ^\.\/.*Test$ [2] 174 bytes {1} {2} {3} [depth 2] [built] [code generated]
+      [no exports]
+      from origin ./parsing/complex-require/amd.js
+        amd require context [19] ./parsing/complex-require/amd.js 8:2-38
+        amd require context [19] ./parsing/complex-require/amd.js 28:2-48
+      from origin ./parsing/complex-require/cjs.js
+        cjs require context [14] ./parsing/complex-require/cjs.js 8:3-31
+        cjs require context [14] ./parsing/complex-require/cjs.js 52:3-41
+  ./parsing/complex-require/ sync ^\.\/.*Test$ [7] 198 bytes {3} {7} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 29:2-62
+    cjs require context [14] ./parsing/complex-require/cjs.js 53:3-55
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {4} (runtime: main) 4.bundle.js 219 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 9:2-42
+  ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ [4] 198 bytes {2} {4} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 9:2-42
+    cjs require context [14] ./parsing/complex-require/cjs.js 9:3-35
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {5} (runtime: main) 5.bundle.js 212 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 10:2-43
+  ./parsing/complex-require/abc/ sync ^\.\/.*.*$ [5] 191 bytes {2} {5} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 10:2-43
+    cjs require context [14] ./parsing/complex-require/cjs.js 10:3-36
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {6} (runtime: main) 6.bundle.js 263 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 11:2-57
+  ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ [6] 242 bytes {2} {6} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 11:2-57
+    cjs require context [14] ./parsing/complex-require/cjs.js 11:3-50
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {7} (runtime: main) 7.bundle.js 219 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 29:2-62
+  ./parsing/complex-require/ sync ^\.\/.*Test$ [7] 198 bytes {3} {7} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 29:2-62
+    cjs require context [14] ./parsing/complex-require/cjs.js 53:3-55
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {8} (runtime: main) 8.bundle.js 212 bytes <{9}> [rendered]
+  > [19] ./parsing/complex-require/amd.js 30:2-55
+  ./parsing/complex-require/abc/ sync ^\.\/.*$ [8] 191 bytes {3} {8} [depth 2] [built] [code generated]
+    [no exports]
+    amd require context [19] ./parsing/complex-require/amd.js 30:2-55
+    cjs require context [14] ./parsing/complex-require/cjs.js 54:3-48
+  ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+      import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+      import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+      context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+      context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+    from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+      context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+      context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+    from origin ./parsing/complex-require/amd.js
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+      amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+    from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+      context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+      context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+    import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+    import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+    context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+    import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+    context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+    context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+chunk {9} (runtime: main) bundle.js (main) 5.48 KiB (javascript) 2.94 KiB (runtime) >{0}< >{1}< >{2}< >{3}< >{4}< >{5}< >{6}< >{7}< >{8}< [entry] [rendered]
+  > ./parsing/complex-require/ main
+  built modules 5.48 KiB [built]
+    modules by path ./parsing/complex-require/sync/ 970 bytes
+      modules by path ./parsing/complex-require/sync/ sync ^/.//*.*$ 772 bytes
+        ./parsing/complex-require/sync/ sync ^\.\/.*$ [18] 193 bytes {9} [depth 2] [dependent] [built] [code generated]
+          [no exports]
+          cjs require context [14] ./parsing/complex-require/cjs.js 70:2-48
+        ./parsing/complex-require/sync/ sync ^\.\/.*.*$ [15] 193 bytes {9} [depth 2] [dependent] [built] [code generated]
+          [no exports]
+          cjs require context [14] ./parsing/complex-require/cjs.js 27:2-36
+        ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ [16] 193 bytes {9} [depth 2] [dependent] [built] [code generated]
+          [no exports]
+          cjs require context [14] ./parsing/complex-require/cjs.js 28:2-75
+        ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ [17] 193 bytes {9} [depth 2] [dependent] [built] [code generated]
+          [no exports]
+          cjs require context [14] ./parsing/complex-require/cjs.js 30:2-43
+      ./parsing/complex-require/sync/ sync ^\.\/.*Test$ [3] 175 bytes {9} [depth 2] [dependent] [built] [code generated]
+        [no exports]
+        cjs require context [14] ./parsing/complex-require/cjs.js 26:2-31
+        amd require context [14] ./parsing/complex-require/cjs.js 43:8-45
+        cjs require context [14] ./parsing/complex-require/cjs.js 69:2-41
+        amd require context [14] ./parsing/complex-require/cjs.js 84:8-55
+      ./parsing/complex-require/sync/syncTest.js [0] 23 bytes {9} [depth 2] [dependent] [built] [code generated]
+        [exports: default]
+        from origin ./parsing/complex-require/cjs.js
+          cjs require ./sync/syncTest [14] ./parsing/complex-require/cjs.js 29:2-33
+          cjs require ./sync/syncTest [14] ./parsing/complex-require/cjs.js 71:2-39
+        from origin ./parsing/complex-require/sync/ sync ^\.\/.*$
+          context element ./syncTest [18] ./parsing/complex-require/sync/ sync ^\.\/.*$ ./syncTest
+          context element ./syncTest.js [18] ./parsing/complex-require/sync/ sync ^\.\/.*$ ./syncTest.js
+        from origin ./parsing/complex-require/sync/ sync ^\.\/.*.*$
+          context element ./syncTest [15] ./parsing/complex-require/sync/ sync ^\.\/.*.*$ ./syncTest
+          context element ./syncTest.js [15] ./parsing/complex-require/sync/ sync ^\.\/.*.*$ ./syncTest.js
+        from origin ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$
+          context element ./syncTest [16] ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ ./syncTest
+          context element ./syncTest.js [16] ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ ./syncTest.js
+        from origin ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$
+          context element ./syncTest [17] ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ ./syncTest
+          context element ./syncTest.js [17] ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ ./syncTest.js
+        from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+          context element ./sync/syncTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./sync/syncTest
+          context element ./sync/syncTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./sync/syncTest.js
+        context element ./syncTest [3] ./parsing/complex-require/sync/ sync ^\.\/.*Test$ ./syncTest
+        import() context element ./sync/syncTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./sync/syncTest
+        context element ./sync/syncTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./sync/syncTest
+        context element ./sync/syncTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./sync/syncTest
+    modules by path ./parsing/complex-require/abc/ lazy ^/.// 480 bytes
+      ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object [12] 160 bytes {9} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 7:2-53
+      ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object [10] 160 bytes {9} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 5:2-52
+      ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object [13] 160 bytes {9} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 20:1-73
+    modules by path ./parsing/complex-require/*.js 3.91 KiB
+      ./parsing/complex-require/amd.js [19] 928 bytes {9} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        Statement (ExpressionStatement) with side effects in source code at 2:0-20:2
+        cjs require ./amd [9] ./parsing/complex-require/index.js 28:0-16
+      ./parsing/complex-require/cjs.js [14] 2.21 KiB {9} [depth 1] [dependent] [built] [code generated]
+        [used exports unknown]
+        Statement (ExpressionStatement) with side effects in source code at 2:0-19:2
+        cjs require ./cjs [9] ./parsing/complex-require/index.js 27:0-16
+      ./parsing/complex-require/index.js [9] 812 bytes {9} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-15:3
+        entry ./parsing/complex-require/ main
+    ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object [11] 160 bytes {9} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      import() context lazy [9] ./parsing/complex-require/index.js 6:2-61
+  runtime modules 2.94 KiB
+    webpack/runtime/define property getters 308 bytes {9} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {9} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 174 bytes {9} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {9} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {9} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.79 KiB {9} [code generated]
+      [no exports]
+      [used exports unknown]
+built modules 6.67 KiB [built]
+  modules by path ./parsing/complex-require/abc/ 1.03 KiB
+    modules by path ./parsing/complex-require/abc/ lazy ^/.// 480 bytes
+      ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object [10] 160 bytes {9} [depth 1] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 5:2-52
+      ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object [12] 160 bytes {9} [depth 1] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 7:2-53
+      ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object [13] 160 bytes {9} [depth 1] [built] [code generated]
+        [no exports]
+        import() context lazy [9] ./parsing/complex-require/index.js 20:1-73
+    modules by path ./parsing/complex-require/abc/ sync ^/.// 556 bytes
+      ./parsing/complex-require/abc/ sync ^\.\/.*Test$ [2] 174 bytes {1} {2} {3} [depth 2] [built] [code generated]
+        [no exports]
+        from origin ./parsing/complex-require/amd.js
+          amd require context [19] ./parsing/complex-require/amd.js 8:2-38
+          amd require context [19] ./parsing/complex-require/amd.js 28:2-48
+        from origin ./parsing/complex-require/cjs.js
+          cjs require context [14] ./parsing/complex-require/cjs.js 8:3-31
+          cjs require context [14] ./parsing/complex-require/cjs.js 52:3-41
+      ./parsing/complex-require/abc/ sync ^\.\/.*.*$ [5] 191 bytes {2} {5} [depth 2] [built] [code generated]
+        [no exports]
+        amd require context [19] ./parsing/complex-require/amd.js 10:2-43
+        cjs require context [14] ./parsing/complex-require/cjs.js 10:3-36
+      ./parsing/complex-require/abc/ sync ^\.\/.*$ [8] 191 bytes {3} {8} [depth 2] [built] [code generated]
+        [no exports]
+        amd require context [19] ./parsing/complex-require/amd.js 30:2-55
+        cjs require context [14] ./parsing/complex-require/cjs.js 54:3-48
+    ./parsing/complex-require/abc/abcTest.js [1] 21 bytes {0} {1} {2} {3} {4} {5} {6} {7} {8} [depth 2] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object
+        import() context element ./abcTest [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest
+        import() context element ./abcTest.js [12] ./parsing/complex-require/abc/ lazy ^\.\/.*.*$ namespace object ./abcTest.js
+      from origin ./parsing/complex-require/abc/ sync ^\.\/.*$
+        context element ./abcTest [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest
+        context element ./abcTest.js [8] ./parsing/complex-require/abc/ sync ^\.\/.*$ ./abcTest.js
+      from origin ./parsing/complex-require/abc/ sync ^\.\/.*.*$
+        context element ./abcTest [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest
+        context element ./abcTest.js [5] ./parsing/complex-require/abc/ sync ^\.\/.*.*$ ./abcTest.js
+      from origin ./parsing/complex-require/amd.js
+        amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 7:2-34
+        amd require ./abc/abcTest [19] ./parsing/complex-require/amd.js 27:2-34
+      from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+        context element ./abc/abcTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest
+        context element ./abc/abcTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./abc/abcTest.js
+      import() context element ./abcTest [10] ./parsing/complex-require/abc/ lazy ^\.\/.*.*.*Test$ namespace object ./abcTest
+      import() context element ./abcTest [13] ./parsing/complex-require/abc/ lazy ^\.\/.*Test$ namespace object ./abcTest
+      context element ./abcTest [2] ./parsing/complex-require/abc/ sync ^\.\/.*Test$ ./abcTest
+      import() context element ./abc/abcTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./abc/abcTest
+      context element ./abc/abcTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./abc/abcTest
+      context element ./abc/abcTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./abc/abcTest
+  modules by path ./parsing/complex-require/sync/ 970 bytes
+    modules by path ./parsing/complex-require/sync/ sync ^/.//*.*$ 772 bytes
+      ./parsing/complex-require/sync/ sync ^\.\/.*.*$ [15] 193 bytes {9} [depth 2] [built] [code generated]
+        [no exports]
+        cjs require context [14] ./parsing/complex-require/cjs.js 27:2-36
+      ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ [16] 193 bytes {9} [depth 2] [built] [code generated]
+        [no exports]
+        cjs require context [14] ./parsing/complex-require/cjs.js 28:2-75
+      ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ [17] 193 bytes {9} [depth 2] [built] [code generated]
+        [no exports]
+        cjs require context [14] ./parsing/complex-require/cjs.js 30:2-43
+      ./parsing/complex-require/sync/ sync ^\.\/.*$ [18] 193 bytes {9} [depth 2] [built] [code generated]
+        [no exports]
+        cjs require context [14] ./parsing/complex-require/cjs.js 70:2-48
+    ./parsing/complex-require/sync/ sync ^\.\/.*Test$ [3] 175 bytes {9} [depth 2] [built] [code generated]
+      [no exports]
+      cjs require context [14] ./parsing/complex-require/cjs.js 26:2-31
+      amd require context [14] ./parsing/complex-require/cjs.js 43:8-45
+      cjs require context [14] ./parsing/complex-require/cjs.js 69:2-41
+      amd require context [14] ./parsing/complex-require/cjs.js 84:8-55
+    ./parsing/complex-require/sync/syncTest.js [0] 23 bytes {9} [depth 2] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/complex-require/cjs.js
+        cjs require ./sync/syncTest [14] ./parsing/complex-require/cjs.js 29:2-33
+        cjs require ./sync/syncTest [14] ./parsing/complex-require/cjs.js 71:2-39
+      from origin ./parsing/complex-require/sync/ sync ^\.\/.*$
+        context element ./syncTest [18] ./parsing/complex-require/sync/ sync ^\.\/.*$ ./syncTest
+        context element ./syncTest.js [18] ./parsing/complex-require/sync/ sync ^\.\/.*$ ./syncTest.js
+      from origin ./parsing/complex-require/sync/ sync ^\.\/.*.*$
+        context element ./syncTest [15] ./parsing/complex-require/sync/ sync ^\.\/.*.*$ ./syncTest
+        context element ./syncTest.js [15] ./parsing/complex-require/sync/ sync ^\.\/.*.*$ ./syncTest.js
+      from origin ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$
+        context element ./syncTest [16] ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ ./syncTest
+        context element ./syncTest.js [16] ./parsing/complex-require/sync/ sync ^\.\/.*y.*.*$ ./syncTest.js
+      from origin ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$
+        context element ./syncTest [17] ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ ./syncTest
+        context element ./syncTest.js [17] ./parsing/complex-require/sync/ sync ^\.\/syncTest.*$ ./syncTest.js
+      from origin ./parsing/complex-require/ sync ^\.\/.*\/.*.*$
+        context element ./sync/syncTest [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./sync/syncTest
+        context element ./sync/syncTest.js [6] ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ ./sync/syncTest.js
+      context element ./syncTest [3] ./parsing/complex-require/sync/ sync ^\.\/.*Test$ ./syncTest
+      import() context element ./sync/syncTest [11] ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object ./sync/syncTest
+      context element ./sync/syncTest [7] ./parsing/complex-require/ sync ^\.\/.*Test$ ./sync/syncTest
+      context element ./sync/syncTest [4] ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ ./sync/syncTest
+  modules by path ./parsing/complex-require/*.js 3.91 KiB
+    ./parsing/complex-require/index.js [9] 812 bytes {9} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-15:3
+      entry ./parsing/complex-require/ main
+    ./parsing/complex-require/cjs.js [14] 2.21 KiB {9} [depth 1] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 2:0-19:2
+      cjs require ./cjs [9] ./parsing/complex-require/index.js 27:0-16
+    ./parsing/complex-require/amd.js [19] 928 bytes {9} [depth 1] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 2:0-20:2
+      cjs require ./amd [9] ./parsing/complex-require/index.js 28:0-16
+  modules by path ./parsing/complex-require/ sync ^/.// 638 bytes
+    ./parsing/complex-require/ sync ^\.\/.*\/.*Test$ [4] 198 bytes {2} {4} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 9:2-42
+      cjs require context [14] ./parsing/complex-require/cjs.js 9:3-35
+    ./parsing/complex-require/ sync ^\.\/.*\/.*.*$ [6] 242 bytes {2} {6} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 11:2-57
+      cjs require context [14] ./parsing/complex-require/cjs.js 11:3-50
+    ./parsing/complex-require/ sync ^\.\/.*Test$ [7] 198 bytes {3} {7} [depth 2] [built] [code generated]
+      [no exports]
+      amd require context [19] ./parsing/complex-require/amd.js 29:2-62
+      cjs require context [14] ./parsing/complex-require/cjs.js 53:3-55
+  ./parsing/complex-require/ lazy ^\.\/.*\/.*Test$ namespace object [11] 160 bytes {9} [depth 1] [built] [code generated]
+    [no exports]
+    import() context lazy [9] ./parsing/complex-require/index.js 6:2-61
+runtime modules 2.94 KiB
+  webpack/runtime/define property getters 308 bytes {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {9} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 27.727458 ms
+<t> finish make hook: 0.014395 ms
+<t> finish compilation: 0.196218 ms
+<t> seal compilation: 8.181654 ms
+<t> afterCompile hook: 0.033043 ms
+<t> emitAssets: 2.054009 ms
+<t> emitRecords: 0.002337 ms
+<t> done hook: 0.009583 ms
+<t> beginIdle: 0.004597 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004352 ms
+<t> finish modules: 0.134224 ms
+<t> report dependency errors and warnings: 0.047982 ms
+<t> optimize dependencies: 0.314709 ms
+<t> create chunks: 0.457793 ms
+<t> compute affected modules with chunk graph: 0.002387 ms
+<t> optimize: 1.442774 ms
+    20 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.384912 ms
+    100% code generated (20 generated, 0 from cache)
+<t> code generation: 1.008698 ms
+<t> runtime requirements.modules: 0.075313 ms
+<t> runtime requirements.chunks: 0.074465 ms
+<t> runtime requirements.entries: 0.281107 ms
+<t> runtime requirements: 0.44682 ms
+<t> hashing: initialize hash: 0.001847 ms
+<t> hashing: sort chunks: 0.02234 ms
+<t> hashing: hash runtime modules: 0.378908 ms
+<t> hashing: hash chunks: 0.311608 ms
+<t> hashing: hash digest: 0.009514 ms
+<t> hashing: process full hash modules: 0.001086 ms
+<t> hashing: 0.761239 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.005833 ms
+<t> module assets: 0.01328 ms
+<t> create chunk assets: 1.274894 ms
+<t> process assets: 1.829054 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.036626 ms
+<t> figure out provided exports: 0.041968 ms
+    85% of exports of modules have been determined (3 no declared exports, 2 not cached, 15 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012648 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.021842 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010423 ms
+<t> trace exports usage in graph: 0.254017 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.055138 ms
+<t> visitModules: visiting: 0.204725 ms
+<t> visitModules: calculating available modules: 0.011373 ms
+<t> visitModules: merging available modules: 0.007731 ms
+<t> visitModules: check modules for revisit: 0.003007 ms
+<t> visitModules: prepare: 0.016401 ms
+<t> visitModules: visiting: 0.109974 ms
+    104 queue items processed (60 blocks)
+    17 chunk groups connected
+    17 chunk groups processed for merging (17 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    17 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.361813 ms
+<t> connectChunkGroups: 0.02267 ms
+<t> cleanup: 0.013566 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020662 ms
+<t> modules: 0.514645 ms
+<t> queue: 0.141914 ms
+<t> maxSize: 0.014132 ms
+
+LOG from webpack.FileSystemInfo
+    20 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/15) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:29: webpack 5.64.4 compiled successfully in 39 ms (19bdb13851652588aebd)

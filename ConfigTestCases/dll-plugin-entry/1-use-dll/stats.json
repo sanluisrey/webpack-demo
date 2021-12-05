@@ -1,0 +1,595 @@
+{
+  "hash": "06e0619091b7427a6159",
+  "version": "5.64.4",
+  "time": 20,
+  "builtAt": 1638693865856,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/dll-plugin-entry/1-use-dll",
+  "assetsByChunkName": {
+    "main": [
+      "bundle0.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 3270,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 3270
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        179
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 711,
+      "sizes": {
+        "javascript": 711
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "55ad1dea7bcf7a6e8436",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 627,
+          "sizes": {
+            "javascript": 627
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./index.js",
+          "issuerId": null,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 3:0-5:3",
+            "ModuleConcatenation bailout: Cannot concat with delegated ./index.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+          "name": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "nameForCondition": null,
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "dll/index.js",
+          "issuerId": "./index.js",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dll/index",
+              "loc": "1:0-40",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "resolvedModule": "./index.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dll/index",
+              "loc": "4:8-28",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dll/index",
+              "loc": "8:8-14",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dll/index",
+              "loc": "12:8-11",
+              "moduleId": "./index.js",
+              "resolvedModuleId": "./index.js"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [
+            "bar",
+            "default"
+          ],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external commonjs2 \"../0-create-dll/dll.js\"",
+          "name": "external \"../0-create-dll/dll.js\"",
+          "nameForCondition": null,
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+          "issuerName": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+              "name": "./index.js",
+              "id": "./index.js"
+            },
+            {
+              "identifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+              "name": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+              "id": "dll/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "dll-reference ../0-create-dll/dll.js",
+          "issuerId": "dll/index.js",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+              "module": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+              "moduleName": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+              "resolvedModuleIdentifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+              "resolvedModule": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+              "type": "delegated source",
+              "active": true,
+              "explanation": "",
+              "userRequest": "dll-reference ../0-create-dll/dll.js",
+              "moduleId": "dll/index.js",
+              "resolvedModuleId": "dll/index.js"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))"
+          ],
+          "depth": 2
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 627,
+      "sizes": {
+        "javascript": 627
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./index.js",
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-5:3",
+        "ModuleConcatenation bailout: Cannot concat with delegated ./index.js from dll-reference ../0-create-dll/dll.js: Module Concatenation is not implemented for DelegatedModule"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+      "name": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+      "nameForCondition": null,
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "dll/index.js",
+      "issuerId": "./index.js",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dll/index",
+          "loc": "1:0-40",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "resolvedModule": "./index.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dll/index",
+          "loc": "4:8-28",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dll/index",
+          "loc": "8:8-14",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dll/index",
+          "loc": "12:8-11",
+          "moduleId": "./index.js",
+          "resolvedModuleId": "./index.js"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [
+        "bar",
+        "default"
+      ],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external commonjs2 \"../0-create-dll/dll.js\"",
+      "name": "external \"../0-create-dll/dll.js\"",
+      "nameForCondition": null,
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "optional": false,
+      "orphan": false,
+      "issuer": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+      "issuerName": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/dll-plugin-entry/1-use-dll/index.js",
+          "name": "./index.js",
+          "id": "./index.js"
+        },
+        {
+          "identifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+          "name": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "id": "dll/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "dll-reference ../0-create-dll/dll.js",
+      "issuerId": "dll/index.js",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+          "module": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "moduleName": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "resolvedModuleIdentifier": "delegated 158 from dll-reference ../0-create-dll/dll.js",
+          "resolvedModule": "delegated ./index.js from dll-reference ../0-create-dll/dll.js",
+          "type": "delegated source",
+          "active": true,
+          "explanation": "",
+          "userRequest": "dll-reference ../0-create-dll/dll.js",
+          "moduleId": "dll/index.js",
+          "resolvedModuleId": "dll/index.js"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))"
+      ],
+      "depth": 2
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 3270
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3270,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 3270
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 3270,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

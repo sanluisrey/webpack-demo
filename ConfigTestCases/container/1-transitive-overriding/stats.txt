@@ -1,0 +1,258 @@
+PublicPath: (none)
+asset bundle0.js 16.6 KiB {main} [emitted] (name: main)
+asset container-no-shared.js 14 KiB {container-no-shared} [emitted] (name: container-no-shared)
+asset a_js.bundle0.js 1.11 KiB {a_js} [emitted]
+asset modules-from-remote_js.bundle0.js 1.01 KiB {modules-from-remote_js} [emitted]
+asset modules_js.bundle0.js 601 bytes {modules_js} [emitted]
+asset b_js.bundle0.js 548 bytes {b_js} [emitted]
+Entrypoint main 16.6 KiB = bundle0.js
+Entrypoint container-no-shared 14 KiB = container-no-shared.js
+chunk {a_js} (runtime: container-no-shared, main) a_js.bundle0.js 41 bytes <{container-no-shared}> <{main}> ={webpack_container_remote_container-with-shared_b}= [rendered]
+  > ./a [./index.js] ./index.js 2:8-21
+  > ./a [webpack/container/entry/container-no-shared] container entry ./a
+  ./a.js 41 bytes {a_js} [depth 1] [built] [code generated]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-40
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main, container-no-shared (runtime-defined))
+    import() ./a [./index.js] 2:8-21
+    container exposed ./a [webpack/container/entry/container-no-shared] container entry ./a[0]
+chunk {b_js} (runtime: container-no-shared, main) b_js.bundle0.js 57 bytes <{container-no-shared}> <{main}> [rendered]
+  > ./b [./index.js] ./index.js 8:8-21
+  > ./b [webpack/container/entry/container-no-shared] container entry ./b
+  ./b.js + 1 modules [./b.js] 57 bytes {b_js} [depth 1] [built] [code generated]
+    [exports: value]
+    import() ./b [./index.js] 8:8-21
+    container exposed ./b [webpack/container/entry/container-no-shared] container entry ./b[0]
+chunk {container-no-shared} (runtime: container-no-shared) container-no-shared.js (container-no-shared) 84 bytes (javascript) 7.18 KiB (runtime) >{a_js}< >{b_js}< >{modules-from-remote_js}< >{modules_js}< >{webpack_container_remote_container-with-shared_b}< [entry] [rendered]
+  > container-no-shared
+  runtime modules 7.18 KiB
+    webpack/runtime/compat get default export 267 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.85 KiB {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 2.03 KiB {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.89 KiB {container-no-shared} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 84 bytes [built]
+    container entry [webpack/container/entry/container-no-shared] 42 bytes {container-no-shared} [depth 0] [built] [code generated]
+      [exports: get, init]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+      container entry container-no-shared
+      used as library export
+    external "../0-transitive-overriding/container-with-shared.js" [webpack/container/reference/container-with-shared] 42 bytes {container-no-shared} {main} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main, container-no-shared (runtime-defined))
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/a] remote container-with-shared/a
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/b] remote container-with-shared/b
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/modules] remote container-with-shared/modules
+chunk {main} (runtime: main) bundle0.js (main) 993 bytes (javascript) 8.79 KiB (runtime) >{a_js}< >{b_js}< >{webpack_container_remote_container-no-shared_a}< >{webpack_container_remote_container-no-shared_b}< >{webpack_container_remote_container-with-shared_a}< >{webpack_container_remote_container-with-shared_b}< [entry] [rendered]
+  > ./index.js main
+  runtime modules 8.79 KiB
+    webpack/runtime/compat get default export 267 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/create fake namespace object 1.11 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 2.51 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 1.96 KiB {main} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 993 bytes [built]
+    ./index.js 909 bytes {main} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js main
+    external "../0-transitive-overriding/container-with-shared.js" [webpack/container/reference/container-with-shared] 42 bytes {container-no-shared} {main} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main, container-no-shared (runtime-defined))
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/a] remote container-with-shared/a
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/b] remote container-with-shared/b
+      remote to external webpack/container/reference/container-with-shared [webpack/container/remote/container-with-shared/modules] remote container-with-shared/modules
+    external "./container-no-shared.js" [webpack/container/reference/container-no-shared] 42 bytes {main} [depth 2] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in main (runtime-defined))
+      remote to external webpack/container/reference/container-no-shared [webpack/container/remote/container-no-shared/a] remote container-no-shared/a
+      remote to external webpack/container/reference/container-no-shared [webpack/container/remote/container-no-shared/b] remote container-no-shared/b
+chunk {modules-from-remote_js} (runtime: container-no-shared) modules-from-remote_js.bundle0.js 57 bytes (javascript) 6 bytes (remote) 6 bytes (share-init) <{container-no-shared}> [rendered]
+  > ./modules-from-remote [webpack/container/entry/container-no-shared] container entry ./modules-from-remote
+  ./modules-from-remote.js 57 bytes {modules-from-remote_js} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-56
+    ModuleConcatenation bailout: Cannot concat with remote container-with-shared/modules: Module Concatenation is not implemented for RemoteModule
+    container exposed ./modules-from-remote [webpack/container/entry/container-no-shared] container entry ./modules-from-remote[0]
+  remote container-with-shared/modules [webpack/container/remote/container-with-shared/modules] 6 bytes (remote) 6 bytes (share-init) {modules-from-remote_js} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation container-with-shared/modules [./modules-from-remote.js] 1:0-56
+    harmony export imported specifier container-with-shared/modules [./modules-from-remote.js] 1:0-56
+chunk {modules_js} (runtime: container-no-shared) modules_js.bundle0.js 56 bytes <{container-no-shared}> [rendered]
+  > ./modules [webpack/container/entry/container-no-shared] container entry ./modules
+  ./modules.js 56 bytes {modules_js} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 1:0-55
+    container exposed ./modules [webpack/container/entry/container-no-shared] container entry ./modules[0]
+chunk {webpack_container_remote_container-no-shared_a} (runtime: main) 6 bytes (remote) 6 bytes (share-init) <{main}>
+  > container-no-shared/a [./index.js] ./index.js 26:8-39
+  remote container-no-shared/a [webpack/container/remote/container-no-shared/a] 6 bytes (remote) 6 bytes (share-init) {webpack_container_remote_container-no-shared_a} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    import() container-no-shared/a [./index.js] 26:8-39
+chunk {webpack_container_remote_container-no-shared_b} (runtime: main) 6 bytes (remote) 6 bytes (share-init) <{main}>
+  > container-no-shared/b [./index.js] ./index.js 32:8-39
+  remote container-no-shared/b [webpack/container/remote/container-no-shared/b] 6 bytes (remote) 6 bytes (share-init) {webpack_container_remote_container-no-shared_b} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    import() container-no-shared/b [./index.js] 32:8-39
+chunk {webpack_container_remote_container-with-shared_a} (runtime: main) 6 bytes (remote) 6 bytes (share-init) <{main}>
+  > container-with-shared/a [./index.js] ./index.js 14:8-41
+  remote container-with-shared/a [webpack/container/remote/container-with-shared/a] 6 bytes (remote) 6 bytes (share-init) {webpack_container_remote_container-with-shared_a} [depth 1] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    import() container-with-shared/a [./index.js] 14:8-41
+chunk {webpack_container_remote_container-with-shared_b} (runtime: container-no-shared, main) 6 bytes (remote) 6 bytes (share-init) <{container-no-shared}> <{main}> ={a_js}= reused as split chunk (cache group: default)
+  > container-with-shared/b [./index.js] ./index.js 20:8-41
+  > ./a [./index.js] ./index.js 2:8-21
+  > ./a [webpack/container/entry/container-no-shared] container entry ./a
+  remote container-with-shared/b [webpack/container/remote/container-with-shared/b] 6 bytes (remote) 6 bytes (share-init) {webpack_container_remote_container-with-shared_b} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    harmony side effect evaluation container-with-shared/b [./a.js] 1:0-40
+    harmony export imported specifier container-with-shared/b [./a.js] 1:0-40
+    import() container-with-shared/b [./index.js] 20:8-41
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.084393 ms
+<t> finish make hook: 0.014253 ms
+<t> finish compilation: 0.452138 ms
+<t> seal compilation: 12.862017 ms
+<t> afterCompile hook: 0.01108 ms
+<t> emitAssets: 4.518167 ms
+<t> emitRecords: 0.002853 ms
+<t> done hook: 0.014574 ms
+<t> beginIdle: 0.010311 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.002406 ms
+<t> finish modules: 0.403336 ms
+<t> report dependency errors and warnings: 0.036643 ms
+<t> optimize dependencies: 0.466956 ms
+<t> create chunks: 0.509834 ms
+<t> compute affected modules with chunk graph: 0.002154 ms
+<t> optimize: 1.451712 ms
+    14 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.516437 ms
+    100% code generated (13 generated, 0 from cache)
+<t> code generation: 2.027734 ms
+<t> runtime requirements.modules: 0.164585 ms
+<t> runtime requirements.chunks: 0.14853 ms
+<t> runtime requirements.entries: 0.940519 ms
+<t> runtime requirements: 1.28878 ms
+<t> hashing: initialize hash: 0.008071 ms
+<t> hashing: sort chunks: 0.0411 ms
+<t> hashing: hash runtime modules: 2.916122 ms
+<t> hashing: hash chunks: 0.900623 ms
+<t> hashing: hash digest: 0.02617 ms
+<t> hashing: process full hash modules: 0.001489 ms
+<t> hashing: 3.97451 ms
+    100% code generated (19 generated, 0 from cache)
+<t> record hash: 0.014149 ms
+<t> module assets: 0.030965 ms
+<t> create chunk assets: 1.458706 ms
+<t> process assets: 0.519497 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.030491 ms
+<t> figure out provided exports: 0.256916 ms
+    57% of exports of modules have been determined (6 no declared exports, 5 not cached, 3 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.015076 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.033137 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.028311 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.01074 ms
+<t> trace exports usage in graph: 0.389152 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.020647 ms
+<t> visitModules: visiting: 0.109803 ms
+<t> visitModules: calculating available modules: 0.011768 ms
+<t> visitModules: merging available modules: 0.006774 ms
+<t> visitModules: check modules for revisit: 0.006069 ms
+<t> visitModules: prepare: 0.093658 ms
+<t> visitModules: visiting: 0.223244 ms
+    58 queue items processed (34 blocks)
+    10 chunk groups connected
+    10 chunk groups processed for merging (10 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    10 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.386395 ms
+<t> connectChunkGroups: 0.025516 ms
+<t> cleanup: 0.002474 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020021 ms
+<t> modules: 0.169621 ms
+<t> queue: 0.028013 ms
+<t> maxSize: 0.012609 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.218063 ms
+<t> sort relevant modules: 0.002608 ms
+<t> find modules to concatenate: 0.220068 ms
+<t> sort concat configurations: 0.000562 ms
+<t> create concatenated modules: 0.124557 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled successfully in 31 ms (e0fe05b80df3b7de4db5)

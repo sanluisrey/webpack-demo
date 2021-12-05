@@ -1,0 +1,227 @@
+PublicPath: (none)
+assets by path *.js 9.93 KiB
+  asset a.js 7.72 KiB {0} [emitted] (name: a)
+  asset 4.js 994 bytes {4} [emitted]
+  asset 5.chunk.min.js 658 bytes {5} [emitted]
+  asset 3.js 614 bytes {3} [emitted] (id hint: vendors)
+assets by path inner-dir/ 14.8 KiB
+  asset inner-dir/deep/deep/c.js 7.73 KiB {2} [emitted] (name: inner-dir/deep/deep/c)
+  asset inner-dir/b.js 7.08 KiB {1} [emitted] (name: inner-dir/b)
+Entrypoint a 8.32 KiB = 3.js 614 bytes a.js 7.72 KiB
+Entrypoint inner-dir/b 8.65 KiB = 3.js 614 bytes 4.js 994 bytes inner-dir/b.js 7.08 KiB
+Entrypoint inner-dir/deep/deep/c 8.33 KiB = 3.js 614 bytes inner-dir/deep/deep/c.js 7.73 KiB
+chunk {0} (runtime: a) a.js (a) 255 bytes (javascript) 3.22 KiB (runtime) ={3}= >{4}< [entry] [rendered]
+  > ./a?1 a
+  ./a.js?1 [0] 255 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [used exports unknown]
+    entry ./a?1 a
+    used as library export
+  webpack/runtime/chunk loaded 886 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 301 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/require chunk loading 1000 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup chunk dependencies 111 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {1} (runtime: inner-dir/b) inner-dir/b.js (inner-dir/b) 3.25 KiB ={3}= ={4}= >{5}< [entry] [rendered]
+  > ./inner-dir/b inner-dir/b
+  webpack/runtime/chunk loaded 886 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 301 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/require chunk loading 1010 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup chunk dependencies 138 bytes {1} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {2} (runtime: inner-dir/deep/deep/c) inner-dir/deep/deep/c.js (inner-dir/deep/deep/c) 255 bytes (javascript) 3.23 KiB (runtime) ={3}= >{4}< [entry] [rendered]
+  > ./a?2 inner-dir/deep/deep/c
+  ./a.js?2 [3] 255 bytes {2} [depth 0] [built] [code generated]
+    [no exports]
+    [used exports unknown]
+    entry ./a?2 inner-dir/deep/deep/c
+    used as library export
+  webpack/runtime/chunk loaded 886 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 301 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/require chunk loading 1010 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup chunk dependencies 111 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {3} (runtime: a, inner-dir/b, inner-dir/deep/deep/c) 3.js (id hint: vendors) 89 bytes ={0}= ={1}= ={2}= ={4}= >{4}< >{5}< [initial] [rendered] split chunk (cache group: defaultVendors)
+  > ./a?1 a
+  > ./inner-dir/b inner-dir/b
+  > ./a?2 inner-dir/deep/deep/c
+  ./node_modules/dummy_module/index.js [1] 89 bytes {3} [depth 1] [built] [code generated]
+    [exports: default]
+    [used exports unknown]
+    from origin ./inner-dir/b.js
+      harmony side effect evaluation dummy_module [2] ./inner-dir/b.js 1:0-33
+      harmony import specifier dummy_module [2] ./inner-dir/b.js 4:8-13
+      harmony export imported specifier dummy_module [2] ./inner-dir/b.js 10:0-17
+    from origin ./a.js?1
+      harmony side effect evaluation dummy_module [0] ./a.js?1 1:0-33
+      harmony import specifier dummy_module [0] ./a.js?1 4:8-13
+    from origin ./a.js?2
+      harmony side effect evaluation dummy_module [3] ./a.js?2 1:0-33
+      harmony import specifier dummy_module [3] ./a.js?2 4:8-13
+    from origin ./inner-dir/some-module.js
+      harmony side effect evaluation dummy_module [4] ./inner-dir/some-module.js 1:0-33
+      harmony export imported specifier dummy_module [4] ./inner-dir/some-module.js 2:0-17
+chunk {4} (runtime: a, inner-dir/b, inner-dir/deep/deep/c) 4.js 274 bytes <{0}> <{2}> <{3}> ={1}= ={3}= >{5}< [initial] [rendered] reused as split chunk (cache group: default)
+  > ./inner-dir/b [0] ./a.js?1 5:8-31
+  > ./inner-dir/b [3] ./a.js?2 5:8-31
+  > ./inner-dir/b inner-dir/b
+  ./inner-dir/b.js [2] 274 bytes {4} [depth 1] [built] [code generated]
+    [exports: dummy]
+    [used exports unknown]
+    from origin
+      entry ./inner-dir/b inner-dir/b
+      used as library export
+    import() ./inner-dir/b [0] ./a.js?1 5:8-31
+    import() ./inner-dir/b [3] ./a.js?2 5:8-31
+chunk {5} (runtime: a, inner-dir/b, inner-dir/deep/deep/c) 5.chunk.min.js 52 bytes <{1}> <{3}> <{4}> [rendered]
+  > ./some-module [2] ./inner-dir/b.js 5:8-31
+  ./inner-dir/some-module.js [4] 52 bytes {5} [depth 2] [built] [code generated]
+    [exports: dummy]
+    [used exports unknown]
+    import() ./some-module [2] ./inner-dir/b.js 5:8-31
+  
+
+LOG from webpack.Compiler
+<t> make hook: 19.806733 ms
+<t> finish make hook: 0.015036 ms
+<t> finish compilation: 0.360192 ms
+<t> seal compilation: 10.677349 ms
+<t> afterCompile hook: 0.00825 ms
+<t> emitAssets: 2.105811 ms
+<t> emitRecords: 0.002307 ms
+<t> done hook: 0.009505 ms
+<t> beginIdle: 0.006464 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003924 ms
+<t> finish modules: 0.298509 ms
+<t> report dependency errors and warnings: 0.046171 ms
+<t> optimize dependencies: 0.039748 ms
+<t> create chunks: 0.460004 ms
+<t> compute affected modules with chunk graph: 0.001458 ms
+<t> optimize: 0.866644 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.333003 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.552867 ms
+<t> runtime requirements.modules: 0.057986 ms
+<t> runtime requirements.chunks: 0.099394 ms
+<t> runtime requirements.entries: 0.70229 ms
+<t> runtime requirements: 0.888756 ms
+<t> hashing: initialize hash: 0.005168 ms
+<t> hashing: sort chunks: 0.02893 ms
+<t> hashing: hash runtime modules: 3.561411 ms
+<t> hashing: hash chunks: 1.792483 ms
+<t> hashing: hash digest: 0.036814 ms
+<t> hashing: process full hash modules: 0.001667 ms
+<t> hashing: 5.478974 ms
+    100% code generated (24 generated, 0 from cache)
+<t> record hash: 0.013766 ms
+<t> module assets: 0.021413 ms
+<t> create chunk assets: 1.140828 ms
+<t> process assets: 0.042059 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.023188 ms
+<t> figure out provided exports: 0.159099 ms
+    100% of exports of modules have been determined (0 no declared exports, 5 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 2 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.014816 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003974 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.035588 ms
+<t> visitModules: visiting: 0.127371 ms
+<t> visitModules: calculating available modules: 0.014102 ms
+<t> visitModules: merging available modules: 0.005111 ms
+<t> visitModules: check modules for revisit: 0.003297 ms
+<t> visitModules: prepare: 0.023844 ms
+<t> visitModules: visiting: 0.061141 ms
+<t> visitModules: calculating available modules: 0.019828 ms
+<t> visitModules: merging available modules: 0.007978 ms
+<t> visitModules: check modules for revisit: 0.002361 ms
+<t> visitModules: prepare: 0.026756 ms
+<t> visitModules: visiting: 0.036767 ms
+    23 queue items processed (14 blocks)
+    5 chunk groups connected
+    4 chunk groups processed for merging (5 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.319955 ms
+<t> connectChunkGroups: 0.025252 ms
+<t> cleanup: 0.002516 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021096 ms
+<t> modules: 0.153918 ms
+<t> queue: 0.072362 ms
+<t> maxSize: 0.155211 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:47: webpack 5.64.4 compiled successfully in 35 ms (92ecff6d1bf38c1781f3)

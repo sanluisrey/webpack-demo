@@ -1,0 +1,224 @@
+PublicPath: (none)
+asset a.js 6.97 KiB {786} [emitted] (name: a)
+asset b.js 6.32 KiB {128} [emitted] (name: b)
+asset module.js 1.06 KiB {261} [emitted] (name: module)
+asset async-b2.js 660 bytes {906} [emitted] (name: async-b2)
+asset async-b.js 654 bytes {334} [emitted] (name: async-b)
+asset shared.js 651 bytes {712} [emitted] (name: shared)
+Entrypoint b 6.32 KiB = b.js
+Entrypoint a 6.97 KiB = a.js
+Chunk Group async-b2 660 bytes = async-b2.js
+Chunk Group shared 651 bytes = shared.js
+Chunk Group async-b 654 bytes = async-b.js
+Chunk Group module 1.06 KiB = module.js
+chunk {128} (runtime: b) b.js (b) 314 bytes (javascript) 3 KiB (runtime) >{906}< [entry] [rendered]
+  > ./entry-b b
+  ./entry-b.js [14] 314 bytes {128} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-11:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./entry-b b
+  webpack/runtime/define property getters 308 bytes {128} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {128} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 233 bytes {128} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {128} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {128} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.8 KiB {128} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {261} (runtime: a, b) module.js (module) 70 bytes <{712}> [rendered]
+  > ./module [52] ./shared.js 1:15-66
+  ./leaf.js [785] 21 bytes {261} {786} [depth 1] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./entry-a.js
+      [inactive] harmony side effect evaluation ./leaf [510] ./entry-a.js 1:0-26
+      harmony import specifier ./leaf [510] ./entry-a.js 4:8-12
+    from origin ./module.js
+      [inactive] harmony side effect evaluation ./leaf [662] ./module.js 1:0-26
+      harmony import specifier ./leaf [662] ./module.js 3:15-19
+  ./module.js [662] 49 bytes {261} [depth 2] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with ./leaf.js: Module ./leaf.js is referenced from different chunks by these modules: ./entry-a.js
+    import() ./module [52] ./shared.js 1:15-66
+chunk {334} (runtime: b) async-b.js (async-b) 68 bytes <{906}> >{712}< [rendered]
+  > ./async-b [540] ./async-b2.js 1:15-68
+  ./async-b.js [779] 68 bytes {334} [depth 2] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 1:0-67
+    import() ./async-b [540] ./async-b2.js 1:15-68
+chunk {712} (runtime: a, b) shared.js (shared) 68 bytes <{334}> <{786}> >{261}< [rendered]
+  > ./shared [510] ./entry-a.js 8:8-59
+  > ./shared [779] ./async-b.js 1:15-66
+  ./shared.js [52] 68 bytes {712} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 1:0-67
+    import() ./shared [779] ./async-b.js 1:15-66
+    import() ./shared [510] ./entry-a.js 8:8-59
+chunk {786} (runtime: a) a.js (a) 345 bytes (javascript) 2.96 KiB (runtime) >{712}< [entry] [rendered]
+  > ./entry-a a
+  runtime modules 2.96 KiB
+    webpack/runtime/define property getters 308 bytes {786} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {786} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 200 bytes {786} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {786} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {786} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {786} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 345 bytes
+    ./entry-a.js [510] 324 bytes {786} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./leaf.js: Module ./leaf.js is referenced from different chunks by these modules: ./module.js
+      entry ./entry-a a
+    ./leaf.js [785] 21 bytes {261} {786} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      from origin ./entry-a.js
+        [inactive] harmony side effect evaluation ./leaf [510] ./entry-a.js 1:0-26
+        harmony import specifier ./leaf [510] ./entry-a.js 4:8-12
+      from origin ./module.js
+        [inactive] harmony side effect evaluation ./leaf [662] ./module.js 1:0-26
+        harmony import specifier ./leaf [662] ./module.js 3:15-19
+chunk {906} (runtime: b) async-b2.js (async-b2) 70 bytes <{128}> >{334}< [rendered]
+  > ./async-b2 [14] ./entry-b.js 2:8-63
+  ./async-b2.js [540] 70 bytes {906} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 1:0-69
+    import() ./async-b2 [14] ./entry-b.js 2:8-63
+  
+
+LOG from webpack.Compiler
+<t> make hook: 25.729487 ms
+<t> finish make hook: 0.022565 ms
+<t> finish compilation: 0.241784 ms
+<t> seal compilation: 11.706172 ms
+<t> afterCompile hook: 0.010152 ms
+<t> emitAssets: 1.275251 ms
+<t> emitRecords: 0.00203 ms
+<t> done hook: 0.011015 ms
+<t> beginIdle: 0.008417 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00417 ms
+<t> finish modules: 0.182642 ms
+<t> report dependency errors and warnings: 0.044451 ms
+<t> optimize dependencies: 0.886861 ms
+<t> create chunks: 0.711207 ms
+<t> compute affected modules with chunk graph: 0.002228 ms
+<t> optimize: 2.239536 ms
+    8 modules hashed, 0 from cache (1.14 variants per module in average)
+<t> module hashing: 0.513195 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 1.093274 ms
+<t> runtime requirements.modules: 0.191151 ms
+<t> runtime requirements.chunks: 0.087667 ms
+<t> runtime requirements.entries: 0.957606 ms
+<t> runtime requirements: 1.284207 ms
+<t> hashing: initialize hash: 0.010034 ms
+<t> hashing: sort chunks: 0.037588 ms
+<t> hashing: hash runtime modules: 1.149314 ms
+<t> hashing: hash chunks: 0.602947 ms
+<t> hashing: hash digest: 0.02079 ms
+<t> hashing: process full hash modules: 0.001361 ms
+<t> hashing: 1.891944 ms
+    100% code generated (12 generated, 0 from cache)
+<t> record hash: 0.010597 ms
+<t> module assets: 0.016503 ms
+<t> create chunk assets: 2.239902 ms
+<t> process assets: 0.426043 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02889 ms
+<t> figure out provided exports: 0.048055 ms
+    86% of exports of modules have been determined (1 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.016413 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.300493 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.099684 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.022228 ms
+<t> trace exports usage in graph: 0.710914 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.022991 ms
+<t> visitModules: visiting: 0.08641 ms
+<t> visitModules: calculating available modules: 0.15607 ms
+<t> visitModules: merging available modules: 0.009382 ms
+<t> visitModules: check modules for revisit: 0.002342 ms
+<t> visitModules: prepare: 0.01004 ms
+<t> visitModules: visiting: 0.060822 ms
+<t> visitModules: calculating available modules: 0.012698 ms
+<t> visitModules: merging available modules: 0.005037 ms
+<t> visitModules: check modules for revisit: 0.00165 ms
+<t> visitModules: prepare: 0.016486 ms
+<t> visitModules: visiting: 0.12536 ms
+<t> visitModules: calculating available modules: 0.012987 ms
+<t> visitModules: merging available modules: 0.012221 ms
+<t> visitModules: check modules for revisit: 0.003957 ms
+<t> visitModules: prepare: 0.004012 ms
+<t> visitModules: visiting: 0.015597 ms
+<t> visitModules: calculating available modules: 0.007278 ms
+<t> visitModules: merging available modules: 0.008492 ms
+<t> visitModules: check modules for revisit: 0.010135 ms
+<t> visitModules: prepare: 0.002514 ms
+<t> visitModules: visiting: 0.010777 ms
+    21 queue items processed (13 blocks)
+    6 chunk groups connected
+    6 chunk groups processed for merging (6 module sets, 2 forked, 3 + 2 modules forked, 3 + 1 modules merged into fork, 1 resulting modules)
+    6 chunk group info updated (1 already connected chunk groups reconnected)
+<t> visitModules: 0.594443 ms
+<t> connectChunkGroups: 0.017163 ms
+<t> cleanup: 0.002545 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019253 ms
+<t> modules: 0.121934 ms
+<t> queue: 0.00236 ms
+<t> maxSize: 0.010406 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.367822 ms
+<t> sort relevant modules: 0.033507 ms
+<t> find modules to concatenate: 0.88939 ms
+<t> sort concat configurations: 0.001497 ms
+<t> create concatenated modules: 0.004448 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    7 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 7 hashes 7 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled successfully in 41 ms (2720b57df018db6dafcb)

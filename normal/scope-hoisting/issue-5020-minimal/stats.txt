@@ -1,0 +1,142 @@
+PublicPath: (none)
+asset bundle.js 6.52 KiB {0} [emitted] (name: main)
+Entrypoint main 6.52 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 330 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./scope-hoisting/issue-5020-minimal/ main
+  cacheable modules 330 bytes
+    modules by path ./scope-hoisting/issue-5020-minimal/src/icon/ 69 bytes
+      ./scope-hoisting/issue-5020-minimal/src/icon/index.js [2] 51 bytes {0} [depth 2] [dependent] [built] [code generated]
+        [exports: svg]
+        [inactive] harmony side effect evaluation ./icon [1] ./scope-hoisting/issue-5020-minimal/src/index.js 1:0-31
+        harmony export imported specifier ./icon [1] ./scope-hoisting/issue-5020-minimal/src/index.js 3:0-5:1 (skipped side-effect-free modules)
+      ./scope-hoisting/issue-5020-minimal/src/icon/svg/index.js [3] 18 bytes {0} [depth 3] [dependent] [built] [code generated]
+        [exports: default]
+        [inactive] harmony side effect evaluation ./svg [2] ./scope-hoisting/issue-5020-minimal/src/icon/index.js 1:0-29
+        harmony export imported specifier ./svg [2] ./scope-hoisting/issue-5020-minimal/src/icon/index.js 3:0-5:2 (skipped side-effect-free modules)
+    ./scope-hoisting/issue-5020-minimal/index.js [0] 208 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (VariableDeclaration) with side effects in source code at 1:0-41
+      entry ./scope-hoisting/issue-5020-minimal/ main
+    ./scope-hoisting/issue-5020-minimal/src/index.js [1] 53 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: icon]
+      cjs require ./src/index.js [0] ./scope-hoisting/issue-5020-minimal/index.js 1:15-40
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 330 bytes
+  modules by path ./scope-hoisting/issue-5020-minimal/src/icon/ 69 bytes
+    ./scope-hoisting/issue-5020-minimal/src/icon/index.js [2] 51 bytes {0} [depth 2] [built] [code generated]
+      [exports: svg]
+      [inactive] harmony side effect evaluation ./icon [1] ./scope-hoisting/issue-5020-minimal/src/index.js 1:0-31
+      harmony export imported specifier ./icon [1] ./scope-hoisting/issue-5020-minimal/src/index.js 3:0-5:1 (skipped side-effect-free modules)
+    ./scope-hoisting/issue-5020-minimal/src/icon/svg/index.js [3] 18 bytes {0} [depth 3] [built] [code generated]
+      [exports: default]
+      [inactive] harmony side effect evaluation ./svg [2] ./scope-hoisting/issue-5020-minimal/src/icon/index.js 1:0-29
+      harmony export imported specifier ./svg [2] ./scope-hoisting/issue-5020-minimal/src/icon/index.js 3:0-5:2 (skipped side-effect-free modules)
+  ./scope-hoisting/issue-5020-minimal/index.js [0] 208 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-41
+    entry ./scope-hoisting/issue-5020-minimal/ main
+  ./scope-hoisting/issue-5020-minimal/src/index.js [1] 53 bytes {0} [depth 1] [built] [code generated]
+    [exports: icon]
+    cjs require ./src/index.js [0] ./scope-hoisting/issue-5020-minimal/index.js 1:15-40
+runtime modules 670 bytes
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.552045 ms
+<t> finish make hook: 0.011225 ms
+<t> finish compilation: 0.199154 ms
+<t> seal compilation: 3.99904 ms
+<t> afterCompile hook: 0.007392 ms
+<t> emitAssets: 0.94229 ms
+<t> emitRecords: 0.001789 ms
+<t> done hook: 0.008396 ms
+<t> beginIdle: 0.004284 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00481 ms
+<t> finish modules: 0.16492 ms
+<t> report dependency errors and warnings: 0.018807 ms
+<t> optimize dependencies: 0.155923 ms
+<t> create chunks: 0.140342 ms
+<t> compute affected modules with chunk graph: 0.001369 ms
+<t> optimize: 2.25578 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.131049 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.242848 ms
+<t> runtime requirements.modules: 0.030663 ms
+<t> runtime requirements.chunks: 0.034246 ms
+<t> runtime requirements.entries: 0.138098 ms
+<t> runtime requirements: 0.218264 ms
+<t> hashing: initialize hash: 0.001962 ms
+<t> hashing: sort chunks: 0.012735 ms
+<t> hashing: hash runtime modules: 0.097206 ms
+<t> hashing: hash chunks: 0.165673 ms
+<t> hashing: hash digest: 0.008348 ms
+<t> hashing: process full hash modules: 0.001177 ms
+<t> hashing: 0.312021 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.005039 ms
+<t> module assets: 0.007085 ms
+<t> create chunk assets: 0.377528 ms
+<t> process assets: 0.031526 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018076 ms
+<t> figure out provided exports: 0.09867 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 2 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.008232 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.024132 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003133 ms
+<t> trace exports usage in graph: 0.099401 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.021855 ms
+<t> visitModules: visiting: 0.057519 ms
+    8 queue items processed (4 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.077321 ms
+<t> connectChunkGroups: 0.001356 ms
+<t> cleanup: 0.001488 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014519 ms
+<t> modules: 0.067233 ms
+<t> queue: 0.001754 ms
+<t> maxSize: 0.004671 ms
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:41: webpack 5.64.4 compiled successfully in 22 ms (553a66d8f82dee0015fc)

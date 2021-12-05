@@ -1,0 +1,290 @@
+PublicPath: (none)
+asset bundle.js 18.8 KiB {0} [emitted] (name: main)
+Entrypoint main 18.8 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1.81 KiB (javascript) 937 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony-export-import-specifier/ main
+  cacheable modules 1.81 KiB
+    ./parsing/harmony-export-import-specifier/a.js [8] 41 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [only some exports used: x, y]
+      Dependency (harmony side effect evaluation) with side effects at 2:0-22
+      harmony side effect evaluation ./a [7] ./parsing/harmony-export-import-specifier/index.js 3:0-27
+      harmony import specifier ./a [7] ./parsing/harmony-export-import-specifier/index.js 10:8-9
+      harmony import specifier ./a [7] ./parsing/harmony-export-import-specifier/index.js 11:8-9
+    ./parsing/harmony-export-import-specifier/b.js [9] 313 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: b1, b2, b3, b4, usedB1, usedB2, usedB3, usedB4]
+      [only some exports used: b1, usedB1, usedB2, usedB3, usedB4]
+      Statement (ExportNamedDeclaration) with side effects in source code at 6:0-55
+      harmony side effect evaluation ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 5:0-60
+      harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 21:8-13
+      harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 22:8-14
+      harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 24:9-15
+      harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 25:9-15
+      harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 26:9-15
+    ./parsing/harmony-export-import-specifier/c.js [4] 29 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: c]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-28
+      harmony side effect evaluation ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 1:0-25
+      harmony import specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 4:11-12
+      harmony export imported specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 5:0-33
+      [inactive] harmony export imported specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 5:0-33
+    ./parsing/harmony-export-import-specifier/cjs.js [1] 33 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-32
+      harmony side effect evaluation ./cjs [8] ./parsing/harmony-export-import-specifier/a.js 2:0-22
+      harmony export imported specifier ./cjs [8] ./parsing/harmony-export-import-specifier/a.js 2:0-22
+      cjs self exports reference [1] ./parsing/harmony-export-import-specifier/cjs.js 1:0-14
+    ./parsing/harmony-export-import-specifier/d.js [2] 154 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: d1, d2, usedD1, usedD2]
+      Statement (ExportNamedDeclaration) with side effects in source code at 3:0-55
+      from origin ./parsing/harmony-export-import-specifier/index.js
+        harmony side effect evaluation ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 4:0-44
+        harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 15:8-10
+        harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 17:9-15
+        harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 19:8-14
+      from origin ./parsing/harmony-export-import-specifier/c.js
+        harmony side effect evaluation ./d.js [4] ./parsing/harmony-export-import-specifier/c.js 1:0-28
+        harmony export imported specifier ./d.js [4] ./parsing/harmony-export-import-specifier/c.js 1:0-28
+    ./parsing/harmony-export-import-specifier/e.js [0] 156 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: e1, e2, usedE1, usedE2]
+      [only some exports used: e1, usedE1, usedE2]
+      Statement (ExportNamedDeclaration) with side effects in source code at 3:0-55
+      from origin ./parsing/harmony-export-import-specifier/index.js
+        harmony side effect evaluation ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 6:0-40
+        harmony import specifier ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 33:8-14
+        harmony import specifier ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 35:9-15
+      from origin ./parsing/harmony-export-import-specifier/e1.js
+        harmony side effect evaluation ./e.js [6] ./parsing/harmony-export-import-specifier/e1.js 1:0-28
+        harmony export imported specifier ./e.js [6] ./parsing/harmony-export-import-specifier/e1.js 1:0-28
+      from origin ./parsing/harmony-export-import-specifier/f.js
+        harmony side effect evaluation ./e.js [3] ./parsing/harmony-export-import-specifier/f.js 2:0-29
+        harmony export imported specifier ./e.js [3] ./parsing/harmony-export-import-specifier/f.js 2:0-29
+    ./parsing/harmony-export-import-specifier/e1.js [6] 29 bytes {0} [depth 4] [dependent] [built] [code generated]
+      [exports: e]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-28
+      harmony side effect evaluation ./e1.js [3] ./parsing/harmony-export-import-specifier/f.js 1:0-30
+      harmony export imported specifier ./e1.js [3] ./parsing/harmony-export-import-specifier/f.js 1:0-30
+    ./parsing/harmony-export-import-specifier/f.js [3] 61 bytes {0} [depth 3] [dependent] [built] [code generated]
+      [exports: f1, f2]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-30
+      harmony side effect evaluation ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 1:0-30
+      harmony export imported specifier ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 3:0-22
+      harmony export imported specifier ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 3:0-22
+    ./parsing/harmony-export-import-specifier/g.js [5] 55 bytes {0} [depth 2] [dependent] [built] [code generated]
+      [exports: f1, g1]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-30
+      harmony side effect evaluation ./g.js [10] ./parsing/harmony-export-import-specifier/h.js 1:0-28
+      harmony export imported specifier ./g.js [10] ./parsing/harmony-export-import-specifier/h.js 1:0-28
+    ./parsing/harmony-export-import-specifier/h.js [10] 29 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: h]
+      [all exports used]
+      Dependency (harmony side effect evaluation) with side effects at 1:0-28
+      harmony side effect evaluation ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 7:0-27
+      harmony import specifier ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 31:8-17
+      harmony import specifier ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 32:8-15
+    ./parsing/harmony-export-import-specifier/index.js [7] 953 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 9:0-12:3
+      entry ./parsing/harmony-export-import-specifier/ main
+  runtime modules 937 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 1.81 KiB
+  ./parsing/harmony-export-import-specifier/index.js [7] 953 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 9:0-12:3
+    entry ./parsing/harmony-export-import-specifier/ main
+  ./parsing/harmony-export-import-specifier/a.js [8] 41 bytes {0} [depth 1] [built] [code generated]
+    [only some exports used: x, y]
+    Dependency (harmony side effect evaluation) with side effects at 2:0-22
+    harmony side effect evaluation ./a [7] ./parsing/harmony-export-import-specifier/index.js 3:0-27
+    harmony import specifier ./a [7] ./parsing/harmony-export-import-specifier/index.js 10:8-9
+    harmony import specifier ./a [7] ./parsing/harmony-export-import-specifier/index.js 11:8-9
+  ./parsing/harmony-export-import-specifier/d.js [2] 154 bytes {0} [depth 1] [built] [code generated]
+    [exports: d1, d2, usedD1, usedD2]
+    Statement (ExportNamedDeclaration) with side effects in source code at 3:0-55
+    from origin ./parsing/harmony-export-import-specifier/index.js
+      harmony side effect evaluation ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 4:0-44
+      harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 15:8-10
+      harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 17:9-15
+      harmony import specifier ./d.js [7] ./parsing/harmony-export-import-specifier/index.js 19:8-14
+    from origin ./parsing/harmony-export-import-specifier/c.js
+      harmony side effect evaluation ./d.js [4] ./parsing/harmony-export-import-specifier/c.js 1:0-28
+      harmony export imported specifier ./d.js [4] ./parsing/harmony-export-import-specifier/c.js 1:0-28
+  ./parsing/harmony-export-import-specifier/b.js [9] 313 bytes {0} [depth 1] [built] [code generated]
+    [exports: b1, b2, b3, b4, usedB1, usedB2, usedB3, usedB4]
+    [only some exports used: b1, usedB1, usedB2, usedB3, usedB4]
+    Statement (ExportNamedDeclaration) with side effects in source code at 6:0-55
+    harmony side effect evaluation ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 5:0-60
+    harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 21:8-13
+    harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 22:8-14
+    harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 24:9-15
+    harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 25:9-15
+    harmony import specifier ./b.js [7] ./parsing/harmony-export-import-specifier/index.js 26:9-15
+  ./parsing/harmony-export-import-specifier/e.js [0] 156 bytes {0} [depth 1] [built] [code generated]
+    [exports: e1, e2, usedE1, usedE2]
+    [only some exports used: e1, usedE1, usedE2]
+    Statement (ExportNamedDeclaration) with side effects in source code at 3:0-55
+    from origin ./parsing/harmony-export-import-specifier/index.js
+      harmony side effect evaluation ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 6:0-40
+      harmony import specifier ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 33:8-14
+      harmony import specifier ./e.js [7] ./parsing/harmony-export-import-specifier/index.js 35:9-15
+    from origin ./parsing/harmony-export-import-specifier/e1.js
+      harmony side effect evaluation ./e.js [6] ./parsing/harmony-export-import-specifier/e1.js 1:0-28
+      harmony export imported specifier ./e.js [6] ./parsing/harmony-export-import-specifier/e1.js 1:0-28
+    from origin ./parsing/harmony-export-import-specifier/f.js
+      harmony side effect evaluation ./e.js [3] ./parsing/harmony-export-import-specifier/f.js 2:0-29
+      harmony export imported specifier ./e.js [3] ./parsing/harmony-export-import-specifier/f.js 2:0-29
+  ./parsing/harmony-export-import-specifier/h.js [10] 29 bytes {0} [depth 1] [built] [code generated]
+    [exports: h]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-28
+    harmony side effect evaluation ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 7:0-27
+    harmony import specifier ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 31:8-17
+    harmony import specifier ./h.js [7] ./parsing/harmony-export-import-specifier/index.js 32:8-15
+  ./parsing/harmony-export-import-specifier/cjs.js [1] 33 bytes {0} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    harmony side effect evaluation ./cjs [8] ./parsing/harmony-export-import-specifier/a.js 2:0-22
+    harmony export imported specifier ./cjs [8] ./parsing/harmony-export-import-specifier/a.js 2:0-22
+    cjs self exports reference [1] ./parsing/harmony-export-import-specifier/cjs.js 1:0-14
+  ./parsing/harmony-export-import-specifier/c.js [4] 29 bytes {0} [depth 2] [built] [code generated]
+    [exports: c]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-28
+    harmony side effect evaluation ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 1:0-25
+    harmony import specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 4:11-12
+    harmony export imported specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 5:0-33
+    [inactive] harmony export imported specifier ./c.js [9] ./parsing/harmony-export-import-specifier/b.js 5:0-33
+  ./parsing/harmony-export-import-specifier/g.js [5] 55 bytes {0} [depth 2] [built] [code generated]
+    [exports: f1, g1]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-30
+    harmony side effect evaluation ./g.js [10] ./parsing/harmony-export-import-specifier/h.js 1:0-28
+    harmony export imported specifier ./g.js [10] ./parsing/harmony-export-import-specifier/h.js 1:0-28
+  ./parsing/harmony-export-import-specifier/f.js [3] 61 bytes {0} [depth 3] [built] [code generated]
+    [exports: f1, f2]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-30
+    harmony side effect evaluation ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 1:0-30
+    harmony export imported specifier ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 3:0-22
+    harmony export imported specifier ./f.js [5] ./parsing/harmony-export-import-specifier/g.js 3:0-22
+  ./parsing/harmony-export-import-specifier/e1.js [6] 29 bytes {0} [depth 4] [built] [code generated]
+    [exports: e]
+    [all exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-28
+    harmony side effect evaluation ./e1.js [3] ./parsing/harmony-export-import-specifier/f.js 1:0-30
+    harmony export imported specifier ./e1.js [3] ./parsing/harmony-export-import-specifier/f.js 1:0-30
+runtime modules 937 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 34.133886 ms
+<t> finish make hook: 0.028908 ms
+<t> finish compilation: 0.731672 ms
+<t> seal compilation: 7.934173 ms
+<t> afterCompile hook: 0.008217 ms
+<t> emitAssets: 1.314571 ms
+<t> emitRecords: 0.002282 ms
+<t> done hook: 0.009674 ms
+<t> beginIdle: 0.005188 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.006203 ms
+<t> finish modules: 0.594463 ms
+<t> report dependency errors and warnings: 0.115031 ms
+<t> optimize dependencies: 0.732746 ms
+<t> create chunks: 0.286758 ms
+<t> compute affected modules with chunk graph: 0.002245 ms
+<t> optimize: 0.86455 ms
+    11 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.395387 ms
+    100% code generated (11 generated, 0 from cache)
+<t> code generation: 3.767676 ms
+<t> runtime requirements.modules: 0.078889 ms
+<t> runtime requirements.chunks: 0.062361 ms
+<t> runtime requirements.entries: 0.22648 ms
+<t> runtime requirements: 0.391477 ms
+<t> hashing: initialize hash: 0.002386 ms
+<t> hashing: sort chunks: 0.022613 ms
+<t> hashing: hash runtime modules: 0.176425 ms
+<t> hashing: hash chunks: 0.193196 ms
+<t> hashing: hash digest: 0.009632 ms
+<t> hashing: process full hash modules: 0.001073 ms
+<t> hashing: 0.435293 ms
+    100% code generated (4 generated, 0 from cache)
+<t> record hash: 0.006132 ms
+<t> module assets: 0.011292 ms
+<t> create chunk assets: 0.811395 ms
+<t> process assets: 0.038866 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.037449 ms
+<t> figure out provided exports: 0.465745 ms
+    91% of exports of modules have been determined (1 no declared exports, 10 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 5 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.024092 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.019671 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.013119 ms
+<t> trace exports usage in graph: 0.649619 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.109308 ms
+<t> visitModules: visiting: 0.188623 ms
+    22 queue items processed (11 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.213467 ms
+<t> connectChunkGroups: 0.001914 ms
+<t> cleanup: 0.00179 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.017904 ms
+<t> modules: 0.12514 ms
+<t> queue: 0.002391 ms
+<t> maxSize: 0.006508 ms
+
+LOG from webpack.FileSystemInfo
+    11 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/11) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:30: webpack 5.64.4 compiled successfully in 46 ms (707b735a976db077efc6)

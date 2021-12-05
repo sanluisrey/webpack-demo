@@ -1,0 +1,216 @@
+PublicPath: (none)
+assets by status 12.7 KiB [cached] 4 assets
+Entrypoint main = bundle0.js 2 auxiliary assets
+chunk {179} (runtime: main) bundle0.js (main) 411 bytes (javascript) 84 bytes (webassembly) 6.01 KiB (runtime) >{417}< [entry] [rendered]
+  > ./index main
+  runtime modules 6.01 KiB
+    webpack/runtime/create fake namespace object 1.11 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/wasm chunk loading 1.96 KiB {179} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 411 bytes (javascript) 84 bytes (webassembly)
+    javascript modules 211 bytes
+      ./index.js + 1 modules [335] 119 bytes {179} [depth 0] [built] [code generated]
+        [no exports]
+        [no exports used]
+        ModuleConcatenation bailout: Cannot concat with ./wasm.wat: Module Concatenation is not implemented for ByTypeGenerator
+        entry ./index main
+      ./module2.js [725] 45 bytes {179} [depth 2] [dependent] [built] [code generated]
+        [used exports unknown]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-22
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        cjs require ./module2 [335] ./index.js + 1 modules ./module.js 5:0-20
+        cjs require ./module2 ./module.js 5:0-20
+      ./module3.js [834] 47 bytes {179} [depth 3] [dependent] [built] [code generated]
+        [used exports unknown]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-22
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        cjs require ./module3 [725] ./module2.js 2:0-20
+    webassembly modules 200 bytes (javascript) 84 bytes (webassembly)
+      ./wasm.wat [124] 100 bytes (javascript) 42 bytes (webassembly) {179} [depth 2] [dependent] [built] [code generated]
+        [exports: getNumber]
+        ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+        from origin ./index.js + 1 modules
+          harmony side effect evaluation ./wasm.wat [335] ./index.js + 1 modules ./module.js 1:0-39
+          harmony import specifier ./wasm.wat [335] ./index.js + 1 modules ./module.js 7:0-9
+        from origin ./module.js
+          harmony side effect evaluation ./wasm.wat ./module.js 1:0-39
+          harmony import specifier ./wasm.wat ./module.js 7:0-9
+        cjs require ./wasm.wat [725] ./module2.js 1:0-21
+        cjs require ./wasm.wat [834] ./module3.js 1:0-21
+      ./wasm2.wat [811] 100 bytes (javascript) 42 bytes (webassembly) {179} [depth 4] [dependent] [built] [code generated]
+        [exports: getNumber]
+        ModuleConcatenation bailout: Module Concatenation is not implemented for ByTypeGenerator
+        cjs require ./wasm2.wat [834] ./module3.js 2:0-22
+chunk {417} (runtime: main) 417.bundle0.js 1 bytes <{179}> [rendered]
+  > ./async.js ./module.js 3:0-20
+  ./async.js [417] 1 bytes {417} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    import() ./async.js [335] ./index.js + 1 modules ./module.js 3:0-20
+    import() ./async.js ./module.js 3:0-20
+  
+
+LOG from webpack.Compiler
+<t> make hook: 29.884505 ms
+<t> finish make hook: 0.019798 ms
+<t> finish compilation: 0.227155 ms
+<t> seal compilation: 23.137943 ms
+<t> afterCompile hook: 0.010121 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004221 ms
+<t> finish modules: 0.168024 ms
+<t> report dependency errors and warnings: 0.040583 ms
+<t> optimize dependencies: 0.246885 ms
+<t> create chunks: 1.056217 ms
+<t> compute affected modules with chunk graph: 0.001473 ms
+<t> optimize: 0.947356 ms
+    6 modules hashed, 0 from cache (0.86 variants per module in average)
+<t> module hashing: 0.321278 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 16.37316 ms
+<t> runtime requirements.modules: 0.079058 ms
+<t> runtime requirements.chunks: 0.075201 ms
+<t> runtime requirements.entries: 0.479701 ms
+<t> runtime requirements: 0.659396 ms
+<t> hashing: initialize hash: 0.005569 ms
+<t> hashing: hash errors: 0.007655 ms
+<t> hashing: sort chunks: 0.020222 ms
+<t> hashing: hash runtime modules: 1.557333 ms
+<t> hashing: hash chunks: 0.295577 ms
+<t> hashing: hash digest: 0.024356 ms
+<t> hashing: process full hash modules: 0.001413 ms
+<t> hashing: 1.957828 ms
+    100% code generated (8 generated, 0 from cache)
+<t> module assets: 0.023389 ms
+<t> create chunk assets: 0.92226 ms
+<t> process assets: 0.263434 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.029044 ms
+<t> figure out provided exports: 0.045946 ms
+    57% of exports of modules have been determined (3 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017235 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.0239 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.020441 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004655 ms
+<t> trace exports usage in graph: 0.178649 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.019053 ms
+<t> visitModules: visiting: 0.094369 ms
+<t> visitModules: calculating available modules: 0.011396 ms
+<t> visitModules: merging available modules: 0.004926 ms
+<t> visitModules: check modules for revisit: 0.003442 ms
+<t> visitModules: prepare: 0.001028 ms
+<t> visitModules: visiting: 0.013992 ms
+    15 queue items processed (8 blocks)
+    1 chunk groups connected
+    1 chunk groups processed for merging (1 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    1 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.186849 ms
+<t> connectChunkGroups: 0.011961 ms
+<t> cleanup: 0.002936 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.01838 ms
+<t> modules: 0.099613 ms
+<t> queue: 0.002496 ms
+<t> maxSize: 0.00961 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.028437 ms
+<t> sort relevant modules: 0.003946 ms
+<t> find modules to concatenate: 0.079175 ms
+<t> sort concat configurations: 0.000816 ms
+<t> create concatenated modules: 0.214071 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    7 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 7 hashes 7 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./wasm.wat
+WebAssembly module is included in initial chunk.
+This is not allowed, because WebAssembly download and compilation must happen asynchronous.
+Add an async split point (i. e. import()) somewhere between your entrypoint and the WebAssembly module:
+* ./index.js --> ./module.js --> ./wasm.wat
+* ... --> ./module.js --> ./module2.js --> ./wasm.wat
+* ... --> ./module2.js --> ./module3.js --> ./wasm.wat
+WebAssemblyInInitialChunkError: WebAssembly module is included in initial chunk.
+This is not allowed, because WebAssembly download and compilation must happen asynchronous.
+Add an async split point (i. e. import()) somewhere between your entrypoint and the WebAssembly module:
+* ./index.js --> ./module.js --> ./wasm.wat
+* ... --> ./module.js --> ./module2.js --> ./wasm.wat
+* ... --> ./module2.js --> ./module3.js --> ./wasm.wat
+    at /Users/yoh/Projects/repos/webpack/lib/wasm-sync/WebAssemblyModulesPlugin.js:128:8
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2938:26)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+ @ ./module.js 1:0-39 7:0-9
+ @ ./index.js 1:0-18
+
+ERROR in ./wasm2.wat
+WebAssembly module is included in initial chunk.
+This is not allowed, because WebAssembly download and compilation must happen asynchronous.
+Add an async split point (i. e. import()) somewhere between your entrypoint and the WebAssembly module:
+* ./index.js --> ./module.js --> ./module2.js --> ./module3.js --> ./wasm2.wat
+WebAssemblyInInitialChunkError: WebAssembly module is included in initial chunk.
+This is not allowed, because WebAssembly download and compilation must happen asynchronous.
+Add an async split point (i. e. import()) somewhere between your entrypoint and the WebAssembly module:
+* ./index.js --> ./module.js --> ./module2.js --> ./module3.js --> ./wasm2.wat
+    at /Users/yoh/Projects/repos/webpack/lib/wasm-sync/WebAssemblyModulesPlugin.js:128:8
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2938:26)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+ @ ./module3.js 2:0-22
+ @ ./module2.js 2:0-20
+ @ ./module.js 5:0-20
+ @ ./index.js 1:0-18
+
+2021-12-05 17:45:03: webpack 5.64.4 compiled with 2 errors in 55 ms (5d59167dcc140687bd71)

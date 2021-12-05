@@ -1,0 +1,354 @@
+PublicPath: auto
+asset runtime.js 12.5 KiB {666} [emitted] (name: runtime)
+asset page3.js 2.57 KiB {199} [emitted] (name: page3)
+asset page2.js 2.21 KiB {373} [emitted] (name: page2)
+asset page1.js 2.18 KiB {484} [emitted] (name: page1)
+asset other-vendors.js 1.57 KiB {205} [emitted] (name: other-vendors)
+asset lazy.js 1.4 KiB {675} [emitted] (name: lazy)
+asset app.js 1.31 KiB {143} [emitted] (name: app)
+asset react-vendors.js 928 bytes {703} [emitted] (name: react-vendors)
+Entrypoint app 1.31 KiB = app.js
+Entrypoint page1 2.18 KiB = page1.js
+Entrypoint page2 2.21 KiB = page2.js
+Entrypoint page3 2.57 KiB = page3.js
+Entrypoint react-vendors 13.4 KiB = runtime.js 12.5 KiB react-vendors.js 928 bytes
+Entrypoint other-vendors 14.1 KiB = runtime.js 12.5 KiB other-vendors.js 1.57 KiB
+Chunk Group lazy 1.4 KiB = lazy.js
+chunk {143} (runtime: runtime) app.js (app) 114 bytes <{205}> <{666}> >{199}< >{373}< >{484}< [initial] [rendered]
+  > ./app.js app
+  ./app.js [389] 77 bytes {143} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-47
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/isomorphic-fetch.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/lodash.js: Module is not an ECMAScript module
+    entry ./app.js app
+  ./node_modules/isomorphic-fetch.js [691] 37 bytes {143} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-36
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./page1.js
+      harmony side effect evaluation isomorphic-fetch [832] ./page1.js 1:0-47
+      harmony import specifier isomorphic-fetch [832] ./page1.js 6:8-23
+    from origin ./page2.js
+      harmony side effect evaluation isomorphic-fetch [839] ./page2.js 1:0-47
+      harmony import specifier isomorphic-fetch [839] ./page2.js 6:8-23
+    from origin ./page3.js
+      harmony side effect evaluation isomorphic-fetch [437] ./page3.js 1:0-47
+      harmony import specifier isomorphic-fetch [437] ./page3.js 6:8-23
+    harmony side effect evaluation isomorphic-fetch [389] ./app.js 1:0-47
+    cjs self exports reference [691] ./node_modules/isomorphic-fetch.js 1:0-14
+chunk {199} (runtime: runtime) page3.js (page3) 750 bytes <{143}> >{675}< [initial] [rendered]
+  > ./page3.js page3
+  ./node_modules/react-dom.js [62] 30 bytes {199} {703} [depth 0] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-29
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./page1.js
+      harmony side effect evaluation react-dom [832] ./page1.js 3:0-33
+      harmony import specifier react-dom [832] ./page1.js 8:8-16
+    from origin ./page2.js
+      harmony side effect evaluation react-dom [839] ./page2.js 3:0-33
+      harmony import specifier react-dom [839] ./page2.js 8:8-16
+    from origin ./page3.js
+      harmony side effect evaluation react-dom [437] ./page3.js 3:0-33
+      harmony import specifier react-dom [437] ./page3.js 8:8-16
+    cjs self exports reference [62] ./node_modules/react-dom.js 1:0-14
+    entry react-dom react-vendors
+  ./node_modules/react.js [44] 26 bytes {199} {703} [depth 0] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-25
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./page1.js
+      harmony side effect evaluation react [832] ./page1.js 2:0-26
+      harmony import specifier react [832] ./page1.js 7:8-13
+    from origin ./page2.js
+      harmony side effect evaluation react [839] ./page2.js 2:0-26
+      harmony import specifier react [839] ./page2.js 7:8-13
+    from origin ./page3.js
+      harmony side effect evaluation react [437] ./page3.js 2:0-26
+      harmony import specifier react [437] ./page3.js 7:8-13
+    cjs self exports reference [44] ./node_modules/react.js 1:0-14
+    entry react react-vendors
+  ./page3.js [437] 694 bytes {199} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-9:3
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/isomorphic-fetch.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react-dom.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/test.js: Module ./node_modules/test.js is not in the same chunk(s) (expected in chunk(s) page3, module is in chunk(s) other-vendors)
+    entry ./page3.js page3
+chunk {205} (runtime: runtime) other-vendors.js (other-vendors) 161 bytes ={666}= >{143}< [initial] [rendered]
+  > ./other-vendors other-vendors
+  ./node_modules/lodash.js [49] 27 bytes {205} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-26
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./lazy.js
+      harmony side effect evaluation lodash [401] ./lazy.js 1:0-28
+      harmony import specifier lodash [401] ./lazy.js 5:8-14
+    harmony side effect evaluation lodash [389] ./app.js 2:0-28
+    cjs self exports reference [49] ./node_modules/lodash.js 1:0-14
+    harmony side effect evaluation lodash [967] ./other-vendors.js 1:0-28
+  ./node_modules/test.js [513] 65 bytes {205} [depth 1] [dependent] [built] [code generated]
+    [exports: set, value]
+    [all exports used]
+    from origin ./other-vendors.js
+      [inactive] harmony side effect evaluation test [967] ./other-vendors.js 2:0-27
+      harmony import specifier test [967] ./other-vendors.js 4:0-3
+    from origin ./page1.js
+      [inactive] harmony side effect evaluation test [832] ./page1.js 22:0-29
+      harmony import specifier test [832] ./page1.js 25:8-13
+    from origin ./page2.js
+      [inactive] harmony side effect evaluation test [839] ./page2.js 22:0-29
+      harmony import specifier test [839] ./page2.js 25:8-13
+    from origin ./page3.js
+      [inactive] harmony side effect evaluation test [437] ./page3.js 22:0-29
+      harmony import specifier test [437] ./page3.js 25:8-13
+  ./other-vendors.js [967] 69 bytes {205} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 4:0-10
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/lodash.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/test.js: Module ./node_modules/test.js is referenced from different chunks by these modules: ./page1.js, ./page2.js, ./page3.js
+    entry ./other-vendors other-vendors
+chunk {373} (runtime: runtime) page2.js (page2) 694 bytes <{143}> <{666}> <{703}> >{675}< [initial] [rendered]
+  > ./page2.js page2
+  ./page2.js [839] 694 bytes {373} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-9:3
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/isomorphic-fetch.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react-dom.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/test.js: Module ./node_modules/test.js is not in the same chunk(s) (expected in chunk(s) page2, module is in chunk(s) other-vendors)
+    entry ./page2.js page2
+chunk {484} (runtime: runtime) page1.js (page1) 662 bytes <{143}> <{666}> <{703}> >{675}< [initial] [rendered]
+  > ./page1.js page1
+  ./page1.js [832] 662 bytes {484} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 5:0-9:3
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/isomorphic-fetch.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react-dom.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/react.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/test.js: Module ./node_modules/test.js is not in the same chunk(s) (expected in chunk(s) page1, module is in chunk(s) other-vendors)
+    entry ./page1.js page1
+chunk {666} (runtime: runtime) runtime.js (runtime) 7.77 KiB ={205}= ={703}= >{143}< >{373}< >{484}< [entry] [rendered]
+  > ./other-vendors other-vendors
+  > prop-types react-vendors
+  > react react-vendors
+  > react-dom react-vendors
+  webpack/runtime/chunk loaded 886 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/compat get default export 267 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 166 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3.08 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {675} (runtime: runtime) lazy.js (lazy) 198 bytes <{199}> <{373}> <{484}> [rendered]
+  > ./lazy [437] ./page3.js 12:17-64
+  > ./lazy [832] ./page1.js 12:17-64
+  > ./lazy [839] ./page2.js 12:17-64
+  ./lazy.js [401] 167 bytes {675} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-28
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/lodash.js: Module is not an ECMAScript module
+    ModuleConcatenation bailout: Cannot concat with ./node_modules/prop-types.js: Module is not an ECMAScript module
+    import() ./lazy [832] ./page1.js 12:17-64
+    import() ./lazy [839] ./page2.js 12:17-64
+    import() ./lazy [437] ./page3.js 12:17-64
+  ./node_modules/prop-types.js [171] 31 bytes {675} {703} [depth 0] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-30
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./lazy.js
+      harmony side effect evaluation prop-types [401] ./lazy.js 2:0-35
+      harmony import specifier prop-types [401] ./lazy.js 6:8-17
+    cjs self exports reference [171] ./node_modules/prop-types.js 1:0-14
+    entry prop-types react-vendors
+chunk {703} (runtime: runtime) react-vendors.js (react-vendors) 87 bytes ={666}= >{373}< >{484}< [initial] [rendered]
+  > prop-types react-vendors
+  > react react-vendors
+  > react-dom react-vendors
+  ./node_modules/prop-types.js [171] 31 bytes {675} {703} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-30
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./lazy.js
+      harmony side effect evaluation prop-types [401] ./lazy.js 2:0-35
+      harmony import specifier prop-types [401] ./lazy.js 6:8-17
+    cjs self exports reference [171] ./node_modules/prop-types.js 1:0-14
+    entry prop-types react-vendors
+  ./node_modules/react-dom.js [62] 30 bytes {199} {703} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-29
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./page1.js
+      harmony side effect evaluation react-dom [832] ./page1.js 3:0-33
+      harmony import specifier react-dom [832] ./page1.js 8:8-16
+    from origin ./page2.js
+      harmony side effect evaluation react-dom [839] ./page2.js 3:0-33
+      harmony import specifier react-dom [839] ./page2.js 8:8-16
+    from origin ./page3.js
+      harmony side effect evaluation react-dom [437] ./page3.js 3:0-33
+      harmony import specifier react-dom [437] ./page3.js 8:8-16
+    cjs self exports reference [62] ./node_modules/react-dom.js 1:0-14
+    entry react-dom react-vendors
+  ./node_modules/react.js [44] 26 bytes {199} {703} [depth 0] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-25
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    from origin ./page1.js
+      harmony side effect evaluation react [832] ./page1.js 2:0-26
+      harmony import specifier react [832] ./page1.js 7:8-13
+    from origin ./page2.js
+      harmony side effect evaluation react [839] ./page2.js 2:0-26
+      harmony import specifier react [839] ./page2.js 7:8-13
+    from origin ./page3.js
+      harmony side effect evaluation react [437] ./page3.js 2:0-26
+      harmony import specifier react [437] ./page3.js 7:8-13
+    cjs self exports reference [44] ./node_modules/react.js 1:0-14
+    entry react react-vendors
+  
+
+LOG from webpack.Compiler
+<t> make hook: 33.840339 ms
+<t> finish make hook: 0.020654 ms
+<t> finish compilation: 0.298763 ms
+<t> seal compilation: 12.465434 ms
+<t> afterCompile hook: 0.02479 ms
+<t> emitAssets: 1.92068 ms
+<t> emitRecords: 0.002792 ms
+<t> done hook: 0.017037 ms
+<t> beginIdle: 0.008773 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004194 ms
+<t> finish modules: 0.202147 ms
+<t> report dependency errors and warnings: 0.080249 ms
+<t> optimize dependencies: 0.441299 ms
+<t> create chunks: 1.071442 ms
+<t> compute affected modules with chunk graph: 0.002692 ms
+<t> optimize: 1.372272 ms
+    12 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.475952 ms
+    100% code generated (12 generated, 0 from cache)
+<t> code generation: 0.948182 ms
+<t> runtime requirements.modules: 0.086502 ms
+<t> runtime requirements.chunks: 0.310505 ms
+<t> runtime requirements.entries: 0.692699 ms
+<t> runtime requirements: 1.118821 ms
+<t> hashing: initialize hash: 0.004222 ms
+<t> hashing: sort chunks: 0.029549 ms
+<t> hashing: hash runtime modules: 1.167921 ms
+<t> hashing: hash chunks: 0.635095 ms
+<t> hashing: hash digest: 0.021796 ms
+<t> hashing: process full hash modules: 0.001273 ms
+<t> hashing: 1.925771 ms
+    100% code generated (11 generated, 0 from cache)
+<t> record hash: 0.009675 ms
+<t> module assets: 0.022121 ms
+<t> create chunk assets: 2.391714 ms
+<t> process assets: 0.593107 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.037425 ms
+<t> figure out provided exports: 0.059087 ms
+    58% of exports of modules have been determined (5 no declared exports, 7 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.026599 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.084706 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.035316 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.012851 ms
+<t> trace exports usage in graph: 0.337972 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.019634 ms
+<t> visitModules: visiting: 0.074882 ms
+<t> visitModules: combine available modules: 0.263486 ms
+<t> visitModules: check modules for revisit: 0.028691 ms
+<t> visitModules: prepare: 0.006202 ms
+<t> visitModules: visiting: 0.03387 ms
+<t> visitModules: combine available modules: 0.026132 ms
+<t> visitModules: check modules for revisit: 0.009736 ms
+<t> visitModules: prepare: 0.019193 ms
+<t> visitModules: visiting: 0.087616 ms
+<t> visitModules: calculating available modules: 0.019078 ms
+<t> visitModules: merging available modules: 0.018737 ms
+<t> visitModules: check modules for revisit: 0.001396 ms
+<t> visitModules: prepare: 0.00758 ms
+<t> visitModules: visiting: 0.032406 ms
+    33 queue items processed (18 blocks)
+    3 chunk groups connected
+    1 chunk groups processed for merging (3 module sets, 1 forked, 1 + 8 modules forked, 1 + 8 modules merged into fork, 8 resulting modules)
+    5 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.794006 ms
+<t> connectChunkGroups: 0.016782 ms
+<t> cleanup: 0.002382 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.025494 ms
+<t> modules: 0.234219 ms
+<t> queue: 0.020763 ms
+<t> maxSize: 0.015205 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.035613 ms
+<t> sort relevant modules: 0.004069 ms
+<t> find modules to concatenate: 0.240849 ms
+<t> sort concat configurations: 0.000745 ms
+<t> create concatenated modules: 0.003725 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    12 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 12 timestamps 12 hashes 12 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/12) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:26: webpack 5.64.4 compiled successfully in 51 ms (079b3cd3a10ffe1682bd)

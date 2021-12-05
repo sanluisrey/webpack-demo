@@ -1,0 +1,401 @@
+PublicPath: (none)
+asset bundle.js 16.5 KiB {2} [emitted] (name: main)
+asset 1.bundle.js 2.54 KiB {1} [emitted]
+asset 0.bundle.js 945 bytes {0} [emitted]
+Entrypoint main 16.5 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 42 bytes <{2}> [rendered]
+  > ./c [1] ./parsing/extract-amd.nominimize/index.js 109:1-114:3
+  ./parsing/extract-amd.nominimize/c.js [6] 21 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    cjs self exports reference [6] ./parsing/extract-amd.nominimize/c.js 1:0-14
+    amd require ./c [1] ./parsing/extract-amd.nominimize/index.js 109:1-114:3
+  ./parsing/extract-amd.nominimize/d.js [7] 21 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    cjs self exports reference [7] ./parsing/extract-amd.nominimize/d.js 1:0-14
+    cjs require ./d [1] ./parsing/extract-amd.nominimize/index.js 112:9-23
+chunk {1} (runtime: main) 1.bundle.js 280 bytes <{2}> [rendered]
+  > [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+  ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ [8] 217 bytes {1} [depth 1] [built] [code generated]
+    [no exports]
+    amd require context [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+  ./parsing/extract-amd.nominimize/templates/a.js [9] 21 bytes {1} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    cjs self exports reference [9] ./parsing/extract-amd.nominimize/templates/a.js 1:0-14
+    context element ./a [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./a
+    context element ./a.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./a.js
+  ./parsing/extract-amd.nominimize/templates/b.js [10] 21 bytes {1} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    cjs self exports reference [10] ./parsing/extract-amd.nominimize/templates/b.js 1:0-14
+    context element ./b [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./b
+    context element ./b.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./b.js
+  ./parsing/extract-amd.nominimize/templates/c.js [11] 21 bytes {1} [depth 2] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    cjs self exports reference [11] ./parsing/extract-amd.nominimize/templates/c.js 1:0-14
+    context element ./c [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./c
+    context element ./c.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./c.js
+chunk {2} (runtime: main) bundle.js (main) 3.98 KiB (javascript) 2.49 KiB (runtime) >{0}< >{1}< [entry] [rendered]
+  > ./parsing/extract-amd.nominimize/ main
+  cacheable modules 3.98 KiB
+    ./parsing/extract-amd.nominimize/a.js [0] 21 bytes {2} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      from origin ./parsing/extract-amd.nominimize/index.js
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 19:1-40
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 20:1-27:3
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 28:1-35:3
+      cjs self exports reference [0] ./parsing/extract-amd.nominimize/a.js 1:0-14
+      cjs require ./a [5] ./parsing/extract-amd.nominimize/amdmodule.js 2:8-22
+      cjs export require ./a [4] ./parsing/extract-amd.nominimize/optional.js 2:6-39
+    ./parsing/extract-amd.nominimize/amdmodule.js [5] 50 bytes {2} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+      cjs require ./amdmodule [1] ./parsing/extract-amd.nominimize/index.js 102:9-31
+    ./parsing/extract-amd.nominimize/circular.js [3] 59 bytes {2} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      from origin ./parsing/extract-amd.nominimize/index.js
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+        cjs require ./circular [1] ./parsing/extract-amd.nominimize/index.js 64:9-30
+        cjs require ./circular [1] ./parsing/extract-amd.nominimize/index.js 95:9-30
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js
+      from origin ./parsing/extract-amd.nominimize/circular.js
+        cjs self exports reference [3] ./parsing/extract-amd.nominimize/circular.js 1:0-14
+        cjs export require ./circular [3] ./parsing/extract-amd.nominimize/circular.js 2:0-38
+    ./parsing/extract-amd.nominimize/constructor.js [2] 57 bytes {2} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:1
+      cjs self exports reference [2] ./parsing/extract-amd.nominimize/constructor.js 1:0-14
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 19:1-40
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 20:1-27:3
+      cjs require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 24:17-41
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 28:1-35:3
+      cjs require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 32:17-41
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js
+    ./parsing/extract-amd.nominimize/index.js [1] 3.67 KiB {2} [depth 0] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 8:8-22
+      CommonJS bailout: module.exports is used directly at 15:8-22
+      CommonJS bailout: exports is used directly at 23:17-24
+      CommonJS bailout: exports is used directly at 31:17-24
+      CommonJS bailout: exports is used directly at 89:21-28
+      CommonJS bailout: exports is used directly at 93:9-16
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 8:8-22
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 15:8-22
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 23:17-24
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 31:17-24
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 89:21-28
+      module decorator [1] ./parsing/extract-amd.nominimize/index.js 90:20-26
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 93:9-16
+      module decorator [1] ./parsing/extract-amd.nominimize/index.js 94:9-15
+      entry ./parsing/extract-amd.nominimize/ main
+    ./parsing/extract-amd.nominimize/optional.js [4] 134 bytes {2} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      amd require ./optional [1] ./parsing/extract-amd.nominimize/index.js
+      cjs self exports reference [4] ./parsing/extract-amd.nominimize/optional.js 1:0-14
+  runtime modules 2.49 KiB
+    webpack/runtime/ensure chunk 326 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 174 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/node module decorator 123 bytes {2} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.79 KiB {2} [code generated]
+      [no exports]
+      [used exports unknown]
+built modules 4.29 KiB [built]
+  modules by path ./parsing/extract-amd.nominimize/*.js 4.02 KiB
+    ./parsing/extract-amd.nominimize/index.js [1] 3.67 KiB {2} [depth 0] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 8:8-22
+      CommonJS bailout: module.exports is used directly at 15:8-22
+      CommonJS bailout: exports is used directly at 23:17-24
+      CommonJS bailout: exports is used directly at 31:17-24
+      CommonJS bailout: exports is used directly at 89:21-28
+      CommonJS bailout: exports is used directly at 93:9-16
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 8:8-22
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 15:8-22
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 23:17-24
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 31:17-24
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 89:21-28
+      module decorator [1] ./parsing/extract-amd.nominimize/index.js 90:20-26
+      cjs self exports reference [1] ./parsing/extract-amd.nominimize/index.js 93:9-16
+      module decorator [1] ./parsing/extract-amd.nominimize/index.js 94:9-15
+      entry ./parsing/extract-amd.nominimize/ main
+    ./parsing/extract-amd.nominimize/constructor.js [2] 57 bytes {2} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:1
+      cjs self exports reference [2] ./parsing/extract-amd.nominimize/constructor.js 1:0-14
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 19:1-40
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 20:1-27:3
+      cjs require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 24:17-41
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 28:1-35:3
+      cjs require ./constructor [1] ./parsing/extract-amd.nominimize/index.js 32:17-41
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js
+      amd require ./constructor [1] ./parsing/extract-amd.nominimize/index.js
+    ./parsing/extract-amd.nominimize/a.js [0] 21 bytes {2} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      from origin ./parsing/extract-amd.nominimize/index.js
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 19:1-40
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 20:1-27:3
+        amd require ./a [1] ./parsing/extract-amd.nominimize/index.js 28:1-35:3
+      cjs self exports reference [0] ./parsing/extract-amd.nominimize/a.js 1:0-14
+      cjs require ./a [5] ./parsing/extract-amd.nominimize/amdmodule.js 2:8-22
+      cjs export require ./a [4] ./parsing/extract-amd.nominimize/optional.js 2:6-39
+    ./parsing/extract-amd.nominimize/circular.js [3] 59 bytes {2} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      from origin ./parsing/extract-amd.nominimize/index.js
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+        cjs require ./circular [1] ./parsing/extract-amd.nominimize/index.js 64:9-30
+        cjs require ./circular [1] ./parsing/extract-amd.nominimize/index.js 95:9-30
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js
+        amd require ./circular [1] ./parsing/extract-amd.nominimize/index.js
+      from origin ./parsing/extract-amd.nominimize/circular.js
+        cjs self exports reference [3] ./parsing/extract-amd.nominimize/circular.js 1:0-14
+        cjs export require ./circular [3] ./parsing/extract-amd.nominimize/circular.js 2:0-38
+    ./parsing/extract-amd.nominimize/amdmodule.js [5] 50 bytes {2} [depth 1] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+      cjs require ./amdmodule [1] ./parsing/extract-amd.nominimize/index.js 102:9-31
+    ./parsing/extract-amd.nominimize/optional.js [4] 134 bytes {2} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      amd require ./optional [1] ./parsing/extract-amd.nominimize/index.js
+      cjs self exports reference [4] ./parsing/extract-amd.nominimize/optional.js 1:0-14
+    ./parsing/extract-amd.nominimize/c.js [6] 21 bytes {0} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [6] ./parsing/extract-amd.nominimize/c.js 1:0-14
+      amd require ./c [1] ./parsing/extract-amd.nominimize/index.js 109:1-114:3
+    ./parsing/extract-amd.nominimize/d.js [7] 21 bytes {0} [depth 1] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [7] ./parsing/extract-amd.nominimize/d.js 1:0-14
+      cjs require ./d [1] ./parsing/extract-amd.nominimize/index.js 112:9-23
+  modules by path ./parsing/extract-amd.nominimize/templates/ 280 bytes
+    ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ [8] 217 bytes {1} [depth 1] [built] [code generated]
+      [no exports]
+      amd require context [1] ./parsing/extract-amd.nominimize/index.js 40:1-45:3
+    ./parsing/extract-amd.nominimize/templates/a.js [9] 21 bytes {1} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [9] ./parsing/extract-amd.nominimize/templates/a.js 1:0-14
+      context element ./a [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./a
+      context element ./a.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./a.js
+    ./parsing/extract-amd.nominimize/templates/b.js [10] 21 bytes {1} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [10] ./parsing/extract-amd.nominimize/templates/b.js 1:0-14
+      context element ./b [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./b
+      context element ./b.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./b.js
+    ./parsing/extract-amd.nominimize/templates/c.js [11] 21 bytes {1} [depth 2] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-21
+      cjs self exports reference [11] ./parsing/extract-amd.nominimize/templates/c.js 1:0-14
+      context element ./c [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./c
+      context element ./c.js [8] ./parsing/extract-amd.nominimize/templates/ sync ^\.\/.*$ ./c.js
+runtime modules 2.49 KiB
+  webpack/runtime/ensure chunk 326 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/node module decorator 123 bytes {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {2} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 36.582203 ms
+<t> finish make hook: 0.018675 ms
+<t> finish compilation: 0.184684 ms
+<t> seal compilation: 6.135812 ms
+<t> afterCompile hook: 0.008358 ms
+<t> emitAssets: 1.657191 ms
+<t> emitRecords: 0.00262 ms
+<t> done hook: 0.012491 ms
+<t> beginIdle: 0.005859 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004014 ms
+<t> finish modules: 0.118012 ms
+<t> report dependency errors and warnings: 0.044957 ms
+<t> optimize dependencies: 0.404142 ms
+<t> create chunks: 0.439393 ms
+<t> compute affected modules with chunk graph: 0.002931 ms
+<t> optimize: 0.857143 ms
+    12 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.462509 ms
+    100% code generated (12 generated, 0 from cache)
+<t> code generation: 0.7122 ms
+<t> runtime requirements.modules: 0.1018 ms
+<t> runtime requirements.chunks: 0.086424 ms
+<t> runtime requirements.entries: 0.351235 ms
+<t> runtime requirements: 0.565795 ms
+<t> hashing: initialize hash: 0.002527 ms
+<t> hashing: hash warnings: 0.002252 ms
+<t> hashing: sort chunks: 0.023242 ms
+<t> hashing: hash runtime modules: 1.04939 ms
+<t> hashing: hash chunks: 0.319953 ms
+<t> hashing: hash digest: 0.014715 ms
+<t> hashing: process full hash modules: 0.001206 ms
+<t> hashing: 1.458261 ms
+    100% code generated (5 generated, 0 from cache)
+<t> record hash: 0.009255 ms
+<t> module assets: 0.013506 ms
+<t> create chunk assets: 0.89494 ms
+<t> process assets: 0.04244 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.037582 ms
+<t> figure out provided exports: 0.013502 ms
+    8% of exports of modules have been determined (11 no declared exports, 0 not cached, 1 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003348 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.005786 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.012608 ms
+<t> trace exports usage in graph: 0.338188 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.057158 ms
+<t> visitModules: visiting: 0.164309 ms
+<t> visitModules: calculating available modules: 0.012339 ms
+<t> visitModules: merging available modules: 0.006738 ms
+<t> visitModules: check modules for revisit: 0.00339 ms
+<t> visitModules: prepare: 0.023044 ms
+<t> visitModules: visiting: 0.081275 ms
+    28 queue items processed (16 blocks)
+    4 chunk groups connected
+    4 chunk groups processed for merging (4 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.321809 ms
+<t> connectChunkGroups: 0.014359 ms
+<t> cleanup: 0.020471 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021709 ms
+<t> modules: 0.164521 ms
+<t> queue: 0.002824 ms
+<t> maxSize: 0.013235 ms
+
+LOG from webpack.FileSystemInfo
+    12 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/11) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+WARNING in ./parsing/extract-amd.nominimize/optional.js 3:6-39
+Module not found: Error: Can't resolve './b' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize'
+resolve './b' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize'
+  using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/parsing/extract-amd.nominimize)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/yoh/Projects/repos/webpack/package.json (relative path: ./test/cases/parsing/extract-amd.nominimize/b)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b doesn't exist
+      .webpack.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b.webpack.js doesn't exist
+      .web.js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b.web.js doesn't exist
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b.json doesn't exist
+      as directory
+        /Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize/b doesn't exist
+ModuleNotFoundError: Module not found: Error: Can't resolve './b' in '/Users/yoh/Projects/repos/webpack/test/cases/parsing/extract-amd.nominimize'
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2011:28
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:795:13
+    at eval (<anonymous>:10:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:275:22
+    at eval (<anonymous>:9:1)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:431:22
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:124:11
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:667:25
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:852:8
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:972:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6883:13
+    at Array.<anonymous> (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:947:14)
+    at arrayEachFunc (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2517:19)
+    at Object.parallel (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:6858:9)
+    at NormalModuleFactory._resolveResourceErrorHints (/Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:870:12)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModuleFactory.js:831:18
+    at finishWithoutResolve (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:296:11)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:362:15
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:27:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:87:43
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:16:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/Resolver.js:410:5
+    at eval (<anonymous>:15:1)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+ @ ./parsing/extract-amd.nominimize/index.js
+
+2021-12-05 17:45:30: webpack 5.64.4 compiled with 1 warning in 46 ms (d9190815333aa92cd951)

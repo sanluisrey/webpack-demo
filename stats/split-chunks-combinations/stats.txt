@@ -1,0 +1,358 @@
+PublicPath: auto
+asset main.js 11.7 KiB {179} [emitted] (name: main)
+asset async-c.js 1000 bytes {383} [emitted] (name: async-c)
+asset async-e.js 1000 bytes {449} [emitted] (name: async-e)
+asset async-f.js 1000 bytes {206} [emitted] (name: async-f)
+asset async-g.js 1000 bytes {137} [emitted] (name: async-g)
+asset async-d.js 1000 bytes {31} [emitted] (name: async-d)
+asset 804.js 878 bytes {804} [emitted]
+asset async-a.js 744 bytes {794} [emitted] (name: async-a)
+asset async-b.js 744 bytes {334} [emitted] (name: async-b)
+Entrypoint main 11.7 KiB = main.js
+Chunk Group async-a 1.58 KiB = 804.js 878 bytes async-a.js 744 bytes
+Chunk Group async-b 1.58 KiB = 804.js 878 bytes async-b.js 744 bytes
+Chunk Group async-c 1000 bytes = async-c.js
+Chunk Group async-d 1000 bytes = async-d.js
+Chunk Group async-e 1000 bytes = async-e.js
+Chunk Group async-f 1000 bytes = async-f.js
+Chunk Group async-g 1000 bytes = async-g.js
+chunk {31} (runtime: main) async-d.js (async-d) 132 bytes <{179}> [rendered]
+  > ./d [10] ./index.js 4:0-47
+  ./d.js [767] 45 bytes {31} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-23
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is referenced from different chunks by these modules: ./a.js, ./b.js, ./c.js, ./e.js, ./f.js, ./g.js
+    import() ./d [10] ./index.js 4:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+chunk {137} (runtime: main) async-g.js (async-g) 132 bytes <{179}> [rendered]
+  > ./g [10] ./index.js 7:0-47
+  ./g.js [785] 45 bytes {137} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-23
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is referenced from different chunks by these modules: ./a.js, ./b.js, ./c.js, ./d.js, ./e.js, ./f.js
+    import() ./g [10] ./index.js 7:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+chunk {179} (runtime: main) main.js (main) 343 bytes (javascript) 6.69 KiB (runtime) >{31}< >{137}< >{206}< >{334}< >{383}< >{449}< >{794}< >{804}< [entry] [rendered]
+  > ./ main
+  ./index.js [10] 343 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-48
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./ main
+  webpack/runtime/define property getters 308 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 294 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {206} (runtime: main) async-f.js (async-f) 132 bytes <{179}> [rendered]
+  > ./f [10] ./index.js 6:0-47
+  ./f.js [568] 45 bytes {206} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-23
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is referenced from different chunks by these modules: ./a.js, ./b.js, ./c.js, ./d.js, ./e.js, ./g.js
+    import() ./f [10] ./index.js 6:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+chunk {334} (runtime: main) async-b.js (async-b) 70 bytes <{179}> ={804}= [rendered]
+  > ./b [10] ./index.js 2:0-47
+  ./b.js [996] 70 bytes {334} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-27
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is not in the same chunk(s) (expected in chunk(s) async-b, module is in chunk(s) async-c, async-d, async-e, async-f, async-g, unnamed chunk(s))
+    ModuleConcatenation bailout: Cannot concat with ./y.js: Module ./y.js is not in the same chunk(s) (expected in chunk(s) async-b, module is in chunk(s) unnamed chunk(s))
+    import() ./b [10] ./index.js 2:0-47
+chunk {383} (runtime: main) async-c.js (async-c) 132 bytes <{179}> [rendered]
+  > ./c [10] ./index.js 3:0-47
+  ./c.js [460] 45 bytes {383} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-23
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is referenced from different chunks by these modules: ./a.js, ./b.js, ./d.js, ./e.js, ./f.js, ./g.js
+    import() ./c [10] ./index.js 3:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+chunk {449} (runtime: main) async-e.js (async-e) 132 bytes <{179}> [rendered]
+  > ./e [10] ./index.js 5:0-47
+  ./e.js [390] 45 bytes {449} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-23
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is referenced from different chunks by these modules: ./a.js, ./b.js, ./c.js, ./d.js, ./f.js, ./g.js
+    import() ./e [10] ./index.js 5:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+chunk {794} (runtime: main) async-a.js (async-a) 70 bytes <{179}> ={804}= [rendered]
+  > ./a [10] ./index.js 1:0-47
+  ./a.js [847] 70 bytes {794} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-27
+    ModuleConcatenation bailout: Cannot concat with ./x.js: Module ./x.js is not in the same chunk(s) (expected in chunk(s) async-a, module is in chunk(s) async-c, async-d, async-e, async-f, async-g, unnamed chunk(s))
+    ModuleConcatenation bailout: Cannot concat with ./y.js: Module ./y.js is not in the same chunk(s) (expected in chunk(s) async-a, module is in chunk(s) unnamed chunk(s))
+    import() ./a [10] ./index.js 1:0-47
+chunk {804} (runtime: main) 804.js 174 bytes <{179}> ={334}= ={794}= [rendered] split chunk (cache group: default)
+  > ./a [10] ./index.js 1:0-47
+  > ./b [10] ./index.js 2:0-47
+  ./x.js [818] 87 bytes {31} {137} {206} {383} {449} {804} [depth 2] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./x [847] ./a.js 1:0-20
+      harmony import specifier ./x [847] ./a.js 3:21-22
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./x [996] ./b.js 1:0-20
+      harmony import specifier ./x [996] ./b.js 3:21-22
+    from origin ./c.js
+      [inactive] harmony side effect evaluation ./x [460] ./c.js 1:0-20
+      harmony import specifier ./x [460] ./c.js 2:21-22
+    from origin ./d.js
+      [inactive] harmony side effect evaluation ./x [767] ./d.js 1:0-20
+      harmony import specifier ./x [767] ./d.js 2:21-22
+    from origin ./e.js
+      [inactive] harmony side effect evaluation ./x [390] ./e.js 1:0-20
+      harmony import specifier ./x [390] ./e.js 2:21-22
+    from origin ./f.js
+      [inactive] harmony side effect evaluation ./x [568] ./f.js 1:0-20
+      harmony import specifier ./x [568] ./f.js 2:21-22
+    from origin ./g.js
+      [inactive] harmony side effect evaluation ./x [785] ./g.js 1:0-20
+      harmony import specifier ./x [785] ./g.js 2:21-22
+  ./y.js [849] 87 bytes {804} [depth 2] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./y [847] ./a.js 2:0-20
+      harmony import specifier ./y [847] ./a.js 3:25-26
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./y [996] ./b.js 2:0-20
+      harmony import specifier ./y [996] ./b.js 3:25-26
+  
+
+LOG from webpack.Compiler
+<t> make hook: 27.753968 ms
+<t> finish make hook: 0.014988 ms
+<t> finish compilation: 0.273792 ms
+<t> seal compilation: 9.387446 ms
+<t> afterCompile hook: 0.008299 ms
+<t> emitAssets: 1.968348 ms
+<t> emitRecords: 0.001875 ms
+<t> done hook: 0.014283 ms
+<t> beginIdle: 0.010373 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004829 ms
+<t> finish modules: 0.193731 ms
+<t> report dependency errors and warnings: 0.061437 ms
+<t> optimize dependencies: 0.29558 ms
+<t> create chunks: 0.503511 ms
+<t> compute affected modules with chunk graph: 0.003448 ms
+<t> optimize: 2.455196 ms
+    10 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.438848 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 0.896134 ms
+<t> runtime requirements.modules: 0.06068 ms
+<t> runtime requirements.chunks: 0.077908 ms
+<t> runtime requirements.entries: 0.572142 ms
+<t> runtime requirements: 0.739876 ms
+<t> hashing: initialize hash: 0.005051 ms
+<t> hashing: sort chunks: 0.037126 ms
+<t> hashing: hash runtime modules: 1.658609 ms
+<t> hashing: hash chunks: 0.581792 ms
+<t> hashing: hash digest: 0.017587 ms
+<t> hashing: process full hash modules: 0.002002 ms
+<t> hashing: 2.389814 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.009132 ms
+<t> module assets: 0.019616 ms
+<t> create chunk assets: 0.890122 ms
+<t> process assets: 0.345751 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.034137 ms
+<t> figure out provided exports: 0.062859 ms
+    90% of exports of modules have been determined (1 no declared exports, 9 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.019519 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.103753 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.024586 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010005 ms
+<t> trace exports usage in graph: 0.219031 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.017489 ms
+<t> visitModules: visiting: 0.091131 ms
+<t> visitModules: calculating available modules: 0.00949 ms
+<t> visitModules: merging available modules: 0.006665 ms
+<t> visitModules: check modules for revisit: 0.040127 ms
+<t> visitModules: prepare: 0.079418 ms
+<t> visitModules: visiting: 0.177022 ms
+    41 queue items processed (24 blocks)
+    7 chunk groups connected
+    7 chunk groups processed for merging (7 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    7 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.374745 ms
+<t> connectChunkGroups: 0.028838 ms
+<t> cleanup: 0.003942 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.033483 ms
+<t> modules: 0.287894 ms
+<t> queue: 0.098133 ms
+<t> maxSize: 0.023836 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.047813 ms
+<t> sort relevant modules: 0.005874 ms
+<t> find modules to concatenate: 1.171005 ms
+<t> sort concat configurations: 0.000888 ms
+<t> create concatenated modules: 0.004804 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    10 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 10 timestamps 10 hashes 10 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:26: webpack 5.64.4 compiled successfully in 40 ms (6f3e9fbae226ca509538)

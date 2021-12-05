@@ -1,0 +1,338 @@
+PublicPath: (none)
+asset bundle.js 14.6 KiB {6} [emitted] (name: main)
+asset 3.bundle.js 2.65 KiB {3} [emitted]
+asset 4.bundle.js 941 bytes {4} [emitted]
+asset 5.bundle.js 938 bytes {5} [emitted]
+asset 2.bundle.js 925 bytes {2} [emitted]
+asset 0.bundle.js 886 bytes {0} [emitted]
+asset 1.bundle.js 877 bytes {1} [emitted]
+Entrypoint main 14.6 KiB = bundle.js
+chunk {0} (runtime: main) 0.bundle.js 69 bytes <{3}> <{6}> [rendered]
+  > ./abc [1] ./parsing/issue-7778/index.js 6:2-17
+  > ./abc [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc
+  > ./abc.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc.js
+  > ./abc [3] ./parsing/issue-7778/ lazy ^\.\/.*bc$ namespace object ./abc
+  > ./abc [9] ./parsing/issue-7778/index.js?queryString 6:2-17
+  ./parsing/issue-7778/abc.js [0] 69 bytes {0} [depth 1] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object
+      import() context element ./abc [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc
+      import() context element ./abc.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc.js
+    import() ./abc [1] ./parsing/issue-7778/index.js 6:2-17
+    import() ./abc [9] ./parsing/issue-7778/index.js?queryString 6:2-17
+    import() context element ./abc [3] ./parsing/issue-7778/ lazy ^\.\/.*bc$ namespace object ./abc
+chunk {1} (runtime: main) 1.bundle.js 65 bytes <{3}> <{6}> [rendered]
+  > ./a [1] ./parsing/issue-7778/index.js 3:2-15
+  > ./a [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a
+  > ./a.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a.js
+  > ./a [9] ./parsing/issue-7778/index.js?queryString 3:2-15
+  ./parsing/issue-7778/a.js [6] 65 bytes {1} [depth 1] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object
+      import() context element ./a [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a
+      import() context element ./a.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a.js
+    import() ./a [1] ./parsing/issue-7778/index.js 3:2-15
+    import() ./a [9] ./parsing/issue-7778/index.js?queryString 3:2-15
+chunk {2} (runtime: main) 2.bundle.js 65 bytes <{3}> <{6}> [rendered]
+  > ./a?queryString [1] ./parsing/issue-7778/index.js 9:2-27
+  > ./a [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a
+  > ./a.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a.js
+  > ./a?queryString [9] ./parsing/issue-7778/index.js?queryString 9:2-27
+  ./parsing/issue-7778/a.js?queryString [7] 65 bytes {2} [depth 1] [built] [code generated]
+    [exports: default]
+    from origin ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object
+      import() context element ./a [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a
+      import() context element ./a.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a.js
+    import() ./a?queryString [1] ./parsing/issue-7778/index.js 9:2-27
+    import() ./a?queryString [9] ./parsing/issue-7778/index.js?queryString 9:2-27
+chunk {3} (runtime: main) 3.bundle.js 1.66 KiB <{6}> >{0}< >{1}< >{2}< >{4}< [rendered]
+  > ./ [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./
+  > ./index [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index
+  > ./index.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index.js
+  ./parsing/issue-7778/index.js?queryString [9] 1.66 KiB {3} [depth 2] [optional] [built] [code generated]
+    [used exports unknown]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+    import() context element ./ [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./
+    import() context element ./index [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index
+    import() context element ./index.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index.js
+chunk {4} (runtime: main) 4.bundle.js 69 bytes <{3}> <{6}> [rendered]
+  > ./abc?query?String [1] ./parsing/issue-7778/index.js 12:2-30
+  > ./abc [5] ./parsing/issue-7778/ ?query?String lazy ^\.\/.*bc$ namespace object ./abc
+  > ./abc?query?String [9] ./parsing/issue-7778/index.js?queryString 12:2-30
+  ./parsing/issue-7778/abc.js?query?String [8] 69 bytes {4} [depth 1] [built] [code generated]
+    [exports: default]
+    import() ./abc?query?String [1] ./parsing/issue-7778/index.js 12:2-30
+    import() ./abc?query?String [9] ./parsing/issue-7778/index.js?queryString 12:2-30
+    import() context element ./abc [5] ./parsing/issue-7778/ ?query?String lazy ^\.\/.*bc$ namespace object ./abc
+chunk {5} (runtime: main) 5.bundle.js 69 bytes <{6}> [rendered]
+  > ./abc [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc
+  > ./abc.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc.js
+  ./parsing/issue-7778/abc.js?queryString [10] 69 bytes {5} [depth 2] [optional] [built] [code generated]
+    [exports: default]
+    import() context element ./abc [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc
+    import() context element ./abc.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc.js
+chunk {6} (runtime: main) bundle.js (main) 2.28 KiB (javascript) 4.05 KiB (runtime) >{0}< >{1}< >{2}< >{3}< >{4}< >{5}< [entry] [rendered]
+  > ./parsing/issue-7778/ main
+  runtime modules 4.05 KiB
+    webpack/runtime/create fake namespace object 1.11 KiB {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 174 bytes {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {6} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.79 KiB {6} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 2.28 KiB [built]
+    dependent modules 480 bytes [dependent]
+      ./parsing/issue-7778/ ?query?String lazy ^\.\/.*bc$ namespace object [5] 160 bytes {6} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        from origin ./parsing/issue-7778/index.js
+          import() context lazy [1] ./parsing/issue-7778/index.js 31:2-44
+          import() context lazy [1] ./parsing/issue-7778/index.js 53:2-49
+        from origin ./parsing/issue-7778/index.js?queryString
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 31:2-44
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 53:2-49
+      ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object [4] 160 bytes {6} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        from origin ./parsing/issue-7778/index.js
+          import() context lazy [1] ./parsing/issue-7778/index.js 28:2-41
+          import() context lazy [1] ./parsing/issue-7778/index.js 50:2-46
+        from origin ./parsing/issue-7778/index.js?queryString
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 28:2-41
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 50:2-46
+      ./parsing/issue-7778/ lazy ^\.\/.*bc$ namespace object [3] 160 bytes {6} [depth 1] [dependent] [built] [code generated]
+        [no exports]
+        from origin ./parsing/issue-7778/index.js
+          import() context lazy [1] ./parsing/issue-7778/index.js 25:2-31
+          import() context lazy [1] ./parsing/issue-7778/index.js 47:2-36
+        from origin ./parsing/issue-7778/index.js?queryString
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 25:2-31
+          import() context lazy [9] ./parsing/issue-7778/index.js?queryString 47:2-36
+    ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object [2] 160 bytes {6} [depth 1] [built] [code generated]
+      [no exports]
+      from origin ./parsing/issue-7778/index.js
+        import() context lazy [1] ./parsing/issue-7778/index.js 22:2-29
+        import() context lazy [1] ./parsing/issue-7778/index.js 41:2-29
+        import() context lazy [1] ./parsing/issue-7778/index.js 44:2-34
+      from origin ./parsing/issue-7778/index.js?queryString
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 22:2-29
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 41:2-29
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 44:2-34
+    ./parsing/issue-7778/index.js [1] 1.66 KiB {6} [depth 0] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+      import() context element ./ [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./
+      import() context element ./index [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./index
+      import() context element ./index.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./index.js
+      entry ./parsing/issue-7778/ main
+built modules 4.27 KiB [built]
+  cacheable modules 3.64 KiB
+    optional modules 1.72 KiB [optional]
+      ./parsing/issue-7778/index.js?queryString [9] 1.66 KiB {3} [depth 2] [optional] [built] [code generated]
+        [used exports unknown]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+        import() context element ./ [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./
+        import() context element ./index [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index
+        import() context element ./index.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./index.js
+      ./parsing/issue-7778/abc.js?queryString [10] 69 bytes {5} [depth 2] [optional] [built] [code generated]
+        [exports: default]
+        import() context element ./abc [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc
+        import() context element ./abc.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./abc.js
+    ./parsing/issue-7778/index.js [1] 1.66 KiB {6} [depth 0] [built] [code generated]
+      [used exports unknown]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-16:3
+      import() context element ./ [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./
+      import() context element ./index [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./index
+      import() context element ./index.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./index.js
+      entry ./parsing/issue-7778/ main
+    ./parsing/issue-7778/a.js [6] 65 bytes {1} [depth 1] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object
+        import() context element ./a [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a
+        import() context element ./a.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./a.js
+      import() ./a [1] ./parsing/issue-7778/index.js 3:2-15
+      import() ./a [9] ./parsing/issue-7778/index.js?queryString 3:2-15
+    ./parsing/issue-7778/abc.js [0] 69 bytes {0} [depth 1] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object
+        import() context element ./abc [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc
+        import() context element ./abc.js [2] ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object ./abc.js
+      import() ./abc [1] ./parsing/issue-7778/index.js 6:2-17
+      import() ./abc [9] ./parsing/issue-7778/index.js?queryString 6:2-17
+      import() context element ./abc [3] ./parsing/issue-7778/ lazy ^\.\/.*bc$ namespace object ./abc
+    ./parsing/issue-7778/a.js?queryString [7] 65 bytes {2} [depth 1] [built] [code generated]
+      [exports: default]
+      from origin ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object
+        import() context element ./a [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a
+        import() context element ./a.js [4] ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object ./a.js
+      import() ./a?queryString [1] ./parsing/issue-7778/index.js 9:2-27
+      import() ./a?queryString [9] ./parsing/issue-7778/index.js?queryString 9:2-27
+    ./parsing/issue-7778/abc.js?query?String [8] 69 bytes {4} [depth 1] [built] [code generated]
+      [exports: default]
+      import() ./abc?query?String [1] ./parsing/issue-7778/index.js 12:2-30
+      import() ./abc?query?String [9] ./parsing/issue-7778/index.js?queryString 12:2-30
+      import() context element ./abc [5] ./parsing/issue-7778/ ?query?String lazy ^\.\/.*bc$ namespace object ./abc
+  modules by path ./parsing/issue-7778/ lazy ^/.// 320 bytes
+    ./parsing/issue-7778/ lazy ^\.\/.*$ namespace object [2] 160 bytes {6} [depth 1] [built] [code generated]
+      [no exports]
+      from origin ./parsing/issue-7778/index.js
+        import() context lazy [1] ./parsing/issue-7778/index.js 22:2-29
+        import() context lazy [1] ./parsing/issue-7778/index.js 41:2-29
+        import() context lazy [1] ./parsing/issue-7778/index.js 44:2-34
+      from origin ./parsing/issue-7778/index.js?queryString
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 22:2-29
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 41:2-29
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 44:2-34
+    ./parsing/issue-7778/ lazy ^\.\/.*bc$ namespace object [3] 160 bytes {6} [depth 1] [built] [code generated]
+      [no exports]
+      from origin ./parsing/issue-7778/index.js
+        import() context lazy [1] ./parsing/issue-7778/index.js 25:2-31
+        import() context lazy [1] ./parsing/issue-7778/index.js 47:2-36
+      from origin ./parsing/issue-7778/index.js?queryString
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 25:2-31
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 47:2-36
+  modules by path ./parsing/issue-7778/*./parsing/issue-7778/  320 bytes
+    ./parsing/issue-7778/ ?queryString lazy ^\.\/.*$ namespace object [4] 160 bytes {6} [depth 1] [built] [code generated]
+      [no exports]
+      from origin ./parsing/issue-7778/index.js
+        import() context lazy [1] ./parsing/issue-7778/index.js 28:2-41
+        import() context lazy [1] ./parsing/issue-7778/index.js 50:2-46
+      from origin ./parsing/issue-7778/index.js?queryString
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 28:2-41
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 50:2-46
+    ./parsing/issue-7778/ ?query?String lazy ^\.\/.*bc$ namespace object [5] 160 bytes {6} [depth 1] [built] [code generated]
+      [no exports]
+      from origin ./parsing/issue-7778/index.js
+        import() context lazy [1] ./parsing/issue-7778/index.js 31:2-44
+        import() context lazy [1] ./parsing/issue-7778/index.js 53:2-49
+      from origin ./parsing/issue-7778/index.js?queryString
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 31:2-44
+        import() context lazy [9] ./parsing/issue-7778/index.js?queryString 53:2-49
+runtime modules 4.05 KiB
+  webpack/runtime/create fake namespace object 1.11 KiB {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 174 bytes {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.79 KiB {6} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 34.672233 ms
+<t> finish make hook: 0.01043 ms
+<t> finish compilation: 0.165659 ms
+<t> seal compilation: 5.623466 ms
+<t> afterCompile hook: 0.007694 ms
+<t> emitAssets: 2.752044 ms
+<t> emitRecords: 0.001949 ms
+<t> done hook: 0.011132 ms
+<t> beginIdle: 0.005041 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003314 ms
+<t> finish modules: 0.124697 ms
+<t> report dependency errors and warnings: 0.027697 ms
+<t> optimize dependencies: 0.268144 ms
+<t> create chunks: 0.641972 ms
+<t> compute affected modules with chunk graph: 0.001931 ms
+<t> optimize: 0.954934 ms
+    11 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.403281 ms
+    100% code generated (11 generated, 0 from cache)
+<t> code generation: 0.675366 ms
+<t> runtime requirements.modules: 0.047656 ms
+<t> runtime requirements.chunks: 0.057364 ms
+<t> runtime requirements.entries: 0.365371 ms
+<t> runtime requirements: 0.495197 ms
+<t> hashing: initialize hash: 0.002363 ms
+<t> hashing: sort chunks: 0.025277 ms
+<t> hashing: hash runtime modules: 0.480283 ms
+<t> hashing: hash chunks: 0.348441 ms
+<t> hashing: hash digest: 0.010908 ms
+<t> hashing: process full hash modules: 0.000963 ms
+<t> hashing: 0.904979 ms
+    100% code generated (7 generated, 0 from cache)
+<t> record hash: 0.006576 ms
+<t> module assets: 0.012748 ms
+<t> create chunk assets: 0.940093 ms
+<t> process assets: 0.057413 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.026931 ms
+<t> figure out provided exports: 0.043023 ms
+    82% of exports of modules have been determined (2 no declared exports, 5 not cached, 4 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012709 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.016857 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007663 ms
+<t> trace exports usage in graph: 0.213658 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.018976 ms
+<t> visitModules: visiting: 0.167394 ms
+<t> visitModules: calculating available modules: 0.011657 ms
+<t> visitModules: merging available modules: 0.010182 ms
+<t> visitModules: check modules for revisit: 0.003202 ms
+<t> visitModules: prepare: 0.009032 ms
+<t> visitModules: visiting: 0.116706 ms
+<t> visitModules: calculating available modules: 0.013554 ms
+<t> visitModules: merging available modules: 0.072334 ms
+<t> visitModules: check modules for revisit: 0.001514 ms
+<t> visitModules: visiting: 0.022807 ms
+    84 queue items processed (58 blocks)
+    32 chunk groups connected
+    24 chunk groups processed for merging (32 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    24 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.45726 ms
+<t> connectChunkGroups: 0.052551 ms
+<t> cleanup: 0.021722 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019171 ms
+<t> modules: 0.116287 ms
+<t> queue: 0.001952 ms
+<t> maxSize: 0.013913 ms
+
+LOG from webpack.FileSystemInfo
+    11 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:38: webpack 5.64.4 compiled successfully in 44 ms (6e0dad87072967e12ca1)

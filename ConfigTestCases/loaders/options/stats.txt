@@ -1,0 +1,188 @@
+PublicPath: (none)
+asset bundle0.js 5.38 KiB {0} [emitted] (name: main)
+Entrypoint main 5.38 KiB = bundle0.js
+chunk {0} (runtime: main) bundle0.js (main) 1.72 KiB [entry] [rendered]
+  > ./index.js main
+  modules with errors 78 bytes [errors]
+    ./error1.js [10] 39 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+      [used exports unknown]
+      cjs require ./error1 [0] ./index.js 49:1-20
+    ./error2.js [11] 39 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+      [used exports unknown]
+      cjs require ./error2 [0] ./index.js 50:1-20
+  ./a.js [1] 141 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./a [0] ./index.js 2:8-22
+    cjs self exports reference [1] ./a.js 1:0-14
+  ./b.js [2] 141 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./b [0] ./index.js 10:8-22
+    cjs self exports reference [2] ./b.js 1:0-14
+  ./c.js [3] 141 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./c [0] ./index.js 18:8-22
+    cjs self exports reference [3] ./c.js 1:0-14
+  ./d.js [4] 32 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./d [0] ./index.js 26:8-22
+    cjs self exports reference [4] ./d.js 1:0-14
+  ./e.js [5] 1 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    cjs require ./e [0] ./index.js 29:8-22
+  ./f.js [6] 81 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./f [0] ./index.js 30:8-22
+    cjs self exports reference [6] ./f.js 1:0-14
+  ./g.js [7] 26 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./g [0] ./index.js 36:8-22
+    cjs self exports reference [7] ./g.js 1:0-14
+  ./h.js [8] 30 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./h [0] ./index.js 39:8-22
+    cjs self exports reference [8] ./h.js 1:0-14
+  ./i.js [9] 30 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    cjs require ./i [0] ./index.js 42:8-22
+    cjs self exports reference [9] ./i.js 1:0-14
+  ./index.js [0] 1.04 KiB {0} [depth 0] [built] [code generated]
+    [used exports unknown]
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 27.939286 ms
+<t> finish make hook: 0.018488 ms
+<t> finish compilation: 0.104816 ms
+<t> seal compilation: 1.916841 ms
+<t> afterCompile hook: 0.00629 ms
+<t> emitAssets: 0.883047 ms
+<t> emitRecords: 0.001559 ms
+<t> done hook: 0.008066 ms
+<t> beginIdle: 0.004014 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00306 ms
+<t> finish modules: 0.067828 ms
+<t> report dependency errors and warnings: 0.023524 ms
+<t> optimize dependencies: 0.022033 ms
+<t> create chunks: 0.134086 ms
+<t> compute affected modules with chunk graph: 0.001037 ms
+<t> optimize: 0.446734 ms
+    12 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.184521 ms
+    100% code generated (12 generated, 0 from cache)
+<t> code generation: 0.182038 ms
+<t> runtime requirements.modules: 0.028003 ms
+<t> runtime requirements.chunks: 0.029576 ms
+<t> runtime requirements.entries: 0.043802 ms
+<t> runtime requirements: 0.11467 ms
+<t> hashing: initialize hash: 0.001707 ms
+<t> hashing: hash errors: 0.003027 ms
+<t> hashing: sort chunks: 0.011788 ms
+<t> hashing: hash runtime modules: 0.005502 ms
+<t> hashing: hash chunks: 0.154564 ms
+<t> hashing: hash digest: 0.009583 ms
+<t> hashing: process full hash modules: 0.001317 ms
+<t> hashing: 0.210073 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.003939 ms
+<t> module assets: 0.007703 ms
+<t> create chunk assets: 0.436814 ms
+<t> process assets: 0.022655 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.018716 ms
+<t> figure out provided exports: 0.001602 ms
+    0% of exports of modules have been determined (12 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002443 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003488 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.014771 ms
+<t> visitModules: visiting: 0.045485 ms
+    24 queue items processed (12 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.070767 ms
+<t> connectChunkGroups: 0.001568 ms
+<t> cleanup: 0.001349 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012809 ms
+<t> modules: 0.068053 ms
+<t> queue: 0.001579 ms
+<t> maxSize: 0.005098 ms
+
+LOG from webpack.FileSystemInfo
+    10 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 10 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./error1.js
+Module build failed (from ./loader-1.js):
+ValidationError: Invalid options object. Loader has been initialized using an options object that does not match the API schema.
+ - options.arg6.bar.baz should be a string.
+    at validate (/Users/yoh/Projects/repos/webpack/node_modules/schema-utils/dist/validate.js:105:11)
+    at Object.getOptions (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:578:19)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/configCases/loaders/options/loader-1.js:5:23)
+ModuleBuildError: Module build failed (from ./loader-1.js):
+ValidationError: Invalid options object. Loader has been initialized using an options object that does not match the API schema.
+ - options.arg6.bar.baz should be a string.
+    at validate (/Users/yoh/Projects/repos/webpack/node_modules/schema-utils/dist/validate.js:105:11)
+    at Object.getOptions (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:578:19)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/configCases/loaders/options/loader-1.js:5:23)
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:751:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:399:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:251:18
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:156:3)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at Array.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27:15)
+ @ ./index.js 49:1-20
+
+ERROR in ./error2.js
+Module build failed (from ./loader-2.js):
+ValidationError: Invalid configuration object. Custom Loader Name has been initialized using a configuration object that does not match the API schema.
+ - configuration.arg should be true.
+    at validate (/Users/yoh/Projects/repos/webpack/node_modules/schema-utils/dist/validate.js:105:11)
+    at Object.getOptions (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:578:19)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/configCases/loaders/options/loader-2.js:5:23)
+ModuleBuildError: Module build failed (from ./loader-2.js):
+ValidationError: Invalid configuration object. Custom Loader Name has been initialized using a configuration object that does not match the API schema.
+ - configuration.arg should be true.
+    at validate (/Users/yoh/Projects/repos/webpack/node_modules/schema-utils/dist/validate.js:105:11)
+    at Object.getOptions (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:578:19)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/configCases/loaders/options/loader-2.js:5:23)
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:751:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:399:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:251:18
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:156:3)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at Array.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27:15)
+ @ ./index.js 50:1-20
+
+2021-12-05 17:44:45: webpack 5.64.4 compiled with 2 errors in 33 ms (540a63682ab8a9baad2c)

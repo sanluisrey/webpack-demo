@@ -1,0 +1,126 @@
+PublicPath: (none)
+asset bundle.js 3.28 KiB {0} [emitted] (name: main)
+Entrypoint main 3.28 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 169 bytes (javascript) 426 bytes (runtime) [entry] [rendered]
+  > ./parsing/harmony-injecting-order/ main
+  runtime modules 426 bytes
+    webpack/runtime/amd options 30 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 169 bytes
+    ./parsing/harmony-injecting-order/file.js [1] 61 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: f]
+      [all exports used]
+      cjs full require ./file [0] ./parsing/harmony-injecting-order/index.js 2:8-27
+    ./parsing/harmony-injecting-order/index.js [0] 108 bytes {0} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+      entry ./parsing/harmony-injecting-order/ main
+runtime modules 426 bytes
+  webpack/runtime/amd options 30 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+cacheable modules 169 bytes
+  ./parsing/harmony-injecting-order/index.js [0] 108 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    entry ./parsing/harmony-injecting-order/ main
+  ./parsing/harmony-injecting-order/file.js [1] 61 bytes {0} [depth 1] [built] [code generated]
+    [exports: f]
+    [all exports used]
+    cjs full require ./file [0] ./parsing/harmony-injecting-order/index.js 2:8-27
+  
+
+LOG from webpack.Compiler
+<t> make hook: 8.873572 ms
+<t> finish make hook: 0.009169 ms
+<t> finish compilation: 0.10375 ms
+<t> seal compilation: 1.841079 ms
+<t> afterCompile hook: 0.006672 ms
+<t> emitAssets: 0.782498 ms
+<t> emitRecords: 0.001583 ms
+<t> done hook: 0.00814 ms
+<t> beginIdle: 0.003684 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004132 ms
+<t> finish modules: 0.082108 ms
+<t> report dependency errors and warnings: 0.008085 ms
+<t> optimize dependencies: 0.095124 ms
+<t> create chunks: 0.098053 ms
+<t> compute affected modules with chunk graph: 0.001715 ms
+<t> optimize: 0.319461 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.083957 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.108215 ms
+<t> runtime requirements.modules: 0.084222 ms
+<t> runtime requirements.chunks: 0.034356 ms
+<t> runtime requirements.entries: 0.233006 ms
+<t> runtime requirements: 0.368358 ms
+<t> hashing: initialize hash: 0.001463 ms
+<t> hashing: sort chunks: 0.012357 ms
+<t> hashing: hash runtime modules: 0.137198 ms
+<t> hashing: hash chunks: 0.149492 ms
+<t> hashing: hash digest: 0.007583 ms
+<t> hashing: process full hash modules: 0.000893 ms
+<t> hashing: 0.332347 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.005233 ms
+<t> module assets: 0.007617 ms
+<t> create chunk assets: 0.289574 ms
+<t> process assets: 0.024118 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.016806 ms
+<t> figure out provided exports: 0.019909 ms
+    50% of exports of modules have been determined (1 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.008355 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.006905 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004069 ms
+<t> trace exports usage in graph: 0.057506 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005531 ms
+<t> visitModules: visiting: 0.029385 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.047726 ms
+<t> connectChunkGroups: 0.001171 ms
+<t> cleanup: 0.001323 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012995 ms
+<t> modules: 0.04728 ms
+<t> queue: 0.001781 ms
+<t> maxSize: 0.004313 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:31: webpack 5.64.4 compiled successfully in 13 ms (30e1ca83ee125097bb29)

@@ -1,0 +1,245 @@
+PublicPath: auto
+asset main.js 13.7 KiB {179} [emitted] (name: main)
+asset chunk.js 965 bytes {284} [emitted] (name: chunk)
+asset 285.js 143 bytes {285} [emitted]
+asset 754.js 143 bytes {754} [emitted]
+asset yep.js 143 bytes {584} [emitted] (name: yep)
+asset goingToCompileChunkName-b.js 142 bytes {42} [emitted] (name: goingToCompileChunkName-b)
+Entrypoint main 13.7 KiB = main.js
+Chunk Group chunk 965 bytes = chunk.js
+Chunk Group goingToCompileChunkName-b 142 bytes = goingToCompileChunkName-b.js
+Chunk Group yep 143 bytes = yep.js
+chunk {42} (runtime: main) goingToCompileChunkName-b.js (goingToCompileChunkName-b) 27 bytes <{284}> [rendered]
+  > ./chunk-b [52] ./chunk.js 3:4-95
+  ./chunk-b.js [531] 27 bytes {42} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-27
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [531] ./chunk-b.js 1:0-14
+    import() ./chunk-b [52] ./chunk.js 3:4-95
+chunk {179} (runtime: main) main.js (main) 50 bytes (javascript) 8.61 KiB (runtime) >{284}< [entry] [rendered]
+  > ./index main
+  ./index.js [10] 50 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-50
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+  webpack/runtime/chunk prefetch function 163 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/chunk prefetch trigger 248 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/create fake namespace object 1.11 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 242 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3.46 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {284} (runtime: main) chunk.js (chunk) 401 bytes <{179}> >{42}< >{285}< >{584}< >{754}< (prefetch: {42}) [rendered]
+  > ./chunk [10] ./index.js 1:0-49
+  ./chunk.js [52] 401 bytes {284} [depth 1] [built] [code generated] [3 warnings]
+    [exports: default]
+    import() ./chunk [10] ./index.js 1:0-49
+chunk {285} (runtime: main) 285.js 27 bytes <{284}> [rendered]
+  > ./chunk-a [52] ./chunk.js 2:4-97
+  ./chunk-a.js [285] 27 bytes {285} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-27
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [285] ./chunk-a.js 1:0-14
+    import() ./chunk-a [52] ./chunk.js 2:4-97
+chunk {584} (runtime: main) yep.js (yep) 27 bytes <{284}> [rendered]
+  > ./chunk-d [52] ./chunk.js 5:4-81
+  ./chunk-d.js [712] 27 bytes {584} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-27
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [712] ./chunk-d.js 1:0-14
+    import() ./chunk-d [52] ./chunk.js 5:4-81
+chunk {754} (runtime: main) 754.js 27 bytes <{284}> [rendered]
+  > ./chunk-c [52] ./chunk.js 4:4-90
+  ./chunk-c.js [754] 27 bytes {754} [depth 2] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-27
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [754] ./chunk-c.js 1:0-14
+    import() ./chunk-c [52] ./chunk.js 4:4-90
+  
+
+LOG from webpack.Compiler
+<t> make hook: 25.504454 ms
+<t> finish make hook: 0.019822 ms
+<t> finish compilation: 0.190446 ms
+<t> seal compilation: 6.734415 ms
+<t> afterCompile hook: 0.010337 ms
+<t> emitAssets: 1.449617 ms
+<t> emitRecords: 0.002132 ms
+<t> done hook: 0.040601 ms
+<t> beginIdle: 0.008158 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003347 ms
+<t> finish modules: 0.136963 ms
+<t> report dependency errors and warnings: 0.026104 ms
+<t> optimize dependencies: 0.218378 ms
+<t> create chunks: 0.599496 ms
+<t> compute affected modules with chunk graph: 0.0028 ms
+<t> optimize: 0.960881 ms
+    6 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.263377 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.291303 ms
+<t> runtime requirements.modules: 0.068592 ms
+<t> runtime requirements.chunks: 0.08212 ms
+<t> runtime requirements.entries: 0.924229 ms
+<t> runtime requirements: 1.101729 ms
+<t> hashing: initialize hash: 0.005644 ms
+<t> hashing: hash warnings: 0.007742 ms
+<t> hashing: sort chunks: 0.023631 ms
+<t> hashing: hash runtime modules: 1.158593 ms
+<t> hashing: hash chunks: 0.418492 ms
+<t> hashing: hash digest: 0.021552 ms
+<t> hashing: process full hash modules: 0.0014 ms
+<t> hashing: 1.701251 ms
+    100% code generated (12 generated, 0 from cache)
+<t> record hash: 0.020433 ms
+<t> module assets: 0.020809 ms
+<t> create chunk assets: 0.735715 ms
+<t> process assets: 0.306038 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.024421 ms
+<t> figure out provided exports: 0.034693 ms
+    17% of exports of modules have been determined (5 no declared exports, 1 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.010322 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.036993 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.009315 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007899 ms
+<t> trace exports usage in graph: 0.15404 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.035379 ms
+<t> visitModules: visiting: 0.071135 ms
+<t> visitModules: calculating available modules: 0.008156 ms
+<t> visitModules: merging available modules: 0.004538 ms
+<t> visitModules: check modules for revisit: 0.006691 ms
+<t> visitModules: prepare: 0.009743 ms
+<t> visitModules: visiting: 0.068856 ms
+<t> visitModules: calculating available modules: 0.006057 ms
+<t> visitModules: merging available modules: 0.00342 ms
+<t> visitModules: check modules for revisit: 0.223867 ms
+<t> visitModules: prepare: 0.017667 ms
+<t> visitModules: visiting: 0.064212 ms
+    17 queue items processed (11 blocks)
+    5 chunk groups connected
+    5 chunk groups processed for merging (5 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    5 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.495005 ms
+<t> connectChunkGroups: 0.019109 ms
+<t> cleanup: 0.0026 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021539 ms
+<t> modules: 0.150397 ms
+<t> queue: 0.002332 ms
+<t> maxSize: 0.016849 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.02043 ms
+<t> sort relevant modules: 0.001013 ms
+<t> find modules to concatenate: 0.02426 ms
+<t> sort concat configurations: 0.00079 ms
+<t> create concatenated modules: 0.004299 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./chunk.js 2:11-84
+Compilation error while processing magic comment(-s): /* webpackPrefetch: true, webpackChunkName: notGoingToCompileChunkName */: notGoingToCompileChunkName is not defined
+CommentCompilationWarning: Compilation error while processing magic comment(-s): /* webpackPrefetch: true, webpackChunkName: notGoingToCompileChunkName */: notGoingToCompileChunkName is not defined
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/ImportParserPlugin.js:46:7
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at JavascriptParser.walkImportExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2675:38)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2268:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1627:9
+    at JavascriptParser.inBlockScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3074:3)
+    at JavascriptParser.walkBlockStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1622:8)
+ @ ./index.js 1:0-49
+
+WARNING in ./chunk.js 4:11-77
+Compilation error while processing magic comment(-s): /* webpack Prefetch: 0, webpackChunkName: "notGoingToCompile-c" */: Unexpected identifier
+CommentCompilationWarning: Compilation error while processing magic comment(-s): /* webpack Prefetch: 0, webpackChunkName: "notGoingToCompile-c" */: Unexpected identifier
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/ImportParserPlugin.js:46:7
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at JavascriptParser.walkImportExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2675:38)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2268:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1627:9
+    at JavascriptParser.inBlockScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3074:3)
+    at JavascriptParser.walkBlockStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1622:8)
+ @ ./index.js 1:0-49
+
+WARNING in ./chunk.js 5:11-38
+Compilation error while processing magic comment(-s): /* webpackPrefetch: nope */: nope is not defined
+CommentCompilationWarning: Compilation error while processing magic comment(-s): /* webpackPrefetch: nope */: nope is not defined
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/ImportParserPlugin.js:46:7
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at JavascriptParser.walkImportExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2675:38)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2268:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1627:9
+    at JavascriptParser.inBlockScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3074:3)
+    at JavascriptParser.walkBlockStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1622:8)
+ @ ./index.js 1:0-49
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled with 3 warnings in 36 ms (4344dd577c099e516acc)

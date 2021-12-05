@@ -1,0 +1,191 @@
+PublicPath: (none)
+asset bundle0.js 6.31 KiB {179} [emitted] (name: main)
+asset 459.bundle0.js 1.31 KiB {459} [emitted] (name: c)
+asset 128.bundle0.js 980 bytes {128} [emitted] (name: b)
+asset 786.bundle0.js 886 bytes {786} [emitted] (name: a)
+Entrypoint main 6.31 KiB = bundle0.js
+Chunk Group a 886 bytes = 786.bundle0.js
+Chunk Group b 980 bytes = 128.bundle0.js
+Chunk Group c 1.31 KiB = 459.bundle0.js
+chunk {128} (runtime: main) 128.bundle0.js (b) 139 bytes <{179}> [rendered]
+  > ./bb [10] ./index.js 4:2-44
+  ./b.js [996] 94 bytes {128} [depth 2] [dependent] [built] [code generated]
+    [exports: other, something]
+    [all exports used]
+    ModuleConcatenation bailout: Reexports in this module do not have a static target (other: used in main, something: used in main)
+    from origin ./b.js
+      [inactive] harmony side effect evaluation ./b [996] ./b.js 2:0-39
+      harmony export imported specifier ./b [996] ./b.js 4:0-7:1
+      harmony export imported specifier ./b [996] ./b.js 4:0-7:1
+    from origin ./bb.js
+      [inactive] harmony side effect evaluation ./b [593] ./bb.js 1:0-30
+      harmony import specifier ./b [593] ./bb.js 3:0-9
+  ./bb.js [593] 45 bytes {128} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-12
+    ModuleConcatenation bailout: Cannot concat with ./b.js: Reexports in this module do not have a static target (other: used in main, something: used in main)
+    import() ./bb [10] ./index.js 4:2-44
+chunk {179} (runtime: main) bundle0.js (main) 228 bytes (javascript) 2.94 KiB (runtime) >{128}< >{459}< >{786}< [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 228 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-7:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  webpack/runtime/define property getters 308 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 175 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.8 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {459} (runtime: main) 459.bundle0.js (c) 114 bytes <{179}> [rendered]
+  > ./cc [10] ./index.js 5:2-44
+  ./c1.js [606] 34 bytes {459} [depth 2] [dependent] [built] [code generated]
+    [exports: something]
+    [all exports used]
+    ModuleConcatenation bailout: Reexports in this module do not have a static target (something: used in main)
+    from origin ./c2.js
+      [inactive] harmony side effect evaluation ./c1 [334] ./c2.js 1:0-33
+      harmony export imported specifier ./c1 [334] ./c2.js 1:0-33
+    from origin ./cc.js
+      [inactive] harmony side effect evaluation ./c1 [647] ./cc.js 1:0-31
+      harmony import specifier ./c1 [647] ./cc.js 3:0-9
+  ./c2.js [334] 34 bytes {459} [depth 3] [dependent] [built] [code generated]
+    [exports: something]
+    [all exports used]
+    ModuleConcatenation bailout: Reexports in this module do not have a static target (something: used in main)
+    [inactive] harmony side effect evaluation ./c2 [606] ./c1.js 1:0-33
+    harmony export imported specifier ./c2 [606] ./c1.js 1:0-33
+  ./cc.js [647] 46 bytes {459} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-12
+    ModuleConcatenation bailout: Cannot concat with ./c1.js: Reexports in this module do not have a static target (something: used in main)
+    import() ./cc [10] ./index.js 5:2-44
+chunk {786} (runtime: main) 786.bundle0.js (a) 80 bytes <{179}> [rendered]
+  > ./aa [10] ./index.js 3:2-44
+  ./a.js [847] 33 bytes {786} [depth 2] [dependent] [built] [code generated]
+    [exports: something]
+    [all exports used]
+    ModuleConcatenation bailout: Reexports in this module do not have a static target (something: used in main)
+    from origin ./a.js
+      [inactive] harmony side effect evaluation ./a [847] ./a.js 1:0-32
+      harmony export imported specifier ./a [847] ./a.js 1:0-32
+    from origin ./aa.js
+      [inactive] harmony side effect evaluation ./a [170] ./aa.js 1:0-32
+      harmony import specifier ./a [170] ./aa.js 3:0-9
+  ./aa.js [170] 47 bytes {786} [depth 1] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-12
+    ModuleConcatenation bailout: Cannot concat with ./a.js: Reexports in this module do not have a static target (something: used in main)
+    import() ./aa [10] ./index.js 3:2-44
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.219411 ms
+<t> finish make hook: 0.025672 ms
+<t> finish compilation: 0.456456 ms
+<t> seal compilation: 8.558481 ms
+<t> afterCompile hook: 0.01077 ms
+<t> emitAssets: 1.41643 ms
+<t> emitRecords: 0.001702 ms
+<t> done hook: 0.00901 ms
+<t> beginIdle: 0.004467 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004937 ms
+<t> finish modules: 0.388116 ms
+<t> report dependency errors and warnings: 0.052027 ms
+<t> optimize dependencies: 0.833222 ms
+<t> create chunks: 0.75837 ms
+<t> compute affected modules with chunk graph: 0.003079 ms
+<t> optimize: 1.141991 ms
+    8 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.397729 ms
+    100% code generated (8 generated, 0 from cache)
+<t> code generation: 1.046958 ms
+<t> runtime requirements.modules: 0.074609 ms
+<t> runtime requirements.chunks: 0.074368 ms
+<t> runtime requirements.entries: 0.444305 ms
+<t> runtime requirements: 0.617428 ms
+<t> hashing: initialize hash: 0.004004 ms
+<t> hashing: sort chunks: 0.018727 ms
+<t> hashing: hash runtime modules: 0.589251 ms
+<t> hashing: hash chunks: 1.461963 ms
+<t> hashing: hash digest: 0.022427 ms
+<t> hashing: process full hash modules: 0.001703 ms
+<t> hashing: 2.146768 ms
+    100% code generated (6 generated, 0 from cache)
+<t> record hash: 0.009886 ms
+<t> module assets: 0.020597 ms
+<t> create chunk assets: 0.852321 ms
+<t> process assets: 0.317808 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.035479 ms
+<t> figure out provided exports: 0.258618 ms
+    88% of exports of modules have been determined (1 no declared exports, 7 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 3 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017303 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.036701 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.451238 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.01089 ms
+<t> trace exports usage in graph: 0.320078 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.008634 ms
+<t> visitModules: visiting: 0.078535 ms
+<t> visitModules: calculating available modules: 0.010865 ms
+<t> visitModules: merging available modules: 0.006556 ms
+<t> visitModules: check modules for revisit: 0.003537 ms
+<t> visitModules: prepare: 0.08887 ms
+<t> visitModules: visiting: 0.158875 ms
+    19 queue items processed (11 blocks)
+    3 chunk groups connected
+    3 chunk groups processed for merging (3 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.297925 ms
+<t> connectChunkGroups: 0.15098 ms
+<t> cleanup: 0.00281 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.021448 ms
+<t> modules: 0.12611 ms
+<t> queue: 0.002609 ms
+<t> maxSize: 0.012962 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.15796 ms
+<t> sort relevant modules: 0.003214 ms
+<t> find modules to concatenate: 0.067332 ms
+<t> sort concat configurations: 0.000714 ms
+<t> create concatenated modules: 0.003493 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    8 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 8 timestamps 8 hashes 8 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/8) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:28: webpack 5.64.4 compiled successfully in 27 ms (a0663b75ea8e83bb336f)

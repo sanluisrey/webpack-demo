@@ -1,0 +1,155 @@
+PublicPath: auto
+asset main.js 2.74 KiB {179}, {216} [emitted] (name: main)
+asset vendors.js 263 bytes {216} [emitted] (name: vendors) (id hint: vendors)
+Entrypoint vendors 263 bytes = vendors.js
+Entrypoint main 2.74 KiB = main.js
+chunk {179} (runtime: main) main.js (main) 128 bytes (javascript) 396 bytes (runtime) [entry] [rendered]
+  > ./index main
+  cacheable modules 128 bytes
+    ./index.js [10] 103 bytes {179} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./module.js: Module is an entry point
+      entry ./index main
+    ./module.js [662] 25 bytes {179} {216} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./module [10] ./index.js 1:0-25
+      harmony import specifier ./module [10] ./index.js 4:27-28
+      entry ./module vendors
+  runtime modules 396 bytes
+    webpack/runtime/define property getters 308 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {216} (runtime: vendors) vendors.js (vendors) (id hint: vendors) 25 bytes [entry] [rendered] split chunk (cache group: vendors) (name: vendors)
+  > ./module vendors
+  ./module.js [662] 25 bytes {179} {216} [depth 1] [built] [code generated]
+    [exports: default]
+    [no exports used]
+    [inactive] harmony side effect evaluation ./module [10] ./index.js 1:0-25
+    harmony import specifier ./module [10] ./index.js 4:27-28
+    entry ./module vendors
+  
+
+LOG from webpack.Compiler
+<t> make hook: 7.930299 ms
+<t> finish make hook: 0.01278 ms
+<t> finish compilation: 0.264286 ms
+<t> seal compilation: 10.515368 ms
+<t> afterCompile hook: 0.018806 ms
+<t> emitAssets: 1.324903 ms
+<t> emitRecords: 0.002547 ms
+<t> done hook: 0.015184 ms
+<t> beginIdle: 0.007987 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004705 ms
+<t> finish modules: 0.212356 ms
+<t> report dependency errors and warnings: 0.034195 ms
+<t> optimize dependencies: 0.175301 ms
+<t> create chunks: 0.192134 ms
+<t> compute affected modules with chunk graph: 0.001203 ms
+<t> optimize: 0.786969 ms
+    3 modules hashed, 0 from cache (1.5 variants per module in average)
+<t> module hashing: 0.120434 ms
+    100% code generated (3 generated, 0 from cache)
+<t> code generation: 0.247403 ms
+<t> runtime requirements.modules: 0.103049 ms
+<t> runtime requirements.chunks: 0.085144 ms
+<t> runtime requirements.entries: 0.289316 ms
+<t> runtime requirements: 6.863091 ms
+<t> hashing: initialize hash: 0.012285 ms
+<t> hashing: hash errors: 0.008001 ms
+<t> hashing: sort chunks: 0.038941 ms
+<t> hashing: hash runtime modules: 0.19367 ms
+<t> hashing: hash chunks: 0.456595 ms
+<t> hashing: hash digest: 0.025028 ms
+<t> hashing: process full hash modules: 0.001894 ms
+<t> hashing: 0.791773 ms
+    100% code generated (2 generated, 0 from cache)
+<t> record hash: 0.010911 ms
+<t> module assets: 0.044337 ms
+<t> create chunk assets: 0.759709 ms
+<t> process assets: 0.221183 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021358 ms
+<t> figure out provided exports: 0.096732 ms
+    100% of exports of modules have been determined (0 no declared exports, 2 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.018332 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.00975 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.01496 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.00296 ms
+<t> trace exports usage in graph: 0.097854 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.011375 ms
+<t> visitModules: visiting: 0.045178 ms
+    6 queue items processed (3 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.105052 ms
+<t> connectChunkGroups: 0.00247 ms
+<t> cleanup: 0.001646 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015911 ms
+<t> modules: 0.212699 ms
+<t> queue: 0.021023 ms
+<t> maxSize: 0.006079 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.020314 ms
+<t> sort relevant modules: 0.00313 ms
+<t> find modules to concatenate: 0.05945 ms
+<t> sort concat configurations: 0.000747 ms
+<t> create concatenated modules: 0.002751 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 2 hashes 2 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in SplitChunksPlugin
+Cache group "vendors" conflicts with existing chunk.
+Both have the same name "vendors" and existing chunk is not a parent of the selected modules.
+Use a different name for the cache group or make sure that the existing chunk is a parent (e. g. via dependOn).
+HINT: You can omit "name" to automatically create a name.
+BREAKING CHANGE: webpack < 5 used to allow to use an entrypoint as splitChunk. This is no longer allowed when the entrypoint is not a parent of the selected modules.
+Remove this entrypoint and add modules to cache group's 'test' instead. If you need modules to be evaluated on startup, add them to the existing entrypoints (make them arrays). See migration guide of more info.
+Error: SplitChunksPlugin
+Cache group "vendors" conflicts with existing chunk.
+Both have the same name "vendors" and existing chunk is not a parent of the selected modules.
+Use a different name for the cache group or make sure that the existing chunk is a parent (e. g. via dependOn).
+HINT: You can omit "name" to automatically create a name.
+BREAKING CHANGE: webpack < 5 used to allow to use an entrypoint as splitChunk. This is no longer allowed when the entrypoint is not a parent of the selected modules.
+Remove this entrypoint and add modules to cache group's 'test' instead. If you need modules to be evaluated on startup, add them to the existing entrypoints (make them arrays). See migration guide of more info.
+    at addModuleToChunksInfoMap (/Users/yoh/Projects/repos/webpack/lib/optimize/SplitChunksPlugin.js:1114:12)
+    at /Users/yoh/Projects/repos/webpack/lib/optimize/SplitChunksPlugin.js:1233:9
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:25:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compilation.seal (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:2949:36)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1120:20
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2752:4
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+
+2021-12-05 17:44:59: webpack 5.64.4 compiled with 1 error in 21 ms (d83c3ff0f0bee91f5aaa)

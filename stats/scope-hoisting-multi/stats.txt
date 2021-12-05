@@ -1,0 +1,541 @@
+PublicPath: auto
+asset a-first.js 14 KiB {949} [emitted] (name: first)
+asset a-second.js 13.5 KiB {726} [emitted] (name: second)
+asset a-lazy_first.js 1.43 KiB {708} [emitted] (name: lazy_first)
+asset a-lazy_second.js 1.43 KiB {199} [emitted] (name: lazy_second)
+asset a-lazy_shared.js 967 bytes {887} [emitted] (name: lazy_shared)
+asset a-vendor.js 419 bytes {736} [emitted] (name: vendor) (id hint: vendor)
+Entrypoint first 14.4 KiB = a-vendor.js 419 bytes a-first.js 14 KiB
+Entrypoint second 13.9 KiB = a-vendor.js 419 bytes a-second.js 13.5 KiB
+Chunk Group lazy_first 1.43 KiB = a-lazy_first.js
+Chunk Group lazy_shared 967 bytes = a-lazy_shared.js
+Chunk Group lazy_second 1.43 KiB = a-lazy_second.js
+chunk {199} (runtime: second) a-lazy_second.js (lazy_second) 141 bytes <{726}> <{736}> [rendered]
+  > ./lazy_second [625] ./second.js 4:0-61
+  ./common_lazy.js [273] 25 bytes {199} {708} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js
+      [inactive] harmony side effect evaluation ./common_lazy [857] ./lazy_first.js 1:0-30
+      harmony import specifier ./common_lazy [857] ./lazy_first.js 3:15-16
+    from origin ./lazy_second.js
+      [inactive] harmony side effect evaluation ./common_lazy [1] ./lazy_second.js 1:0-30
+      harmony import specifier ./common_lazy [1] ./lazy_second.js 3:15-16
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [857] ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [857] ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [1] ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [1] ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_second.js [1] 91 bytes {199} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-21
+    import() ./lazy_second [625] ./second.js 4:0-61
+chunk {708} (runtime: first) a-lazy_first.js (lazy_first) 141 bytes <{736}> <{949}> [rendered]
+  > ./lazy_first [330] ./first.js 5:0-59
+  ./common_lazy.js [273] 25 bytes {199} {708} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js
+      [inactive] harmony side effect evaluation ./common_lazy [857] ./lazy_first.js 1:0-30
+      harmony import specifier ./common_lazy [857] ./lazy_first.js 3:15-16
+    from origin ./lazy_second.js
+      [inactive] harmony side effect evaluation ./common_lazy [1] ./lazy_second.js 1:0-30
+      harmony import specifier ./common_lazy [1] ./lazy_second.js 3:15-16
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [857] ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [857] ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [1] ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [1] ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_first.js [857] 91 bytes {708} [depth 1] [built] [code generated]
+    [exports: default]
+    Statement (ExportDefaultDeclaration) with side effects in source code at 3:0-21
+    import() ./lazy_first [330] ./first.js 5:0-59
+chunk {726} (runtime: second) a-second.js (second) 227 bytes (javascript) 7.56 KiB (runtime) ={736}= >{199}< >{887}< [entry] [rendered]
+  > ./second second
+  runtime modules 7.56 KiB
+    webpack/runtime/chunk loaded 886 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 212 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3.09 KiB {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {726} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 227 bytes
+    ./common2.js [132] 25 bytes {726} {949} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] from origin ./common.js
+        [inactive] harmony side effect evaluation ./common2 ./common.js 1:0-36
+        [inactive] harmony export imported specifier ./common2 ./common.js 1:0-36
+      harmony import specifier ./common [330] ./first.js 8:19-20 (skipped side-effect-free modules)
+      harmony import specifier ./common [625] ./second.js 7:19-20 (skipped side-effect-free modules)
+    ./second.js [625] 202 bytes {726} [depth 0] [built] [code generated]
+      [exports: default]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 4:0-62
+      entry ./second second
+chunk {736} (runtime: first, second) a-vendor.js (vendor) (id hint: vendor) 25 bytes ={726}= ={949}= >{199}< >{708}< >{887}< [initial] [rendered] split chunk (cache group: vendor) (name: vendor)
+  > ./first first
+  > ./second second
+  ./vendor.js [965] 25 bytes {736} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./first.js
+      [inactive] harmony side effect evaluation ./vendor [330] ./first.js 1:0-25
+      harmony import specifier ./vendor [330] ./first.js 8:15-16
+    from origin ./second.js
+      [inactive] harmony side effect evaluation ./vendor [625] ./second.js 1:0-25
+      harmony import specifier ./vendor [625] ./second.js 7:15-16
+chunk {887} (runtime: first, second) a-lazy_shared.js (lazy_shared) 81 bytes <{726}> <{736}> <{949}> [rendered]
+  > ./lazy_shared [330] ./first.js 6:0-61
+  > ./lazy_shared [625] ./second.js 5:0-61
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [857] ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [857] ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [1] ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [1] ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_shared.js [175] 56 bytes {887} [depth 1] [built] [code generated]
+    [exports: default]
+    import() ./lazy_shared [330] ./first.js 6:0-61
+    import() ./lazy_shared [625] ./second.js 5:0-61
+chunk {949} (runtime: first) a-first.js (first) 292 bytes (javascript) 7.56 KiB (runtime) ={736}= >{708}< >{887}< [entry] [rendered]
+  > ./first first
+  runtime modules 7.56 KiB
+    webpack/runtime/chunk loaded 886 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 211 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/global 221 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 3.09 KiB {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/load script 1.37 KiB {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/publicPath 867 bytes {949} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 292 bytes
+    ./common2.js [132] 25 bytes {726} {949} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] from origin ./common.js
+        [inactive] harmony side effect evaluation ./common2 ./common.js 1:0-36
+        [inactive] harmony export imported specifier ./common2 ./common.js 1:0-36
+      harmony import specifier ./common [330] ./first.js 8:19-20 (skipped side-effect-free modules)
+      harmony import specifier ./common [625] ./second.js 7:19-20 (skipped side-effect-free modules)
+    ./first.js [330] 236 bytes {949} [depth 0] [built] [code generated]
+      [exports: default]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 5:0-60
+      entry ./first first
+    ./module_first.js [96] 31 bytes {949} [depth 1] [dependent] [built] [code generated]
+      [exports: default]
+      [all exports used]
+      [inactive] harmony side effect evaluation ./module_first [330] ./first.js 3:0-31
+      harmony import specifier ./module_first [330] ./first.js 8:23-24
+  
+
+LOG from webpack.Compiler
+<t> make hook: 65.774995 ms
+<t> finish make hook: 0.060339 ms
+<t> finish compilation: 0.547903 ms
+<t> seal compilation: 8.215258 ms
+<t> afterCompile hook: 0.008754 ms
+<t> emitAssets: 1.686817 ms
+<t> emitRecords: 0.001836 ms
+<t> done hook: 0.020771 ms
+<t> beginIdle: 0.004391 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005833 ms
+<t> finish modules: 0.462228 ms
+<t> report dependency errors and warnings: 0.061927 ms
+<t> optimize dependencies: 0.755526 ms
+<t> create chunks: 0.362852 ms
+<t> compute affected modules with chunk graph: 0.003425 ms
+<t> optimize: 0.937723 ms
+    14 modules hashed, 0 from cache (1.27 variants per module in average)
+<t> module hashing: 0.414302 ms
+    100% code generated (10 generated, 0 from cache)
+<t> code generation: 1.160858 ms
+<t> runtime requirements.modules: 0.073857 ms
+<t> runtime requirements.chunks: 0.09489 ms
+<t> runtime requirements.entries: 0.603972 ms
+<t> runtime requirements: 0.800485 ms
+<t> hashing: initialize hash: 0.004968 ms
+<t> hashing: sort chunks: 0.026318 ms
+<t> hashing: hash runtime modules: 1.285749 ms
+<t> hashing: hash chunks: 0.634928 ms
+<t> hashing: hash digest: 0.019364 ms
+<t> hashing: process full hash modules: 0.001929 ms
+<t> hashing: 2.032231 ms
+    100% code generated (20 generated, 0 from cache)
+<t> record hash: 0.010046 ms
+<t> module assets: 0.016224 ms
+<t> create chunk assets: 0.798014 ms
+<t> process assets: 0.484797 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.056361 ms
+<t> figure out provided exports: 0.27908 ms
+    100% of exports of modules have been determined (0 no declared exports, 11 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.029229 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.098051 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.077738 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010375 ms
+<t> trace exports usage in graph: 0.598155 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.025315 ms
+<t> visitModules: visiting: 0.098561 ms
+<t> visitModules: calculating available modules: 0.011964 ms
+<t> visitModules: merging available modules: 0.012013 ms
+<t> visitModules: check modules for revisit: 0.002941 ms
+<t> visitModules: prepare: 0.027019 ms
+<t> visitModules: visiting: 0.064347 ms
+    34 queue items processed (19 blocks)
+    4 chunk groups connected
+    3 chunk groups processed for merging (4 module sets, 1 forked, 3 + 0 modules forked, 4 + 0 modules merged into fork, 2 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.222057 ms
+<t> connectChunkGroups: 0.013782 ms
+<t> cleanup: 0.002197 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020666 ms
+<t> modules: 0.249082 ms
+<t> queue: 0.047462 ms
+<t> maxSize: 0.010617 ms
+
+LOG from webpack.FileSystemInfo
+    11 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 11 hashes 11 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/11) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled successfully in 78 ms (cae5a29cb5356362ce09)
+
+PublicPath: auto
+asset b-first.js 13.2 KiB {949} [emitted] (name: first)
+asset b-second.js 13.1 KiB {726} [emitted] (name: second)
+asset b-lazy_second.js 1.01 KiB {199} [emitted] (name: lazy_second)
+asset b-lazy_first.js 1.01 KiB {708} [emitted] (name: lazy_first)
+asset b-lazy_shared.js 967 bytes {887} [emitted] (name: lazy_shared)
+asset b-vendor.js 419 bytes {736} [emitted] (name: vendor) (id hint: vendor)
+Entrypoint first 13.6 KiB = b-vendor.js 419 bytes b-first.js 13.2 KiB
+Entrypoint second 13.5 KiB = b-vendor.js 419 bytes b-second.js 13.1 KiB
+Chunk Group lazy_first 1.01 KiB = b-lazy_first.js
+Chunk Group lazy_shared 967 bytes = b-lazy_shared.js
+Chunk Group lazy_second 1.01 KiB = b-lazy_second.js
+chunk {199} (runtime: second) b-lazy_second.js (lazy_second) 141 bytes <{726}> <{736}> [rendered]
+  > ./lazy_second ./second.js 4:0-61
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_second.js + 1 modules [109] 116 bytes {199} [depth 1] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with ./common_lazy_shared.js: Module ./common_lazy_shared.js is referenced from different chunks by these modules: ./lazy_shared.js
+    import() ./lazy_second [461] ./second.js + 1 modules ./second.js 4:0-61
+chunk {708} (runtime: first) b-lazy_first.js (lazy_first) 141 bytes <{736}> <{949}> [rendered]
+  > ./lazy_first ./first.js 5:0-59
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_first.js + 1 modules [458] 116 bytes {708} [depth 1] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with ./common_lazy_shared.js: Module ./common_lazy_shared.js is referenced from different chunks by these modules: ./lazy_shared.js
+    import() ./lazy_first [71] ./first.js + 2 modules ./first.js 5:0-59
+chunk {726} (runtime: second) b-second.js (second) 227 bytes (javascript) 7.56 KiB (runtime) ={736}= >{199}< >{887}< [entry] [rendered]
+  > ./second second
+  ./second.js + 1 modules [461] 227 bytes {726} [depth 0] [built] [code generated]
+    [exports: default]
+    [no exports used]
+    ModuleConcatenation bailout: Cannot concat with ./vendor.js: Module ./vendor.js is not in the same chunk(s) (expected in chunk(s) second, module is in chunk(s) vendor)
+    entry ./second second
+  webpack/runtime/chunk loaded 886 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 212 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3.09 KiB {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {726} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {736} (runtime: first, second) b-vendor.js (vendor) (id hint: vendor) 25 bytes ={726}= ={949}= >{199}< >{708}< >{887}< [initial] [rendered] split chunk (cache group: vendor) (name: vendor)
+  > ./first first
+  > ./second second
+  ./vendor.js [965] 25 bytes {736} [depth 1] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./first.js + 2 modules
+      [inactive] harmony side effect evaluation ./vendor [71] ./first.js + 2 modules ./first.js 1:0-25
+      harmony import specifier ./vendor [71] ./first.js + 2 modules ./first.js 8:15-16
+    from origin ./second.js + 1 modules
+      [inactive] harmony side effect evaluation ./vendor [461] ./second.js + 1 modules ./second.js 1:0-25
+      harmony import specifier ./vendor [461] ./second.js + 1 modules ./second.js 7:15-16
+chunk {887} (runtime: first, second) b-lazy_shared.js (lazy_shared) 81 bytes <{726}> <{736}> <{949}> [rendered]
+  > ./lazy_shared ./second.js 5:0-61
+  > ./lazy_shared ./first.js 6:0-61
+  ./common_lazy_shared.js [663] 25 bytes {199} {708} {887} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./lazy_first.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 2:0-37
+      harmony import specifier ./common_lazy_shared [458] ./lazy_first.js + 1 modules ./lazy_first.js 3:19-20
+    from origin ./lazy_second.js + 1 modules
+      [inactive] harmony side effect evaluation ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 2:0-37
+      harmony import specifier ./common_lazy_shared [109] ./lazy_second.js + 1 modules ./lazy_second.js 3:19-20
+    from origin ./lazy_shared.js
+      [inactive] harmony side effect evaluation ./common_lazy_shared [175] ./lazy_shared.js 1:0-37
+      harmony import specifier ./common_lazy_shared [175] ./lazy_shared.js 2:15-16
+  ./lazy_shared.js [175] 56 bytes {887} [depth 1] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with ./common_lazy_shared.js: Module ./common_lazy_shared.js is referenced from different chunks by these modules: ./lazy_first.js, ./lazy_second.js
+    import() ./lazy_shared [71] ./first.js + 2 modules ./first.js 6:0-61
+    import() ./lazy_shared [461] ./second.js + 1 modules ./second.js 5:0-61
+chunk {949} (runtime: first) b-first.js (first) 292 bytes (javascript) 7.56 KiB (runtime) ={736}= >{708}< >{887}< [entry] [rendered]
+  > ./first first
+  ./first.js + 2 modules [71] 292 bytes {949} [depth 0] [built] [code generated]
+    [exports: default]
+    [no exports used]
+    ModuleConcatenation bailout: Cannot concat with ./vendor.js: Module ./vendor.js is not in the same chunk(s) (expected in chunk(s) first, module is in chunk(s) vendor)
+    entry ./first first
+  webpack/runtime/chunk loaded 886 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 211 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3.09 KiB {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 867 bytes {949} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 44.817742 ms
+<t> finish make hook: 0.020231 ms
+<t> finish compilation: 0.434978 ms
+<t> seal compilation: 17.12992 ms
+<t> afterCompile hook: 0.013937 ms
+<t> emitAssets: 11.096477 ms
+<t> emitRecords: 0.002044 ms
+<t> done hook: 0.018166 ms
+<t> beginIdle: 0.005696 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004326 ms
+<t> finish modules: 0.345747 ms
+<t> report dependency errors and warnings: 0.070697 ms
+<t> optimize dependencies: 0.641382 ms
+<t> create chunks: 0.38426 ms
+<t> compute affected modules with chunk graph: 0.002968 ms
+<t> optimize: 1.639772 ms
+    9 modules hashed, 0 from cache (0.82 variants per module in average)
+<t> module hashing: 0.623527 ms
+    100% code generated (7 generated, 0 from cache)
+<t> code generation: 5.71004 ms
+<t> runtime requirements.modules: 0.095798 ms
+<t> runtime requirements.chunks: 0.104955 ms
+<t> runtime requirements.entries: 1.021014 ms
+<t> runtime requirements: 1.262766 ms
+<t> hashing: initialize hash: 0.004891 ms
+<t> hashing: sort chunks: 0.038841 ms
+<t> hashing: hash runtime modules: 2.833973 ms
+<t> hashing: hash chunks: 0.901984 ms
+<t> hashing: hash digest: 0.036344 ms
+<t> hashing: process full hash modules: 0.002443 ms
+<t> hashing: 3.919033 ms
+    100% code generated (20 generated, 0 from cache)
+<t> record hash: 0.047443 ms
+<t> module assets: 0.050348 ms
+<t> create chunk assets: 1.5798 ms
+<t> process assets: 0.524977 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.037112 ms
+<t> figure out provided exports: 0.174683 ms
+    100% of exports of modules have been determined (0 no declared exports, 11 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.050319 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.723839 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.304178 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.01119 ms
+<t> trace exports usage in graph: 0.272813 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.025949 ms
+<t> visitModules: visiting: 0.12388 ms
+<t> visitModules: calculating available modules: 0.012977 ms
+<t> visitModules: merging available modules: 0.021533 ms
+<t> visitModules: check modules for revisit: 0.003023 ms
+<t> visitModules: prepare: 0.028624 ms
+<t> visitModules: visiting: 0.069747 ms
+    34 queue items processed (19 blocks)
+    4 chunk groups connected
+    3 chunk groups processed for merging (4 module sets, 1 forked, 3 + 0 modules forked, 4 + 0 modules merged into fork, 2 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.264844 ms
+<t> connectChunkGroups: 0.014925 ms
+<t> cleanup: 0.003195 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.020338 ms
+<t> modules: 0.265241 ms
+<t> queue: 0.050504 ms
+<t> maxSize: 0.01117 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.036128 ms
+<t> sort relevant modules: 0.00419 ms
+<t> find modules to concatenate: 0.277398 ms
+<t> sort concat configurations: 0.00326 ms
+<t> create concatenated modules: 0.283847 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    11 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 11 timestamps 11 hashes 11 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/11) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:25: webpack 5.64.4 compiled successfully in 76 ms (25ae05d548153890a399)

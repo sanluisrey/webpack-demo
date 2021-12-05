@@ -1,0 +1,400 @@
+PublicPath: auto
+asset abc.js 7.77 KiB {a}, {ab}, {abc}, {ac}, {b}, {bc}, {c} [emitted] (name: abc)
+asset ab.js 7.2 KiB {a}, {ab}, {b} [emitted] (name: ab)
+asset ac.js 7.2 KiB {a}, {ac}, {c} [emitted] (name: ac)
+asset bc.js 7.2 KiB {b}, {bc}, {c} [emitted] (name: bc)
+asset a.js 6.67 KiB {a} [emitted] (name: a)
+asset b.js 6.67 KiB {b} [emitted] (name: b)
+asset c.js 6.67 KiB {c} [emitted] (name: c)
+asset shared.js 598 bytes {shared} [emitted] (name: shared) (id hint: forceMerge)
+Entrypoint a 7.26 KiB = shared.js 598 bytes a.js 6.67 KiB
+Entrypoint b 7.26 KiB = shared.js 598 bytes b.js 6.67 KiB
+Entrypoint c 7.26 KiB = shared.js 598 bytes c.js 6.67 KiB
+Entrypoint ab 7.79 KiB = shared.js 598 bytes ab.js 7.2 KiB
+Entrypoint ac 7.79 KiB = shared.js 598 bytes ac.js 7.2 KiB
+Entrypoint bc 7.79 KiB = shared.js 598 bytes bc.js 7.2 KiB
+Entrypoint abc 8.35 KiB = shared.js 598 bytes abc.js 7.77 KiB
+chunk {a} (runtime: a) a.js (a) 109 bytes (javascript) 3.03 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./a a
+  ./a.js [847] 109 bytes {a} {ab} {abc} {ac} [depth 0] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) a, ab, abc, ac, module is in chunk(s) shared)
+    entry ./a a
+    entry ./a ab
+    entry ./a abc
+    entry ./a ac
+    used as library export
+  webpack/runtime/chunk loaded 886 bytes {a} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {a} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {a} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {a} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {a} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {ab} (runtime: ab) ab.js (ab) 218 bytes (javascript) 3.04 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./a ab
+  > ./b ab
+  runtime modules 3.04 KiB
+    webpack/runtime/chunk loaded 886 bytes {ab} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {ab} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {ab} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 1.52 KiB {ab} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {ab} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 218 bytes
+    ./a.js [847] 109 bytes {a} {ab} {abc} {ac} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) a, ab, abc, ac, module is in chunk(s) shared)
+      entry ./a a
+      entry ./a ab
+      entry ./a abc
+      entry ./a ac
+      used as library export
+    ./b.js [996] 109 bytes {ab} {abc} {b} {bc} [depth 0] [built] [code generated]
+      [no exports]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) ab, abc, b, bc, module is in chunk(s) shared)
+      entry ./b ab
+      entry ./b abc
+      entry ./b b
+      entry ./b bc
+      used as library export
+      used as library export
+chunk {abc} (runtime: abc) abc.js (abc) 327 bytes (javascript) 3.08 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./a abc
+  > ./b abc
+  > ./c abc
+  runtime modules 3.08 KiB
+    webpack/runtime/chunk loaded 886 bytes {abc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {abc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {abc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 1.56 KiB {abc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {abc} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 327 bytes
+    ./a.js [847] 109 bytes {a} {ab} {abc} {ac} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) a, ab, abc, ac, module is in chunk(s) shared)
+      entry ./a a
+      entry ./a ab
+      entry ./a abc
+      entry ./a ac
+      used as library export
+    ./b.js [996] 109 bytes {ab} {abc} {b} {bc} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) ab, abc, b, bc, module is in chunk(s) shared)
+      entry ./b ab
+      entry ./b abc
+      entry ./b b
+      entry ./b bc
+      used as library export
+      used as library export
+    ./c.js [460] 109 bytes {abc} {ac} {bc} {c} [depth 0] [built] [code generated]
+      [no exports]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) abc, ac, bc, c, module is in chunk(s) shared)
+      entry ./c abc
+      entry ./c ac
+      entry ./c bc
+      entry ./c c
+      used as library export
+      used as library export
+      used as library export
+      used as library export
+chunk {ac} (runtime: ac) ac.js (ac) 218 bytes (javascript) 3.04 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./a ac
+  > ./c ac
+  runtime modules 3.04 KiB
+    webpack/runtime/chunk loaded 886 bytes {ac} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {ac} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {ac} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 1.52 KiB {ac} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {ac} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 218 bytes
+    ./a.js [847] 109 bytes {a} {ab} {abc} {ac} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) a, ab, abc, ac, module is in chunk(s) shared)
+      entry ./a a
+      entry ./a ab
+      entry ./a abc
+      entry ./a ac
+      used as library export
+    ./c.js [460] 109 bytes {abc} {ac} {bc} {c} [depth 0] [built] [code generated]
+      [no exports]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) abc, ac, bc, c, module is in chunk(s) shared)
+      entry ./c abc
+      entry ./c ac
+      entry ./c bc
+      entry ./c c
+      used as library export
+      used as library export
+      used as library export
+      used as library export
+chunk {b} (runtime: b) b.js (b) 109 bytes (javascript) 3.03 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./b b
+  ./b.js [996] 109 bytes {ab} {abc} {b} {bc} [depth 0] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) ab, abc, b, bc, module is in chunk(s) shared)
+    entry ./b ab
+    entry ./b abc
+    entry ./b b
+    entry ./b bc
+    used as library export
+    used as library export
+  webpack/runtime/chunk loaded 886 bytes {b} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {b} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {b} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {b} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {b} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {bc} (runtime: bc) bc.js (bc) 218 bytes (javascript) 3.04 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./b bc
+  > ./c bc
+  runtime modules 3.04 KiB
+    webpack/runtime/chunk loaded 886 bytes {bc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {bc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {bc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/jsonp chunk loading 1.52 KiB {bc} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {bc} [code generated]
+      [no exports]
+      [used exports unknown]
+  cacheable modules 218 bytes
+    ./b.js [996] 109 bytes {ab} {abc} {b} {bc} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) ab, abc, b, bc, module is in chunk(s) shared)
+      entry ./b ab
+      entry ./b abc
+      entry ./b b
+      entry ./b bc
+      used as library export
+      used as library export
+    ./c.js [460] 109 bytes {abc} {ac} {bc} {c} [depth 0] [built] [code generated]
+      [no exports]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+      ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) abc, ac, bc, c, module is in chunk(s) shared)
+      entry ./c abc
+      entry ./c ac
+      entry ./c bc
+      entry ./c c
+      used as library export
+      used as library export
+      used as library export
+      used as library export
+chunk {c} (runtime: c) c.js (c) 109 bytes (javascript) 3.03 KiB (runtime) ={shared}= [entry] [rendered]
+  > ./c c
+  ./c.js [460] 109 bytes {abc} {ac} {bc} {c} [depth 0] [built] [code generated]
+    [no exports]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./shared-x.js: Module ./shared-x.js is not in the same chunk(s) (expected in chunk(s) abc, ac, bc, c, module is in chunk(s) shared)
+    entry ./c abc
+    entry ./c ac
+    entry ./c bc
+    entry ./c c
+    used as library export
+    used as library export
+    used as library export
+    used as library export
+  webpack/runtime/chunk loaded 886 bytes {c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {c} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {c} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {shared} (runtime: a, ab, abc, ac, b, bc, c) shared.js (shared) (id hint: forceMerge) 78 bytes ={a}= ={ab}= ={abc}= ={ac}= ={b}= ={bc}= ={c}= [initial] [rendered] split chunk (cache group: forceMerge) (name: shared)
+  > ./a a
+  > ./a ab
+  > ./b ab
+  > ./a abc
+  > ./b abc
+  > ./c abc
+  > ./a ac
+  > ./c ac
+  > ./b b
+  > ./b bc
+  > ./c bc
+  > ./c c
+  ./shared-x.js [828] 78 bytes {shared} [depth 1] [built] [code generated]
+    [exports: value1, value2, value3]
+    [all exports used]
+    [inactive] from origin ./shared.js
+      [inactive] harmony export imported specifier ./shared-z ./shared.js 1:0-36 (skipped side-effect-free modules)
+      [inactive] harmony side effect evaluation ./shared-x ./shared.js 2:0-36
+      [inactive] harmony export imported specifier ./shared-x ./shared.js 2:0-36
+    [inactive] from origin ./shared-y.js
+      [inactive] harmony side effect evaluation ./shared-x ./shared-y.js 1:0-36
+      [inactive] harmony export imported specifier ./shared-x ./shared-y.js 1:0-36
+    [inactive] from origin ./shared-z.js
+      [inactive] harmony side effect evaluation ./shared-x ./shared-z.js 1:0-36
+      [inactive] harmony export imported specifier ./shared-x ./shared-z.js 1:0-36
+    harmony import specifier ./shared [847] ./a.js 4:8-14 (skipped side-effect-free modules)
+    harmony import specifier ./shared [996] ./b.js 4:8-14 (skipped side-effect-free modules)
+    harmony import specifier ./shared [460] ./c.js 4:8-14 (skipped side-effect-free modules)
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.843118 ms
+<t> finish make hook: 0.020158 ms
+<t> finish compilation: 0.503873 ms
+<t> seal compilation: 11.409079 ms
+<t> afterCompile hook: 0.009232 ms
+<t> emitAssets: 1.976234 ms
+<t> emitRecords: 0.00213 ms
+<t> done hook: 0.010985 ms
+<t> beginIdle: 0.006442 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004373 ms
+<t> finish modules: 0.43099 ms
+<t> report dependency errors and warnings: 0.055306 ms
+<t> optimize dependencies: 0.672724 ms
+<t> create chunks: 0.450809 ms
+<t> compute affected modules with chunk graph: 0.002516 ms
+<t> optimize: 1.051799 ms
+    13 modules hashed, 0 from cache (1.86 variants per module in average)
+<t> module hashing: 0.440498 ms
+    100% code generated (13 generated, 0 from cache)
+<t> code generation: 0.720795 ms
+<t> runtime requirements.modules: 0.065 ms
+<t> runtime requirements.chunks: 0.092615 ms
+<t> runtime requirements.entries: 0.665304 ms
+<t> runtime requirements: 0.848462 ms
+<t> hashing: initialize hash: 0.003449 ms
+<t> hashing: sort chunks: 0.042172 ms
+<t> hashing: hash runtime modules: 2.305097 ms
+<t> hashing: hash chunks: 1.662501 ms
+<t> hashing: hash digest: 0.045767 ms
+<t> hashing: process full hash modules: 0.001755 ms
+<t> hashing: 4.131453 ms
+    100% code generated (35 generated, 0 from cache)
+<t> record hash: 0.011887 ms
+<t> module assets: 0.028523 ms
+<t> create chunk assets: 1.956524 ms
+<t> process assets: 0.60452 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.028825 ms
+<t> figure out provided exports: 0.246987 ms
+    100% of exports of modules have been determined (0 no declared exports, 7 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.023299 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.038377 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.297486 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.010524 ms
+<t> trace exports usage in graph: 0.31683 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.129692 ms
+<t> visitModules: visiting: 0.224018 ms
+    38 queue items processed (19 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.25982 ms
+<t> connectChunkGroups: 0.00233 ms
+<t> cleanup: 0.001555 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.022855 ms
+<t> modules: 0.243382 ms
+<t> queue: 0.058819 ms
+<t> maxSize: 0.006916 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.035468 ms
+<t> sort relevant modules: 0.003659 ms
+<t> find modules to concatenate: 0.141908 ms
+<t> sort concat configurations: 0.000604 ms
+<t> create concatenated modules: 0.003295 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    7 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 7 timestamps 7 hashes 7 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/7) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:31: webpack 5.64.4 compiled successfully in 42 ms (c215fedbcb0d2031527f)

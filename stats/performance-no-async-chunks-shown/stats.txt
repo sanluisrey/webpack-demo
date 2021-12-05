@@ -1,0 +1,206 @@
+PublicPath: auto
+asset main.js 294 KiB {179} [emitted] [big] (name: main)
+asset sec.js 1.53 KiB {295} [emitted] (name: sec)
+Entrypoint main [big] 294 KiB = main.js
+Entrypoint sec 1.53 KiB = sec.js
+chunk {179} (runtime: main) main.js (main) 293 KiB [entry] [rendered]
+  > ./index main
+  ./a.js [847] 293 KiB {179} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-300019
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [847] ./a.js 1:0-14
+    cjs require ./a [10] ./index.js 1:0-14
+  ./b.js [996] 22 bytes {179} {295} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [996] ./b.js 1:0-14
+    cjs require ./b [10] ./index.js 2:0-14
+    cjs require ./b [46] ./index2.js 1:0-14
+  ./index.js [10] 32 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-15
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index main
+chunk {295} (runtime: sec) sec.js (sec) 114 bytes [entry] [rendered]
+  > ./index2 sec
+  ./b.js [996] 22 bytes {179} {295} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [996] ./b.js 1:0-14
+    cjs require ./b [10] ./index.js 2:0-14
+    cjs require ./b [46] ./index2.js 1:0-14
+  ./c.js [460] 22 bytes {295} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [460] ./c.js 1:0-14
+    cjs require ./c [46] ./index2.js 2:0-14
+  ./d.js [767] 22 bytes {295} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-21
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    cjs self exports reference [767] ./d.js 1:0-14
+    cjs require ./d [46] ./index2.js 3:0-14
+  ./index2.js [46] 48 bytes {295} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-15
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index2 sec
+  
+
+LOG from webpack.Compiler
+<t> make hook: 16.458488 ms
+<t> finish make hook: 0.015953 ms
+<t> finish compilation: 0.124429 ms
+<t> seal compilation: 2.792534 ms
+<t> afterCompile hook: 0.011701 ms
+<t> emitAssets: 2.302276 ms
+<t> emitRecords: 0.002339 ms
+<t> done hook: 0.020324 ms
+<t> beginIdle: 0.011566 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003634 ms
+<t> finish modules: 0.090647 ms
+<t> report dependency errors and warnings: 0.016759 ms
+<t> optimize dependencies: 0.181633 ms
+<t> create chunks: 0.211501 ms
+<t> compute affected modules with chunk graph: 0.002391 ms
+<t> optimize: 0.604223 ms
+    7 modules hashed, 0 from cache (1.17 variants per module in average)
+<t> module hashing: 0.260493 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 0.146752 ms
+<t> runtime requirements.modules: 0.037856 ms
+<t> runtime requirements.chunks: 0.039303 ms
+<t> runtime requirements.entries: 0.059614 ms
+<t> runtime requirements: 0.154954 ms
+<t> hashing: initialize hash: 0.003368 ms
+<t> hashing: sort chunks: 0.018244 ms
+<t> hashing: hash runtime modules: 0.007507 ms
+<t> hashing: hash chunks: 0.297454 ms
+<t> hashing: hash digest: 0.012592 ms
+<t> hashing: process full hash modules: 0.001126 ms
+<t> hashing: 0.378906 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.00508 ms
+<t> module assets: 0.009259 ms
+<t> create chunk assets: 0.424676 ms
+<t> process assets: 0.222881 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019769 ms
+<t> figure out provided exports: 0.001577 ms
+    0% of exports of modules have been determined (6 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.002205 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.028656 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003525 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.007222 ms
+<t> trace exports usage in graph: 0.133698 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.026631 ms
+<t> visitModules: visiting: 0.085935 ms
+    14 queue items processed (7 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.110419 ms
+<t> connectChunkGroups: 0.001879 ms
+<t> cleanup: 0.00245 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018232 ms
+<t> modules: 0.109609 ms
+<t> queue: 0.001784 ms
+<t> maxSize: 0.004186 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.009182 ms
+<t> sort relevant modules: 0.000923 ms
+<t> find modules to concatenate: 0.001925 ms
+<t> sort concat configurations: 0.000758 ms
+<t> create concatenated modules: 0.004012 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  main.js (294 KiB)
+AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  main.js (294 KiB)
+    at /Users/yoh/Projects/repos/webpack/lib/performance/SizeLimitsPlugin.js:134:7
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:864:27
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2818:7
+    at done (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3522:9)
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:718:33
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:143:16
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:61:14
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (294 KiB)
+      main.js
+EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (294 KiB)
+      main.js
+
+    at /Users/yoh/Projects/repos/webpack/lib/performance/SizeLimitsPlugin.js:139:7
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:864:27
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2818:7
+    at done (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3522:9)
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:718:33
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:143:16
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:61:14
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+NoAsyncChunksWarning: webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+    at /Users/yoh/Projects/repos/webpack/lib/performance/SizeLimitsPlugin.js:153:21
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:864:27
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2818:7
+    at done (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:3522:9)
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:718:33
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:143:16
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:61:14
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled with 3 warnings in 23 ms (bd7c2c401ffc3eed790f)

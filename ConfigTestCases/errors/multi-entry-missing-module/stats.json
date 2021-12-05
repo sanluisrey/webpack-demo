@@ -1,0 +1,451 @@
+{
+  "hash": "6853b142a1a4355a509b",
+  "version": "5.64.4",
+  "time": 14,
+  "builtAt": 1638693868853,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/errors/multi-entry-missing-module",
+  "assetsByChunkName": {
+    "a": [
+      "a.js"
+    ],
+    "b": [
+      "b.js"
+    ],
+    "bundle0": [
+      "bundle0.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 1697,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 1697
+      },
+      "chunkNames": [
+        "bundle0"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        142
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "a.js",
+      "size": 99,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 99
+      },
+      "chunkNames": [
+        "a"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        786
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "b.js",
+      "size": 99,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 99
+      },
+      "chunkNames": [
+        "b"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        128
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 0,
+      "sizes": {},
+      "names": [
+        "b"
+      ],
+      "idHints": [],
+      "runtime": [
+        "b"
+      ],
+      "files": [
+        "b.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "b3f0d4a3ace9f28a3fee",
+      "childrenByOrder": {},
+      "id": 128,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "b",
+          "request": "./intentionally-missing-module.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 343,
+      "sizes": {
+        "javascript": 343
+      },
+      "names": [
+        "bundle0"
+      ],
+      "idHints": [],
+      "runtime": [
+        "bundle0"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "24c25e357be91f8482dc",
+      "childrenByOrder": {},
+      "id": 142,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 343,
+          "sizes": {
+            "javascript": 343
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/errors/multi-entry-missing-module/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/errors/multi-entry-missing-module/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 10,
+          "issuerId": null,
+          "chunks": [
+            142
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index",
+              "loc": "bundle0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [],
+          "providedExports": null,
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 1:0-3:3",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "bundle0",
+          "request": "./index"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 0,
+      "sizes": {},
+      "names": [
+        "a"
+      ],
+      "idHints": [],
+      "runtime": [
+        "a"
+      ],
+      "files": [
+        "a.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "08c6668406e9e425e9cb",
+      "childrenByOrder": {},
+      "id": 786,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "a",
+          "request": "./intentionally-missing-module.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 343,
+      "sizes": {
+        "javascript": 343
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/errors/multi-entry-missing-module/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/errors/multi-entry-missing-module/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 10,
+      "issuerId": null,
+      "chunks": [
+        142
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index",
+          "loc": "bundle0",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [],
+      "providedExports": null,
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 1:0-3:3",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    }
+  ],
+  "entrypoints": {
+    "a": {
+      "name": "a",
+      "chunks": [
+        786
+      ],
+      "assets": [
+        {
+          "name": "a.js",
+          "size": 99
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 99,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "b": {
+      "name": "b",
+      "chunks": [
+        128
+      ],
+      "assets": [
+        {
+          "name": "b.js",
+          "size": 99
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 99,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "bundle0": {
+      "name": "bundle0",
+      "chunks": [
+        142
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 1697
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1697,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "a": {
+      "name": "a",
+      "chunks": [
+        786
+      ],
+      "assets": [
+        {
+          "name": "a.js",
+          "size": 99
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 99,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "b": {
+      "name": "b",
+      "chunks": [
+        128
+      ],
+      "assets": [
+        {
+          "name": "b.js",
+          "size": 99
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 99,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "bundle0": {
+      "name": "bundle0",
+      "chunks": [
+        142
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 1697
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 1697,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

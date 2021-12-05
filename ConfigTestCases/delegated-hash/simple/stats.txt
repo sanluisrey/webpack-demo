@@ -1,0 +1,159 @@
+PublicPath: (none)
+asset bundle0.js 3.51 KiB {179} [emitted] (name: main)
+Entrypoint main 3.51 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 559 bytes [entry] [rendered]
+  > ./index.js main
+  modules by path ./ 391 bytes
+    ./bundle.js [HJdw] 66 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-3:2
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      cjs self exports reference [HJdw] ./bundle.js 1:0-14
+      delegated source ./bundle [3LVs] delegated ./a.js from ./bundle
+      delegated source ./bundle [HadX] delegated ./loader.js!./b.js from ./bundle
+      delegated source ./bundle [sjez] delegated ./dir/c.js from ./bundle
+    ./bundle2.js [8pAQ] 44 bytes {179} [depth 2] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-43
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      cjs self exports reference [8pAQ] ./bundle2.js 1:0-14
+      delegated source ./bundle2 [YNWZ] delegated ./d.js from ./bundle2
+      delegated source ./bundle2 [6o3R] delegated ./e.js from ./bundle2
+    ./index.js [QfWi] 239 bytes {179} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-7:3
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./index.js main
+    delegated ./loader.js!./b.js from ./bundle [HadX] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ./loader!./b [QfWi] ./index.js 3:8-31
+  modules by path delegated ./ 168 bytes
+    delegated ./a.js from ./bundle [3LVs] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ./a [QfWi] ./index.js 2:8-22
+    delegated ./d.js from ./bundle2 [YNWZ] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ./d [QfWi] ./index.js 5:8-22
+    delegated ./dir/c.js from ./bundle [sjez] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ./dir/c [QfWi] ./index.js 4:8-26
+    delegated ./e.js from ./bundle2 [6o3R] 42 bytes {179} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for DelegatedModule
+      cjs require ./e [QfWi] ./index.js 6:8-22
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.845203 ms
+<t> finish make hook: 0.014634 ms
+<t> finish compilation: 0.120528 ms
+<t> seal compilation: 2.712644 ms
+<t> afterCompile hook: 0.014013 ms
+<t> emitAssets: 1.350753 ms
+<t> emitRecords: 0.002963 ms
+<t> done hook: 0.032405 ms
+<t> beginIdle: 0.008731 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004096 ms
+<t> finish modules: 0.088873 ms
+<t> report dependency errors and warnings: 0.015702 ms
+<t> optimize dependencies: 0.19535 ms
+<t> create chunks: 0.151518 ms
+<t> compute affected modules with chunk graph: 0.002303 ms
+<t> optimize: 0.595657 ms
+    8 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.217394 ms
+    100% code generated (8 generated, 0 from cache)
+<t> code generation: 0.236517 ms
+<t> runtime requirements.modules: 0.029743 ms
+<t> runtime requirements.chunks: 0.034817 ms
+<t> runtime requirements.entries: 0.053142 ms
+<t> runtime requirements: 0.133428 ms
+<t> hashing: initialize hash: 0.002668 ms
+<t> hashing: hash warnings: 0.007659 ms
+<t> hashing: sort chunks: 0.012705 ms
+<t> hashing: hash runtime modules: 0.005369 ms
+<t> hashing: hash chunks: 0.223986 ms
+<t> hashing: hash digest: 0.029081 ms
+<t> hashing: process full hash modules: 0.001484 ms
+<t> hashing: 0.31224 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005096 ms
+<t> module assets: 0.009159 ms
+<t> create chunk assets: 0.43267 ms
+<t> process assets: 0.220743 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.021346 ms
+<t> figure out provided exports: 0.001634 ms
+    0% of exports of modules have been determined (8 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.003253 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.017612 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.005301 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.008324 ms
+<t> trace exports usage in graph: 0.14763 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.015913 ms
+<t> visitModules: visiting: 0.057336 ms
+    16 queue items processed (8 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.078891 ms
+<t> connectChunkGroups: 0.002073 ms
+<t> cleanup: 0.001497 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.014924 ms
+<t> modules: 0.09546 ms
+<t> queue: 0.002012 ms
+<t> maxSize: 0.005102 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.014778 ms
+<t> sort relevant modules: 0.000671 ms
+<t> find modules to concatenate: 0.00159 ms
+<t> sort concat configurations: 0.000772 ms
+<t> create concatenated modules: 0.003246 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    3 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 3 timestamps 3 hashes 3 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/3) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in configuration
+The value 'hashed' for option 'optimization.moduleIds' is deprecated. Use 'deterministic' instead.
+DeprecatedOptionWarning: configuration
+The value 'hashed' for option 'optimization.moduleIds' is deprecated. Use 'deterministic' instead.
+    at /Users/yoh/Projects/repos/webpack/lib/WarnDeprecatedOptionPlugin.js:35:6
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:21:1)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at Compiler.newCompilation (/Users/yoh/Projects/repos/webpack/lib/Compiler.js:1054:30)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:1099:29
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:18:14)
+    at Compiler.compile (/Users/yoh/Projects/repos/webpack/lib/Compiler.js:1094:28)
+    at /Users/yoh/Projects/repos/webpack/lib/Compiler.js:519:12
+    at Compiler.readRecords (/Users/yoh/Projects/repos/webpack/lib/Compiler.js:931:11)
+
+2021-12-05 17:44:24: webpack 5.64.4 compiled with 1 warning in 22 ms (de33fcdaf8cb87e63431)

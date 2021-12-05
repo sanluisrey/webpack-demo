@@ -1,0 +1,212 @@
+PublicPath: auto
+asset tst_examples_uitable.js 6.66 KiB {834} [emitted] (name: tst_examples_uitable)
+asset tst_examples_uiform.js 6.49 KiB {751} [emitted] (name: tst_examples_uiform)
+asset another.js 6.35 KiB {21} [emitted] (name: another)
+asset vendors.js 4.17 KiB {216} [emitted] (name: vendors) (id hint: vendors)
+Entrypoint tst_examples_uiform 10.7 KiB = vendors.js 4.17 KiB tst_examples_uiform.js 6.49 KiB
+Entrypoint tst_examples_uitable 10.8 KiB = vendors.js 4.17 KiB tst_examples_uitable.js 6.66 KiB
+Entrypoint another 10.5 KiB = vendors.js 4.17 KiB another.js 6.35 KiB
+chunk {21} (runtime: another) another.js (another) 40 bytes (javascript) 2.78 KiB (runtime) ={216}= [entry] [rendered]
+  > ./another another
+  ./another.js [773] 40 bytes {21} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-39
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./another another
+  webpack/runtime/chunk loaded 886 bytes {21} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {21} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {21} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.5 KiB {21} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/runtimeId 27 bytes {21} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {216} (runtime: another, tst_examples_uiform, tst_examples_uitable) vendors.js (vendors) (id hint: vendors) 588 bytes ={21}= ={751}= ={834}= [initial] [rendered] split chunk (cache group: vendors) (name: vendors)
+  > ./another another
+  > ./tst_examples_uiform tst_examples_uiform
+  > ./tst_examples_uitable tst_examples_uitable
+  ./vendors/index.js + 2 modules [621] 511 bytes {216} [depth 1] [built] [code generated]
+    [exports: UiButton, UiSelectButton, UiSelectButton2]
+    [all exports used]
+    ModuleConcatenation bailout: Cannot concat with ./vendors/types.js: Module ./vendors/types.js is runtime-dependent referenced by these modules: ./vendors/index.js (expected runtime another+tst_examples_uiform+tst_examples_uitable, module is only referenced in tst_examples_uitable), ./vendors/select.js (expected runtime another+tst_examples_uiform+tst_examples_uitable, module is only referenced in tst_examples_uiform)
+    ModuleConcatenation bailout: Cannot concat with ./vendors/uuid.js: Module ./vendors/uuid.js is runtime-dependent referenced by these modules: ./vendors/index.js (expected runtime another+tst_examples_uiform+tst_examples_uitable, module is only referenced in tst_examples_uitable), ./vendors/select.js (expected runtime another+tst_examples_uiform+tst_examples_uitable, module is only referenced in tst_examples_uiform), ./vendors/select2.js (expected runtime another+tst_examples_uiform+tst_examples_uitable, module is only referenced in another+tst_examples_uiform)
+    from origin ./tst_examples_uiform.js
+      cjs full require ./vendors [977] ./tst_examples_uiform.js 2:1-36
+      cjs full require ./vendors [977] ./tst_examples_uiform.js 3:1-37
+    from origin ./tst_examples_uitable.js
+      harmony side effect evaluation ./vendors [336] ./tst_examples_uitable.js 1:0-37
+      harmony import specifier ./vendors [336] ./tst_examples_uitable.js 4:1-9
+    cjs full require ./vendors [773] ./another.js 1:0-36
+  ./vendors/types.js [348] 43 bytes {216} [depth 2] [dependent] [built] [code generated]
+    [exports: checkIsNonemptyString]
+    [all exports used]
+    from origin ./vendors/index.js + 2 modules
+      [inactive] harmony side effect evaluation ./types [621] ./vendors/index.js + 2 modules ./vendors/index.js 2:0-48
+      harmony import specifier ./types [621] ./vendors/index.js + 2 modules ./vendors/index.js 7:1-22
+      [inactive] harmony side effect evaluation ./types [621] ./vendors/index.js + 2 modules ./vendors/select.js 2:0-48
+      harmony import specifier ./types [621] ./vendors/index.js + 2 modules ./vendors/select.js 5:1-22
+    from origin ./vendors/select.js
+      [inactive] harmony side effect evaluation ./types ./vendors/select.js 2:0-48
+      harmony import specifier ./types ./vendors/select.js 5:1-22
+  ./vendors/uuid.js [680] 34 bytes {216} [depth 2] [dependent] [built] [code generated]
+    [exports: default]
+    [all exports used]
+    from origin ./vendors/index.js + 2 modules
+      [inactive] harmony side effect evaluation ./uuid [621] ./vendors/index.js + 2 modules ./vendors/index.js 1:0-26
+      harmony import specifier ./uuid [621] ./vendors/index.js + 2 modules ./vendors/index.js 8:1-5
+      [inactive] harmony side effect evaluation ./uuid [621] ./vendors/index.js + 2 modules ./vendors/select.js 1:0-26
+      harmony import specifier ./uuid [621] ./vendors/index.js + 2 modules ./vendors/select.js 6:1-5
+      [inactive] harmony side effect evaluation ./uuid [621] ./vendors/index.js + 2 modules ./vendors/select2.js 1:0-26
+      harmony import specifier ./uuid [621] ./vendors/index.js + 2 modules ./vendors/select2.js 4:1-5
+    from origin ./vendors/select.js
+      [inactive] harmony side effect evaluation ./uuid ./vendors/select.js 1:0-26
+      harmony import specifier ./uuid ./vendors/select.js 6:1-5
+    from origin ./vendors/select2.js
+      [inactive] harmony side effect evaluation ./uuid ./vendors/select2.js 1:0-26
+      harmony import specifier ./uuid ./vendors/select2.js 4:1-5
+chunk {751} (runtime: tst_examples_uiform) tst_examples_uiform.js (tst_examples_uiform) 116 bytes (javascript) 2.79 KiB (runtime) ={216}= [entry] [rendered]
+  > ./tst_examples_uiform tst_examples_uiform
+  ./tst_examples_uiform.js [977] 116 bytes {751} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-4:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./tst_examples_uiform tst_examples_uiform
+  webpack/runtime/chunk loaded 886 bytes {751} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {751} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {751} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {751} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/runtimeId 28 bytes {751} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {834} (runtime: tst_examples_uitable) tst_examples_uitable.js (tst_examples_uitable) 87 bytes (javascript) 2.79 KiB (runtime) ={216}= [entry] [rendered]
+  > ./tst_examples_uitable tst_examples_uitable
+  ./tst_examples_uitable.js [336] 87 bytes {834} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-5:3
+    ModuleConcatenation bailout: Cannot concat with ./vendors/index.js: Module ./vendors/index.js is not in the same chunk(s) (expected in chunk(s) tst_examples_uitable, module is in chunk(s) )
+    entry ./tst_examples_uitable tst_examples_uitable
+  webpack/runtime/chunk loaded 886 bytes {834} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {834} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {834} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 1.51 KiB {834} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/runtimeId 28 bytes {834} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 55.423363 ms
+<t> finish make hook: 0.017069 ms
+<t> finish compilation: 1.635371 ms
+<t> seal compilation: 20.253996 ms
+<t> afterCompile hook: 0.015015 ms
+<t> emitAssets: 6.227 ms
+<t> emitRecords: 0.00236 ms
+<t> done hook: 0.011462 ms
+<t> beginIdle: 0.007504 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004293 ms
+<t> finish modules: 1.559744 ms
+<t> report dependency errors and warnings: 0.056322 ms
+<t> optimize dependencies: 1.099457 ms
+<t> create chunks: 0.695243 ms
+<t> compute affected modules with chunk graph: 0.001568 ms
+<t> optimize: 2.584982 ms
+    6 modules hashed, 0 from cache (0.75 variants per module in average)
+<t> module hashing: 0.986478 ms
+    100% code generated (6 generated, 0 from cache)
+<t> code generation: 3.648817 ms
+<t> runtime requirements.modules: 0.058711 ms
+<t> runtime requirements.chunks: 0.066938 ms
+<t> runtime requirements.entries: 1.320506 ms
+<t> runtime requirements: 1.562072 ms
+<t> hashing: initialize hash: 0.007546 ms
+<t> hashing: sort chunks: 0.027126 ms
+<t> hashing: hash runtime modules: 2.458082 ms
+<t> hashing: hash chunks: 1.294856 ms
+<t> hashing: hash digest: 0.036519 ms
+<t> hashing: process full hash modules: 0.001623 ms
+<t> hashing: 3.881507 ms
+    100% code generated (15 generated, 0 from cache)
+<t> record hash: 0.011957 ms
+<t> module assets: 0.023641 ms
+<t> create chunk assets: 3.895159 ms
+<t> process assets: 1.035839 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02689 ms
+<t> figure out provided exports: 0.157788 ms
+    75% of exports of modules have been determined (2 no declared exports, 6 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 1 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.018744 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.045502 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.028996 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.006571 ms
+<t> trace exports usage in graph: 0.661385 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.092743 ms
+<t> visitModules: visiting: 0.543364 ms
+    34 queue items processed (17 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.572611 ms
+<t> connectChunkGroups: 0.00211 ms
+<t> cleanup: 0.001799 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.019583 ms
+<t> modules: 0.583271 ms
+<t> queue: 0.068637 ms
+<t> maxSize: 0.005998 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.036732 ms
+<t> sort relevant modules: 0.003135 ms
+<t> find modules to concatenate: 0.673693 ms
+<t> sort concat configurations: 0.000697 ms
+<t> create concatenated modules: 0.156305 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    8 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 8 timestamps 8 hashes 8 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/8) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:56: webpack 5.64.4 compiled successfully in 87 ms (9e9dc1df5caa24126f38)

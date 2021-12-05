@@ -1,0 +1,188 @@
+PublicPath: (none)
+asset bundle.js 7.03 KiB {0} [emitted] (name: main)
+Entrypoint main 7.03 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 623 bytes (javascript) 663 bytes (runtime) [entry] [rendered]
+  > ./scope-hoisting/issue-11897/ main
+  cacheable modules 623 bytes
+    ./scope-hoisting/issue-11897/cjs.js [0] 33 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [used exports unknown]
+      CommonJS bailout: module.exports is used directly at 1:0-14
+      Statement (ExpressionStatement) with side effects in source code at 1:0-32
+      from origin ./scope-hoisting/issue-11897/index.js
+        harmony side effect evaluation ./cjs [1] ./scope-hoisting/issue-11897/index.js 1:0-24
+        harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 3:0-8
+        harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 7:0-8
+        harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 10:8-16
+      from origin ./scope-hoisting/issue-11897/module.js
+        harmony import specifier ./cjs [2] ./scope-hoisting/issue-11897/module.js 1:0-8
+        harmony side effect evaluation ./cjs [2] ./scope-hoisting/issue-11897/module.js 2:0-24
+      from origin ./scope-hoisting/issue-11897/module.js?2
+        harmony import specifier ./cjs [4] ./scope-hoisting/issue-11897/module.js?2 1:0-8
+        harmony side effect evaluation ./cjs [4] ./scope-hoisting/issue-11897/module.js?2 2:0-24
+      cjs self exports reference [0] ./scope-hoisting/issue-11897/cjs.js 1:0-14
+    ./scope-hoisting/issue-11897/iife.js [3] 66 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: value]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-19
+      harmony side effect evaluation ./iife [1] ./scope-hoisting/issue-11897/index.js 5:0-41
+      harmony import specifier ./iife [1] ./scope-hoisting/issue-11897/index.js 12:8-14
+    ./scope-hoisting/issue-11897/index.js [1] 360 bytes {0} [depth 0] [built] [code generated]
+      [no exports]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 3:0-15
+      entry ./scope-hoisting/issue-11897/ main
+    ./scope-hoisting/issue-11897/module.js [2] 82 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: value]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-11
+      harmony side effect evaluation ./module [1] ./scope-hoisting/issue-11897/index.js 4:0-33
+      harmony import specifier ./module [1] ./scope-hoisting/issue-11897/index.js 11:8-13
+    ./scope-hoisting/issue-11897/module.js?2 [4] 82 bytes {0} [depth 1] [dependent] [built] [code generated]
+      [exports: value]
+      [all exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-11
+      harmony side effect evaluation ./module?2 [1] ./scope-hoisting/issue-11897/index.js 6:0-45
+      harmony import specifier ./module?2 [1] ./scope-hoisting/issue-11897/index.js 13:8-14
+  runtime modules 663 bytes
+    webpack/runtime/compat get default export 267 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+      [no exports]
+      [used exports unknown]
+cacheable modules 623 bytes
+  ./scope-hoisting/issue-11897/index.js [1] 360 bytes {0} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 3:0-15
+    entry ./scope-hoisting/issue-11897/ main
+  ./scope-hoisting/issue-11897/cjs.js [0] 33 bytes {0} [depth 1] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    from origin ./scope-hoisting/issue-11897/index.js
+      harmony side effect evaluation ./cjs [1] ./scope-hoisting/issue-11897/index.js 1:0-24
+      harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 3:0-8
+      harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 7:0-8
+      harmony import specifier ./cjs [1] ./scope-hoisting/issue-11897/index.js 10:8-16
+    from origin ./scope-hoisting/issue-11897/module.js
+      harmony import specifier ./cjs [2] ./scope-hoisting/issue-11897/module.js 1:0-8
+      harmony side effect evaluation ./cjs [2] ./scope-hoisting/issue-11897/module.js 2:0-24
+    from origin ./scope-hoisting/issue-11897/module.js?2
+      harmony import specifier ./cjs [4] ./scope-hoisting/issue-11897/module.js?2 1:0-8
+      harmony side effect evaluation ./cjs [4] ./scope-hoisting/issue-11897/module.js?2 2:0-24
+    cjs self exports reference [0] ./scope-hoisting/issue-11897/cjs.js 1:0-14
+  ./scope-hoisting/issue-11897/module.js [2] 82 bytes {0} [depth 1] [built] [code generated]
+    [exports: value]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-11
+    harmony side effect evaluation ./module [1] ./scope-hoisting/issue-11897/index.js 4:0-33
+    harmony import specifier ./module [1] ./scope-hoisting/issue-11897/index.js 11:8-13
+  ./scope-hoisting/issue-11897/iife.js [3] 66 bytes {0} [depth 1] [built] [code generated]
+    [exports: value]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-19
+    harmony side effect evaluation ./iife [1] ./scope-hoisting/issue-11897/index.js 5:0-41
+    harmony import specifier ./iife [1] ./scope-hoisting/issue-11897/index.js 12:8-14
+  ./scope-hoisting/issue-11897/module.js?2 [4] 82 bytes {0} [depth 1] [built] [code generated]
+    [exports: value]
+    [all exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-11
+    harmony side effect evaluation ./module?2 [1] ./scope-hoisting/issue-11897/index.js 6:0-45
+    harmony import specifier ./module?2 [1] ./scope-hoisting/issue-11897/index.js 13:8-14
+runtime modules 663 bytes
+  webpack/runtime/compat get default export 267 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {0} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 9.828915 ms
+<t> finish make hook: 0.010861 ms
+<t> finish compilation: 0.138719 ms
+<t> seal compilation: 2.109729 ms
+<t> afterCompile hook: 0.005701 ms
+<t> emitAssets: 0.87481 ms
+<t> emitRecords: 0.001753 ms
+<t> done hook: 0.007865 ms
+<t> beginIdle: 0.004125 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004551 ms
+<t> finish modules: 0.093053 ms
+<t> report dependency errors and warnings: 0.031753 ms
+<t> optimize dependencies: 0.125894 ms
+<t> create chunks: 0.121879 ms
+<t> compute affected modules with chunk graph: 0.001144 ms
+<t> optimize: 0.44143 ms
+    5 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.128664 ms
+    100% code generated (5 generated, 0 from cache)
+<t> code generation: 0.304309 ms
+<t> runtime requirements.modules: 0.026468 ms
+<t> runtime requirements.chunks: 0.033223 ms
+<t> runtime requirements.entries: 0.129677 ms
+<t> runtime requirements: 0.20332 ms
+<t> hashing: initialize hash: 0.001899 ms
+<t> hashing: sort chunks: 0.011568 ms
+<t> hashing: hash runtime modules: 0.100163 ms
+<t> hashing: hash chunks: 0.146875 ms
+<t> hashing: hash digest: 0.00755 ms
+<t> hashing: process full hash modules: 0.000956 ms
+<t> hashing: 0.290906 ms
+    100% code generated (3 generated, 0 from cache)
+<t> record hash: 0.004741 ms
+<t> module assets: 0.007991 ms
+<t> create chunk assets: 0.338554 ms
+<t> process assets: 0.029937 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.019022 ms
+<t> figure out provided exports: 0.027635 ms
+    80% of exports of modules have been determined (1 no declared exports, 4 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.011695 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002191 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003387 ms
+<t> trace exports usage in graph: 0.093557 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.012418 ms
+<t> visitModules: visiting: 0.049379 ms
+    10 queue items processed (5 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.067241 ms
+<t> connectChunkGroups: 0.001127 ms
+<t> cleanup: 0.001249 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012453 ms
+<t> modules: 0.054766 ms
+<t> queue: 0.001809 ms
+<t> maxSize: 0.003976 ms
+
+LOG from webpack.FileSystemInfo
+    5 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/5) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:45:41: webpack 5.64.4 compiled successfully in 14 ms (68ff74b38c82a5dd865b)

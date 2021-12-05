@@ -1,0 +1,150 @@
+PublicPath: (none)
+asset bundle0.js 1.02 KiB {179} [emitted] (name: main)
+Entrypoint main 1.02 KiB = bundle0.js
+chunk {179} (runtime: main) bundle0.js (main) 455 bytes (javascript) 121 bytes (runtime) [entry] [rendered]
+  > ./index.js main
+  ./index.js [10] 455 bytes {179} [depth 0] [built] [code generated] [3 warnings]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-12:2
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  webpack/runtime/system 121 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.320715 ms
+<t> finish make hook: 0.007826 ms
+<t> finish compilation: 0.121166 ms
+<t> seal compilation: 2.645721 ms
+<t> afterCompile hook: 0.014016 ms
+<t> emitAssets: 1.181952 ms
+<t> emitRecords: 0.003396 ms
+<t> done hook: 0.014033 ms
+<t> beginIdle: 0.009326 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.005318 ms
+<t> finish modules: 0.087124 ms
+<t> report dependency errors and warnings: 0.015061 ms
+<t> optimize dependencies: 0.080232 ms
+<t> create chunks: 0.132646 ms
+<t> compute affected modules with chunk graph: 0.001899 ms
+<t> optimize: 0.504889 ms
+    1 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.085363 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 0.063606 ms
+<t> runtime requirements.modules: 0.065958 ms
+<t> runtime requirements.chunks: 0.036153 ms
+<t> runtime requirements.entries: 0.269892 ms
+<t> runtime requirements: 0.397924 ms
+<t> hashing: initialize hash: 0.005348 ms
+<t> hashing: hash warnings: 0.006647 ms
+<t> hashing: sort chunks: 0.021344 ms
+<t> hashing: hash runtime modules: 0.17292 ms
+<t> hashing: hash chunks: 0.275193 ms
+<t> hashing: hash digest: 0.019129 ms
+<t> hashing: process full hash modules: 0.002264 ms
+<t> hashing: 0.553665 ms
+    100% code generated (1 generated, 0 from cache)
+<t> record hash: 0.009441 ms
+<t> module assets: 0.013908 ms
+<t> create chunk assets: 0.416182 ms
+<t> process assets: 0.160361 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.015102 ms
+<t> figure out provided exports: 0.001853 ms
+    0% of exports of modules have been determined (1 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.00236 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.004401 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.002616 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.004081 ms
+<t> trace exports usage in graph: 0.037814 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.003381 ms
+<t> visitModules: visiting: 0.026082 ms
+    2 queue items processed (1 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.051896 ms
+<t> connectChunkGroups: 0.002078 ms
+<t> cleanup: 0.001694 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.016143 ms
+<t> modules: 0.055151 ms
+<t> queue: 0.002274 ms
+<t> maxSize: 0.005693 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.006221 ms
+<t> sort relevant modules: 0.000936 ms
+<t> find modules to concatenate: 0.001623 ms
+<t> sort concat configurations: 0.000993 ms
+<t> create concatenated modules: 0.003114 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 1 hashes 1 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./index.js 6:16-31
+System.register is not supported by webpack.
+UnsupportedFeatureWarning: System.register is not supported by webpack.
+    at unsupportedExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParserHelpers.js:99:4)
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForInfo (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2932:15)
+    at JavascriptParser.walkMemberExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2763:27)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2277:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+
+WARNING in ./index.js 7:16-26
+System.get is not supported by webpack.
+UnsupportedFeatureWarning: System.get is not supported by webpack.
+    at unsupportedExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParserHelpers.js:99:4)
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForInfo (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2932:15)
+    at JavascriptParser.walkMemberExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2763:27)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2277:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+
+WARNING in ./index.js 8:16-26
+System.set is not supported by webpack.
+UnsupportedFeatureWarning: System.set is not supported by webpack.
+    at unsupportedExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParserHelpers.js:99:4)
+    at Hook.eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForInfo (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2932:15)
+    at JavascriptParser.walkMemberExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2763:27)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2277:10)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2451:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+
+2021-12-05 17:44:48: webpack 5.64.4 compiled with 3 warnings in 17 ms (8cb371478ad2b9043065)

@@ -1,0 +1,14 @@
+(()=>{var t={393:
+/*!*****************!*\
+  !*** ./test.js ***!
+  \*****************/t=>{t.exports={}},147:
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/t=>{"use strict";t.exports=require("fs")},17:
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/t=>{"use strict";t.exports=require("path")}},e={};function o(c){var n=e[c];if(void 0!==n)return n.exports;var s=e[c]={exports:{}};return t[c](s,s.exports,o),s.exports}
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
+it("should contain no comments in out chunk",(()=>{const t=o(/*! fs */147).readFileSync(__filename,"utf-8");expect(t).not.toMatch(/[^\"]comment should be stripped test\.1[^\"]/),expect(t).not.toMatch(/[^\"]comment should be stripped test\.2[^\"]/),expect(t).not.toMatch(/[^\"]comment should be stripped test\.3[^\"]/)})),it("should contain comments in vendors chunk",(function(){const t=o(/*! fs */147),e=o(/*! path */17),c=t.readFileSync(e.join(__dirname,"vendors.js"),"utf-8");expect(c).toMatch("comment should not be stripped vendors.1"),expect(c).toMatch("// comment should not be stripped vendors.2"),expect(c).toMatch(" * comment should not be stripped vendors.3")})),it("should extract comments to separate file",(function(){const t=o(/*! fs */147),e=o(/*! path */17),c=t.readFileSync(e.join(__dirname,"extract.js.LICENSE.txt"),"utf-8");expect(c).toMatch("comment should be extracted extract-test.1"),expect(c).not.toMatch("comment should be stripped extract-test.2"),expect(c).toMatch("comment should be extracted extract-test.3"),expect(c).not.toMatch("comment should be stripped extract-test.4")})),it("should remove extracted comments and insert a banner",(function(){const t=o(/*! fs */147),e=o(/*! path */17),c=t.readFileSync(e.join(__dirname,"extract.js"),"utf-8");expect(c).not.toMatch("comment should be extracted extract-test.1"),expect(c).not.toMatch("comment should be stripped extract-test.2"),expect(c).not.toMatch("comment should be extracted extract-test.3"),expect(c).not.toMatch("comment should be stripped extract-test.4"),expect(c).toMatch("/*! For license information please see extract.js.LICENSE.txt */")})),it("should pass mangle options",(function(){const t=o(/*! fs */147),e=o(/*! path */17),c=t.readFileSync(e.join(__dirname,"ie8.js"),"utf-8");expect(c).toMatch(/\.exports=function\((\w)\)\{return function\((\w)\)\{try\{\1\(\)\}catch\(\1\)\{\2\(\1\)\}\}\}/)})),it("should pass compress options",(function(){const t=o(/*! fs */147),e=o(/*! path */17),c=t.readFileSync(e.join(__dirname,"compress.js"),"utf-8");expect(c).toMatch(".exports=function(){console.log(4),console.log(6),console.log(4),console.log(7)}")})),Math.random()<0&&o(/*! ./test.js */393)})();

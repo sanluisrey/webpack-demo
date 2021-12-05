@@ -1,0 +1,602 @@
+PublicPath: (none)
+asset container.js 23.4 KiB {413} [emitted] (name: container)
+asset runtime.js 22 KiB {666} [emitted] (name: runtime)
+asset main.js 1.91 KiB {179} [emitted] (name: main)
+asset 718.js 1.6 KiB {718} [emitted]
+asset 771.js 1.4 KiB {771} [emitted]
+asset 997.js 882 bytes {997} [emitted]
+asset 539.js 805 bytes {539} [emitted]
+asset 44.js 727 bytes {44} [emitted]
+Entrypoint main 23.9 KiB = runtime.js 22 KiB main.js 1.91 KiB
+Entrypoint container 23.4 KiB = container.js
+chunk {44} (runtime: container, runtime) 44.js 119 bytes <{179}> <{413}> <{539}> <{666}> <{690}> <{704}> <{718}> <{771}> <{997}> [rendered]
+  > [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+  > [987] provide shared module (default) react@2.1.0 = ./node_modules/react.js
+  ./node_modules/react.js [44] 119 bytes {44} [depth 1] [built] [code generated]
+    [exports: default, setVersion]
+    consume shared fallback react [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/container/1-container-full/node_modules/react.js [987] provide shared module (default) react@2.1.0 = ./node_modules/react.js
+chunk {179} (runtime: runtime) main.js (main) 707 bytes (javascript) 42 bytes (share-init) ={666}= >{44}< >{539}< >{690}< >{704}< >{771}< [initial] [rendered]
+  > ./index.js main
+  ./index.js [10] 623 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-15:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  external "../0-container-full/container.js" [745] 42 bytes {179} {413} [depth 3] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+    remote to external webpack/container/reference/containerA [953] remote containerA/ComponentA
+  external "./container.js" [11] 42 bytes {179} {413} [depth 3] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+    remote to external webpack/container/reference/containerB [524] remote containerB/ComponentB
+  provide shared module (default) react@2.1.0 = ./node_modules/react.js [987] 42 bytes {179} {413} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+    provide shared module
+chunk {413} (runtime: container) container.js (container) 126 bytes (javascript) 42 bytes (share-init) 15 KiB (runtime) >{44}< >{690}< >{704}< >{718}< >{997}< [entry] [rendered]
+  > container
+  runtime modules 15 KiB
+    webpack/runtime/compat get default export 267 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/consumes 8.09 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.68 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 2.01 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 126 bytes (javascript) 42 bytes (share-init) [built]
+    container entry [747] 42 bytes {413} [depth 0] [built] [code generated]
+      [exports: get, init]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+      container entry container
+      used as library export
+    external "../0-container-full/container.js" [745] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+      remote to external webpack/container/reference/containerA [953] remote containerA/ComponentA
+    external "./container.js" [11] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+      remote to external webpack/container/reference/containerB [524] remote containerB/ComponentB
+    provide shared module (default) react@2.1.0 = ./node_modules/react.js [987] 42 bytes {179} {413} [depth 0] [built] [code generated]
+      [no exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+      provide shared module
+chunk {539} (runtime: runtime) 539.js 97 bytes <{179}> <{666}> ={704}= >{44}< [rendered]
+  > ./upgrade-react [10] ./index.js 7:9-34
+  ./upgrade-react.js [539] 97 bytes {539} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-35
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    import() ./upgrade-react [10] ./index.js 7:9-34
+chunk {666} (runtime: runtime) runtime.js (runtime) 15.4 KiB ={179}= >{44}< >{539}< >{690}< >{704}< >{771}< [entry] [rendered]
+  > ./index.js main
+  webpack/runtime/compat get default export 267 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/consumes 8.09 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 205 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.85 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/remotes loading 1.68 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/sharing 2.01 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/startup entrypoint 374 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {690} (runtime: container, runtime) 12 bytes (remote) 12 bytes (share-init) <{179}> <{413}> <{666}> ={704}= ={718}= ={771}= >{44}< split chunk (cache group: default)
+  > ./App [10] ./index.js 2:8-23
+  > ./ComponentC [747] container entry ./ComponentC
+  remote containerA/ComponentA [953] 6 bytes (remote) 6 bytes (share-init) {690} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation containerA/ComponentA [771] ./App.js + 1 modules ./App.js 2:0-47
+      harmony import specifier containerA/ComponentA [771] ./App.js + 1 modules ./App.js 7:47-57
+    from origin ./ComponentC.js
+      harmony side effect evaluation containerA/ComponentA [718] ./ComponentC.js 2:0-47
+      harmony import specifier containerA/ComponentA [718] ./ComponentC.js 6:54-64
+  remote containerB/ComponentB [524] 6 bytes (remote) 6 bytes (share-init) {690} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation containerB/ComponentB [771] ./App.js + 1 modules ./App.js 3:0-47
+      harmony import specifier containerB/ComponentB [771] ./App.js + 1 modules ./App.js 7:69-79
+      harmony import specifier containerB/ComponentB [771] ./App.js + 1 modules ./App.js 10:7-17
+    from origin ./ComponentC.js
+      harmony side effect evaluation containerB/ComponentB [718] ./ComponentC.js 3:0-47
+      harmony import specifier containerB/ComponentB [718] ./ComponentC.js 6:76-86
+chunk {704} (runtime: container, runtime) 42 bytes <{179}> <{413}> <{666}> ={539}= ={690}= ={718}= ={771}= ={997}= >{44}< split chunk (cache group: default)
+  > ./App [10] ./index.js 2:8-23
+  > ./upgrade-react [10] ./index.js 7:9-34
+  > ./ComponentB [747] container entry ./ComponentB
+  > ./ComponentC [747] container entry ./ComponentC
+  consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js) [704] 42 bytes {704} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ConsumeSharedModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation react [771] ./App.js + 1 modules ./App.js 1:0-26
+      harmony import specifier react [771] ./App.js + 1 modules ./App.js 7:30-35
+      harmony side effect evaluation react [771] ./App.js + 1 modules ./ComponentB.js 1:0-26
+      harmony import specifier react [771] ./App.js + 1 modules ./ComponentB.js 4:37-42
+    from origin ./ComponentB.js
+      harmony side effect evaluation react [997] ./ComponentB.js 1:0-26
+      harmony import specifier react [997] ./ComponentB.js 4:37-42
+    from origin ./ComponentC.js
+      harmony side effect evaluation react [718] ./ComponentC.js 1:0-26
+      harmony import specifier react [718] ./ComponentC.js 6:37-42
+    from origin ./upgrade-react.js
+      harmony side effect evaluation react [539] ./upgrade-react.js 1:0-35
+      harmony import specifier react [539] ./upgrade-react.js 4:1-11
+chunk {718} (runtime: container) 718.js 243 bytes <{413}> ={690}= ={704}= >{44}< [rendered]
+  > ./ComponentC [747] container entry ./ComponentC
+  ./ComponentC.js [718] 243 bytes {718} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-26
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    ModuleConcatenation bailout: Cannot concat with remote containerA/ComponentA: Module Concatenation is not implemented for RemoteModule
+    ModuleConcatenation bailout: Cannot concat with remote containerB/ComponentB: Module Concatenation is not implemented for RemoteModule
+    container exposed ./ComponentC [747] container entry ./ComponentC[0]
+chunk {771} (runtime: runtime) 771.js 430 bytes <{179}> <{666}> ={690}= ={704}= >{44}< [rendered]
+  > ./App [10] ./index.js 2:8-23
+  ./App.js + 1 modules [771] 430 bytes {771} [depth 1] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    ModuleConcatenation bailout: Cannot concat with remote containerA/ComponentA: Module Concatenation is not implemented for RemoteModule
+    ModuleConcatenation bailout: Cannot concat with remote containerB/ComponentB: Module Concatenation is not implemented for RemoteModule
+    import() ./App [10] ./index.js 2:8-23
+chunk {997} (runtime: container) 997.js 103 bytes <{413}> ={704}= >{44}< [rendered]
+  > ./ComponentB [747] container entry ./ComponentB
+  ./ComponentB.js [997] 103 bytes {997} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-26
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    harmony side effect evaluation ./ComponentB ./App.js 4:0-43
+    harmony import specifier ./ComponentB ./App.js 10:28-43
+    container exposed ./ComponentB [747] container entry ./ComponentB[0]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 38.83692 ms
+<t> finish make hook: 3.381141 ms
+<t> finish compilation: 0.401659 ms
+<t> seal compilation: 18.326735 ms
+<t> afterCompile hook: 0.016893 ms
+<t> emitAssets: 26.501348 ms
+<t> emitRecords: 0.003394 ms
+<t> done hook: 0.023818 ms
+<t> beginIdle: 0.006393 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003903 ms
+<t> finish modules: 0.302457 ms
+<t> report dependency errors and warnings: 0.080755 ms
+<t> optimize dependencies: 0.425226 ms
+<t> create chunks: 1.1882 ms
+<t> compute affected modules with chunk graph: 0.002805 ms
+<t> optimize: 2.432174 ms
+    16 modules hashed, 0 from cache (1.23 variants per module in average)
+<t> module hashing: 0.779492 ms
+    100% code generated (13 generated, 0 from cache)
+<t> code generation: 3.129789 ms
+<t> runtime requirements.modules: 0.120937 ms
+<t> runtime requirements.chunks: 0.13591 ms
+<t> runtime requirements.entries: 2.424387 ms
+<t> runtime requirements: 2.722954 ms
+<t> hashing: initialize hash: 0.008166 ms
+<t> hashing: sort chunks: 0.033928 ms
+<t> hashing: hash runtime modules: 3.288995 ms
+<t> hashing: hash chunks: 0.999259 ms
+<t> hashing: hash digest: 0.066077 ms
+<t> hashing: process full hash modules: 0.00251 ms
+<t> hashing: 4.490008 ms
+    100% code generated (21 generated, 0 from cache)
+<t> record hash: 0.020839 ms
+<t> module assets: 0.050487 ms
+<t> create chunk assets: 1.681946 ms
+<t> process assets: 0.551392 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.040473 ms
+<t> figure out provided exports: 0.086497 ms
+    62% of exports of modules have been determined (5 no declared exports, 5 not cached, 3 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.026048 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.083547 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.030595 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.013423 ms
+<t> trace exports usage in graph: 0.327377 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.028629 ms
+<t> visitModules: visiting: 0.123688 ms
+<t> visitModules: calculating available modules: 0.017132 ms
+<t> visitModules: merging available modules: 0.025095 ms
+<t> visitModules: check modules for revisit: 0.002973 ms
+<t> visitModules: prepare: 0.07486 ms
+<t> visitModules: visiting: 0.208613 ms
+<t> visitModules: calculating available modules: 0.014181 ms
+<t> visitModules: merging available modules: 0.315433 ms
+<t> visitModules: check modules for revisit: 0.003075 ms
+<t> visitModules: prepare: 0.009618 ms
+<t> visitModules: visiting: 0.034341 ms
+    56 queue items processed (33 blocks)
+    10 chunk groups connected
+    6 chunk groups processed for merging (10 module sets, 2 forked, 9 + 2 modules forked, 8 + 2 modules merged into fork, 7 resulting modules)
+    6 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.790063 ms
+<t> connectChunkGroups: 0.025124 ms
+<t> cleanup: 0.002549 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.023327 ms
+<t> modules: 0.330684 ms
+<t> queue: 0.110106 ms
+<t> maxSize: 0.015 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.078469 ms
+<t> sort relevant modules: 0.003244 ms
+<t> find modules to concatenate: 0.345833 ms
+<t> sort concat configurations: 0.000726 ms
+<t> create concatenated modules: 0.556299 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled successfully in 90 ms (9f1e1500c2602ae4c9c1)
+
+PublicPath: auto
+asset module/container.mjs 23.4 KiB {413} [emitted] [javascript module] (name: container)
+asset module/runtime.mjs 20.8 KiB {666} [emitted] [javascript module] (name: runtime)
+asset module/main.mjs 2.41 KiB {179} [emitted] [javascript module] (name: main)
+asset module/718.mjs 1.6 KiB {718} [emitted] [javascript module]
+asset module/771.mjs 1.4 KiB {771} [emitted] [javascript module]
+asset module/997.mjs 882 bytes {997} [emitted] [javascript module]
+asset module/539.mjs 805 bytes {539} [emitted] [javascript module]
+asset module/44.mjs 727 bytes {44} [emitted] [javascript module]
+Entrypoint main 23.3 KiB = module/runtime.mjs 20.8 KiB module/main.mjs 2.41 KiB
+Entrypoint container 23.4 KiB = module/container.mjs
+chunk {44} (runtime: container, runtime) module/44.mjs 119 bytes <{179}> <{413}> <{539}> <{666}> <{690}> <{704}> <{718}> <{771}> <{997}> [rendered]
+  > [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+  > [987] provide shared module (default) react@2.1.0 = ./node_modules/react.js
+  ./node_modules/react.js [44] 119 bytes {44} [depth 1] [built] [code generated]
+    [exports: default, setVersion]
+    consume shared fallback react [704] consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js)
+    provide module for shared /Users/yoh/Projects/repos/webpack/test/configCases/container/1-container-full/node_modules/react.js [987] provide shared module (default) react@2.1.0 = ./node_modules/react.js
+chunk {179} (runtime: runtime) module/main.mjs (main) 707 bytes (javascript) 42 bytes (share-init) ={666}= >{44}< >{539}< >{690}< >{704}< >{771}< [initial] [rendered]
+  > ./index.js main
+  ./index.js [10] 623 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-15:3
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js main
+  external "../../0-container-full/module/container.mjs" [599] 42 bytes {179} {413} [depth 3] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+    remote to external webpack/container/reference/containerA [953] remote containerA/ComponentA
+  external "./container.mjs" [796] 42 bytes {179} {413} [depth 3] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+    remote to external webpack/container/reference/containerB [524] remote containerB/ComponentB
+  provide shared module (default) react@2.1.0 = ./node_modules/react.js [987] 42 bytes {179} {413} [depth 0] [built] [code generated]
+    [no exports used]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+    provide shared module
+chunk {413} (runtime: container) module/container.mjs (container) 126 bytes (javascript) 42 bytes (share-init) 14.9 KiB (runtime) >{44}< >{690}< >{704}< >{718}< >{997}< [entry] [rendered]
+  > container
+  runtime modules 14.9 KiB
+    webpack/runtime/compat get default export 267 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/consumes 8.09 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/define property getters 308 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 175 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/import chunk loading 1.73 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/remotes loading 1.69 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/sharing 2.02 KiB {413} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 126 bytes (javascript) 42 bytes (share-init) [built]
+    container entry [747] 42 bytes {413} [depth 0] [built] [code generated]
+      [exports: get, init]
+      [all exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContainerEntryModule
+      container entry container
+      used as library export
+    external "../../0-container-full/module/container.mjs" [599] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+      remote to external webpack/container/reference/containerA [953] remote containerA/ComponentA
+    external "./container.mjs" [796] 42 bytes {179} {413} [depth 3] [built] [code generated]
+      ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in runtime, container (runtime-defined))
+      remote to external webpack/container/reference/containerB [524] remote containerB/ComponentB
+    provide shared module (default) react@2.1.0 = ./node_modules/react.js [987] 42 bytes {179} {413} [depth 0] [built] [code generated]
+      [no exports used]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ProvideSharedModule
+      provide shared module
+chunk {539} (runtime: runtime) module/539.mjs 97 bytes <{179}> <{666}> ={704}= >{44}< [rendered]
+  > ./upgrade-react [10] ./index.js 7:9-34
+  ./upgrade-react.js [539] 97 bytes {539} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-35
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    import() ./upgrade-react [10] ./index.js 7:9-34
+chunk {666} (runtime: runtime) module/runtime.mjs (runtime) 15 KiB ={179}= >{44}< >{539}< >{690}< >{704}< >{771}< [entry] [rendered]
+  > ./index.js main
+  webpack/runtime/compat get default export 267 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/consumes 8.09 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/define property getters 308 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/export webpack runtime 35 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 175 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/import chunk loading 1.74 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/remotes loading 1.69 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/sharing 2.02 KiB {666} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {690} (runtime: container, runtime) 12 bytes (remote) 12 bytes (share-init) <{179}> <{413}> <{666}> ={704}= ={718}= ={771}= >{44}< split chunk (cache group: default)
+  > ./App [10] ./index.js 2:8-23
+  > ./ComponentC [747] container entry ./ComponentC
+  remote containerA/ComponentA [953] 6 bytes (remote) 6 bytes (share-init) {690} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation containerA/ComponentA [771] ./App.js + 1 modules ./App.js 2:0-47
+      harmony import specifier containerA/ComponentA [771] ./App.js + 1 modules ./App.js 7:47-57
+    from origin ./ComponentC.js
+      harmony side effect evaluation containerA/ComponentA [718] ./ComponentC.js 2:0-47
+      harmony import specifier containerA/ComponentA [718] ./ComponentC.js 6:54-64
+  remote containerB/ComponentB [524] 6 bytes (remote) 6 bytes (share-init) {690} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for RemoteModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation containerB/ComponentB [771] ./App.js + 1 modules ./App.js 3:0-47
+      harmony import specifier containerB/ComponentB [771] ./App.js + 1 modules ./App.js 7:69-79
+      harmony import specifier containerB/ComponentB [771] ./App.js + 1 modules ./App.js 10:7-17
+    from origin ./ComponentC.js
+      harmony side effect evaluation containerB/ComponentB [718] ./ComponentC.js 3:0-47
+      harmony import specifier containerB/ComponentB [718] ./ComponentC.js 6:76-86
+chunk {704} (runtime: container, runtime) 42 bytes <{179}> <{413}> <{666}> ={539}= ={690}= ={718}= ={771}= ={997}= >{44}< split chunk (cache group: default)
+  > ./App [10] ./index.js 2:8-23
+  > ./upgrade-react [10] ./index.js 7:9-34
+  > ./ComponentB [747] container entry ./ComponentB
+  > ./ComponentC [747] container entry ./ComponentC
+  consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js) [704] 42 bytes {704} [depth 2] [built] [code generated]
+    [used exports unknown]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ConsumeSharedModule
+    from origin ./App.js + 1 modules
+      harmony side effect evaluation react [771] ./App.js + 1 modules ./App.js 1:0-26
+      harmony import specifier react [771] ./App.js + 1 modules ./App.js 7:30-35
+      harmony side effect evaluation react [771] ./App.js + 1 modules ./ComponentB.js 1:0-26
+      harmony import specifier react [771] ./App.js + 1 modules ./ComponentB.js 4:37-42
+    from origin ./ComponentB.js
+      harmony side effect evaluation react [997] ./ComponentB.js 1:0-26
+      harmony import specifier react [997] ./ComponentB.js 4:37-42
+    from origin ./ComponentC.js
+      harmony side effect evaluation react [718] ./ComponentC.js 1:0-26
+      harmony import specifier react [718] ./ComponentC.js 6:37-42
+    from origin ./upgrade-react.js
+      harmony side effect evaluation react [539] ./upgrade-react.js 1:0-35
+      harmony import specifier react [539] ./upgrade-react.js 4:1-11
+chunk {718} (runtime: container) module/718.mjs 243 bytes <{413}> ={690}= ={704}= >{44}< [rendered]
+  > ./ComponentC [747] container entry ./ComponentC
+  ./ComponentC.js [718] 243 bytes {718} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-26
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    ModuleConcatenation bailout: Cannot concat with remote containerA/ComponentA: Module Concatenation is not implemented for RemoteModule
+    ModuleConcatenation bailout: Cannot concat with remote containerB/ComponentB: Module Concatenation is not implemented for RemoteModule
+    container exposed ./ComponentC [747] container entry ./ComponentC[0]
+chunk {771} (runtime: runtime) module/771.mjs 430 bytes <{179}> <{666}> ={690}= ={704}= >{44}< [rendered]
+  > ./App [10] ./index.js 2:8-23
+  ./App.js + 1 modules [771] 430 bytes {771} [depth 1] [built] [code generated]
+    [exports: default]
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    ModuleConcatenation bailout: Cannot concat with remote containerA/ComponentA: Module Concatenation is not implemented for RemoteModule
+    ModuleConcatenation bailout: Cannot concat with remote containerB/ComponentB: Module Concatenation is not implemented for RemoteModule
+    import() ./App [10] ./index.js 2:8-23
+chunk {997} (runtime: container) module/997.mjs 103 bytes <{413}> ={704}= >{44}< [rendered]
+  > ./ComponentB [747] container entry ./ComponentB
+  ./ComponentB.js [997] 103 bytes {997} [depth 1] [built] [code generated]
+    [exports: default]
+    Dependency (harmony side effect evaluation) with side effects at 1:0-26
+    ModuleConcatenation bailout: Cannot concat with consume shared module (default) react@* (strict) (fallback: ./node_modules/react.js): Module Concatenation is not implemented for ConsumeSharedModule
+    harmony side effect evaluation ./ComponentB ./App.js 4:0-43
+    harmony import specifier ./ComponentB ./App.js 10:28-43
+    container exposed ./ComponentB [747] container entry ./ComponentB[0]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 37.497224 ms
+<t> finish make hook: 26.294263 ms
+<t> finish compilation: 0.767772 ms
+<t> seal compilation: 18.963817 ms
+<t> afterCompile hook: 0.009824 ms
+<t> emitAssets: 2.548967 ms
+<t> emitRecords: 0.001881 ms
+<t> done hook: 0.034673 ms
+<t> beginIdle: 0.004752 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004571 ms
+<t> finish modules: 0.636563 ms
+<t> report dependency errors and warnings: 0.101177 ms
+<t> optimize dependencies: 0.688547 ms
+<t> create chunks: 1.076246 ms
+<t> compute affected modules with chunk graph: 0.004382 ms
+<t> optimize: 3.326027 ms
+    16 modules hashed, 0 from cache (1.23 variants per module in average)
+<t> module hashing: 1.93438 ms
+    100% code generated (13 generated, 0 from cache)
+<t> code generation: 2.867602 ms
+<t> runtime requirements.modules: 0.124676 ms
+<t> runtime requirements.chunks: 0.128772 ms
+<t> runtime requirements.entries: 0.888991 ms
+<t> runtime requirements: 1.169458 ms
+<t> hashing: initialize hash: 0.005461 ms
+<t> hashing: sort chunks: 0.029168 ms
+<t> hashing: hash runtime modules: 3.096115 ms
+<t> hashing: hash chunks: 1.031713 ms
+<t> hashing: hash digest: 0.023667 ms
+<t> hashing: process full hash modules: 0.001136 ms
+<t> hashing: 4.252984 ms
+    100% code generated (21 generated, 0 from cache)
+<t> record hash: 0.053469 ms
+<t> module assets: 0.036854 ms
+<t> create chunk assets: 2.459837 ms
+<t> process assets: 0.50369 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.053206 ms
+<t> figure out provided exports: 0.110712 ms
+    62% of exports of modules have been determined (5 no declared exports, 5 not cached, 3 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.032241 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.076623 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.046899 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.023665 ms
+<t> trace exports usage in graph: 0.543464 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.043415 ms
+<t> visitModules: visiting: 0.188911 ms
+<t> visitModules: calculating available modules: 0.024871 ms
+<t> visitModules: merging available modules: 0.059277 ms
+<t> visitModules: check modules for revisit: 0.007273 ms
+<t> visitModules: prepare: 0.117879 ms
+<t> visitModules: visiting: 0.338501 ms
+<t> visitModules: calculating available modules: 0.023912 ms
+<t> visitModules: merging available modules: 0.049533 ms
+<t> visitModules: check modules for revisit: 0.004653 ms
+<t> visitModules: prepare: 0.010321 ms
+<t> visitModules: visiting: 0.037744 ms
+    56 queue items processed (33 blocks)
+    10 chunk groups connected
+    6 chunk groups processed for merging (10 module sets, 2 forked, 9 + 2 modules forked, 8 + 2 modules merged into fork, 7 resulting modules)
+    6 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.796255 ms
+<t> connectChunkGroups: 0.040707 ms
+<t> cleanup: 0.004075 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.035346 ms
+<t> modules: 0.856042 ms
+<t> queue: 0.139147 ms
+<t> maxSize: 0.026608 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.123502 ms
+<t> sort relevant modules: 0.005257 ms
+<t> find modules to concatenate: 0.311598 ms
+<t> sort concat configurations: 0.001016 ms
+<t> create concatenated modules: 0.466636 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    6 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 6 timestamps 6 hashes 6 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/6) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:21: webpack 5.64.4 compiled successfully in 89 ms (c1cda5e966bdbba3a547)

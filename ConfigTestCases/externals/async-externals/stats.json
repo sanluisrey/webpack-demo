@@ -1,0 +1,1986 @@
+{
+  "hash": "a7c91d572c6b3ed90800",
+  "version": "5.64.4",
+  "time": 21,
+  "builtAt": 1638693868953,
+  "publicPath": "",
+  "outputPath": "/Users/yoh/Projects/repos/webpack/test/js/ConfigTestCases/externals/async-externals",
+  "assetsByChunkName": {
+    "main": [
+      "bundle0.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle0.js",
+      "size": 17249,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 17249
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        179
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7054,
+      "sizes": {
+        "javascript": 2768,
+        "runtime": 4286
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "bundle0.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "48cf068aa71e6cbe3de3",
+      "childrenByOrder": {},
+      "id": 179,
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 1217,
+          "sizes": {
+            "javascript": 1217
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 10,
+          "issuerId": null,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./index.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 7:0-12:3",
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/esm",
+          "layer": null,
+          "size": 1341,
+          "sizes": {
+            "javascript": 1341
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "name": "./module.mjs",
+          "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 73,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./module.mjs",
+              "loc": "5:0-22",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            }
+          ],
+          "usedExports": [],
+          "providedExports": [],
+          "optimizationBailout": [
+            "Statement (ExpressionStatement) with side effects in source code at 6:0-11:3",
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external promise \"new Promise((resolve, reject) => setTimeout(() => reject(new Error('external reject')), 100))\"",
+          "name": "external \"new Promise((resolve, reject) => setTimeout(() => reject(new Error('external reject')), 100))\"",
+          "nameForCondition": null,
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 6,
+          "postOrderIndex": 6,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 916,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "failing-promise-external",
+              "loc": "15:21-55",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "failing-promise-external",
+              "loc": "14:21-55",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve(42), 100))\"",
+          "name": "external \"new Promise(resolve => setTimeout(() => resolve(42), 100))\"",
+          "nameForCondition": null,
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 456,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "1:0-37",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "8:8-13",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "23:8-34",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "1:0-37",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "7:8-13",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "promise-external",
+              "loc": "22:8-34",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve({ __esModule: true, default: 42, named: true }), 100))\"",
+          "name": "external \"new Promise(resolve => setTimeout(() => resolve({ __esModule: true, default: 42, named: true }), 100))\"",
+          "nameForCondition": null,
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 79,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "2:0-45",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "9:8-14",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "29:8-41",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "2:0-45",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "8:8-14",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "module-promise-external",
+              "loc": "28:8-41",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve({ default: 42, named: true }), 100))\"",
+          "name": "external \"new Promise(resolve => setTimeout(() => resolve({ default: 42, named: true }), 100))\"",
+          "nameForCondition": null,
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 993,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "3:0-45",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "10:8-14",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "35:8-41",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "3:0-45",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "9:8-14",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "object-promise-external",
+              "loc": "36:8-41",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/dynamic",
+          "layer": null,
+          "size": 42,
+          "sizes": {
+            "javascript": 42
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "external import [\"/hello/world.js\",\"request\"]",
+          "name": "external [\"/hello/world.js\",\"request\"]",
+          "nameForCondition": null,
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "issuerName": "./index.js",
+          "issuerPath": [
+            {
+              "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "name": "./index.js",
+              "id": 10
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": 964,
+          "issuerId": 10,
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "import-external",
+              "loc": "4:0-38",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "module": "./index.js",
+              "moduleName": "./index.js",
+              "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+              "resolvedModule": "./index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "import-external",
+              "loc": "11:8-15",
+              "moduleId": 10,
+              "resolvedModuleId": 10
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "import-external",
+              "loc": "4:0-38",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            },
+            {
+              "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "module": "./module.mjs",
+              "moduleName": "./module.mjs",
+              "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+              "resolvedModule": "./module.mjs",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "import-external",
+              "loc": "10:8-15",
+              "moduleId": 73,
+              "resolvedModuleId": 73
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is async"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 2208,
+          "sizes": {
+            "runtime": 2208
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/async module",
+          "name": "webpack/runtime/async module",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 267,
+          "sizes": {
+            "runtime": 267
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/compat get default export",
+          "name": "webpack/runtime/compat get default export",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1141,
+          "sizes": {
+            "runtime": 1141
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/create fake namespace object",
+          "name": "webpack/runtime/create fake namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            179
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 1217,
+      "sizes": {
+        "javascript": 1217
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "name": "./index.js",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 10,
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": null,
+          "active": true,
+          "explanation": "used as library export",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 7:0-12:3",
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve(42), 100))\"",
+      "name": "external \"new Promise(resolve => setTimeout(() => resolve(42), 100))\"",
+      "nameForCondition": null,
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 456,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "1:0-37",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "8:8-13",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "23:8-34",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "1:0-37",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "7:8-13",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "promise-external",
+          "loc": "22:8-34",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve({ __esModule: true, default: 42, named: true }), 100))\"",
+      "name": "external \"new Promise(resolve => setTimeout(() => resolve({ __esModule: true, default: 42, named: true }), 100))\"",
+      "nameForCondition": null,
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 79,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "2:0-45",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "9:8-14",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "29:8-41",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "2:0-45",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "8:8-14",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "module-promise-external",
+          "loc": "28:8-41",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external promise \"new Promise(resolve => setTimeout(() => resolve({ default: 42, named: true }), 100))\"",
+      "name": "external \"new Promise(resolve => setTimeout(() => resolve({ default: 42, named: true }), 100))\"",
+      "nameForCondition": null,
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 993,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "3:0-45",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "10:8-14",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "35:8-41",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "3:0-45",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "9:8-14",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "object-promise-external",
+          "loc": "36:8-41",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external import [\"/hello/world.js\",\"request\"]",
+      "name": "external [\"/hello/world.js\",\"request\"]",
+      "nameForCondition": null,
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 964,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "import-external",
+          "loc": "4:0-38",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "import-external",
+          "loc": "11:8-15",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "import-external",
+          "loc": "4:0-38",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "import-external",
+          "loc": "10:8-15",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/esm",
+      "layer": null,
+      "size": 1341,
+      "sizes": {
+        "javascript": 1341
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+      "name": "./module.mjs",
+      "nameForCondition": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 4,
+      "postOrderIndex": 4,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 73,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./module.mjs",
+          "loc": "5:0-22",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        }
+      ],
+      "usedExports": [],
+      "providedExports": [],
+      "optimizationBailout": [
+        "Statement (ExpressionStatement) with side effects in source code at 6:0-11:3",
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 42,
+      "sizes": {
+        "javascript": 42
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "external promise \"new Promise((resolve, reject) => setTimeout(() => reject(new Error('external reject')), 100))\"",
+      "name": "external \"new Promise((resolve, reject) => setTimeout(() => reject(new Error('external reject')), 100))\"",
+      "nameForCondition": null,
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 6,
+      "postOrderIndex": 6,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+      "issuerName": "./index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "name": "./index.js",
+          "id": 10
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 916,
+      "issuerId": 10,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "module": "./index.js",
+          "moduleName": "./index.js",
+          "resolvedModuleIdentifier": "/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/index.js",
+          "resolvedModule": "./index.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "failing-promise-external",
+          "loc": "15:21-55",
+          "moduleId": 10,
+          "resolvedModuleId": 10
+        },
+        {
+          "moduleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "module": "./module.mjs",
+          "moduleName": "./module.mjs",
+          "resolvedModuleIdentifier": "javascript/esm|/Users/yoh/Projects/repos/webpack/test/configCases/externals/async-externals/module.mjs",
+          "resolvedModule": "./module.mjs",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "failing-promise-external",
+          "loc": "14:21-55",
+          "moduleId": 73,
+          "resolvedModuleId": 73
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is async"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 2208,
+      "sizes": {
+        "runtime": 2208
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/async module",
+      "name": "webpack/runtime/async module",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": {
+        "runtime": 267
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1141,
+      "sizes": {
+        "runtime": 1141
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/create fake namespace object",
+      "name": "webpack/runtime/create fake namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 17249
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 17249,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "bundle0.js",
+          "size": 17249
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 17249,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

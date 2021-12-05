@@ -1,0 +1,411 @@
+PublicPath: (none)
+asset bundle-import.js 8.45 KiB {886} [emitted] (name: bundle-import)
+asset bundle-amd-require.js 7.97 KiB {554}, {589}, {663}, {913} [emitted] (name: bundle-amd-require)
+asset bundle-require.resolve.js 7.66 KiB {589}, {663}, {775}, {913} [emitted] (name: bundle-require.resolve)
+asset bundle-amd-define.js 6.29 KiB {991} [emitted] (name: bundle-amd-define)
+asset bundle-commonjs.js 5.54 KiB {91}, {589}, {663} [emitted] (name: bundle-commonjs)
+asset 913.js 4.87 KiB {589}, {663}, {913} [emitted]
+asset bundle0.js 3.11 KiB {142} [emitted] (name: bundle0)
+asset 589.js 525 bytes {589} [emitted]
+asset 663.js 525 bytes {663} [emitted]
+Entrypoint bundle0 3.11 KiB = bundle0.js
+Entrypoint bundle-import 8.45 KiB = bundle-import.js
+Entrypoint bundle-amd-require 7.97 KiB = bundle-amd-require.js
+Entrypoint bundle-amd-define 6.29 KiB = bundle-amd-define.js
+Entrypoint bundle-commonjs 5.54 KiB = bundle-commonjs.js
+Entrypoint bundle-require.resolve 7.66 KiB = bundle-require.resolve.js
+chunk {91} (runtime: bundle-commonjs) bundle-commonjs.js (bundle-commonjs) 975 bytes (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./commonjs.js bundle-commonjs
+  built modules 975 bytes [built]
+    cacheable modules 453 bytes
+      ./commonjs.js [186] 383 bytes {91} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-69
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        entry ./commonjs.js bundle-commonjs
+      ./prefix0/folder/suffix0.js [663] 35 bytes {91} {554} {663} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+        context element ./folder/suffix0 [445] ./prefix0/ sync ^\.\/.*\/suffix0$ ./folder/suffix0
+      ./prefix3/folder/suffix3.js [589] 35 bytes {91} {554} {589} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+        context element ./folder/suffix3 [367] ./prefix3/ sync ^\.\/.*\/suffix3$ ./folder/suffix3
+    ././ sync [387] 160 bytes {91} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      cjs require context [186] ./commonjs.js 2:0-4:63
+    ./prefix0/ sync ^\.\/.*\/suffix0$ [445] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 1:0-68
+      amd require context [160] ./require.resolve.js 1:0-76
+    ./prefix3/ sync ^\.\/.*\/suffix3$ [367] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 5:0-7:63
+      amd require context [160] ./require.resolve.js 7:0-11:1
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {91} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {91} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {91} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {142} (runtime: bundle0) bundle0.js (bundle0) 1.49 KiB [entry] [rendered]
+  > ./index.js bundle0
+  ./index.js [10] 1.41 KiB {142} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (VariableDeclaration) with side effects in source code at 1:0-25
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./index.js bundle0
+  external "fs" [147] 42 bytes {142} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in bundle0 (runtime-defined))
+    cjs require fs [10] ./index.js 1:11-24
+  external "path" [17] 42 bytes {142} [depth 1] [dependent] [built] [code generated]
+    ModuleConcatenation bailout: List of module exports is dynamic (other exports: maybe provided (runtime-defined) and maybe used in bundle0 (runtime-defined))
+    cjs require path [10] ./index.js 2:13-28
+chunk {554} (runtime: bundle-amd-require) bundle-amd-require.js (bundle-amd-require) 1.22 KiB (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./amd-define.js bundle-amd-require
+  built modules 1.22 KiB [built]
+    cacheable modules 525 bytes
+      ./amd-define.js [49] 385 bytes {554} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-9:13
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        entry ./amd-define.js bundle-amd-require
+      ./prefix0/folder/suffix0.js [663] 35 bytes {91} {554} {663} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+        context element ./folder/suffix0 [445] ./prefix0/ sync ^\.\/.*\/suffix0$ ./folder/suffix0
+      ./prefix1/folder/suffix1.js [972] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        context element ./folder/suffix1 [542] ./prefix1/ sync ^\.\/.*\/suffix1$ ./folder/suffix1
+      ./prefix2/folder/suffix2.js [910] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        context element ./folder/suffix2 [89] ./prefix2/ sync ^\.\/.*\/suffix2$ ./folder/suffix2
+      ./prefix3/folder/suffix3.js [589] 35 bytes {91} {554} {589} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+        context element ./folder/suffix3 [367] ./prefix3/ sync ^\.\/.*\/suffix3$ ./folder/suffix3
+    ./prefix0/ sync ^\.\/.*\/suffix0$ [445] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 1:0-68
+      amd require context [160] ./require.resolve.js 1:0-76
+    ./prefix1/ sync ^\.\/.*\/suffix1$ [542] 181 bytes {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      amd require context [160] ./require.resolve.js 2:0-6:1
+    ./prefix2/ sync ^\.\/.*\/suffix2$ [89] 181 bytes {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      amd require context [160] ./require.resolve.js 2:0-6:1
+    ./prefix3/ sync ^\.\/.*\/suffix3$ [367] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 5:0-7:63
+      amd require context [160] ./require.resolve.js 7:0-11:1
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {554} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {554} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {554} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {589} (runtime: bundle-import) 589.js 35 bytes <{886}> [rendered]
+  > ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+  ./prefix3/folder/suffix3.js [589] 35 bytes {91} {554} {589} {775} {913} [depth 2] [optional] [built] [code generated]
+    [exports: test]
+    import() context element ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+    context element ./folder/suffix3 [367] ./prefix3/ sync ^\.\/.*\/suffix3$ ./folder/suffix3
+chunk {663} (runtime: bundle-import) 663.js 35 bytes <{886}> [rendered]
+  > ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+  ./prefix0/folder/suffix0.js [663] 35 bytes {91} {554} {663} {775} {913} [depth 2] [optional] [built] [code generated]
+    [exports: test]
+    import() context element ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+    context element ./folder/suffix0 [445] ./prefix0/ sync ^\.\/.*\/suffix0$ ./folder/suffix0
+chunk {775} (runtime: bundle-require.resolve) bundle-require.resolve.js (bundle-require.resolve) 1.25 KiB (javascript) 670 bytes (runtime) [entry] [rendered]
+  > ./require.resolve.js bundle-require.resolve
+  built modules 1.25 KiB [built]
+    cacheable modules 557 bytes
+      ./prefix0/folder/suffix0.js [663] 35 bytes {91} {554} {663} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+        context element ./folder/suffix0 [445] ./prefix0/ sync ^\.\/.*\/suffix0$ ./folder/suffix0
+      ./prefix1/folder/suffix1.js [972] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        context element ./folder/suffix1 [542] ./prefix1/ sync ^\.\/.*\/suffix1$ ./folder/suffix1
+      ./prefix2/folder/suffix2.js [910] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        context element ./folder/suffix2 [89] ./prefix2/ sync ^\.\/.*\/suffix2$ ./folder/suffix2
+      ./prefix3/folder/suffix3.js [589] 35 bytes {91} {554} {589} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+        [exports: test]
+        import() context element ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+        context element ./folder/suffix3 [367] ./prefix3/ sync ^\.\/.*\/suffix3$ ./folder/suffix3
+      ./require.resolve.js [160] 417 bytes {775} [depth 0] [built] [code generated]
+        [no exports used]
+        Statement (ExpressionStatement) with side effects in source code at 1:0-77
+        ModuleConcatenation bailout: Module is not an ECMAScript module
+        entry ./require.resolve.js bundle-require.resolve
+    ./prefix0/ sync ^\.\/.*\/suffix0$ [445] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 1:0-68
+      amd require context [160] ./require.resolve.js 1:0-76
+    ./prefix1/ sync ^\.\/.*\/suffix1$ [542] 181 bytes {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      amd require context [160] ./require.resolve.js 2:0-6:1
+    ./prefix2/ sync ^\.\/.*\/suffix2$ [89] 181 bytes {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      amd require context [160] ./require.resolve.js 2:0-6:1
+    ./prefix3/ sync ^\.\/.*\/suffix3$ [367] 181 bytes {91} {554} {775} {913} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      amd require context [49] ./amd-define.js 1:0-9:12
+      amd require context [872] ./amd-require.js 1:0-9:12
+      cjs require context [186] ./commonjs.js 5:0-7:63
+      amd require context [160] ./require.resolve.js 7:0-11:1
+  runtime modules 670 bytes
+    webpack/runtime/define property getters 308 bytes {775} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {775} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {775} [code generated]
+      [no exports]
+      [used exports unknown]
+chunk {886} (runtime: bundle-import) bundle-import.js (bundle-import) 862 bytes (javascript) 2.93 KiB (runtime) >{589}< >{663}< [entry] [rendered]
+  > ./import.js bundle-import
+  runtime modules 2.93 KiB
+    webpack/runtime/define property getters 308 bytes {886} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/ensure chunk 326 bytes {886} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/get javascript chunk filename 167 bytes {886} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/hasOwnProperty shorthand 88 bytes {886} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/make namespace object 274 bytes {886} [code generated]
+      [no exports]
+      [used exports unknown]
+    webpack/runtime/readFile chunk loading 1.8 KiB {886} [code generated]
+      [no exports]
+      [used exports unknown]
+  built modules 862 bytes [built]
+    ././ lazy namespace object [118] 160 bytes {886} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      import() context lazy [965] ./import.js 2:0-4:63
+    ./import.js [965] 382 bytes {886} [depth 0] [built] [code generated]
+      [no exports used]
+      Statement (ExpressionStatement) with side effects in source code at 1:0-68
+      ModuleConcatenation bailout: Module is not an ECMAScript module
+      entry ./import.js bundle-import
+    ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object [227] 160 bytes {886} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      import() context lazy [965] ./import.js 1:0-67
+    ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object [384] 160 bytes {886} [depth 1] [dependent] [built] [code generated]
+      [no exports]
+      ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+      import() context lazy [965] ./import.js 5:0-7:64
+chunk {913} (runtime: bundle-amd-define) 913.js 864 bytes <{991}> [rendered]
+  > [872] ./amd-require.js 1:0-9:12
+  optional modules 140 bytes [optional]
+    ./prefix0/folder/suffix0.js [663] 35 bytes {91} {554} {663} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+      [exports: test]
+      import() context element ./folder/suffix0 [227] ./prefix0/ lazy ^\.\/.*\/suffix0$ namespace object ./folder/suffix0
+      context element ./folder/suffix0 [445] ./prefix0/ sync ^\.\/.*\/suffix0$ ./folder/suffix0
+    ./prefix1/folder/suffix1.js [972] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+      [exports: test]
+      context element ./folder/suffix1 [542] ./prefix1/ sync ^\.\/.*\/suffix1$ ./folder/suffix1
+    ./prefix2/folder/suffix2.js [910] 35 bytes {554} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+      [exports: test]
+      context element ./folder/suffix2 [89] ./prefix2/ sync ^\.\/.*\/suffix2$ ./folder/suffix2
+    ./prefix3/folder/suffix3.js [589] 35 bytes {91} {554} {589} {775} {913} [depth 2] [optional] [dependent] [built] [code generated]
+      [exports: test]
+      import() context element ./folder/suffix3 [384] ./prefix3/ lazy ^\.\/.*\/suffix3$ namespace object ./folder/suffix3
+      context element ./folder/suffix3 [367] ./prefix3/ sync ^\.\/.*\/suffix3$ ./folder/suffix3
+  ./prefix0/ sync ^\.\/.*\/suffix0$ [445] 181 bytes {91} {554} {775} {913} [depth 1] [built] [code generated]
+    [no exports]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+    amd require context [49] ./amd-define.js 1:0-9:12
+    amd require context [872] ./amd-require.js 1:0-9:12
+    cjs require context [186] ./commonjs.js 1:0-68
+    amd require context [160] ./require.resolve.js 1:0-76
+  ./prefix1/ sync ^\.\/.*\/suffix1$ [542] 181 bytes {554} {775} {913} [depth 1] [built] [code generated]
+    [no exports]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+    amd require context [49] ./amd-define.js 1:0-9:12
+    amd require context [872] ./amd-require.js 1:0-9:12
+    amd require context [160] ./require.resolve.js 2:0-6:1
+  ./prefix2/ sync ^\.\/.*\/suffix2$ [89] 181 bytes {554} {775} {913} [depth 1] [built] [code generated]
+    [no exports]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+    amd require context [49] ./amd-define.js 1:0-9:12
+    amd require context [872] ./amd-require.js 1:0-9:12
+    amd require context [160] ./require.resolve.js 2:0-6:1
+  ./prefix3/ sync ^\.\/.*\/suffix3$ [367] 181 bytes {91} {554} {775} {913} [depth 1] [built] [code generated]
+    [no exports]
+    ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule
+    amd require context [49] ./amd-define.js 1:0-9:12
+    amd require context [872] ./amd-require.js 1:0-9:12
+    cjs require context [186] ./commonjs.js 5:0-7:63
+    amd require context [160] ./require.resolve.js 7:0-11:1
+chunk {991} (runtime: bundle-amd-define) bundle-amd-define.js (bundle-amd-define) 386 bytes (javascript) 2.93 KiB (runtime) >{913}< [entry] [rendered]
+  > ./amd-require.js bundle-amd-define
+  ./amd-require.js [872] 386 bytes {991} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-9:13
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./amd-require.js bundle-amd-define
+  webpack/runtime/define property getters 308 bytes {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 167 bytes {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/readFile chunk loading 1.8 KiB {991} [code generated]
+    [no exports]
+    [used exports unknown]
+  
+
+LOG from webpack.Compiler
+<t> make hook: 44.610842 ms
+<t> finish make hook: 0.01583 ms
+<t> finish compilation: 0.271708 ms
+<t> seal compilation: 15.680299 ms
+<t> afterCompile hook: 0.009653 ms
+<t> emitAssets: 1.887329 ms
+<t> emitRecords: 0.002225 ms
+<t> done hook: 0.051814 ms
+<t> beginIdle: 0.007297 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004045 ms
+<t> finish modules: 0.196032 ms
+<t> report dependency errors and warnings: 0.060552 ms
+<t> optimize dependencies: 0.528615 ms
+<t> create chunks: 0.528433 ms
+<t> compute affected modules with chunk graph: 0.001316 ms
+<t> optimize: 2.499776 ms
+    42 modules hashed, 0 from cache (2.1 variants per module in average)
+<t> module hashing: 1.465903 ms
+    100% code generated (20 generated, 0 from cache)
+<t> code generation: 2.112843 ms
+<t> runtime requirements.modules: 1.492528 ms
+<t> runtime requirements.chunks: 0.196761 ms
+<t> runtime requirements.entries: 1.779607 ms
+<t> runtime requirements: 3.531976 ms
+<t> hashing: initialize hash: 0.00847 ms
+<t> hashing: sort chunks: 0.042232 ms
+<t> hashing: hash runtime modules: 1.099839 ms
+<t> hashing: hash chunks: 1.125579 ms
+<t> hashing: hash digest: 0.019766 ms
+<t> hashing: process full hash modules: 0.001595 ms
+<t> hashing: 2.412232 ms
+    100% code generated (21 generated, 0 from cache)
+<t> record hash: 0.009058 ms
+<t> module assets: 0.023447 ms
+<t> create chunk assets: 1.609259 ms
+<t> process assets: 0.495495 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.038581 ms
+<t> figure out provided exports: 0.066318 ms
+    70% of exports of modules have been determined (6 no declared exports, 4 not cached, 10 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.017257 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.048964 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.024123 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.014768 ms
+<t> trace exports usage in graph: 0.447099 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.04626 ms
+<t> visitModules: visiting: 0.244187 ms
+<t> visitModules: calculating available modules: 0.011945 ms
+<t> visitModules: merging available modules: 0.00528 ms
+<t> visitModules: check modules for revisit: 0.003392 ms
+<t> visitModules: prepare: 0.00929 ms
+<t> visitModules: visiting: 0.062122 ms
+    87 queue items processed (45 blocks)
+    3 chunk groups connected
+    3 chunk groups processed for merging (3 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    3 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.365849 ms
+<t> connectChunkGroups: 0.014847 ms
+<t> cleanup: 0.002326 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.024647 ms
+<t> modules: 1.469566 ms
+<t> queue: 0.026294 ms
+<t> maxSize: 0.011984 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.07194 ms
+<t> sort relevant modules: 0.004002 ms
+<t> find modules to concatenate: 0.059629 ms
+<t> sort concat configurations: 0.000639 ms
+<t> create concatenated modules: 0.00406 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    18 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 12 timestamps 10 hashes 10 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 11 timestamps 0 hashes 0 timestamp hash combinations
+    Directory timestamp snapshot optimization: 0% (0/8) entries shared via 0 shared snapshots (0 times referenced)
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:48: webpack 5.64.4 compiled successfully in 65 ms (ceaf4a41eec404e0267b)

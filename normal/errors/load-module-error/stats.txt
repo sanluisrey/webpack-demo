@@ -1,0 +1,163 @@
+PublicPath: (none)
+asset bundle.js 3.11 KiB {0} [emitted] (name: main)
+Entrypoint main 3.11 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 153 bytes [entry] [rendered]
+  > ./errors/load-module-error/ main
+  ./errors/load-module-error/index.js [0] 152 bytes {0} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+    entry ./errors/load-module-error/ main
+  ./errors/load-module-error/loader.js!./errors/load-module-error/a.json [1] 1 bytes {0} [depth 1] [dependent] [built] [code generated] [1 error]
+    [used exports unknown]
+    cjs require ./loader!./a [0] ./errors/load-module-error/index.js 3:2-25
+./errors/load-module-error/index.js [0] 152 bytes {0} [depth 0] [built] [code generated]
+  [no exports used]
+  Statement (ExpressionStatement) with side effects in source code at 1:0-5:3
+  entry ./errors/load-module-error/ main
+./errors/load-module-error/loader.js!./errors/load-module-error/a.json [1] 1 bytes {0} [depth 1] [built] [code generated] [1 error]
+  [used exports unknown]
+  cjs require ./loader!./a [0] ./errors/load-module-error/index.js 3:2-25
+./errors/load-module-error/error-loader.js!./errors/load-module-error/b.json 1 bytes [orphan] [built] [1 error]
+  [module unused]
+  loader ./error-loader!./b.json ./error-loader!./b.json
+  
+
+LOG from webpack.Compiler
+<t> make hook: 15.6873 ms
+<t> finish make hook: 0.013148 ms
+<t> finish compilation: 0.107621 ms
+<t> seal compilation: 1.780341 ms
+<t> afterCompile hook: 0.008303 ms
+<t> emitAssets: 1.272335 ms
+<t> emitRecords: 0.003541 ms
+<t> done hook: 0.016125 ms
+<t> beginIdle: 0.012648 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.003713 ms
+<t> finish modules: 0.07125 ms
+<t> report dependency errors and warnings: 0.017051 ms
+<t> optimize dependencies: 0.121211 ms
+<t> create chunks: 0.128143 ms
+<t> compute affected modules with chunk graph: 0.00321 ms
+<t> optimize: 0.455176 ms
+    2 modules hashed, 0 from cache (0.67 variants per module in average)
+<t> module hashing: 0.103655 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.114551 ms
+<t> runtime requirements.modules: 0.018902 ms
+<t> runtime requirements.chunks: 0.029667 ms
+<t> runtime requirements.entries: 0.048201 ms
+<t> runtime requirements: 0.117246 ms
+<t> hashing: initialize hash: 0.002887 ms
+<t> hashing: hash errors: 0.005718 ms
+<t> hashing: sort chunks: 0.014071 ms
+<t> hashing: hash runtime modules: 0.005057 ms
+<t> hashing: hash chunks: 0.184186 ms
+<t> hashing: hash digest: 0.014836 ms
+<t> hashing: process full hash modules: 0.001715 ms
+<t> hashing: 0.262701 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.005324 ms
+<t> module assets: 0.008761 ms
+<t> create chunk assets: 0.304267 ms
+<t> process assets: 0.030368 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.016874 ms
+<t> figure out provided exports: 0.002133 ms
+    0% of exports of modules have been determined (3 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001894 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003096 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005508 ms
+<t> trace exports usage in graph: 0.0707 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.01188 ms
+<t> visitModules: visiting: 0.036193 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.059067 ms
+<t> connectChunkGroups: 0.001864 ms
+<t> cleanup: 0.001755 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.015582 ms
+<t> modules: 0.071491 ms
+<t> queue: 0.002223 ms
+<t> maxSize: 0.005373 ms
+
+LOG from webpack.FileSystemInfo
+    1 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 1 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/1) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+ERROR in ./errors/load-module-error/b.json (./errors/load-module-error/error-loader.js!./errors/load-module-error/b.json)
+Module build failed (from ./errors/load-module-error/error-loader.js):
+Error: err: abc
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/load-module-error/error-loader.js:4:11)
+ModuleBuildError: Module build failed (from ./errors/load-module-error/error-loader.js):
+Error: err: abc
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/load-module-error/error-loader.js:4:11)
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:751:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:399:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:251:18
+    at context.callback (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:124:13)
+    at Object.<anonymous>.module.exports (/Users/yoh/Projects/repos/webpack/test/cases/errors/load-module-error/error-loader.js:4:2)
+    at LOADER_EXECUTION (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:132:14)
+    at runSyncOrAsync (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:133:4)
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:250:2)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+ @ ./errors/load-module-error/loader.js!./errors/load-module-error/a.json
+ @ ./errors/load-module-error/index.js 3:2-25
+
+ERROR in ./errors/load-module-error/a.json (./errors/load-module-error/loader.js!./errors/load-module-error/a.json)
+Module build failed (from ./errors/load-module-error/loader.js):
+Error: The loaded module contains errors
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/LoaderPlugin.js:108:11
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:1930:5
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:352:5
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at AsyncQueue._handleResult (/Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:322:21)
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:305:11
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:1392:15
+    at /Users/yoh/Projects/repos/webpack/lib/HookWebpackError.js:68:3
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at Cache.store (/Users/yoh/Projects/repos/webpack/lib/Cache.js:107:20)
+ModuleBuildError: Module build failed (from ./errors/load-module-error/loader.js):
+Error: The loaded module contains errors
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/LoaderPlugin.js:108:11
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:1930:5
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:352:5
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at AsyncQueue._handleResult (/Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:322:21)
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:305:11
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:1392:15
+    at /Users/yoh/Projects/repos/webpack/lib/HookWebpackError.js:68:3
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+    at Cache.store (/Users/yoh/Projects/repos/webpack/lib/Cache.js:107:20)
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:751:19)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:399:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:251:18
+    at context.callback (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:124:13)
+    at /Users/yoh/Projects/repos/webpack/test/cases/errors/load-module-error/loader.js:7:4
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/LoaderPlugin.js:107:17
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:1930:5
+    at /Users/yoh/Projects/repos/webpack/lib/util/AsyncQueue.js:352:5
+    at Hook.eval [as callAsync] (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)
+ @ ./errors/load-module-error/index.js 3:2-25
+
+2021-12-05 17:44:24: webpack 5.64.4 compiled with 2 errors in 20 ms (4731ff0f3e60e24bf60c)

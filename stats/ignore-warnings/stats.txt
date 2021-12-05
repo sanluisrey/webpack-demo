@@ -1,0 +1,156 @@
+PublicPath: auto
+asset main.js 1.37 KiB {179} [emitted] (name: main)
+Entrypoint main 1.37 KiB = main.js
+chunk {179} (runtime: main) main.js (main) 790 bytes [entry] [rendered]
+  > ./index.js main
+  ./index.js + 9 modules [658] 790 bytes {179} [depth 0] [built] [code generated]
+    [no exports]
+    [no exports used]
+    entry ./index.js main
+  
+
+LOG from webpack.Compiler
+<t> make hook: 17.370956 ms
+<t> finish make hook: 0.019018 ms
+<t> finish compilation: 6.782164 ms
+<t> seal compilation: 7.410078 ms
+<t> afterCompile hook: 0.040457 ms
+<t> emitAssets: 1.33541 ms
+<t> emitRecords: 0.003343 ms
+<t> done hook: 0.018975 ms
+<t> beginIdle: 0.011791 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004902 ms
+<t> finish modules: 0.302186 ms
+<t> report dependency errors and warnings: 6.445282 ms
+<t> optimize dependencies: 0.304378 ms
+<t> create chunks: 0.260509 ms
+<t> compute affected modules with chunk graph: 0.003741 ms
+<t> optimize: 1.350867 ms
+    1 modules hashed, 0 from cache (0.1 variants per module in average)
+<t> module hashing: 0.567484 ms
+    100% code generated (1 generated, 0 from cache)
+<t> code generation: 3.353647 ms
+<t> runtime requirements.modules: 0.019983 ms
+<t> runtime requirements.chunks: 0.039915 ms
+<t> runtime requirements.entries: 0.065783 ms
+<t> runtime requirements: 0.1648 ms
+<t> hashing: initialize hash: 0.010687 ms
+<t> hashing: hash warnings: 0.021212 ms
+<t> hashing: sort chunks: 0.023878 ms
+<t> hashing: hash runtime modules: 0.007606 ms
+<t> hashing: hash chunks: 0.224919 ms
+<t> hashing: hash digest: 0.02942 ms
+<t> hashing: process full hash modules: 0.00276 ms
+<t> hashing: 0.393176 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.010127 ms
+<t> module assets: 0.019707 ms
+<t> create chunk assets: 0.40324 ms
+<t> process assets: 0.235092 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.050019 ms
+<t> figure out provided exports: 0.124769 ms
+    100% of exports of modules have been determined (0 no declared exports, 10 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.041476 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.043169 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.026083 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.016212 ms
+<t> trace exports usage in graph: 0.204879 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.048419 ms
+<t> visitModules: visiting: 0.128425 ms
+    20 queue items processed (10 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.155945 ms
+<t> connectChunkGroups: 0.002376 ms
+<t> cleanup: 0.002177 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018771 ms
+<t> modules: 0.128825 ms
+<t> queue: 0.002508 ms
+<t> maxSize: 0.006155 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.085912 ms
+<t> sort relevant modules: 0.006139 ms
+<t> find modules to concatenate: 0.214607 ms
+<t> sort concat configurations: 0.001269 ms
+<t> create concatenated modules: 0.28907 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    10 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/10) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./module.js?4 3:12-20
+Should not import the named export 'homepage' (imported as 'homepage') from default-exporting module (only default export is available soon)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:211:7)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyWarning: Should not import the named export 'homepage' (imported as 'homepage') from default-exporting module (only default export is available soon)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 4:0-20
+
+WARNING in ./module2.js?1 3:12-16
+Should not import the named export 'name' (imported as 'name') from default-exporting module (only default export is available soon)
+    at HarmonyImportSpecifierDependency.getLinkingErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportDependency.js:211:7)
+    at HarmonyImportSpecifierDependency._getErrors (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:202:15)
+    at HarmonyImportSpecifierDependency.getWarnings (/Users/yoh/Projects/repos/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js:178:16)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3127:24)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+
+ModuleDependencyWarning: Should not import the named export 'name' (imported as 'name') from default-exporting module (only default export is available soon)
+    at Compilation.reportDependencyErrorsAndWarnings (/Users/yoh/Projects/repos/webpack/lib/Compilation.js:3132:23)
+    at /Users/yoh/Projects/repos/webpack/lib/Compilation.js:2724:28
+    at _next2 (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:25:1)
+    at eval (eval at create (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:52:1)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:385:11
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+    at /Users/yoh/Projects/repos/webpack/lib/FlagDependencyExportsPlugin.js:361:18
+    at /Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2830:7
+    at Object.each (/Users/yoh/Projects/repos/webpack/node_modules/neo-async/async.js:2850:39)
+ @ ./index.js 6:0-21
+
+2021-12-05 17:44:19: webpack 5.64.4 compiled with 2 warnings in 34 ms (a04b638b71fa1e68db0b)

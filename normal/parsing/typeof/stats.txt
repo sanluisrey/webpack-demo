@@ -1,0 +1,209 @@
+PublicPath: (none)
+asset bundle.js 3.47 KiB {0} [emitted] (name: main)
+Entrypoint main 3.47 KiB = bundle.js
+chunk {0} (runtime: main) bundle.js (main) 1.96 KiB [entry] [rendered]
+  > ./parsing/typeof/ main
+  ./parsing/typeof/index.js [0] 1.93 KiB {0} [depth 0] [built] [code generated] [2 warnings]
+    [used exports unknown]
+    CommonJS bailout: exports is used directly at 21:15-22
+    Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+    cjs self exports reference [0] ./parsing/typeof/index.js 21:15-22
+    entry ./parsing/typeof/ main
+  ./parsing/typeof/typeof.js [1] 32 bytes {0} [depth 1] [dependent] [built] [code generated]
+    [used exports unknown]
+    CommonJS bailout: module.exports is used directly at 1:0-14
+    Statement (ExpressionStatement) with side effects in source code at 1:0-32
+    cjs require ./typeof [0] ./parsing/typeof/index.js 2:8-27
+    cjs self exports reference [1] ./parsing/typeof/typeof.js 1:0-14
+./parsing/typeof/index.js [0] 1.93 KiB {0} [depth 0] [built] [code generated] [2 warnings]
+  [used exports unknown]
+  CommonJS bailout: exports is used directly at 21:15-22
+  Statement (ExpressionStatement) with side effects in source code at 1:0-3:3
+  cjs self exports reference [0] ./parsing/typeof/index.js 21:15-22
+  entry ./parsing/typeof/ main
+./parsing/typeof/typeof.js [1] 32 bytes {0} [depth 1] [built] [code generated]
+  [used exports unknown]
+  CommonJS bailout: module.exports is used directly at 1:0-14
+  Statement (ExpressionStatement) with side effects in source code at 1:0-32
+  cjs require ./typeof [0] ./parsing/typeof/index.js 2:8-27
+  cjs self exports reference [1] ./parsing/typeof/typeof.js 1:0-14
+  
+
+LOG from webpack.Compiler
+<t> make hook: 12.059281 ms
+<t> finish make hook: 0.007837 ms
+<t> finish compilation: 0.085981 ms
+<t> seal compilation: 1.452328 ms
+<t> afterCompile hook: 0.00531 ms
+<t> emitAssets: 0.763621 ms
+<t> emitRecords: 0.001461 ms
+<t> done hook: 0.007832 ms
+<t> beginIdle: 0.003889 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.00459 ms
+<t> finish modules: 0.053333 ms
+<t> report dependency errors and warnings: 0.017234 ms
+<t> optimize dependencies: 0.107993 ms
+<t> create chunks: 0.107148 ms
+<t> compute affected modules with chunk graph: 0.002157 ms
+<t> optimize: 0.343888 ms
+    2 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.151687 ms
+    100% code generated (2 generated, 0 from cache)
+<t> code generation: 0.088514 ms
+<t> runtime requirements.modules: 0.009118 ms
+<t> runtime requirements.chunks: 0.025007 ms
+<t> runtime requirements.entries: 0.063484 ms
+<t> runtime requirements: 0.110249 ms
+<t> hashing: initialize hash: 0.001958 ms
+<t> hashing: hash warnings: 0.004831 ms
+<t> hashing: sort chunks: 0.01 ms
+<t> hashing: hash runtime modules: 0.003497 ms
+<t> hashing: hash chunks: 0.143788 ms
+<t> hashing: hash digest: 0.008329 ms
+<t> hashing: process full hash modules: 0.001373 ms
+<t> hashing: 0.195168 ms
+    NaN% code generated (0 generated, 0 from cache)
+<t> record hash: 0.004 ms
+<t> module assets: 0.005963 ms
+<t> create chunk assets: 0.233387 ms
+<t> process assets: 0.02209 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.013073 ms
+<t> figure out provided exports: 0.0018 ms
+    0% of exports of modules have been determined (2 no declared exports, 0 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.001421 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.003242 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.003206 ms
+<t> trace exports usage in graph: 0.07105 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.005432 ms
+<t> visitModules: visiting: 0.031731 ms
+    4 queue items processed (2 blocks)
+    0 chunk groups connected
+    0 chunk groups processed for merging (0 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    0 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.049658 ms
+<t> connectChunkGroups: 0.001114 ms
+<t> cleanup: 0.00134 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.012521 ms
+<t> modules: 0.045651 ms
+<t> queue: 0.001798 ms
+<t> maxSize: 0.004357 ms
+
+LOG from webpack.FileSystemInfo
+    2 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 2 timestamps 0 hashes 0 timestamp hash combinations
+    File timestamp snapshot optimization: 0% (0/2) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+WARNING in ./parsing/typeof/index.js 24:8-30
+require.include() is deprecated and will be removed soon.
+RequireIncludeDeprecationWarning: require.include() is deprecated and will be removed soon.
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js:55:7
+    at Hook.eval (<anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForExpressionWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2894:16)
+    at JavascriptParser.callHooksForExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2862:15)
+    at JavascriptParser.walkUnaryExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2436:24)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2301:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+    at JavascriptParser.walkCallExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2751:35)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2250:10)
+    at JavascriptParser.walkCallExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2744:11)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2250:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1627:9
+    at JavascriptParser.inBlockScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3074:3)
+    at JavascriptParser.walkBlockStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1622:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1544:10)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2377:10
+    at JavascriptParser.inFunctionScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3058:3)
+    at JavascriptParser.walkFunctionExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2368:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2262:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+    at JavascriptParser.walkCallExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2751:35)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2250:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at JavascriptParser.parse (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3338:9)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:1080:26
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:793:11)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at Array.eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27:15)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+WARNING in ./parsing/typeof/index.js 45:5-27
+require.include() is deprecated and will be removed soon.
+RequireIncludeDeprecationWarning: require.include() is deprecated and will be removed soon.
+    at /Users/yoh/Projects/repos/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js:45:7
+    at Hook.eval (<anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (/Users/yoh/Projects/repos/webpack/node_modules/tapable/lib/Hook.js:14:14)
+    at JavascriptParser.callHooksForInfoWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2983:24)
+    at JavascriptParser.callHooksForExpressionWithFallback (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2894:16)
+    at JavascriptParser.callHooksForExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2862:15)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:849:25
+    at Hook.eval (<anonymous>:7:16)
+    at JavascriptParser.evaluateExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3176:25)
+    at handleStrictEqualityComparison (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:547:24)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:787:13
+    at Hook.eval (<anonymous>:7:16)
+    at JavascriptParser.evaluateExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3176:25)
+    at /Users/yoh/Projects/repos/webpack/lib/ConstPlugin.js:135:28
+    at Hook.eval (<anonymous>:7:16)
+    at JavascriptParser.walkIfStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1643:41)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1574:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1627:9
+    at JavascriptParser.inBlockScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3074:3)
+    at JavascriptParser.walkBlockStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1622:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1544:10)
+    at /Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2377:10
+    at JavascriptParser.inFunctionScope (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3058:3)
+    at JavascriptParser.walkFunctionExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2368:8)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2262:10)
+    at JavascriptParser.walkExpressions (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2227:10)
+    at JavascriptParser.walkCallExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2751:35)
+    at JavascriptParser.walkExpression (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:2250:10)
+    at JavascriptParser.walkExpressionStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1632:8)
+    at JavascriptParser.walkStatement (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1559:10)
+    at JavascriptParser.walkStatements (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:1453:9)
+    at JavascriptParser.parse (/Users/yoh/Projects/repos/webpack/lib/javascript/JavascriptParser.js:3338:9)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:1080:26
+    at processResult (/Users/yoh/Projects/repos/webpack/lib/NormalModule.js:793:11)
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:853:5
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:406:3
+    at iterateNormalLoaders (/Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:232:10)
+    at /Users/yoh/Projects/repos/webpack/node_modules/loader-runner/lib/LoaderRunner.js:223:4
+    at /Users/yoh/Projects/repos/webpack/lib/NormalModule.js:827:15
+    at Array.eval (<anonymous>:12:1)
+    at runCallbacks (/Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:27:15)
+    at /Users/yoh/Projects/repos/webpack/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:200:4
+    at /Users/yoh/Projects/repos/webpack/node_modules/graceful-fs/graceful-fs.js:123:16
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read_file_context:68:3)
+
+2021-12-05 17:45:39: webpack 5.64.4 compiled with 2 warnings in 15 ms (05a90e2fdf8e63fa598c)

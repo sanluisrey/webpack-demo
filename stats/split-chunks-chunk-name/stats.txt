@@ -1,0 +1,161 @@
+PublicPath: auto
+assets by chunk 1.11 KiB (id hint: vendors)
+  asset default/async-b.js 566 bytes {334} [emitted] (name: async-b) (id hint: vendors)
+  asset default/async-c-1.js 566 bytes {709} [emitted] (name: async-c-1) (id hint: vendors)
+asset default/main.js 11.2 KiB {179} [emitted] (name: main)
+asset default/async-a.js 464 bytes {794} [emitted] (name: async-a)
+Entrypoint main 11.2 KiB = default/main.js
+Chunk Group async-a 464 bytes = default/async-a.js
+Chunk Group async-b 566 bytes = default/async-b.js
+Chunk Group async-c-1 566 bytes = default/async-c-1.js
+Chunk Group async-c-2 566 bytes = default/async-c-1.js
+chunk {179} (runtime: main) default/main.js (main) 192 bytes (javascript) 6.64 KiB (runtime) >{334}< >{709}< >{794}< [entry] [rendered]
+  > ./ main
+  ./index.js [10] 192 bytes {179} [depth 0] [built] [code generated]
+    [no exports used]
+    Statement (ExpressionStatement) with side effects in source code at 1:0-46
+    ModuleConcatenation bailout: Module is not an ECMAScript module
+    entry ./ main
+  webpack/runtime/define property getters 308 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/ensure chunk 326 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/get javascript chunk filename 228 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/global 221 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/hasOwnProperty shorthand 88 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/jsonp chunk loading 3 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/load script 1.37 KiB {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/make namespace object 274 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+  webpack/runtime/publicPath 875 bytes {179} [code generated]
+    [no exports]
+    [used exports unknown]
+chunk {334} (runtime: main) default/async-b.js (async-b) (id hint: vendors) 122 bytes <{179}> [rendered] reused as split chunk (cache group: defaultVendors)
+  > b [10] ./index.js 2:0-45
+  ./node_modules/b.js [644] 122 bytes {334} [depth 1] [built] [code generated]
+    [exports: default]
+    import() b [10] ./index.js 2:0-45
+chunk {709} (runtime: main) default/async-c-1.js (async-c-1) (id hint: vendors) 122 bytes <{179}> [rendered] reused as split chunk (cache group: defaultVendors)
+  > c [10] ./index.js 3:0-47
+  > c [10] ./index.js 4:0-47
+  ./node_modules/c.js [286] 122 bytes {709} [depth 1] [built] [code generated]
+    [exports: default]
+    import() c [10] ./index.js 3:0-47
+    import() c [10] ./index.js 4:0-47
+chunk {794} (runtime: main) default/async-a.js (async-a) 20 bytes <{179}> [rendered]
+  > a [10] ./index.js 1:0-45
+  ./node_modules/a.js [213] 20 bytes {794} [depth 1] [built] [code generated]
+    [exports: default]
+    import() a [10] ./index.js 1:0-45
+  
+
+LOG from webpack.Compiler
+<t> make hook: 11.933894 ms
+<t> finish make hook: 0.010259 ms
+<t> finish compilation: 0.175981 ms
+<t> seal compilation: 5.89009 ms
+<t> afterCompile hook: 0.014733 ms
+<t> emitAssets: 1.403853 ms
+<t> emitRecords: 0.001968 ms
+<t> done hook: 0.015596 ms
+<t> beginIdle: 0.007189 ms
+
+LOG from webpack.Compilation
+<t> compute affected modules: 0.004976 ms
+<t> finish modules: 0.147609 ms
+<t> report dependency errors and warnings: 0.010379 ms
+<t> optimize dependencies: 0.197169 ms
+<t> create chunks: 0.232375 ms
+<t> compute affected modules with chunk graph: 0.00255 ms
+<t> optimize: 0.807031 ms
+    4 modules hashed, 0 from cache (1 variants per module in average)
+<t> module hashing: 0.141418 ms
+    100% code generated (4 generated, 0 from cache)
+<t> code generation: 0.384103 ms
+<t> runtime requirements.modules: 0.054643 ms
+<t> runtime requirements.chunks: 0.146751 ms
+<t> runtime requirements.entries: 0.66077 ms
+<t> runtime requirements: 0.906154 ms
+<t> hashing: initialize hash: 0.004642 ms
+<t> hashing: sort chunks: 0.029639 ms
+<t> hashing: hash runtime modules: 1.104346 ms
+<t> hashing: hash chunks: 0.438284 ms
+<t> hashing: hash digest: 0.01832 ms
+<t> hashing: process full hash modules: 0.001599 ms
+<t> hashing: 1.681564 ms
+    100% code generated (9 generated, 0 from cache)
+<t> record hash: 0.01144 ms
+<t> module assets: 0.02026 ms
+<t> create chunk assets: 0.72588 ms
+<t> process assets: 0.334491 ms
+
+LOG from webpack.FlagDependencyExportsPlugin
+<t> restore cached provided exports: 0.02528 ms
+<t> figure out provided exports: 0.033291 ms
+    75% of exports of modules have been determined (1 no declared exports, 3 not cached, 0 flagged uncacheable, 0 from cache, 0 from mem cache, 0 additional calculations due to dependencies)
+<t> store provided exports into cache: 0.012662 ms
+
+LOG from webpack.InnerGraphPlugin
+<t> infer dependency usage: 0.027798 ms
+
+LOG from webpack.SideEffectsFlagPlugin
+<t> update dependencies: 0.0123 ms
+
+LOG from webpack.FlagDependencyUsagePlugin
+<t> initialize exports usage: 0.005757 ms
+<t> trace exports usage in graph: 0.143394 ms
+
+LOG from webpack.buildChunkGraph
+<t> visitModules: prepare: 0.013346 ms
+<t> visitModules: visiting: 0.067325 ms
+<t> visitModules: calculating available modules: 0.008733 ms
+<t> visitModules: merging available modules: 0.00519 ms
+<t> visitModules: check modules for revisit: 0.002881 ms
+<t> visitModules: prepare: 0.005241 ms
+<t> visitModules: visiting: 0.028557 ms
+    14 queue items processed (9 blocks)
+    4 chunk groups connected
+    4 chunk groups processed for merging (4 module sets, 0 forked, 0 + 0 modules forked, 0 + 0 modules merged into fork, 0 resulting modules)
+    4 chunk group info updated (0 already connected chunk groups reconnected)
+<t> visitModules: 0.14385 ms
+<t> connectChunkGroups: 0.013379 ms
+<t> cleanup: 0.002914 ms
+
+LOG from webpack.SplitChunksPlugin
+<t> prepare: 0.018366 ms
+<t> modules: 0.123493 ms
+<t> queue: 0.051773 ms
+<t> maxSize: 0.010042 ms
+
+LOG from webpack.ModuleConcatenationPlugin
+<t> select relevant modules: 0.01883 ms
+<t> sort relevant modules: 0.003563 ms
+<t> find modules to concatenate: 0.032005 ms
+<t> sort concat configurations: 0.000553 ms
+<t> create concatenated modules: 0.00298 ms
++ 3 hidden lines
+
+LOG from webpack.FileSystemInfo
+    4 new snapshots created
+    0% root snapshot uncached (0 / 0)
+    0% children snapshot uncached (0 / 0)
+    0 entries tested
+    File info in cache: 4 timestamps 4 hashes 4 timestamp hash combinations
+    File timestamp hash combination snapshot optimization: 0% (0/4) entries shared via 0 shared snapshots (0 times referenced)
+    Directory info in cache: 0 timestamps 0 hashes 0 timestamp hash combinations
+    Managed items info in cache: 0 items
+
+2021-12-05 17:44:26: webpack 5.64.4 compiled successfully in 21 ms (975c1b3677f0bac14961)
